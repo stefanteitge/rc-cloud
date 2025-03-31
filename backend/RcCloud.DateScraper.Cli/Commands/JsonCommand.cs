@@ -17,7 +17,11 @@ internal class JsonCommand(
         all.Sort((a, b) => a.Date.CompareTo(b.Date));
 
         // TODO: this should use a DTO
-        var bytes = JsonSerializer.SerializeToUtf8Bytes(all, JsonSerializerOptions.Web);
+        var options = new JsonSerializerOptions(JsonSerializerOptions.Web)
+        {
+            WriteIndented = true
+        };
+        var bytes = JsonSerializer.SerializeToUtf8Bytes(all, options);
         File.WriteAllBytes("all.json", bytes);
     }
 }
