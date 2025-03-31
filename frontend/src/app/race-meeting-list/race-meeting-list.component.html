@@ -1,0 +1,12 @@
+<h2>All</h2>
+
+<table>
+@for (meeting of getAllMeetings(); track meeting.location) {
+  <tr>
+    <td>{{ meeting.date}}</td>
+    <td>{{meeting.series.id}}</td>
+    <td>{{meeting.location}}</td>
+  </tr>
+}
+
+</table>
