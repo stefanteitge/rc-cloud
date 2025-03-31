@@ -1,0 +1,6 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/dotnet:9.0",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": { "version": "lts" }
+  } 
+}
