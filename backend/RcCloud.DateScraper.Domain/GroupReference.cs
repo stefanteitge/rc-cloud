@@ -10,5 +10,5 @@ public record GroupReference(string Id)
 
     public static GroupReference South = new("south");
 
-    public static GroupReference Central = new("cental");
+    public static GroupReference Central = new("central");
 }

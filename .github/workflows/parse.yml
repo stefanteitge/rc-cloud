@@ -24,8 +24,8 @@ jobs:
     - name: Json
       run: dotnet run json
       working-directory: backend/RcCloud.DateScraper.Cli
-    - name: Copy
-      run: cp all.json ../../frontend/public/assets
+    - name: Move
+      run: mv all.json ../../frontend/public/assets
       working-directory: backend/RcCloud.DateScraper.Cli
     - uses: stefanzweifel/git-auto-commit-action@v5
       with:
