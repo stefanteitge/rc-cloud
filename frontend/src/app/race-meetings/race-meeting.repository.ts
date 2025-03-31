@@ -10,6 +10,7 @@ export interface RaceMeeting {
   date: string;
   location: string;
   series: Reference;
+  groups: Reference[];
 }
 
 @Injectable()

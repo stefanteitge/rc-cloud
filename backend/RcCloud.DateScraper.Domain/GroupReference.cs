@@ -2,7 +2,7 @@
 
 public record GroupReference(string Id)
 {
-    public static GroupReference West = new("weet");
+    public static GroupReference West = new("west");
 
     public static GroupReference East = new("east");
 
