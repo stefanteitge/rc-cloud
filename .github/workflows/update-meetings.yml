@@ -1,10 +1,12 @@
-name: "Updates dates"
+name: "Update meetings"
 on:
   push:
     branches:
       - main
     paths:
     - 'backend/**'
+  schedule:
+    - cron: "0 8 * * 1" # every monday
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
