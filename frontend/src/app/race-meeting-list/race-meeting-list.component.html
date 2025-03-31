@@ -1,22 +1,81 @@
-@let columnsToDisplay = ['date', 'location', 'groups'];
+@let columnsToDisplay = ['date', 'races', 'central', 'north', 'south','west', 'east'];
 
-<table mat-table [dataSource]="getAllMeetings()">
+<table mat-table [dataSource]="getAllDates()">
   <ng-container matColumnDef="date">
     <th mat-header-cell *matHeaderCellDef> Date </th>
     <td mat-cell *matCellDef="let meeting"> {{meeting.date}} </td>
   </ng-container>
 
-  <ng-container matColumnDef="location">
-    <th mat-header-cell *matHeaderCellDef> Location </th>
-    <td mat-cell *matCellDef="let meeting"> {{meeting.location}} </td>
+  <ng-container matColumnDef="races">
+    <th mat-header-cell *matHeaderCellDef> No Region </th>
+    <td mat-cell *matCellDef="let upcomingDate">
+      @for (raceMeeting of upcomingDate.raceMeetings; track raceMeeting.id) {
+        <div>
+          {{ raceMeeting.location }}
+          ({{ raceMeeting.series }})
+        </div>
+      }
+    </td>
   </ng-container>
 
-  <ng-container matColumnDef="groups">
-    <th mat-header-cell *matHeaderCellDef> Groups </th>
-    <td mat-cell *matCellDef="let meeting">
-      @for (group of meeting.groups; track group.id) {
-      <mat-chip>{{group.id}}</mat-chip>
-    } </td>
+  <ng-container matColumnDef="central">
+    <th mat-header-cell *matHeaderCellDef> Central </th>
+    <td mat-cell *matCellDef="let upcomingDate">
+      @for (raceMeeting of upcomingDate.central; track raceMeeting.id) {
+        <div>
+          {{ raceMeeting.location }}
+          <mat-chip>{{ raceMeeting.series }}</mat-chip>
+        </div>
+      }
+    </td>
+  </ng-container>
+
+  <ng-container matColumnDef="north">
+    <th mat-header-cell *matHeaderCellDef> North </th>
+    <td mat-cell *matCellDef="let upcomingDate">
+      @for (raceMeeting of upcomingDate.north; track raceMeeting.id) {
+        <div>
+          {{ raceMeeting.location }}
+          <mat-chip>{{ raceMeeting.series }}</mat-chip>
+        </div>
+      }
+    </td>
+  </ng-container>
+
+  <ng-container matColumnDef="south">
+    <th mat-header-cell *matHeaderCellDef> South </th>
+    <td mat-cell *matCellDef="let upcomingDate">
+      @for (raceMeeting of upcomingDate.south; track raceMeeting.id) {
+        <div>
+          {{ raceMeeting.location }}
+          <mat-chip>{{ raceMeeting.series }}</mat-chip>
+        </div>
+      }
+    </td>
+  </ng-container>
+
+  <ng-container matColumnDef="west">
+    <th mat-header-cell *matHeaderCellDef> West </th>
+    <td mat-cell *matCellDef="let upcomingDate">
+      @for (raceMeeting of upcomingDate.west; track raceMeeting.id) {
+        <div>
+          {{ raceMeeting.location }}
+          <mat-chip>{{ raceMeeting.series }}</mat-chip>
+        </div>
+      }
+    </td>
+  </ng-container>
+
+  <ng-container matColumnDef="east">
+    <th mat-header-cell *matHeaderCellDef> East </th>
+    <td mat-cell *matCellDef="let upcomingDate">
+      @for (raceMeeting of upcomingDate.east; track raceMeeting.id) {
+        <div>
+          {{ raceMeeting.location }}
+          <mat-chip>{{ raceMeeting.series }}</mat-chip>
+        </div>
+      }
+    </td>
   </ng-container>
 
   <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>

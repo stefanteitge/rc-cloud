@@ -1,5 +1,5 @@
 import {Component, OnInit, signal} from '@angular/core';
-import {RaceMeeting, RaceMeetingRepository} from '../race-meetings/race-meeting.repository';
+import {RaceMeetingDto, RaceMeetingRepository} from '../race-meetings/race-meeting.repository';
 import {HttpClient} from '@angular/common/http';
 import {MatChip} from '@angular/material/chips';
 import {
@@ -11,6 +11,7 @@ import {
   MatHeaderRow, MatHeaderRowDef, MatRow, MatRowDef,
   MatTable
 } from '@angular/material/table';
+import {UpcomingDate} from '../race-meetings/upcoming-meetings.model';
 
 @Component({
   selector: 'app-race-meeting-list',
@@ -20,7 +21,7 @@ import {
   providers: [RaceMeetingRepository]
 })
 export class RaceMeetingListComponent implements OnInit {
-  meetings = signal([] as RaceMeeting[])
+  meetings = signal([] as UpcomingDate[])
 
   constructor(private repo: RaceMeetingRepository) {
   }
@@ -29,7 +30,7 @@ export class RaceMeetingListComponent implements OnInit {
     this.repo.fetchAll();
   }
 
-  getAllMeetings() {
+  getAllDates(): UpcomingDate[] {
     return this.repo.getAll();
   }
 }
