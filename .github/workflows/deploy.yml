@@ -1,0 +1,36 @@
+name: Build & Deploy to GitHub Pages
+
+on:
+  push:
+    branches: ["main"]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  # Build job
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: latest
+
+      - name: Install dependencies
+        run: npm install
+        working-directory: frontend
+
+      - name: Build
+        run: npm run build
+        working-directory: frontend
+
+      - name: Deploy to Github pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          npm run ng -- deploy --repo="https://github.com/stefanteitge/rc-cloud-datescraper.git" --base-href=/rc-cloud-datescraper/ --name=stefanteitge --email=stefan.teitge@gmail.com
+        working-directory: frontend
