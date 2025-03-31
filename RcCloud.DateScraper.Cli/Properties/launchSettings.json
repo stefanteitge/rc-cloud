@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "RcCloud.DateScraper.Cli": {
+      "commandName": "Project",
+      "commandLineArgs": "json"
+    }
+  }
+}
