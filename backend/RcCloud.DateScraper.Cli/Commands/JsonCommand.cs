@@ -1,10 +1,12 @@
-﻿using RcCloud.DateScraper.Application.Rck.Services;
+﻿using RcCloud.DateScraper.Application.Dmc;
+using RcCloud.DateScraper.Application.Rck.Services;
 using System.Text.Json;
 
 namespace RcCloud.DateScraper.Cli.Commands;
 
 internal class JsonCommand(
     ChallengeService challenge,
+    DmcService dmc,
     KleinserieService kleinserie)
 {
     public async Task OnExecute()
@@ -13,6 +15,9 @@ internal class JsonCommand(
 
         var kleinserieAll = await kleinserie.Parse();
         all.AddRange(kleinserieAll);
+
+        var dmcAll = await dmc.Parse();
+        all.AddRange(dmcAll);
 
         all.Sort((a, b) => a.Date.CompareTo(b.Date));
 
