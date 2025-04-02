@@ -1,6 +1,7 @@
 ﻿using RcCloud.DateScraper.Application.Dmc;
 using RcCloud.DateScraper.Application.Rck.Services;
 using System.Text.Json;
+using RcCloud.DateScraper.Cli.Commands.Json;
 
 namespace RcCloud.DateScraper.Cli.Commands;
 
@@ -26,7 +27,7 @@ internal class JsonCommand(
         {
             WriteIndented = true
         };
-        var bytes = JsonSerializer.SerializeToUtf8Bytes(all, options);
+        var bytes = JsonSerializer.SerializeToUtf8Bytes(new JsonExportSchema(DateTimeOffset.Now, all), options);
         File.WriteAllBytes("all.json", bytes);
     }
 }

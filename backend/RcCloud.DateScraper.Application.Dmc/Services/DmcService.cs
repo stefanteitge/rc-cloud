@@ -33,6 +33,16 @@ public class DmcService(DownloadDmcCalendarService download)
         {
             return "Deutsche Meisterschaft";
         }
+        
+        if (entry.IsShCup())
+        {
+            return "SH-Cup";
+        }
+        
+        if (entry.IsTamiyaEurocup())
+        {
+            return "Tamiya Eurocup";
+        }
 
         return "Rennen";
     }
@@ -43,7 +53,7 @@ public class DmcService(DownloadDmcCalendarService download)
         
         if (entry.Comment.Contains("TOS"))
         {
-            seriess.Add(new("tos"));    
+            seriess.Add(SeriesReference.Tonisport);;    
         }
         
         if (entry.Comment.Contains("Elbe Cup"))
@@ -60,6 +70,12 @@ public class DmcService(DownloadDmcCalendarService download)
         {
             seriess.Add(new("sm"));
         }
+        
+        if (entry.IsTamiyaEurocup())
+        {
+            seriess.Add(SeriesReference.Tamiya);
+        }
+
 
         if (seriess.Count > 0)
         {

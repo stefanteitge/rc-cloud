@@ -48,4 +48,14 @@ public class DmcCalendarEntry(DateOnly dateStart, DateOnly dateEnd, string type,
     {
         return Type.StartsWith("DM") && Type.EndsWith("DMC");
     }
+
+    public bool IsShCup()
+    {
+        return Type.StartsWith("CUPSH") && Type.EndsWith("DMC");
+    }
+    
+    public bool IsTamiyaEurocup()
+    {
+        return Type.StartsWith("MP-TA") && Type.EndsWith("DMC");
+    }
 }
