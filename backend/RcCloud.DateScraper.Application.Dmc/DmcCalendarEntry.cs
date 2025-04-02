@@ -1,24 +1,22 @@
 namespace RcCloud.DateScraper.Application.Dmc;
 
-public class DmcCalendarEntry
+public class DmcCalendarEntry(DateOnly dateStart, DateOnly dateEnd, string type, string[] classes, int? clubNo, string club, string location)
 {
     private string[] NonEventTypes = ["SRLDMC", "SKTDMC", "PRAESDMC"];
 
-    public DateTimeOffset? Timestamp { get; set; }
+    public DateOnly DateStart => dateStart;
 
-    public DateOnly DateStart { get; init; }
-    
-    public DateOnly DateEnd { get; set; }
-    
-    public string Type { get; init; }
-    
-    public string[] Classes { get; init; }
-    
-    public int? ClubNo { get; set; }
-    
-    public string Club { get; set; }
-    
-    public string Location { get; set; }
+    public DateOnly DateEnd => dateEnd;
+
+    public string Type => type;
+
+    public string[] Classes => classes;
+
+    public int? ClubNo => clubNo;
+
+    public string Club => club;
+
+    public string Location => location;
     
     public string Comment { get; set; }
     
@@ -35,4 +33,19 @@ public class DmcCalendarEntry
         || Type == $"SM{(int)regionNumber}DMC";
 
     public bool IsMeeting() => !NonEventTypes.Contains(Type);
+
+    public bool IsSportkreismeisterschaft()
+    {
+        return Type.StartsWith("SM") && Type.EndsWith("DMC");
+    }
+
+    public bool IsFreundschaftsrennen()
+    {
+        return Type.StartsWith("FR") && Type.EndsWith("DMC");
+    }
+    
+    public bool IsDeutscheMeisterschaft()
+    {
+        return Type.StartsWith("DM") && Type.EndsWith("DMC");
+    }
 }

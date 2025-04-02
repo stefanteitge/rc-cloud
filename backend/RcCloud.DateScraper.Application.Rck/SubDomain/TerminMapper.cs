@@ -7,11 +7,27 @@ namespace RcCloud.DateScraper.Application.Rck.SubDomain
         public static RaceMeeting ToDomain(this DatedEvent datedEvent, SeriesReference series)
         {
             return new RaceMeeting(
-                series: series,
-                season: SeasonReference.Current,
-                date: datedEvent.Date,
-                location: datedEvent.Location,
-                groups: datedEvent.Gruppen.Select(g => ToReference(g)).ToArray());
+                [series],
+                SeasonReference.Current,
+                datedEvent.Date,
+                datedEvent.Location,
+                GetTitle(series),
+                datedEvent.Gruppen.Select(g => ToReference(g)).ToArray());
+        }
+
+        private static string GetTitle(SeriesReference series)
+        {
+            if (series.Id == "kleinserie")
+            {
+                return "Kleinserie";
+            }
+            
+            if (series.Id == "challenge")
+            {
+                return "RCK-Challenge";
+            }
+
+            return "Unbekannt";
         }
 
         private static GroupReference ToReference(Gruppe g)

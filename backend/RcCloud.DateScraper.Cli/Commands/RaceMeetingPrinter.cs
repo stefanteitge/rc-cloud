@@ -15,8 +15,10 @@ internal class RaceMeetingPrinter
     {
         Console.Write(raceMeeting.Date);
         Console.Write("\t");
-        Console.Write(raceMeeting.Series.Id);
-        Console.Write("\t");
+        Console.Write(string.Join(", ", raceMeeting.Series.Select(s => s.Id)));
+        Console.Write("\t ");
+        Console.Write(raceMeeting.Title);
+        Console.Write("\t ");
         Console.Write(raceMeeting.Location);
         Console.Write("\t(");
         Console.Write(string.Join(", ", raceMeeting.Groups.Select(g => g.Id)));
