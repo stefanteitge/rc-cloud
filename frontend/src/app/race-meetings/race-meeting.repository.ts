@@ -10,7 +10,8 @@ export interface ReferenceDto {
 export interface RaceMeetingDto {
   date: string;
   location: string;
-  series: ReferenceDto;
+  title: string
+  series: ReferenceDto[];
   groups: ReferenceDto[];
 }
 

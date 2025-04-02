@@ -1,8 +1,9 @@
 import {RaceMeetingDto, ReferenceDto} from './race-meeting.repository';
 
 export interface UpcomingRaceMeeting {
+  title: string,
   location: string;
-  series: string;
+  series: string[];
   groups: ReferenceDto[]; // TODO
 }
 
@@ -37,8 +38,9 @@ export function compileUpcomingMeetings(meetings: RaceMeetingDto[]): UpcomingDat
 
     const newMeeting = {
       location: meeting.location,
-      series: meeting.series.id,
-      groups: meeting.groups
+      series: meeting.series.map(s => s.id),
+      groups: meeting.groups,
+      title: meeting.title,
     };
 
     if (newMeeting.groups.length == 0) {
