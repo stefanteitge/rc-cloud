@@ -11,9 +11,41 @@ public class ParseMyrcmService(DownloadMyrcmPageService downloadPageService)
     public async Task<IEnumerable<RaceMeeting>> Parse()
     {
         var downloaded = await downloadPageService.Download(DownloadFilter.GermanyOnly);
-        return await Parse(downloaded);
+        var firstPage = await Parse(downloaded);
+        var all = new List<RaceMeeting>();
+        all.AddRange(firstPage);
+        int pageCount = await GetPageCount(downloaded);
+
+        for (int i = 1; i < pageCount; i++)
+        {
+            var downloaded2 = await downloadPageService.Download(DownloadFilter.GermanyOnly, i);
+            var parsed2 = await Parse(downloaded2);
+            all.AddRange(parsed2);
+        }
+
+        return all;
     }
-    
+
+    private async Task<int> GetPageCount(string content)
+    {
+        var document = await BrowsingContext.New(Configuration.Default.WithDefaultLoader()).OpenAsync(req => req.Content(content));
+        
+        if (document is null)
+        {
+            return 0;
+        }
+        
+        var table = document.QuerySelector(".paging");
+        var lastCell = table.QuerySelectorAll("td").SkipLast(1).LastOrDefault();
+
+        if (lastCell is not null)
+        {
+            return int.Parse(lastCell?.TextContent ?? "0");
+        }
+        
+        return 0;
+    }
+
     public async Task<IEnumerable<RaceMeeting>> Parse(string content)
     {
         var document = await BrowsingContext.New(Configuration.Default.WithDefaultLoader()).OpenAsync(req => req.Content(content));
