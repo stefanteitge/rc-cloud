@@ -2,13 +2,13 @@
 
 namespace RcCloud.DateScraper.Application.Myrcm.Tests;
 
-public class MyrcmServiceTests
+public class DownloadMyrcmPageServiceTests
 {
     [Fact]
     public async Task Test1()
     {
-        var sut = new MyrcmService();
-        var content = await sut.Parse();
+        var sut = new DownloadMyrcmPageService();
+        var content = await sut.Download(DownloadFilter.GermanyOnly);
 
         Assert.Contains("Vintage auf Intermodellbau", content);
         Assert.DoesNotContain("Avondcompetitie #1 HFCC Racing 2025", content);
@@ -17,8 +17,8 @@ public class MyrcmServiceTests
     [Fact]
     public async Task Parse_Page4_HasEvent()
     {
-        var sut = new MyrcmService();
-        var content = await sut.Parse(3);
+        var sut = new DownloadMyrcmPageService();
+        var content = await sut.Download(DownloadFilter.GermanyOnly, 3);
 
         Assert.Contains("MCC-Herbst Open Freundschaftsrennen", content);
     }
