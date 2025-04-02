@@ -1,12 +1,12 @@
 ﻿using McMaster.Extensions.CommandLineUtils;
-using RcCloud.DateScraper.Cli.Commands;
 
 
-namespace RcCloud.DateScraper.Cli.Kleinserie
+namespace RcCloud.DateScraper.Cli.Commands
 {
     [Command(Name = "rcc-scrape", Description = "Dependency Injection sample project")]
     [Subcommand(typeof(AllCommand))]
     [Subcommand(typeof(ChallengeCommand))]
+    [Subcommand(typeof(DmcCommand))]
     [Subcommand(typeof(JsonCommand))]
     [Subcommand(typeof(KleinserieCommand))]
     [HelpOption]

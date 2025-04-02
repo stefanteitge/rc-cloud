@@ -1,9 +1,9 @@
 ﻿using McMaster.Extensions.CommandLineUtils;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using RcCloud.DateScraper.Application.Dmc;
 using RcCloud.DateScraper.Application.Rck;
 using RcCloud.DateScraper.Cli.Commands;
-using RcCloud.DateScraper.Cli.Kleinserie;
 
 await new HostBuilder()
     .ConfigureLogging((context, builder) =>
@@ -14,6 +14,7 @@ await new HostBuilder()
     {
         services
             .AddSingleton<RaceMeetingPrinter>()
+            .AddDmc()
             .AddRck()
             .AddSingleton<IConsole>(PhysicalConsole.Singleton);
     })

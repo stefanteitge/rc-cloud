@@ -15,6 +15,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RcCloud.DateScraper.Applica
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RcCloud.DateScraper.Application.Rck.Tests", "RcCloud.DateScraper.Application.Rck.Tests\RcCloud.DateScraper.Application.Rck.Tests.csproj", "{4344E502-7C41-6DF2-CE3D-330AEA6E1716}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RcCloud.DateScraper.Application.Rcco", "RcCloud.DateScraper.Application.Rcco\RcCloud.DateScraper.Application.Rcco.csproj", "{ACD155CF-9D21-4BB3-8DC5-79A886EE3826}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RcCloud.DateScraper.Application.Dmc", "RcCloud.DateScraper.Application.Dmc\RcCloud.DateScraper.Application.Dmc.csproj", "{2C42E931-64A8-4999-A96A-ECBC9B0C4DAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RcCloud.DateScraper.Application.Dmc.Tests", "RcCloud.DateScraper.Application.Dmc.Tests\RcCloud.DateScraper.Application.Dmc.Tests.csproj", "{614B2888-0194-43B7-A991-F13716A14130}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +51,18 @@ Global
 		{4344E502-7C41-6DF2-CE3D-330AEA6E1716}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4344E502-7C41-6DF2-CE3D-330AEA6E1716}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4344E502-7C41-6DF2-CE3D-330AEA6E1716}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACD155CF-9D21-4BB3-8DC5-79A886EE3826}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACD155CF-9D21-4BB3-8DC5-79A886EE3826}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACD155CF-9D21-4BB3-8DC5-79A886EE3826}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACD155CF-9D21-4BB3-8DC5-79A886EE3826}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C42E931-64A8-4999-A96A-ECBC9B0C4DAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C42E931-64A8-4999-A96A-ECBC9B0C4DAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C42E931-64A8-4999-A96A-ECBC9B0C4DAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C42E931-64A8-4999-A96A-ECBC9B0C4DAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{614B2888-0194-43B7-A991-F13716A14130}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{614B2888-0194-43B7-A991-F13716A14130}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{614B2888-0194-43B7-A991-F13716A14130}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{614B2888-0194-43B7-A991-F13716A14130}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

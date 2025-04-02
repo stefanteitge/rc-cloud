@@ -1,9 +1,11 @@
-﻿using RcCloud.DateScraper.Application.Rck.Services;
+﻿using RcCloud.DateScraper.Application.Dmc;
+using RcCloud.DateScraper.Application.Rck.Services;
 
 namespace RcCloud.DateScraper.Cli.Commands;
 
 internal class AllCommand(
     ChallengeService challenge,
+    DmcService dmc,
     KleinserieService kleinserie,
     RaceMeetingPrinter printer)
 {
@@ -13,6 +15,9 @@ internal class AllCommand(
 
         var kleinserieAll = await kleinserie.Parse();
         all.AddRange(kleinserieAll);
+
+        var dmcAll = await dmc.Parse();
+        all.AddRange(dmcAll);
 
         all.Sort((a, b) => a.Date.CompareTo(b.Date));
 

@@ -15,6 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\RcCloud.DateScraper.Application.Dmc\RcCloud.DateScraper.Application.Dmc.csproj" />
     <ProjectReference Include="..\RcCloud.DateScraper.Application.Myrcm\RcCloud.DateScraper.Application.Myrcm.csproj" />
     <ProjectReference Include="..\RcCloud.DateScraper.Application.Rck\RcCloud.DateScraper.Application.Rck.csproj" />
   </ItemGroup>

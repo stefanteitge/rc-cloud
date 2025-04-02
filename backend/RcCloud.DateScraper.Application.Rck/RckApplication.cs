@@ -1,15 +1,14 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using RcCloud.DateScraper.Application.Rck.Services;
 
-namespace RcCloud.DateScraper.Application.Rck
+namespace RcCloud.DateScraper.Application.Rck;
+
+public static class RckApplication
 {
-    public static class RckApplication
+    public static IServiceCollection AddRck(this IServiceCollection services)
     {
-        public static IServiceCollection AddRck(this IServiceCollection services)
-        {
-            return services
-                .AddTransient<ChallengeService>()
-                .AddTransient<KleinserieService>();
-        }
+        return services
+            .AddTransient<ChallengeService>()
+            .AddTransient<KleinserieService>();
     }
 }
