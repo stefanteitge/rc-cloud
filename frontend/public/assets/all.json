@@ -1,6 +1,702 @@
 [
   {
     "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-01-04",
+    "location": "MSV H\u00FCrtgenwald e.V.",
+    "groups": [
+      {
+        "id": "west"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-01-05",
+    "location": "AMC Magdeburg e.V.",
+    "groups": [
+      {
+        "id": "east"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-01-05",
+    "location": "MSV H\u00FCrtgenwald e.V.",
+    "groups": [
+      {
+        "id": "west"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-01-05",
+    "location": "RC Cars K\u00F6ngen e.V.",
+    "groups": [
+      {
+        "id": "south"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-01-05",
+    "location": "TSV 1871 Augsburg e.V.",
+    "groups": [
+      {
+        "id": "south"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-01-12",
+    "location": "RCCR Munzig e.V.",
+    "groups": [
+      {
+        "id": "east"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-01-12",
+    "location": "ORC-B G\u00F6ttingen e.V.",
+    "groups": [
+      {
+        "id": "north"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-01-12",
+    "location": "Modell-Car-Club Bad Kissingen e.V.",
+    "groups": [
+      {
+        "id": "south"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-01-12",
+    "location": "MCRT Aschaffenburg",
+    "groups": [
+      {
+        "id": "central"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-01-18",
+    "location": " Sportkreisvorsitzender West ",
+    "groups": []
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-01-19",
+    "location": "Burning Wheels Blankenfelde",
+    "groups": [
+      {
+        "id": "east"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-01-19",
+    "location": "AMC Langenfeld e.V.",
+    "groups": [
+      {
+        "id": "west"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-01-26",
+    "location": "MAC OR H\u00FCtschenhausen e.V.",
+    "groups": [
+      {
+        "id": "central"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-02-02",
+    "location": "MSV H\u00FCrtgenwald e.V.",
+    "groups": [
+      {
+        "id": "west"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-02-02",
+    "location": "AMC Magdeburg e.V.",
+    "groups": [
+      {
+        "id": "east"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-02-02",
+    "location": "MAC Siersburg e.V.",
+    "groups": [
+      {
+        "id": "central"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-02-09",
+    "location": "RCCR Munzig e.V.",
+    "groups": [
+      {
+        "id": "east"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-02-09",
+    "location": "MAC OR H\u00FCtschenhausen e.V.",
+    "groups": [
+      {
+        "id": "central"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-02-09",
+    "location": "MRC Leipzig e.V.",
+    "groups": [
+      {
+        "id": "east"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-02-16",
+    "location": "AMC Langenfeld e.V.",
+    "groups": [
+      {
+        "id": "west"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-02-16",
+    "location": "MCRT Aschaffenburg",
+    "groups": [
+      {
+        "id": "central"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-02-16",
+    "location": "Modell-Car-Club Bad Kissingen e.V.",
+    "groups": [
+      {
+        "id": "south"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-03-02",
+    "location": "MAC Solms",
+    "groups": [
+      {
+        "id": "central"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-03-02",
+    "location": " Referent Gro\u00DFmodelle ",
+    "groups": []
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-03-02",
+    "location": "RC Fun Racer",
+    "groups": [
+      {
+        "id": "west"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-03-02",
+    "location": "TSV Mariendorf 97 Berlin",
+    "groups": []
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-03-09",
+    "location": "MRC Leipzig e.V.",
+    "groups": [
+      {
+        "id": "east"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-03-09",
+    "location": "MAC OR H\u00FCtschenhausen e.V.",
+    "groups": [
+      {
+        "id": "central"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-03-09",
+    "location": "MSV H\u00FCrtgenwald e.V.",
+    "groups": [
+      {
+        "id": "west"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-03-09",
+    "location": "TS-Gross Auheim",
+    "groups": [
+      {
+        "id": "central"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-03-15",
+    "location": "Spessart Racer",
+    "groups": [
+      {
+        "id": "central"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-03-15",
+    "location": " Sportkreisvorsitzender S\u00FCd ",
+    "groups": []
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-03-16",
+    "location": "Modell-Car-Club Bad Kissingen e.V.",
+    "groups": [
+      {
+        "id": "south"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-03-16",
+    "location": "AMC Langenfeld e.V.",
+    "groups": [
+      {
+        "id": "west"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-03-23",
+    "location": "VfR R\u00FCsselsheim e.V.",
+    "groups": [
+      {
+        "id": "central"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-03-23",
+    "location": "AMC Magdeburg e.V.",
+    "groups": [
+      {
+        "id": "east"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-03-23",
+    "location": "MCC Fellbach e.V.",
+    "groups": [
+      {
+        "id": "south"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-03-23",
+    "location": "ORC-B G\u00F6ttingen e.V.",
+    "groups": [
+      {
+        "id": "north"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-03-23",
+    "location": "ORC-B G\u00F6ttingen e.V.",
+    "groups": [
+      {
+        "id": "north"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-03-30",
+    "location": "RC-Club Grossheubach e.V.",
+    "groups": [
+      {
+        "id": "central"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-03-30",
+    "location": " Referent EG ",
+    "groups": []
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-03-30",
+    "location": "RC Racer Hochsauerland e.V.",
+    "groups": [
+      {
+        "id": "west"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-03-30",
+    "location": "RCCR Munzig e.V.",
+    "groups": [
+      {
+        "id": "east"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-04-06",
+    "location": "Modellsport M\u00FCnsterland e.V.",
+    "groups": [
+      {
+        "id": "west"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-04-06",
+    "location": "MAC OR H\u00FCtschenhausen e.V.",
+    "groups": [
+      {
+        "id": "central"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-04-06",
+    "location": "TSV Mariendorf 97 Berlin",
+    "groups": []
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-04-06",
+    "location": "GFC Donath",
+    "groups": [
+      {
+        "id": "south"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-04-06",
+    "location": "MCK e.V. Dormagen",
+    "groups": [
+      {
+        "id": "west"
+      }
+    ]
+  },
+  {
+    "series": {
       "id": "challenge"
     },
     "season": {
@@ -8,6 +704,107 @@
     },
     "date": "2025-04-06",
     "location": "Rudolstadt",
+    "groups": [
+      {
+        "id": "east"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-04-10",
+    "location": "MC Dortmund e.V.",
+    "groups": [
+      {
+        "id": "west"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-04-11",
+    "location": "MC Dortmund e.V.",
+    "groups": [
+      {
+        "id": "west"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-04-12",
+    "location": "TS-Gross Auheim",
+    "groups": []
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-04-13",
+    "location": "MC Dortmund e.V.",
+    "groups": [
+      {
+        "id": "west"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "challenge"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-04-13",
+    "location": "Hanau",
+    "groups": [
+      {
+        "id": "central"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "challenge"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-04-13",
+    "location": "Wagenfeld",
+    "groups": [
+      {
+        "id": "north"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-04-13",
+    "location": "AMC Magdeburg e.V.",
     "groups": [
       {
         "id": "east"
@@ -46,13 +843,28 @@
   },
   {
     "series": {
-      "id": "challenge"
+      "id": "dmc"
     },
     "season": {
       "id": "current"
     },
     "date": "2025-04-13",
-    "location": "Wagenfeld",
+    "location": "ESV Bischofsheim e.V.",
+    "groups": [
+      {
+        "id": "central"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-04-13",
+    "location": "MC Munster e.V.",
     "groups": [
       {
         "id": "north"
@@ -61,16 +873,106 @@
   },
   {
     "series": {
-      "id": "challenge"
+      "id": "dmc"
     },
     "season": {
       "id": "current"
     },
     "date": "2025-04-13",
-    "location": "Hanau",
+    "location": "MC Munster e.V.",
+    "groups": [
+      {
+        "id": "north"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-04-13",
+    "location": "TS-Gross Auheim",
     "groups": [
       {
         "id": "central"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-04-19",
+    "location": "ASC Potsdam e.V.",
+    "groups": [
+      {
+        "id": "east"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-04-20",
+    "location": "MCC T\u00FCrkheim e.V.",
+    "groups": [
+      {
+        "id": "south"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-04-20",
+    "location": "AMC Senftenberg",
+    "groups": [
+      {
+        "id": "east"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-04-26",
+    "location": "RC Halle e.V.",
+    "groups": [
+      {
+        "id": "east"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-04-27",
+    "location": "RC Offroad Staaken e.V.",
+    "groups": [
+      {
+        "id": "east"
       }
     ]
   },
@@ -103,6 +1005,133 @@
   },
   {
     "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-04-27",
+    "location": "ASC Celle e.V.",
+    "groups": [
+      {
+        "id": "north"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-04-27",
+    "location": "ASC Celle e.V.",
+    "groups": [
+      {
+        "id": "north"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-04-27",
+    "location": "Modellsport M\u00FCnsterland e.V.",
+    "groups": [
+      {
+        "id": "west"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-04-27",
+    "location": "1. Marzahner Racing Club",
+    "groups": [
+      {
+        "id": "east"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-04-27",
+    "location": "RMC Wolfsburg e.V.",
+    "groups": [
+      {
+        "id": "north"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-04-27",
+    "location": "AMC M\u00FChlau",
+    "groups": [
+      {
+        "id": "east"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-04-27",
+    "location": "RCRT Duisburg",
+    "groups": [
+      {
+        "id": "west"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-04-27",
+    "location": "TSG/MST Estenfeld e.V.",
+    "groups": []
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-04-27",
+    "location": "ESV Bischofsheim e.V.",
+    "groups": []
+  },
+  {
+    "series": {
       "id": "kleinserie"
     },
     "season": {
@@ -117,6 +1146,21 @@
       {
         "id": "north"
       },
+      {
+        "id": "west"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-05-01",
+    "location": "MAC Eifel-Elos e.V.",
+    "groups": [
       {
         "id": "west"
       }
@@ -139,6 +1183,77 @@
   },
   {
     "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-05-04",
+    "location": "MAC Eifel-Elos e.V.",
+    "groups": [
+      {
+        "id": "west"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-05-04",
+    "location": "Wiesbadener Minicar Club e.V.",
+    "groups": [
+      {
+        "id": "central"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-05-04",
+    "location": "TSV Mariendorf 97 Berlin",
+    "groups": [
+      {
+        "id": "east"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-05-04",
+    "location": "AMC Senftenberg",
+    "groups": [
+      {
+        "id": "east"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-05-04",
+    "location": "MAC Uetersen e.V.",
+    "groups": []
+  },
+  {
+    "series": {
       "id": "kleinserie"
     },
     "season": {
@@ -146,6 +1261,276 @@
     },
     "date": "2025-05-04",
     "location": "Berlin",
+    "groups": [
+      {
+        "id": "east"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-05-04",
+    "location": "MRC Leipzig e.V.",
+    "groups": [
+      {
+        "id": "east"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-05-04",
+    "location": "Nitromaniacs e.V.",
+    "groups": [
+      {
+        "id": "west"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-05-04",
+    "location": "MSG Niesky e.V.",
+    "groups": [
+      {
+        "id": "east"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-05-04",
+    "location": "RC Offroad Staaken e.V.",
+    "groups": [
+      {
+        "id": "east"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-05-04",
+    "location": "RCR Peterberg e.V.",
+    "groups": [
+      {
+        "id": "central"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-05-04",
+    "location": "RIMAR Rhein Ijssel Modell Auto Race",
+    "groups": [
+      {
+        "id": "west"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-05-04",
+    "location": "MRT Rosenheim e.V.",
+    "groups": [
+      {
+        "id": "south"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-05-04",
+    "location": "MSG Niesky e.V.",
+    "groups": [
+      {
+        "id": "east"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-05-05",
+    "location": "MSC Osterhofen e.V.",
+    "groups": [
+      {
+        "id": "south"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-05-11",
+    "location": "RC Speedracer",
+    "groups": [
+      {
+        "id": "east"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-05-11",
+    "location": "Modell Car Club Rhein Ahr e.V.",
+    "groups": [
+      {
+        "id": "west"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-05-11",
+    "location": "BOC Kiel e.V.",
+    "groups": [
+      {
+        "id": "north"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-05-11",
+    "location": "MAC Meckenheim e.V.",
+    "groups": [
+      {
+        "id": "west"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-05-11",
+    "location": "AMC Langenfeld e.V.",
+    "groups": [
+      {
+        "id": "west"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-05-11",
+    "location": "MAC OR H\u00FCtschenhausen e.V.",
+    "groups": [
+      {
+        "id": "central"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-05-11",
+    "location": "MC Ettlingen e.V.",
+    "groups": [
+      {
+        "id": "central"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-05-11",
+    "location": "ASC Potsdam e.V.",
+    "groups": [
+      {
+        "id": "east"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "challenge"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-05-11",
+    "location": "Zwickau",
     "groups": [
       {
         "id": "east"
@@ -169,16 +1554,46 @@
   },
   {
     "series": {
-      "id": "challenge"
+      "id": "dmc"
     },
     "season": {
       "id": "current"
     },
-    "date": "2025-05-11",
-    "location": "Zwickau",
+    "date": "2025-05-17",
+    "location": "MAC Solms",
+    "groups": [
+      {
+        "id": "central"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-05-18",
+    "location": "MRC Leipzig e.V.",
     "groups": [
       {
         "id": "east"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-05-18",
+    "location": "Offroad Club Ostsee e.V.",
+    "groups": [
+      {
+        "id": "north"
       }
     ]
   },
@@ -202,17 +1617,59 @@
   },
   {
     "series": {
-      "id": "challenge"
+      "id": "dmc"
     },
     "season": {
       "id": "current"
     },
-    "date": "2025-05-31",
-    "location": "Bad Breisig",
+    "date": "2025-05-18",
+    "location": "RC Speedracer",
     "groups": [
       {
-        "id": "central"
-      },
+        "id": "east"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-05-18",
+    "location": "MAC Burgdorf e.V.",
+    "groups": [
+      {
+        "id": "north"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-05-18",
+    "location": "MAC Burgdorf e.V.",
+    "groups": [
+      {
+        "id": "north"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-05-25",
+    "location": "MSV H\u00FCrtgenwald e.V.",
+    "groups": [
       {
         "id": "west"
       }
@@ -220,12 +1677,207 @@
   },
   {
     "series": {
-      "id": "kleinserie"
+      "id": "dmc"
     },
     "season": {
       "id": "current"
     },
-    "date": "2025-06-01",
+    "date": "2025-05-25",
+    "location": "MSV Linsengericht",
+    "groups": [
+      {
+        "id": "central"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-05-25",
+    "location": "RC-Club Grossheubach e.V.",
+    "groups": [
+      {
+        "id": "central"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-05-25",
+    "location": "AMC Senftenberg",
+    "groups": [
+      {
+        "id": "east"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-05-25",
+    "location": "ASC Potsdam e.V.",
+    "groups": [
+      {
+        "id": "east"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-05-25",
+    "location": "MC Ettlingen e.V.",
+    "groups": [
+      {
+        "id": "central"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-05-25",
+    "location": "RC Speedracer",
+    "groups": [
+      {
+        "id": "east"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-05-25",
+    "location": "Modellsport M\u00FCnsterland e.V.",
+    "groups": [
+      {
+        "id": "west"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-05-25",
+    "location": "MAC Hamburg e.V.",
+    "groups": [
+      {
+        "id": "north"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-05-25",
+    "location": "MSV H\u00FCrtgenwald e.V.",
+    "groups": [
+      {
+        "id": "west"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-05-25",
+    "location": "MC Munster e.V.",
+    "groups": [
+      {
+        "id": "north"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-05-31",
+    "location": "MRC Leipzig e.V.",
+    "groups": [
+      {
+        "id": "east"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-05-31",
+    "location": "MRC Leipzig e.V.",
+    "groups": [
+      {
+        "id": "east"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-05-31",
+    "location": "MRC Leipzig e.V.",
+    "groups": [
+      {
+        "id": "east"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "challenge"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-05-31",
     "location": "Bad Breisig",
     "groups": [
       {
@@ -253,13 +1905,121 @@
   },
   {
     "series": {
-      "id": "challenge"
+      "id": "dmc"
     },
     "season": {
       "id": "current"
     },
-    "date": "2025-06-08",
-    "location": "Burgdorf",
+    "date": "2025-06-01",
+    "location": "RC Offroad Staaken e.V.",
+    "groups": [
+      {
+        "id": "east"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-06-01",
+    "location": "MC Schwedt e.V.",
+    "groups": [
+      {
+        "id": "east"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-06-01",
+    "location": "MSC Sand e.V.",
+    "groups": [
+      {
+        "id": "south"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-06-01",
+    "location": "ASC Celle e.V.",
+    "groups": [
+      {
+        "id": "north"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-06-01",
+    "location": "RT Fichtenberg",
+    "groups": [
+      {
+        "id": "south"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-06-01",
+    "location": "ESV Bischofsheim e.V.",
+    "groups": [
+      {
+        "id": "central"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "kleinserie"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-06-01",
+    "location": "Bad Breisig",
+    "groups": [
+      {
+        "id": "central"
+      },
+      {
+        "id": "west"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-06-01",
+    "location": "ASC Celle e.V.",
     "groups": [
       {
         "id": "north"
@@ -283,6 +2043,204 @@
   },
   {
     "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-06-08",
+    "location": "MRSC Amberg e.V.",
+    "groups": [
+      {
+        "id": "south"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-06-08",
+    "location": "TSV Mariendorf 97 Berlin",
+    "groups": [
+      {
+        "id": "east"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-06-08",
+    "location": "RC Haltern e.V.",
+    "groups": [
+      {
+        "id": "west"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-06-08",
+    "location": "Panik Team Troisdorf e.V.",
+    "groups": [
+      {
+        "id": "west"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-06-08",
+    "location": "MFK K\u00FCrten e.V.",
+    "groups": []
+  },
+  {
+    "series": {
+      "id": "challenge"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-06-08",
+    "location": "Burgdorf",
+    "groups": [
+      {
+        "id": "north"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-06-08",
+    "location": " Referent OR8 ",
+    "groups": []
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-06-08",
+    "location": " Referent Gro\u00DFmodelle ",
+    "groups": []
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-06-15",
+    "location": "ORC-B G\u00F6ttingen e.V.",
+    "groups": [
+      {
+        "id": "north"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-06-15",
+    "location": "Modell Car Club Rhein Ahr e.V.",
+    "groups": [
+      {
+        "id": "west"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-06-15",
+    "location": "ORC-B G\u00F6ttingen e.V.",
+    "groups": [
+      {
+        "id": "north"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-06-15",
+    "location": "MAC Meckenheim e.V.",
+    "groups": [
+      {
+        "id": "west"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-06-15",
+    "location": "Modellsport M\u00FCnsterland e.V.",
+    "groups": [
+      {
+        "id": "west"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-06-15",
+    "location": "Modellsport Club Halle / Saale e.V.",
+    "groups": [
+      {
+        "id": "east"
+      }
+    ]
+  },
+  {
+    "series": {
       "id": "kleinserie"
     },
     "season": {
@@ -296,6 +2254,77 @@
       },
       {
         "id": "east"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-06-15",
+    "location": "MC Welden e.V.",
+    "groups": [
+      {
+        "id": "south"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-06-15",
+    "location": "RCCC Coesfeld",
+    "groups": [
+      {
+        "id": "west"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-06-15",
+    "location": "MSC Ober-M\u00F6rlen e.V.",
+    "groups": [
+      {
+        "id": "central"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-06-21",
+    "location": " Referent EG ",
+    "groups": []
+  },
+  {
+    "series": {
+      "id": "challenge"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-06-22",
+    "location": "Braunschweig",
+    "groups": [
+      {
+        "id": "north"
       }
     ]
   },
@@ -322,7 +2351,67 @@
       "id": "current"
     },
     "date": "2025-06-22",
-    "location": "Braunschweig",
+    "location": "N\u00FCrnberg",
+    "groups": [
+      {
+        "id": "south"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-06-22",
+    "location": "AMC Langenfeld e.V.",
+    "groups": [
+      {
+        "id": "west"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-06-22",
+    "location": "RC Cars K\u00F6ngen e.V.",
+    "groups": [
+      {
+        "id": "south"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-06-22",
+    "location": "MAC Eifel-Elos e.V.",
+    "groups": [
+      {
+        "id": "west"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-06-22",
+    "location": "MSC Pol. Braunschweig",
     "groups": [
       {
         "id": "north"
@@ -331,18 +2420,134 @@
   },
   {
     "series": {
-      "id": "challenge"
+      "id": "dmc"
     },
     "season": {
       "id": "current"
     },
     "date": "2025-06-22",
-    "location": "N\u00FCrnberg",
+    "location": "MCC T\u00FCrkheim e.V.",
     "groups": [
       {
         "id": "south"
       }
     ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-06-22",
+    "location": "MC Munster e.V.",
+    "groups": [
+      {
+        "id": "north"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-06-28",
+    "location": "ASC Potsdam e.V.",
+    "groups": [
+      {
+        "id": "east"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-06-28",
+    "location": "Modellsport M\u00FCnsterland e.V.",
+    "groups": [
+      {
+        "id": "west"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-06-29",
+    "location": "RC Speedracer",
+    "groups": [
+      {
+        "id": "east"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-06-29",
+    "location": "MAC OR H\u00FCtschenhausen e.V.",
+    "groups": [
+      {
+        "id": "central"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-06-29",
+    "location": "AMC Senftenberg",
+    "groups": [
+      {
+        "id": "east"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-06-29",
+    "location": "RC Offroad Staaken e.V.",
+    "groups": [
+      {
+        "id": "east"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-06-29",
+    "location": "RC RaceCrew",
+    "groups": []
   },
   {
     "series": {
@@ -379,6 +2584,144 @@
   },
   {
     "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-06-29",
+    "location": "MRC Senden",
+    "groups": []
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-07-05",
+    "location": " Referent OR8 ",
+    "groups": []
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-07-05",
+    "location": "ASC Potsdam e.V.",
+    "groups": [
+      {
+        "id": "east"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-07-06",
+    "location": "Nitromaniacs e.V.",
+    "groups": [
+      {
+        "id": "west"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-07-06",
+    "location": "MAC Meckenheim e.V.",
+    "groups": [
+      {
+        "id": "west"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-07-06",
+    "location": "RIMAR Rhein Ijssel Modell Auto Race",
+    "groups": [
+      {
+        "id": "west"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-07-06",
+    "location": "TSV Mariendorf 97 Berlin",
+    "groups": []
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-07-06",
+    "location": "Modellsport M\u00FCnsterland e.V.",
+    "groups": [
+      {
+        "id": "west"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-07-06",
+    "location": "MAC OR H\u00FCtschenhausen e.V.",
+    "groups": [
+      {
+        "id": "central"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-07-06",
+    "location": "LA Speedway Racing Club",
+    "groups": [
+      {
+        "id": "south"
+      }
+    ]
+  },
+  {
+    "series": {
       "id": "challenge"
     },
     "season": {
@@ -409,6 +2752,32 @@
   },
   {
     "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-07-08",
+    "location": "Nitromaniacs e.V.",
+    "groups": []
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-07-13",
+    "location": "ORT Fulda",
+    "groups": [
+      {
+        "id": "central"
+      }
+    ]
+  },
+  {
+    "series": {
       "id": "challenge"
     },
     "season": {
@@ -419,6 +2788,111 @@
     "groups": [
       {
         "id": "north"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "kleinserie"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-07-13",
+    "location": "Kirchhain",
+    "groups": [
+      {
+        "id": "central"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-07-13",
+    "location": "RC Speedracer",
+    "groups": [
+      {
+        "id": "east"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-07-13",
+    "location": "Modellsport M\u00FCnsterland e.V.",
+    "groups": [
+      {
+        "id": "west"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-07-13",
+    "location": "amc Hamm e.V.",
+    "groups": [
+      {
+        "id": "west"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-07-13",
+    "location": "MAC Uetersen e.V.",
+    "groups": [
+      {
+        "id": "north"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-07-13",
+    "location": "Stoppelhopser Oberhausen e.V.",
+    "groups": [
+      {
+        "id": "west"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-07-13",
+    "location": "EMC Marktoberdorf e.V.",
+    "groups": [
+      {
+        "id": "south"
       }
     ]
   },
@@ -442,16 +2916,105 @@
   },
   {
     "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-07-19",
+    "location": "ASC Potsdam e.V.",
+    "groups": [
+      {
+        "id": "east"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-07-20",
+    "location": " Referent OR8 ",
+    "groups": []
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-07-20",
+    "location": "RC Offroad Staaken e.V.",
+    "groups": [
+      {
+        "id": "east"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-07-20",
+    "location": "BOC Kiel e.V.",
+    "groups": []
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-07-20",
+    "location": "amc Hamm e.V.",
+    "groups": [
+      {
+        "id": "west"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-07-20",
+    "location": "RC Speedracer",
+    "groups": []
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-07-20",
+    "location": "RC Speedracer",
+    "groups": []
+  },
+  {
+    "series": {
       "id": "kleinserie"
     },
     "season": {
       "id": "current"
     },
-    "date": "2025-07-13",
-    "location": "Kirchhain",
+    "date": "2025-07-20",
+    "location": "L\u00FCdenscheid",
     "groups": [
       {
-        "id": "central"
+        "id": "west"
       }
     ]
   },
@@ -472,16 +3035,57 @@
   },
   {
     "series": {
-      "id": "kleinserie"
+      "id": "dmc"
     },
     "season": {
       "id": "current"
     },
-    "date": "2025-07-20",
-    "location": "L\u00FCdenscheid",
+    "date": "2025-07-26",
+    "location": " Referent Gro\u00DFmodelle ",
+    "groups": []
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-07-27",
+    "location": "RC-Offroad Kassel e.V.",
     "groups": [
       {
-        "id": "west"
+        "id": "central"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-07-27",
+    "location": "MCC Laupheim e.V.",
+    "groups": [
+      {
+        "id": "south"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-07-27",
+    "location": "MRT Rosenheim e.V.",
+    "groups": [
+      {
+        "id": "south"
       }
     ]
   },
@@ -509,6 +3113,43 @@
     },
     "date": "2025-07-27",
     "location": "H\u00F6ckendorf / OT Ruppendorf",
+    "groups": [
+      {
+        "id": "east"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-08-02",
+    "location": " Referent Gro\u00DFmodelle ",
+    "groups": []
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-08-02",
+    "location": " Referent ORE ",
+    "groups": []
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-08-03",
+    "location": "RC Offroad Staaken e.V.",
     "groups": [
       {
         "id": "east"
@@ -553,6 +3194,103 @@
   },
   {
     "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-08-03",
+    "location": "MAC OR H\u00FCtschenhausen e.V.",
+    "groups": [
+      {
+        "id": "central"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-08-03",
+    "location": "MSC Kirchhain e.V.",
+    "groups": [
+      {
+        "id": "central"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-08-09",
+    "location": "ASC Potsdam e.V.",
+    "groups": [
+      {
+        "id": "east"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-08-10",
+    "location": "EMC Marktoberdorf e.V.",
+    "groups": []
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-08-10",
+    "location": "MAC Meckenheim e.V.",
+    "groups": [
+      {
+        "id": "west"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-08-10",
+    "location": "AMC M\u00FChlau",
+    "groups": [
+      {
+        "id": "east"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-08-10",
+    "location": "LA Speedway Racing Club",
+    "groups": []
+  },
+  {
+    "series": {
       "id": "kleinserie"
     },
     "season": {
@@ -583,6 +3321,114 @@
   },
   {
     "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-08-17",
+    "location": "TSV Mariendorf 97 Berlin",
+    "groups": [
+      {
+        "id": "east"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-08-17",
+    "location": "ORC-B G\u00F6ttingen e.V.",
+    "groups": []
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-08-20",
+    "location": "ASC Potsdam e.V.",
+    "groups": [
+      {
+        "id": "east"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-08-24",
+    "location": "MRC Leipzig e.V.",
+    "groups": []
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-08-24",
+    "location": "MSC Kirchhain e.V.",
+    "groups": [
+      {
+        "id": "central"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-08-24",
+    "location": "MC Munster e.V.",
+    "groups": [
+      {
+        "id": "north"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-08-24",
+    "location": " Referent EG ",
+    "groups": []
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-08-30",
+    "location": "MAC Meckenheim e.V.",
+    "groups": [
+      {
+        "id": "west"
+      }
+    ]
+  },
+  {
+    "series": {
       "id": "challenge"
     },
     "season": {
@@ -605,6 +3451,303 @@
       },
       {
         "id": "east"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-08-31",
+    "location": "RC Offroad Heiligenstadt e.V.",
+    "groups": [
+      {
+        "id": "central"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-08-31",
+    "location": "RC Speedracer",
+    "groups": []
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-08-31",
+    "location": "AMC Senftenberg",
+    "groups": [
+      {
+        "id": "east"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-08-31",
+    "location": "AMC M\u00FChlau",
+    "groups": []
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-08-31",
+    "location": "AMC M\u00FChlau",
+    "groups": []
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-08-31",
+    "location": " Referent OR8 ",
+    "groups": []
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-08-31",
+    "location": "MAC Meckenheim e.V.",
+    "groups": [
+      {
+        "id": "west"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-09-07",
+    "location": "MCK e.V. Dormagen",
+    "groups": [
+      {
+        "id": "west"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-09-07",
+    "location": "Modellsport M\u00FCnsterland e.V.",
+    "groups": [
+      {
+        "id": "west"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-09-07",
+    "location": "TSV Mariendorf 97 Berlin",
+    "groups": [
+      {
+        "id": "east"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-09-07",
+    "location": "Offroad Club Ostsee e.V.",
+    "groups": []
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-09-07",
+    "location": "MC Munster e.V.",
+    "groups": [
+      {
+        "id": "north"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-09-07",
+    "location": "MAC N\u00FCrnberg e.V.",
+    "groups": []
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-09-07",
+    "location": "MAC N\u00FCrnberg e.V.",
+    "groups": []
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-09-14",
+    "location": "RC Speedracer",
+    "groups": [
+      {
+        "id": "east"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-09-14",
+    "location": "RMC Wolfsburg e.V.",
+    "groups": []
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-09-14",
+    "location": " Referent Gro\u00DFmodelle ",
+    "groups": []
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-09-14",
+    "location": " Referent OR8 ",
+    "groups": []
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-09-14",
+    "location": "MRC Leipzig e.V.",
+    "groups": []
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-09-14",
+    "location": "RC Cars K\u00F6ngen e.V.",
+    "groups": []
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-09-21",
+    "location": "RMC Wolfsburg e.V.",
+    "groups": [
+      {
+        "id": "north"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-09-21",
+    "location": "MRC Leipzig e.V.",
+    "groups": [
+      {
+        "id": "east"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-09-21",
+    "location": "MRC Senden",
+    "groups": [
+      {
+        "id": "south"
       }
     ]
   },
@@ -640,6 +3783,21 @@
   },
   {
     "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-09-28",
+    "location": "MC Munster e.V.",
+    "groups": [
+      {
+        "id": "north"
+      }
+    ]
+  },
+  {
+    "series": {
       "id": "challenge"
     },
     "season": {
@@ -647,6 +3805,92 @@
     },
     "date": "2025-09-28",
     "location": "Gelenau",
+    "groups": [
+      {
+        "id": "east"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-09-28",
+    "location": "amc Hamm e.V.",
+    "groups": [
+      {
+        "id": "west"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-09-28",
+    "location": "RC-Club Grossheubach e.V.",
+    "groups": [
+      {
+        "id": "central"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-09-28",
+    "location": "MAC Meckenheim e.V.",
+    "groups": [
+      {
+        "id": "west"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-09-28",
+    "location": "MSV H\u00FCrtgenwald e.V.",
+    "groups": []
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-09-28",
+    "location": "1. Marzahner Racing Club",
+    "groups": [
+      {
+        "id": "east"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-10-04",
+    "location": "RC Offroad Staaken e.V.",
     "groups": [
       {
         "id": "east"
@@ -670,6 +3914,47 @@
   },
   {
     "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-10-05",
+    "location": "Modell Car Club Rhein Ahr e.V.",
+    "groups": [
+      {
+        "id": "west"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-10-05",
+    "location": "AMC M\u00FChlau",
+    "groups": [
+      {
+        "id": "east"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-10-05",
+    "location": "RC Offroad Staaken e.V.",
+    "groups": []
+  },
+  {
+    "series": {
       "id": "kleinserie"
     },
     "season": {
@@ -680,6 +3965,32 @@
     "groups": [
       {
         "id": "west"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-10-06",
+    "location": " Referent ORE ",
+    "groups": []
+  },
+  {
+    "series": {
+      "id": "challenge"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-10-12",
+    "location": "Chemnitz",
+    "groups": [
+      {
+        "id": "east"
       }
     ]
   },
@@ -700,13 +4011,28 @@
   },
   {
     "series": {
-      "id": "challenge"
+      "id": "dmc"
     },
     "season": {
       "id": "current"
     },
     "date": "2025-10-12",
-    "location": "Chemnitz",
+    "location": "RC-Club Grossheubach e.V.",
+    "groups": [
+      {
+        "id": "central"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-10-19",
+    "location": "AMC Senftenberg",
     "groups": [
       {
         "id": "east"
@@ -725,6 +4051,21 @@
     "groups": [
       {
         "id": "east"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-10-26",
+    "location": "MAC OR H\u00FCtschenhausen e.V.",
+    "groups": [
+      {
+        "id": "central"
       }
     ]
   },
@@ -752,6 +4093,51 @@
     },
     "date": "2025-11-16",
     "location": "Herrenhaide",
+    "groups": [
+      {
+        "id": "east"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-11-23",
+    "location": "MAC OR H\u00FCtschenhausen e.V.",
+    "groups": [
+      {
+        "id": "central"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-12-08",
+    "location": "RCCR Munzig e.V.",
+    "groups": [
+      {
+        "id": "east"
+      }
+    ]
+  },
+  {
+    "series": {
+      "id": "dmc"
+    },
+    "season": {
+      "id": "current"
+    },
+    "date": "2025-12-12",
+    "location": "RCCR Munzig e.V.",
     "groups": [
       {
         "id": "east"
