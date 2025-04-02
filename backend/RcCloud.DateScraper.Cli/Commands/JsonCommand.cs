@@ -1,4 +1,4 @@
-﻿using RcCloud.DateScraper.Rck.Application.Services;
+﻿using RcCloud.DateScraper.Application.Rck.Services;
 using System.Text.Json;
 
 namespace RcCloud.DateScraper.Cli.Commands;

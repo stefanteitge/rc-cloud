@@ -1,6 +1,6 @@
 ﻿using RcCloud.DateScraper.Domain;
 
-namespace RcCloud.DateScraper.Rck.Application.SubDomain
+namespace RcCloud.DateScraper.Application.Rck.SubDomain
 {
     internal static class TerminMapper
     {

@@ -1,10 +1,10 @@
 ﻿using AngleSharp;
 using AngleSharp.Dom;
+using RcCloud.DateScraper.Application.Rck.SubDomain;
 using RcCloud.DateScraper.Domain;
-using RcCloud.DateScraper.Rck.Application.SubDomain;
 using System.Globalization;
 
-namespace RcCloud.DateScraper.Rck.Application.Services
+namespace RcCloud.DateScraper.Application.Rck.Services
 {
     public abstract class AbstractRckService
     {

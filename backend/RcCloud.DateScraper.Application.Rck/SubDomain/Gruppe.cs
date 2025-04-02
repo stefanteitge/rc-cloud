@@ -1,4 +1,4 @@
-﻿namespace RcCloud.DateScraper.Rck.Application.SubDomain
+﻿namespace RcCloud.DateScraper.Application.Rck.SubDomain
 {
     public enum Gruppe
     {

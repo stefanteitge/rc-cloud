@@ -1,13 +1,13 @@
 ﻿using AngleSharp.Dom;
 using RcCloud.DateScraper.Domain;
 
-namespace RcCloud.DateScraper.Rck.Application.Services
+namespace RcCloud.DateScraper.Application.Rck.Services
 {
-    public class KleinserieService : AbstractRckService
+    public class ChallengeService : AbstractRckService
     {
-        private readonly Url BaseUrl = new("https://kleinserie.rck-solutions.de/indexgo.php");
+        private readonly Url BaseUrl = new Url("https://challenge.rck-solutions.de/indexgo.php");
 
-        private readonly SeriesReference Series = new SeriesReference("kleinserie");
+        private readonly SeriesReference Series = new SeriesReference("challenge");
 
         public async Task<IEnumerable<RaceMeeting>> Parse()
         {

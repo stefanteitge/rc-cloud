@@ -1,7 +1,7 @@
+using RcCloud.DateScraper.Application.Rck.Services;
 using RcCloud.DateScraper.Domain;
-using RcCloud.DateScraper.Rck.Application.Services;
 
-namespace RcCloud.DateScraper.Rck.Application.Tests;
+namespace RcCloud.DateScraper.Application.Rck.Tests;
 
 public class KleinserieServiceTests
 {

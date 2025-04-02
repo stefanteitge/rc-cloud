@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using RcCloud.DateScraper.Rck.Application.Services;
+using RcCloud.DateScraper.Application.Rck.Services;
 
-namespace RcCloud.DateScraper.Rck.Application
+namespace RcCloud.DateScraper.Application.Rck
 {
     public static class RckApplication
     {

@@ -1,9 +1,9 @@
 ﻿using McMaster.Extensions.CommandLineUtils;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using RcCloud.DateScraper.Application.Rck;
 using RcCloud.DateScraper.Cli.Commands;
 using RcCloud.DateScraper.Cli.Kleinserie;
-using RcCloud.DateScraper.Rck.Application;
 
 await new HostBuilder()
     .ConfigureLogging((context, builder) =>

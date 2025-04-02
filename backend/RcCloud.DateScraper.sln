@@ -1,15 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35919.96 d17.13
+VisualStudioVersion = 17.13.35919.96
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RcCloud.DateScraper.Cli", "RcCloud.DateScraper.Cli\RcCloud.DateScraper.Cli.csproj", "{111F4CF9-0EA9-4B2D-8E1F-AF4D2F1A3D37}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RcCloud.DateScraper.Rck.Application", "RcCloud.DateScraper.Rck.Application\RcCloud.DateScraper.Rck.Application.csproj", "{CAC8F792-6467-4BBB-A55A-99D8509369DD}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RcCloud.DateScraper.Rck.Application.Tests", "RcCloud.DateScraper.Rck.Application.Tests\RcCloud.DateScraper.Rck.Application.Tests.csproj", "{B845C3C1-2655-4CF3-AC01-D706A2EF6E55}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RcCloud.DateScraper.Domain", "RcCloud.DateScraper.Domain\RcCloud.DateScraper.Domain.csproj", "{EB419650-7485-4DFE-99FC-75375EDCD52D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RcCloud.DateScraper.Application.Myrcm", "RcCloud.DateScraper.Application.Myrcm\RcCloud.DateScraper.Application.Myrcm.csproj", "{0BDB4541-15AA-E6AD-FDC4-6D2A12D723E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RcCloud.DateScraper.Application.Myrcm.Tests", "RcCloud.DateScraper.Application.Myrcm.Tests\RcCloud.DateScraper.Application.Myrcm.Tests.csproj", "{7A1607E1-6B3D-3022-25B9-40E3DCFE73D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RcCloud.DateScraper.Application.Rck", "RcCloud.DateScraper.Application.Rck\RcCloud.DateScraper.Application.Rck.csproj", "{5DB347F7-E4FA-D9CD-2D18-862C06A0FD88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RcCloud.DateScraper.Application.Rck.Tests", "RcCloud.DateScraper.Application.Rck.Tests\RcCloud.DateScraper.Application.Rck.Tests.csproj", "{4344E502-7C41-6DF2-CE3D-330AEA6E1716}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,18 +25,26 @@ Global
 		{111F4CF9-0EA9-4B2D-8E1F-AF4D2F1A3D37}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{111F4CF9-0EA9-4B2D-8E1F-AF4D2F1A3D37}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{111F4CF9-0EA9-4B2D-8E1F-AF4D2F1A3D37}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CAC8F792-6467-4BBB-A55A-99D8509369DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CAC8F792-6467-4BBB-A55A-99D8509369DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CAC8F792-6467-4BBB-A55A-99D8509369DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CAC8F792-6467-4BBB-A55A-99D8509369DD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B845C3C1-2655-4CF3-AC01-D706A2EF6E55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B845C3C1-2655-4CF3-AC01-D706A2EF6E55}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B845C3C1-2655-4CF3-AC01-D706A2EF6E55}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B845C3C1-2655-4CF3-AC01-D706A2EF6E55}.Release|Any CPU.Build.0 = Release|Any CPU
 		{EB419650-7485-4DFE-99FC-75375EDCD52D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{EB419650-7485-4DFE-99FC-75375EDCD52D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EB419650-7485-4DFE-99FC-75375EDCD52D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EB419650-7485-4DFE-99FC-75375EDCD52D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BDB4541-15AA-E6AD-FDC4-6D2A12D723E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BDB4541-15AA-E6AD-FDC4-6D2A12D723E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BDB4541-15AA-E6AD-FDC4-6D2A12D723E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BDB4541-15AA-E6AD-FDC4-6D2A12D723E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A1607E1-6B3D-3022-25B9-40E3DCFE73D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A1607E1-6B3D-3022-25B9-40E3DCFE73D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A1607E1-6B3D-3022-25B9-40E3DCFE73D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A1607E1-6B3D-3022-25B9-40E3DCFE73D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DB347F7-E4FA-D9CD-2D18-862C06A0FD88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DB347F7-E4FA-D9CD-2D18-862C06A0FD88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DB347F7-E4FA-D9CD-2D18-862C06A0FD88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DB347F7-E4FA-D9CD-2D18-862C06A0FD88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4344E502-7C41-6DF2-CE3D-330AEA6E1716}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4344E502-7C41-6DF2-CE3D-330AEA6E1716}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4344E502-7C41-6DF2-CE3D-330AEA6E1716}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4344E502-7C41-6DF2-CE3D-330AEA6E1716}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
