@@ -1,28 +1,14 @@
-﻿using RcCloud.DateScraper.Application.Dmc;
-using RcCloud.DateScraper.Application.Rck.Services;
-using System.Text.Json;
-using RcCloud.DateScraper.Cli.Commands.Json;
+﻿using System.Text.Json;
+using RcCloud.DateScraper.Cli.Commands.Utils;
 
 namespace RcCloud.DateScraper.Cli.Commands;
 
-internal class JsonCommand(
-    ChallengeService challenge,
-    DmcService dmc,
-    KleinserieService kleinserie)
+internal class JsonCommand(RetrieveAllService retrieveAll)
 {
     public async Task OnExecute()
     {
-        var all = (await challenge.Parse()).ToList();
-
-        var kleinserieAll = await kleinserie.Parse();
-        all.AddRange(kleinserieAll);
-
-        var dmcAll = await dmc.Parse();
-        all.AddRange(dmcAll);
-
-        all.Sort((a, b) => a.Date.CompareTo(b.Date));
-
-        // TODO: this should use a DTO
+        var all = await retrieveAll.Retrieve();
+        
         var options = new JsonSerializerOptions(JsonSerializerOptions.Web)
         {
             WriteIndented = true

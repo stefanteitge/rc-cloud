@@ -30,6 +30,10 @@ export class RaceMeetingListComponent implements OnInit {
     this.repo.fetchAll();
   }
 
+  getRetrieved() : string {
+    return this.repo.getRetrievedDate();
+  }
+
   getAllDates(): UpcomingDate[] {
     return this.repo.getAll();
   }

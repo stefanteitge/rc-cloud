@@ -9,6 +9,7 @@ namespace RcCloud.DateScraper.Cli.Commands
     [Subcommand(typeof(DmcCommand))]
     [Subcommand(typeof(JsonCommand))]
     [Subcommand(typeof(KleinserieCommand))]
+    [Subcommand(typeof(MyrcmCommand))]
     [HelpOption]
     internal class RootCommand
     {

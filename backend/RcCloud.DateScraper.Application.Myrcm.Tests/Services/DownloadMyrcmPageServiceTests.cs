@@ -1,6 +1,6 @@
 ﻿using RcCloud.DateScraper.Application.Myrcm.Services;
 
-namespace RcCloud.DateScraper.Application.Myrcm.Tests;
+namespace RcCloud.DateScraper.Application.Myrcm.Tests.Services;
 
 public class DownloadMyrcmPageServiceTests
 {

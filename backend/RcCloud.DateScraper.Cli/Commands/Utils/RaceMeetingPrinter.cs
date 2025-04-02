@@ -1,6 +1,6 @@
 ﻿using RcCloud.DateScraper.Domain;
 
-namespace RcCloud.DateScraper.Cli.Commands;
+namespace RcCloud.DateScraper.Cli.Commands.Utils;
 
 internal class RaceMeetingPrinter
 {
