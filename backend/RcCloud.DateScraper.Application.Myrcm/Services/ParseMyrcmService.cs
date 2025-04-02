@@ -69,7 +69,7 @@ public class ParseMyrcmService(DownloadMyrcmPageService downloadPageService)
         
         if (title.Contains("Tamiya Euro", StringComparison.InvariantCultureIgnoreCase))
         {
-            seriess.Add(SeriesReference.Hudy);
+            seriess.Add(SeriesReference.Tamiya);
         }
         
         if (title.Contains("ostmasters", StringComparison.InvariantCultureIgnoreCase))
