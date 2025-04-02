@@ -8,7 +8,7 @@ public static class DmcApplication
     public static IServiceCollection AddDmc(this IServiceCollection services)
     {
         return services
-            .AddTransient<DmcService>()
+            .AddTransient<ScrapeDmcRaces>()
             .AddTransient<DownloadDmcCalendarService>();
     }
 }

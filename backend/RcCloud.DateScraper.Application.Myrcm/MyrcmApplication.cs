@@ -8,7 +8,9 @@ public static class MyrcmApplication
     public static IServiceCollection AddMyrcm(this IServiceCollection services)
     {
         return services
-            .AddTransient<DownloadMyrcmPageService>()
-            .AddTransient<ParseMyrcmService>();
+            .AddTransient<DownloadMyrcmPages>()
+            .AddTransient<GuessSeriesFromTitle>()
+            .AddTransient<ScrapeMyrcmClubs>()
+            .AddTransient<ScrapeMyrcmRaces>();
     }
 }

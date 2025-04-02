@@ -3,11 +3,11 @@ using RcCloud.DateScraper.Cli.Commands.Utils;
 
 namespace RcCloud.DateScraper.Cli.Commands;
 
-internal class DmcCommand(DmcService service, RaceMeetingPrinter printer)
+internal class DmcCommand(ScrapeDmcRaces races, RaceMeetingPrinter printer)
 {
     public async Task OnExecute()
     {
-        var all = await service.Parse();
+        var all = await races.Parse();
         printer.Print(all);
     }
 }

@@ -1,25 +1,29 @@
 using System.Globalization;
 using System.Runtime.InteropServices.JavaScript;
+using System.Web;
 using AngleSharp;
 using AngleSharp.Dom;
+using RcCloud.DateScraper.Application.Myrcm.SubDomain;
 using RcCloud.DateScraper.Domain;
+using RcCloud.DateScraper.Domain.Clubs;
+using RcCloud.DateScraper.Domain.Races;
 
 namespace RcCloud.DateScraper.Application.Myrcm.Services;
 
-public class ParseMyrcmService(DownloadMyrcmPageService downloadPageService)
+public class ScrapeMyrcmRaces(DownloadMyrcmPages downloadPages, GuessSeriesFromTitle guessSeriesFromTitle)
 {
-    public async Task<IEnumerable<RaceMeeting>> Parse()
+    public async Task<IEnumerable<RaceMeeting>> Scrape()
     {
-        var downloaded = await downloadPageService.Download(DownloadFilter.GermanyOnly);
-        var firstPage = await Parse(downloaded);
+        var downloaded = await downloadPages.Download(DownloadFilter.GermanyOnly);
+        var firstPage = await Scrape(downloaded);
         var all = new List<RaceMeeting>();
         all.AddRange(firstPage);
         int pageCount = await GetPageCount(downloaded);
 
         for (int i = 1; i < pageCount; i++)
         {
-            var downloaded2 = await downloadPageService.Download(DownloadFilter.GermanyOnly, i);
-            var parsed2 = await Parse(downloaded2);
+            var downloaded2 = await downloadPages.Download(DownloadFilter.GermanyOnly, i);
+            var parsed2 = await Scrape(downloaded2);
             all.AddRange(parsed2);
         }
 
@@ -46,7 +50,7 @@ public class ParseMyrcmService(DownloadMyrcmPageService downloadPageService)
         return 0;
     }
 
-    public async Task<IEnumerable<RaceMeeting>> Parse(string content)
+    public async Task<IEnumerable<RaceMeeting>> Scrape(string content)
     {
         var document = await BrowsingContext.New(Configuration.Default.WithDefaultLoader()).OpenAsync(req => req.Content(content));
 
@@ -77,12 +81,24 @@ public class ParseMyrcmService(DownloadMyrcmPageService downloadPageService)
             {
                 continue;
             }
+            
+            var clubNumber = GetClubNumber(cells);
 
-            var date = ParseDate(cells[4].TextContent);
-            var location = cells[1]?.TextContent;
-            var title = cells[2]?.TextContent ?? "MyRCM-Rennen";
-            var meeting = new RaceMeeting(CompileSeries(title), SeasonReference.Current, date, location,
-                title, []);
+            var race = new MyrcmRace(
+                ParseDate(cells[4].TextContent),
+                ParseDate(cells[5].TextContent),
+                cells[2]?.TextContent ?? "MyRCM-Rennen",
+                cells[1]?.TextContent ?? "Unbekannter Club",
+                clubNumber);
+
+            var meeting = new RaceMeeting(
+                guessSeriesFromTitle.Guess(race.Title),
+                SeasonReference.Current,
+                race.DateEnd, 
+                race.Club,
+                race.Title, 
+                [],
+                new Club(race.Club, [], null, clubNumber));
             
             meetings.Add(meeting);
         }
@@ -90,41 +106,12 @@ public class ParseMyrcmService(DownloadMyrcmPageService downloadPageService)
         return meetings;
     }
 
-    private static SeriesReference[] CompileSeries(string title)
+    private static int GetClubNumber(IHtmlCollection<IElement> cells)
     {
-        var seriess = new List<SeriesReference>();
-
-        if (title.Contains("Hudy Series", StringComparison.InvariantCultureIgnoreCase))
-        {
-            seriess.Add(SeriesReference.Hudy);
-        }
-        
-        if (title.Contains("Tamiya Euro", StringComparison.InvariantCultureIgnoreCase))
-        {
-            seriess.Add(SeriesReference.Tamiya);
-        }
-        
-        if (title.Contains("ostmasters", StringComparison.InvariantCultureIgnoreCase))
-        {
-            seriess.Add(new SeriesReference("ostmasters"));
-        }
-        
-        if (title.Contains("jumpstart", StringComparison.InvariantCultureIgnoreCase))
-        {
-            seriess.Add(new SeriesReference("jumpstart"));
-        }
-        
-        if (title.Contains("ElbeCup", StringComparison.InvariantCultureIgnoreCase))
-        {
-            seriess.Add(new SeriesReference("elbecup"));
-        }
-        
-        if (seriess.Count > 0)
-        {
-            return seriess.ToArray();
-        }
-        
-        return [new SeriesReference("myrcm")];
+        var url = cells[1].QuerySelector("a").Attributes["href"].Value;
+        var hostLink = new Url(url);
+        var clubNumber = int.Parse(HttpUtility.ParseQueryString(hostLink.Query).Get("dId[O]"));
+        return clubNumber;
     }
 
     private DateOnly ParseDate(string input)

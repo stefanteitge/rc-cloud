@@ -1,4 +1,5 @@
 ﻿using McMaster.Extensions.CommandLineUtils;
+using RcCloud.DateScraper.Application.Myrcm.Services;
 
 
 namespace RcCloud.DateScraper.Cli.Commands
@@ -10,6 +11,7 @@ namespace RcCloud.DateScraper.Cli.Commands
     [Subcommand(typeof(JsonCommand))]
     [Subcommand(typeof(KleinserieCommand))]
     [Subcommand(typeof(MyrcmCommand))]
+    [Subcommand(typeof(MyrcmClub))]
     [HelpOption]
     internal class RootCommand
     {

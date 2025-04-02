@@ -3,6 +3,7 @@ using AngleSharp.Dom;
 using RcCloud.DateScraper.Application.Rck.SubDomain;
 using RcCloud.DateScraper.Domain;
 using System.Globalization;
+using RcCloud.DateScraper.Domain.Races;
 
 namespace RcCloud.DateScraper.Application.Rck.Services
 {

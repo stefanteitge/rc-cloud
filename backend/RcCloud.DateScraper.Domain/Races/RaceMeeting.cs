@@ -1,4 +1,6 @@
-﻿namespace RcCloud.DateScraper.Domain
+﻿using RcCloud.DateScraper.Domain.Clubs;
+
+namespace RcCloud.DateScraper.Domain.Races
 {
     public class RaceMeeting(
         SeriesReference[] series,
@@ -6,7 +8,8 @@
         DateOnly date,
         string location,
         string title,
-        GroupReference[] groups)
+        GroupReference[] groups,
+        Club? club = null)
     {
         public SeriesReference[] Series { get; } = series;
 
@@ -19,5 +22,7 @@
         public string Title { get; } = title;
 
         public GroupReference[] Groups { get; } = groups;
+        
+        public Club? Club { get; } = club;
     }
 }

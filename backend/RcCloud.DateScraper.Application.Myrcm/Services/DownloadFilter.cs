@@ -4,14 +4,14 @@ public class DownloadFilter
 {
     public const string GermanyCookiePure = @"[{""field"":{""label"":""Country"",""value"":""Country""},""operator"":{""label"":""equals"",""value"":""eq""},""value"":{""label"":""\""Germany\"""",""value"":""3""}}]";
 
-    private readonly CountryCode country;
+    private readonly MyrcmCountryCode _myrcmCountry;
 
-    private DownloadFilter(CountryCode country)
+    private DownloadFilter(MyrcmCountryCode myrcmCountry)
     {
-        this.country = country;
+        this._myrcmCountry = myrcmCountry;
     }
 
-    public static DownloadFilter GermanyOnly => new(CountryCode.Germany);
+    public static DownloadFilter GermanyOnly => new(MyrcmCountryCode.Germany);
 
     public string GetCookie() => Base64Encode(GermanyCookiePure);
 

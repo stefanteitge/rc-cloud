@@ -2,7 +2,7 @@
 
 namespace RcCloud.DateScraper.Application.Myrcm.Services;
 
-public class DownloadMyrcmPageService
+public class DownloadMyrcmPages
 {
     public const string BaseAddress = "https://www.myrcm.ch";
 

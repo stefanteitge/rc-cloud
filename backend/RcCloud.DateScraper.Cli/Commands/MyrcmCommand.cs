@@ -3,11 +3,11 @@ using RcCloud.DateScraper.Cli.Commands.Utils;
 
 namespace RcCloud.DateScraper.Cli.Commands;
 
-internal class MyrcmCommand(ParseMyrcmService service, RaceMeetingPrinter printer)
+internal class MyrcmCommand(ScrapeMyrcmRaces races, RaceMeetingPrinter printer)
 {
     public async Task OnExecute()
     {
-        var all = await service.Parse();
+        var all = await races.Scrape();
         printer.Print(all);
     }
 }

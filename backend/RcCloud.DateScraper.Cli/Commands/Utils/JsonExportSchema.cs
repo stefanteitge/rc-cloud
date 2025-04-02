@@ -1,4 +1,5 @@
 using RcCloud.DateScraper.Domain;
+using RcCloud.DateScraper.Domain.Races;
 
 namespace RcCloud.DateScraper.Cli.Commands.Utils;
 

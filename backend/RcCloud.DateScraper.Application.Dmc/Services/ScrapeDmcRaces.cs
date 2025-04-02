@@ -2,10 +2,12 @@
 using RcCloud.DateScraper.Domain;
 using System.Globalization;
 using RcCloud.DateScraper.Application.Dmc.Services;
+using RcCloud.DateScraper.Domain.Clubs;
+using RcCloud.DateScraper.Domain.Races;
 
 namespace RcCloud.DateScraper.Application.Dmc;
 
-public class DmcService(DownloadDmcCalendarService download)
+public class ScrapeDmcRaces(DownloadDmcCalendarService download)
 {
 
     public async Task<IEnumerable<RaceMeeting>> Parse()
@@ -14,7 +16,7 @@ public class DmcService(DownloadDmcCalendarService download)
 
         return all
             .Where(ce => ce.IsMeeting())
-            .Select(a => new RaceMeeting(ComputeSeries(a), SeasonReference.Current, a.DateEnd, a.Club, ComputeTitle(a),ComputeRegions(a)));
+            .Select(a => new RaceMeeting(ComputeSeries(a), SeasonReference.Current, a.DateEnd, a.Club, ComputeTitle(a),ComputeRegions(a), new Club(a.Club, [], a.ClubNo, null)));
     }
 
     private string ComputeTitle(DmcCalendarEntry entry)

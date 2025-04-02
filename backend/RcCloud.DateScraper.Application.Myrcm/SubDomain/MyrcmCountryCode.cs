@@ -1,14 +1,14 @@
 ﻿namespace RcCloud.DateScraper.Application.Myrcm.Services
 {
-    public class CountryCode
+    public class MyrcmCountryCode
     {
         private readonly int code;
 
-        private CountryCode(int code)
+        private MyrcmCountryCode(int code)
         {
             this.code = code;
         }
 
-        public static CountryCode Germany => new(3);
+        public static MyrcmCountryCode Germany => new(3);
     }
 }
