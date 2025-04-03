@@ -11,7 +11,7 @@ using RcCloud.DateScraper.Domain.Series;
 
 namespace RcCloud.DateScraper.Application.Myrcm.Upcoming.Services;
 
-public class ScrapeMyrcmRaces(DownloadMyrcmPages downloadPages, GuessSeriesFromTitle guessSeriesFromTitle, SanitizeClubNames sanitizeClubNames)
+public class ScrapeMyrcmRaces(DownloadMyrcmPages downloadPages, GuessSeriesFromTitle guessSeriesFromTitle, SanitizeClubNames sanitizeClubNames, GuessIfItIsTraining guessIfItIsTraining)
 {
     public async Task<IEnumerable<RaceMeeting>> Scrape()
     {
@@ -94,6 +94,11 @@ public class ScrapeMyrcmRaces(DownloadMyrcmPages downloadPages, GuessSeriesFromT
                 cells[1]?.TextContent ?? "Unbekannter Club",
                 clubNumber);
 
+            if (guessIfItIsTraining.IsTraining(race.Title))
+            {
+                continue;
+            }
+            
             var meeting = new RaceMeeting(
                 guessSeriesFromTitle.Guess(race.Title),
                 SeasonReference.Current,

@@ -9,6 +9,7 @@ public static class MyrcmApplication
     public static IServiceCollection AddMyrcm(this IServiceCollection services)
     {
         return services
+            .AddTransient<GuessIfItIsTraining>()
             .AddTransient<SanitizeClubNames>()
             .AddTransient<DownloadMyrcmPages>()
             .AddTransient<GuessSeriesFromTitle>()

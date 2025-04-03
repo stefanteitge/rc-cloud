@@ -10,7 +10,7 @@ public class ScrapeMyrcmRacesTests
     {
         // Arrange
         var content = File.ReadAllText("Data/myrcm_2025-04-02.html");
-        var sut = new ScrapeMyrcmRaces(new DownloadMyrcmPages(), new GuessSeriesFromTitle(), new SanitizeClubNames());
+        var sut = new ScrapeMyrcmRaces(new DownloadMyrcmPages(), new GuessSeriesFromTitle(), new SanitizeClubNames(), new GuessIfItIsTraining());
 
         // Act
         var result = await sut.Scrape(content);
