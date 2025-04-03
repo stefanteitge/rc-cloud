@@ -1,11 +1,14 @@
 namespace RcCloud.DateScraper.Domain.Clubs;
 
-public class Club(string name, string[] aliases, int? dmcClubNumber, int? myrcmClubNumber)
+public class Club(string name, List<string> aliases, int? dmcClubNumber, int? myrcmClubNumber)
     : IEquatable<Club>
 {
-    public string Name { get; } = name;
-    public string[] Aliases { get; } = aliases;
+    public string Name { get; protected set; } = name;
+
+    public List<string> Aliases { get; } = aliases;
+
     public int? DmcClubNumber { get; } = dmcClubNumber;
+
     public int? MyrcmClubNumber { get; } = myrcmClubNumber;
 
     public static bool operator ==(Club lhs, Club rhs)
@@ -39,4 +42,13 @@ public class Club(string name, string[] aliases, int? dmcClubNumber, int? myrcmC
     }
 
     public override bool Equals(object? obj) => this.Equals(obj as Club);
+
+    public void SetRealName(string cleanName)
+    {
+        if (cleanName != Name)
+        {
+            Aliases.Add(Name);
+            Name = cleanName;
+        }
+    }
 }
