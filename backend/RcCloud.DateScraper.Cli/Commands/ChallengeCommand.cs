@@ -1,13 +1,13 @@
 ﻿using RcCloud.DateScraper.Application.Rck.Services;
-using RcCloud.DateScraper.Cli.Commands.Utils;
+using RcCloud.DateScraper.Cli.Output.Services;
 
 namespace RcCloud.DateScraper.Cli.Commands;
 
-internal class ChallengeCommand(ChallengeService service, RaceMeetingPrinter printer)
+internal class ChallengeCommand(ScrapeChallengeRaces races, PrintRaces printer)
 {
     public async Task OnExecute()
     {
-        var all = await service.Parse();
+        var all = await races.Parse();
         printer.Print(all);
     }
 }

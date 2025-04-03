@@ -1,4 +1,6 @@
 ﻿using RcCloud.DateScraper.Domain.Clubs;
+using RcCloud.DateScraper.Domain.Regions;
+using RcCloud.DateScraper.Domain.Series;
 
 namespace RcCloud.DateScraper.Domain.Races
 {
@@ -8,7 +10,7 @@ namespace RcCloud.DateScraper.Domain.Races
         DateOnly date,
         string location,
         string title,
-        GroupReference[] groups,
+        RegionReference[] regions,
         Club? club = null)
     {
         public SeriesReference[] Series { get; } = series;
@@ -21,7 +23,7 @@ namespace RcCloud.DateScraper.Domain.Races
         
         public string Title { get; } = title;
 
-        public GroupReference[] Groups { get; } = groups;
+        public RegionReference[] Regions { get; } = regions;
         
         public Club? Club { get; } = club;
     }

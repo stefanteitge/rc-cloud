@@ -5,7 +5,8 @@ using RcCloud.DateScraper.Application.Dmc;
 using RcCloud.DateScraper.Application.Myrcm;
 using RcCloud.DateScraper.Application.Rck;
 using RcCloud.DateScraper.Cli.Commands;
-using RcCloud.DateScraper.Cli.Commands.Utils;
+using RcCloud.DateScraper.Cli.Common.Services;
+using RcCloud.DateScraper.Cli.Output.Services;
 
 await new HostBuilder()
     .ConfigureLogging((context, builder) =>
@@ -15,8 +16,8 @@ await new HostBuilder()
     .ConfigureServices((context, services) =>
     {
         services
-            .AddSingleton<RaceMeetingPrinter>()
-            .AddTransient<RetrieveAllService>()
+            .AddSingleton<PrintRaces>()
+            .AddTransient<RetrieveAllRaces>()
             .AddDmc()
             .AddMyrcm()
             .AddRck()

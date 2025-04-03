@@ -1,9 +1,9 @@
-﻿using RcCloud.DateScraper.Application.Myrcm.Services;
-using RcCloud.DateScraper.Cli.Commands.Utils;
+﻿using RcCloud.DateScraper.Application.Myrcm.Upcoming.Services;
+using RcCloud.DateScraper.Cli.Output.Services;
 
 namespace RcCloud.DateScraper.Cli.Commands;
 
-internal class MyrcmCommand(ScrapeMyrcmRaces races, RaceMeetingPrinter printer)
+internal class MyrcmCommand(ScrapeMyrcmRaces races, PrintRaces printer)
 {
     public async Task OnExecute()
     {

@@ -1,10 +1,11 @@
-﻿using RcCloud.DateScraper.Cli.Commands.Utils;
+﻿using RcCloud.DateScraper.Cli.Common.Services;
+using RcCloud.DateScraper.Cli.Output.Services;
 
 namespace RcCloud.DateScraper.Cli.Commands;
 
 internal class AllCommand(
-    RetrieveAllService retrieveAll,
-    RaceMeetingPrinter printer)
+    RetrieveAllRaces retrieveAll,
+    PrintRaces printer)
 {
     public async Task OnExecute()
     {

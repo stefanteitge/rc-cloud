@@ -1,4 +1,4 @@
-﻿using RcCloud.DateScraper.Application.Myrcm.Services;
+﻿using RcCloud.DateScraper.Application.Myrcm.Clubs.Services;
 
 namespace RcCloud.DateScraper.Cli.Commands;
 

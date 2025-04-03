@@ -13,5 +13,5 @@ export interface RaceMeetingDto {
   location: string;
   title: string
   series: ReferenceDto[];
-  groups: ReferenceDto[];
+  regions: ReferenceDto[];
 }

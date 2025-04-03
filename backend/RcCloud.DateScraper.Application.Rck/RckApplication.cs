@@ -8,7 +8,7 @@ public static class RckApplication
     public static IServiceCollection AddRck(this IServiceCollection services)
     {
         return services
-            .AddTransient<ChallengeService>()
-            .AddTransient<KleinserieService>();
+            .AddTransient<ScrapeChallengeRaces>()
+            .AddTransient<ScrapeKleinserieRaces>();
     }
 }

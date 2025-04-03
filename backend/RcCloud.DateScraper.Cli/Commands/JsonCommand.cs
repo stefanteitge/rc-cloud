@@ -1,9 +1,10 @@
 ﻿using System.Text.Json;
-using RcCloud.DateScraper.Cli.Commands.Utils;
+using RcCloud.DateScraper.Cli.Common.Services;
+using RcCloud.DateScraper.Cli.Output.Dto;
 
 namespace RcCloud.DateScraper.Cli.Commands;
 
-internal class JsonCommand(RetrieveAllService retrieveAll)
+internal class JsonCommand(RetrieveAllRaces retrieveAll)
 {
     public async Task OnExecute()
     {

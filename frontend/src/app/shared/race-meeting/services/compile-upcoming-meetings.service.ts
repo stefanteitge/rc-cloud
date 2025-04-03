@@ -22,7 +22,7 @@ export default function compileUpcomingMeetings(meetings: RaceMeetingDto[]): Upc
     const newMeeting = {
       location: meeting.location,
       series: meeting.series.map(s => s.id),
-      groups: meeting.groups,
+      groups: meeting.regions,
       title: meeting.title,
     };
 

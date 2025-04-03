@@ -1,13 +1,13 @@
 ﻿using RcCloud.DateScraper.Application.Rck.Services;
-using RcCloud.DateScraper.Cli.Commands.Utils;
+using RcCloud.DateScraper.Cli.Output.Services;
 
 namespace RcCloud.DateScraper.Cli.Commands;
 
-internal class KleinserieCommand(KleinserieService service, RaceMeetingPrinter printer)
+internal class KleinserieCommand(ScrapeKleinserieRaces races, PrintRaces printer)
 {
     public async Task OnExecute()
     {
-        var all = await service.Parse();
+        var all = await races.Parse();
         printer.Print(all);
     }
 }

@@ -4,6 +4,7 @@ using RcCloud.DateScraper.Application.Rck.SubDomain;
 using RcCloud.DateScraper.Domain;
 using System.Globalization;
 using RcCloud.DateScraper.Domain.Races;
+using RcCloud.DateScraper.Domain.Series;
 
 namespace RcCloud.DateScraper.Application.Rck.Services
 {

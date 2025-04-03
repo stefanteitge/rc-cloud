@@ -1,5 +1,7 @@
 ﻿using RcCloud.DateScraper.Domain;
 using RcCloud.DateScraper.Domain.Races;
+using RcCloud.DateScraper.Domain.Regions;
+using RcCloud.DateScraper.Domain.Series;
 
 namespace RcCloud.DateScraper.Application.Rck.SubDomain
 {
@@ -31,15 +33,15 @@ namespace RcCloud.DateScraper.Application.Rck.SubDomain
             return "Unbekannt";
         }
 
-        private static GroupReference ToReference(Gruppe g)
+        private static RegionReference ToReference(Gruppe g)
         {
             return g switch
             {
-                Gruppe.Mitte => GroupReference.Central,
-                Gruppe.Nord => GroupReference.North,
-                Gruppe.West => GroupReference.West,
-                Gruppe.Sued => GroupReference.South,
-                Gruppe.Ost => GroupReference.East,
+                Gruppe.Mitte => RegionReference.Central,
+                Gruppe.Nord => RegionReference.North,
+                Gruppe.West => RegionReference.West,
+                Gruppe.Sued => RegionReference.South,
+                Gruppe.Ost => RegionReference.East,
                 _ => throw new ArgumentOutOfRangeException(nameof(g), g, null)
             };
         }

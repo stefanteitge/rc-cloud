@@ -1,5 +1,5 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using RcCloud.DateScraper.Application.Dmc.Services;
+using RcCloud.DateScraper.Application.Dmc.Calendar.Services;
 
 namespace RcCloud.DateScraper.Application.Dmc;
 
@@ -9,6 +9,6 @@ public static class DmcApplication
     {
         return services
             .AddTransient<ScrapeDmcRaces>()
-            .AddTransient<DownloadDmcCalendarService>();
+            .AddTransient<DownloadDmcCalendar>();
     }
 }
