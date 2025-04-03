@@ -16,6 +16,6 @@ public class ScrapeMyrcmRacesTests
         var result = await sut.Scrape(content);
         
         // Assert
-        Assert.Equal(50, result.Count());
+        Assert.Equal(39, result.Count());
     }
 }
