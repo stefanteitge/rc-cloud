@@ -1,24 +1,7 @@
-import {RaceMeetingDto, ReferenceDto} from './race-meeting.repository';
+import {RaceMeetingDto} from '../dtos/race-meeting-envelope.dto';
+import {UpcomingDate} from '../domain/upcoming-meetings';
 
-export interface UpcomingRaceMeeting {
-  title: string,
-  location: string;
-  series: string[];
-  groups: ReferenceDto[]; // TODO
-}
-
-export interface UpcomingDate
-{
-  date: string;
-  raceMeetings: UpcomingRaceMeeting[];
-  east: UpcomingRaceMeeting[];
-  west: UpcomingRaceMeeting[];
-  north: UpcomingRaceMeeting[];
-  south: UpcomingRaceMeeting[];
-  central: UpcomingRaceMeeting[];
-}
-
-export function compileUpcomingMeetings(meetings: RaceMeetingDto[]): UpcomingDate[] {
+export default function compileUpcomingMeetings(meetings: RaceMeetingDto[]): UpcomingDate[] {
   const compiled = [] as UpcomingDate[];
 
   meetings.forEach((meeting) => {

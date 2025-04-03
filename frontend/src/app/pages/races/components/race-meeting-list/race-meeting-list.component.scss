@@ -1,0 +1,30 @@
+table {
+  td {
+    padding: 0.5em;
+  }
+}
+
+.meeting-box {
+  margin-bottom: 0.3em;
+
+  .title {
+    font-weight: 500;
+    font-size: 1.2em;
+  }
+}
+
+.meta {
+  margin-bottom: 1em;
+}
+
+.mat-mdc-cell {
+  max-width: 200px;
+
+  &.legend {
+    background: var(--mat-sys-secondary-fixed-dim);
+  }
+
+  &.highlight {
+    background: var(--mat-sys-secondary-fixed);
+  }
+}

@@ -1,25 +1,10 @@
 import {Injectable, signal} from '@angular/core';
 import {tap} from 'rxjs';
 import {HttpClient} from '@angular/common/http';
-import {compileUpcomingMeetings, UpcomingDate, UpcomingRaceMeeting} from './upcoming-meetings.model';
+import { UpcomingDate} from '../domain/upcoming-meetings';
+import {RaceMeetingEnvelopeDto} from '../dtos/race-meeting-envelope.dto';
+import compileUpcomingMeetings from '../services/compile-upcoming-meetings.service';
 
-export interface RaceMeetingEnvelopeDto
-{
-  retrievedDate: string;
-  raceMeetings: RaceMeetingDto[];
-}
-
-export interface ReferenceDto {
-  id: string;
-}
-
-export interface RaceMeetingDto {
-  date: string;
-  location: string;
-  title: string
-  series: ReferenceDto[];
-  groups: ReferenceDto[];
-}
 
 @Injectable()
 export class RaceMeetingRepository {

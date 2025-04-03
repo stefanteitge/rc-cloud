@@ -1,6 +1,5 @@
 import {Component, OnInit, signal} from '@angular/core';
-import {RaceMeetingDto, RaceMeetingRepository} from '../race-meetings/race-meeting.repository';
-import {HttpClient} from '@angular/common/http';
+import { RaceMeetingRepository} from '../../../../shared/race-meeting/repositories/race-meeting.repository';
 import {MatChip} from '@angular/material/chips';
 import {
   MatCell,
@@ -11,7 +10,7 @@ import {
   MatHeaderRow, MatHeaderRowDef, MatRow, MatRowDef,
   MatTable
 } from '@angular/material/table';
-import {UpcomingDate} from '../race-meetings/upcoming-meetings.model';
+import {UpcomingDate} from '../../../../shared/race-meeting/domain/upcoming-meetings';
 
 @Component({
   selector: 'app-race-meeting-list',
