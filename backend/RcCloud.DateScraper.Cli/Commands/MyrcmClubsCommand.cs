@@ -2,7 +2,7 @@
 
 namespace RcCloud.DateScraper.Cli.Commands;
 
-internal class MyrcmcCommand(ScrapeMyrcmClubs scrapeClubs)
+internal class MyrcmClubsCommand(ScrapeMyrcmClubs scrapeClubs)
 {
     public async Task OnExecute()
     {
