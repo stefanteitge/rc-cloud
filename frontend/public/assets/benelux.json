@@ -1,0 +1,4105 @@
+{
+  "retrievedDate": "2025-04-04T14:54:45.5904442+02:00",
+  "raceMeetings": [
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-04-06",
+      "location": "RC HOTWHEELS",
+      "title": "1e N.K. NOMAC EC10",
+      "regions": [],
+      "club": {
+        "name": "RC HOTWHEELS",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 3074
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-04-06",
+      "location": "SOM / ICC",
+      "title": "SOM 1 - Speedway Tilburg",
+      "regions": [],
+      "club": {
+        "name": "SOM / ICC",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 30724
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-04-06",
+      "location": "RACO2000",
+      "title": "11e mini-z Raco2000",
+      "regions": [],
+      "club": {
+        "name": "RACO2000",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 5305
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-04-06",
+      "location": "M.A.C.  De Baanbrekers",
+      "title": "BK 1/8 - 1/10N",
+      "regions": [],
+      "club": {
+        "name": "M.A.C.  De Baanbrekers",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 12027
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "hudyseries"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-04-06",
+      "location": "Radio controle @ circuit Zolder",
+      "title": "HUDY SERIES RC@CZ Zolder 2025 Race 2",
+      "regions": [],
+      "club": {
+        "name": "Radio controle @ circuit Zolder",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 20089
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-04-06",
+      "location": "Electro Racing Club Eindhoven",
+      "title": "Open Clubwedstrijd #1 - 2025",
+      "regions": [],
+      "club": {
+        "name": "Electro Racing Club Eindhoven",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 3350
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-04-06",
+      "location": "MRC REAL80 Groningen",
+      "title": "1ste Open Clubwedstrijd REAL80 2025",
+      "regions": [],
+      "club": {
+        "name": "MRC REAL80 Groningen",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 104
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-04-06",
+      "location": "RC Club Zoetermeer",
+      "title": "RCCZ - 2025 : (Open) Clubwedstrijd 1:10 - 1 van 3",
+      "regions": [],
+      "club": {
+        "name": "RC Club Zoetermeer",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 34977
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-04-06",
+      "location": "Helderse Model Race Club",
+      "title": "1e Open Clubwestrijd 2025 HMRC",
+      "regions": [],
+      "club": {
+        "name": "Helderse Model Race Club",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 7059
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-04-12",
+      "location": "HFCC Den Haag",
+      "title": "Open Clubwedstrijd Race #1 HFCC Racing 2025",
+      "regions": [],
+      "club": {
+        "name": "HFCC Den Haag",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 14156
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-04-13",
+      "location": "MAC de Kempen",
+      "title": "Clubwedstrijd #2 2025 (alleen voor clubleden)",
+      "regions": [],
+      "club": {
+        "name": "MAC de Kempen",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 32715
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-04-13",
+      "location": "Model Racing Midland",
+      "title": "MRM Open Clubwedstrijd nr. 1",
+      "regions": [],
+      "club": {
+        "name": "Model Racing Midland",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 19047
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-04-13",
+      "location": "FBA",
+      "title": "FBA BK/CB Buggy 2025 Race 1 - RC@CZ Zolder",
+      "regions": [],
+      "club": {
+        "name": "FBA",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 38144
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-04-13",
+      "location": "Racing Club Roeselare",
+      "title": "Open Clubwedstrijd 1",
+      "regions": [],
+      "club": {
+        "name": "Racing Club Roeselare",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 76
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-04-13",
+      "location": "MBC de Sluis",
+      "title": "Open Club MBC de Sluis Race 1",
+      "regions": [],
+      "club": {
+        "name": "MBC de Sluis",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 4842
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-04-13",
+      "location": "RC Hotwheels",
+      "title": "RC Hotwheels - Clubwedstrijd 1 - 13 april 2025",
+      "regions": [],
+      "club": {
+        "name": "RC Hotwheels",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 3074
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-04-13",
+      "location": "Buggy \u0026 truggycup",
+      "title": "Buggy \u0026 truggycup wedstrijd 1 : Appingedam",
+      "regions": [],
+      "club": {
+        "name": "Buggy \u0026 truggycup",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 34977
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-04-13",
+      "location": "EVMC",
+      "title": "LeMans Series wedstrijd 13 april 2025",
+      "regions": [],
+      "club": {
+        "name": "EVMC",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 10817
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-04-15",
+      "location": "RACO2000",
+      "title": "1e SEC Legends Raco2000",
+      "regions": [],
+      "club": {
+        "name": "RACO2000",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 5305
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-04-20",
+      "location": "RC Hotwheels",
+      "title": "IDFM 2025",
+      "regions": [],
+      "club": {
+        "name": "RC Hotwheels",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 3074
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-04-20",
+      "location": "MRC Real\u002780 Gr.",
+      "title": "Genius Easter Trophy International",
+      "regions": [],
+      "club": {
+        "name": "MRC Real\u002780 Gr.",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 104
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-04-20",
+      "location": "MBC de Sluis",
+      "title": "Zaterdag Avond Competitie MBC de Sluis Race 1",
+      "regions": [],
+      "club": {
+        "name": "MBC de Sluis",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 4842
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-04-19",
+      "location": "EVMC",
+      "title": "MCD Fanatics 19 april 2025",
+      "regions": [],
+      "club": {
+        "name": "EVMC",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 10817
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-04-20",
+      "location": "Mach-One Helmond",
+      "title": "Belgisch Kampioenschap 1:8 Brushless \u0026 Nitro 2025 - Race 1",
+      "regions": [],
+      "club": {
+        "name": "Mach-One Helmond",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 1980
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-04-20",
+      "location": "M.A.C.  De Baanbrekers",
+      "title": "Besloten Clubwedstrijd 2 2025",
+      "regions": [],
+      "club": {
+        "name": "M.A.C.  De Baanbrekers",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 12027
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-04-20",
+      "location": "RCTR Kotrijk",
+      "title": "Tamiya Cup BE 2025 - Race 4 RCTR Kortrijk",
+      "regions": [],
+      "club": {
+        "name": "RCTR Kotrijk",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 35896
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-04-20",
+      "location": "Orra",
+      "title": "Clubrace 2 Orra 20/04/2025",
+      "regions": [],
+      "club": {
+        "name": "Orra",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 55554
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-04-20",
+      "location": "MRCL Bierset",
+      "title": "BELGIUM CUP 1/5\u00E8me et Amicale MRCL 20 avril 2025",
+      "regions": [],
+      "club": {
+        "name": "MRCL Bierset",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 9668
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-04-20",
+      "location": "MVB",
+      "title": "2025 Clubwedstrijd #2",
+      "regions": [],
+      "club": {
+        "name": "MVB",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 3200
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-04-21",
+      "location": "Model Race Genk vzw",
+      "title": "OC 2 1/8 \u0026 1/10, PAASMAANDAG",
+      "regions": [],
+      "club": {
+        "name": "Model Race Genk vzw",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 3291
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-04-22",
+      "location": "RACO2000",
+      "title": "1e SEC TW 13,5t Raco2000",
+      "regions": [],
+      "club": {
+        "name": "RACO2000",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 5305
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-04-27",
+      "location": "MRC Real\u002780 Gr.",
+      "title": "1ste Nk BC05 seizoen 2025",
+      "regions": [],
+      "club": {
+        "name": "MRC Real\u002780 Gr.",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 104
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-04-26",
+      "location": "MBV Kampenhout",
+      "title": "CK2_2025",
+      "regions": [],
+      "club": {
+        "name": "MBV Kampenhout",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 51913
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-04-26",
+      "location": "Model Auto Club Heemstede",
+      "title": "MACH Nitro test day",
+      "regions": [],
+      "club": {
+        "name": "Model Auto Club Heemstede",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 75
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-04-26",
+      "location": "AMCA-Apeldoorn",
+      "title": "Open Clubwedstrijd 1 - 26 april 2025",
+      "regions": [],
+      "club": {
+        "name": "AMCA-Apeldoorn",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 7762
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-04-27",
+      "location": "Hulshout Offroad Racing",
+      "title": "HOR Clubrace 1 2025",
+      "regions": [],
+      "club": {
+        "name": "Hulshout Offroad Racing",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 50130
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-04-27",
+      "location": "M.A.C.  De Baanbrekers",
+      "title": "BK EC10",
+      "regions": [],
+      "club": {
+        "name": "M.A.C.  De Baanbrekers",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 12027
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-04-27",
+      "location": "SimplyFunRacing",
+      "title": "2025 Simply Fun Racing: Race 1 (ERCE Eindhoven)",
+      "regions": [],
+      "club": {
+        "name": "SimplyFunRacing",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 53360
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-04-27",
+      "location": "MAC Vlijmen",
+      "title": "MAC Vlijmen Clubrace 2",
+      "regions": [],
+      "club": {
+        "name": "MAC Vlijmen",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 30724
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-04-27",
+      "location": "Model Racing Midland",
+      "title": "MRM Open Clubwedstrijd nr. 2",
+      "regions": [],
+      "club": {
+        "name": "Model Racing Midland",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 19047
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-04-29",
+      "location": "RACO2000",
+      "title": "1e SEC Buggy Raco2000",
+      "regions": [],
+      "club": {
+        "name": "RACO2000",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 5305
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-04",
+      "location": "EVMC / RIMAR 303",
+      "title": "Race Car Series # 1 # Season 2025 E.V.M.C. Velp",
+      "regions": [],
+      "club": {
+        "name": "EVMC / RIMAR 303",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 10817
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-03",
+      "location": "Main Meetings Raalte",
+      "title": "2e OC",
+      "regions": [],
+      "club": {
+        "name": "Main Meetings Raalte",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 23785
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-04",
+      "location": "MACH-One Helmond",
+      "title": "Open Club Race 1",
+      "regions": [],
+      "club": {
+        "name": "MACH-One Helmond",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 33841
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-04",
+      "location": "RC Club Zoetermeer",
+      "title": "RCCZ - 2025 : (Open) Clubwedstrijd 1:8 - 1 van 3",
+      "regions": [],
+      "club": {
+        "name": "RC Club Zoetermeer",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 34977
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-04",
+      "location": "Helderse Model Race Club",
+      "title": "2e Open Clubwestrijd 2025 HMRC",
+      "regions": [],
+      "club": {
+        "name": "Helderse Model Race Club",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 7059
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-04",
+      "location": "Model Racing Midland Lelystad",
+      "title": "TamiyaCup NL 2025 - Wedstrijd 2 MRM Lelystad",
+      "regions": [],
+      "club": {
+        "name": "Model Racing Midland Lelystad",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 33479
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-06",
+      "location": "RACO2000",
+      "title": "2e SEC Legends Raco2000",
+      "regions": [],
+      "club": {
+        "name": "RACO2000",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 5305
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-07",
+      "location": "HFCC Den Haag",
+      "title": "Avondcompetitie #2 HFCC Racing 2025",
+      "regions": [],
+      "club": {
+        "name": "HFCC Den Haag",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 14156
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-11",
+      "location": "MBC de Sluis",
+      "title": "Zaterdag Avond Competitie MBC de Sluis Race 2",
+      "regions": [],
+      "club": {
+        "name": "MBC de Sluis",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 4842
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-11",
+      "location": "FBA",
+      "title": "FBA BK/CB Buggy 2025 Race 2 - MBV Kampenhout",
+      "regions": [],
+      "club": {
+        "name": "FBA",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 38144
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-11",
+      "location": "Racing Club Roeselare",
+      "title": "Open Clubwedstrijd 2 \u002B Belgian Cup 1/5de",
+      "regions": [],
+      "club": {
+        "name": "Racing Club Roeselare",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 76
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-11",
+      "location": "Electro Racing Club Eindhoven",
+      "title": "Open Clubwedstrijd #2 - 2025",
+      "regions": [],
+      "club": {
+        "name": "Electro Racing Club Eindhoven",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 3350
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-11",
+      "location": "MRC REAL80 Groningen",
+      "title": "2de Open Clubwedstrijd REAL80 2025",
+      "regions": [],
+      "club": {
+        "name": "MRC REAL80 Groningen",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 104
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-11",
+      "location": "Model Racing Midland",
+      "title": "MRM Benefiet dag (incl BBQ)",
+      "regions": [],
+      "club": {
+        "name": "Model Racing Midland",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 19047
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-11",
+      "location": "Speedway-Tilburg",
+      "title": "Open race 1 Speedway-Tilburg 2025",
+      "regions": [],
+      "club": {
+        "name": "Speedway-Tilburg",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 56820
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-13",
+      "location": "RACO2000",
+      "title": "2e SEC TW 13,5t Raco2000",
+      "regions": [],
+      "club": {
+        "name": "RACO2000",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 5305
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-18",
+      "location": "RCCM",
+      "title": "Course Amicale 2025",
+      "regions": [],
+      "club": {
+        "name": "RCCM",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 112
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-18",
+      "location": "MAC de Kempen",
+      "title": "Clubwedstrijd #3 2025 (alleen voor clubleden)",
+      "regions": [],
+      "club": {
+        "name": "MAC de Kempen",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 32715
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-18",
+      "location": "M.A.C.  De Baanbrekers",
+      "title": "Besloten Clubwestrijd 3 2025",
+      "regions": [],
+      "club": {
+        "name": "M.A.C.  De Baanbrekers",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 12027
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-18",
+      "location": "MRCZ Zwevegem",
+      "title": "Tamiya Cup BE 2025 - Race 5 MRCZ Zwevegem",
+      "regions": [],
+      "club": {
+        "name": "MRCZ Zwevegem",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 35896
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-18",
+      "location": "Buggy \u0026 truggycup",
+      "title": "Buggy \u0026 truggycup wedstrijd 2 : Helmond",
+      "regions": [],
+      "club": {
+        "name": "Buggy \u0026 truggycup",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 34977
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-18",
+      "location": "Orra",
+      "title": "Clubrace 3 Orra 18/05/2025",
+      "regions": [],
+      "club": {
+        "name": "Orra",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 55554
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-18",
+      "location": "EVMC",
+      "title": "Clubwedstrijd 1 (Open) 18 mei 2025",
+      "regions": [],
+      "club": {
+        "name": "EVMC",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 10817
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-18",
+      "location": "MRCL Bierset",
+      "title": "Amicale Bierset  MRCL 18 mai 2025",
+      "regions": [],
+      "club": {
+        "name": "MRCL Bierset",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 9668
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-18",
+      "location": "MVB",
+      "title": "2025 Clubwedstrijd #3",
+      "regions": [],
+      "club": {
+        "name": "MVB",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 3200
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-20",
+      "location": "RACO2000",
+      "title": "2e SEC Buggy Raco2000",
+      "regions": [],
+      "club": {
+        "name": "RACO2000",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 5305
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-25",
+      "location": "EVMC / RIMAR 303",
+      "title": "2de NK BC05 Seisoen 2025",
+      "regions": [],
+      "club": {
+        "name": "EVMC / RIMAR 303",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 10817
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-24",
+      "location": "MBV Kampenhout",
+      "title": "CK3_2025",
+      "regions": [],
+      "club": {
+        "name": "MBV Kampenhout",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 51913
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-24",
+      "location": "AMCA-Apeldoorn",
+      "title": "Open Clubwedstrijd 2 - 24 mei 2025",
+      "regions": [],
+      "club": {
+        "name": "AMCA-Apeldoorn",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 7762
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-25",
+      "location": "MBC de Sluis",
+      "title": "12 uur van Gouda",
+      "regions": [],
+      "club": {
+        "name": "MBC de Sluis",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 4842
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-25",
+      "location": "MAC de Kempen",
+      "title": "1/8 Buggy - Open Wedstrijd - Dizzy Raceway",
+      "regions": [],
+      "club": {
+        "name": "MAC de Kempen",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 32715
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "hudyseries"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-25",
+      "location": "Radio controle @ circuit Zolder",
+      "title": "HUDY SERIES RC@CZ Zolder 2025 Race 3",
+      "regions": [],
+      "club": {
+        "name": "Radio controle @ circuit Zolder",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 20089
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-25",
+      "location": "Helderse Model Race Club",
+      "title": "3e Open Clubwedstrijd 2025 HMRC",
+      "regions": [],
+      "club": {
+        "name": "Helderse Model Race Club",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 7059
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-31",
+      "location": "Hulshout Offroad Racing",
+      "title": "HOR Clubrace 2 2025",
+      "regions": [],
+      "club": {
+        "name": "Hulshout Offroad Racing",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 50130
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-06-01",
+      "location": "SOM / ICC",
+      "title": "SOM 2 - MAC Vlijmen",
+      "regions": [],
+      "club": {
+        "name": "SOM / ICC",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 30724
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-06-01",
+      "location": "Racing Club Roeselare",
+      "title": "Open clubwedstrijd 3",
+      "regions": [],
+      "club": {
+        "name": "Racing Club Roeselare",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 76
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-06-01",
+      "location": "M.A.C.  De Baanbrekers",
+      "title": "Ries Ermen Memorial Race",
+      "regions": [],
+      "club": {
+        "name": "M.A.C.  De Baanbrekers",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 12027
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-06-01",
+      "location": "MBC de Sluis",
+      "title": "Open Club MBC de Sluis Race 2",
+      "regions": [],
+      "club": {
+        "name": "MBC de Sluis",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 4842
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-06-01",
+      "location": "MRC REAL80 Groningen",
+      "title": "3de Open Clubwedstrijd REAL80 2025",
+      "regions": [],
+      "club": {
+        "name": "MRC REAL80 Groningen",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 104
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-06-04",
+      "location": "HFCC Den Haag",
+      "title": "Avondcompetitie #3 HFCC Racing 2025",
+      "regions": [],
+      "club": {
+        "name": "HFCC Den Haag",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 14156
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-06-04",
+      "location": "RC Club Zoetermeer",
+      "title": "RCCZ - 2025 : Zomeravondcup 1 van 4",
+      "regions": [],
+      "club": {
+        "name": "RC Club Zoetermeer",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 34977
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-06-08",
+      "location": "MRC Real\u002780 Gr.",
+      "title": "2nd Grand Prix Large Scale season 2025",
+      "regions": [],
+      "club": {
+        "name": "MRC Real\u002780 Gr.",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 104
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-06-07",
+      "location": "Electro Racing Club Eindhoven",
+      "title": "Open Clubwedstrijd #3 - 2025",
+      "regions": [],
+      "club": {
+        "name": "Electro Racing Club Eindhoven",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 3350
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-06-08",
+      "location": "MRCL Bierset",
+      "title": "CB - BK 1/10- 1/8 Nitro 1/10 - 18 Electro",
+      "regions": [],
+      "club": {
+        "name": "MRCL Bierset",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 9668
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-06-08",
+      "location": "FBA",
+      "title": "FBA BK/CB Buggy 2025 Race 3 - MAC Vlijmen",
+      "regions": [],
+      "club": {
+        "name": "FBA",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 38144
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-06-08",
+      "location": "RC Club Zoetermeer",
+      "title": "RCCZ - 2025 : (Open) Clubwedstrijd 1:10 - 2 van 3",
+      "regions": [],
+      "club": {
+        "name": "RC Club Zoetermeer",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 34977
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-06-15",
+      "location": "EVMC / RIMAR 303",
+      "title": "3de NK BC05 Seizoen 2025",
+      "regions": [],
+      "club": {
+        "name": "EVMC / RIMAR 303",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 10817
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-06-14",
+      "location": "Main Meetings Raalte",
+      "title": "3e OC",
+      "regions": [],
+      "club": {
+        "name": "Main Meetings Raalte",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 23785
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-06-15",
+      "location": "AMCA-Apeldoorn",
+      "title": "Besloten Clubwedstrijd 3 \u002B RC Le Mans - 14-15 juni 2025",
+      "regions": [],
+      "club": {
+        "name": "AMCA-Apeldoorn",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 7762
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-06-14",
+      "location": "Model Racing Midland",
+      "title": "MRM 750 ronden Tamiya Top Stock",
+      "regions": [],
+      "club": {
+        "name": "Model Racing Midland",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 19047
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-06-14",
+      "location": "Speedway-Tilburg",
+      "title": "Open avondrace 2 Speedway-Tilburg 2025",
+      "regions": [],
+      "club": {
+        "name": "Speedway-Tilburg",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 56820
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-06-15",
+      "location": "MACH-One Helmond",
+      "title": "Open Club Race 2",
+      "regions": [],
+      "club": {
+        "name": "MACH-One Helmond",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 33841
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-06-15",
+      "location": "Racing Club Roeselare",
+      "title": "Open Clubwedstrijd 4",
+      "regions": [],
+      "club": {
+        "name": "Racing Club Roeselare",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 76
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "hudyseries"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-06-15",
+      "location": "Radio controle @ circuit Zolder",
+      "title": "HUDY SERIES RC@CZ Zolder 2025 Race 4",
+      "regions": [],
+      "club": {
+        "name": "Radio controle @ circuit Zolder",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 20089
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-06-15",
+      "location": "RC Hotwheels",
+      "title": "RC Hotwheels - Clubwedstrijd 2 - 15 juni 2025",
+      "regions": [],
+      "club": {
+        "name": "RC Hotwheels",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 3074
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-06-15",
+      "location": "SimplyFunRacing",
+      "title": "2025 Simply Fun Racing: Race 2 (HFCC Den Haag)",
+      "regions": [],
+      "club": {
+        "name": "SimplyFunRacing",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 53360
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-06-15",
+      "location": "Helderse Model Race Club",
+      "title": "4e Open Clubwestrijd 2025 HMRC",
+      "regions": [],
+      "club": {
+        "name": "Helderse Model Race Club",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 7059
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-06-15",
+      "location": "MVB",
+      "title": "2025 Clubwedstrijd #4",
+      "regions": [],
+      "club": {
+        "name": "MVB",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 3200
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-06-22",
+      "location": "MRC Real\u002780 Gr.",
+      "title": "Race Car Series # 2 # Season 2025 MRC Real\u002780",
+      "regions": [],
+      "club": {
+        "name": "MRC Real\u002780 Gr.",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 104
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-06-21",
+      "location": "MAC de Kempen",
+      "title": "Midsummer Longest Day Drive (MLDD) Open 1/10 wedstrijd in de avond",
+      "regions": [],
+      "club": {
+        "name": "MAC de Kempen",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 32715
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-06-22",
+      "location": "Hulshout Offroad Racing",
+      "title": "HOR Clubrace 3 2025",
+      "regions": [],
+      "club": {
+        "name": "Hulshout Offroad Racing",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 50130
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-06-22",
+      "location": "Buggy \u0026 truggycup",
+      "title": "Buggy \u0026 truggycup wedstrijd 3 : Utrecht",
+      "regions": [],
+      "club": {
+        "name": "Buggy \u0026 truggycup",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 34977
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-06-22",
+      "location": "MRCL Bierset",
+      "title": "Amicale Bierset MRCL 22 juin 2025",
+      "regions": [],
+      "club": {
+        "name": "MRCL Bierset",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 9668
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-06-25",
+      "location": "RC Club Zoetermeer",
+      "title": "RCCZ - 2025 : Zomeravondcup 2 van 4",
+      "regions": [],
+      "club": {
+        "name": "RC Club Zoetermeer",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 34977
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-06-28",
+      "location": "MBV Kampenhout",
+      "title": "Kampenhout 2025_2WD",
+      "regions": [],
+      "club": {
+        "name": "MBV Kampenhout",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 51913
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-06-29",
+      "location": "MBC de Sluis",
+      "title": "Zaterdag Avond Competitie MBC de Sluis Race 3",
+      "regions": [],
+      "club": {
+        "name": "MBC de Sluis",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 4842
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-06-28",
+      "location": "Electro Racing Club Eindhoven",
+      "title": "Open Clubwedstrijd #4 - 2025",
+      "regions": [],
+      "club": {
+        "name": "Electro Racing Club Eindhoven",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 3350
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-06-28",
+      "location": "Model Racing Midland",
+      "title": "MRM Open Clubwedstrijd (avond) nr. 3",
+      "regions": [],
+      "club": {
+        "name": "Model Racing Midland",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 19047
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-06-29",
+      "location": "MAC de Kempen",
+      "title": "Clubwedstrijd #4 2025 (alleen voor clubleden)",
+      "regions": [],
+      "club": {
+        "name": "MAC de Kempen",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 32715
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-06-29",
+      "location": "MBV Kampenhout",
+      "title": "Kampenhout 2025_ 4WD \u0026 Truck",
+      "regions": [],
+      "club": {
+        "name": "MBV Kampenhout",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 51913
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-06-29",
+      "location": "M.A.C.  De Baanbrekers",
+      "title": "Besloten Clubwedstrijd 4 2025",
+      "regions": [],
+      "club": {
+        "name": "M.A.C.  De Baanbrekers",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 12027
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-06-29",
+      "location": "Racing Club Roeselare",
+      "title": "Tamiya Cup BE 2025 - Race 6 RCR Roeselare",
+      "regions": [],
+      "club": {
+        "name": "Racing Club Roeselare",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 35896
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-06-29",
+      "location": "RC Hotwheels",
+      "title": "RC Hotwheels - Clubwedstrijd 3 - 29 juni 2025",
+      "regions": [],
+      "club": {
+        "name": "RC Hotwheels",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 3074
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-06-29",
+      "location": "HFCC Den Haag",
+      "title": "Open Clubwedstrijd Race #2 HFCC Racing 2025",
+      "regions": [],
+      "club": {
+        "name": "HFCC Den Haag",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 14156
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-06-29",
+      "location": "EVMC",
+      "title": "Club wedstrijd 2 (Open) 29 juni 2025",
+      "regions": [],
+      "club": {
+        "name": "EVMC",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 10817
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-07-06",
+      "location": "EVMC / RIMAR 303",
+      "title": "Sportkreis-Meisterschaft West VG#4 Rimar/Velp",
+      "regions": [],
+      "club": {
+        "name": "EVMC / RIMAR 303",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 10817
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-07-06",
+      "location": "Hulshout Offroad Racing",
+      "title": "HOR Clubrace 4 2025",
+      "regions": [],
+      "club": {
+        "name": "Hulshout Offroad Racing",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 50130
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-07-06",
+      "location": "M.A.C.  De Baanbrekers",
+      "title": "NK 1/8 2025",
+      "regions": [],
+      "club": {
+        "name": "M.A.C.  De Baanbrekers",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 12027
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-07-06",
+      "location": "MRC REAL80 Groningen",
+      "title": "4de Open Clubwedstrijd REAL80 2025",
+      "regions": [],
+      "club": {
+        "name": "MRC REAL80 Groningen",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 104
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-07-06",
+      "location": "RC Club Zoetermeer",
+      "title": "RCCZ - 2025 : (Open) Clubwedstrijd 1:8 - 2 van 3",
+      "regions": [],
+      "club": {
+        "name": "RC Club Zoetermeer",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 34977
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-07-13",
+      "location": "Raco2000",
+      "title": "EC \u201925 10th Elec Track - Raco2000 - Utrecht - WARMUP",
+      "regions": [],
+      "club": {
+        "name": "Raco2000",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 1980
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-07-12",
+      "location": "Main Meetings Raalte",
+      "title": "4e OC",
+      "regions": [],
+      "club": {
+        "name": "Main Meetings Raalte",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 23785
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-07-13",
+      "location": "FBA",
+      "title": "FBA BK/CB Buggy 2025 Race 4 - HOR Hulshout",
+      "regions": [],
+      "club": {
+        "name": "FBA",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 38144
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-07-13",
+      "location": "MBC de Sluis",
+      "title": "Open Club MBC de Sluis Race 3",
+      "regions": [],
+      "club": {
+        "name": "MBC de Sluis",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 4842
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-07-13",
+      "location": "RC Hotwheels",
+      "title": "RC Hotwheels - Clubwedstrijd 4 - 13 juli 2025",
+      "regions": [],
+      "club": {
+        "name": "RC Hotwheels",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 3074
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-07-13",
+      "location": "Buggy \u0026 truggycup",
+      "title": "Buggy \u0026 truggycup wedstrijd 4 : Zoetermeer",
+      "regions": [],
+      "club": {
+        "name": "Buggy \u0026 truggycup",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 34977
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-07-13",
+      "location": "MVB",
+      "title": "2025 Clubwedstrijd #5",
+      "regions": [],
+      "club": {
+        "name": "MVB",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 3200
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-07-16",
+      "location": "HFCC Den Haag",
+      "title": "Avondcompetitie #4 HFCC Racing 2025",
+      "regions": [],
+      "club": {
+        "name": "HFCC Den Haag",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 14156
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-07-19",
+      "location": "MBV Kampenhout",
+      "title": "CK4_2025",
+      "regions": [],
+      "club": {
+        "name": "MBV Kampenhout",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 51913
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-07-19",
+      "location": "Model Racing Midland",
+      "title": "MRM Open Clubwedstrijd (avond) nr. 4",
+      "regions": [],
+      "club": {
+        "name": "Model Racing Midland",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 19047
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-07-20",
+      "location": "Racing Club Roeselare",
+      "title": "BK electro 1/10de",
+      "regions": [],
+      "club": {
+        "name": "Racing Club Roeselare",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 76
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-07-20",
+      "location": "Orra",
+      "title": "Clubrace 4 Orra 20/07/2025",
+      "regions": [],
+      "club": {
+        "name": "Orra",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 55554
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-07-20",
+      "location": "EVMC",
+      "title": "Club wedstrijd 3 (Open) 20 juli 2025",
+      "regions": [],
+      "club": {
+        "name": "EVMC",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 10817
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-07-23",
+      "location": "RC Club Zoetermeer",
+      "title": "RCCZ - 2025 : Zomeravondcup 3 van 4",
+      "regions": [],
+      "club": {
+        "name": "RC Club Zoetermeer",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 34977
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "hudyseries"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-07-27",
+      "location": "Radio controle @ circuit Zolder",
+      "title": "HUDY SERIES RC@CZ Zolder 2025 Race 5",
+      "regions": [],
+      "club": {
+        "name": "Radio controle @ circuit Zolder",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 20089
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-07-26",
+      "location": "HFCC Den Haag",
+      "title": "Open Clubwedstrijd Race #3 HFCC Racing 2025",
+      "regions": [],
+      "club": {
+        "name": "HFCC Den Haag",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 14156
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-07-27",
+      "location": "ERCE Eindhoven NL",
+      "title": "Tamiya Cup BE 2025 - Race 7 ERCE Eindhoven",
+      "regions": [],
+      "club": {
+        "name": "ERCE Eindhoven NL",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 35896
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-07-27",
+      "location": "MAC Vlijmen",
+      "title": "MAC Vlijmen Clubrace 3 (\u002Bvintage)",
+      "regions": [],
+      "club": {
+        "name": "MAC Vlijmen",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 30724
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-07-27",
+      "location": "MAC Vlijmen",
+      "title": "MAC Vlijmen Clubrace - King of the Sun Open",
+      "regions": [],
+      "club": {
+        "name": "MAC Vlijmen",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 30724
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-08-03",
+      "location": "Orra",
+      "title": "Clubrace 5 Orra 03/08/2025",
+      "regions": [],
+      "club": {
+        "name": "Orra",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 55554
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-08-09",
+      "location": "AMCA-Apeldoorn",
+      "title": "Open Clubwedstrijd 4 - 9 augustus 2025",
+      "regions": [],
+      "club": {
+        "name": "AMCA-Apeldoorn",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 7762
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-08-10",
+      "location": "FBA",
+      "title": "FBA BK/CB Buggy 2025 Race 5 - ORRA Arendonk",
+      "regions": [],
+      "club": {
+        "name": "FBA",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 38144
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-08-10",
+      "location": "MAC De Baanbrekers",
+      "title": "Tamiya Cup BE 2025 - Race 8 Mac De Baanbrekers NL",
+      "regions": [],
+      "club": {
+        "name": "MAC De Baanbrekers",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 35896
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-08-10",
+      "location": "MVB",
+      "title": "2025 Clubwedstrijd #6",
+      "regions": [],
+      "club": {
+        "name": "MVB",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 3200
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-08-16",
+      "location": "MBV Kampenhout",
+      "title": "CK5_2025",
+      "regions": [],
+      "club": {
+        "name": "MBV Kampenhout",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 51913
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-08-17",
+      "location": "MBC de Sluis",
+      "title": "Zaterdag Avond Competitie MBC de Sluis Race 4",
+      "regions": [],
+      "club": {
+        "name": "MBC de Sluis",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 4842
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-08-17",
+      "location": "SOM / ICC",
+      "title": "SOM 3 - MACH-ONE Helmond",
+      "regions": [],
+      "club": {
+        "name": "SOM / ICC",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 30724
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-08-17",
+      "location": "RC Hotwheels",
+      "title": "RC Hotwheels - Clubwedstrijd 5 - 17 augustus 2025",
+      "regions": [],
+      "club": {
+        "name": "RC Hotwheels",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 3074
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-08-17",
+      "location": "Electro Racing Club Eindhoven",
+      "title": "Open Clubwedstrijd #5 - 2025",
+      "regions": [],
+      "club": {
+        "name": "Electro Racing Club Eindhoven",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 3350
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-08-17",
+      "location": "MRCL Bierset",
+      "title": "Amicale Bierset MRCL 17 ao\u00FBt 2025",
+      "regions": [],
+      "club": {
+        "name": "MRCL Bierset",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 9668
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-08-24",
+      "location": "Raco2000",
+      "title": "EC \u201925 10th Elec Track - Raco2000 - Utrecht",
+      "regions": [],
+      "club": {
+        "name": "Raco2000",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 1980
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-08-24",
+      "location": "M.A.C.  De Baanbrekers",
+      "title": "Race Car Series # 4 # Season 2025 MAC De Baanbrekers.",
+      "regions": [],
+      "club": {
+        "name": "M.A.C.  De Baanbrekers",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 12027
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-08-23",
+      "location": "Hulshout Offroad Racing",
+      "title": "HOR Clubrace 5 2025",
+      "regions": [],
+      "club": {
+        "name": "Hulshout Offroad Racing",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 50130
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-08-24",
+      "location": "Racing Club Roeselare",
+      "title": "Open Clubwedstrijd 5",
+      "regions": [],
+      "club": {
+        "name": "Racing Club Roeselare",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 76
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-08-24",
+      "location": "MRCL Bierset",
+      "title": "Tamiya Cup BE 2025 - Race 9 MRCL Bierset",
+      "regions": [],
+      "club": {
+        "name": "MRCL Bierset",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 35896
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "hudyseries"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-08-24",
+      "location": "Radio controle @ circuit Zolder",
+      "title": "HUDY SERIES RC@CZ Zolder 2025 Race 6",
+      "regions": [],
+      "club": {
+        "name": "Radio controle @ circuit Zolder",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 20089
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-08-24",
+      "location": "MAC Vlijmen",
+      "title": "MAC Vlijmen Clubrace 4 (\u002Bcaravan)",
+      "regions": [],
+      "club": {
+        "name": "MAC Vlijmen",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 30724
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-08-27",
+      "location": "HFCC Den Haag",
+      "title": "Avondcompetitie #5 HFCC Racing 2025",
+      "regions": [],
+      "club": {
+        "name": "HFCC Den Haag",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 14156
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-08-31",
+      "location": "MRC Real\u002780 Gr.",
+      "title": "4de NK BC05 Seizoen 2025",
+      "regions": [],
+      "club": {
+        "name": "MRC Real\u002780 Gr.",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 104
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-08-30",
+      "location": "Model Racing Midland",
+      "title": "MRM 750 ronden F1",
+      "regions": [],
+      "club": {
+        "name": "Model Racing Midland",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 19047
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-08-31",
+      "location": "MACH-One Helmond",
+      "title": "Mach-One One to Ten",
+      "regions": [],
+      "club": {
+        "name": "MACH-One Helmond",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 33841
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-08-31",
+      "location": "MBC de Sluis",
+      "title": "Open Club MBC de Sluis Race 4",
+      "regions": [],
+      "club": {
+        "name": "MBC de Sluis",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 4842
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-08-31",
+      "location": "RC Hotwheels",
+      "title": "RC Hotwheels - Clubwedstrijd 6 - 31 augustus 2025",
+      "regions": [],
+      "club": {
+        "name": "RC Hotwheels",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 3074
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-08-31",
+      "location": "RC Club Zoetermeer",
+      "title": "Sweetlake 5-hours summerrace (teamrace)",
+      "regions": [],
+      "club": {
+        "name": "RC Club Zoetermeer",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 34977
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-08-31",
+      "location": "EVMC",
+      "title": "Club wedstrijd 4 (Open) 31 augustus 2025",
+      "regions": [],
+      "club": {
+        "name": "EVMC",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 10817
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-09-06",
+      "location": "MBV Kampenhout",
+      "title": "CK6_2025",
+      "regions": [],
+      "club": {
+        "name": "MBV Kampenhout",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 51913
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-09-07",
+      "location": "MAC de Kempen",
+      "title": "Clubwedstrijd #5 2025 (alleen voor clubleden)",
+      "regions": [],
+      "club": {
+        "name": "MAC de Kempen",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 32715
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-09-07",
+      "location": "Racing Club Roeselare",
+      "title": "BK 1/8e - 1/10de nitro",
+      "regions": [],
+      "club": {
+        "name": "Racing Club Roeselare",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 76
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-09-07",
+      "location": "HRT Houthalen",
+      "title": "Tamiya Cup BE 2025 - Race 10 HRT Houthalen",
+      "regions": [],
+      "club": {
+        "name": "HRT Houthalen",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 35896
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-09-07",
+      "location": "Electro Racing Club Eindhoven",
+      "title": "Open Clubwedstrijd #6 - 2025",
+      "regions": [],
+      "club": {
+        "name": "Electro Racing Club Eindhoven",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 3350
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-09-10",
+      "location": "RC Club Zoetermeer",
+      "title": "RCCZ - 2025 : Zomeravondcup 4 van 4",
+      "regions": [],
+      "club": {
+        "name": "RC Club Zoetermeer",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 34977
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-09-13",
+      "location": "AMCA-Apeldoorn",
+      "title": "Besloten Clubwedstrijd 5 \u002B BBQ - 13 september 2025",
+      "regions": [],
+      "club": {
+        "name": "AMCA-Apeldoorn",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 7762
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-09-14",
+      "location": "FBA",
+      "title": "FBA BK/CB Buggy 2025 Race 6 - Seraing Buggy Club",
+      "regions": [],
+      "club": {
+        "name": "FBA",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 38144
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-09-14",
+      "location": "Buggy \u0026 truggycup",
+      "title": "Buggy \u0026 truggycup wedstrijd 5 : Hengelo",
+      "regions": [],
+      "club": {
+        "name": "Buggy \u0026 truggycup",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 34977
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-09-14",
+      "location": "Speedway-Tilburg",
+      "title": "Open race 3 Speedway-Tilburg 2025",
+      "regions": [],
+      "club": {
+        "name": "Speedway-Tilburg",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 56820
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-09-17",
+      "location": "HFCC Den Haag",
+      "title": "Avondcompetitie #6 HFCC Racing 2025",
+      "regions": [],
+      "club": {
+        "name": "HFCC Den Haag",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 14156
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-09-21",
+      "location": "MBC de Sluis",
+      "title": "Zaterdag Avond Competitie MBC de Sluis Race 5",
+      "regions": [],
+      "club": {
+        "name": "MBC de Sluis",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 4842
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-09-21",
+      "location": "Hulshout Offroad Racing",
+      "title": "HOR Clubrace 6 2025",
+      "regions": [],
+      "club": {
+        "name": "Hulshout Offroad Racing",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 50130
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-09-21",
+      "location": "SOM / ICC",
+      "title": "SOM 4 - MAC de Kempen",
+      "regions": [],
+      "club": {
+        "name": "SOM / ICC",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 30724
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-09-21",
+      "location": "Racing Club Roeselare",
+      "title": "Open Clubwedstrijd 6",
+      "regions": [],
+      "club": {
+        "name": "Racing Club Roeselare",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 76
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-09-21",
+      "location": "MRC REAL80 Groningen",
+      "title": "5de Open Clubwedstrijd REAL80 2025",
+      "regions": [],
+      "club": {
+        "name": "MRC REAL80 Groningen",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 104
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-09-21",
+      "location": "RC Club Zoetermeer",
+      "title": "RCCZ - 2025 : (Open) Clubwedstrijd 1:10 - 3 van 3",
+      "regions": [],
+      "club": {
+        "name": "RC Club Zoetermeer",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 34977
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-09-21",
+      "location": "MVB",
+      "title": "2025 Clubwedstrijd #7",
+      "regions": [],
+      "club": {
+        "name": "MVB",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 3200
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-09-28",
+      "location": "SimplyFunRacing",
+      "title": "2025 Simply Fun Racing: Race 3 (MBC de Sluis Gouda)",
+      "regions": [],
+      "club": {
+        "name": "SimplyFunRacing",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 53360
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-09-28",
+      "location": "MAC Vlijmen",
+      "title": "MAC Vlijmen Clubrace 5",
+      "regions": [],
+      "club": {
+        "name": "MAC Vlijmen",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 30724
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-09-28",
+      "location": "Orra",
+      "title": "Clubrace 6 Orra 28/09/2025",
+      "regions": [],
+      "club": {
+        "name": "Orra",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 55554
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-09-28",
+      "location": "Model Racing Midland",
+      "title": "MRM Open Clubwedstrijd nr. 5",
+      "regions": [],
+      "club": {
+        "name": "Model Racing Midland",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 19047
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-09-28",
+      "location": "MRCL Bierset",
+      "title": "Amicale Bierset MRCL 28 septembre 2025",
+      "regions": [],
+      "club": {
+        "name": "MRCL Bierset",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 9668
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-10-05",
+      "location": "MACH-One Helmond",
+      "title": "Open Club Race 4",
+      "regions": [],
+      "club": {
+        "name": "MACH-One Helmond",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 33841
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-10-05",
+      "location": "MBC de Sluis",
+      "title": "Open Club MBC de Sluis Race 5",
+      "regions": [],
+      "club": {
+        "name": "MBC de Sluis",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 4842
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "hudyseries"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-10-05",
+      "location": "Radio controle @ circuit Zolder",
+      "title": "HUDY SERIES RC@CZ Zolder 2025 Race 7",
+      "regions": [],
+      "club": {
+        "name": "Radio controle @ circuit Zolder",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 20089
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-10-05",
+      "location": "RC Hotwheels",
+      "title": "RC Hotwheels - Clubwedstrijd 7 - 5 oktober 2025",
+      "regions": [],
+      "club": {
+        "name": "RC Hotwheels",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 3074
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-10-05",
+      "location": "Buggy \u0026 truggycup",
+      "title": "Buggy \u0026 truggycup wedstrijd 6 : Purmerend",
+      "regions": [],
+      "club": {
+        "name": "Buggy \u0026 truggycup",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 34977
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-10-05",
+      "location": "MVB",
+      "title": "2025 Clubwedstrijd #8",
+      "regions": [],
+      "club": {
+        "name": "MVB",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 3200
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-10-11",
+      "location": "MAC de Kempen",
+      "title": "Clubwedstrijd #6 2025 \u002B BBQ (alleen voor clubleden)",
+      "regions": [],
+      "club": {
+        "name": "MAC de Kempen",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 32715
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-10-12",
+      "location": "MBC de Sluis",
+      "title": "6 uren van Gouda",
+      "regions": [],
+      "club": {
+        "name": "MBC de Sluis",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 4842
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-10-12",
+      "location": "RC Club Zoetermeer",
+      "title": "RCCZ - 2025 : (Open) Clubwedstrijd 1:8 - 3 van 3",
+      "regions": [],
+      "club": {
+        "name": "RC Club Zoetermeer",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 34977
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-10-12",
+      "location": "Speedway-Tilburg",
+      "title": "Open race 4 Speedway-Tilburg 2025",
+      "regions": [],
+      "club": {
+        "name": "Speedway-Tilburg",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 56820
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-10-26",
+      "location": "Mach-One Helmond",
+      "title": "Mach-One - Winter Is Coming 2025 - 1/8 Buggy Nitro, Brushless Buggy \u0026 Truggy",
+      "regions": [],
+      "club": {
+        "name": "Mach-One Helmond",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 1980
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-11-02",
+      "location": "Main Meetings Raalte",
+      "title": "Dutch GP LSOR",
+      "regions": [],
+      "club": {
+        "name": "Main Meetings Raalte",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 23785
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-11-15",
+      "location": "Main Meetings Raalte",
+      "title": "5e OC",
+      "regions": [],
+      "club": {
+        "name": "Main Meetings Raalte",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 23785
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-12-20",
+      "location": "Mach-One/Mac de Kempen",
+      "title": "Southern Indoor Masters Supercross 2025 - OR10 - 2WD, 4WD, ShortCourse, Truck, Vintage 2WD, 4WD",
+      "regions": [],
+      "club": {
+        "name": "Mach-One/Mac de Kempen",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 1980
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-12-21",
+      "location": "Mach-One/Mac de Kempen",
+      "title": "Southern Indoor Masters Supercross 2025 - OR08 - Buggy \u0026 Truggy",
+      "regions": [],
+      "club": {
+        "name": "Mach-One/Mac de Kempen",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 1980
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-12-27",
+      "location": "Main Meetings Raalte",
+      "title": "13e Oliebollen Cross 2025",
+      "regions": [],
+      "club": {
+        "name": "Main Meetings Raalte",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 23785
+      }
+    }
+  ]
+}
