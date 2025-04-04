@@ -1,10 +1,10 @@
 ﻿using System.Text.Json;
 using RcCloud.DateScraper.Cli.Common.Services;
-using RcCloud.DateScraper.Cli.Output.Dto;
+using RcCloud.DateScraper.Cli.Output.Services;
 
 namespace RcCloud.DateScraper.Cli.Commands;
 
-internal class JsonCommand(RetrieveAllRaces retrieveAll)
+internal class JsonCommand(RetrieveAllRaces retrieveAll, WriteJson writeJson)
 {
     public async Task OnExecute()
     {
@@ -14,7 +14,7 @@ internal class JsonCommand(RetrieveAllRaces retrieveAll)
         {
             WriteIndented = true
         };
-        var bytes = JsonSerializer.SerializeToUtf8Bytes(new JsonExportSchema(DateTimeOffset.Now, all), options);
-        File.WriteAllBytes("all.json", bytes);
+
+        writeJson.Write(all, "all.json");
     }
 }

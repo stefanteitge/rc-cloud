@@ -1,21 +1,21 @@
-using System.Globalization;
-using System.Web;
-using AngleSharp;
+﻿using AngleSharp;
 using AngleSharp.Dom;
 using RcCloud.DateScraper.Application.Myrcm.Clubs.Services;
+using RcCloud.DateScraper.Application.Myrcm.Common.Domain;
 using RcCloud.DateScraper.Application.Myrcm.Upcoming.Domain;
-using RcCloud.DateScraper.Domain;
 using RcCloud.DateScraper.Domain.Clubs;
 using RcCloud.DateScraper.Domain.Races;
 using RcCloud.DateScraper.Domain.Series;
+using System.Globalization;
+using System.Web;
 
 namespace RcCloud.DateScraper.Application.Myrcm.Upcoming.Services;
 
 public class ScrapeMyrcmRaces(DownloadMyrcmPages downloadPages, GuessSeriesFromTitle guessSeriesFromTitle, SanitizeClubNames sanitizeClubNames, GuessIfItIsTraining guessIfItIsTraining)
 {
-    public async Task<IEnumerable<RaceMeeting>> Scrape()
+    public async Task<IEnumerable<RaceMeeting>> Scrape(MyrcmCountryCode[] countries)
     {
-        var downloaded = await downloadPages.Download(DownloadFilter.GermanyOnly);
+        var downloaded = await downloadPages.Download(new DownloadFilter(countries));
         var firstPage = await Scrape(downloaded);
         var all = new List<RaceMeeting>();
         all.AddRange(firstPage);
@@ -23,7 +23,7 @@ public class ScrapeMyrcmRaces(DownloadMyrcmPages downloadPages, GuessSeriesFromT
 
         for (int i = 1; i < pageCount; i++)
         {
-            var downloaded2 = await downloadPages.Download(DownloadFilter.GermanyOnly, i);
+            var downloaded2 = await downloadPages.Download(new DownloadFilter(countries), i);
             var parsed2 = await Scrape(downloaded2);
             all.AddRange(parsed2);
         }
@@ -116,9 +116,16 @@ public class ScrapeMyrcmRaces(DownloadMyrcmPages downloadPages, GuessSeriesFromT
 
     private static int GetClubNumber(IHtmlCollection<IElement> cells)
     {
-        var url = cells[1].QuerySelector("a").Attributes["href"].Value;
+        var url = cells[1].QuerySelector("a")?.Attributes["href"]?.Value;
         var hostLink = new Url(url);
-        var clubNumber = int.Parse(HttpUtility.ParseQueryString(hostLink.Query).Get("dId[O]"));
+        var clubNumberString = HttpUtility.ParseQueryString(hostLink.Query).Get("dId[O]");
+
+        if (string.IsNullOrEmpty(clubNumberString))
+        {
+            throw new ArgumentException("Club number not found in URL");
+        }
+
+        var clubNumber = int.Parse(clubNumberString);
         return clubNumber;
     }
 

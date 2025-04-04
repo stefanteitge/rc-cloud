@@ -1,7 +1,7 @@
 using RcCloud.DateScraper.Application.Myrcm.Clubs.Services;
 using RcCloud.DateScraper.Application.Myrcm.Upcoming.Services;
 
-namespace RcCloud.DateScraper.Application.Myrcm.Tests.Services;
+namespace RcCloud.DateScraper.Application.Myrcm.Tests.Upcoming.Services;
 
 public class ScrapeMyrcmRacesTests
 {

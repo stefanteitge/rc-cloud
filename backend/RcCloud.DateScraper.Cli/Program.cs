@@ -18,6 +18,7 @@ await new HostBuilder()
         services
             .AddSingleton<PrintRaces>()
             .AddTransient<RetrieveAllRaces>()
+            .AddTransient<WriteJson>()
             .AddDmc()
             .AddMyrcm()
             .AddRck()

@@ -1,3 +1,4 @@
+using RcCloud.DateScraper.Application.Myrcm.Common.Domain;
 using RcCloud.DateScraper.Application.Myrcm.Upcoming.Services;
 using RcCloud.DateScraper.Domain.Clubs;
 
@@ -7,7 +8,7 @@ public class ScrapeMyrcmClubs(ScrapeMyrcmRaces scrapeRaces, SanitizeClubNames sa
 {
     public async Task<List<Club>> Scrape()
     {
-        var races = await scrapeRaces.Scrape();
+        var races = await scrapeRaces.Scrape([MyrcmCountryCode.Germany]);
 
         var clubs = races
             .Select(r => r.Club)
