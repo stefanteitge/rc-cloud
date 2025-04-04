@@ -1,5 +1,5 @@
 {
-  "retrievedDate": "2025-04-03T19:38:57.6716053+00:00",
+  "retrievedDate": "2025-04-04T11:48:02.3063041+00:00",
   "raceMeetings": [
     {
       "series": [
@@ -11,30 +11,6 @@
         "id": "current"
       },
       "date": "2025-01-04",
-      "location": "MSV H\u00FCrtgenwald e.V.",
-      "title": "Freundschaftsrennen",
-      "regions": [
-        {
-          "id": "west"
-        }
-      ],
-      "club": {
-        "name": "MSV H\u00FCrtgenwald e.V.",
-        "aliases": [],
-        "dmcClubNumber": 181,
-        "myrcmClubNumber": null
-      }
-    },
-    {
-      "series": [
-        {
-          "id": "dmc"
-        }
-      ],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-01-05",
       "location": "MSV H\u00FCrtgenwald e.V.",
       "title": "Freundschaftsrennen",
       "regions": [
@@ -79,6 +55,57 @@
     {
       "series": [
         {
+          "id": "elbecup"
+        },
+        {
+          "id": "sm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-01-05",
+      "location": "AMC Magdeburg e.V.",
+      "title": "SM-Lauf",
+      "regions": [
+        {
+          "id": "east"
+        }
+      ],
+      "club": {
+        "name": "AMC Magdeburg e.V.",
+        "aliases": [],
+        "dmcClubNumber": 291,
+        "myrcmClubNumber": null
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "dmc"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-01-05",
+      "location": "MSV H\u00FCrtgenwald e.V.",
+      "title": "Freundschaftsrennen",
+      "regions": [
+        {
+          "id": "west"
+        }
+      ],
+      "club": {
+        "name": "MSV H\u00FCrtgenwald e.V.",
+        "aliases": [],
+        "dmcClubNumber": 181,
+        "myrcmClubNumber": null
+      }
+    },
+    {
+      "series": [
+        {
           "id": "sm"
         }
       ],
@@ -103,27 +130,24 @@
     {
       "series": [
         {
-          "id": "elbecup"
-        },
-        {
-          "id": "sm"
+          "id": "dmc"
         }
       ],
       "season": {
         "id": "current"
       },
-      "date": "2025-01-05",
-      "location": "AMC Magdeburg e.V.",
-      "title": "SM-Lauf",
+      "date": "2025-01-12",
+      "location": "RCCR Munzig e.V.",
+      "title": "Freundschaftsrennen",
       "regions": [
         {
           "id": "east"
         }
       ],
       "club": {
-        "name": "AMC Magdeburg e.V.",
+        "name": "RCCR Munzig e.V.",
         "aliases": [],
-        "dmcClubNumber": 291,
+        "dmcClubNumber": 316,
         "myrcmClubNumber": null
       }
     },
@@ -196,30 +220,6 @@
         "name": "MCRT Aschaffenburg",
         "aliases": [],
         "dmcClubNumber": 176,
-        "myrcmClubNumber": null
-      }
-    },
-    {
-      "series": [
-        {
-          "id": "dmc"
-        }
-      ],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-01-12",
-      "location": "RCCR Munzig e.V.",
-      "title": "Freundschaftsrennen",
-      "regions": [
-        {
-          "id": "east"
-        }
-      ],
-      "club": {
-        "name": "RCCR Munzig e.V.",
-        "aliases": [],
-        "dmcClubNumber": 316,
         "myrcmClubNumber": null
       }
     },
@@ -318,6 +318,30 @@
     {
       "series": [
         {
+          "id": "sm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-02-02",
+      "location": "MAC Siersburg e.V.",
+      "title": "SM-Lauf",
+      "regions": [
+        {
+          "id": "central"
+        }
+      ],
+      "club": {
+        "name": "MAC Siersburg e.V.",
+        "aliases": [],
+        "dmcClubNumber": 383,
+        "myrcmClubNumber": null
+      }
+    },
+    {
+      "series": [
+        {
           "id": "dmc"
         }
       ],
@@ -366,54 +390,6 @@
     {
       "series": [
         {
-          "id": "sm"
-        }
-      ],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-02-02",
-      "location": "MAC Siersburg e.V.",
-      "title": "SM-Lauf",
-      "regions": [
-        {
-          "id": "central"
-        }
-      ],
-      "club": {
-        "name": "MAC Siersburg e.V.",
-        "aliases": [],
-        "dmcClubNumber": 383,
-        "myrcmClubNumber": null
-      }
-    },
-    {
-      "series": [
-        {
-          "id": "dmc"
-        }
-      ],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-02-09",
-      "location": "RCCR Munzig e.V.",
-      "title": "Freundschaftsrennen",
-      "regions": [
-        {
-          "id": "east"
-        }
-      ],
-      "club": {
-        "name": "RCCR Munzig e.V.",
-        "aliases": [],
-        "dmcClubNumber": 316,
-        "myrcmClubNumber": null
-      }
-    },
-    {
-      "series": [
-        {
           "id": "letrophy"
         }
       ],
@@ -445,6 +421,30 @@
         "id": "current"
       },
       "date": "2025-02-09",
+      "location": "RCCR Munzig e.V.",
+      "title": "Freundschaftsrennen",
+      "regions": [
+        {
+          "id": "east"
+        }
+      ],
+      "club": {
+        "name": "RCCR Munzig e.V.",
+        "aliases": [],
+        "dmcClubNumber": 316,
+        "myrcmClubNumber": null
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "dmc"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-02-09",
       "location": "MAC OR H\u00FCtschenhausen e.V.",
       "title": "Freundschaftsrennen",
       "regions": [
@@ -456,6 +456,30 @@
         "name": "MAC OR H\u00FCtschenhausen e.V.",
         "aliases": [],
         "dmcClubNumber": 86,
+        "myrcmClubNumber": null
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "sm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-02-16",
+      "location": "MCRT Aschaffenburg",
+      "title": "SM-Lauf",
+      "regions": [
+        {
+          "id": "central"
+        }
+      ],
+      "club": {
+        "name": "MCRT Aschaffenburg",
+        "aliases": [],
+        "dmcClubNumber": 176,
         "myrcmClubNumber": null
       }
     },
@@ -504,54 +528,6 @@
         "name": "Modell-Car-Club Bad Kissingen e.V.",
         "aliases": [],
         "dmcClubNumber": 44,
-        "myrcmClubNumber": null
-      }
-    },
-    {
-      "series": [
-        {
-          "id": "sm"
-        }
-      ],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-02-16",
-      "location": "MCRT Aschaffenburg",
-      "title": "SM-Lauf",
-      "regions": [
-        {
-          "id": "central"
-        }
-      ],
-      "club": {
-        "name": "MCRT Aschaffenburg",
-        "aliases": [],
-        "dmcClubNumber": 176,
-        "myrcmClubNumber": null
-      }
-    },
-    {
-      "series": [
-        {
-          "id": "sm"
-        }
-      ],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-03-02",
-      "location": "MAC Solms",
-      "title": "SM-Lauf",
-      "regions": [
-        {
-          "id": "central"
-        }
-      ],
-      "club": {
-        "name": "MAC Solms",
-        "aliases": [],
-        "dmcClubNumber": 335,
         "myrcmClubNumber": null
       }
     },
@@ -628,8 +604,8 @@
       "season": {
         "id": "current"
       },
-      "date": "2025-03-09",
-      "location": "TS-Gross Auheim",
+      "date": "2025-03-02",
+      "location": "MAC Solms",
       "title": "SM-Lauf",
       "regions": [
         {
@@ -637,9 +613,9 @@
         }
       ],
       "club": {
-        "name": "TS-Gross Auheim",
+        "name": "MAC Solms",
         "aliases": [],
-        "dmcClubNumber": 289,
+        "dmcClubNumber": 335,
         "myrcmClubNumber": null
       }
     },
@@ -712,6 +688,30 @@
         "name": "MSV H\u00FCrtgenwald e.V.",
         "aliases": [],
         "dmcClubNumber": 181,
+        "myrcmClubNumber": null
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "sm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-03-09",
+      "location": "TS-Gross Auheim",
+      "title": "SM-Lauf",
+      "regions": [
+        {
+          "id": "central"
+        }
+      ],
+      "club": {
+        "name": "TS-Gross Auheim",
+        "aliases": [],
+        "dmcClubNumber": 289,
         "myrcmClubNumber": null
       }
     },
@@ -977,30 +977,6 @@
     {
       "series": [
         {
-          "id": "dmc"
-        }
-      ],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-03-30",
-      "location": "RCCR Munzig e.V.",
-      "title": "Freundschaftsrennen",
-      "regions": [
-        {
-          "id": "east"
-        }
-      ],
-      "club": {
-        "name": "RCCR Munzig e.V.",
-        "aliases": [],
-        "dmcClubNumber": 316,
-        "myrcmClubNumber": null
-      }
-    },
-    {
-      "series": [
-        {
           "id": "sm"
         }
       ],
@@ -1025,6 +1001,30 @@
     {
       "series": [
         {
+          "id": "dmc"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-03-30",
+      "location": "RCCR Munzig e.V.",
+      "title": "Freundschaftsrennen",
+      "regions": [
+        {
+          "id": "east"
+        }
+      ],
+      "club": {
+        "name": "RCCR Munzig e.V.",
+        "aliases": [],
+        "dmcClubNumber": 316,
+        "myrcmClubNumber": null
+      }
+    },
+    {
+      "series": [
+        {
           "id": "myrcm"
         }
       ],
@@ -1040,6 +1040,30 @@
         "aliases": [],
         "dmcClubNumber": null,
         "myrcmClubNumber": 60453
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "sm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-04-06",
+      "location": "MCK e.V. Dormagen",
+      "title": "SM-Lauf",
+      "regions": [
+        {
+          "id": "west"
+        }
+      ],
+      "club": {
+        "name": "MCK e.V. Dormagen",
+        "aliases": [],
+        "dmcClubNumber": 40,
+        "myrcmClubNumber": null
       }
     },
     {
@@ -1249,50 +1273,6 @@
     {
       "series": [
         {
-          "id": "tec"
-        }
-      ],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-04-06",
-      "location": "TSV Mariendorf 97 Berlin",
-      "title": "Tamiya Eurocup",
-      "regions": [],
-      "club": {
-        "name": "TSV Mariendorf 97 Berlin",
-        "aliases": [],
-        "dmcClubNumber": 102,
-        "myrcmClubNumber": null
-      }
-    },
-    {
-      "series": [
-        {
-          "id": "sm"
-        }
-      ],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-04-06",
-      "location": "MCK e.V. Dormagen",
-      "title": "SM-Lauf",
-      "regions": [
-        {
-          "id": "west"
-        }
-      ],
-      "club": {
-        "name": "MCK e.V. Dormagen",
-        "aliases": [],
-        "dmcClubNumber": 40,
-        "myrcmClubNumber": null
-      }
-    },
-    {
-      "series": [
-        {
           "id": "dmc"
         }
       ],
@@ -1311,6 +1291,26 @@
         "name": "MAC OR H\u00FCtschenhausen e.V.",
         "aliases": [],
         "dmcClubNumber": 86,
+        "myrcmClubNumber": null
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "tec"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-04-06",
+      "location": "TSV Mariendorf 97 Berlin",
+      "title": "Tamiya Eurocup",
+      "regions": [],
+      "club": {
+        "name": "TSV Mariendorf 97 Berlin",
+        "aliases": [],
+        "dmcClubNumber": 102,
         "myrcmClubNumber": null
       }
     },
@@ -1384,6 +1384,26 @@
     {
       "series": [
         {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-04-10",
+      "location": "Minicar Club Dortmund e.V.",
+      "title": "Vintage auf Intermodellbau",
+      "regions": [],
+      "club": {
+        "name": "Minicar Club Dortmund e.V.",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 6266
+      }
+    },
+    {
+      "series": [
+        {
           "id": "dmc"
         }
       ],
@@ -1408,21 +1428,25 @@
     {
       "series": [
         {
-          "id": "myrcm"
+          "id": "dmc"
         }
       ],
       "season": {
         "id": "current"
       },
-      "date": "2025-04-10",
-      "location": "Minicar Club Dortmund e.V.",
-      "title": "Vintage auf Intermodellbau",
-      "regions": [],
+      "date": "2025-04-11",
+      "location": "MC Dortmund e.V.",
+      "title": "Freundschaftsrennen",
+      "regions": [
+        {
+          "id": "west"
+        }
+      ],
       "club": {
-        "name": "Minicar Club Dortmund e.V.",
+        "name": "MC Dortmund e.V.",
         "aliases": [],
-        "dmcClubNumber": null,
-        "myrcmClubNumber": 6266
+        "dmcClubNumber": 143,
+        "myrcmClubNumber": null
       }
     },
     {
@@ -1448,25 +1472,21 @@
     {
       "series": [
         {
-          "id": "dmc"
+          "id": "tec"
         }
       ],
       "season": {
         "id": "current"
       },
-      "date": "2025-04-11",
-      "location": "MC Dortmund e.V.",
-      "title": "Freundschaftsrennen",
-      "regions": [
-        {
-          "id": "west"
-        }
-      ],
+      "date": "2025-04-12",
+      "location": "TS Grossauheim",
+      "title": "TAMIYA Eurocup 12.04.2025 - Hanau-Grossauheim Rochushalle",
+      "regions": [],
       "club": {
-        "name": "MC Dortmund e.V.",
+        "name": "TS Grossauheim",
         "aliases": [],
-        "dmcClubNumber": 143,
-        "myrcmClubNumber": null
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 22897
       }
     },
     {
@@ -1487,26 +1507,6 @@
         "aliases": [],
         "dmcClubNumber": 289,
         "myrcmClubNumber": null
-      }
-    },
-    {
-      "series": [
-        {
-          "id": "tec"
-        }
-      ],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-04-12",
-      "location": "TS Grossauheim",
-      "title": "TAMIYA Eurocup 12.04.2025 - Hanau-Grossauheim Rochushalle",
-      "regions": [],
-      "club": {
-        "name": "TS Grossauheim",
-        "aliases": [],
-        "dmcClubNumber": null,
-        "myrcmClubNumber": 22897
       }
     },
     {
@@ -1639,30 +1639,6 @@
         "id": "current"
       },
       "date": "2025-04-13",
-      "location": "ESV Bischofsheim e.V.",
-      "title": "SM-Lauf",
-      "regions": [
-        {
-          "id": "central"
-        }
-      ],
-      "club": {
-        "name": "ESV Bischofsheim e.V.",
-        "aliases": [],
-        "dmcClubNumber": 37,
-        "myrcmClubNumber": null
-      }
-    },
-    {
-      "series": [
-        {
-          "id": "sm"
-        }
-      ],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-04-13",
       "location": "MC Dortmund e.V.",
       "title": "SM-Lauf",
       "regions": [
@@ -1674,6 +1650,30 @@
         "name": "MC Dortmund e.V.",
         "aliases": [],
         "dmcClubNumber": 143,
+        "myrcmClubNumber": null
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "elbecup"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-04-13",
+      "location": "AMC Magdeburg e.V.",
+      "title": "Freundschaftsrennen",
+      "regions": [
+        {
+          "id": "east"
+        }
+      ],
+      "club": {
+        "name": "AMC Magdeburg e.V.",
+        "aliases": [],
+        "dmcClubNumber": 291,
         "myrcmClubNumber": null
       }
     },
@@ -1768,24 +1768,44 @@
     {
       "series": [
         {
-          "id": "elbecup"
+          "id": "dmc"
         }
       ],
       "season": {
         "id": "current"
       },
       "date": "2025-04-13",
-      "location": "AMC Magdeburg e.V.",
-      "title": "Freundschaftsrennen",
+      "location": "ORC-B G\u00F6ttingen e.V.",
+      "title": "Rennen",
+      "regions": [],
+      "club": {
+        "name": "ORC-B G\u00F6ttingen e.V.",
+        "aliases": [],
+        "dmcClubNumber": 29,
+        "myrcmClubNumber": null
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "sm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-04-13",
+      "location": "ESV Bischofsheim e.V.",
+      "title": "SM-Lauf",
       "regions": [
         {
-          "id": "east"
+          "id": "central"
         }
       ],
       "club": {
-        "name": "AMC Magdeburg e.V.",
+        "name": "ESV Bischofsheim e.V.",
         "aliases": [],
-        "dmcClubNumber": 291,
+        "dmcClubNumber": 37,
         "myrcmClubNumber": null
       }
     },
@@ -2755,11 +2775,11 @@
         "id": "current"
       },
       "date": "2025-05-04",
-      "location": "MBSC W\u00E4chtersbach",
+      "location": "RCR Peterberg e.V.",
       "title": "3. Hessencup Lauf 2025 Peterberg",
       "regions": [],
       "club": {
-        "name": "MBSC W\u00E4chtersbach",
+        "name": "RCR Peterberg e.V.",
         "aliases": [],
         "dmcClubNumber": null,
         "myrcmClubNumber": 49540
@@ -3416,26 +3436,6 @@
     {
       "series": [
         {
-          "id": "myrcm"
-        }
-      ],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-05-11",
-      "location": "RT Fichtenberg e.V.",
-      "title": "offenes Freundschaftsrennen, VM\u002725 Lauf 1\u002B2",
-      "regions": [],
-      "club": {
-        "name": "RT Fichtenberg e.V.",
-        "aliases": [],
-        "dmcClubNumber": null,
-        "myrcmClubNumber": 25939
-      }
-    },
-    {
-      "series": [
-        {
           "id": "sm"
         }
       ],
@@ -3455,6 +3455,26 @@
         "aliases": [],
         "dmcClubNumber": 60,
         "myrcmClubNumber": null
+      }
+    },
+    {
+      "series": [
+        {
+          "id": "myrcm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-11",
+      "location": "RT Fichtenberg e.V.",
+      "title": "offenes Freundschaftsrennen, VM\u002725 Lauf 1\u002B2",
+      "regions": [],
+      "club": {
+        "name": "RT Fichtenberg e.V.",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumber": 25939
       }
     },
     {
@@ -4147,17 +4167,17 @@
         "id": "current"
       },
       "date": "2025-05-25",
-      "location": "MSV H\u00FCrtgenwald e.V.",
+      "location": "MSV Linsengericht",
       "title": "SM-Lauf",
       "regions": [
         {
-          "id": "west"
+          "id": "central"
         }
       ],
       "club": {
-        "name": "MSV H\u00FCrtgenwald e.V.",
+        "name": "MSV Linsengericht",
         "aliases": [],
-        "dmcClubNumber": 181,
+        "dmcClubNumber": 234,
         "myrcmClubNumber": null
       }
     },
@@ -4171,17 +4191,17 @@
         "id": "current"
       },
       "date": "2025-05-25",
-      "location": "MSV Linsengericht",
+      "location": "MSV H\u00FCrtgenwald e.V.",
       "title": "SM-Lauf",
       "regions": [
         {
-          "id": "central"
+          "id": "west"
         }
       ],
       "club": {
-        "name": "MSV Linsengericht",
+        "name": "MSV H\u00FCrtgenwald e.V.",
         "aliases": [],
-        "dmcClubNumber": 234,
+        "dmcClubNumber": 181,
         "myrcmClubNumber": null
       }
     },
