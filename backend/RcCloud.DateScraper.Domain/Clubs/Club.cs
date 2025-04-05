@@ -1,6 +1,8 @@
+using RcCloud.DateScraper.Domain.Regions;
+
 namespace RcCloud.DateScraper.Domain.Clubs;
 
-public class Club(string name, List<string> aliases, int? dmcClubNumber, int? myrcmClubNumber)
+public class Club(string name, List<string> aliases, int? dmcClubNumber, int? myrcmClubNumber, RegionReference? region)
     : IEquatable<Club>
 {
     public string Name { get; protected set; } = name;
@@ -10,6 +12,8 @@ public class Club(string name, List<string> aliases, int? dmcClubNumber, int? my
     public int? DmcClubNumber { get; } = dmcClubNumber;
 
     public int? MyrcmClubNumber { get; } = myrcmClubNumber;
+    
+    public RegionReference? Region { get; } = region;
 
     public static bool operator ==(Club lhs, Club rhs)
     {

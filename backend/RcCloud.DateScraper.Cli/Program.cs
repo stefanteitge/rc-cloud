@@ -7,6 +7,7 @@ using RcCloud.DateScraper.Application.Rck;
 using RcCloud.DateScraper.Cli.Commands;
 using RcCloud.DateScraper.Cli.Common.Services;
 using RcCloud.DateScraper.Cli.Output.Services;
+using RcCloud.DateScraper.Infrastructure;
 
 await new HostBuilder()
     .ConfigureLogging((context, builder) =>
@@ -16,6 +17,7 @@ await new HostBuilder()
     .ConfigureServices((context, services) =>
     {
         services
+            .AddInfrastructure()
             .AddSingleton<PrintRaces>()
             .AddTransient<RetrieveAllRaces>()
             .AddTransient<WriteJson>()

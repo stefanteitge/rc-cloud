@@ -11,7 +11,12 @@ using System.Web;
 
 namespace RcCloud.DateScraper.Application.Myrcm.Upcoming.Services;
 
-public class ScrapeMyrcmRaces(DownloadMyrcmPages downloadPages, GuessSeriesFromTitle guessSeriesFromTitle, SanitizeClubNames sanitizeClubNames, GuessIfItIsTraining guessIfItIsTraining)
+public class ScrapeMyrcmRaces(
+    DownloadMyrcmPages downloadPages,
+    IEnhanceClub enhanceClub,
+    GuessSeriesFromTitle guessSeriesFromTitle,
+    SanitizeClubNames sanitizeClubNames,
+    GuessIfItIsTraining guessIfItIsTraining)
 {
     public async Task<IEnumerable<RaceMeeting>> Scrape(MyrcmCountryCode[] countries)
     {
@@ -98,6 +103,8 @@ public class ScrapeMyrcmRaces(DownloadMyrcmPages downloadPages, GuessSeriesFromT
             {
                 continue;
             }
+
+            var club = enhanceClub.Guess(race.Club, clubNumber);
             
             var meeting = new RaceMeeting(
                 guessSeriesFromTitle.Guess(race.Title),
@@ -105,8 +112,8 @@ public class ScrapeMyrcmRaces(DownloadMyrcmPages downloadPages, GuessSeriesFromT
                 race.DateEnd, 
                 race.Club, // XXX club is not sanitized here
                 race.Title, 
-                [],
-                new Club(race.Club, [], null, clubNumber),
+                club?.Region is null ? [] : [club.Region],
+                club,
                 "Myrcm");
             
             meetings.Add(meeting);

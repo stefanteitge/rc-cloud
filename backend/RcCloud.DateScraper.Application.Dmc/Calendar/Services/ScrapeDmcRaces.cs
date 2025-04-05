@@ -28,7 +28,7 @@ public class ScrapeDmcRaces(DownloadDmcCalendar download)
             entry.Club,
             ComputeTitle(entry),
             ComputeRegions(entry),
-            new Club(entry.Club, [], entry.ClubNo, null),
+            new Club(entry.Club, [], entry.ClubNo, null, null),
             "DMC");
 
     private string ComputeTitle(DmcCalendarEntry entry)
@@ -82,7 +82,12 @@ public class ScrapeDmcRaces(DownloadDmcCalendar download)
 
         if (entry.IsSportkreismeisterschaft())
         {
-            seriess.Add(new("sm"));
+            seriess.Add(new("dmc-sm"));
+        }
+        
+        if (entry.IsDeutscheMeisterschaft())
+        {
+            seriess.Add(new("dmc-dm"));
         }
         
         if (entry.IsTamiyaEurocup())
