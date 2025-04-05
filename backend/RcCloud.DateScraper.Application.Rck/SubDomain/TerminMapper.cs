@@ -7,15 +7,17 @@ namespace RcCloud.DateScraper.Application.Rck.SubDomain
 {
     internal static class TerminMapper
     {
-        public static RaceMeeting ToDomain(this DatedEvent datedEvent, SeriesReference series)
+        public static RaceMeeting ToDomain(this Renntermin renntermin, SeriesReference series)
         {
             return new RaceMeeting(
                 [series],
                 SeasonReference.Current,
-                datedEvent.Date,
-                datedEvent.Location,
+                renntermin.Date,
+                renntermin.Location,
                 GetTitle(series),
-                datedEvent.Gruppen.Select(g => ToReference(g)).ToArray());
+                renntermin.Gruppen.Select(g => ToReference(g)).ToArray(),
+                null,
+                renntermin.Source);
         }
 
         private static string GetTitle(SeriesReference series)

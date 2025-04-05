@@ -3,25 +3,31 @@
 .page-container {
   margin-left: 20px;
   margin-right: 20px;
-}
 
-.badge-source {
-  @extend .badge;
-  @extend .text-bg-primary;
-}
-
-table {
-  td {
-    padding: 0.5em;
-    max-width: 150px;
+  table {
+    td {
+      padding: 0.5em;
+      max-width: 150px;
+    }
   }
-}
 
-.meeting-box {
-  margin-bottom: 0.3em;
+  .meeting-box {
+    @extend .mb-2;
+    width: 100%;
+    overflow: clip;
 
-  .title {
-    font-weight: 500;
-    font-size: 1.2em;
+    .title {
+      @extend .fs-5;
+    }
+
+    .badge-source {
+      @extend .badge;
+      @extend .text-bg-primary;
+      @extend .me-1;
+    }
+
+    .source {
+      @extend .text-secondary;
+    }
   }
 }

@@ -13,12 +13,12 @@ namespace RcCloud.DateScraper.Application.Rck.Services
 
         public async Task<IEnumerable<RaceMeeting>> Parse()
         {
-            return await Parse(Series, BaseUrl);
+            return await Parse(Series, BaseUrl, "RCK-Challenge");
         }
 
         public async Task<IEnumerable<RaceMeeting>> Parse(string content)
         {
-            return await Parse(Series, content);
+            return await Parse(Series, content, "RCK-Challenge");
         }
     }
 }

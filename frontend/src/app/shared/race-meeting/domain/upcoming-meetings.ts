@@ -5,6 +5,7 @@ export interface UpcomingRaceMeeting {
   location: string;
   series: string[];
   groups: ReferenceDto[];
+  source?: string;
 }
 
 export interface UpcomingDate

@@ -21,16 +21,15 @@ public class ScrapeDmcRaces(DownloadDmcCalendar download)
     }
 
     private RaceMeeting MakeRaceMeeting(DmcCalendarEntry entry)
-    {
-        return new RaceMeeting(
+        => new(
             ComputeSeries(entry),
             SeasonReference.Current,
             entry.DateEnd,
             entry.Club,
             ComputeTitle(entry),
             ComputeRegions(entry),
-            new Club(entry.Club, [], entry.ClubNo, null));
-    }
+            new Club(entry.Club, [], entry.ClubNo, null),
+            "DMC");
 
     private string ComputeTitle(DmcCalendarEntry entry)
     {
@@ -91,13 +90,8 @@ public class ScrapeDmcRaces(DownloadDmcCalendar download)
             seriess.Add(SeriesReference.Tamiya);
         }
 
-
-        if (seriess.Count > 0)
-        {
-            return seriess.ToArray();
-        }
         
-        return [new("dmc")];
+        return seriess.ToArray();
     }
 
     private RegionReference[] ComputeRegions(DmcCalendarEntry a)

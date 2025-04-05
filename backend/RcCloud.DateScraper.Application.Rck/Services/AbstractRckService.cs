@@ -10,7 +10,7 @@ namespace RcCloud.DateScraper.Application.Rck.Services
 {
     public abstract class AbstractRckService
     {
-        protected async Task<IEnumerable<RaceMeeting>> Parse(SeriesReference series, Url baseUrl)
+        protected async Task<IEnumerable<RaceMeeting>> Parse(SeriesReference series, Url baseUrl, string source)
         {
             var document = await BrowsingContext.New(Configuration.Default.WithDefaultLoader()).OpenAsync(baseUrl, CancellationToken.None);
 
@@ -19,10 +19,10 @@ namespace RcCloud.DateScraper.Application.Rck.Services
                 return [];
             }
 
-            return await Parse2(document, series);
+            return await Parse2(document, series, source);
         }
 
-        protected async Task<IEnumerable<RaceMeeting>> Parse(SeriesReference series, string content)
+        protected async Task<IEnumerable<RaceMeeting>> Parse(SeriesReference series, string content, string source)
         {
             var document = await BrowsingContext.New(Configuration.Default.WithDefaultLoader()).OpenAsync(req => req.Content(content));
 
@@ -31,10 +31,10 @@ namespace RcCloud.DateScraper.Application.Rck.Services
                 return [];
             }
 
-            return await Parse2(document, series);
+            return await Parse2(document, series, source);
         }
 
-        private async Task<IEnumerable<RaceMeeting>> Parse2(IDocument document, SeriesReference series)
+        private async Task<IEnumerable<RaceMeeting>> Parse2(IDocument document, SeriesReference series, string source)
         {
             var dateTable = document.QuerySelector("body > table:nth-child(5)");
 
@@ -45,7 +45,7 @@ namespace RcCloud.DateScraper.Application.Rck.Services
 
             var rows = dateTable.QuerySelectorAll("tr").Skip(2);
 
-            var all = new List<DatedEvent>();
+            var all = new List<Renntermin>();
             foreach (var row in rows)
             {
                 var date = ParseDate(row.QuerySelector("td"));
@@ -54,7 +54,7 @@ namespace RcCloud.DateScraper.Application.Rck.Services
                     continue;
                 }
 
-                IEnumerable<UndatedEvent?> events = [
+                IEnumerable<UndatierterTermin?> events = [
                     ParseCell(row.QuerySelector("td:nth-child(2)"), Gruppe.Mitte),
                     ParseCell(row.QuerySelector("td:nth-child(3)"), Gruppe.Nord),
                     ParseCell(row.QuerySelector("td:nth-child(4)"), Gruppe.West),
@@ -63,9 +63,9 @@ namespace RcCloud.DateScraper.Application.Rck.Services
                 ];
 
                 var grouped = events
-                    .OfType<UndatedEvent>()
+                    .OfType<UndatierterTermin>()
                     .GroupBy(e => e.Location)
-                    .Select(es => new DatedEvent(date.Value, es));
+                    .Select(es => new Renntermin(date.Value, es, source));
 
                 all.AddRange(grouped);
             }
@@ -91,7 +91,7 @@ namespace RcCloud.DateScraper.Application.Rck.Services
             return parsed;
         }
 
-        private UndatedEvent? ParseCell(IElement? element, Gruppe gruppe)
+        private UndatierterTermin? ParseCell(IElement? element, Gruppe gruppe)
         {
             if (element is null)
             {
@@ -104,14 +104,14 @@ namespace RcCloud.DateScraper.Application.Rck.Services
             {
                 var location = element.QuerySelectorAll("b").Select(e => e.TextContent);
                 var location2 = string.Join(" ", location).Trim();
-                return new UndatedEvent(location2, gruppe);
+                return new UndatierterTermin(location2, gruppe);
             }
 
             var isComingSoon = element.TextContent.Contains("coming soon");
             if (isComingSoon)
             {
                 var location = element.QuerySelector("b font")?.TextContent.Replace("coming soon", "").Trim();
-                return new UndatedEvent(location, gruppe);
+                return new UndatierterTermin(location, gruppe);
             }
 
             return null;

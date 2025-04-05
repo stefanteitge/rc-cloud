@@ -106,7 +106,8 @@ public class ScrapeMyrcmRaces(DownloadMyrcmPages downloadPages, GuessSeriesFromT
                 race.Club, // XXX club is not sanitized here
                 race.Title, 
                 [],
-                new Club(race.Club, [], null, clubNumber));
+                new Club(race.Club, [], null, clubNumber),
+                "Myrcm");
             
             meetings.Add(meeting);
         }

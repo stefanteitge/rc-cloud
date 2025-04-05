@@ -14,4 +14,5 @@ export interface RaceMeetingDto {
   title: string
   series: ReferenceDto[];
   regions: ReferenceDto[];
+  source?: string;
 }

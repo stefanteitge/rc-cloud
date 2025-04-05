@@ -34,12 +34,7 @@ public class GuessSeriesFromTitle
             seriess.Add(new SeriesReference("elbecup"));
         }
         
-        if (seriess.Count > 0)
-        {
-            return seriess.ToArray();
-        }
-        
-        return [new SeriesReference("myrcm")];
+        return seriess.ToArray();
     }
 
     private bool IsInTitle(string raceTitle, string subString)

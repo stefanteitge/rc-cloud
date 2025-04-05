@@ -11,7 +11,8 @@ namespace RcCloud.DateScraper.Domain.Races
         string location,
         string title,
         RegionReference[] regions,
-        Club? club = null)
+        Club? club,
+        string? source)
     {
         public SeriesReference[] Series { get; } = series;
 
@@ -26,5 +27,7 @@ namespace RcCloud.DateScraper.Domain.Races
         public RegionReference[] Regions { get; } = regions;
         
         public Club? Club { get; } = club;
+        
+        public string? Source { get; } = source;
     }
 }

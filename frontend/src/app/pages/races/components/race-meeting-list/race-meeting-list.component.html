@@ -25,7 +25,10 @@
               <div class="meeting-box">
                 <div class="title">{{ raceMeeting.title }}</div>
                 {{ raceMeeting.location }}
-                <span class="badge-source">{{ raceMeeting.series.join(', ') }}</span>
+                @for (series of raceMeeting.series; track series) {
+                  <span class="badge-source">{{ series }}</span>
+                }
+                <div *ngIf="raceMeeting.source" class="source">Quelle: {{ raceMeeting.source }}</div>
               </div>
             }
           </td>
@@ -35,7 +38,10 @@
               <div class="meeting-box">
                 <div class="title">{{ raceMeeting.title }}</div>
                 {{ raceMeeting.location }}
-                <span class="badge-source">{{ raceMeeting.series.join(', ') }}</span>
+                @for (series of raceMeeting.series; track series) {
+                  <span class="badge-source">{{ series }}</span>
+                }
+                <div *ngIf="raceMeeting.source" class="source">Quelle: {{ raceMeeting.source }}</div>
               </div>
             }
           </td>
@@ -45,7 +51,10 @@
               <div class="meeting-box">
                 <div class="title">{{ raceMeeting.title }}</div>
                 {{ raceMeeting.location }}
-                <span class="badge-source">{{ raceMeeting.series.join(', ') }}</span>
+                @for (series of raceMeeting.series; track series) {
+                  <span class="badge-source">{{ series }}</span>
+                }
+                <div *ngIf="raceMeeting.source" class="source">Quelle: {{ raceMeeting.source }}</div>
               </div>
             }
           </td>
@@ -55,7 +64,10 @@
               <div class="meeting-box">
                 <div class="title">{{ raceMeeting.title }}</div>
                 {{ raceMeeting.location }}
-                <span class="badge-source">{{ raceMeeting.series.join(', ') }}</span>
+                @for (series of raceMeeting.series; track series) {
+                  <span class="badge-source">{{ series }}</span>
+                }
+                <div *ngIf="raceMeeting.source" class="source">Quelle: {{ raceMeeting.source }}</div>
               </div>
             }
           </td>
@@ -65,7 +77,10 @@
               <div class="meeting-box">
                 <div class="title">{{ raceMeeting.title }}</div>
                 {{ raceMeeting.location }}
-                <span class="badge-source">{{ raceMeeting.series.join(', ') }}</span>
+                @for (series of raceMeeting.series; track series) {
+                  <span class="badge-source">{{ series }}</span>
+                }
+                <div *ngIf="raceMeeting.source" class="source">Quelle: {{ raceMeeting.source }}</div>
               </div>
             }
           </td>
@@ -75,7 +90,10 @@
               <div class="meeting-box">
                 <div class="title">{{ raceMeeting.title }}</div>
                 {{ raceMeeting.location }}
-                <span class="badge-source">{{ raceMeeting.series.join(', ') }}</span>
+                @for (series of raceMeeting.series; track series) {
+                  <span class="badge-source">{{ series }}</span>
+                }
+                <div *ngIf="raceMeeting.source" class="source">Quelle: {{ raceMeeting.source }}</div>
               </div>
             }
           </td>

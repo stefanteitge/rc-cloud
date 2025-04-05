@@ -2,23 +2,23 @@
 
 namespace RcCloud.DateScraper.Application.Rck.SubDomain
 {
-    public class UndatedEvent
+    public class Renntermin
     {
-
-        public UndatedEvent(string location, Gruppe gruppe)
-        {
-            Location = location;
-            Gruppen = [gruppe];
-        }
-
-        public UndatedEvent(IGrouping<string, UndatedEvent> es)
+        public Renntermin(DateOnly date, IGrouping<string, UndatierterTermin> es, string source)
         {
             Location = es.Key;
             Gruppen = es.SelectMany(e => e.Gruppen).ToArray();
+            Date = date;
+            Source = source;
         }
 
         public string Location { get; }
+
         public Gruppe[] Gruppen { get; }
+
+        public DateOnly Date { get; }
+        
+        public string Source { get; }
 
         public override string ToString()
         {

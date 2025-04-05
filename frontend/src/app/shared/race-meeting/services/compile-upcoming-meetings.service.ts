@@ -7,7 +7,7 @@ export default function compileUpcomingMeetings(meetings: RaceMeetingDto[]): Upc
   meetings.forEach((meeting) => {
     let existingDate = compiled.find(c => c.date == meeting.date);
     if (existingDate === undefined) {
-      existingDate = {
+      existingDate= {
         date: meeting.date,
         raceMeetings: [],
         east: [],
@@ -19,35 +19,36 @@ export default function compileUpcomingMeetings(meetings: RaceMeetingDto[]): Upc
       compiled.push(existingDate);
     }
 
-    const newMeeting = {
+    const newRace = {
       location: meeting.location,
       series: meeting.series.map(s => s.id),
       groups: meeting.regions,
       title: meeting.title,
+      source: meeting.source,
     };
 
-    if (newMeeting.groups.length == 0) {
-      existingDate.raceMeetings.push(newMeeting);
+    if (newRace.groups.length == 0) {
+      existingDate.raceMeetings.push(newRace);
     }
 
-    if (newMeeting.groups.find(g => g.id == 'east')) {
-      existingDate.east.push(newMeeting);
+    if (newRace.groups.find(g => g.id == 'east')) {
+      existingDate.east.push(newRace);
     }
 
-    if (newMeeting.groups.find(g => g.id == 'west')) {
-      existingDate.west.push(newMeeting);
+    if (newRace.groups.find(g => g.id == 'west')) {
+      existingDate.west.push(newRace);
     }
 
-    if (newMeeting.groups.find(g => g.id == 'north')) {
-      existingDate.north.push(newMeeting);
+    if (newRace.groups.find(g => g.id == 'north')) {
+      existingDate.north.push(newRace);
     }
 
-    if (newMeeting.groups.find(g => g.id == 'south')) {
-      existingDate.south.push(newMeeting);
+    if (newRace.groups.find(g => g.id == 'south')) {
+      existingDate.south.push(newRace);
     }
 
-    if (newMeeting.groups.find(g => g.id == 'central')) {
-      existingDate.central.push(newMeeting);
+    if (newRace.groups.find(g => g.id == 'central')) {
+      existingDate.central.push(newRace);
     }
   })
 
