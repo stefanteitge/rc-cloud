@@ -1,3 +1,8 @@
+.page-container {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 table {
   td {
     padding: 0.5em;
@@ -11,10 +16,6 @@ table {
     font-weight: 500;
     font-size: 1.2em;
   }
-}
-
-.meta {
-  margin-bottom: 1em;
 }
 
 .mat-mdc-cell {

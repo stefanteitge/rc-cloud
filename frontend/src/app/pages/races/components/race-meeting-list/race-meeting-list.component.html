@@ -1,4 +1,7 @@
-<div class="meta">Letztes Update: {{ getRetrieved() }}</div>
+<div class="page-container">
+<ngb-alert [dismissible]="false">
+  <strong>Letztes Update</strong> {{ getRetrieved() }}
+</ngb-alert>
 
 @let columnsToDisplay = ['date', 'races', 'central', 'north', 'south','west', 'east'];
 
@@ -90,3 +93,5 @@
   <tr mat-row *matRowDef="let myRowData; columns: columnsToDisplay"></tr>
 
 </table>
+
+</div>

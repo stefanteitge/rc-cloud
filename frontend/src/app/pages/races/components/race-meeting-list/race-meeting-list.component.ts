@@ -11,10 +11,11 @@ import {
   MatTable
 } from '@angular/material/table';
 import {UpcomingDate} from '../../../../shared/race-meeting/domain/upcoming-meetings';
+import {NgbAlert} from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-race-meeting-list',
-  imports: [MatChip, MatTable, MatCell, MatHeaderCell, MatColumnDef, MatHeaderRow, MatHeaderCellDef, MatCellDef, MatHeaderRowDef, MatRow, MatRowDef],
+  imports: [MatChip, MatTable, MatCell, MatHeaderCell, MatColumnDef, MatHeaderRow, MatHeaderCellDef, MatCellDef, MatHeaderRowDef, MatRow, MatRowDef, NgbAlert],
   templateUrl: './race-meeting-list.component.html',
   styleUrl: './race-meeting-list.component.scss',
   providers: [RaceMeetingRepository]
