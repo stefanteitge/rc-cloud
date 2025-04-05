@@ -1,97 +1,86 @@
 <div class="page-container">
-<ngb-alert [dismissible]="false">
-  <strong>Letztes Update</strong> {{ getRetrieved() }}
-</ngb-alert>
+  <ngb-alert [dismissible]="false">
+    <strong>Letztes Update</strong> {{ getRetrieved() }}
+  </ngb-alert>
 
-@let columnsToDisplay = ['date', 'races', 'central', 'north', 'south','west', 'east'];
+  <table class="table table-striped-columns">
+    <thead>
+      <tr>
+        <th scope="col">Datum</th>
+        <th scope="col">Keine Region</th>
+        <th scope="col">Mitte</th>
+        <th scope="col">Nord</th>
+        <th scope="col">Süd</th>
+        <th scope="col">West</th>
+        <th scope="col">Ost</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (upcomingDate of getAllDates(); track upcomingDate.date) {
+        <tr>
+          <th scope="row">{{ upcomingDate.date }}</th>
 
-<table mat-table [dataSource]="getAllDates()">
-  <ng-container matColumnDef="date">
-    <th mat-header-cell *matHeaderCellDef> Date </th>
-    <td mat-cell *matCellDef="let meeting" class="legend"> {{meeting.date}} </td>
-  </ng-container>
+          <td>
+            @for (raceMeeting of upcomingDate.raceMeetings; track raceMeeting.location) {
+              <div class="meeting-box">
+                <div class="title">{{ raceMeeting.title }}</div>
+                {{ raceMeeting.location }}
+                <span class="badge-source">{{ raceMeeting.series.join(', ') }}</span>
+              </div>
+            }
+          </td>
 
-  <ng-container matColumnDef="races">
-    <th mat-header-cell *matHeaderCellDef> No Region </th>
-    <td mat-cell *matCellDef="let upcomingDate">
-      @for (raceMeeting of upcomingDate.raceMeetings; track raceMeeting.id) {
-        <div class="meeting-box">
-          <div class="title">{{ raceMeeting.title }}</div>
-          {{ raceMeeting.location }}
-          <mat-chip>{{ raceMeeting.series.join(', ') }}</mat-chip>
-        </div>
+          <td>
+            @for (raceMeeting of upcomingDate.central; track raceMeeting.location) {
+              <div class="meeting-box">
+                <div class="title">{{ raceMeeting.title }}</div>
+                {{ raceMeeting.location }}
+                <span class="badge-source">{{ raceMeeting.series.join(', ') }}</span>
+              </div>
+            }
+          </td>
+
+          <td>
+            @for (raceMeeting of upcomingDate.north; track raceMeeting.location) {
+              <div class="meeting-box">
+                <div class="title">{{ raceMeeting.title }}</div>
+                {{ raceMeeting.location }}
+                <span class="badge-source">{{ raceMeeting.series.join(', ') }}</span>
+              </div>
+            }
+          </td>
+
+          <td>
+            @for (raceMeeting of upcomingDate.south; track raceMeeting.location) {
+              <div class="meeting-box">
+                <div class="title">{{ raceMeeting.title }}</div>
+                {{ raceMeeting.location }}
+                <span class="badge-source">{{ raceMeeting.series.join(', ') }}</span>
+              </div>
+            }
+          </td>
+
+          <td>
+            @for (raceMeeting of upcomingDate.west; track raceMeeting.location) {
+              <div class="meeting-box">
+                <div class="title">{{ raceMeeting.title }}</div>
+                {{ raceMeeting.location }}
+                <span class="badge-source">{{ raceMeeting.series.join(', ') }}</span>
+              </div>
+            }
+          </td>
+
+          <td>
+            @for (raceMeeting of upcomingDate.east; track raceMeeting.location) {
+              <div class="meeting-box">
+                <div class="title">{{ raceMeeting.title }}</div>
+                {{ raceMeeting.location }}
+                <span class="badge-source">{{ raceMeeting.series.join(', ') }}</span>
+              </div>
+            }
+          </td>
+        </tr>
       }
-    </td>
-  </ng-container>
-
-  <ng-container matColumnDef="central">
-    <th mat-header-cell *matHeaderCellDef> Central </th>
-    <td mat-cell *matCellDef="let upcomingDate" class="highlight">
-      @for (raceMeeting of upcomingDate.central; track raceMeeting.id) {
-        <div class="meeting-box">
-          <div class="title">{{ raceMeeting.title }}</div>
-          {{ raceMeeting.location }}
-          <mat-chip>{{ raceMeeting.series.join(', ') }}</mat-chip>
-        </div>
-      }
-    </td>
-  </ng-container>
-
-  <ng-container matColumnDef="north">
-    <th mat-header-cell *matHeaderCellDef> North </th>
-    <td mat-cell *matCellDef="let upcomingDate">
-      @for (raceMeeting of upcomingDate.north; track raceMeeting.id) {
-        <div class="meeting-box">
-          <div class="title">{{ raceMeeting.title }}</div>
-          {{ raceMeeting.location }}
-          <mat-chip>{{ raceMeeting.series.join(', ') }}</mat-chip>
-        </div>
-      }
-    </td>
-  </ng-container>
-
-  <ng-container matColumnDef="south">
-    <th mat-header-cell *matHeaderCellDef> South </th>
-    <td mat-cell *matCellDef="let upcomingDate" class="highlight">
-      @for (raceMeeting of upcomingDate.south; track raceMeeting.id) {
-        <div class="meeting-box">
-          <div class="title">{{ raceMeeting.title }}</div>
-          {{ raceMeeting.location }}
-          <mat-chip>{{ raceMeeting.series.join(', ') }}</mat-chip>
-        </div>
-      }
-    </td>
-  </ng-container>
-
-  <ng-container matColumnDef="west">
-    <th mat-header-cell *matHeaderCellDef> West </th>
-    <td mat-cell *matCellDef="let upcomingDate">
-      @for (raceMeeting of upcomingDate.west; track raceMeeting.id) {
-        <div class="meeting-box">
-          <div class="title">{{ raceMeeting.title }}</div>
-          {{ raceMeeting.location }}
-          <mat-chip>{{ raceMeeting.series.join(', ') }}</mat-chip>
-        </div>
-      }
-    </td>
-  </ng-container>
-
-  <ng-container matColumnDef="east">
-    <th mat-header-cell *matHeaderCellDef> East </th>
-    <td mat-cell *matCellDef="let upcomingDate" class="highlight">
-      @for (raceMeeting of upcomingDate.east; track raceMeeting.id) {
-        <div class="meeting-box">
-          <div class="title">{{ raceMeeting.title }}</div>
-          {{ raceMeeting.location }}
-          <mat-chip>{{ raceMeeting.series.join(', ') }}</mat-chip>
-        </div>
-      }
-    </td>
-  </ng-container>
-
-  <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
-  <tr mat-row *matRowDef="let myRowData; columns: columnsToDisplay"></tr>
-
-</table>
-
+    </tbody>
+  </table>
 </div>

@@ -1,11 +1,19 @@
+@use 'bootstrap';
+
 .page-container {
   margin-left: 20px;
   margin-right: 20px;
 }
 
+.badge-source {
+  @extend .badge;
+  @extend .text-bg-primary;
+}
+
 table {
   td {
     padding: 0.5em;
+    max-width: 150px;
   }
 }
 
@@ -15,17 +23,5 @@ table {
   .title {
     font-weight: 500;
     font-size: 1.2em;
-  }
-}
-
-.mat-mdc-cell {
-  max-width: 200px;
-
-  &.legend {
-    background: var(--mat-sys-secondary-fixed-dim);
-  }
-
-  &.highlight {
-    background: var(--mat-sys-secondary-fixed);
   }
 }
