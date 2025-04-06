@@ -1,4 +1,5 @@
-﻿using RcCloud.DateScraper.Domain.Races;
+﻿using RcCloud.DateScraper.Domain.Clubs;
+using RcCloud.DateScraper.Domain.Races;
 using RcCloud.DateScraper.Domain.Series;
 
 namespace RcCloud.DateScraper.Application.Rcco;
@@ -13,12 +14,12 @@ public class RccoRace(string title)
     
     public DateOnly DateEnd { get; set; }
     
-    public string Club { get; set; }
+    public string ClubName { get; set; }
     
     public string Location { get; set; }
 
-    public RaceMeeting ToRaceMeeting()
+    public RaceMeeting ToRaceMeeting(Club club)
     {
-        return new RaceMeeting([], SeasonReference.Current, DateEnd, Location, "de", Title, [], null, "rccar-online.de");
+        return new RaceMeeting([], SeasonReference.Current, DateEnd, Location, "de", Title, [], club, "rccar-online.de");
     }
 }

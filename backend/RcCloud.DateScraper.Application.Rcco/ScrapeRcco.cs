@@ -1,10 +1,11 @@
 using System.Globalization;
 using HtmlAgilityPack;
+using RcCloud.DateScraper.Domain.Clubs;
 using RcCloud.DateScraper.Domain.Races;
 
 namespace RcCloud.DateScraper.Application.Rcco;
 
-public class ScrapeRcco
+public class ScrapeRcco(IClubRepository clubRepository)
 {
     private const string BaseUrl = "https://rccar-online.de/veranstaltungen";
 
@@ -32,7 +33,21 @@ public class ScrapeRcco
             events.AddRange(ParseTable(table));    
         }
 
-        return events.Select(e => e.ToRaceMeeting()).ToList();
+        List<RaceMeeting> raceMeetings = new List<RaceMeeting>();
+        foreach (var evt in events)
+        {
+            var club = new Club(evt.ClubName, [], null, [], null);
+            var knownClub = clubRepository.FindClub(evt.ClubName);
+            if (knownClub is not null)
+            {
+                club = knownClub;
+            }
+            
+            // TODO: region from club
+            raceMeetings.Add(evt.ToRaceMeeting(club));
+        }
+        
+        return raceMeetings;
     }
 
     private List<RccoRace> ParseTable(HtmlNode table)
@@ -53,7 +68,7 @@ public class ScrapeRcco
                 {
                     DateStart = cells[0].ChildNodes.First(n => n.NodeType == HtmlNodeType.Text && !string.IsNullOrEmpty(n.InnerText.Trim())).InnerText,
                     DateEnd = ParseDate(dateEnd),
-                    Club = cells[1].SelectSingleNode("a").InnerText,
+                    ClubName = cells[1].SelectSingleNode("a").InnerText,
                     Location = cells[8].SelectSingleNode("a").InnerText,
                 };
 

@@ -1,5 +1,5 @@
 {
-  "retrievedDate": "2025-04-06T16:36:52.1657782+00:00",
+  "retrievedDate": "2025-04-06T18:44:13.8444274+02:00",
   "raceMeetings": [
     {
       "series": [],
@@ -924,7 +924,13 @@
       "countryCode": "de",
       "title": "7. MSC - Pokal Saison 2024/2025",
       "regions": [],
-      "club": null,
+      "club": {
+        "name": "MSC Essen e.V.",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [],
+        "region": null
+      },
       "source": "rccar-online.de"
     },
     {
@@ -1187,7 +1193,13 @@
       "countryCode": "de",
       "title": "4h Endurance Cup - Gruppe C",
       "regions": [],
-      "club": null,
+      "club": {
+        "name": "MSC Essen e.V.",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [],
+        "region": null
+      },
       "source": "rccar-online.de"
     },
     {
@@ -1310,7 +1322,13 @@
       "countryCode": "de",
       "title": "MRS Fun Cup",
       "regions": [],
-      "club": null,
+      "club": {
+        "name": "Black Sheep Racers e. V.",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [],
+        "region": null
+      },
       "source": "rccar-online.de"
     },
     {
@@ -1323,7 +1341,13 @@
       "countryCode": "de",
       "title": "SPOS 2025 #1",
       "regions": [],
-      "club": null,
+      "club": {
+        "name": "SC Percha 1960 e.V.",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [],
+        "region": null
+      },
       "source": "rccar-online.de"
     },
     {
@@ -1336,7 +1360,17 @@
       "countryCode": "de",
       "title": "Modellsport Münsterland Cup",
       "regions": [],
-      "club": null,
+      "club": {
+        "name": "Modellsport Münsterland e.V.",
+        "aliases": [
+          "Modellsport Münsterland"
+        ],
+        "dmcClubNumber": 240,
+        "myrcmClubNumbers": [],
+        "region": {
+          "id": "west"
+        }
+      },
       "source": "rccar-online.de"
     },
     {
@@ -1519,7 +1553,13 @@
       "countryCode": "de",
       "title": "8. MSC - Pokal Saison 2024/2025",
       "regions": [],
-      "club": null,
+      "club": {
+        "name": "MSC Essen e.V.",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [],
+        "region": null
+      },
       "source": "rccar-online.de"
     },
     {
@@ -1997,7 +2037,17 @@
       "countryCode": "de",
       "title": "1. Clublauf",
       "regions": [],
-      "club": null,
+      "club": {
+        "name": "RCCC Hilter e.V.",
+        "aliases": [
+          "RCCC Hilter"
+        ],
+        "dmcClubNumber": 298,
+        "myrcmClubNumbers": [],
+        "region": {
+          "id": "north"
+        }
+      },
       "source": "rccar-online.de"
     },
     {
@@ -2398,7 +2448,15 @@
       "countryCode": "de",
       "title": "RC Halle Cup",
       "regions": [],
-      "club": null,
+      "club": {
+        "name": "RC Halle e.V.",
+        "aliases": [],
+        "dmcClubNumber": 384,
+        "myrcmClubNumbers": [],
+        "region": {
+          "id": "east"
+        }
+      },
       "source": "rccar-online.de"
     },
     {
@@ -2670,7 +2728,17 @@
       "countryCode": "de",
       "title": "2. Clublauf",
       "regions": [],
-      "club": null,
+      "club": {
+        "name": "RCCC Hilter e.V.",
+        "aliases": [
+          "RCCC Hilter"
+        ],
+        "dmcClubNumber": 298,
+        "myrcmClubNumbers": [],
+        "region": {
+          "id": "north"
+        }
+      },
       "source": "rccar-online.de"
     },
     {
@@ -2683,7 +2751,13 @@
       "countryCode": "de",
       "title": "EMS Trophy 25",
       "regions": [],
-      "club": null,
+      "club": {
+        "name": "RCMC Ibbenbüren e. V.",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [],
+        "region": null
+      },
       "source": "rccar-online.de"
     },
     {
@@ -2812,7 +2886,13 @@
       "countryCode": "de",
       "title": "Deutsche Meisterschaft 1:12 2025",
       "regions": [],
-      "club": null,
+      "club": {
+        "name": "MST Estenfeld",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [],
+        "region": null
+      },
       "source": "rccar-online.de"
     },
     {
@@ -2916,7 +2996,17 @@
       "countryCode": "de",
       "title": "Modellsport Münsterland Cup",
       "regions": [],
-      "club": null,
+      "club": {
+        "name": "Modellsport Münsterland e.V.",
+        "aliases": [
+          "Modellsport Münsterland"
+        ],
+        "dmcClubNumber": 240,
+        "myrcmClubNumbers": [],
+        "region": {
+          "id": "west"
+        }
+      },
       "source": "rccar-online.de"
     },
     {
@@ -3049,7 +3139,13 @@
       "countryCode": "de",
       "title": "Sportkreismeiterschaft 1Lauf Rmc",
       "regions": [],
-      "club": null,
+      "club": {
+        "name": "RMC-Wolfsburg e.v.",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [],
+        "region": null
+      },
       "source": "rccar-online.de"
     },
     {
@@ -3274,7 +3370,13 @@
       "countryCode": "de",
       "title": "2. ECN Lauf WOP 2025",
       "regions": [],
-      "club": null,
+      "club": {
+        "name": "Weser Offroad Park",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [],
+        "region": null
+      },
       "source": "rccar-online.de"
     },
     {
@@ -3692,7 +3794,13 @@
       "countryCode": "de",
       "title": "1.SH-Cup 2025",
       "regions": [],
-      "club": null,
+      "club": {
+        "name": "MAC Uetersen e. V.",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [],
+        "region": null
+      },
       "source": "rccar-online.de"
     },
     {
@@ -4477,7 +4585,17 @@
       "countryCode": "de",
       "title": "3. Clublauf",
       "regions": [],
-      "club": null,
+      "club": {
+        "name": "RCCC Hilter e.V.",
+        "aliases": [
+          "RCCC Hilter"
+        ],
+        "dmcClubNumber": 298,
+        "myrcmClubNumbers": [],
+        "region": {
+          "id": "north"
+        }
+      },
       "source": "rccar-online.de"
     },
     {
@@ -4490,7 +4608,13 @@
       "countryCode": "de",
       "title": "2. Lauf Oberlausitzcup 2025",
       "regions": [],
-      "club": null,
+      "club": {
+        "name": "OLC - Oberlausitzcup",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [],
+        "region": null
+      },
       "source": "rccar-online.de"
     },
     {
@@ -4503,7 +4627,13 @@
       "countryCode": "de",
       "title": "1. Lauf zum Ostbayernpokal 2025",
       "regions": [],
-      "club": null,
+      "club": {
+        "name": "MSC Riedenburg",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [],
+        "region": null
+      },
       "source": "rccar-online.de"
     },
     {
@@ -4828,7 +4958,13 @@
       "countryCode": "de",
       "title": "9. MSC - Pokal Saison 2024/2025",
       "regions": [],
-      "club": null,
+      "club": {
+        "name": "MSC Essen e.V.",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [],
+        "region": null
+      },
       "source": "rccar-online.de"
     },
     {
@@ -5441,7 +5577,17 @@
       "countryCode": "de",
       "title": "Modellsport Münsterland Cup",
       "regions": [],
-      "club": null,
+      "club": {
+        "name": "Modellsport Münsterland e.V.",
+        "aliases": [
+          "Modellsport Münsterland"
+        ],
+        "dmcClubNumber": 240,
+        "myrcmClubNumbers": [],
+        "region": {
+          "id": "west"
+        }
+      },
       "source": "rccar-online.de"
     },
     {
@@ -6142,7 +6288,13 @@
       "countryCode": "de",
       "title": "Vatertagsrennen 2025",
       "regions": [],
-      "club": null,
+      "club": {
+        "name": "Modellclub Schwedt e.V.",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [],
+        "region": null
+      },
       "source": "rccar-online.de"
     },
     {
@@ -6681,7 +6833,17 @@
       "countryCode": "de",
       "title": "4. Clublauf",
       "regions": [],
-      "club": null,
+      "club": {
+        "name": "RCCC Hilter e.V.",
+        "aliases": [
+          "RCCC Hilter"
+        ],
+        "dmcClubNumber": 298,
+        "myrcmClubNumbers": [],
+        "region": {
+          "id": "north"
+        }
+      },
       "source": "rccar-online.de"
     },
     {
@@ -6694,7 +6856,17 @@
       "countryCode": "de",
       "title": "Modellsport Münsterland Cup",
       "regions": [],
-      "club": null,
+      "club": {
+        "name": "Modellsport Münsterland e.V.",
+        "aliases": [
+          "Modellsport Münsterland"
+        ],
+        "dmcClubNumber": 240,
+        "myrcmClubNumbers": [],
+        "region": {
+          "id": "west"
+        }
+      },
       "source": "rccar-online.de"
     },
     {
@@ -7616,7 +7788,17 @@
       "countryCode": "de",
       "title": "Elektrocup Nord beim RCCC Hilter - Lauf 4/9",
       "regions": [],
-      "club": null,
+      "club": {
+        "name": "RCCC Hilter e.V.",
+        "aliases": [
+          "RCCC Hilter"
+        ],
+        "dmcClubNumber": 298,
+        "myrcmClubNumbers": [],
+        "region": {
+          "id": "north"
+        }
+      },
       "source": "rccar-online.de"
     },
     {
@@ -7629,7 +7811,13 @@
       "countryCode": "de",
       "title": "10. MSC - Pokal Saison 2024/2025",
       "regions": [],
-      "club": null,
+      "club": {
+        "name": "MSC Essen e.V.",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [],
+        "region": null
+      },
       "source": "rccar-online.de"
     },
     {
@@ -7642,7 +7830,17 @@
       "countryCode": "de",
       "title": "4 Stunden Teamrennen bei Modellsport Münsterland",
       "regions": [],
-      "club": null,
+      "club": {
+        "name": "Modellsport Münsterland e.V.",
+        "aliases": [
+          "Modellsport Münsterland"
+        ],
+        "dmcClubNumber": 240,
+        "myrcmClubNumbers": [],
+        "region": {
+          "id": "west"
+        }
+      },
       "source": "rccar-online.de"
     },
     {
@@ -8350,7 +8548,17 @@
       "countryCode": "de",
       "title": "Elektro Cup Nord bei Modellsport Münsterland",
       "regions": [],
-      "club": null,
+      "club": {
+        "name": "Modellsport Münsterland e.V.",
+        "aliases": [
+          "Modellsport Münsterland"
+        ],
+        "dmcClubNumber": 240,
+        "myrcmClubNumbers": [],
+        "region": {
+          "id": "west"
+        }
+      },
       "source": "rccar-online.de"
     },
     {
@@ -8806,7 +9014,17 @@
       "countryCode": "de",
       "title": "Modellsport Münsterland Cup",
       "regions": [],
-      "club": null,
+      "club": {
+        "name": "Modellsport Münsterland e.V.",
+        "aliases": [
+          "Modellsport Münsterland"
+        ],
+        "dmcClubNumber": 240,
+        "myrcmClubNumbers": [],
+        "region": {
+          "id": "west"
+        }
+      },
       "source": "rccar-online.de"
     },
     {
@@ -9209,7 +9427,17 @@
       "countryCode": "de",
       "title": "5. Clublauf",
       "regions": [],
-      "club": null,
+      "club": {
+        "name": "RCCC Hilter e.V.",
+        "aliases": [
+          "RCCC Hilter"
+        ],
+        "dmcClubNumber": 298,
+        "myrcmClubNumbers": [],
+        "region": {
+          "id": "north"
+        }
+      },
       "source": "rccar-online.de"
     },
     {
@@ -10244,7 +10472,17 @@
       "countryCode": "de",
       "title": "6. Clublauf",
       "regions": [],
-      "club": null,
+      "club": {
+        "name": "RCCC Hilter e.V.",
+        "aliases": [
+          "RCCC Hilter"
+        ],
+        "dmcClubNumber": 298,
+        "myrcmClubNumbers": [],
+        "region": {
+          "id": "north"
+        }
+      },
       "source": "rccar-online.de"
     },
     {
@@ -11062,7 +11300,17 @@
       "countryCode": "de",
       "title": "Modellsport Münsterland Cup",
       "regions": [],
-      "club": null,
+      "club": {
+        "name": "Modellsport Münsterland e.V.",
+        "aliases": [
+          "Modellsport Münsterland"
+        ],
+        "dmcClubNumber": 240,
+        "myrcmClubNumbers": [],
+        "region": {
+          "id": "west"
+        }
+      },
       "source": "rccar-online.de"
     },
     {
@@ -11272,7 +11520,17 @@
       "countryCode": "de",
       "title": "7. Clublauf",
       "regions": [],
-      "club": null,
+      "club": {
+        "name": "RCCC Hilter e.V.",
+        "aliases": [
+          "RCCC Hilter"
+        ],
+        "dmcClubNumber": 298,
+        "myrcmClubNumbers": [],
+        "region": {
+          "id": "north"
+        }
+      },
       "source": "rccar-online.de"
     },
     {
@@ -11285,7 +11543,13 @@
       "countryCode": "de",
       "title": "6. Lauf Oberlausitzcup 2025",
       "regions": [],
-      "club": null,
+      "club": {
+        "name": "OLC - Oberlausitzcup",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [],
+        "region": null
+      },
       "source": "rccar-online.de"
     },
     {
