@@ -1,4 +1,4 @@
-name: Build & Deploy to GitHub Pages
+name: "Build GitHub pages"
 
 on:
   push:
@@ -6,6 +6,10 @@ on:
       - 'main'
     paths:
       - 'frontend/**'
+  workflow_run:
+    workflows: ["Update races"]
+    types:
+      - completed
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
