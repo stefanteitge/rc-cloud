@@ -8,7 +8,7 @@ using RcCloud.DateScraper.Domain.Series;
 
 namespace RcCloud.DateScraper.Application.Dmc.Calendar.Services;
 
-public class ScrapeDmcRaces(DownloadDmcCalendar download)
+public class ScrapeDmcRaces(DownloadDmcCalendar download, IClubRepository clubRepository)
 {
 
     public async Task<IEnumerable<RaceMeeting>> Parse()
@@ -23,7 +23,15 @@ public class ScrapeDmcRaces(DownloadDmcCalendar download)
     private RaceMeeting MakeRaceMeeting(DmcCalendarEntry entry)
     {
         var regions = ComputeRegions(entry);
+
         var club = new Club(entry.Club, [], entry.ClubNo, [], regions.FirstOrDefault());
+        
+        var knownClub = clubRepository.FindClub(entry.Club);
+        if (knownClub is not null)
+        {
+            club = new Club(knownClub.Name, knownClub.Aliases, knownClub.DmcClubNumber ?? entry.ClubNo, knownClub.MyrcmClubNumbers, knownClub.Region ?? club.Region);
+        }
+        
         return new(
             ComputeSeries(entry),
             SeasonReference.Current,
