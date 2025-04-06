@@ -27,7 +27,7 @@ jobs:
       run: dotnet run all --format json --club-db ../../db/club-db.json
       working-directory: backend/RcCloud.DateScraper.Cli
     - name: BeNeLux Json
-      run: dotnet run myrcm-benelux --format json
+      run: dotnet run benelux --format json
       working-directory: backend/RcCloud.DateScraper.Cli
     - name: Move
       run: mv all.json ../../frontend/public/assets
