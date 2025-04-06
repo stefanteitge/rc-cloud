@@ -1,10 +1,9 @@
 import {Injectable, signal} from '@angular/core';
 import {tap} from 'rxjs';
 import {HttpClient} from '@angular/common/http';
-import { UpcomingDate} from '../domain/upcoming-meetings';
+import { UpcomingDate} from '../domain/upcoming-date';
 import {RaceMeetingEnvelopeDto} from '../dtos/race-meeting-envelope.dto';
-import compileUpcomingMeetings from '../services/compile-upcoming-meetings.service';
-
+import compileUpcomingDates from '../services/compile-upcoming-dates.service';
 
 @Injectable()
 export class RaceMeetingRepository {
@@ -16,8 +15,12 @@ export class RaceMeetingRepository {
   constructor(private http: HttpClient) {
   }
 
-  getAll(): UpcomingDate[] {
-    return compileUpcomingMeetings(this.envelope().raceMeetings);
+  getGermany(): UpcomingDate[] {
+    return compileUpcomingDates(this.envelope().raceMeetings, ['east', 'west', 'north', 'south', 'central']);
+  }
+
+  getBenelux(): UpcomingDate[] {
+    return compileUpcomingDates(this.envelope().raceMeetings, ['ne', 'nl', 'lux', 'banger', 'stockcar']);
   }
 
   fetchAll(): void {

@@ -1,6 +1,6 @@
-import {Component, OnInit, signal} from '@angular/core';
-import { RaceMeetingRepository} from '../../../../shared/race-meeting/repositories/race-meeting.repository';
-import {UpcomingDate} from '../../../../shared/race-meeting/domain/upcoming-meetings';
+import {Component, OnInit} from '@angular/core';
+import {RaceMeetingRepository} from '../../../../shared/race-meeting/repositories/race-meeting.repository';
+import {UpcomingDate, UpcomingRace} from '../../../../shared/race-meeting/domain/upcoming-date';
 import {NgbAlert} from '@ng-bootstrap/ng-bootstrap';
 import {NgIf} from '@angular/common';
 
@@ -12,8 +12,6 @@ import {NgIf} from '@angular/common';
   providers: [RaceMeetingRepository]
 })
 export class RaceMeetingListComponent implements OnInit {
-  meetings = signal([] as UpcomingDate[])
-
   constructor(private repo: RaceMeetingRepository) {
   }
 
@@ -26,6 +24,10 @@ export class RaceMeetingListComponent implements OnInit {
   }
 
   getAllDates(): UpcomingDate[] {
-    return this.repo.getAll();
+    return this.repo.getGermany();
+  }
+
+  getRaces(upcomingDate: UpcomingDate, regionId: string): UpcomingRace[] {
+    return upcomingDate.columns.find(r => r.key === regionId)?.races.sort((a, b) => a.location.localeCompare(b.location)) ?? [];
   }
 }

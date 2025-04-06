@@ -20,83 +20,20 @@
         <tr>
           <th scope="row">{{ upcomingDate.date }}</th>
 
-          <td>
-            @for (raceMeeting of upcomingDate.raceMeetings; track raceMeeting.location) {
-              <div class="meeting-box">
-                <div class="title">{{ raceMeeting.title }}</div>
-                {{ raceMeeting.location }}
-                @for (series of raceMeeting.series; track series) {
-                  <span class="badge-source">{{ series }}</span>
-                }
-                <div *ngIf="raceMeeting.source" class="source">Quelle: {{ raceMeeting.source }}</div>
-              </div>
-            }
-          </td>
-
-          <td>
-            @for (raceMeeting of upcomingDate.central; track raceMeeting.location) {
-              <div class="meeting-box">
-                <div class="title">{{ raceMeeting.title }}</div>
-                {{ raceMeeting.location }}
-                @for (series of raceMeeting.series; track series) {
-                  <span class="badge-source">{{ series }}</span>
-                }
-                <div *ngIf="raceMeeting.source" class="source">Quelle: {{ raceMeeting.source }}</div>
-              </div>
-            }
-          </td>
-
-          <td>
-            @for (raceMeeting of upcomingDate.north; track raceMeeting.location) {
-              <div class="meeting-box">
-                <div class="title">{{ raceMeeting.title }}</div>
-                {{ raceMeeting.location }}
-                @for (series of raceMeeting.series; track series) {
-                  <span class="badge-source">{{ series }}</span>
-                }
-                <div *ngIf="raceMeeting.source" class="source">Quelle: {{ raceMeeting.source }}</div>
-              </div>
-            }
-          </td>
-
-          <td>
-            @for (raceMeeting of upcomingDate.south; track raceMeeting.location) {
-              <div class="meeting-box">
-                <div class="title">{{ raceMeeting.title }}</div>
-                {{ raceMeeting.location }}
-                @for (series of raceMeeting.series; track series) {
-                  <span class="badge-source">{{ series }}</span>
-                }
-                <div *ngIf="raceMeeting.source" class="source">Quelle: {{ raceMeeting.source }}</div>
-              </div>
-            }
-          </td>
-
-          <td>
-            @for (raceMeeting of upcomingDate.west; track raceMeeting.location) {
-              <div class="meeting-box">
-                <div class="title">{{ raceMeeting.title }}</div>
-                {{ raceMeeting.location }}
-                @for (series of raceMeeting.series; track series) {
-                  <span class="badge-source">{{ series }}</span>
-                }
-                <div *ngIf="raceMeeting.source" class="source">Quelle: {{ raceMeeting.source }}</div>
-              </div>
-            }
-          </td>
-
-          <td>
-            @for (raceMeeting of upcomingDate.east; track raceMeeting.location) {
-              <div class="meeting-box">
-                <div class="title">{{ raceMeeting.title }}</div>
-                {{ raceMeeting.location }}
-                @for (series of raceMeeting.series; track series) {
-                  <span class="badge-source">{{ series }}</span>
-                }
-                <div *ngIf="raceMeeting.source" class="source">Quelle: {{ raceMeeting.source }}</div>
-              </div>
-            }
-          </td>
+          @for (regionId of ['global', 'central', 'north', 'south', 'west', 'east']; track  regionId) {
+            <td>
+              @for (race of getRaces(upcomingDate, regionId); track race.location) {
+                <div class="meeting-box">
+                  <div class="title">{{ race.title }}</div>
+                  {{ race.location }}
+                  @for (series of race.series; track series) {
+                    <span class="badge-source">{{ series }}</span>
+                  }
+                  <div *ngIf="race.source" class="source">Quelle: {{ race.source }}</div>
+                </div>
+              }
+            </td>
+          }
         </tr>
       }
     </tbody>
