@@ -1,6 +1,7 @@
 using RcCloud.DateScraper.Application.Dmc.Calendar.Services;
 using RcCloud.DateScraper.Application.Myrcm.Common.Domain;
 using RcCloud.DateScraper.Application.Myrcm.Upcoming.Services;
+using RcCloud.DateScraper.Application.Rcco;
 using RcCloud.DateScraper.Application.Rck.Services;
 using RcCloud.DateScraper.Domain.Races;
 
@@ -10,7 +11,8 @@ public class RetrieveAllRaces(
     ScrapeChallengeRaces scrapeChallenge,
     ScrapeDmcRaces scrapeDmc,
     ScrapeKleinserieRaces scrapeKleinserie,
-    ScrapeMyrcmRaces myrcm)
+    ScrapeMyrcmRaces myrcm,
+    ScrapeRcco rcco)
 {
     public async Task<List<RaceMeeting>> Retrieve()
     {
@@ -24,6 +26,9 @@ public class RetrieveAllRaces(
         
         var myrcmAll = await myrcm.Scrape([MyrcmCountryCode.Germany]);
         all.AddRange(myrcmAll);
+        
+        var rccoAll = await rcco.Scrape();
+        all.AddRange(rccoAll);
 
         all.Sort((a, b) => a.Date.CompareTo(b.Date));
 

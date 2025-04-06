@@ -8,6 +8,11 @@
 
   <ItemGroup>
     <PackageReference Include="HtmlAgilityPack" Version="1.12.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RcCloud.DateScraper.Domain\RcCloud.DateScraper.Domain.csproj" />
   </ItemGroup>
 
 </Project>

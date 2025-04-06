@@ -3,6 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using RcCloud.DateScraper.Application.Dmc;
 using RcCloud.DateScraper.Application.Myrcm;
+using RcCloud.DateScraper.Application.Rcco;
 using RcCloud.DateScraper.Application.Rck;
 using RcCloud.DateScraper.Cli.Commands;
 using RcCloud.DateScraper.Cli.Common.Services;
@@ -23,6 +24,7 @@ await new HostBuilder()
             .AddTransient<WriteJson>()
             .AddDmc()
             .AddMyrcm()
+            .AddRcco()
             .AddRck()
             .AddSingleton<IConsole>(PhysicalConsole.Singleton);
     })
