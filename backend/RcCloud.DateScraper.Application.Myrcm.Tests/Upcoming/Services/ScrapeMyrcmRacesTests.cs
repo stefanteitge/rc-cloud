@@ -2,6 +2,7 @@ using Moq;
 using RcCloud.DateScraper.Application.Myrcm.Clubs.Services;
 using RcCloud.DateScraper.Application.Myrcm.Upcoming.Services;
 using RcCloud.DateScraper.Application.Myrcm.Upcoming.Services.Impl;
+using RcCloud.DateScraper.Domain.Clubs;
 
 namespace RcCloud.DateScraper.Application.Myrcm.Tests.Upcoming.Services;
 
@@ -14,7 +15,7 @@ public class ScrapeMyrcmRacesTests
         var content = File.ReadAllText("Data/myrcm_2025-04-02.html");
         var sut = new ScrapeMyrcmRaces(
             new DownloadMyrcmPages(),
-            new Mock<IEnhanceClub>().Object,
+            new EnhanceClub(new Mock<IClubRepository>().Object),
             new GuessSeriesFromTitle(),
             new GuessIfItIsTraining());
 

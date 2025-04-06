@@ -25,7 +25,7 @@ jobs:
       working-directory: backend
     - name: All Json
       run: dotnet run all --format json
-      working-directory: backend/RcCloud.DateScraper.Cli
+      working-directory: backend/RcCloud.DateScraper.Cli --club-db ../../db/club-db.json
     - name: BeNeLux Json
       run: dotnet run myrcm-benelux --format json
       working-directory: backend/RcCloud.DateScraper.Cli
