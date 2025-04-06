@@ -1,12 +1,14 @@
 {
   "clubs": [
     {
-      "name": "„TONISPORT GmbH Modellsport  ETS“",
-      "aliases": [],
+      "name": "1. Marzahner Racing Club",
+      "aliases": [
+        "1.Marzahner Racing Club"
+      ],
       "countryCode": "de",
       "dmcClubNumber": null,
       "myrcmClubNumbers": [
-        2047
+        18244
       ],
       "region": null
     },
@@ -17,16 +19,6 @@
       "dmcClubNumber": null,
       "myrcmClubNumbers": [
         39671
-      ],
-      "region": null
-    },
-    {
-      "name": "1.Marzahner Racing Club",
-      "aliases": [],
-      "countryCode": "de",
-      "dmcClubNumber": null,
-      "myrcmClubNumbers": [
-        18244
       ],
       "region": null
     },
@@ -313,24 +305,16 @@
       "region": null
     },
     {
-      "name": "MRT-Rosenheim",
-      "aliases": [],
-      "countryCode": "de",
-      "dmcClubNumber": null,
-      "myrcmClubNumbers": [
-        4483
-      ],
-      "region": null
-    },
-    {
       "name": "MRT-Rosenheim e.V.",
-      "aliases": [],
+      "aliases": [
+        "MRT-Rosenheim"
+      ],
       "countryCode": "de",
       "dmcClubNumber": null,
       "myrcmClubNumbers": [
         4483
       ],
-      "region": null
+      "region": "south"
     },
     {
       "name": "MSC der Polizei Braunschweig im ADAC e.V.",
@@ -339,7 +323,7 @@
         "MSC der Polizei Braunschweig im ADAC e.V.  (SK2/OV158)"
       ],
       "countryCode": "de",
-      "dmcClubNumber": null,
+      "dmcClubNumber": 158,
       "myrcmClubNumbers": [
         95
       ],
@@ -554,6 +538,18 @@
       "region": null
     },
     {
+      "name": "Tonisport",
+      "aliases": [
+        "„TONISPORT GmbH Modellsport  ETS“"
+      ],
+      "countryCode": "de",
+      "dmcClubNumber": null,
+      "myrcmClubNumbers": [
+        2047
+      ],
+      "region": null
+    },
+    {
       "name": "TS Grossauheim",
       "aliases": [],
       "countryCode": "de",
@@ -594,5 +590,5 @@
       "region": null
     }
   ],
-  "lastUpdated": "2025-04-06T08:49:24.2947666+02:00"
+  "lastUpdated": "2025-04-06T08:53:45.3643131+02:00"
 }

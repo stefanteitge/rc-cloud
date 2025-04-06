@@ -13,7 +13,6 @@ internal class UpdateClubsCommand(ScrapeMyrcmClubs scrapeClubs, IClubRepository 
     
     public async Task OnExecute()
     {
-        clubRepository.Store(File);
         clubRepository.Load(File);
         var all = await scrapeClubs.Scrape([MyrcmCountryCode.Germany]);
         foreach (var club in all)
