@@ -7,12 +7,9 @@
     <thead>
       <tr>
         <th scope="col">Datum</th>
-        <th scope="col">Keine Region</th>
-        <th scope="col">Mitte</th>
-        <th scope="col">Nord</th>
-        <th scope="col">Süd</th>
-        <th scope="col">West</th>
-        <th scope="col">Ost</th>
+        @for (regionId of displayColumns(); track  regionId) {
+          <th scope="col">{{ regionId }}</th>
+        }
       </tr>
     </thead>
     <tbody>
@@ -20,7 +17,7 @@
         <tr>
           <th scope="row">{{ upcomingDate.date }}</th>
 
-          @for (regionId of ['global', 'central', 'north', 'south', 'west', 'east']; track  regionId) {
+          @for (regionId of displayColumns(); track  regionId) {
             <td>
               @for (race of getRaces(upcomingDate, regionId); track race.location) {
                 <div class="meeting-box">

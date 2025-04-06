@@ -5,7 +5,7 @@ using RcCloud.DateScraper.Domain.Clubs;
 
 namespace RcCloud.DateScraper.Cli.Commands;
 
-internal class AllCommand(
+internal class GermanyCommand(
     IClubRepository clubRepository,
     RetrieveAllRaces retrieveAll,
     PrintRaces printer,
@@ -29,7 +29,7 @@ internal class AllCommand(
 
         if (Format == "json")
         {
-            writeJson.Write(all, "all.json");
+            writeJson.Write(all, "germany.json");
             return;
         }
 

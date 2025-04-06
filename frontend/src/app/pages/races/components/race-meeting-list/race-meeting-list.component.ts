@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, input, OnInit} from '@angular/core';
 import {RaceMeetingRepository} from '../../../../shared/race-meeting/repositories/race-meeting.repository';
 import {UpcomingDate, UpcomingRace} from '../../../../shared/race-meeting/domain/upcoming-date';
 import {NgbAlert} from '@ng-bootstrap/ng-bootstrap';
@@ -12,6 +12,9 @@ import {NgIf} from '@angular/common';
   providers: [RaceMeetingRepository]
 })
 export class RaceMeetingListComponent implements OnInit {
+  displayColumns = input([] as string[]);
+  dataSet = input('');
+
   constructor(private repo: RaceMeetingRepository) {
   }
 
@@ -20,11 +23,11 @@ export class RaceMeetingListComponent implements OnInit {
   }
 
   getRetrieved() : string {
-    return this.repo.getRetrievedDate();
+    return this.repo.getRetrievedDate(this.dataSet());
   }
 
   getAllDates(): UpcomingDate[] {
-    return this.repo.getGermany();
+    return this.repo.getAll(this.dataSet());
   }
 
   getRaces(upcomingDate: UpcomingDate, regionId: string): UpcomingRace[] {

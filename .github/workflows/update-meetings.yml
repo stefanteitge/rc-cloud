@@ -24,13 +24,13 @@ jobs:
       run: dotnet test
       working-directory: backend
     - name: All Json
-      run: dotnet run all --format json --club-db ../../db/club-db.json
+      run: dotnet run germany --format json --club-db ../../db/club-db.json
       working-directory: backend/RcCloud.DateScraper.Cli
     - name: BeNeLux Json
       run: dotnet run benelux --format json
       working-directory: backend/RcCloud.DateScraper.Cli
     - name: Move
-      run: mv all.json ../../frontend/public/assets
+      run: mv germany.json ../../frontend/public/assets
       working-directory: backend/RcCloud.DateScraper.Cli
     - name: Move
       run: mv benelux.json ../../frontend/public/assets

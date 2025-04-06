@@ -4,7 +4,7 @@
 namespace RcCloud.DateScraper.Cli.Commands;
 
 [Command(Name = "rcc-scrape", Description = "Dependency Injection sample project")]
-[Subcommand(typeof(AllCommand))]
+[Subcommand(typeof(GermanyCommand))]
 [Subcommand(typeof(BeneluxCommand))]
 [Subcommand(typeof(ChallengeCommand))]
 [Subcommand(typeof(DmcCommand))]
