@@ -73,21 +73,23 @@
       "region": "central"
     },
     {
-      "name": "AMC Hamm e.V",
-      "aliases": [],
-      "countryCode": "de",
-      "dmcClubNumber": null,
-      "myrcmClubNumbers": [
-        7771
-      ],
-      "region": null
-    },
-    {
       "name": "amc Hamm e.V.",
       "aliases": [],
       "countryCode": "de",
       "dmcClubNumber": 31,
       "myrcmClubNumbers": [],
+      "region": "west"
+    },
+    {
+      "name": "AMC Hamm e.V.",
+      "aliases": [
+        "AMC Hamm e.V"
+      ],
+      "countryCode": "de",
+      "dmcClubNumber": 31,
+      "myrcmClubNumbers": [
+        7771
+      ],
       "region": "west"
     },
     {
@@ -232,11 +234,11 @@
       "name": "IG Racing Team Hamm",
       "aliases": [],
       "countryCode": "de",
-      "dmcClubNumber": null,
+      "dmcClubNumber": 337,
       "myrcmClubNumbers": [
         10490
       ],
-      "region": null
+      "region": "west"
     },
     {
       "name": "LA Speedway Racing Club e.V.",
@@ -488,7 +490,9 @@
     },
     {
       "name": "Modellsport Münsterland e.V.",
-      "aliases": [],
+      "aliases": [
+        "Modellsport Münsterland"
+      ],
       "countryCode": "de",
       "dmcClubNumber": 240,
       "myrcmClubNumbers": [],
@@ -777,7 +781,7 @@
       "myrcmClubNumbers": [
         53665
       ],
-      "region": null
+      "region": "south"
     },
     {
       "name": "RC RaceCrew",
@@ -836,11 +840,11 @@
       "name": "RC-Team Sonneberg / Neustadt",
       "aliases": [],
       "countryCode": "de",
-      "dmcClubNumber": null,
+      "dmcClubNumber": 388,
       "myrcmClubNumbers": [
         59129
       ],
-      "region": null
+      "region": "south"
     },
     {
       "name": "RCCC Coesfeld",
@@ -849,6 +853,16 @@
       "dmcClubNumber": 7,
       "myrcmClubNumbers": [],
       "region": "west"
+    },
+    {
+      "name": "RCCC Hilter e.V.",
+      "aliases": [
+        "RCCC Hilter"
+      ],
+      "countryCode": "de",
+      "dmcClubNumber": 298,
+      "myrcmClubNumbers": [],
+      "region": "north"
     },
     {
       "name": "RCCR Munzig e.V.",
@@ -891,6 +905,16 @@
         15091
       ],
       "region": "west"
+    },
+    {
+      "name": "RCS Offroad Staaken",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": 253,
+      "myrcmClubNumbers": [
+        55317
+      ],
+      "region": "east"
     },
     {
       "name": "RCSF-Singen e.V.",
@@ -1042,5 +1066,5 @@
       "region": "central"
     }
   ],
-  "lastUpdated": "2025-04-06T11:14:20.6174107+02:00"
+  "lastUpdated": "2025-04-06T18:32:36.4501057+02:00"
 }

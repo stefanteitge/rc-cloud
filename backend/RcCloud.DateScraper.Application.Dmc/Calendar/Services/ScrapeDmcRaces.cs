@@ -8,7 +8,7 @@ using RcCloud.DateScraper.Domain.Series;
 
 namespace RcCloud.DateScraper.Application.Dmc.Calendar.Services;
 
-public class ScrapeDmcRaces(DownloadDmcCalendar download, IClubRepository clubRepository)
+public class ScrapeDmcRaces(DownloadDmcCalendar download, IClubRepository clubRepository, GuessSeries guessSeries)
 {
 
     public async Task<IEnumerable<RaceMeeting>> Parse()
@@ -24,22 +24,27 @@ public class ScrapeDmcRaces(DownloadDmcCalendar download, IClubRepository clubRe
     {
         var regions = ComputeRegions(entry);
 
-        var club = new Club(entry.Club, [], entry.ClubNo, [], regions.FirstOrDefault());
+        Club club = new Club(entry.Club, [], entry.ClubNo, [], regions.FirstOrDefault());
         
         var knownClub = clubRepository.FindClub(entry.Club);
         if (knownClub is not null)
         {
             club = new Club(knownClub.Name, knownClub.Aliases, knownClub.DmcClubNumber ?? entry.ClubNo, knownClub.MyrcmClubNumbers, knownClub.Region ?? club.Region);
+
+            if (club?.Region is not null && !regions.Contains(club.Region))
+            {
+                regions.Add(club.Region);
+            }
         }
         
         return new(
-            ComputeSeries(entry),
+            guessSeries.Guess(entry),
             SeasonReference.Current,
             entry.DateEnd,
-            entry.Club,
+            club.Name,
             "de",
             ComputeTitle(entry),
-            regions,
+            regions.ToArray(),
             club,
             "DMC");
 }
@@ -74,45 +79,7 @@ private string ComputeTitle(DmcCalendarEntry entry)
         return "Rennen";
     }
 
-    private SeriesReference[] ComputeSeries(DmcCalendarEntry entry)
-    {
-        var seriess = new List<SeriesReference>();
-        
-        if (entry.Comment.Contains("TOS"))
-        {
-            seriess.Add(SeriesReference.Tonisport);;    
-        }
-        
-        if (entry.Comment.Contains("Elbe Cup"))
-        {
-            seriess.Add(new("elbecup"));    
-        }
-        
-        if (entry.Comment.Contains("LE Trophy"))
-        {
-            seriess.Add(new("letrophy"));    
-        }
-
-        if (entry.IsSportkreismeisterschaft())
-        {
-            seriess.Add(new("dmc-sm"));
-        }
-        
-        if (entry.IsDeutscheMeisterschaft())
-        {
-            seriess.Add(new("dmc-dm"));
-        }
-        
-        if (entry.IsTamiyaEurocup())
-        {
-            seriess.Add(SeriesReference.Tamiya);
-        }
-
-        
-        return seriess.ToArray();
-    }
-
-    private RegionReference[] ComputeRegions(DmcCalendarEntry a)
+    private List<RegionReference> ComputeRegions(DmcCalendarEntry a)
     {
         if (a.IsRegionMeeting(DmcRegion.Central))
         {

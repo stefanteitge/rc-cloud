@@ -48,7 +48,7 @@ public class DmcCalendarEntry(DateOnly dateStart, DateOnly dateEnd, string type,
     
     public bool IsDeutscheMeisterschaft()
     {
-        return Type.StartsWith("DM") && Type.EndsWith("DMC");
+        return (Type.StartsWith("DM") || Type.StartsWith("ODM")) && Type.EndsWith("DMC");
     }
 
     public bool IsShCup()
