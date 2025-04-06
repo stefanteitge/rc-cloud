@@ -29,7 +29,7 @@ internal class UpdateClubsCommand(ScrapeDmcClubs scrapeDmcClubs, ScrapeMyrcmClub
         foreach (var club in allFiltered)
         {
             var numbers = string.Join(", ", club.MyrcmClubNumbers);
-            Console.WriteLine($"{numbers}\t{club.Name}");
+            Console.WriteLine($"{club.DmcClubNumber}\t{numbers}\t{club.Name}");
         }
     }
 }

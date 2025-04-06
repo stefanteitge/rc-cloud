@@ -21,17 +21,21 @@ public class ScrapeDmcRaces(DownloadDmcCalendar download)
     }
 
     private RaceMeeting MakeRaceMeeting(DmcCalendarEntry entry)
-        => new(
+    {
+        var regions = ComputeRegions(entry);
+        var club = new Club(entry.Club, [], entry.ClubNo, [], regions.FirstOrDefault());
+        return new(
             ComputeSeries(entry),
             SeasonReference.Current,
             entry.DateEnd,
             entry.Club,
             ComputeTitle(entry),
-            ComputeRegions(entry),
-            new Club(entry.Club, [], entry.ClubNo, [], null),
+            regions,
+            club,
             "DMC");
+}
 
-    private string ComputeTitle(DmcCalendarEntry entry)
+private string ComputeTitle(DmcCalendarEntry entry)
     {
         if (entry.IsSportkreismeisterschaft())
         {

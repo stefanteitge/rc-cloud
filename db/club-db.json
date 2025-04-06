@@ -58,25 +58,19 @@
       "myrcmClubNumbers": [
         18244
       ],
-      "region": null
-    },
-    {
-      "name": "1. MRC Mannheim",
-      "aliases": [],
-      "countryCode": "de",
-      "dmcClubNumber": null,
-      "myrcmClubNumbers": [
-        39671
-      ],
-      "region": null
+      "region": "east"
     },
     {
       "name": "1.MRC Mannheim e.V.",
-      "aliases": [],
+      "aliases": [
+        "1. MRC Mannheim"
+      ],
       "countryCode": "de",
       "dmcClubNumber": 391,
-      "myrcmClubNumbers": [],
-      "region": null
+      "myrcmClubNumbers": [
+        39671
+      ],
+      "region": "central"
     },
     {
       "name": "AMC Hamm e.V",
@@ -94,17 +88,17 @@
       "countryCode": "de",
       "dmcClubNumber": 31,
       "myrcmClubNumbers": [],
-      "region": null
+      "region": "west"
     },
     {
       "name": "AMC Hildesheim",
       "aliases": [],
       "countryCode": "de",
-      "dmcClubNumber": null,
+      "dmcClubNumber": 203,
       "myrcmClubNumbers": [
         33
       ],
-      "region": null
+      "region": "north"
     },
     {
       "name": "AMC Langenfeld e.V.",
@@ -112,7 +106,7 @@
       "countryCode": "de",
       "dmcClubNumber": 60,
       "myrcmClubNumbers": [],
-      "region": null
+      "region": "west"
     },
     {
       "name": "AMC Magdeburg e.V.",
@@ -123,22 +117,16 @@
       "region": "east"
     },
     {
-      "name": "AMC Mühlau",
-      "aliases": [],
+      "name": "AMC Mühlau e.V.",
+      "aliases": [
+        "AMC Mühlau"
+      ],
       "countryCode": "de",
       "dmcClubNumber": 322,
-      "myrcmClubNumbers": [],
-      "region": null
-    },
-    {
-      "name": "AMC Mühlau e.V.",
-      "aliases": [],
-      "countryCode": "de",
-      "dmcClubNumber": null,
       "myrcmClubNumbers": [
         82
       ],
-      "region": null
+      "region": "east"
     },
     {
       "name": "AMC Senftenberg",
@@ -146,7 +134,7 @@
       "countryCode": "de",
       "dmcClubNumber": 360,
       "myrcmClubNumbers": [],
-      "region": null
+      "region": "east"
     },
     {
       "name": "ASC Celle e.V.",
@@ -156,7 +144,7 @@
       "myrcmClubNumbers": [
         26821
       ],
-      "region": null
+      "region": "north"
     },
     {
       "name": "ASC Potsdam e.V.",
@@ -166,7 +154,7 @@
       "myrcmClubNumbers": [
         26596
       ],
-      "region": null
+      "region": "east"
     },
     {
       "name": "BOC Kiel e.V.",
@@ -174,7 +162,7 @@
       "countryCode": "de",
       "dmcClubNumber": 254,
       "myrcmClubNumbers": [],
-      "region": null
+      "region": "north"
     },
     {
       "name": "Burning Wheels Blankenfelde",
@@ -182,11 +170,13 @@
       "countryCode": "de",
       "dmcClubNumber": 292,
       "myrcmClubNumbers": [],
-      "region": null
+      "region": "east"
     },
     {
-      "name": "Deutscher Minicar Club  (DMC)",
-      "aliases": [],
+      "name": "Deutscher Minicar Club (DMC)",
+      "aliases": [
+        "Deutscher Minicar Club  (DMC)"
+      ],
       "countryCode": "de",
       "dmcClubNumber": null,
       "myrcmClubNumbers": [
@@ -195,60 +185,40 @@
       "region": null
     },
     {
-      "name": "DMC e.V. | Ausrichter: MCC Rhein-Ahr e.V.",
-      "aliases": [],
-      "countryCode": "de",
-      "dmcClubNumber": null,
-      "myrcmClubNumbers": [
-        283
+      "name": "EDC Kinzigtal",
+      "aliases": [
+        "EDC Kinzigtal (OV371)"
       ],
-      "region": null
-    },
-    {
-      "name": "EDC Kinzigtal (OV371)",
-      "aliases": [],
       "countryCode": "de",
-      "dmcClubNumber": null,
+      "dmcClubNumber": 371,
       "myrcmClubNumbers": [
         35606
       ],
-      "region": null
-    },
-    {
-      "name": "EMC Marktoberdorf",
-      "aliases": [],
-      "countryCode": "de",
-      "dmcClubNumber": null,
-      "myrcmClubNumbers": [
-        43367
-      ],
-      "region": null
+      "region": "south"
     },
     {
       "name": "EMC Marktoberdorf e.V.",
-      "aliases": [],
+      "aliases": [
+        "EMC Marktoberdorf"
+      ],
       "countryCode": "de",
       "dmcClubNumber": 263,
-      "myrcmClubNumbers": [],
-      "region": null
-    },
-    {
-      "name": "ESV Bischofsheim e.V.",
-      "aliases": [],
-      "countryCode": "de",
-      "dmcClubNumber": 37,
-      "myrcmClubNumbers": [],
-      "region": null
+      "myrcmClubNumbers": [
+        43367
+      ],
+      "region": "south"
     },
     {
       "name": "ESV Blau-Gold Bischofsheim 1958 e.V.",
-      "aliases": [],
+      "aliases": [
+        "ESV Bischofsheim e.V."
+      ],
       "countryCode": "de",
-      "dmcClubNumber": null,
+      "dmcClubNumber": 37,
       "myrcmClubNumbers": [
         49540
       ],
-      "region": null
+      "region": "central"
     },
     {
       "name": "GFC Donath",
@@ -256,7 +226,7 @@
       "countryCode": "de",
       "dmcClubNumber": 378,
       "myrcmClubNumbers": [],
-      "region": null
+      "region": "south"
     },
     {
       "name": "IG Racing Team Hamm",
@@ -269,22 +239,16 @@
       "region": null
     },
     {
-      "name": "LA Speedway Racing Club",
-      "aliases": [],
+      "name": "LA Speedway Racing Club e.V.",
+      "aliases": [
+        "LA Speedway Racing Club"
+      ],
       "countryCode": "de",
       "dmcClubNumber": 246,
-      "myrcmClubNumbers": [],
-      "region": null
-    },
-    {
-      "name": "LA Speedway Racing Club e.V.",
-      "aliases": [],
-      "countryCode": "de",
-      "dmcClubNumber": null,
       "myrcmClubNumbers": [
         52798
       ],
-      "region": null
+      "region": "south"
     },
     {
       "name": "MAC Burgdorf e.V.",
@@ -292,25 +256,19 @@
       "countryCode": "de",
       "dmcClubNumber": 227,
       "myrcmClubNumbers": [],
-      "region": null
-    },
-    {
-      "name": "MAC Eifel Elos",
-      "aliases": [],
-      "countryCode": "de",
-      "dmcClubNumber": null,
-      "myrcmClubNumbers": [
-        17507
-      ],
-      "region": null
+      "region": "north"
     },
     {
       "name": "MAC Eifel-Elos e.V.",
-      "aliases": [],
+      "aliases": [
+        "MAC Eifel Elos"
+      ],
       "countryCode": "de",
       "dmcClubNumber": 315,
-      "myrcmClubNumbers": [],
-      "region": null
+      "myrcmClubNumbers": [
+        17507
+      ],
+      "region": "west"
     },
     {
       "name": "MAC Hamburg e.V.",
@@ -318,15 +276,17 @@
       "countryCode": "de",
       "dmcClubNumber": 24,
       "myrcmClubNumbers": [],
-      "region": null
+      "region": "north"
     },
     {
       "name": "MAC Meckenheim e.V.",
-      "aliases": [],
+      "aliases": [
+        "MAC-Meckenheim e.V. OV 3/030"
+      ],
       "countryCode": "de",
       "dmcClubNumber": 30,
       "myrcmClubNumbers": [],
-      "region": null
+      "region": "west"
     },
     {
       "name": "MAC Mettenheim e.V.",
@@ -346,7 +306,7 @@
       "myrcmClubNumbers": [
         9976
       ],
-      "region": null
+      "region": "south"
     },
     {
       "name": "MAC OR Hütschenhausen e.V.",
@@ -354,7 +314,7 @@
       "countryCode": "de",
       "dmcClubNumber": 86,
       "myrcmClubNumbers": [],
-      "region": null
+      "region": "central"
     },
     {
       "name": "MAC Siersburg e.V.",
@@ -362,7 +322,7 @@
       "countryCode": "de",
       "dmcClubNumber": 383,
       "myrcmClubNumbers": [],
-      "region": null
+      "region": "central"
     },
     {
       "name": "MAC Solms",
@@ -370,7 +330,7 @@
       "countryCode": "de",
       "dmcClubNumber": 335,
       "myrcmClubNumbers": [],
-      "region": null
+      "region": "central"
     },
     {
       "name": "MAC Uetersen e.V.",
@@ -378,7 +338,7 @@
       "countryCode": "de",
       "dmcClubNumber": 327,
       "myrcmClubNumbers": [],
-      "region": null
+      "region": "north"
     },
     {
       "name": "MAC-Hamburg e.V.",
@@ -387,16 +347,6 @@
       "dmcClubNumber": null,
       "myrcmClubNumbers": [
         20622
-      ],
-      "region": null
-    },
-    {
-      "name": "MAC-Meckenheim e.V. OV 3/030",
-      "aliases": [],
-      "countryCode": "de",
-      "dmcClubNumber": null,
-      "myrcmClubNumbers": [
-        49037
       ],
       "region": null
     },
@@ -412,11 +362,15 @@
     },
     {
       "name": "MC Dortmund e.V.",
-      "aliases": [],
+      "aliases": [
+        "Minicar Club Dortmund e.V."
+      ],
       "countryCode": "de",
       "dmcClubNumber": 143,
-      "myrcmClubNumbers": [],
-      "region": null
+      "myrcmClubNumbers": [
+        6266
+      ],
+      "region": "west"
     },
     {
       "name": "MC Ettlingen e.V.",
@@ -440,7 +394,7 @@
       "countryCode": "de",
       "dmcClubNumber": 65,
       "myrcmClubNumbers": [],
-      "region": null
+      "region": "east"
     },
     {
       "name": "MC Welden e.V.",
@@ -448,7 +402,7 @@
       "countryCode": "de",
       "dmcClubNumber": 152,
       "myrcmClubNumbers": [],
-      "region": null
+      "region": "south"
     },
     {
       "name": "MCC Fellbach e.V.",
@@ -456,7 +410,7 @@
       "countryCode": "de",
       "dmcClubNumber": 128,
       "myrcmClubNumbers": [],
-      "region": null
+      "region": "south"
     },
     {
       "name": "MCC Laupheim e.V.",
@@ -464,16 +418,20 @@
       "countryCode": "de",
       "dmcClubNumber": 107,
       "myrcmClubNumbers": [],
-      "region": null
+      "region": "south"
     },
     {
       "name": "MCC Rhein-Ahr e.V.",
       "aliases": [
-        "MCC Rhein-Ahr e.V"
+        "MCC Rhein-Ahr e.V",
+        "Modell Car Club Rhein Ahr e.V.",
+        "DMC e.V. | Ausrichter: MCC Rhein-Ahr e.V."
       ],
       "countryCode": "de",
-      "dmcClubNumber": null,
-      "myrcmClubNumbers": [],
+      "dmcClubNumber": 296,
+      "myrcmClubNumbers": [
+        283
+      ],
       "region": "west"
     },
     {
@@ -484,7 +442,7 @@
       "myrcmClubNumbers": [
         47
       ],
-      "region": null
+      "region": "south"
     },
     {
       "name": "MCK e.V. Dormagen",
@@ -492,7 +450,7 @@
       "countryCode": "de",
       "dmcClubNumber": 40,
       "myrcmClubNumbers": [],
-      "region": null
+      "region": "west"
     },
     {
       "name": "MCRT Aschaffenburg",
@@ -500,7 +458,7 @@
       "countryCode": "de",
       "dmcClubNumber": 176,
       "myrcmClubNumbers": [],
-      "region": null
+      "region": "central"
     },
     {
       "name": "MFK Kürten e.V.",
@@ -508,25 +466,7 @@
       "countryCode": "de",
       "dmcClubNumber": 218,
       "myrcmClubNumbers": [],
-      "region": null
-    },
-    {
-      "name": "Minicar Club Dortmund e.V.",
-      "aliases": [],
-      "countryCode": "de",
-      "dmcClubNumber": null,
-      "myrcmClubNumbers": [
-        6266
-      ],
-      "region": null
-    },
-    {
-      "name": "Modell Car Club Rhein Ahr e.V.",
-      "aliases": [],
-      "countryCode": "de",
-      "dmcClubNumber": 296,
-      "myrcmClubNumbers": [],
-      "region": null
+      "region": "west"
     },
     {
       "name": "Modell-Car-Club Bad Kissingen e.V.",
@@ -534,7 +474,7 @@
       "countryCode": "de",
       "dmcClubNumber": 44,
       "myrcmClubNumbers": [],
-      "region": null
+      "region": "south"
     },
     {
       "name": "Modellclub Flensburg e.V.",
@@ -547,20 +487,12 @@
       "region": "north"
     },
     {
-      "name": "Modellsport Club Halle / Saale e.V.",
-      "aliases": [],
-      "countryCode": "de",
-      "dmcClubNumber": 359,
-      "myrcmClubNumbers": [],
-      "region": null
-    },
-    {
       "name": "Modellsport Münsterland e.V.",
       "aliases": [],
       "countryCode": "de",
       "dmcClubNumber": 240,
       "myrcmClubNumbers": [],
-      "region": null
+      "region": "west"
     },
     {
       "name": "Modellsport Zwönitz e.V.",
@@ -570,7 +502,7 @@
       "myrcmClubNumbers": [
         60576
       ],
-      "region": null
+      "region": "east"
     },
     {
       "name": "MRC Leipzig e.V.",
@@ -578,25 +510,19 @@
       "countryCode": "de",
       "dmcClubNumber": 61,
       "myrcmClubNumbers": [],
-      "region": null
-    },
-    {
-      "name": "MRC Senden",
-      "aliases": [],
-      "countryCode": "de",
-      "dmcClubNumber": 247,
-      "myrcmClubNumbers": [],
-      "region": null
+      "region": "east"
     },
     {
       "name": "MRC Senden e.V.",
-      "aliases": [],
+      "aliases": [
+        "MRC Senden"
+      ],
       "countryCode": "de",
-      "dmcClubNumber": null,
+      "dmcClubNumber": 247,
       "myrcmClubNumbers": [
         61183
       ],
-      "region": null
+      "region": "south"
     },
     {
       "name": "MRC-Leipzig e.V.",
@@ -614,23 +540,16 @@
       "myrcmClubNumbers": [
         39587
       ],
-      "region": null
-    },
-    {
-      "name": "MRT Rosenheim e.V.",
-      "aliases": [],
-      "countryCode": "de",
-      "dmcClubNumber": 67,
-      "myrcmClubNumbers": [],
-      "region": null
+      "region": "south"
     },
     {
       "name": "MRT-Rosenheim e.V.",
       "aliases": [
-        "MRT-Rosenheim"
+        "MRT-Rosenheim",
+        "MRT Rosenheim e.V."
       ],
       "countryCode": "de",
-      "dmcClubNumber": null,
+      "dmcClubNumber": 67,
       "myrcmClubNumbers": [
         4483
       ],
@@ -640,24 +559,27 @@
       "name": "MSC der Polizei Braunschweig im ADAC e.V.",
       "aliases": [
         "MSC der Polizei Braunschweig im ADAC e.V. (158)",
-        "MSC der Polizei Braunschweig im ADAC e.V.  (SK2/OV158)"
+        "MSC der Polizei Braunschweig im ADAC e.V.  (SK2/OV158)",
+        "MSC Pol. Braunschweig"
       ],
       "countryCode": "de",
       "dmcClubNumber": 158,
       "myrcmClubNumbers": [
         95
       ],
-      "region": null
+      "region": "north"
     },
     {
       "name": "MSC Halle e.V.",
-      "aliases": [],
+      "aliases": [
+        "Modellsport Club Halle / Saale e.V."
+      ],
       "countryCode": "de",
-      "dmcClubNumber": null,
+      "dmcClubNumber": 359,
       "myrcmClubNumbers": [
         44811
       ],
-      "region": null
+      "region": "east"
     },
     {
       "name": "MSC Kirchhain e.V.",
@@ -667,7 +589,7 @@
       "myrcmClubNumbers": [
         17008
       ],
-      "region": null
+      "region": "central"
     },
     {
       "name": "MSC Ober-Mörlen e.V.",
@@ -675,7 +597,7 @@
       "countryCode": "de",
       "dmcClubNumber": 205,
       "myrcmClubNumbers": [],
-      "region": null
+      "region": "central"
     },
     {
       "name": "MSC Osterhofen e.V.",
@@ -685,15 +607,7 @@
       "myrcmClubNumbers": [
         50019
       ],
-      "region": null
-    },
-    {
-      "name": "MSC Pol. Braunschweig",
-      "aliases": [],
-      "countryCode": "de",
-      "dmcClubNumber": 158,
-      "myrcmClubNumbers": [],
-      "region": null
+      "region": "south"
     },
     {
       "name": "MSC Sand e.V.",
@@ -701,7 +615,7 @@
       "countryCode": "de",
       "dmcClubNumber": 349,
       "myrcmClubNumbers": [],
-      "region": null
+      "region": "south"
     },
     {
       "name": "MSG Niesky e.V.",
@@ -719,7 +633,7 @@
       "countryCode": "de",
       "dmcClubNumber": 181,
       "myrcmClubNumbers": [],
-      "region": null
+      "region": "west"
     },
     {
       "name": "MSV Linsengericht",
@@ -727,7 +641,7 @@
       "countryCode": "de",
       "dmcClubNumber": 234,
       "myrcmClubNumbers": [],
-      "region": null
+      "region": "central"
     },
     {
       "name": "Nitromaniacs e.V.",
@@ -735,7 +649,7 @@
       "countryCode": "de",
       "dmcClubNumber": 101,
       "myrcmClubNumbers": [],
-      "region": null
+      "region": "west"
     },
     {
       "name": "Nordbayern Cup",
@@ -745,7 +659,7 @@
       "myrcmClubNumbers": [
         47444
       ],
-      "region": null
+      "region": "south"
     },
     {
       "name": "Offroad Club Ostsee e.V.",
@@ -753,7 +667,7 @@
       "countryCode": "de",
       "dmcClubNumber": 341,
       "myrcmClubNumbers": [],
-      "region": null
+      "region": "north"
     },
     {
       "name": "ORC-B Göttingen e.V.",
@@ -775,7 +689,7 @@
       "myrcmClubNumbers": [
         573
       ],
-      "region": null
+      "region": "south"
     },
     {
       "name": "ORT Fulda",
@@ -783,7 +697,7 @@
       "countryCode": "de",
       "dmcClubNumber": 3,
       "myrcmClubNumbers": [],
-      "region": null
+      "region": "central"
     },
     {
       "name": "Panik Team Troisdorf e.V.",
@@ -791,25 +705,19 @@
       "countryCode": "de",
       "dmcClubNumber": 225,
       "myrcmClubNumbers": [],
-      "region": null
-    },
-    {
-      "name": "RC Cars Köngen (OV 162)",
-      "aliases": [],
-      "countryCode": "de",
-      "dmcClubNumber": null,
-      "myrcmClubNumbers": [
-        12564
-      ],
-      "region": null
+      "region": "west"
     },
     {
       "name": "RC Cars Köngen e.V.",
-      "aliases": [],
+      "aliases": [
+        "RC Cars Köngen (OV 162)"
+      ],
       "countryCode": "de",
       "dmcClubNumber": 162,
-      "myrcmClubNumbers": [],
-      "region": null
+      "myrcmClubNumbers": [
+        12564
+      ],
+      "region": "south"
     },
     {
       "name": "RC Fun Racer",
@@ -817,7 +725,7 @@
       "countryCode": "de",
       "dmcClubNumber": 389,
       "myrcmClubNumbers": [],
-      "region": null
+      "region": "west"
     },
     {
       "name": "RC Halle e.V.",
@@ -825,7 +733,7 @@
       "countryCode": "de",
       "dmcClubNumber": 384,
       "myrcmClubNumbers": [],
-      "region": null
+      "region": "east"
     },
     {
       "name": "RC Haltern e.V.",
@@ -833,7 +741,7 @@
       "countryCode": "de",
       "dmcClubNumber": 160,
       "myrcmClubNumbers": [],
-      "region": null
+      "region": "west"
     },
     {
       "name": "RC Modellbaufreunde e.V.",
@@ -843,7 +751,7 @@
       "myrcmClubNumbers": [
         53665
       ],
-      "region": null
+      "region": "south"
     },
     {
       "name": "RC Offroad Heiligenstadt e.V.",
@@ -851,7 +759,7 @@
       "countryCode": "de",
       "dmcClubNumber": 36,
       "myrcmClubNumbers": [],
-      "region": null
+      "region": "central"
     },
     {
       "name": "RC Offroad Staaken e.V.",
@@ -859,7 +767,7 @@
       "countryCode": "de",
       "dmcClubNumber": 253,
       "myrcmClubNumbers": [],
-      "region": null
+      "region": "east"
     },
     {
       "name": "RC Race Team München",
@@ -885,23 +793,16 @@
       "countryCode": "de",
       "dmcClubNumber": 382,
       "myrcmClubNumbers": [],
-      "region": null
-    },
-    {
-      "name": "RC Speedracer",
-      "aliases": [],
-      "countryCode": "de",
-      "dmcClubNumber": 55,
-      "myrcmClubNumbers": [],
-      "region": null
+      "region": "west"
     },
     {
       "name": "RC Speedracer e.V.",
       "aliases": [
-        "RC Speedracer e.V. OV-055"
+        "RC Speedracer e.V. OV-055",
+        "RC Speedracer"
       ],
       "countryCode": "de",
-      "dmcClubNumber": null,
+      "dmcClubNumber": 55,
       "myrcmClubNumbers": [],
       "region": "east"
     },
@@ -913,7 +814,7 @@
       "myrcmClubNumbers": [
         32408
       ],
-      "region": null
+      "region": "north"
     },
     {
       "name": "RC-Club Grossheubach e.V.",
@@ -921,7 +822,7 @@
       "countryCode": "de",
       "dmcClubNumber": 79,
       "myrcmClubNumbers": [],
-      "region": null
+      "region": "central"
     },
     {
       "name": "RC-Offroad Kassel e.V.",
@@ -929,7 +830,7 @@
       "countryCode": "de",
       "dmcClubNumber": 184,
       "myrcmClubNumbers": [],
-      "region": null
+      "region": "central"
     },
     {
       "name": "RC-Team Sonneberg / Neustadt",
@@ -947,7 +848,7 @@
       "countryCode": "de",
       "dmcClubNumber": 7,
       "myrcmClubNumbers": [],
-      "region": null
+      "region": "west"
     },
     {
       "name": "RCCR Munzig e.V.",
@@ -955,17 +856,19 @@
       "countryCode": "de",
       "dmcClubNumber": 316,
       "myrcmClubNumbers": [],
-      "region": null
+      "region": "east"
     },
     {
-      "name": "RCCT Münden OV241",
-      "aliases": [],
+      "name": "RCCT Münden",
+      "aliases": [
+        "RCCT Münden OV241"
+      ],
       "countryCode": "de",
-      "dmcClubNumber": null,
+      "dmcClubNumber": 241,
       "myrcmClubNumbers": [
         134
       ],
-      "region": null
+      "region": "nord"
     },
     {
       "name": "RCR Peterberg e.V.",
@@ -975,25 +878,19 @@
       "myrcmClubNumbers": [
         49540
       ],
-      "region": null
+      "region": "central"
     },
     {
       "name": "RCRT Duisburg",
-      "aliases": [],
+      "aliases": [
+        "RCRT Duisburg (DMC: OV 3/124)"
+      ],
       "countryCode": "de",
       "dmcClubNumber": 124,
-      "myrcmClubNumbers": [],
-      "region": null
-    },
-    {
-      "name": "RCRT Duisburg (DMC: OV 3/124)",
-      "aliases": [],
-      "countryCode": "de",
-      "dmcClubNumber": null,
       "myrcmClubNumbers": [
         15091
       ],
-      "region": null
+      "region": "west"
     },
     {
       "name": "RCSF-Singen e.V.",
@@ -1003,17 +900,17 @@
       "myrcmClubNumbers": [
         16961
       ],
-      "region": null
+      "region": "south"
     },
     {
       "name": "RGMC-Teck e.V.",
       "aliases": [],
       "countryCode": "de",
-      "dmcClubNumber": null,
+      "dmcClubNumber": 244,
       "myrcmClubNumbers": [
         60396
       ],
-      "region": null
+      "region": "south"
     },
     {
       "name": "RIMAR Rhein Ijssel Modell Auto Race",
@@ -1021,7 +918,7 @@
       "countryCode": "de",
       "dmcClubNumber": 303,
       "myrcmClubNumbers": [],
-      "region": null
+      "region": "west"
     },
     {
       "name": "RMC Wolfsburg e.V.",
@@ -1029,25 +926,19 @@
       "countryCode": "de",
       "dmcClubNumber": 157,
       "myrcmClubNumbers": [],
-      "region": null
-    },
-    {
-      "name": "RT Fichtenberg",
-      "aliases": [],
-      "countryCode": "de",
-      "dmcClubNumber": 76,
-      "myrcmClubNumbers": [],
-      "region": null
+      "region": "north"
     },
     {
       "name": "RT Fichtenberg e.V.",
-      "aliases": [],
+      "aliases": [
+        "RT Fichtenberg"
+      ],
       "countryCode": "de",
-      "dmcClubNumber": null,
+      "dmcClubNumber": 76,
       "myrcmClubNumbers": [
         25939
       ],
-      "region": null
+      "region": "south"
     },
     {
       "name": "Slottis Supreme Masters",
@@ -1065,7 +956,7 @@
       "countryCode": "de",
       "dmcClubNumber": 323,
       "myrcmClubNumbers": [],
-      "region": null
+      "region": "central"
     },
     {
       "name": "Stoppelhopser Oberhausen e.V.",
@@ -1073,7 +964,7 @@
       "countryCode": "de",
       "dmcClubNumber": 123,
       "myrcmClubNumbers": [],
-      "region": null
+      "region": "west"
     },
     {
       "name": "Tonisport",
@@ -1088,22 +979,17 @@
       "region": null
     },
     {
-      "name": "TS Grossauheim",
-      "aliases": [],
+      "name": "TS-Grossauheim 1860 e.V.",
+      "aliases": [
+        "TS-Gross Auheim",
+        "TS Grossauheim"
+      ],
       "countryCode": "de",
-      "dmcClubNumber": null,
+      "dmcClubNumber": 289,
       "myrcmClubNumbers": [
         22897
       ],
-      "region": null
-    },
-    {
-      "name": "TS-Gross Auheim",
-      "aliases": [],
-      "countryCode": "de",
-      "dmcClubNumber": 289,
-      "myrcmClubNumbers": [],
-      "region": null
+      "region": "central"
     },
     {
       "name": "TSG/MST Estenfeld e.V.",
@@ -1111,7 +997,7 @@
       "countryCode": "de",
       "dmcClubNumber": 269,
       "myrcmClubNumbers": [],
-      "region": null
+      "region": "south"
     },
     {
       "name": "TSV 1871 Augsburg e.V.",
@@ -1121,7 +1007,7 @@
       "myrcmClubNumbers": [
         991
       ],
-      "region": null
+      "region": "south"
     },
     {
       "name": "TSV Mariendorf 97 Berlin",
@@ -1141,7 +1027,7 @@
       "countryCode": "de",
       "dmcClubNumber": 120,
       "myrcmClubNumbers": [],
-      "region": null
+      "region": "central"
     },
     {
       "name": "Wiesbadener Minicar Club e.V.",
@@ -1153,8 +1039,8 @@
       "myrcmClubNumbers": [
         11761
       ],
-      "region": null
+      "region": "central"
     }
   ],
-  "lastUpdated": "2025-04-06T10:12:43.3037122+02:00"
+  "lastUpdated": "2025-04-06T11:14:20.6174107+02:00"
 }

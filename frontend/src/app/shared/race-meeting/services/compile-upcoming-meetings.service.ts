@@ -50,6 +50,13 @@ export default function compileUpcomingMeetings(meetings: RaceMeetingDto[]): Upc
     if (newRace.groups.find(g => g.id == 'central')) {
       existingDate.central.push(newRace);
     }
+
+    existingDate.raceMeetings.sort((a, b) => a.location.localeCompare(b.location));
+    existingDate.east.sort((a, b) => a.location.localeCompare(b.location));
+    existingDate.west.sort((a, b) => a.location.localeCompare(b.location));
+    existingDate.north.sort((a, b) => a.location.localeCompare(b.location));
+    existingDate.south.sort((a, b) => a.location.localeCompare(b.location));
+    existingDate.central.sort((a, b) => a.location.localeCompare(b.location));
   })
 
   return compiled;
