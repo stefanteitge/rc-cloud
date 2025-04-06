@@ -2,7 +2,11 @@
   "profiles": {
     "RcCloud.DateScraper.Cli": {
       "commandName": "Project",
-      "commandLineArgs": "all"
+      "commandLineArgs": "myrcm-clubs"
+    },
+    "Clubs Update": {
+      "commandName": "Project",
+      "commandLineArgs": "update-clubs --file ../../../../../db/club-db.json"
     }
   }
 }

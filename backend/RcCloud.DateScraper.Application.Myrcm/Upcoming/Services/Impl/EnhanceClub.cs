@@ -9,6 +9,6 @@ internal class EnhanceClub(IClubRepository repo) : IEnhanceClub
     {
         var found = repo.FindClub(clubName);
 
-        return new Club(found?.Name ?? clubName, found?.Aliases ?? [], null, myrcmClubNumber, found?.Region);
+        return new Club(found?.Name ?? clubName, found?.Aliases ?? [], null, [myrcmClubNumber], found?.Region);
     }
 }

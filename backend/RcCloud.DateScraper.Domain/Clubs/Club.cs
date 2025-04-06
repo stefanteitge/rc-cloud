@@ -2,7 +2,7 @@ using RcCloud.DateScraper.Domain.Regions;
 
 namespace RcCloud.DateScraper.Domain.Clubs;
 
-public class Club(string name, List<string> aliases, int? dmcClubNumber, int? myrcmClubNumber, RegionReference? region)
+public class Club(string name, List<string> aliases, int? dmcClubNumber, int[] myrcmClubNumbers, RegionReference? region)
     : IEquatable<Club>
 {
     public string Name { get; protected set; } = name;
@@ -11,7 +11,7 @@ public class Club(string name, List<string> aliases, int? dmcClubNumber, int? my
 
     public int? DmcClubNumber { get; } = dmcClubNumber;
 
-    public int? MyrcmClubNumber { get; } = myrcmClubNumber;
+    public int[] MyrcmClubNumbers { get; } = myrcmClubNumbers;
     
     public RegionReference? Region { get; } = region;
 
@@ -42,7 +42,7 @@ public class Club(string name, List<string> aliases, int? dmcClubNumber, int? my
             return false;
         }
 
-        return Name == other.Name && DmcClubNumber == other.DmcClubNumber && MyrcmClubNumber == other.MyrcmClubNumber;
+        return Name == other.Name && DmcClubNumber == other.DmcClubNumber && MyrcmClubNumbers.Equals(other.MyrcmClubNumbers);
     }
 
     public override bool Equals(object? obj) => this.Equals(obj as Club);

@@ -11,4 +11,6 @@ public record RegionReference(string Id)
     public static RegionReference South = new("south");
 
     public static RegionReference Central = new("central");
+
+    public override string ToString() => Id;
 }
