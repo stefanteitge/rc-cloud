@@ -367,7 +367,7 @@
       "myrcmClubNumbers": [
         46202
       ],
-      "region": null
+      "region": "east"
     },
     {
       "name": "Nordbayern Cup",
@@ -381,21 +381,13 @@
     },
     {
       "name": "ORC-B Göttingen e.V.",
-      "aliases": [],
-      "countryCode": "de",
-      "dmcClubNumber": null,
-      "myrcmClubNumbers": [],
-      "region": "north"
-    },
-    {
-      "name": "ORCB Göttingen e.V.",
-      "aliases": [],
+      "aliases": ["ORCB Göttingen e.V."],
       "countryCode": "de",
       "dmcClubNumber": null,
       "myrcmClubNumbers": [
         36113
       ],
-      "region": null
+      "region": "north"
     },
     {
       "name": "ORMC Königsbrunn",

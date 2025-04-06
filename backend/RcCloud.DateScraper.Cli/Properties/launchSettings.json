@@ -7,6 +7,10 @@
     "Clubs Update": {
       "commandName": "Project",
       "commandLineArgs": "update-clubs --file ../../../../../db/club-db.json"
+    },
+    "All with clubs": {
+      "commandName": "Project",
+      "commandLineArgs": "all --club-db ../../../../../db/club-db.json --format json"
     }
   }
 }

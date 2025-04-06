@@ -16,7 +16,6 @@ public class ScrapeMyrcmRacesTests
             new DownloadMyrcmPages(),
             new Mock<IEnhanceClub>().Object,
             new GuessSeriesFromTitle(),
-            new SanitizeClubNames(), 
             new GuessIfItIsTraining());
 
         // Act

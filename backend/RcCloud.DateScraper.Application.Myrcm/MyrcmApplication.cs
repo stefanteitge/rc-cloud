@@ -12,7 +12,6 @@ public static class MyrcmApplication
         return services
             .AddTransient<IEnhanceClub, EnhanceClub>()
             .AddTransient<GuessIfItIsTraining>()
-            .AddTransient<SanitizeClubNames>()
             .AddTransient<DownloadMyrcmPages>()
             .AddTransient<GuessSeriesFromTitle>()
             .AddTransient<ScrapeMyrcmClubs>()

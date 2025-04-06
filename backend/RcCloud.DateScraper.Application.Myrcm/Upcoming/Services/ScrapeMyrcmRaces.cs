@@ -15,7 +15,6 @@ public class ScrapeMyrcmRaces(
     DownloadMyrcmPages downloadPages,
     IEnhanceClub enhanceClub,
     GuessSeriesFromTitle guessSeriesFromTitle,
-    SanitizeClubNames sanitizeClubNames,
     GuessIfItIsTraining guessIfItIsTraining)
 {
     public async Task<IEnumerable<RaceMeeting>> Scrape(MyrcmCountryCode[] countries)
@@ -32,8 +31,6 @@ public class ScrapeMyrcmRaces(
             var parsed2 = await Scrape(downloaded2);
             all.AddRange(parsed2);
         }
-
-        sanitizeClubNames.Sanitize(all.Select(r => r.Club).OfType<Club>().ToList());
         
         return all;
     }
@@ -110,7 +107,7 @@ public class ScrapeMyrcmRaces(
                 guessSeriesFromTitle.Guess(race.Title),
                 SeasonReference.Current,
                 race.DateEnd, 
-                race.Club, // XXX club is not sanitized here
+                club.Name,
                 race.Title, 
                 club?.Region is null ? [] : [club.Region],
                 club,

@@ -8,7 +8,8 @@ public class WriteJson
     {
         var options = new JsonSerializerOptions(JsonSerializerOptions.Web)
         {
-            WriteIndented = true
+            WriteIndented = true,
+            Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping,
         };
 
         var bytes = JsonSerializer.SerializeToUtf8Bytes(new JsonExportSchema<T>(DateTimeOffset.Now, contents), options);

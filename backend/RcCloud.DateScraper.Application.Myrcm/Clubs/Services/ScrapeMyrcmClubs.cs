@@ -4,7 +4,7 @@ using RcCloud.DateScraper.Domain.Clubs;
 
 namespace RcCloud.DateScraper.Application.Myrcm.Clubs.Services;
 
-public class ScrapeMyrcmClubs(ScrapeMyrcmRaces scrapeRaces, SanitizeClubNames sanitizeClubNames)
+public class ScrapeMyrcmClubs(ScrapeMyrcmRaces scrapeRaces)
 {
     public async Task<List<Club>> Scrape(MyrcmCountryCode[] countries)
     {
@@ -16,8 +16,6 @@ public class ScrapeMyrcmClubs(ScrapeMyrcmRaces scrapeRaces, SanitizeClubNames sa
             .Distinct()
             .OrderBy(c => c.Name)
             .ToList();
-
-        sanitizeClubNames.Sanitize(clubs);
 
         return clubs;
     }
