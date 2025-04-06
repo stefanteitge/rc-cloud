@@ -9,7 +9,7 @@ public class ClubEntity(
     string countryCode,
     string? region,
     int? dmcClubNumber,
-    int[] myrcmClubNumbers)
+    List<int> myrcmClubNumbers)
 {
     public string Name { get; set; } = name;
 
@@ -19,12 +19,12 @@ public class ClubEntity(
 
     public int? DmcClubNumber { get; set; } = dmcClubNumber;
 
-    public int[] MyrcmClubNumbers { get; set; } = myrcmClubNumbers;
+    public List<int> MyrcmClubNumbers { get; set; } = myrcmClubNumbers;
 
     public string? Region { get; set; } = region;
 
     public Club ToDomain()
     {
-        return new Club(Name, Aliases, DmcClubNumber, MyrcmClubNumbers, Region is null ? null : new RegionReference(Region)); 
+        return new Club(Name, Aliases, DmcClubNumber, MyrcmClubNumbers.ToArray(), Region is null ? null : new RegionReference(Region)); 
     }
 }

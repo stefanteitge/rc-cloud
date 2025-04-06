@@ -1,11 +1,12 @@
 ﻿using McMaster.Extensions.CommandLineUtils;
+using RcCloud.DateScraper.Application.Dmc.Calendar.Services;
 using RcCloud.DateScraper.Application.Myrcm.Clubs.Services;
 using RcCloud.DateScraper.Application.Myrcm.Common.Domain;
 using RcCloud.DateScraper.Domain.Clubs;
 
 namespace RcCloud.DateScraper.Cli.Commands;
 
-internal class UpdateClubsCommand(ScrapeMyrcmClubs scrapeClubs, IClubRepository clubRepository)
+internal class UpdateClubsCommand(ScrapeDmcClubs scrapeDmcClubs, ScrapeMyrcmClubs scrapeClubs, IClubRepository clubRepository)
 {
     [FileExists]
     [Option("--file", CommandOptionType.SingleValue)]
@@ -14,11 +15,12 @@ internal class UpdateClubsCommand(ScrapeMyrcmClubs scrapeClubs, IClubRepository 
     public async Task OnExecute()
     {
         clubRepository.Load(File);
-        var all = await scrapeClubs.Scrape([MyrcmCountryCode.Germany]);
-        foreach (var club in all)
-        {
-            clubRepository.Update(club);
-        }
+        
+        var myrcm = await scrapeClubs.Scrape([MyrcmCountryCode.Germany]);
+        myrcm.ForEach(club => clubRepository.Update(club));
+        
+        var dmc = await scrapeDmcClubs.Scrape();
+        dmc.ForEach(club => clubRepository.Update(club));
         
         clubRepository.Store(File);
 

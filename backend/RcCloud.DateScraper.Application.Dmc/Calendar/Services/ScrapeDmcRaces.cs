@@ -28,7 +28,7 @@ public class ScrapeDmcRaces(DownloadDmcCalendar download)
             entry.Club,
             ComputeTitle(entry),
             ComputeRegions(entry),
-            new Club(entry.Club, [], entry.ClubNo, null, null),
+            new Club(entry.Club, [], entry.ClubNo, [], null),
             "DMC");
 
     private string ComputeTitle(DmcCalendarEntry entry)

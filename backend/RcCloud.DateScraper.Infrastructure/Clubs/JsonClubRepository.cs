@@ -66,7 +66,7 @@ public class JsonClubRepository : IClubRepository
         if (entity is null)
         {
             var newClub = new ClubEntity(update.Name, update.Aliases, "de", update.Region?.ToString(), update.DmcClubNumber,
-                update.MyrcmClubNumbers);
+                update.MyrcmClubNumbers.ToList());
             _clubDb.Clubs.Add(newClub);
             return;
         }
@@ -79,9 +79,19 @@ public class JsonClubRepository : IClubRepository
                 entity.Aliases.Add(alias);
             }
         }
+
+        // XXX we ingore conflicting updates here       
+        if (update.DmcClubNumber is not null)
+        {
+            entity.DmcClubNumber = update.DmcClubNumber;
+        }
+
+        if (update.Region is not null)
+        {
+            entity.Region = update.Region.ToString();
+        }
         
-        // TODO: regions
-        // TODO: clubNos
+        // TODO: myrcm
     }
 
     public IEnumerable<Club> GetAll()
