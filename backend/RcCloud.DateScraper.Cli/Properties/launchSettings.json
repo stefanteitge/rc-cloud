@@ -11,6 +11,10 @@
     "GER with clubs": {
       "commandName": "Project",
       "commandLineArgs": "germany --club-db ../../../../../db/club-db.json --format json"
+    },
+    "BeNeLux": {
+      "commandName": "Project",
+      "commandLineArgs": "benelux --format json"
     }
   }
 }

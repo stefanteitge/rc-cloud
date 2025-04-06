@@ -6,6 +6,7 @@ export interface UpcomingRace {
   series: string[];
   groups: ReferenceDto[];
   source?: string;
+  countryCode?: string;
 }
 
 export interface UpcomingDatesColumn

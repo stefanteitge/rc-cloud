@@ -9,6 +9,7 @@ export interface ReferenceDto {
 }
 
 export interface RaceMeetingDto {
+  countryCode?: string;
   date: string;
   location: string;
   title: string

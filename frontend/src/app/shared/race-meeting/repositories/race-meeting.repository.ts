@@ -19,7 +19,7 @@ export class RaceMeetingRepository {
 
   getAll(dataSet: string): UpcomingDate[] {
     if (dataSet == 'benelux') {
-      return compileUpcomingDates(this.benelux().raceMeetings, ['be', 'nl', 'lux', 'banger', 'stockcar']);
+      return compileUpcomingDates(this.benelux().raceMeetings, ['be', 'nl', 'lu', 'banger', 'stockcar'], true);
     }
 
     return compileUpcomingDates(this.germany().raceMeetings, ['east', 'west', 'north', 'south', 'central']);

@@ -14,6 +14,7 @@ namespace RcCloud.DateScraper.Application.Rck.SubDomain
                 SeasonReference.Current,
                 renntermin.Date,
                 renntermin.Location,
+                "de",
                 GetTitle(series),
                 renntermin.Gruppen.Select(g => ToReference(g)).ToArray(),
                 null,

@@ -9,6 +9,7 @@ namespace RcCloud.DateScraper.Domain.Races
         SeasonReference season,
         DateOnly date,
         string location,
+        string? countryCode,
         string title,
         RegionReference[] regions,
         Club? club,
@@ -22,6 +23,8 @@ namespace RcCloud.DateScraper.Domain.Races
 
         public string Location { get; } = location;
         
+        public string? CountryCode { get; } = countryCode;
+
         public string Title { get; } = title;
 
         public RegionReference[] Regions { get; } = regions;

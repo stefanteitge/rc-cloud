@@ -29,6 +29,7 @@ public class ScrapeDmcRaces(DownloadDmcCalendar download)
             SeasonReference.Current,
             entry.DateEnd,
             entry.Club,
+            "de",
             ComputeTitle(entry),
             regions,
             club,

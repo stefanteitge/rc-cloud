@@ -92,6 +92,7 @@ public class ScrapeMyrcmRaces(
             var race = new MyrcmRace(
                 ParseDate(cells[4].TextContent),
                 ParseDate(cells[5].TextContent),
+                ParseCountry(cells[3].TextContent),
                 cells[2]?.TextContent ?? "MyRCM-Rennen",
                 cells[1]?.TextContent ?? "Unbekannter Club",
                 clubNumber);
@@ -108,6 +109,7 @@ public class ScrapeMyrcmRaces(
                 SeasonReference.Current,
                 race.DateEnd, 
                 club.Name,
+                GetCoutryCode(race.Country),
                 race.Title, 
                 club?.Region is null ? [] : [club.Region],
                 club,
@@ -117,6 +119,49 @@ public class ScrapeMyrcmRaces(
         }
 
         return meetings;
+    }
+
+    private string? GetCoutryCode(MyrcmCountryCode? raceCountry)
+    {
+        if (raceCountry is null)
+        {
+            return null;
+        }
+
+        if (raceCountry.Code == MyrcmCountryCode.Belgium.Code)
+        {
+            return "be";
+        }
+        
+        if (raceCountry.Code == MyrcmCountryCode.Germany.Code)
+        {
+            return "de";
+        }
+        
+        if (raceCountry.Code == MyrcmCountryCode.Netherlands.Code)
+        {
+            return "nl";
+        }
+        
+        if (raceCountry.Code == MyrcmCountryCode.Luxembourg.Code)
+        {
+            return "lu";
+        }
+        
+
+        return null;
+    }
+
+    private MyrcmCountryCode? ParseCountry(string textContent)
+    {
+        return textContent switch
+        {
+            "DEU" => MyrcmCountryCode.Germany,
+            "NLD" => MyrcmCountryCode.Netherlands,
+            "BEL" => MyrcmCountryCode.Belgium,
+            "LUX" => MyrcmCountryCode.Luxembourg,
+            _ => null,
+        };
     }
 
     private static int GetClubNumber(IHtmlCollection<IElement> cells)
