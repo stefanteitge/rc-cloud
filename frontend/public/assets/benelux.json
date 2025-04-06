@@ -1,192 +1,8 @@
 {
-  "retrievedDate": "2025-04-04T14:54:45.5904442+02:00",
+  "retrievedDate": "2025-04-06T09:26:21.5007899+00:00",
   "raceMeetings": [
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-04-06",
-      "location": "RC HOTWHEELS",
-      "title": "1e N.K. NOMAC EC10",
-      "regions": [],
-      "club": {
-        "name": "RC HOTWHEELS",
-        "aliases": [],
-        "dmcClubNumber": null,
-        "myrcmClubNumber": 3074
-      }
-    },
-    {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-04-06",
-      "location": "SOM / ICC",
-      "title": "SOM 1 - Speedway Tilburg",
-      "regions": [],
-      "club": {
-        "name": "SOM / ICC",
-        "aliases": [],
-        "dmcClubNumber": null,
-        "myrcmClubNumber": 30724
-      }
-    },
-    {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-04-06",
-      "location": "RACO2000",
-      "title": "11e mini-z Raco2000",
-      "regions": [],
-      "club": {
-        "name": "RACO2000",
-        "aliases": [],
-        "dmcClubNumber": null,
-        "myrcmClubNumber": 5305
-      }
-    },
-    {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-04-06",
-      "location": "M.A.C.  De Baanbrekers",
-      "title": "BK 1/8 - 1/10N",
-      "regions": [],
-      "club": {
-        "name": "M.A.C.  De Baanbrekers",
-        "aliases": [],
-        "dmcClubNumber": null,
-        "myrcmClubNumber": 12027
-      }
-    },
-    {
-      "series": [
-        {
-          "id": "hudyseries"
-        }
-      ],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-04-06",
-      "location": "Radio controle @ circuit Zolder",
-      "title": "HUDY SERIES RC@CZ Zolder 2025 Race 2",
-      "regions": [],
-      "club": {
-        "name": "Radio controle @ circuit Zolder",
-        "aliases": [],
-        "dmcClubNumber": null,
-        "myrcmClubNumber": 20089
-      }
-    },
-    {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-04-06",
-      "location": "Electro Racing Club Eindhoven",
-      "title": "Open Clubwedstrijd #1 - 2025",
-      "regions": [],
-      "club": {
-        "name": "Electro Racing Club Eindhoven",
-        "aliases": [],
-        "dmcClubNumber": null,
-        "myrcmClubNumber": 3350
-      }
-    },
-    {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-04-06",
-      "location": "MRC REAL80 Groningen",
-      "title": "1ste Open Clubwedstrijd REAL80 2025",
-      "regions": [],
-      "club": {
-        "name": "MRC REAL80 Groningen",
-        "aliases": [],
-        "dmcClubNumber": null,
-        "myrcmClubNumber": 104
-      }
-    },
-    {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-04-06",
-      "location": "RC Club Zoetermeer",
-      "title": "RCCZ - 2025 : (Open) Clubwedstrijd 1:10 - 1 van 3",
-      "regions": [],
-      "club": {
-        "name": "RC Club Zoetermeer",
-        "aliases": [],
-        "dmcClubNumber": null,
-        "myrcmClubNumber": 34977
-      }
-    },
-    {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-04-06",
-      "location": "Helderse Model Race Club",
-      "title": "1e Open Clubwestrijd 2025 HMRC",
-      "regions": [],
-      "club": {
-        "name": "Helderse Model Race Club",
-        "aliases": [],
-        "dmcClubNumber": null,
-        "myrcmClubNumber": 7059
-      }
-    },
-    {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -198,15 +14,15 @@
         "name": "HFCC Den Haag",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 14156
-      }
+        "myrcmClubNumbers": [
+          14156
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -218,15 +34,15 @@
         "name": "MAC de Kempen",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 32715
-      }
+        "myrcmClubNumbers": [
+          32715
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -238,15 +54,15 @@
         "name": "Model Racing Midland",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 19047
-      }
+        "myrcmClubNumbers": [
+          19047
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -258,15 +74,15 @@
         "name": "FBA",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 38144
-      }
+        "myrcmClubNumbers": [
+          38144
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -278,15 +94,15 @@
         "name": "Racing Club Roeselare",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 76
-      }
+        "myrcmClubNumbers": [
+          76
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -298,15 +114,15 @@
         "name": "MBC de Sluis",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 4842
-      }
+        "myrcmClubNumbers": [
+          4842
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -318,35 +134,35 @@
         "name": "RC Hotwheels",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 3074
-      }
+        "myrcmClubNumbers": [
+          3074
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
       "date": "2025-04-13",
-      "location": "Buggy \u0026 truggycup",
-      "title": "Buggy \u0026 truggycup wedstrijd 1 : Appingedam",
+      "location": "Buggy & truggycup",
+      "title": "Buggy & truggycup wedstrijd 1 : Appingedam",
       "regions": [],
       "club": {
-        "name": "Buggy \u0026 truggycup",
+        "name": "Buggy & truggycup",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 34977
-      }
+        "myrcmClubNumbers": [
+          34977
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -358,15 +174,15 @@
         "name": "EVMC",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 10817
-      }
+        "myrcmClubNumbers": [
+          10817
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -378,15 +194,15 @@
         "name": "RACO2000",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 5305
-      }
+        "myrcmClubNumbers": [
+          5305
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -398,35 +214,35 @@
         "name": "RC Hotwheels",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 3074
-      }
+        "myrcmClubNumbers": [
+          3074
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
       "date": "2025-04-20",
-      "location": "MRC Real\u002780 Gr.",
+      "location": "MRC Real'80 Gr.",
       "title": "Genius Easter Trophy International",
       "regions": [],
       "club": {
-        "name": "MRC Real\u002780 Gr.",
+        "name": "MRC Real'80 Gr.",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 104
-      }
+        "myrcmClubNumbers": [
+          104
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -438,15 +254,15 @@
         "name": "MBC de Sluis",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 4842
-      }
+        "myrcmClubNumbers": [
+          4842
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -458,35 +274,35 @@
         "name": "EVMC",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 10817
-      }
+        "myrcmClubNumbers": [
+          10817
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
       "date": "2025-04-20",
       "location": "Mach-One Helmond",
-      "title": "Belgisch Kampioenschap 1:8 Brushless \u0026 Nitro 2025 - Race 1",
+      "title": "Belgisch Kampioenschap 1:8 Brushless & Nitro 2025 - Race 1",
       "regions": [],
       "club": {
         "name": "Mach-One Helmond",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 1980
-      }
+        "myrcmClubNumbers": [
+          1980
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -498,15 +314,15 @@
         "name": "M.A.C.  De Baanbrekers",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 12027
-      }
+        "myrcmClubNumbers": [
+          12027
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -518,15 +334,15 @@
         "name": "RCTR Kotrijk",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 35896
-      }
+        "myrcmClubNumbers": [
+          35896
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -538,35 +354,35 @@
         "name": "Orra",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 55554
-      }
+        "myrcmClubNumbers": [
+          55554
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
       "date": "2025-04-20",
       "location": "MRCL Bierset",
-      "title": "BELGIUM CUP 1/5\u00E8me et Amicale MRCL 20 avril 2025",
+      "title": "BELGIUM CUP 1/5ème et Amicale MRCL 20 avril 2025",
       "regions": [],
       "club": {
         "name": "MRCL Bierset",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 9668
-      }
+        "myrcmClubNumbers": [
+          9668
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -578,35 +394,35 @@
         "name": "MVB",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 3200
-      }
+        "myrcmClubNumbers": [
+          3200
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
       "date": "2025-04-21",
       "location": "Model Race Genk vzw",
-      "title": "OC 2 1/8 \u0026 1/10, PAASMAANDAG",
+      "title": "OC 2 1/8 & 1/10, PAASMAANDAG",
       "regions": [],
       "club": {
         "name": "Model Race Genk vzw",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 3291
-      }
+        "myrcmClubNumbers": [
+          3291
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -618,35 +434,35 @@
         "name": "RACO2000",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 5305
-      }
+        "myrcmClubNumbers": [
+          5305
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
       "date": "2025-04-27",
-      "location": "MRC Real\u002780 Gr.",
+      "location": "MRC Real'80 Gr.",
       "title": "1ste Nk BC05 seizoen 2025",
       "regions": [],
       "club": {
-        "name": "MRC Real\u002780 Gr.",
+        "name": "MRC Real'80 Gr.",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 104
-      }
+        "myrcmClubNumbers": [
+          104
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -658,35 +474,15 @@
         "name": "MBV Kampenhout",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 51913
-      }
-    },
-    {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
-      "season": {
-        "id": "current"
+        "myrcmClubNumbers": [
+          51913
+        ],
+        "region": null
       },
-      "date": "2025-04-26",
-      "location": "Model Auto Club Heemstede",
-      "title": "MACH Nitro test day",
-      "regions": [],
-      "club": {
-        "name": "Model Auto Club Heemstede",
-        "aliases": [],
-        "dmcClubNumber": null,
-        "myrcmClubNumber": 75
-      }
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -698,15 +494,15 @@
         "name": "AMCA-Apeldoorn",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 7762
-      }
+        "myrcmClubNumbers": [
+          7762
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -718,15 +514,35 @@
         "name": "Hulshout Offroad Racing",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 50130
-      }
+        "myrcmClubNumbers": [
+          50130
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-04-27",
+      "location": "Model Auto Club Heemstede",
+      "title": "MACH Nitro test day",
+      "regions": [],
+      "club": {
+        "name": "Model Auto Club Heemstede",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [
+          75
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
+    },
+    {
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -738,15 +554,15 @@
         "name": "M.A.C.  De Baanbrekers",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 12027
-      }
+        "myrcmClubNumbers": [
+          12027
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -758,15 +574,15 @@
         "name": "SimplyFunRacing",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 53360
-      }
+        "myrcmClubNumbers": [
+          53360
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -778,15 +594,15 @@
         "name": "MAC Vlijmen",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 30724
-      }
+        "myrcmClubNumbers": [
+          30724
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -798,15 +614,15 @@
         "name": "Model Racing Midland",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 19047
-      }
+        "myrcmClubNumbers": [
+          19047
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -818,15 +634,15 @@
         "name": "RACO2000",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 5305
-      }
+        "myrcmClubNumbers": [
+          5305
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -838,15 +654,15 @@
         "name": "EVMC / RIMAR 303",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 10817
-      }
+        "myrcmClubNumbers": [
+          10817
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -858,15 +674,15 @@
         "name": "Main Meetings Raalte",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 23785
-      }
+        "myrcmClubNumbers": [
+          23785
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -878,15 +694,15 @@
         "name": "MACH-One Helmond",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 33841
-      }
+        "myrcmClubNumbers": [
+          33841
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -898,15 +714,15 @@
         "name": "RC Club Zoetermeer",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 34977
-      }
+        "myrcmClubNumbers": [
+          34977
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -918,15 +734,15 @@
         "name": "Helderse Model Race Club",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 7059
-      }
+        "myrcmClubNumbers": [
+          7059
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -938,15 +754,15 @@
         "name": "Model Racing Midland Lelystad",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 33479
-      }
+        "myrcmClubNumbers": [
+          33479
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -958,15 +774,15 @@
         "name": "RACO2000",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 5305
-      }
+        "myrcmClubNumbers": [
+          5305
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -978,15 +794,15 @@
         "name": "HFCC Den Haag",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 14156
-      }
+        "myrcmClubNumbers": [
+          14156
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -998,15 +814,15 @@
         "name": "MBC de Sluis",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 4842
-      }
+        "myrcmClubNumbers": [
+          4842
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -1018,35 +834,35 @@
         "name": "FBA",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 38144
-      }
+        "myrcmClubNumbers": [
+          38144
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
       "date": "2025-05-11",
       "location": "Racing Club Roeselare",
-      "title": "Open Clubwedstrijd 2 \u002B Belgian Cup 1/5de",
+      "title": "Open Clubwedstrijd 2 + Belgian Cup 1/5de",
       "regions": [],
       "club": {
         "name": "Racing Club Roeselare",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 76
-      }
+        "myrcmClubNumbers": [
+          76
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -1058,15 +874,15 @@
         "name": "Electro Racing Club Eindhoven",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 3350
-      }
+        "myrcmClubNumbers": [
+          3350
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -1078,15 +894,15 @@
         "name": "MRC REAL80 Groningen",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 104
-      }
+        "myrcmClubNumbers": [
+          104
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -1098,15 +914,15 @@
         "name": "Model Racing Midland",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 19047
-      }
+        "myrcmClubNumbers": [
+          19047
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -1118,15 +934,15 @@
         "name": "Speedway-Tilburg",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 56820
-      }
+        "myrcmClubNumbers": [
+          56820
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -1138,15 +954,15 @@
         "name": "RACO2000",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 5305
-      }
+        "myrcmClubNumbers": [
+          5305
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -1158,15 +974,15 @@
         "name": "RCCM",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 112
-      }
+        "myrcmClubNumbers": [
+          112
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -1178,15 +994,15 @@
         "name": "MAC de Kempen",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 32715
-      }
+        "myrcmClubNumbers": [
+          32715
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -1198,15 +1014,15 @@
         "name": "M.A.C.  De Baanbrekers",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 12027
-      }
+        "myrcmClubNumbers": [
+          12027
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -1218,35 +1034,35 @@
         "name": "MRCZ Zwevegem",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 35896
-      }
+        "myrcmClubNumbers": [
+          35896
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
       "date": "2025-05-18",
-      "location": "Buggy \u0026 truggycup",
-      "title": "Buggy \u0026 truggycup wedstrijd 2 : Helmond",
+      "location": "Buggy & truggycup",
+      "title": "Buggy & truggycup wedstrijd 2 : Helmond",
       "regions": [],
       "club": {
-        "name": "Buggy \u0026 truggycup",
+        "name": "Buggy & truggycup",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 34977
-      }
+        "myrcmClubNumbers": [
+          34977
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -1258,15 +1074,15 @@
         "name": "Orra",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 55554
-      }
+        "myrcmClubNumbers": [
+          55554
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -1278,15 +1094,15 @@
         "name": "EVMC",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 10817
-      }
+        "myrcmClubNumbers": [
+          10817
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -1298,15 +1114,15 @@
         "name": "MRCL Bierset",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 9668
-      }
+        "myrcmClubNumbers": [
+          9668
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -1318,15 +1134,15 @@
         "name": "MVB",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 3200
-      }
+        "myrcmClubNumbers": [
+          3200
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -1338,15 +1154,15 @@
         "name": "RACO2000",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 5305
-      }
+        "myrcmClubNumbers": [
+          5305
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -1358,15 +1174,15 @@
         "name": "EVMC / RIMAR 303",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 10817
-      }
+        "myrcmClubNumbers": [
+          10817
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -1378,15 +1194,15 @@
         "name": "MBV Kampenhout",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 51913
-      }
+        "myrcmClubNumbers": [
+          51913
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -1398,15 +1214,15 @@
         "name": "AMCA-Apeldoorn",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 7762
-      }
+        "myrcmClubNumbers": [
+          7762
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -1418,15 +1234,15 @@
         "name": "MBC de Sluis",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 4842
-      }
+        "myrcmClubNumbers": [
+          4842
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -1438,8 +1254,12 @@
         "name": "MAC de Kempen",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 32715
-      }
+        "myrcmClubNumbers": [
+          32715
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
       "series": [
@@ -1458,15 +1278,15 @@
         "name": "Radio controle @ circuit Zolder",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 20089
-      }
+        "myrcmClubNumbers": [
+          20089
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -1478,15 +1298,15 @@
         "name": "Helderse Model Race Club",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 7059
-      }
+        "myrcmClubNumbers": [
+          7059
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -1498,15 +1318,15 @@
         "name": "Hulshout Offroad Racing",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 50130
-      }
+        "myrcmClubNumbers": [
+          50130
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -1518,15 +1338,15 @@
         "name": "SOM / ICC",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 30724
-      }
+        "myrcmClubNumbers": [
+          30724
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -1538,15 +1358,15 @@
         "name": "Racing Club Roeselare",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 76
-      }
+        "myrcmClubNumbers": [
+          76
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -1558,15 +1378,15 @@
         "name": "M.A.C.  De Baanbrekers",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 12027
-      }
+        "myrcmClubNumbers": [
+          12027
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -1578,15 +1398,15 @@
         "name": "MBC de Sluis",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 4842
-      }
+        "myrcmClubNumbers": [
+          4842
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -1598,15 +1418,15 @@
         "name": "MRC REAL80 Groningen",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 104
-      }
+        "myrcmClubNumbers": [
+          104
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -1618,15 +1438,15 @@
         "name": "HFCC Den Haag",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 14156
-      }
+        "myrcmClubNumbers": [
+          14156
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -1638,35 +1458,35 @@
         "name": "RC Club Zoetermeer",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 34977
-      }
+        "myrcmClubNumbers": [
+          34977
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
       "date": "2025-06-08",
-      "location": "MRC Real\u002780 Gr.",
+      "location": "MRC Real'80 Gr.",
       "title": "2nd Grand Prix Large Scale season 2025",
       "regions": [],
       "club": {
-        "name": "MRC Real\u002780 Gr.",
+        "name": "MRC Real'80 Gr.",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 104
-      }
+        "myrcmClubNumbers": [
+          104
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -1678,15 +1498,15 @@
         "name": "Electro Racing Club Eindhoven",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 3350
-      }
+        "myrcmClubNumbers": [
+          3350
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -1698,15 +1518,15 @@
         "name": "MRCL Bierset",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 9668
-      }
+        "myrcmClubNumbers": [
+          9668
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -1718,15 +1538,15 @@
         "name": "FBA",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 38144
-      }
+        "myrcmClubNumbers": [
+          38144
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -1738,15 +1558,15 @@
         "name": "RC Club Zoetermeer",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 34977
-      }
+        "myrcmClubNumbers": [
+          34977
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -1758,15 +1578,15 @@
         "name": "EVMC / RIMAR 303",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 10817
-      }
+        "myrcmClubNumbers": [
+          10817
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -1778,35 +1598,35 @@
         "name": "Main Meetings Raalte",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 23785
-      }
+        "myrcmClubNumbers": [
+          23785
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
       "date": "2025-06-15",
       "location": "AMCA-Apeldoorn",
-      "title": "Besloten Clubwedstrijd 3 \u002B RC Le Mans - 14-15 juni 2025",
+      "title": "Besloten Clubwedstrijd 3 + RC Le Mans - 14-15 juni 2025",
       "regions": [],
       "club": {
         "name": "AMCA-Apeldoorn",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 7762
-      }
+        "myrcmClubNumbers": [
+          7762
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -1818,15 +1638,15 @@
         "name": "Model Racing Midland",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 19047
-      }
+        "myrcmClubNumbers": [
+          19047
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -1838,15 +1658,15 @@
         "name": "Speedway-Tilburg",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 56820
-      }
+        "myrcmClubNumbers": [
+          56820
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -1858,15 +1678,15 @@
         "name": "MACH-One Helmond",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 33841
-      }
+        "myrcmClubNumbers": [
+          33841
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -1878,8 +1698,12 @@
         "name": "Racing Club Roeselare",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 76
-      }
+        "myrcmClubNumbers": [
+          76
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
       "series": [
@@ -1898,15 +1722,15 @@
         "name": "Radio controle @ circuit Zolder",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 20089
-      }
+        "myrcmClubNumbers": [
+          20089
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -1918,15 +1742,15 @@
         "name": "RC Hotwheels",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 3074
-      }
+        "myrcmClubNumbers": [
+          3074
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -1938,15 +1762,15 @@
         "name": "SimplyFunRacing",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 53360
-      }
+        "myrcmClubNumbers": [
+          53360
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -1958,15 +1782,15 @@
         "name": "Helderse Model Race Club",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 7059
-      }
+        "myrcmClubNumbers": [
+          7059
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -1978,35 +1802,35 @@
         "name": "MVB",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 3200
-      }
+        "myrcmClubNumbers": [
+          3200
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
       "date": "2025-06-22",
-      "location": "MRC Real\u002780 Gr.",
-      "title": "Race Car Series # 2 # Season 2025 MRC Real\u002780",
+      "location": "MRC Real'80 Gr.",
+      "title": "Race Car Series # 2 # Season 2025 MRC Real'80",
       "regions": [],
       "club": {
-        "name": "MRC Real\u002780 Gr.",
+        "name": "MRC Real'80 Gr.",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 104
-      }
+        "myrcmClubNumbers": [
+          104
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -2018,15 +1842,15 @@
         "name": "MAC de Kempen",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 32715
-      }
+        "myrcmClubNumbers": [
+          32715
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -2038,35 +1862,35 @@
         "name": "Hulshout Offroad Racing",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 50130
-      }
+        "myrcmClubNumbers": [
+          50130
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
       "date": "2025-06-22",
-      "location": "Buggy \u0026 truggycup",
-      "title": "Buggy \u0026 truggycup wedstrijd 3 : Utrecht",
+      "location": "Buggy & truggycup",
+      "title": "Buggy & truggycup wedstrijd 3 : Utrecht",
       "regions": [],
       "club": {
-        "name": "Buggy \u0026 truggycup",
+        "name": "Buggy & truggycup",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 34977
-      }
+        "myrcmClubNumbers": [
+          34977
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -2078,15 +1902,15 @@
         "name": "MRCL Bierset",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 9668
-      }
+        "myrcmClubNumbers": [
+          9668
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -2098,15 +1922,35 @@
         "name": "RC Club Zoetermeer",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 34977
-      }
+        "myrcmClubNumbers": [
+          34977
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-06-29",
+      "location": "Luxembourg Model Car Club",
+      "title": "ELS Round 2 Luxembourg",
+      "regions": [],
+      "club": {
+        "name": "Luxembourg Model Car Club",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [
+          51
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
+    },
+    {
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -2118,15 +1962,15 @@
         "name": "MBV Kampenhout",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 51913
-      }
+        "myrcmClubNumbers": [
+          51913
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -2138,15 +1982,15 @@
         "name": "MBC de Sluis",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 4842
-      }
+        "myrcmClubNumbers": [
+          4842
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -2158,15 +2002,15 @@
         "name": "Electro Racing Club Eindhoven",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 3350
-      }
+        "myrcmClubNumbers": [
+          3350
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -2178,15 +2022,15 @@
         "name": "Model Racing Midland",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 19047
-      }
+        "myrcmClubNumbers": [
+          19047
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -2198,35 +2042,35 @@
         "name": "MAC de Kempen",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 32715
-      }
+        "myrcmClubNumbers": [
+          32715
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
       "date": "2025-06-29",
       "location": "MBV Kampenhout",
-      "title": "Kampenhout 2025_ 4WD \u0026 Truck",
+      "title": "Kampenhout 2025_ 4WD & Truck",
       "regions": [],
       "club": {
         "name": "MBV Kampenhout",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 51913
-      }
+        "myrcmClubNumbers": [
+          51913
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -2238,15 +2082,15 @@
         "name": "M.A.C.  De Baanbrekers",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 12027
-      }
+        "myrcmClubNumbers": [
+          12027
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -2258,15 +2102,15 @@
         "name": "Racing Club Roeselare",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 35896
-      }
+        "myrcmClubNumbers": [
+          35896
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -2278,15 +2122,15 @@
         "name": "RC Hotwheels",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 3074
-      }
+        "myrcmClubNumbers": [
+          3074
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -2298,15 +2142,15 @@
         "name": "HFCC Den Haag",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 14156
-      }
+        "myrcmClubNumbers": [
+          14156
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -2318,15 +2162,15 @@
         "name": "EVMC",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 10817
-      }
+        "myrcmClubNumbers": [
+          10817
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -2338,15 +2182,15 @@
         "name": "EVMC / RIMAR 303",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 10817
-      }
+        "myrcmClubNumbers": [
+          10817
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -2358,15 +2202,15 @@
         "name": "Hulshout Offroad Racing",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 50130
-      }
+        "myrcmClubNumbers": [
+          50130
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -2378,15 +2222,15 @@
         "name": "M.A.C.  De Baanbrekers",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 12027
-      }
+        "myrcmClubNumbers": [
+          12027
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -2398,15 +2242,15 @@
         "name": "MRC REAL80 Groningen",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 104
-      }
+        "myrcmClubNumbers": [
+          104
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -2418,35 +2262,35 @@
         "name": "RC Club Zoetermeer",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 34977
-      }
+        "myrcmClubNumbers": [
+          34977
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
       "date": "2025-07-13",
       "location": "Raco2000",
-      "title": "EC \u201925 10th Elec Track - Raco2000 - Utrecht - WARMUP",
+      "title": "EC ’25 10th Elec Track - Raco2000 - Utrecht - WARMUP",
       "regions": [],
       "club": {
         "name": "Raco2000",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 1980
-      }
+        "myrcmClubNumbers": [
+          1980
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -2458,15 +2302,15 @@
         "name": "Main Meetings Raalte",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 23785
-      }
+        "myrcmClubNumbers": [
+          23785
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -2478,15 +2322,15 @@
         "name": "FBA",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 38144
-      }
+        "myrcmClubNumbers": [
+          38144
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -2498,15 +2342,15 @@
         "name": "MBC de Sluis",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 4842
-      }
+        "myrcmClubNumbers": [
+          4842
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -2518,35 +2362,35 @@
         "name": "RC Hotwheels",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 3074
-      }
+        "myrcmClubNumbers": [
+          3074
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
       "date": "2025-07-13",
-      "location": "Buggy \u0026 truggycup",
-      "title": "Buggy \u0026 truggycup wedstrijd 4 : Zoetermeer",
+      "location": "Buggy & truggycup",
+      "title": "Buggy & truggycup wedstrijd 4 : Zoetermeer",
       "regions": [],
       "club": {
-        "name": "Buggy \u0026 truggycup",
+        "name": "Buggy & truggycup",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 34977
-      }
+        "myrcmClubNumbers": [
+          34977
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -2558,15 +2402,15 @@
         "name": "MVB",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 3200
-      }
+        "myrcmClubNumbers": [
+          3200
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -2578,15 +2422,15 @@
         "name": "HFCC Den Haag",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 14156
-      }
+        "myrcmClubNumbers": [
+          14156
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -2598,15 +2442,15 @@
         "name": "MBV Kampenhout",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 51913
-      }
+        "myrcmClubNumbers": [
+          51913
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -2618,15 +2462,15 @@
         "name": "Model Racing Midland",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 19047
-      }
+        "myrcmClubNumbers": [
+          19047
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -2638,15 +2482,15 @@
         "name": "Racing Club Roeselare",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 76
-      }
+        "myrcmClubNumbers": [
+          76
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -2658,15 +2502,15 @@
         "name": "Orra",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 55554
-      }
+        "myrcmClubNumbers": [
+          55554
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -2678,15 +2522,15 @@
         "name": "EVMC",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 10817
-      }
+        "myrcmClubNumbers": [
+          10817
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -2698,8 +2542,12 @@
         "name": "RC Club Zoetermeer",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 34977
-      }
+        "myrcmClubNumbers": [
+          34977
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
       "series": [
@@ -2718,15 +2566,15 @@
         "name": "Radio controle @ circuit Zolder",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 20089
-      }
+        "myrcmClubNumbers": [
+          20089
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -2738,15 +2586,15 @@
         "name": "HFCC Den Haag",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 14156
-      }
+        "myrcmClubNumbers": [
+          14156
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -2758,35 +2606,35 @@
         "name": "ERCE Eindhoven NL",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 35896
-      }
+        "myrcmClubNumbers": [
+          35896
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
       "date": "2025-07-27",
       "location": "MAC Vlijmen",
-      "title": "MAC Vlijmen Clubrace 3 (\u002Bvintage)",
+      "title": "MAC Vlijmen Clubrace 3 (+vintage)",
       "regions": [],
       "club": {
         "name": "MAC Vlijmen",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 30724
-      }
+        "myrcmClubNumbers": [
+          30724
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -2798,15 +2646,15 @@
         "name": "MAC Vlijmen",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 30724
-      }
+        "myrcmClubNumbers": [
+          30724
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -2818,15 +2666,15 @@
         "name": "Orra",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 55554
-      }
+        "myrcmClubNumbers": [
+          55554
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -2838,15 +2686,15 @@
         "name": "AMCA-Apeldoorn",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 7762
-      }
+        "myrcmClubNumbers": [
+          7762
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -2858,15 +2706,15 @@
         "name": "FBA",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 38144
-      }
+        "myrcmClubNumbers": [
+          38144
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -2878,15 +2726,15 @@
         "name": "MAC De Baanbrekers",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 35896
-      }
+        "myrcmClubNumbers": [
+          35896
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -2898,15 +2746,15 @@
         "name": "MVB",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 3200
-      }
+        "myrcmClubNumbers": [
+          3200
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -2918,15 +2766,15 @@
         "name": "MBV Kampenhout",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 51913
-      }
+        "myrcmClubNumbers": [
+          51913
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -2938,15 +2786,15 @@
         "name": "MBC de Sluis",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 4842
-      }
+        "myrcmClubNumbers": [
+          4842
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -2958,15 +2806,15 @@
         "name": "SOM / ICC",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 30724
-      }
+        "myrcmClubNumbers": [
+          30724
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -2978,15 +2826,15 @@
         "name": "RC Hotwheels",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 3074
-      }
+        "myrcmClubNumbers": [
+          3074
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -2998,55 +2846,55 @@
         "name": "Electro Racing Club Eindhoven",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 3350
-      }
+        "myrcmClubNumbers": [
+          3350
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
       "date": "2025-08-17",
       "location": "MRCL Bierset",
-      "title": "Amicale Bierset MRCL 17 ao\u00FBt 2025",
+      "title": "Amicale Bierset MRCL 17 août 2025",
       "regions": [],
       "club": {
         "name": "MRCL Bierset",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 9668
-      }
+        "myrcmClubNumbers": [
+          9668
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
       "date": "2025-08-24",
       "location": "Raco2000",
-      "title": "EC \u201925 10th Elec Track - Raco2000 - Utrecht",
+      "title": "EC ’25 10th Elec Track - Raco2000 - Utrecht",
       "regions": [],
       "club": {
         "name": "Raco2000",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 1980
-      }
+        "myrcmClubNumbers": [
+          1980
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -3058,15 +2906,15 @@
         "name": "M.A.C.  De Baanbrekers",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 12027
-      }
+        "myrcmClubNumbers": [
+          12027
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -3078,15 +2926,15 @@
         "name": "Hulshout Offroad Racing",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 50130
-      }
+        "myrcmClubNumbers": [
+          50130
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -3098,15 +2946,15 @@
         "name": "Racing Club Roeselare",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 76
-      }
+        "myrcmClubNumbers": [
+          76
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -3118,8 +2966,12 @@
         "name": "MRCL Bierset",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 35896
-      }
+        "myrcmClubNumbers": [
+          35896
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
       "series": [
@@ -3138,35 +2990,35 @@
         "name": "Radio controle @ circuit Zolder",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 20089
-      }
+        "myrcmClubNumbers": [
+          20089
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
       "date": "2025-08-24",
       "location": "MAC Vlijmen",
-      "title": "MAC Vlijmen Clubrace 4 (\u002Bcaravan)",
+      "title": "MAC Vlijmen Clubrace 4 (+caravan)",
       "regions": [],
       "club": {
         "name": "MAC Vlijmen",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 30724
-      }
+        "myrcmClubNumbers": [
+          30724
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -3178,35 +3030,35 @@
         "name": "HFCC Den Haag",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 14156
-      }
+        "myrcmClubNumbers": [
+          14156
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
       "date": "2025-08-31",
-      "location": "MRC Real\u002780 Gr.",
+      "location": "MRC Real'80 Gr.",
       "title": "4de NK BC05 Seizoen 2025",
       "regions": [],
       "club": {
-        "name": "MRC Real\u002780 Gr.",
+        "name": "MRC Real'80 Gr.",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 104
-      }
+        "myrcmClubNumbers": [
+          104
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -3218,15 +3070,15 @@
         "name": "Model Racing Midland",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 19047
-      }
+        "myrcmClubNumbers": [
+          19047
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -3238,15 +3090,15 @@
         "name": "MACH-One Helmond",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 33841
-      }
+        "myrcmClubNumbers": [
+          33841
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -3258,15 +3110,15 @@
         "name": "MBC de Sluis",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 4842
-      }
+        "myrcmClubNumbers": [
+          4842
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -3278,15 +3130,15 @@
         "name": "RC Hotwheels",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 3074
-      }
+        "myrcmClubNumbers": [
+          3074
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -3298,15 +3150,15 @@
         "name": "RC Club Zoetermeer",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 34977
-      }
+        "myrcmClubNumbers": [
+          34977
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -3318,15 +3170,15 @@
         "name": "EVMC",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 10817
-      }
+        "myrcmClubNumbers": [
+          10817
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -3338,15 +3190,15 @@
         "name": "MBV Kampenhout",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 51913
-      }
+        "myrcmClubNumbers": [
+          51913
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -3358,15 +3210,15 @@
         "name": "MAC de Kempen",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 32715
-      }
+        "myrcmClubNumbers": [
+          32715
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -3378,15 +3230,15 @@
         "name": "Racing Club Roeselare",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 76
-      }
+        "myrcmClubNumbers": [
+          76
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -3398,15 +3250,15 @@
         "name": "HRT Houthalen",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 35896
-      }
+        "myrcmClubNumbers": [
+          35896
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -3418,15 +3270,15 @@
         "name": "Electro Racing Club Eindhoven",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 3350
-      }
+        "myrcmClubNumbers": [
+          3350
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -3438,35 +3290,35 @@
         "name": "RC Club Zoetermeer",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 34977
-      }
+        "myrcmClubNumbers": [
+          34977
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
       "date": "2025-09-13",
       "location": "AMCA-Apeldoorn",
-      "title": "Besloten Clubwedstrijd 5 \u002B BBQ - 13 september 2025",
+      "title": "Besloten Clubwedstrijd 5 + BBQ - 13 september 2025",
       "regions": [],
       "club": {
         "name": "AMCA-Apeldoorn",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 7762
-      }
+        "myrcmClubNumbers": [
+          7762
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -3478,35 +3330,35 @@
         "name": "FBA",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 38144
-      }
+        "myrcmClubNumbers": [
+          38144
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
       "date": "2025-09-14",
-      "location": "Buggy \u0026 truggycup",
-      "title": "Buggy \u0026 truggycup wedstrijd 5 : Hengelo",
+      "location": "Buggy & truggycup",
+      "title": "Buggy & truggycup wedstrijd 5 : Hengelo",
       "regions": [],
       "club": {
-        "name": "Buggy \u0026 truggycup",
+        "name": "Buggy & truggycup",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 34977
-      }
+        "myrcmClubNumbers": [
+          34977
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -3518,15 +3370,15 @@
         "name": "Speedway-Tilburg",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 56820
-      }
+        "myrcmClubNumbers": [
+          56820
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -3538,15 +3390,15 @@
         "name": "HFCC Den Haag",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 14156
-      }
+        "myrcmClubNumbers": [
+          14156
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -3558,15 +3410,15 @@
         "name": "MBC de Sluis",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 4842
-      }
+        "myrcmClubNumbers": [
+          4842
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -3578,15 +3430,15 @@
         "name": "Hulshout Offroad Racing",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 50130
-      }
+        "myrcmClubNumbers": [
+          50130
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -3598,15 +3450,15 @@
         "name": "SOM / ICC",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 30724
-      }
+        "myrcmClubNumbers": [
+          30724
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -3618,15 +3470,15 @@
         "name": "Racing Club Roeselare",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 76
-      }
+        "myrcmClubNumbers": [
+          76
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -3638,15 +3490,15 @@
         "name": "MRC REAL80 Groningen",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 104
-      }
+        "myrcmClubNumbers": [
+          104
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -3658,15 +3510,15 @@
         "name": "RC Club Zoetermeer",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 34977
-      }
+        "myrcmClubNumbers": [
+          34977
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -3678,15 +3530,15 @@
         "name": "MVB",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 3200
-      }
+        "myrcmClubNumbers": [
+          3200
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -3698,15 +3550,15 @@
         "name": "SimplyFunRacing",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 53360
-      }
+        "myrcmClubNumbers": [
+          53360
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -3718,15 +3570,15 @@
         "name": "MAC Vlijmen",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 30724
-      }
+        "myrcmClubNumbers": [
+          30724
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -3738,15 +3590,15 @@
         "name": "Orra",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 55554
-      }
+        "myrcmClubNumbers": [
+          55554
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -3758,15 +3610,15 @@
         "name": "Model Racing Midland",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 19047
-      }
+        "myrcmClubNumbers": [
+          19047
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -3778,15 +3630,15 @@
         "name": "MRCL Bierset",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 9668
-      }
+        "myrcmClubNumbers": [
+          9668
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -3798,15 +3650,15 @@
         "name": "MACH-One Helmond",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 33841
-      }
+        "myrcmClubNumbers": [
+          33841
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -3818,8 +3670,12 @@
         "name": "MBC de Sluis",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 4842
-      }
+        "myrcmClubNumbers": [
+          4842
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
       "series": [
@@ -3838,15 +3694,15 @@
         "name": "Radio controle @ circuit Zolder",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 20089
-      }
+        "myrcmClubNumbers": [
+          20089
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -3858,35 +3714,35 @@
         "name": "RC Hotwheels",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 3074
-      }
+        "myrcmClubNumbers": [
+          3074
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
       "date": "2025-10-05",
-      "location": "Buggy \u0026 truggycup",
-      "title": "Buggy \u0026 truggycup wedstrijd 6 : Purmerend",
+      "location": "Buggy & truggycup",
+      "title": "Buggy & truggycup wedstrijd 6 : Purmerend",
       "regions": [],
       "club": {
-        "name": "Buggy \u0026 truggycup",
+        "name": "Buggy & truggycup",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 34977
-      }
+        "myrcmClubNumbers": [
+          34977
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -3898,35 +3754,35 @@
         "name": "MVB",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 3200
-      }
+        "myrcmClubNumbers": [
+          3200
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
       "date": "2025-10-11",
       "location": "MAC de Kempen",
-      "title": "Clubwedstrijd #6 2025 \u002B BBQ (alleen voor clubleden)",
+      "title": "Clubwedstrijd #6 2025 + BBQ (alleen voor clubleden)",
       "regions": [],
       "club": {
         "name": "MAC de Kempen",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 32715
-      }
+        "myrcmClubNumbers": [
+          32715
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -3938,15 +3794,15 @@
         "name": "MBC de Sluis",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 4842
-      }
+        "myrcmClubNumbers": [
+          4842
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -3958,15 +3814,15 @@
         "name": "RC Club Zoetermeer",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 34977
-      }
+        "myrcmClubNumbers": [
+          34977
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -3978,35 +3834,35 @@
         "name": "Speedway-Tilburg",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 56820
-      }
+        "myrcmClubNumbers": [
+          56820
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
       "date": "2025-10-26",
       "location": "Mach-One Helmond",
-      "title": "Mach-One - Winter Is Coming 2025 - 1/8 Buggy Nitro, Brushless Buggy \u0026 Truggy",
+      "title": "Mach-One - Winter Is Coming 2025 - 1/8 Buggy Nitro, Brushless Buggy & Truggy",
       "regions": [],
       "club": {
         "name": "Mach-One Helmond",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 1980
-      }
+        "myrcmClubNumbers": [
+          1980
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -4018,15 +3874,15 @@
         "name": "Main Meetings Raalte",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 23785
-      }
+        "myrcmClubNumbers": [
+          23785
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -4038,15 +3894,15 @@
         "name": "Main Meetings Raalte",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 23785
-      }
+        "myrcmClubNumbers": [
+          23785
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -4058,35 +3914,35 @@
         "name": "Mach-One/Mac de Kempen",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 1980
-      }
+        "myrcmClubNumbers": [
+          1980
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
       "date": "2025-12-21",
       "location": "Mach-One/Mac de Kempen",
-      "title": "Southern Indoor Masters Supercross 2025 - OR08 - Buggy \u0026 Truggy",
+      "title": "Southern Indoor Masters Supercross 2025 - OR08 - Buggy & Truggy",
       "regions": [],
       "club": {
         "name": "Mach-One/Mac de Kempen",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 1980
-      }
+        "myrcmClubNumbers": [
+          1980
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "myrcm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
@@ -4098,8 +3954,12 @@
         "name": "Main Meetings Raalte",
         "aliases": [],
         "dmcClubNumber": null,
-        "myrcmClubNumber": 23785
-      }
+        "myrcmClubNumbers": [
+          23785
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     }
   ]
 }
