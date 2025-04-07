@@ -2,7 +2,7 @@ name: "Build SWA"
 
 env:
   APP_LOCATION: "/" # location of your client code
-  OUTPUT_LOCATION: "frontend/dist/" # location of client code build output
+  OUTPUT_LOCATION: "frontend/dist/frontend/browser/" # location of client code build output
 
 on:
   # Allows you to run this workflow manually from the Actions tab
