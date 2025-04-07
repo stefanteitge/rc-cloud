@@ -32,6 +32,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RcCloud.DateScraper.Applica
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RcCloud.DateScraper.Infrastructure", "RcCloud.DateScraper.Infrastructure\RcCloud.DateScraper.Infrastructure.csproj", "{60E81957-8948-4936-891B-E4F67407C0FD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RcCloud.FunctionApi", "RcCloud.FunctionApi\RcCloud.FunctionApi.csproj", "{E054F9E7-6AAA-4B5B-9A9E-09315D9DE52B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -86,6 +88,10 @@ Global
 		{60E81957-8948-4936-891B-E4F67407C0FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60E81957-8948-4936-891B-E4F67407C0FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{60E81957-8948-4936-891B-E4F67407C0FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E054F9E7-6AAA-4B5B-9A9E-09315D9DE52B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E054F9E7-6AAA-4B5B-9A9E-09315D9DE52B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E054F9E7-6AAA-4B5B-9A9E-09315D9DE52B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E054F9E7-6AAA-4B5B-9A9E-09315D9DE52B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
