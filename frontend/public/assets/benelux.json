@@ -1,5 +1,5 @@
 {
-  "retrievedDate": "2025-04-06T16:54:27.1617042+00:00",
+  "retrievedDate": "2025-04-07T08:11:43.0119794+00:00",
   "raceMeetings": [
     {
       "series": [],
@@ -3445,6 +3445,27 @@
       "season": {
         "id": "current"
       },
+      "date": "2025-09-07",
+      "location": "MVB",
+      "countryCode": "nl",
+      "title": "2025 Clubwedstrijd #7 Let op datum is veranderd",
+      "regions": [],
+      "club": {
+        "name": "MVB",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [
+          3200
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
       "date": "2025-09-10",
       "location": "RC Club Zoetermeer",
       "countryCode": "nl",
@@ -3687,27 +3708,6 @@
         "dmcClubNumber": null,
         "myrcmClubNumbers": [
           34977
-        ],
-        "region": null
-      },
-      "source": "Myrcm"
-    },
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-09-21",
-      "location": "MVB",
-      "countryCode": "nl",
-      "title": "2025 Clubwedstrijd #7",
-      "regions": [],
-      "club": {
-        "name": "MVB",
-        "aliases": [],
-        "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          3200
         ],
         "region": null
       },
