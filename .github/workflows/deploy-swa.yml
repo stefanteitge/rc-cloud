@@ -35,7 +35,7 @@ jobs:
         working-directory: frontend
 
       - name: Deploy to Github pages
-        run: npm ng build --configuration production
+        run: npm run build -- --prod
         working-directory: frontend
 
       - name: Build And Deploy
