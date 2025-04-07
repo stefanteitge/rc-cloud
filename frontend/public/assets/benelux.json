@@ -1,5 +1,5 @@
 {
-  "retrievedDate": "2025-04-07T08:11:43.0119794+00:00",
+  "retrievedDate": "2025-04-07T19:28:34.8582263+00:00",
   "raceMeetings": [
     {
       "series": [],
@@ -710,6 +710,48 @@
         "dmcClubNumber": null,
         "myrcmClubNumbers": [
           23785
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-04",
+      "location": "Model Racing Club Real 80",
+      "countryCode": "nl",
+      "title": "1e N.K. BC08 / BC10 NOMAC",
+      "regions": [],
+      "club": {
+        "name": "Model Racing Club Real 80",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [
+          53339
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-04",
+      "location": "AMCA-Apeldoorn",
+      "countryCode": "nl",
+      "title": "Tonisport Onroad Series 2025-2026 Division West - Round 1 AMCA Apeldoorn",
+      "regions": [],
+      "club": {
+        "name": "AMCA-Apeldoorn",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [
+          7762
         ],
         "region": null
       },
