@@ -6,6 +6,13 @@ env:
   OUTPUT_LOCATION: "frontend/dist/frontend/browser/" # location of client code build output
 
 on:
+  push:
+    branches:
+      - 'main'
+    paths:
+      - 'backend/**'
+      - 'frontend/**'
+
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
