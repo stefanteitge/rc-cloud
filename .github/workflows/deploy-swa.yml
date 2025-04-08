@@ -1,9 +1,8 @@
 name: "Build SWA"
 
 env:
-  APP_LOCATION: "/" # location of your client code
+  APP_LOCATION: "frontend/dist/frontend/browser" # location of your client code
   API_LOCATION: "backend/RcCloud.FunctionApi/bin/Debug/net9.0" # location of your client code
-  OUTPUT_LOCATION: "frontend/dist/frontend/browser/" # location of client code build output
 
 on:
   push:
@@ -63,7 +62,6 @@ jobs:
           action: "upload"
           app_location: ${{ env.APP_LOCATION }}
           api_location: ${{ env.API_LOCATION }}
-          output_location: ${{ env.OUTPUT_LOCATION }}
           skip_api_build: true
           skip_app_build: true
 
