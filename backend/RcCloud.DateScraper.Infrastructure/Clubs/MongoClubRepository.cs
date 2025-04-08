@@ -1,16 +1,15 @@
 ﻿using DnsClient.Internal;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using MongoDB.Driver;
 using RcCloud.DateScraper.Infrastructure.Clubs.Entities;
 
 namespace RcCloud.DateScraper.Infrastructure.Clubs;
 
-public class MongoClubRepository(IConfiguration configuration, ILogger<MongoClubRepository> logger)
+public class MongoClubRepository(ILogger<MongoClubRepository> logger)
 {
     public bool Store(ClubDbEntity clubDbEntity)
     {
-        var connectionUri = configuration.GetConnectionString("Mongo");
+        var connectionUri = System.Environment.GetEnvironmentVariable("CONNECTION_STRING__MONGO", EnvironmentVariableTarget.Process);
 
         if (string.IsNullOrEmpty(connectionUri))
         {
