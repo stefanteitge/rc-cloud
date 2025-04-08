@@ -27,12 +27,11 @@ public class MongoClubRepository(IConfiguration configuration, ILogger<MongoClub
                 .GetDatabase("RcCloud").GetCollection<ClubDbEntity>("Clubs"); ;
             collection.InsertOne(clubDbEntity);
 
-
-            Console.WriteLine("Pinged your deployment. You successfully connected to MongoDB!");
+            logger.LogInformation("Stored clubs.");
         }
         catch (Exception ex)
         {
-            Console.WriteLine(ex);
+            logger.LogError(ex, "Failed to write clubs.");
         }
     }
 }
