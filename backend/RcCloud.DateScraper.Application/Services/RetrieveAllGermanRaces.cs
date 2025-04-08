@@ -5,9 +5,9 @@ using RcCloud.DateScraper.Application.Rcco;
 using RcCloud.DateScraper.Application.Rck.Services;
 using RcCloud.DateScraper.Domain.Races;
 
-namespace RcCloud.DateScraper.Cli.Common.Services;
+namespace RcCloud.DateScraper.Application.Common.Services;
 
-public class RetrieveAllRaces(
+public class RetrieveAllGermanRaces(
     ScrapeChallengeRaces scrapeChallenge,
     ScrapeDmcRaces scrapeDmc,
     ScrapeKleinserieRaces scrapeKleinserie,

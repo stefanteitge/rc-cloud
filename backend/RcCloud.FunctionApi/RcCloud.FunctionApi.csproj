@@ -30,6 +30,7 @@
     <Using Include="System.Threading.ExecutionContext" Alias="ExecutionContext" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\RcCloud.DateScraper.Application\RcCloud.DateScraper.Application.csproj" />
     <ProjectReference Include="..\RcCloud.DateScraper.Domain\RcCloud.DateScraper.Domain.csproj" />
     <ProjectReference Include="..\RcCloud.DateScraper.Infrastructure\RcCloud.DateScraper.Infrastructure.csproj" />
   </ItemGroup>

@@ -1,5 +1,5 @@
 ﻿using McMaster.Extensions.CommandLineUtils;
-using RcCloud.DateScraper.Cli.Common.Services;
+using RcCloud.DateScraper.Application.Common.Services;
 using RcCloud.DateScraper.Cli.Output.Services;
 using RcCloud.DateScraper.Domain.Clubs;
 
@@ -7,7 +7,7 @@ namespace RcCloud.DateScraper.Cli.Commands;
 
 internal class GermanyCommand(
     IClubRepository clubRepository,
-    RetrieveAllRaces retrieveAll,
+    RetrieveAllGermanRaces retrieveAllGerman,
     PrintRaces printer,
     WriteJson writeJson)
 {
@@ -25,7 +25,7 @@ internal class GermanyCommand(
             clubRepository.Load(ClubDbFile);
         }
         
-        var all = await retrieveAll.Retrieve();
+        var all = await retrieveAllGerman.Retrieve();
 
         if (Format == "json")
         {

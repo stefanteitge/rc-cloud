@@ -2,17 +2,19 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.Functions.Worker;
 using Microsoft.Extensions.Logging;
+using RcCloud.DateScraper.Application.Common.Services;
 using RcCloud.DateScraper.Domain.Races;
 using RcCloud.DateScraper.Domain.Series;
 
 namespace RcCloud.FunctionApi.Functions;
 
-public class Germany(ILogger<Germany> logger)
+public class Germany(RetrieveAllGermanRaces retrieveAllGermanRaces, ILogger<Germany> logger)
 {
     [Function("germany")]
-    public IActionResult Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", "post")] HttpRequest req)
+    public async Task<IActionResult> Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", "post")] HttpRequest req)
     {
         logger.LogInformation("C# HTTP trigger function processed a request.");
-        return new OkObjectResult(new RaceMeeting([SeriesReference.None], SeasonReference.Current, new DateOnly(2025, 4, 7), "here", "de", "Foo race", [], null, null));
+        var all = await retrieveAllGermanRaces.Retrieve();
+        return new OkObjectResult(all);
     }
 }

@@ -3,6 +3,7 @@ using Microsoft.Azure.Functions.Worker.Builder;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using RcCloud.DateScraper.Application.Common;
 using RcCloud.DateScraper.Infrastructure;
 
 var builder = FunctionsApplication.CreateBuilder(args);
@@ -15,6 +16,7 @@ builder.Configuration.AddEnvironmentVariables();
 builder.Services
     .AddInfrastructure()
     .AddApplicationInsightsTelemetryWorkerService()
-    .ConfigureFunctionsApplicationInsights();
+    .ConfigureFunctionsApplicationInsights()
+    .AddScraping();
 
 builder.Build().Run();

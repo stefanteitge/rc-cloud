@@ -1,26 +1,17 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
     <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <RootNamespace>RcCloud.DateScraper.Application.Common</RootNamespace>
   </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="McMaster.Extensions.CommandLineUtils" Version="4.1.1" />
-    <PackageReference Include="McMaster.Extensions.Hosting.CommandLine" Version="4.1.1" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.3" />
-    <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.3" />
-  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\RcCloud.DateScraper.Application.Dmc\RcCloud.DateScraper.Application.Dmc.csproj" />
     <ProjectReference Include="..\RcCloud.DateScraper.Application.Myrcm\RcCloud.DateScraper.Application.Myrcm.csproj" />
     <ProjectReference Include="..\RcCloud.DateScraper.Application.Rcco\RcCloud.DateScraper.Application.Rcco.csproj" />
     <ProjectReference Include="..\RcCloud.DateScraper.Application.Rck\RcCloud.DateScraper.Application.Rck.csproj" />
-    <ProjectReference Include="..\RcCloud.DateScraper.Application\RcCloud.DateScraper.Application.csproj" />
-    <ProjectReference Include="..\RcCloud.DateScraper.Infrastructure\RcCloud.DateScraper.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

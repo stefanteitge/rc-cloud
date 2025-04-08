@@ -21,8 +21,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RcCloud.DateScraper.Applica
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RcCloud.DateScraper.Application.Dmc.Tests", "RcCloud.DateScraper.Application.Dmc.Tests\RcCloud.DateScraper.Application.Dmc.Tests.csproj", "{614B2888-0194-43B7-A991-F13716A14130}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RcCloud.DateScraper.Application.Common", "RcCloud.DateScraper.Application.Common\RcCloud.DateScraper.Application.Common.csproj", "{B1F09C84-002A-43D0-9391-E6BCBDC9139B}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
@@ -33,6 +31,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RcCloud.DateScraper.Infrastructure", "RcCloud.DateScraper.Infrastructure\RcCloud.DateScraper.Infrastructure.csproj", "{60E81957-8948-4936-891B-E4F67407C0FD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RcCloud.FunctionApi", "RcCloud.FunctionApi\RcCloud.FunctionApi.csproj", "{E054F9E7-6AAA-4B5B-9A9E-09315D9DE52B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RcCloud.DateScraper.Application", "RcCloud.DateScraper.Application\RcCloud.DateScraper.Application.csproj", "{82660197-6685-446B-AD4A-46E93D3191CC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -76,10 +76,6 @@ Global
 		{614B2888-0194-43B7-A991-F13716A14130}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{614B2888-0194-43B7-A991-F13716A14130}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{614B2888-0194-43B7-A991-F13716A14130}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B1F09C84-002A-43D0-9391-E6BCBDC9139B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B1F09C84-002A-43D0-9391-E6BCBDC9139B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B1F09C84-002A-43D0-9391-E6BCBDC9139B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B1F09C84-002A-43D0-9391-E6BCBDC9139B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CF93D3B5-6DA0-487E-A268-EE424E4D5425}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CF93D3B5-6DA0-487E-A268-EE424E4D5425}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF93D3B5-6DA0-487E-A268-EE424E4D5425}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -92,11 +88,17 @@ Global
 		{E054F9E7-6AAA-4B5B-9A9E-09315D9DE52B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E054F9E7-6AAA-4B5B-9A9E-09315D9DE52B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E054F9E7-6AAA-4B5B-9A9E-09315D9DE52B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82660197-6685-446B-AD4A-46E93D3191CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82660197-6685-446B-AD4A-46E93D3191CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82660197-6685-446B-AD4A-46E93D3191CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82660197-6685-446B-AD4A-46E93D3191CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {901D7065-7714-427D-88CB-67D437022364}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
 	EndGlobalSection
 EndGlobal
