@@ -2,24 +2,22 @@
 using Microsoft.Extensions.Logging;
 using MongoDB.Driver;
 using RcCloud.DateScraper.Infrastructure.Clubs.Entities;
+using RcCloud.DateScraper.Infrastructure.Common;
 
 namespace RcCloud.DateScraper.Infrastructure.Clubs;
 
-public class MongoClubRepository(ILogger<MongoClubRepository> logger)
+public class MongoClubRepository(ILogger<MongoClubRepository> logger) : MongoBaseRepository(logger)
 {
     public bool Store(ClubDbEntity clubDbEntity)
     {
-        var connectionUri = System.Environment.GetEnvironmentVariable("CONNECTION_STRING__MONGO", EnvironmentVariableTarget.Process);
+        var client = GetClient();
 
-        if (string.IsNullOrEmpty(connectionUri))
+        if (client is null)
         {
-            logger.LogError("Mongo connection string is not set.");
+            logger.LogError("Cannot create Mongo client. Cannot store.");
             return false;
         }
-
-        var settings = MongoClientSettings.FromConnectionString(connectionUri);
-        settings.ServerApi = new ServerApi(ServerApiVersion.V1);
-        var client = new MongoClient(settings);
+        
         try
         {
             var collection = client
