@@ -8,14 +8,14 @@ namespace RcCloud.DateScraper.Infrastructure.Clubs;
 
 public class MongoClubRepository(IConfiguration configuration, ILogger<MongoClubRepository> logger)
 {
-    public void Store(ClubDbEntity clubDbEntity)
+    public bool Store(ClubDbEntity clubDbEntity)
     {
         var connectionUri = configuration.GetConnectionString("Mongo");
 
         if (string.IsNullOrEmpty(connectionUri))
         {
             logger.LogError("Mongo connection string is not set.");
-            return;
+            return false;
         }
 
         var settings = MongoClientSettings.FromConnectionString(connectionUri);
@@ -32,6 +32,9 @@ public class MongoClubRepository(IConfiguration configuration, ILogger<MongoClub
         catch (Exception ex)
         {
             logger.LogError(ex, "Failed to write clubs.");
+            return false;
         }
+
+        return true;
     }
 }

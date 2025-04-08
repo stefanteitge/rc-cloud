@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.Azure.Functions.Worker;
 using Microsoft.Extensions.Logging;
 using RcCloud.DateScraper.Infrastructure.Clubs;
@@ -10,13 +10,18 @@ namespace RcCloud.FunctionApi.Functions;
 public class UpdateClubs(MongoClubRepository repo, ILogger<MongoClubRepository> logger)
 {
     [Function("update-clubs")]
-    public IActionResult Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", "post")] HttpRequest req)
+    public Results<BadRequest, Ok<ClubDbEntity>> Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", "post")] HttpRequest req)
     {
         var db = new ClubDbEntity([], DateTimeOffset.Now);
-        repo.Store(db);
+        var success = repo.Store(db);
+
+        if (!success)
+        {
+            return TypedResults.BadRequest();
+        }
 
         logger.LogInformation("Updated and stored clubs.");
 
-        return new OkObjectResult(db);
+        return TypedResults.Ok(db);
     }
 }
