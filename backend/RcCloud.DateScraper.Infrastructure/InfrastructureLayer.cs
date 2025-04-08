@@ -9,6 +9,7 @@ public static class InfrastructureLayer
     public static IServiceCollection AddInfrastructure(this IServiceCollection services)
     {
         return services
-            .AddScoped<IClubRepository, JsonClubRepository>();
+            .AddScoped<IClubRepository, JsonClubRepository>()
+            .AddScoped<MongoClubRepository>();
     }
 }

@@ -31,5 +31,6 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\RcCloud.DateScraper.Domain\RcCloud.DateScraper.Domain.csproj" />
+    <ProjectReference Include="..\RcCloud.DateScraper.Infrastructure\RcCloud.DateScraper.Infrastructure.csproj" />
   </ItemGroup>
 </Project>
