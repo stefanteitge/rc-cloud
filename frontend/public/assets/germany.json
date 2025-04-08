@@ -1,5 +1,5 @@
 {
-  "retrievedDate": "2025-04-07T20:00:30.4216586+00:00",
+  "retrievedDate": "2025-04-08T10:26:50.583229+00:00",
   "raceMeetings": [
     {
       "series": [],
@@ -2221,27 +2221,6 @@
     {
       "series": [
         {
-          "id": "kleinserie"
-        }
-      ],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-04-13",
-      "location": "Hennef",
-      "countryCode": "de",
-      "title": "Kleinserie",
-      "regions": [
-        {
-          "id": "west"
-        }
-      ],
-      "club": null,
-      "source": "KleinSerie"
-    },
-    {
-      "series": [
-        {
           "id": "challenge"
         }
       ],
@@ -2261,31 +2240,25 @@
       "source": "RCK-Challenge"
     },
     {
-      "series": [],
+      "series": [
+        {
+          "id": "kleinserie"
+        }
+      ],
       "season": {
         "id": "current"
       },
-      "date": "2025-04-19",
-      "location": "ASC Potsdam e.V.",
+      "date": "2025-04-13",
+      "location": "Hennef",
       "countryCode": "de",
-      "title": "Freundschaftsrennen",
+      "title": "Kleinserie",
       "regions": [
         {
-          "id": "east"
+          "id": "west"
         }
       ],
-      "club": {
-        "name": "ASC Potsdam e.V.",
-        "aliases": [],
-        "dmcClubNumber": 236,
-        "myrcmClubNumbers": [
-          26596
-        ],
-        "region": {
-          "id": "east"
-        }
-      },
-      "source": "DMC"
+      "club": null,
+      "source": "KleinSerie"
     },
     {
       "series": [],
@@ -2317,6 +2290,64 @@
         }
       },
       "source": "Myrcm"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-04-19",
+      "location": "ASC Potsdam e.V.",
+      "countryCode": "de",
+      "title": "Freundschaftsrennen",
+      "regions": [
+        {
+          "id": "east"
+        }
+      ],
+      "club": {
+        "name": "ASC Potsdam e.V.",
+        "aliases": [],
+        "dmcClubNumber": 236,
+        "myrcmClubNumbers": [
+          26596
+        ],
+        "region": {
+          "id": "east"
+        }
+      },
+      "source": "DMC"
+    },
+    {
+      "series": [
+        {
+          "id": "dmc-sm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-04-20",
+      "location": "MCC Türkheim e.V.",
+      "countryCode": "de",
+      "title": "SM-Lauf",
+      "regions": [
+        {
+          "id": "south"
+        }
+      ],
+      "club": {
+        "name": "MCC Türkheim e.V.",
+        "aliases": [],
+        "dmcClubNumber": 70,
+        "myrcmClubNumbers": [
+          47
+        ],
+        "region": {
+          "id": "south"
+        }
+      },
+      "source": "DMC"
     },
     {
       "series": [],
@@ -2386,58 +2417,6 @@
         "id": "current"
       },
       "date": "2025-04-20",
-      "location": "MCC Lüdenscheid e.V.",
-      "countryCode": "de",
-      "title": "nicht stattfindendes Testrennen",
-      "regions": [],
-      "club": {
-        "name": "MCC Lüdenscheid e.V.",
-        "aliases": [],
-        "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          52121
-        ],
-        "region": null
-      },
-      "source": "Myrcm"
-    },
-    {
-      "series": [
-        {
-          "id": "dmc-sm"
-        }
-      ],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-04-20",
-      "location": "MCC Türkheim e.V.",
-      "countryCode": "de",
-      "title": "SM-Lauf",
-      "regions": [
-        {
-          "id": "south"
-        }
-      ],
-      "club": {
-        "name": "MCC Türkheim e.V.",
-        "aliases": [],
-        "dmcClubNumber": 70,
-        "myrcmClubNumbers": [
-          47
-        ],
-        "region": {
-          "id": "south"
-        }
-      },
-      "source": "DMC"
-    },
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-04-20",
       "location": "AMC Senftenberg",
       "countryCode": "de",
       "title": "Freundschaftsrennen",
@@ -2456,6 +2435,27 @@
         }
       },
       "source": "DMC"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-04-20",
+      "location": "MCC Lüdenscheid e.V.",
+      "countryCode": "de",
+      "title": "nicht stattfindendes Testrennen",
+      "regions": [],
+      "club": {
+        "name": "MCC Lüdenscheid e.V.",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [
+          52121
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
     },
     {
       "series": [],
@@ -2513,25 +2513,25 @@
         "id": "current"
       },
       "date": "2025-04-27",
-      "location": "RCRT Duisburg",
+      "location": "AMC Mühlau e.V.",
       "countryCode": "de",
       "title": "SM-Lauf",
       "regions": [
         {
-          "id": "west"
+          "id": "east"
         }
       ],
       "club": {
-        "name": "RCRT Duisburg",
+        "name": "AMC Mühlau e.V.",
         "aliases": [
-          "RCRT Duisburg (DMC: OV 3/124)"
+          "AMC Mühlau"
         ],
-        "dmcClubNumber": 124,
+        "dmcClubNumber": 322,
         "myrcmClubNumbers": [
-          15091
+          82
         ],
         "region": {
-          "id": "west"
+          "id": "east"
         }
       },
       "source": "DMC"
@@ -2560,39 +2560,6 @@
         }
       },
       "source": "DMC"
-    },
-    {
-      "series": [
-        {
-          "id": "challenge"
-        }
-      ],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-04-27",
-      "location": "Superlauf in Ingolstadt",
-      "countryCode": "de",
-      "title": "RCK-Challenge",
-      "regions": [
-        {
-          "id": "central"
-        },
-        {
-          "id": "north"
-        },
-        {
-          "id": "west"
-        },
-        {
-          "id": "south"
-        },
-        {
-          "id": "east"
-        }
-      ],
-      "club": null,
-      "source": "RCK-Challenge"
     },
     {
       "series": [],
@@ -2633,81 +2600,54 @@
         "id": "current"
       },
       "date": "2025-04-27",
-      "location": "AMC Mühlau e.V.",
+      "location": "RCRT Duisburg",
       "countryCode": "de",
       "title": "SM-Lauf",
       "regions": [
         {
-          "id": "east"
+          "id": "west"
         }
       ],
       "club": {
-        "name": "AMC Mühlau e.V.",
+        "name": "RCRT Duisburg",
         "aliases": [
-          "AMC Mühlau"
+          "RCRT Duisburg (DMC: OV 3/124)"
         ],
-        "dmcClubNumber": 322,
+        "dmcClubNumber": 124,
         "myrcmClubNumbers": [
-          82
+          15091
         ],
         "region": {
-          "id": "east"
+          "id": "west"
         }
       },
       "source": "DMC"
     },
     {
-      "series": [],
+      "series": [
+        {
+          "id": "dmc-sm"
+        }
+      ],
       "season": {
         "id": "current"
       },
       "date": "2025-04-27",
-      "location": "Modellsport Münsterland e.V.",
+      "location": "RMC Wolfsburg e.V.",
       "countryCode": "de",
-      "title": "Freundschaftsrennen",
+      "title": "SM-Lauf",
       "regions": [
         {
-          "id": "west"
+          "id": "north"
         }
       ],
       "club": {
-        "name": "Modellsport Münsterland e.V.",
-        "aliases": [
-          "Modellsport Münsterland"
-        ],
-        "dmcClubNumber": 240,
+        "name": "RMC Wolfsburg e.V.",
+        "aliases": [],
+        "dmcClubNumber": 157,
         "myrcmClubNumbers": [],
         "region": {
-          "id": "west"
-        }
-      },
-      "source": "DMC"
-    },
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-04-27",
-      "location": "1. Marzahner Racing Club",
-      "countryCode": "de",
-      "title": "Freundschaftsrennen",
-      "regions": [
-        {
-          "id": "east"
-        }
-      ],
-      "club": {
-        "name": "1. Marzahner Racing Club",
-        "aliases": [
-          "1.Marzahner Racing Club"
-        ],
-        "dmcClubNumber": 204,
-        "myrcmClubNumbers": [
-          18244
-        ],
-        "region": {
-          "id": "east"
+          "id": "north"
         }
       },
       "source": "DMC"
@@ -2735,6 +2675,33 @@
         ],
         "region": {
           "id": "north"
+        }
+      },
+      "source": "DMC"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-04-27",
+      "location": "Modellsport Münsterland e.V.",
+      "countryCode": "de",
+      "title": "Freundschaftsrennen",
+      "regions": [
+        {
+          "id": "west"
+        }
+      ],
+      "club": {
+        "name": "Modellsport Münsterland e.V.",
+        "aliases": [
+          "Modellsport Münsterland"
+        ],
+        "dmcClubNumber": 240,
+        "myrcmClubNumbers": [],
+        "region": {
+          "id": "west"
         }
       },
       "source": "DMC"
@@ -2874,6 +2841,97 @@
       "source": "rccar-online.de"
     },
     {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-04-27",
+      "location": "RCRT Duisburg",
+      "countryCode": "de",
+      "title": "ORE SK-Lauf West mit FL",
+      "regions": [
+        {
+          "id": "west"
+        }
+      ],
+      "club": {
+        "name": "RCRT Duisburg",
+        "aliases": [
+          "RCRT Duisburg (DMC: OV 3/124)"
+        ],
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [
+          15091
+        ],
+        "region": {
+          "id": "west"
+        }
+      },
+      "source": "Myrcm"
+    },
+    {
+      "series": [
+        {
+          "id": "challenge"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-04-27",
+      "location": "Superlauf in Ingolstadt",
+      "countryCode": "de",
+      "title": "RCK-Challenge",
+      "regions": [
+        {
+          "id": "central"
+        },
+        {
+          "id": "north"
+        },
+        {
+          "id": "west"
+        },
+        {
+          "id": "south"
+        },
+        {
+          "id": "east"
+        }
+      ],
+      "club": null,
+      "source": "RCK-Challenge"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-04-27",
+      "location": "1. Marzahner Racing Club",
+      "countryCode": "de",
+      "title": "Freundschaftsrennen",
+      "regions": [
+        {
+          "id": "east"
+        }
+      ],
+      "club": {
+        "name": "1. Marzahner Racing Club",
+        "aliases": [
+          "1.Marzahner Racing Club"
+        ],
+        "dmcClubNumber": 204,
+        "myrcmClubNumbers": [
+          18244
+        ],
+        "region": {
+          "id": "east"
+        }
+      },
+      "source": "DMC"
+    },
+    {
       "series": [
         {
           "id": "tec"
@@ -2883,82 +2941,20 @@
         "id": "current"
       },
       "date": "2025-04-27",
-      "location": "TSV 1871 Augsburg e.V.",
+      "location": "Modellsport Zwönitz e.V.",
       "countryCode": "de",
-      "title": "Tamiya Euro-Cup - TSV 1871 Augsburg e.V. - Indoor",
-      "regions": [
-        {
-          "id": "south"
-        }
-      ],
-      "club": {
-        "name": "TSV 1871 Augsburg e.V.",
-        "aliases": [],
-        "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          991
-        ],
-        "region": {
-          "id": "south"
-        }
-      },
-      "source": "Myrcm"
-    },
-    {
-      "series": [
-        {
-          "id": "dmc-sm"
-        }
-      ],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-04-27",
-      "location": "RMC Wolfsburg e.V.",
-      "countryCode": "de",
-      "title": "SM-Lauf",
-      "regions": [
-        {
-          "id": "north"
-        }
-      ],
-      "club": {
-        "name": "RMC Wolfsburg e.V.",
-        "aliases": [],
-        "dmcClubNumber": 157,
-        "myrcmClubNumbers": [],
-        "region": {
-          "id": "north"
-        }
-      },
-      "source": "DMC"
-    },
-    {
-      "series": [
-        {
-          "id": "ostmasters"
-        }
-      ],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-04-27",
-      "location": "AMC Mühlau e.V.",
-      "countryCode": "de",
-      "title": "OstMasters Lauf + SK Lauf",
+      "title": "Tamiya Euro-Cup Qualifikation",
       "regions": [
         {
           "id": "east"
         }
       ],
       "club": {
-        "name": "AMC Mühlau e.V.",
-        "aliases": [
-          "AMC Mühlau"
-        ],
+        "name": "Modellsport Zwönitz e.V.",
+        "aliases": [],
         "dmcClubNumber": null,
         "myrcmClubNumbers": [
-          82
+          60576
         ],
         "region": {
           "id": "east"
@@ -3054,56 +3050,29 @@
     {
       "series": [
         {
-          "id": "tec"
+          "id": "ostmasters"
         }
       ],
       "season": {
         "id": "current"
       },
       "date": "2025-04-27",
-      "location": "Modellsport Zwönitz e.V.",
+      "location": "AMC Mühlau e.V.",
       "countryCode": "de",
-      "title": "Tamiya Euro-Cup Qualifikation",
+      "title": "OstMasters Lauf + SK Lauf",
       "regions": [
         {
           "id": "east"
         }
       ],
       "club": {
-        "name": "Modellsport Zwönitz e.V.",
-        "aliases": [],
-        "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          60576
-        ],
-        "region": {
-          "id": "east"
-        }
-      },
-      "source": "Myrcm"
-    },
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-04-27",
-      "location": "1. Marzahner Racing Club",
-      "countryCode": "de",
-      "title": "Berlin Touring Masters 2025 Lauf 1",
-      "regions": [
-        {
-          "id": "east"
-        }
-      ],
-      "club": {
-        "name": "1. Marzahner Racing Club",
+        "name": "AMC Mühlau e.V.",
         "aliases": [
-          "1.Marzahner Racing Club"
+          "AMC Mühlau"
         ],
         "dmcClubNumber": null,
         "myrcmClubNumbers": [
-          18244
+          82
         ],
         "region": {
           "id": "east"
@@ -3144,25 +3113,56 @@
         "id": "current"
       },
       "date": "2025-04-27",
-      "location": "RCRT Duisburg",
+      "location": "1. Marzahner Racing Club",
       "countryCode": "de",
-      "title": "ORE SK-Lauf West mit FL",
+      "title": "Berlin Touring Masters 2025 Lauf 1",
       "regions": [
         {
-          "id": "west"
+          "id": "east"
         }
       ],
       "club": {
-        "name": "RCRT Duisburg",
+        "name": "1. Marzahner Racing Club",
         "aliases": [
-          "RCRT Duisburg (DMC: OV 3/124)"
+          "1.Marzahner Racing Club"
         ],
         "dmcClubNumber": null,
         "myrcmClubNumbers": [
-          15091
+          18244
         ],
         "region": {
-          "id": "west"
+          "id": "east"
+        }
+      },
+      "source": "Myrcm"
+    },
+    {
+      "series": [
+        {
+          "id": "tec"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-04-27",
+      "location": "TSV 1871 Augsburg e.V.",
+      "countryCode": "de",
+      "title": "Tamiya Euro-Cup - TSV 1871 Augsburg e.V. - Indoor",
+      "regions": [
+        {
+          "id": "south"
+        }
+      ],
+      "club": {
+        "name": "TSV 1871 Augsburg e.V.",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [
+          991
+        ],
+        "region": {
+          "id": "south"
         }
       },
       "source": "Myrcm"
@@ -3379,25 +3379,23 @@
         "id": "current"
       },
       "date": "2025-05-04",
-      "location": "EDC Kinzigtal",
+      "location": "MSG Niesky e.V.",
       "countryCode": "de",
-      "title": "Tamico Days 2025",
+      "title": "1. SK-Lauf 1/8 Niesky / Sachsencup",
       "regions": [
         {
-          "id": "south"
+          "id": "east"
         }
       ],
       "club": {
-        "name": "EDC Kinzigtal",
-        "aliases": [
-          "EDC Kinzigtal (OV371)"
-        ],
+        "name": "MSG Niesky e.V.",
+        "aliases": [],
         "dmcClubNumber": null,
         "myrcmClubNumbers": [
-          35606
+          46202
         ],
         "region": {
-          "id": "south"
+          "id": "east"
         }
       },
       "source": "Myrcm"
@@ -3456,6 +3454,56 @@
         "id": "current"
       },
       "date": "2025-05-04",
+      "location": "EDC Kinzigtal",
+      "countryCode": "de",
+      "title": "Tamico Days 2025",
+      "regions": [
+        {
+          "id": "south"
+        }
+      ],
+      "club": {
+        "name": "EDC Kinzigtal",
+        "aliases": [
+          "EDC Kinzigtal (OV371)"
+        ],
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [
+          35606
+        ],
+        "region": {
+          "id": "south"
+        }
+      },
+      "source": "Myrcm"
+    },
+    {
+      "series": [
+        {
+          "id": "challenge"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-04",
+      "location": "Hann.Münden",
+      "countryCode": "de",
+      "title": "RCK-Challenge",
+      "regions": [
+        {
+          "id": "north"
+        }
+      ],
+      "club": null,
+      "source": "RCK-Challenge"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-04",
       "location": "MRC-Leipzig e.V.",
       "countryCode": "de",
       "title": "1. SK-Lauf EG8/VG8 GT WarmUp EC",
@@ -3470,33 +3518,6 @@
         "dmcClubNumber": null,
         "myrcmClubNumbers": [
           713
-        ],
-        "region": {
-          "id": "east"
-        }
-      },
-      "source": "Myrcm"
-    },
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-05-04",
-      "location": "MSG Niesky e.V.",
-      "countryCode": "de",
-      "title": "1. SK-Lauf 1/8 Niesky / Sachsencup",
-      "regions": [
-        {
-          "id": "east"
-        }
-      ],
-      "club": {
-        "name": "MSG Niesky e.V.",
-        "aliases": [],
-        "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          46202
         ],
         "region": {
           "id": "east"
@@ -3531,6 +3552,27 @@
         "region": {
           "id": "south"
         }
+      },
+      "source": "Myrcm"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-04",
+      "location": "Slottis Supreme Masters",
+      "countryCode": "de",
+      "title": "Explorer Cup Finale Sonntag",
+      "regions": [],
+      "club": {
+        "name": "Slottis Supreme Masters",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [
+          60453
+        ],
+        "region": null
       },
       "source": "Myrcm"
     },
@@ -3616,25 +3658,6 @@
         }
       },
       "source": "Myrcm"
-    },
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-05-04",
-      "location": "Weser Offroad Park Bad Oeynhausen",
-      "countryCode": "de",
-      "title": "2. ECN Lauf WOP 2025",
-      "regions": [],
-      "club": {
-        "name": "Weser Offroad Park",
-        "aliases": [],
-        "dmcClubNumber": null,
-        "myrcmClubNumbers": [],
-        "region": null
-      },
-      "source": "rccar-online.de"
     },
     {
       "series": [],
@@ -3729,52 +3752,6 @@
         "id": "current"
       },
       "date": "2025-05-04",
-      "location": "Mac Uetersen e.V / Rosenring",
-      "countryCode": "de",
-      "title": "1.SH-Cup 2025",
-      "regions": [],
-      "club": {
-        "name": "MAC Uetersen e. V.",
-        "aliases": [],
-        "dmcClubNumber": null,
-        "myrcmClubNumbers": [],
-        "region": null
-      },
-      "source": "rccar-online.de"
-    },
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-05-04",
-      "location": "MSC Osterhofen e.V.",
-      "countryCode": "de",
-      "title": "1.Süddeutschland Cup und 1. SK Lauf Süd OR8/ORE",
-      "regions": [
-        {
-          "id": "south"
-        }
-      ],
-      "club": {
-        "name": "MSC Osterhofen e.V.",
-        "aliases": [],
-        "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          50019
-        ],
-        "region": {
-          "id": "south"
-        }
-      },
-      "source": "Myrcm"
-    },
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-05-04",
       "location": "MC Munster e.V.",
       "countryCode": "de",
       "title": "Club Racing Series",
@@ -3792,60 +3769,6 @@
         ],
         "region": {
           "id": "north"
-        }
-      },
-      "source": "Myrcm"
-    },
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-05-04",
-      "location": "MRSC Amberg e.V.",
-      "countryCode": "de",
-      "title": "MRSC Cup 2025 Lauf 1",
-      "regions": [
-        {
-          "id": "south"
-        }
-      ],
-      "club": {
-        "name": "MRSC Amberg e.V.",
-        "aliases": [],
-        "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          39587
-        ],
-        "region": {
-          "id": "south"
-        }
-      },
-      "source": "Myrcm"
-    },
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-05-04",
-      "location": "RCS Offroad Staaken",
-      "countryCode": "de",
-      "title": "1.RCS CUP",
-      "regions": [
-        {
-          "id": "east"
-        }
-      ],
-      "club": {
-        "name": "RCS Offroad Staaken",
-        "aliases": [],
-        "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          55317
-        ],
-        "region": {
-          "id": "east"
         }
       },
       "source": "Myrcm"
@@ -3885,6 +3808,98 @@
         "id": "current"
       },
       "date": "2025-05-04",
+      "location": "RCS Offroad Staaken",
+      "countryCode": "de",
+      "title": "1.RCS CUP",
+      "regions": [
+        {
+          "id": "east"
+        }
+      ],
+      "club": {
+        "name": "RCS Offroad Staaken",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [
+          55317
+        ],
+        "region": {
+          "id": "east"
+        }
+      },
+      "source": "Myrcm"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-04",
+      "location": "MRSC Amberg e.V.",
+      "countryCode": "de",
+      "title": "MRSC Cup 2025 Lauf 1",
+      "regions": [
+        {
+          "id": "south"
+        }
+      ],
+      "club": {
+        "name": "MRSC Amberg e.V.",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [
+          39587
+        ],
+        "region": {
+          "id": "south"
+        }
+      },
+      "source": "Myrcm"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-04",
+      "location": "Weser Offroad Park Bad Oeynhausen",
+      "countryCode": "de",
+      "title": "2. ECN Lauf WOP 2025",
+      "regions": [],
+      "club": {
+        "name": "Weser Offroad Park",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [],
+        "region": null
+      },
+      "source": "rccar-online.de"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-04",
+      "location": "Mac Uetersen e.V / Rosenring",
+      "countryCode": "de",
+      "title": "1.SH-Cup 2025",
+      "regions": [],
+      "club": {
+        "name": "MAC Uetersen e. V.",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [],
+        "region": null
+      },
+      "source": "rccar-online.de"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-04",
       "location": "Wiesbadener Minicar Club e.V.",
       "countryCode": "de",
       "title": "Sportkreis Meisterschaft Mitte 2025",
@@ -3905,27 +3920,6 @@
         "region": {
           "id": "central"
         }
-      },
-      "source": "Myrcm"
-    },
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-05-04",
-      "location": "Slottis Supreme Masters",
-      "countryCode": "de",
-      "title": "Explorer Cup Finale Sonntag",
-      "regions": [],
-      "club": {
-        "name": "Slottis Supreme Masters",
-        "aliases": [],
-        "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          60453
-        ],
-        "region": null
       },
       "source": "Myrcm"
     },
@@ -3957,32 +3951,82 @@
       "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "dmc-sm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
       "date": "2025-05-04",
-      "location": "RCR Peterberg e.V.",
+      "location": "MSC Osterhofen e.V.",
       "countryCode": "de",
-      "title": "SM-Lauf",
+      "title": "1.Süddeutschland Cup und 1. SK Lauf Süd OR8/ORE",
       "regions": [
         {
-          "id": "central"
+          "id": "south"
         }
       ],
       "club": {
-        "name": "RCR Peterberg e.V.",
+        "name": "MSC Osterhofen e.V.",
         "aliases": [],
-        "dmcClubNumber": 339,
+        "dmcClubNumber": null,
         "myrcmClubNumbers": [
-          49540
+          50019
         ],
         "region": {
-          "id": "central"
+          "id": "south"
+        }
+      },
+      "source": "Myrcm"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-04",
+      "location": "RC Offroad Staaken e.V.",
+      "countryCode": "de",
+      "title": "Freundschaftsrennen",
+      "regions": [
+        {
+          "id": "east"
+        }
+      ],
+      "club": {
+        "name": "RC Offroad Staaken e.V.",
+        "aliases": [],
+        "dmcClubNumber": 253,
+        "myrcmClubNumbers": [],
+        "region": {
+          "id": "east"
+        }
+      },
+      "source": "DMC"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-04",
+      "location": "TSV Mariendorf 97 Berlin",
+      "countryCode": "de",
+      "title": "Freundschaftsrennen",
+      "regions": [
+        {
+          "id": "east"
+        }
+      ],
+      "club": {
+        "name": "TSV Mariendorf 97 Berlin",
+        "aliases": [
+          "TSV Mariendorf 97 Berlin RCCR"
+        ],
+        "dmcClubNumber": 102,
+        "myrcmClubNumbers": [
+          18244
+        ],
+        "region": {
+          "id": "east"
         }
       },
       "source": "DMC"
@@ -3997,7 +4041,7 @@
         "id": "current"
       },
       "date": "2025-05-04",
-      "location": "1.MRC Mannheim e.V.",
+      "location": "Wiesbadener Minicar Club e.V.",
       "countryCode": "de",
       "title": "SM-Lauf",
       "regions": [
@@ -4006,13 +4050,13 @@
         }
       ],
       "club": {
-        "name": "1.MRC Mannheim e.V.",
+        "name": "Wiesbadener Minicar Club e.V.",
         "aliases": [
-          "1. MRC Mannheim"
+          "Wiesbadener Minicar Club e.V"
         ],
-        "dmcClubNumber": 391,
+        "dmcClubNumber": 17,
         "myrcmClubNumbers": [
-          39671
+          11761
         ],
         "region": {
           "id": "central"
@@ -4059,7 +4103,7 @@
         "id": "current"
       },
       "date": "2025-05-04",
-      "location": "Wiesbadener Minicar Club e.V.",
+      "location": "1.MRC Mannheim e.V.",
       "countryCode": "de",
       "title": "SM-Lauf",
       "regions": [
@@ -4068,99 +4112,16 @@
         }
       ],
       "club": {
-        "name": "Wiesbadener Minicar Club e.V.",
+        "name": "1.MRC Mannheim e.V.",
         "aliases": [
-          "Wiesbadener Minicar Club e.V"
+          "1. MRC Mannheim"
         ],
-        "dmcClubNumber": 17,
+        "dmcClubNumber": 391,
         "myrcmClubNumbers": [
-          11761
+          39671
         ],
         "region": {
           "id": "central"
-        }
-      },
-      "source": "DMC"
-    },
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-05-04",
-      "location": "TSV Mariendorf 97 Berlin",
-      "countryCode": "de",
-      "title": "Freundschaftsrennen",
-      "regions": [
-        {
-          "id": "east"
-        }
-      ],
-      "club": {
-        "name": "TSV Mariendorf 97 Berlin",
-        "aliases": [
-          "TSV Mariendorf 97 Berlin RCCR"
-        ],
-        "dmcClubNumber": 102,
-        "myrcmClubNumbers": [
-          18244
-        ],
-        "region": {
-          "id": "east"
-        }
-      },
-      "source": "DMC"
-    },
-    {
-      "series": [
-        {
-          "id": "dmc-sm"
-        }
-      ],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-05-04",
-      "location": "RIMAR Rhein Ijssel Modell Auto Race",
-      "countryCode": "de",
-      "title": "SM-Lauf",
-      "regions": [
-        {
-          "id": "west"
-        }
-      ],
-      "club": {
-        "name": "RIMAR Rhein Ijssel Modell Auto Race",
-        "aliases": [],
-        "dmcClubNumber": 303,
-        "myrcmClubNumbers": [],
-        "region": {
-          "id": "west"
-        }
-      },
-      "source": "DMC"
-    },
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-05-04",
-      "location": "MAC Uetersen e.V.",
-      "countryCode": "de",
-      "title": "SH-Cup",
-      "regions": [
-        {
-          "id": "north"
-        }
-      ],
-      "club": {
-        "name": "MAC Uetersen e.V.",
-        "aliases": [],
-        "dmcClubNumber": 327,
-        "myrcmClubNumbers": [],
-        "region": {
-          "id": "north"
         }
       },
       "source": "DMC"
@@ -4222,24 +4183,61 @@
       "source": "DMC"
     },
     {
-      "series": [],
+      "series": [
+        {
+          "id": "dmc-sm"
+        }
+      ],
       "season": {
         "id": "current"
       },
       "date": "2025-05-04",
-      "location": "RC Offroad Staaken e.V.",
+      "location": "RCR Peterberg e.V.",
       "countryCode": "de",
-      "title": "Freundschaftsrennen",
+      "title": "SM-Lauf",
+      "regions": [
+        {
+          "id": "central"
+        }
+      ],
+      "club": {
+        "name": "RCR Peterberg e.V.",
+        "aliases": [],
+        "dmcClubNumber": 339,
+        "myrcmClubNumbers": [
+          49540
+        ],
+        "region": {
+          "id": "central"
+        }
+      },
+      "source": "DMC"
+    },
+    {
+      "series": [
+        {
+          "id": "dmc-sm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-04",
+      "location": "MSG Niesky e.V.",
+      "countryCode": "de",
+      "title": "SM-Lauf",
       "regions": [
         {
           "id": "east"
         }
       ],
       "club": {
-        "name": "RC Offroad Staaken e.V.",
+        "name": "MSG Niesky e.V.",
         "aliases": [],
-        "dmcClubNumber": 253,
-        "myrcmClubNumbers": [],
+        "dmcClubNumber": 387,
+        "myrcmClubNumbers": [
+          46202
+        ],
         "region": {
           "id": "east"
         }
@@ -4337,27 +4335,6 @@
     {
       "series": [
         {
-          "id": "challenge"
-        }
-      ],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-05-04",
-      "location": "Hann.Münden",
-      "countryCode": "de",
-      "title": "RCK-Challenge",
-      "regions": [
-        {
-          "id": "north"
-        }
-      ],
-      "club": null,
-      "source": "RCK-Challenge"
-    },
-    {
-      "series": [
-        {
           "id": "dmc-sm"
         }
       ],
@@ -4365,23 +4342,21 @@
         "id": "current"
       },
       "date": "2025-05-04",
-      "location": "MSG Niesky e.V.",
+      "location": "RIMAR Rhein Ijssel Modell Auto Race",
       "countryCode": "de",
       "title": "SM-Lauf",
       "regions": [
         {
-          "id": "east"
+          "id": "west"
         }
       ],
       "club": {
-        "name": "MSG Niesky e.V.",
+        "name": "RIMAR Rhein Ijssel Modell Auto Race",
         "aliases": [],
-        "dmcClubNumber": 387,
-        "myrcmClubNumbers": [
-          46202
-        ],
+        "dmcClubNumber": 303,
+        "myrcmClubNumbers": [],
         "region": {
-          "id": "east"
+          "id": "west"
         }
       },
       "source": "DMC"
@@ -4406,6 +4381,31 @@
       ],
       "club": null,
       "source": "KleinSerie"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-04",
+      "location": "MAC Uetersen e.V.",
+      "countryCode": "de",
+      "title": "SH-Cup",
+      "regions": [
+        {
+          "id": "north"
+        }
+      ],
+      "club": {
+        "name": "MAC Uetersen e.V.",
+        "aliases": [],
+        "dmcClubNumber": 327,
+        "myrcmClubNumbers": [],
+        "region": {
+          "id": "north"
+        }
+      },
+      "source": "DMC"
     },
     {
       "series": [
@@ -4444,18 +4444,130 @@
         "id": "current"
       },
       "date": "2025-05-11",
-      "location": "Drei-Burgen-Ring",
+      "location": "RCCC Hilter",
       "countryCode": "de",
-      "title": "1. Lauf zum Ostbayernpokal 2025",
+      "title": "3. Clublauf",
       "regions": [],
       "club": {
-        "name": "MSC Riedenburg",
+        "name": "RCCC Hilter e.V.",
+        "aliases": [
+          "RCCC Hilter"
+        ],
+        "dmcClubNumber": 298,
+        "myrcmClubNumbers": [],
+        "region": {
+          "id": "north"
+        }
+      },
+      "source": "rccar-online.de"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-11",
+      "location": "MBC Oberlausitz e.V. in Lauba",
+      "countryCode": "de",
+      "title": "2. Lauf Oberlausitzcup 2025",
+      "regions": [],
+      "club": {
+        "name": "OLC - Oberlausitzcup",
         "aliases": [],
         "dmcClubNumber": null,
         "myrcmClubNumbers": [],
         "region": null
       },
       "source": "rccar-online.de"
+    },
+    {
+      "series": [
+        {
+          "id": "dmc-sm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-11",
+      "location": "AMC Langenfeld e.V.",
+      "countryCode": "de",
+      "title": "SM-Lauf",
+      "regions": [
+        {
+          "id": "west"
+        }
+      ],
+      "club": {
+        "name": "AMC Langenfeld e.V.",
+        "aliases": [],
+        "dmcClubNumber": 60,
+        "myrcmClubNumbers": [],
+        "region": {
+          "id": "west"
+        }
+      },
+      "source": "DMC"
+    },
+    {
+      "series": [
+        {
+          "id": "dmc-sm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-11",
+      "location": "MAC Meckenheim e.V.",
+      "countryCode": "de",
+      "title": "SM-Lauf",
+      "regions": [
+        {
+          "id": "west"
+        }
+      ],
+      "club": {
+        "name": "MAC Meckenheim e.V.",
+        "aliases": [
+          "MAC-Meckenheim e.V. OV 3/030"
+        ],
+        "dmcClubNumber": 30,
+        "myrcmClubNumbers": [],
+        "region": {
+          "id": "west"
+        }
+      },
+      "source": "DMC"
+    },
+    {
+      "series": [
+        {
+          "id": "dmc-sm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-11",
+      "location": "BOC Kiel e.V.",
+      "countryCode": "de",
+      "title": "SM-Lauf",
+      "regions": [
+        {
+          "id": "north"
+        }
+      ],
+      "club": {
+        "name": "BOC Kiel e.V.",
+        "aliases": [],
+        "dmcClubNumber": 254,
+        "myrcmClubNumbers": [],
+        "region": {
+          "id": "north"
+        }
+      },
+      "source": "DMC"
     },
     {
       "series": [
@@ -4556,47 +4668,27 @@
         "id": "current"
       },
       "date": "2025-05-11",
-      "location": "AMC Langenfeld e.V.",
+      "location": "RC Speedracer e.V.",
       "countryCode": "de",
       "title": "SM-Lauf",
       "regions": [
         {
-          "id": "west"
+          "id": "east"
         }
       ],
       "club": {
-        "name": "AMC Langenfeld e.V.",
-        "aliases": [],
-        "dmcClubNumber": 60,
+        "name": "RC Speedracer e.V.",
+        "aliases": [
+          "RC Speedracer e.V. OV-055",
+          "RC Speedracer"
+        ],
+        "dmcClubNumber": 55,
         "myrcmClubNumbers": [],
         "region": {
-          "id": "west"
+          "id": "east"
         }
       },
       "source": "DMC"
-    },
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-05-11",
-      "location": "RCCC Hilter",
-      "countryCode": "de",
-      "title": "3. Clublauf",
-      "regions": [],
-      "club": {
-        "name": "RCCC Hilter e.V.",
-        "aliases": [
-          "RCCC Hilter"
-        ],
-        "dmcClubNumber": 298,
-        "myrcmClubNumbers": [],
-        "region": {
-          "id": "north"
-        }
-      },
-      "source": "rccar-online.de"
     },
     {
       "series": [
@@ -4628,6 +4720,88 @@
         }
       },
       "source": "Myrcm"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-11",
+      "location": "Drei-Burgen-Ring",
+      "countryCode": "de",
+      "title": "1. Lauf zum Ostbayernpokal 2025",
+      "regions": [],
+      "club": {
+        "name": "MSC Riedenburg",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [],
+        "region": null
+      },
+      "source": "rccar-online.de"
+    },
+    {
+      "series": [
+        {
+          "id": "challenge"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-11",
+      "location": "Zwickau",
+      "countryCode": "de",
+      "title": "RCK-Challenge",
+      "regions": [
+        {
+          "id": "east"
+        }
+      ],
+      "club": null,
+      "source": "RCK-Challenge"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-11",
+      "location": "MCSS Althengstett outdoor",
+      "countryCode": "de",
+      "title": "1.MCSS-Cup 2025",
+      "regions": [],
+      "club": {
+        "name": "MCSS Althengstett outdoor",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [
+          12227
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
+    },
+    {
+      "series": [
+        {
+          "id": "challenge"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-11",
+      "location": "Marktoberdorf",
+      "countryCode": "de",
+      "title": "RCK-Challenge",
+      "regions": [
+        {
+          "id": "south"
+        }
+      ],
+      "club": null,
+      "source": "RCK-Challenge"
     },
     {
       "series": [
@@ -4664,27 +4838,6 @@
       "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "challenge"
-        }
-      ],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-05-11",
-      "location": "Zwickau",
-      "countryCode": "de",
-      "title": "RCK-Challenge",
-      "regions": [
-        {
-          "id": "east"
-        }
-      ],
-      "club": null,
-      "source": "RCK-Challenge"
-    },
-    {
       "series": [],
       "season": {
         "id": "current"
@@ -4712,217 +4865,6 @@
         "region": {
           "id": "west"
         }
-      },
-      "source": "Myrcm"
-    },
-    {
-      "series": [
-        {
-          "id": "challenge"
-        }
-      ],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-05-11",
-      "location": "Marktoberdorf",
-      "countryCode": "de",
-      "title": "RCK-Challenge",
-      "regions": [
-        {
-          "id": "south"
-        }
-      ],
-      "club": null,
-      "source": "RCK-Challenge"
-    },
-    {
-      "series": [
-        {
-          "id": "dmc-sm"
-        }
-      ],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-05-11",
-      "location": "ASC Potsdam e.V.",
-      "countryCode": "de",
-      "title": "SM-Lauf",
-      "regions": [
-        {
-          "id": "east"
-        }
-      ],
-      "club": {
-        "name": "ASC Potsdam e.V.",
-        "aliases": [],
-        "dmcClubNumber": 236,
-        "myrcmClubNumbers": [
-          26596
-        ],
-        "region": {
-          "id": "east"
-        }
-      },
-      "source": "DMC"
-    },
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-05-11",
-      "location": "RT Fichtenberg e.V.",
-      "countryCode": "de",
-      "title": "offenes Freundschaftsrennen, VM'25 Lauf 1+2",
-      "regions": [
-        {
-          "id": "south"
-        }
-      ],
-      "club": {
-        "name": "RT Fichtenberg e.V.",
-        "aliases": [
-          "RT Fichtenberg"
-        ],
-        "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          25939
-        ],
-        "region": {
-          "id": "south"
-        }
-      },
-      "source": "Myrcm"
-    },
-    {
-      "series": [
-        {
-          "id": "dmc-sm"
-        }
-      ],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-05-11",
-      "location": "RC Speedracer e.V.",
-      "countryCode": "de",
-      "title": "SM-Lauf",
-      "regions": [
-        {
-          "id": "east"
-        }
-      ],
-      "club": {
-        "name": "RC Speedracer e.V.",
-        "aliases": [
-          "RC Speedracer e.V. OV-055",
-          "RC Speedracer"
-        ],
-        "dmcClubNumber": 55,
-        "myrcmClubNumbers": [],
-        "region": {
-          "id": "east"
-        }
-      },
-      "source": "DMC"
-    },
-    {
-      "series": [
-        {
-          "id": "dmc-sm"
-        }
-      ],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-05-11",
-      "location": "BOC Kiel e.V.",
-      "countryCode": "de",
-      "title": "SM-Lauf",
-      "regions": [
-        {
-          "id": "north"
-        }
-      ],
-      "club": {
-        "name": "BOC Kiel e.V.",
-        "aliases": [],
-        "dmcClubNumber": 254,
-        "myrcmClubNumbers": [],
-        "region": {
-          "id": "north"
-        }
-      },
-      "source": "DMC"
-    },
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-05-11",
-      "location": "MBC Oberlausitz e.V. in Lauba",
-      "countryCode": "de",
-      "title": "2. Lauf Oberlausitzcup 2025",
-      "regions": [],
-      "club": {
-        "name": "OLC - Oberlausitzcup",
-        "aliases": [],
-        "dmcClubNumber": null,
-        "myrcmClubNumbers": [],
-        "region": null
-      },
-      "source": "rccar-online.de"
-    },
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-05-11",
-      "location": "MAC Meckenheim e.V.",
-      "countryCode": "de",
-      "title": "1.Lauf MAC-Challenge & DMC SK-Lauf West",
-      "regions": [
-        {
-          "id": "west"
-        }
-      ],
-      "club": {
-        "name": "MAC Meckenheim e.V.",
-        "aliases": [
-          "MAC-Meckenheim e.V. OV 3/030"
-        ],
-        "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          49037
-        ],
-        "region": {
-          "id": "west"
-        }
-      },
-      "source": "Myrcm"
-    },
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-05-11",
-      "location": "MCSS Althengstett outdoor",
-      "countryCode": "de",
-      "title": "1.MCSS-Cup 2025",
-      "regions": [],
-      "club": {
-        "name": "MCSS Althengstett outdoor",
-        "aliases": [],
-        "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          12227
-        ],
-        "region": null
       },
       "source": "Myrcm"
     },
@@ -4956,18 +4898,43 @@
       "source": "Myrcm"
     },
     {
-      "series": [
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-11",
+      "location": "RT Fichtenberg e.V.",
+      "countryCode": "de",
+      "title": "offenes Freundschaftsrennen, VM'25 Lauf 1+2",
+      "regions": [
         {
-          "id": "dmc-sm"
+          "id": "south"
         }
       ],
+      "club": {
+        "name": "RT Fichtenberg e.V.",
+        "aliases": [
+          "RT Fichtenberg"
+        ],
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [
+          25939
+        ],
+        "region": {
+          "id": "south"
+        }
+      },
+      "source": "Myrcm"
+    },
+    {
+      "series": [],
       "season": {
         "id": "current"
       },
       "date": "2025-05-11",
       "location": "MAC Meckenheim e.V.",
       "countryCode": "de",
-      "title": "SM-Lauf",
+      "title": "1.Lauf MAC-Challenge & DMC SK-Lauf West",
       "regions": [
         {
           "id": "west"
@@ -4978,40 +4945,46 @@
         "aliases": [
           "MAC-Meckenheim e.V. OV 3/030"
         ],
-        "dmcClubNumber": 30,
-        "myrcmClubNumbers": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [
+          49037
+        ],
         "region": {
           "id": "west"
         }
       },
-      "source": "DMC"
+      "source": "Myrcm"
     },
     {
-      "series": [],
+      "series": [
+        {
+          "id": "dmc-sm"
+        }
+      ],
       "season": {
         "id": "current"
       },
-      "date": "2025-05-17",
-      "location": "RCSF-Singen e.V.",
+      "date": "2025-05-11",
+      "location": "ASC Potsdam e.V.",
       "countryCode": "de",
-      "title": "2. Clubrennen 2025",
+      "title": "SM-Lauf",
       "regions": [
         {
-          "id": "south"
+          "id": "east"
         }
       ],
       "club": {
-        "name": "RCSF-Singen e.V.",
+        "name": "ASC Potsdam e.V.",
         "aliases": [],
-        "dmcClubNumber": null,
+        "dmcClubNumber": 236,
         "myrcmClubNumbers": [
-          16961
+          26596
         ],
         "region": {
-          "id": "south"
+          "id": "east"
         }
       },
-      "source": "Myrcm"
+      "source": "DMC"
     },
     {
       "series": [
@@ -5108,24 +5081,24 @@
       "season": {
         "id": "current"
       },
-      "date": "2025-05-18",
-      "location": "MRC-Leipzig e.V.",
+      "date": "2025-05-17",
+      "location": "RCSF-Singen e.V.",
       "countryCode": "de",
-      "title": "Internationaler RC Bike Grandeprix von Deutschland",
+      "title": "2. Clubrennen 2025",
       "regions": [
         {
-          "id": "east"
+          "id": "south"
         }
       ],
       "club": {
-        "name": "MRC-Leipzig e.V.",
+        "name": "RCSF-Singen e.V.",
         "aliases": [],
         "dmcClubNumber": null,
         "myrcmClubNumbers": [
-          713
+          16961
         ],
         "region": {
-          "id": "east"
+          "id": "south"
         }
       },
       "source": "Myrcm"
@@ -5198,6 +5171,27 @@
         "id": "current"
       },
       "date": "2025-05-18",
+      "location": "MBSC Wächtersbach",
+      "countryCode": "de",
+      "title": "MBSC Sunday League Round 1",
+      "regions": [],
+      "club": {
+        "name": "MBSC Wächtersbach",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [
+          49540
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-18",
       "location": "RC Speedracer e.V.",
       "countryCode": "de",
       "title": "SK-Lauf / Tonisport Onroard Serie",
@@ -5219,27 +5213,6 @@
         "region": {
           "id": "east"
         }
-      },
-      "source": "Myrcm"
-    },
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-05-18",
-      "location": "MBSC Wächtersbach",
-      "countryCode": "de",
-      "title": "MBSC Sunday League Round 1",
-      "regions": [],
-      "club": {
-        "name": "MBSC Wächtersbach",
-        "aliases": [],
-        "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          49540
-        ],
-        "region": null
       },
       "source": "Myrcm"
     },
@@ -5276,6 +5249,165 @@
         "id": "current"
       },
       "date": "2025-05-18",
+      "location": "RC-Sonntagsfahrer e.V.",
+      "countryCode": "de",
+      "title": "MRS Funcup 18.05.2025",
+      "regions": [],
+      "club": {
+        "name": "RC-Sonntagsfahrer e.V.",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [
+          50693
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
+    },
+    {
+      "series": [
+        {
+          "id": "kleinserie"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-18",
+      "location": "Salzbergen",
+      "countryCode": "de",
+      "title": "Kleinserie",
+      "regions": [
+        {
+          "id": "north"
+        },
+        {
+          "id": "west"
+        }
+      ],
+      "club": null,
+      "source": "KleinSerie"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-18",
+      "location": "MRC-Leipzig e.V.",
+      "countryCode": "de",
+      "title": "Internationaler RC Bike Grandeprix von Deutschland",
+      "regions": [
+        {
+          "id": "east"
+        }
+      ],
+      "club": {
+        "name": "MRC-Leipzig e.V.",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [
+          713
+        ],
+        "region": {
+          "id": "east"
+        }
+      },
+      "source": "Myrcm"
+    },
+    {
+      "series": [
+        {
+          "id": "dmc-sm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-18",
+      "location": "MRC Leipzig e.V.",
+      "countryCode": "de",
+      "title": "SM-Lauf",
+      "regions": [
+        {
+          "id": "east"
+        }
+      ],
+      "club": {
+        "name": "MRC Leipzig e.V.",
+        "aliases": [],
+        "dmcClubNumber": 61,
+        "myrcmClubNumbers": [],
+        "region": {
+          "id": "east"
+        }
+      },
+      "source": "DMC"
+    },
+    {
+      "series": [
+        {
+          "id": "dmc-sm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-18",
+      "location": "MC Munster e.V.",
+      "countryCode": "de",
+      "title": "SM-Lauf",
+      "regions": [
+        {
+          "id": "north"
+        }
+      ],
+      "club": {
+        "name": "MC Munster e.V.",
+        "aliases": [],
+        "dmcClubNumber": 221,
+        "myrcmClubNumbers": [],
+        "region": {
+          "id": "north"
+        }
+      },
+      "source": "DMC"
+    },
+    {
+      "series": [
+        {
+          "id": "dmc-sm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-18",
+      "location": "MAC Burgdorf e.V.",
+      "countryCode": "de",
+      "title": "SM-Lauf",
+      "regions": [
+        {
+          "id": "north"
+        }
+      ],
+      "club": {
+        "name": "MAC Burgdorf e.V.",
+        "aliases": [],
+        "dmcClubNumber": 227,
+        "myrcmClubNumbers": [],
+        "region": {
+          "id": "north"
+        }
+      },
+      "source": "DMC"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-18",
       "location": "MAC Burgdorf e.V.",
       "countryCode": "de",
       "title": "Freundschaftsrennen",
@@ -5305,7 +5437,7 @@
         "id": "current"
       },
       "date": "2025-05-18",
-      "location": "MAC Burgdorf e.V.",
+      "location": "Offroad Club Ostsee e.V.",
       "countryCode": "de",
       "title": "SM-Lauf",
       "regions": [
@@ -5314,38 +5446,9 @@
         }
       ],
       "club": {
-        "name": "MAC Burgdorf e.V.",
+        "name": "Offroad Club Ostsee e.V.",
         "aliases": [],
-        "dmcClubNumber": 227,
-        "myrcmClubNumbers": [],
-        "region": {
-          "id": "north"
-        }
-      },
-      "source": "DMC"
-    },
-    {
-      "series": [
-        {
-          "id": "dmc-sm"
-        }
-      ],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-05-18",
-      "location": "MC Munster e.V.",
-      "countryCode": "de",
-      "title": "SM-Lauf",
-      "regions": [
-        {
-          "id": "north"
-        }
-      ],
-      "club": {
-        "name": "MC Munster e.V.",
-        "aliases": [],
-        "dmcClubNumber": 221,
+        "dmcClubNumber": 341,
         "myrcmClubNumbers": [],
         "region": {
           "id": "north"
@@ -5386,88 +5489,6 @@
       "source": "DMC"
     },
     {
-      "series": [
-        {
-          "id": "dmc-sm"
-        }
-      ],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-05-18",
-      "location": "Offroad Club Ostsee e.V.",
-      "countryCode": "de",
-      "title": "SM-Lauf",
-      "regions": [
-        {
-          "id": "north"
-        }
-      ],
-      "club": {
-        "name": "Offroad Club Ostsee e.V.",
-        "aliases": [],
-        "dmcClubNumber": 341,
-        "myrcmClubNumbers": [],
-        "region": {
-          "id": "north"
-        }
-      },
-      "source": "DMC"
-    },
-    {
-      "series": [
-        {
-          "id": "kleinserie"
-        }
-      ],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-05-18",
-      "location": "Salzbergen",
-      "countryCode": "de",
-      "title": "Kleinserie",
-      "regions": [
-        {
-          "id": "north"
-        },
-        {
-          "id": "west"
-        }
-      ],
-      "club": null,
-      "source": "KleinSerie"
-    },
-    {
-      "series": [
-        {
-          "id": "dmc-sm"
-        }
-      ],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-05-18",
-      "location": "MRC Leipzig e.V.",
-      "countryCode": "de",
-      "title": "SM-Lauf",
-      "regions": [
-        {
-          "id": "east"
-        }
-      ],
-      "club": {
-        "name": "MRC Leipzig e.V.",
-        "aliases": [],
-        "dmcClubNumber": 61,
-        "myrcmClubNumbers": [],
-        "region": {
-          "id": "east"
-        }
-      },
-      "source": "DMC"
-    },
-    {
       "series": [],
       "season": {
         "id": "current"
@@ -5498,21 +5519,106 @@
         "id": "current"
       },
       "date": "2025-05-25",
-      "location": "AMC Senftenberg",
+      "location": "ORMC Königsbrunn",
       "countryCode": "de",
-      "title": "Freundschaftsrennen",
+      "title": "3. Lauf zum Königspokal 2025",
       "regions": [
         {
-          "id": "east"
+          "id": "south"
         }
       ],
       "club": {
-        "name": "AMC Senftenberg",
+        "name": "ORMC Königsbrunn",
         "aliases": [],
-        "dmcClubNumber": 360,
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [
+          573
+        ],
+        "region": {
+          "id": "south"
+        }
+      },
+      "source": "Myrcm"
+    },
+    {
+      "series": [
+        {
+          "id": "tec"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-25",
+      "location": "Modellclub Flensburg e.V.",
+      "countryCode": "de",
+      "title": "8. Lauf TAMIYA EURO-CUP MC Flensburg 2024/25",
+      "regions": [
+        {
+          "id": "north"
+        }
+      ],
+      "club": {
+        "name": "Modellclub Flensburg e.V.",
+        "aliases": [
+          "Modellclub Flensburg e. V."
+        ],
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [
+          42405
+        ],
+        "region": {
+          "id": "north"
+        }
+      },
+      "source": "Myrcm"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-25",
+      "location": "MAC-Hamburg e.V.",
+      "countryCode": "de",
+      "title": "SK-Lauf   EG8GT, EG8GT3, EG8e",
+      "regions": [],
+      "club": {
+        "name": "MAC-Hamburg e.V.",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [
+          20622
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
+    },
+    {
+      "series": [
+        {
+          "id": "dmc-sm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-25",
+      "location": "MSV Hürtgenwald e.V.",
+      "countryCode": "de",
+      "title": "SM-Lauf",
+      "regions": [
+        {
+          "id": "west"
+        }
+      ],
+      "club": {
+        "name": "MSV Hürtgenwald e.V.",
+        "aliases": [],
+        "dmcClubNumber": 181,
         "myrcmClubNumbers": [],
         "region": {
-          "id": "east"
+          "id": "west"
         }
       },
       "source": "DMC"
@@ -5555,7 +5661,7 @@
       "date": "2025-05-25",
       "location": "ASC Potsdam e.V.",
       "countryCode": "de",
-      "title": "Freundschaftsrennen",
+      "title": "TAMICO-Offroad-Cup 2025",
       "regions": [
         {
           "id": "east"
@@ -5564,7 +5670,7 @@
       "club": {
         "name": "ASC Potsdam e.V.",
         "aliases": [],
-        "dmcClubNumber": 236,
+        "dmcClubNumber": null,
         "myrcmClubNumbers": [
           26596
         ],
@@ -5572,7 +5678,7 @@
           "id": "east"
         }
       },
-      "source": "DMC"
+      "source": "Myrcm"
     },
     {
       "series": [],
@@ -5580,24 +5686,18 @@
         "id": "current"
       },
       "date": "2025-05-25",
-      "location": "ORMC Königsbrunn",
+      "location": "„TONISPORT GmbH Modellsport  ENS“",
       "countryCode": "de",
-      "title": "3. Lauf zum Königspokal 2025",
-      "regions": [
-        {
-          "id": "south"
-        }
-      ],
+      "title": "Euro NITRO Series Onroad Round 1 ETTLINGEN / GER",
+      "regions": [],
       "club": {
-        "name": "ORMC Königsbrunn",
+        "name": "„TONISPORT GmbH Modellsport  ENS“",
         "aliases": [],
         "dmcClubNumber": null,
         "myrcmClubNumbers": [
-          573
+          2047
         ],
-        "region": {
-          "id": "south"
-        }
+        "region": null
       },
       "source": "Myrcm"
     },
@@ -5627,6 +5727,38 @@
       "source": "DMC"
     },
     {
+      "series": [
+        {
+          "id": "dmc-sm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-25",
+      "location": "RC Speedracer e.V.",
+      "countryCode": "de",
+      "title": "SM-Lauf",
+      "regions": [
+        {
+          "id": "east"
+        }
+      ],
+      "club": {
+        "name": "RC Speedracer e.V.",
+        "aliases": [
+          "RC Speedracer e.V. OV-055",
+          "RC Speedracer"
+        ],
+        "dmcClubNumber": 55,
+        "myrcmClubNumbers": [],
+        "region": {
+          "id": "east"
+        }
+      },
+      "source": "DMC"
+    },
+    {
       "series": [],
       "season": {
         "id": "current"
@@ -5634,7 +5766,7 @@
       "date": "2025-05-25",
       "location": "ASC Potsdam e.V.",
       "countryCode": "de",
-      "title": "TAMICO-Offroad-Cup 2025",
+      "title": "Freundschaftsrennen",
       "regions": [
         {
           "id": "east"
@@ -5643,7 +5775,7 @@
       "club": {
         "name": "ASC Potsdam e.V.",
         "aliases": [],
-        "dmcClubNumber": null,
+        "dmcClubNumber": 236,
         "myrcmClubNumbers": [
           26596
         ],
@@ -5651,7 +5783,32 @@
           "id": "east"
         }
       },
-      "source": "Myrcm"
+      "source": "DMC"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-25",
+      "location": "AMC Senftenberg",
+      "countryCode": "de",
+      "title": "Freundschaftsrennen",
+      "regions": [
+        {
+          "id": "east"
+        }
+      ],
+      "club": {
+        "name": "AMC Senftenberg",
+        "aliases": [],
+        "dmcClubNumber": 360,
+        "myrcmClubNumbers": [],
+        "region": {
+          "id": "east"
+        }
+      },
+      "source": "DMC"
     },
     {
       "series": [],
@@ -5673,97 +5830,6 @@
           "Modellsport Münsterland"
         ],
         "dmcClubNumber": 240,
-        "myrcmClubNumbers": [],
-        "region": {
-          "id": "west"
-        }
-      },
-      "source": "DMC"
-    },
-    {
-      "series": [
-        {
-          "id": "dmc-sm"
-        }
-      ],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-05-25",
-      "location": "MAC Hamburg e.V.",
-      "countryCode": "de",
-      "title": "SM-Lauf",
-      "regions": [
-        {
-          "id": "north"
-        }
-      ],
-      "club": {
-        "name": "MAC Hamburg e.V.",
-        "aliases": [],
-        "dmcClubNumber": 24,
-        "myrcmClubNumbers": [],
-        "region": {
-          "id": "north"
-        }
-      },
-      "source": "DMC"
-    },
-    {
-      "series": [
-        {
-          "id": "tec"
-        }
-      ],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-05-25",
-      "location": "Modellclub Flensburg e.V.",
-      "countryCode": "de",
-      "title": "8. Lauf TAMIYA EURO-CUP MC Flensburg 2024/25",
-      "regions": [
-        {
-          "id": "north"
-        }
-      ],
-      "club": {
-        "name": "Modellclub Flensburg e.V.",
-        "aliases": [
-          "Modellclub Flensburg e. V."
-        ],
-        "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          42405
-        ],
-        "region": {
-          "id": "north"
-        }
-      },
-      "source": "Myrcm"
-    },
-    {
-      "series": [
-        {
-          "id": "dmc-sm"
-        }
-      ],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-05-25",
-      "location": "MSV Hürtgenwald e.V.",
-      "countryCode": "de",
-      "title": "SM-Lauf",
-      "regions": [
-        {
-          "id": "west"
-        }
-      ],
-      "club": {
-        "name": "MSV Hürtgenwald e.V.",
-        "aliases": [],
-        "dmcClubNumber": 181,
         "myrcmClubNumbers": [],
         "region": {
           "id": "west"
@@ -5916,48 +5982,24 @@
         "id": "current"
       },
       "date": "2025-05-25",
-      "location": "RC Speedracer e.V.",
+      "location": "MAC Hamburg e.V.",
       "countryCode": "de",
       "title": "SM-Lauf",
       "regions": [
         {
-          "id": "east"
+          "id": "north"
         }
       ],
       "club": {
-        "name": "RC Speedracer e.V.",
-        "aliases": [
-          "RC Speedracer e.V. OV-055",
-          "RC Speedracer"
-        ],
-        "dmcClubNumber": 55,
+        "name": "MAC Hamburg e.V.",
+        "aliases": [],
+        "dmcClubNumber": 24,
         "myrcmClubNumbers": [],
         "region": {
-          "id": "east"
+          "id": "north"
         }
       },
       "source": "DMC"
-    },
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-05-25",
-      "location": "MAC-Hamburg e.V.",
-      "countryCode": "de",
-      "title": "SK-Lauf   EG8GT, EG8GT3, EG8e",
-      "regions": [],
-      "club": {
-        "name": "MAC-Hamburg e.V.",
-        "aliases": [],
-        "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          20622
-        ],
-        "region": null
-      },
-      "source": "Myrcm"
     },
     {
       "series": [],
@@ -6018,26 +6060,31 @@
     {
       "series": [
         {
-          "id": "challenge"
+          "id": "dmc-sm"
         }
       ],
       "season": {
         "id": "current"
       },
       "date": "2025-05-31",
-      "location": "Bad Breisig",
+      "location": "MRC Leipzig e.V.",
       "countryCode": "de",
-      "title": "RCK-Challenge",
+      "title": "SM-Lauf",
       "regions": [
         {
-          "id": "central"
-        },
-        {
-          "id": "west"
+          "id": "east"
         }
       ],
-      "club": null,
-      "source": "RCK-Challenge"
+      "club": {
+        "name": "MRC Leipzig e.V.",
+        "aliases": [],
+        "dmcClubNumber": 61,
+        "myrcmClubNumbers": [],
+        "region": {
+          "id": "east"
+        }
+      },
+      "source": "DMC"
     },
     {
       "series": [],
@@ -6067,28 +6114,174 @@
     {
       "series": [
         {
-          "id": "dmc-sm"
+          "id": "challenge"
         }
       ],
       "season": {
         "id": "current"
       },
       "date": "2025-05-31",
-      "location": "MRC Leipzig e.V.",
+      "location": "Bad Breisig",
       "countryCode": "de",
-      "title": "SM-Lauf",
+      "title": "RCK-Challenge",
+      "regions": [
+        {
+          "id": "central"
+        },
+        {
+          "id": "west"
+        }
+      ],
+      "club": null,
+      "source": "RCK-Challenge"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-06-01",
+      "location": "RC Arena Schwedt",
+      "countryCode": "de",
+      "title": "Vatertagsrennen 2025",
+      "regions": [],
+      "club": {
+        "name": "Modellclub Schwedt e.V.",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [],
+        "region": null
+      },
+      "source": "rccar-online.de"
+    },
+    {
+      "series": [
+        {
+          "id": "kleinserie"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-06-01",
+      "location": "Bad Breisig",
+      "countryCode": "de",
+      "title": "Kleinserie",
+      "regions": [
+        {
+          "id": "central"
+        },
+        {
+          "id": "west"
+        }
+      ],
+      "club": null,
+      "source": "KleinSerie"
+    },
+    {
+      "series": [
+        {
+          "id": "challenge"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-06-01",
+      "location": "Greuthof",
+      "countryCode": "de",
+      "title": "RCK-Challenge",
+      "regions": [
+        {
+          "id": "south"
+        }
+      ],
+      "club": null,
+      "source": "RCK-Challenge"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-06-01",
+      "location": "MC Schwedt e.V.",
+      "countryCode": "de",
+      "title": "Freundschaftsrennen",
       "regions": [
         {
           "id": "east"
         }
       ],
       "club": {
-        "name": "MRC Leipzig e.V.",
+        "name": "MC Schwedt e.V.",
         "aliases": [],
-        "dmcClubNumber": 61,
+        "dmcClubNumber": 65,
         "myrcmClubNumbers": [],
         "region": {
           "id": "east"
+        }
+      },
+      "source": "DMC"
+    },
+    {
+      "series": [
+        {
+          "id": "dmc-sm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-06-01",
+      "location": "RT Fichtenberg e.V.",
+      "countryCode": "de",
+      "title": "SM-Lauf",
+      "regions": [
+        {
+          "id": "south"
+        }
+      ],
+      "club": {
+        "name": "RT Fichtenberg e.V.",
+        "aliases": [
+          "RT Fichtenberg"
+        ],
+        "dmcClubNumber": 76,
+        "myrcmClubNumbers": [
+          25939
+        ],
+        "region": {
+          "id": "south"
+        }
+      },
+      "source": "DMC"
+    },
+    {
+      "series": [
+        {
+          "id": "dmc-sm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-06-01",
+      "location": "MSC Sand e.V.",
+      "countryCode": "de",
+      "title": "SM-Lauf",
+      "regions": [
+        {
+          "id": "south"
+        }
+      ],
+      "club": {
+        "name": "MSC Sand e.V.",
+        "aliases": [],
+        "dmcClubNumber": 349,
+        "myrcmClubNumbers": [],
+        "region": {
+          "id": "south"
         }
       },
       "source": "DMC"
@@ -6132,69 +6325,6 @@
         "id": "current"
       },
       "date": "2025-06-01",
-      "location": "RC Arena Schwedt",
-      "countryCode": "de",
-      "title": "Vatertagsrennen 2025",
-      "regions": [],
-      "club": {
-        "name": "Modellclub Schwedt e.V.",
-        "aliases": [],
-        "dmcClubNumber": null,
-        "myrcmClubNumbers": [],
-        "region": null
-      },
-      "source": "rccar-online.de"
-    },
-    {
-      "series": [
-        {
-          "id": "challenge"
-        }
-      ],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-06-01",
-      "location": "Greuthof",
-      "countryCode": "de",
-      "title": "RCK-Challenge",
-      "regions": [
-        {
-          "id": "south"
-        }
-      ],
-      "club": null,
-      "source": "RCK-Challenge"
-    },
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-06-01",
-      "location": "Tonisport",
-      "countryCode": "de",
-      "title": "Cayote Euro Touring Series ROUND 1 Apeldoorn/ NL",
-      "regions": [],
-      "club": {
-        "name": "Tonisport",
-        "aliases": [
-          "„TONISPORT GmbH Modellsport  ETS“"
-        ],
-        "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          2047
-        ],
-        "region": null
-      },
-      "source": "Myrcm"
-    },
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-06-01",
       "location": "ASC Celle e.V.",
       "countryCode": "de",
       "title": "Freundschaftsrennen",
@@ -6243,109 +6373,6 @@
         ],
         "region": {
           "id": "north"
-        }
-      },
-      "source": "DMC"
-    },
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-06-01",
-      "location": "RC Offroad Staaken e.V.",
-      "countryCode": "de",
-      "title": "Freundschaftsrennen",
-      "regions": [
-        {
-          "id": "east"
-        }
-      ],
-      "club": {
-        "name": "RC Offroad Staaken e.V.",
-        "aliases": [],
-        "dmcClubNumber": 253,
-        "myrcmClubNumbers": [],
-        "region": {
-          "id": "east"
-        }
-      },
-      "source": "DMC"
-    },
-    {
-      "series": [
-        {
-          "id": "kleinserie"
-        }
-      ],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-06-01",
-      "location": "Bad Breisig",
-      "countryCode": "de",
-      "title": "Kleinserie",
-      "regions": [
-        {
-          "id": "central"
-        },
-        {
-          "id": "west"
-        }
-      ],
-      "club": null,
-      "source": "KleinSerie"
-    },
-    {
-      "series": [
-        {
-          "id": "dmc-sm"
-        }
-      ],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-06-01",
-      "location": "MSC Sand e.V.",
-      "countryCode": "de",
-      "title": "SM-Lauf",
-      "regions": [
-        {
-          "id": "south"
-        }
-      ],
-      "club": {
-        "name": "MSC Sand e.V.",
-        "aliases": [],
-        "dmcClubNumber": 349,
-        "myrcmClubNumbers": [],
-        "region": {
-          "id": "south"
-        }
-      },
-      "source": "DMC"
-    },
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-06-01",
-      "location": "MC Schwedt e.V.",
-      "countryCode": "de",
-      "title": "Freundschaftsrennen",
-      "regions": [
-        {
-          "id": "east"
-        }
-      ],
-      "club": {
-        "name": "MC Schwedt e.V.",
-        "aliases": [],
-        "dmcClubNumber": 65,
-        "myrcmClubNumbers": [],
-        "region": {
-          "id": "east"
         }
       },
       "source": "DMC"
@@ -6404,26 +6431,24 @@
         "id": "current"
       },
       "date": "2025-06-01",
-      "location": "MAC Nürnberg e.V.",
+      "location": "RC Offroad Staaken e.V.",
       "countryCode": "de",
-      "title": "2. Vereinsrennen",
+      "title": "Freundschaftsrennen",
       "regions": [
         {
-          "id": "south"
+          "id": "east"
         }
       ],
       "club": {
-        "name": "MAC Nürnberg e.V.",
+        "name": "RC Offroad Staaken e.V.",
         "aliases": [],
-        "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          9976
-        ],
+        "dmcClubNumber": 253,
+        "myrcmClubNumbers": [],
         "region": {
-          "id": "south"
+          "id": "east"
         }
       },
-      "source": "Myrcm"
+      "source": "DMC"
     },
     {
       "series": [],
@@ -6540,37 +6565,54 @@
       "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "dmc-sm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
       "date": "2025-06-01",
-      "location": "RT Fichtenberg e.V.",
+      "location": "Tonisport",
       "countryCode": "de",
-      "title": "SM-Lauf",
+      "title": "Cayote Euro Touring Series ROUND 1 Apeldoorn/ NL",
+      "regions": [],
+      "club": {
+        "name": "Tonisport",
+        "aliases": [
+          "„TONISPORT GmbH Modellsport  ETS“"
+        ],
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [
+          2047
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-06-01",
+      "location": "MAC Nürnberg e.V.",
+      "countryCode": "de",
+      "title": "2. Vereinsrennen",
       "regions": [
         {
           "id": "south"
         }
       ],
       "club": {
-        "name": "RT Fichtenberg e.V.",
-        "aliases": [
-          "RT Fichtenberg"
-        ],
-        "dmcClubNumber": 76,
+        "name": "MAC Nürnberg e.V.",
+        "aliases": [],
+        "dmcClubNumber": null,
         "myrcmClubNumbers": [
-          25939
+          9976
         ],
         "region": {
           "id": "south"
         }
       },
-      "source": "DMC"
+      "source": "Myrcm"
     },
     {
       "series": [],
@@ -6602,23 +6644,31 @@
     {
       "series": [
         {
-          "id": "challenge"
+          "id": "dmc-sm"
         }
       ],
       "season": {
         "id": "current"
       },
       "date": "2025-06-08",
-      "location": "Burgdorf",
+      "location": "RC Haltern e.V.",
       "countryCode": "de",
-      "title": "RCK-Challenge",
+      "title": "SM-Lauf",
       "regions": [
         {
-          "id": "north"
+          "id": "west"
         }
       ],
-      "club": null,
-      "source": "RCK-Challenge"
+      "club": {
+        "name": "RC Haltern e.V.",
+        "aliases": [],
+        "dmcClubNumber": 160,
+        "myrcmClubNumbers": [],
+        "region": {
+          "id": "west"
+        }
+      },
+      "source": "DMC"
     },
     {
       "series": [],
@@ -6704,18 +6754,14 @@
       "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "dmc-sm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
       "date": "2025-06-08",
       "location": "MRSC Amberg e.V.",
       "countryCode": "de",
-      "title": "SM-Lauf",
+      "title": "SK Lauf Süd VG 8 & VG 10 am 07./08.06.2025",
       "regions": [
         {
           "id": "south"
@@ -6724,13 +6770,32 @@
       "club": {
         "name": "MRSC Amberg e.V.",
         "aliases": [],
-        "dmcClubNumber": 202,
+        "dmcClubNumber": null,
         "myrcmClubNumbers": [
           39587
         ],
         "region": {
           "id": "south"
         }
+      },
+      "source": "Myrcm"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-06-08",
+      "location": " Referent OR8 ",
+      "countryCode": "de",
+      "title": "Rennen",
+      "regions": [],
+      "club": {
+        "name": " Referent OR8 ",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [],
+        "region": null
       },
       "source": "DMC"
     },
@@ -6754,35 +6819,6 @@
       ],
       "club": null,
       "source": "KleinSerie"
-    },
-    {
-      "series": [
-        {
-          "id": "dmc-sm"
-        }
-      ],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-06-08",
-      "location": "RC Haltern e.V.",
-      "countryCode": "de",
-      "title": "SM-Lauf",
-      "regions": [
-        {
-          "id": "west"
-        }
-      ],
-      "club": {
-        "name": "RC Haltern e.V.",
-        "aliases": [],
-        "dmcClubNumber": 160,
-        "myrcmClubNumbers": [],
-        "region": {
-          "id": "west"
-        }
-      },
-      "source": "DMC"
     },
     {
       "series": [
@@ -6858,33 +6894,18 @@
       "source": "DMC"
     },
     {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-06-08",
-      "location": " Referent OR8 ",
-      "countryCode": "de",
-      "title": "Rennen",
-      "regions": [],
-      "club": {
-        "name": " Referent OR8 ",
-        "aliases": [],
-        "dmcClubNumber": null,
-        "myrcmClubNumbers": [],
-        "region": null
-      },
-      "source": "DMC"
-    },
-    {
-      "series": [],
+      "series": [
+        {
+          "id": "dmc-sm"
+        }
+      ],
       "season": {
         "id": "current"
       },
       "date": "2025-06-08",
       "location": "MRSC Amberg e.V.",
       "countryCode": "de",
-      "title": "SK Lauf Süd VG 8 & VG 10 am 07./08.06.2025",
+      "title": "SM-Lauf",
       "regions": [
         {
           "id": "south"
@@ -6893,7 +6914,7 @@
       "club": {
         "name": "MRSC Amberg e.V.",
         "aliases": [],
-        "dmcClubNumber": null,
+        "dmcClubNumber": 202,
         "myrcmClubNumbers": [
           39587
         ],
@@ -6901,7 +6922,28 @@
           "id": "south"
         }
       },
-      "source": "Myrcm"
+      "source": "DMC"
+    },
+    {
+      "series": [
+        {
+          "id": "challenge"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-06-08",
+      "location": "Burgdorf",
+      "countryCode": "de",
+      "title": "RCK-Challenge",
+      "regions": [
+        {
+          "id": "north"
+        }
+      ],
+      "club": null,
+      "source": "RCK-Challenge"
     },
     {
       "series": [],
@@ -6931,6 +6973,29 @@
         }
       },
       "source": "DMC"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-06-15",
+      "location": "RCCC Hilter",
+      "countryCode": "de",
+      "title": "4. Clublauf",
+      "regions": [],
+      "club": {
+        "name": "RCCC Hilter e.V.",
+        "aliases": [
+          "RCCC Hilter"
+        ],
+        "dmcClubNumber": 298,
+        "myrcmClubNumbers": [],
+        "region": {
+          "id": "north"
+        }
+      },
+      "source": "rccar-online.de"
     },
     {
       "series": [],
@@ -6993,39 +7058,6 @@
       "source": "DMC"
     },
     {
-      "series": [
-        {
-          "id": "dmc-sm"
-        }
-      ],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-06-15",
-      "location": "ORC-B Göttingen e.V.",
-      "countryCode": "de",
-      "title": "SM-Lauf",
-      "regions": [
-        {
-          "id": "north"
-        }
-      ],
-      "club": {
-        "name": "ORC-B Göttingen e.V.",
-        "aliases": [
-          "ORCB Göttingen e.V."
-        ],
-        "dmcClubNumber": 29,
-        "myrcmClubNumbers": [
-          36113
-        ],
-        "region": {
-          "id": "north"
-        }
-      },
-      "source": "DMC"
-    },
-    {
       "series": [],
       "season": {
         "id": "current"
@@ -7082,6 +7114,29 @@
         }
       },
       "source": "DMC"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-06-15",
+      "location": "Modellsport Münsterland",
+      "countryCode": "de",
+      "title": "Modellsport Münsterland Cup",
+      "regions": [],
+      "club": {
+        "name": "Modellsport Münsterland e.V.",
+        "aliases": [
+          "Modellsport Münsterland"
+        ],
+        "dmcClubNumber": 240,
+        "myrcmClubNumbers": [],
+        "region": {
+          "id": "west"
+        }
+      },
+      "source": "rccar-online.de"
     },
     {
       "series": [
@@ -7184,6 +7239,63 @@
         "id": "current"
       },
       "date": "2025-06-15",
+      "location": "ORC-B Göttingen e.V.",
+      "countryCode": "de",
+      "title": "SM-Lauf",
+      "regions": [
+        {
+          "id": "north"
+        }
+      ],
+      "club": {
+        "name": "ORC-B Göttingen e.V.",
+        "aliases": [
+          "ORCB Göttingen e.V."
+        ],
+        "dmcClubNumber": 29,
+        "myrcmClubNumbers": [
+          36113
+        ],
+        "region": {
+          "id": "north"
+        }
+      },
+      "source": "DMC"
+    },
+    {
+      "series": [
+        {
+          "id": "kleinserie"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-06-15",
+      "location": "Zwickau",
+      "countryCode": "de",
+      "title": "Kleinserie",
+      "regions": [
+        {
+          "id": "south"
+        },
+        {
+          "id": "east"
+        }
+      ],
+      "club": null,
+      "source": "KleinSerie"
+    },
+    {
+      "series": [
+        {
+          "id": "dmc-sm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-06-15",
       "location": "RCCC Coesfeld",
       "countryCode": "de",
       "title": "SM-Lauf",
@@ -7209,98 +7321,25 @@
         "id": "current"
       },
       "date": "2025-06-15",
-      "location": "Modellsport Münsterland",
+      "location": "MSC Halle e.V.",
       "countryCode": "de",
-      "title": "Modellsport Münsterland Cup",
-      "regions": [],
-      "club": {
-        "name": "Modellsport Münsterland e.V.",
-        "aliases": [
-          "Modellsport Münsterland"
-        ],
-        "dmcClubNumber": 240,
-        "myrcmClubNumbers": [],
-        "region": {
-          "id": "west"
-        }
-      },
-      "source": "rccar-online.de"
-    },
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-06-15",
-      "location": "ORC-B Göttingen e.V.",
-      "countryCode": "de",
-      "title": "Freundschaftsrennen",
+      "title": "SK Lauf und Sachsencup 2025",
       "regions": [
         {
-          "id": "north"
+          "id": "east"
         }
       ],
       "club": {
-        "name": "ORC-B Göttingen e.V.",
+        "name": "MSC Halle e.V.",
         "aliases": [
-          "ORCB Göttingen e.V."
+          "Modellsport Club Halle / Saale e.V."
         ],
-        "dmcClubNumber": 29,
-        "myrcmClubNumbers": [
-          36113
-        ],
-        "region": {
-          "id": "north"
-        }
-      },
-      "source": "DMC"
-    },
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-06-15",
-      "location": "RCCC Hilter",
-      "countryCode": "de",
-      "title": "4. Clublauf",
-      "regions": [],
-      "club": {
-        "name": "RCCC Hilter e.V.",
-        "aliases": [
-          "RCCC Hilter"
-        ],
-        "dmcClubNumber": 298,
-        "myrcmClubNumbers": [],
-        "region": {
-          "id": "north"
-        }
-      },
-      "source": "rccar-online.de"
-    },
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-06-15",
-      "location": "IG Racing Team Hamm",
-      "countryCode": "de",
-      "title": "Vereinsmeisterschaft 2025 - Lauf 3",
-      "regions": [
-        {
-          "id": "west"
-        }
-      ],
-      "club": {
-        "name": "IG Racing Team Hamm",
-        "aliases": [],
         "dmcClubNumber": null,
         "myrcmClubNumbers": [
-          10490
+          44811
         ],
         "region": {
-          "id": "west"
+          "id": "east"
         }
       },
       "source": "Myrcm"
@@ -7330,35 +7369,6 @@
         ],
         "region": {
           "id": "west"
-        }
-      },
-      "source": "Myrcm"
-    },
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-06-15",
-      "location": "MSC Halle e.V.",
-      "countryCode": "de",
-      "title": "SK Lauf und Sachsencup 2025",
-      "regions": [
-        {
-          "id": "east"
-        }
-      ],
-      "club": {
-        "name": "MSC Halle e.V.",
-        "aliases": [
-          "Modellsport Club Halle / Saale e.V."
-        ],
-        "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          44811
-        ],
-        "region": {
-          "id": "east"
         }
       },
       "source": "Myrcm"
@@ -7453,28 +7463,60 @@
       "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "kleinserie"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
       "date": "2025-06-15",
-      "location": "Zwickau",
+      "location": "IG Racing Team Hamm",
       "countryCode": "de",
-      "title": "Kleinserie",
+      "title": "Vereinsmeisterschaft 2025 - Lauf 3",
       "regions": [
         {
-          "id": "south"
-        },
-        {
-          "id": "east"
+          "id": "west"
         }
       ],
-      "club": null,
-      "source": "KleinSerie"
+      "club": {
+        "name": "IG Racing Team Hamm",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [
+          10490
+        ],
+        "region": {
+          "id": "west"
+        }
+      },
+      "source": "Myrcm"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-06-15",
+      "location": "ORC-B Göttingen e.V.",
+      "countryCode": "de",
+      "title": "Freundschaftsrennen",
+      "regions": [
+        {
+          "id": "north"
+        }
+      ],
+      "club": {
+        "name": "ORC-B Göttingen e.V.",
+        "aliases": [
+          "ORCB Göttingen e.V."
+        ],
+        "dmcClubNumber": 29,
+        "myrcmClubNumbers": [
+          36113
+        ],
+        "region": {
+          "id": "north"
+        }
+      },
+      "source": "DMC"
     },
     {
       "series": [],
@@ -7498,49 +7540,30 @@
     {
       "series": [
         {
-          "id": "challenge"
+          "id": "tec"
         }
       ],
       "season": {
         "id": "current"
       },
       "date": "2025-06-22",
-      "location": "Braunschweig",
+      "location": "Modellsport Zwönitz e.V.",
       "countryCode": "de",
-      "title": "RCK-Challenge",
+      "title": "Tamiya Euro-Cup Qualifikation",
       "regions": [
         {
-          "id": "north"
-        }
-      ],
-      "club": null,
-      "source": "RCK-Challenge"
-    },
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-06-22",
-      "location": "RC Cars Köngen e.V.",
-      "countryCode": "de",
-      "title": "Race of Summer - ROS2025",
-      "regions": [
-        {
-          "id": "south"
+          "id": "east"
         }
       ],
       "club": {
-        "name": "RC Cars Köngen e.V.",
-        "aliases": [
-          "RC Cars Köngen (OV 162)"
-        ],
+        "name": "Modellsport Zwönitz e.V.",
+        "aliases": [],
         "dmcClubNumber": null,
         "myrcmClubNumbers": [
-          12564
+          60576
         ],
         "region": {
-          "id": "south"
+          "id": "east"
         }
       },
       "source": "Myrcm"
@@ -7594,108 +7617,6 @@
       "source": "Myrcm"
     },
     {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-06-22",
-      "location": "MAC Nürnberg e.V.",
-      "countryCode": "de",
-      "title": "RCK Challenge",
-      "regions": [
-        {
-          "id": "south"
-        }
-      ],
-      "club": {
-        "name": "MAC Nürnberg e.V.",
-        "aliases": [],
-        "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          9976
-        ],
-        "region": {
-          "id": "south"
-        }
-      },
-      "source": "Myrcm"
-    },
-    {
-      "series": [
-        {
-          "id": "tec"
-        }
-      ],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-06-22",
-      "location": "Modellsport Zwönitz e.V.",
-      "countryCode": "de",
-      "title": "Tamiya Euro-Cup Qualifikation",
-      "regions": [
-        {
-          "id": "east"
-        }
-      ],
-      "club": {
-        "name": "Modellsport Zwönitz e.V.",
-        "aliases": [],
-        "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          60576
-        ],
-        "region": {
-          "id": "east"
-        }
-      },
-      "source": "Myrcm"
-    },
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-06-22",
-      "location": "RCCC Hilter",
-      "countryCode": "de",
-      "title": "Elektrocup Nord beim RCCC Hilter - Lauf 4/9",
-      "regions": [],
-      "club": {
-        "name": "RCCC Hilter e.V.",
-        "aliases": [
-          "RCCC Hilter"
-        ],
-        "dmcClubNumber": 298,
-        "myrcmClubNumbers": [],
-        "region": {
-          "id": "north"
-        }
-      },
-      "source": "rccar-online.de"
-    },
-    {
-      "series": [
-        {
-          "id": "challenge"
-        }
-      ],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-06-22",
-      "location": "Lüdinghausen",
-      "countryCode": "de",
-      "title": "RCK-Challenge",
-      "regions": [
-        {
-          "id": "west"
-        }
-      ],
-      "club": null,
-      "source": "RCK-Challenge"
-    },
-    {
       "series": [
         {
           "id": "tec"
@@ -7731,33 +7652,23 @@
     {
       "series": [
         {
-          "id": "dmc-sm"
+          "id": "challenge"
         }
       ],
       "season": {
         "id": "current"
       },
       "date": "2025-06-22",
-      "location": "MCC Türkheim e.V.",
+      "location": "Braunschweig",
       "countryCode": "de",
-      "title": "SM-Lauf",
+      "title": "RCK-Challenge",
       "regions": [
         {
-          "id": "south"
+          "id": "north"
         }
       ],
-      "club": {
-        "name": "MCC Türkheim e.V.",
-        "aliases": [],
-        "dmcClubNumber": 70,
-        "myrcmClubNumbers": [
-          47
-        ],
-        "region": {
-          "id": "south"
-        }
-      },
-      "source": "DMC"
+      "club": null,
+      "source": "RCK-Challenge"
     },
     {
       "series": [],
@@ -7765,21 +7676,121 @@
         "id": "current"
       },
       "date": "2025-06-22",
-      "location": "AMC Langenfeld e.V.",
+      "location": "RC Cars Köngen e.V.",
       "countryCode": "de",
-      "title": "Freundschaftsrennen",
+      "title": "Race of Summer - ROS2025",
+      "regions": [
+        {
+          "id": "south"
+        }
+      ],
+      "club": {
+        "name": "RC Cars Köngen e.V.",
+        "aliases": [
+          "RC Cars Köngen (OV 162)"
+        ],
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [
+          12564
+        ],
+        "region": {
+          "id": "south"
+        }
+      },
+      "source": "Myrcm"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-06-22",
+      "location": "RCCC Hilter",
+      "countryCode": "de",
+      "title": "Elektrocup Nord beim RCCC Hilter - Lauf 4/9",
+      "regions": [],
+      "club": {
+        "name": "RCCC Hilter e.V.",
+        "aliases": [
+          "RCCC Hilter"
+        ],
+        "dmcClubNumber": 298,
+        "myrcmClubNumbers": [],
+        "region": {
+          "id": "north"
+        }
+      },
+      "source": "rccar-online.de"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-06-22",
+      "location": "MAC Nürnberg e.V.",
+      "countryCode": "de",
+      "title": "RCK Challenge",
+      "regions": [
+        {
+          "id": "south"
+        }
+      ],
+      "club": {
+        "name": "MAC Nürnberg e.V.",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [
+          9976
+        ],
+        "region": {
+          "id": "south"
+        }
+      },
+      "source": "Myrcm"
+    },
+    {
+      "series": [
+        {
+          "id": "challenge"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-06-22",
+      "location": "Lüdinghausen",
+      "countryCode": "de",
+      "title": "RCK-Challenge",
       "regions": [
         {
           "id": "west"
         }
       ],
+      "club": null,
+      "source": "RCK-Challenge"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-06-22",
+      "location": "MC Munster e.V.",
+      "countryCode": "de",
+      "title": "Freundschaftsrennen",
+      "regions": [
+        {
+          "id": "north"
+        }
+      ],
       "club": {
-        "name": "AMC Langenfeld e.V.",
+        "name": "MC Munster e.V.",
         "aliases": [],
-        "dmcClubNumber": 60,
+        "dmcClubNumber": 221,
         "myrcmClubNumbers": [],
         "region": {
-          "id": "west"
+          "id": "north"
         }
       },
       "source": "DMC"
@@ -7886,26 +7897,57 @@
       "source": "DMC"
     },
     {
+      "series": [
+        {
+          "id": "dmc-sm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-06-22",
+      "location": "MCC Türkheim e.V.",
+      "countryCode": "de",
+      "title": "SM-Lauf",
+      "regions": [
+        {
+          "id": "south"
+        }
+      ],
+      "club": {
+        "name": "MCC Türkheim e.V.",
+        "aliases": [],
+        "dmcClubNumber": 70,
+        "myrcmClubNumbers": [
+          47
+        ],
+        "region": {
+          "id": "south"
+        }
+      },
+      "source": "DMC"
+    },
+    {
       "series": [],
       "season": {
         "id": "current"
       },
       "date": "2025-06-22",
-      "location": "MC Munster e.V.",
+      "location": "AMC Langenfeld e.V.",
       "countryCode": "de",
       "title": "Freundschaftsrennen",
       "regions": [
         {
-          "id": "north"
+          "id": "west"
         }
       ],
       "club": {
-        "name": "MC Munster e.V.",
+        "name": "AMC Langenfeld e.V.",
         "aliases": [],
-        "dmcClubNumber": 221,
+        "dmcClubNumber": 60,
         "myrcmClubNumbers": [],
         "region": {
-          "id": "north"
+          "id": "west"
         }
       },
       "source": "DMC"
@@ -7974,6 +8016,29 @@
         "id": "current"
       },
       "date": "2025-06-28",
+      "location": "Modellsport Münsterland",
+      "countryCode": "de",
+      "title": "4 Stunden Teamrennen bei Modellsport Münsterland",
+      "regions": [],
+      "club": {
+        "name": "Modellsport Münsterland e.V.",
+        "aliases": [
+          "Modellsport Münsterland"
+        ],
+        "dmcClubNumber": 240,
+        "myrcmClubNumbers": [],
+        "region": {
+          "id": "west"
+        }
+      },
+      "source": "rccar-online.de"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-06-28",
       "location": "Minidrom Essen",
       "countryCode": "de",
       "title": "10. MSC - Pokal Saison 2024/2025",
@@ -7992,23 +8057,50 @@
       "season": {
         "id": "current"
       },
-      "date": "2025-06-28",
-      "location": "Modellsport Münsterland",
+      "date": "2025-06-29",
+      "location": "MCSS Althengstett outdoor",
       "countryCode": "de",
-      "title": "4 Stunden Teamrennen bei Modellsport Münsterland",
+      "title": "3.MCSS-Cup 2025",
       "regions": [],
       "club": {
-        "name": "Modellsport Münsterland e.V.",
-        "aliases": [
-          "Modellsport Münsterland"
+        "name": "MCSS Althengstett outdoor",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [
+          12227
         ],
-        "dmcClubNumber": 240,
-        "myrcmClubNumbers": [],
+        "region": null
+      },
+      "source": "Myrcm"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-06-29",
+      "location": "MRC Senden e.V.",
+      "countryCode": "de",
+      "title": "Deutsche Meisterschaft ORT / ORET 2025",
+      "regions": [
+        {
+          "id": "south"
+        }
+      ],
+      "club": {
+        "name": "MRC Senden e.V.",
+        "aliases": [
+          "MRC Senden"
+        ],
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [
+          61183
+        ],
         "region": {
-          "id": "west"
+          "id": "south"
         }
       },
-      "source": "rccar-online.de"
+      "source": "Myrcm"
     },
     {
       "series": [],
@@ -8073,6 +8165,33 @@
         "id": "current"
       },
       "date": "2025-06-29",
+      "location": "RCS Offroad Staaken",
+      "countryCode": "de",
+      "title": "3.RCS-CUP",
+      "regions": [
+        {
+          "id": "east"
+        }
+      ],
+      "club": {
+        "name": "RCS Offroad Staaken",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [
+          55317
+        ],
+        "region": {
+          "id": "east"
+        }
+      },
+      "source": "Myrcm"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-06-29",
       "location": "MAC Mettenheim e.V.",
       "countryCode": "de",
       "title": "Mettenheim Masters Juni 2025",
@@ -8083,27 +8202,6 @@
         "dmcClubNumber": null,
         "myrcmClubNumbers": [
           891
-        ],
-        "region": null
-      },
-      "source": "Myrcm"
-    },
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-06-29",
-      "location": "MCSS Althengstett outdoor",
-      "countryCode": "de",
-      "title": "3.MCSS-Cup 2025",
-      "regions": [],
-      "club": {
-        "name": "MCSS Althengstett outdoor",
-        "aliases": [],
-        "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          12227
         ],
         "region": null
       },
@@ -8144,54 +8242,6 @@
       "source": "Myrcm"
     },
     {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-06-29",
-      "location": "RCS Offroad Staaken",
-      "countryCode": "de",
-      "title": "3.RCS-CUP",
-      "regions": [
-        {
-          "id": "east"
-        }
-      ],
-      "club": {
-        "name": "RCS Offroad Staaken",
-        "aliases": [],
-        "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          55317
-        ],
-        "region": {
-          "id": "east"
-        }
-      },
-      "source": "Myrcm"
-    },
-    {
-      "series": [
-        {
-          "id": "kleinserie"
-        }
-      ],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-06-29",
-      "location": "Köthen",
-      "countryCode": "de",
-      "title": "Kleinserie",
-      "regions": [
-        {
-          "id": "east"
-        }
-      ],
-      "club": null,
-      "source": "KleinSerie"
-    },
-    {
       "series": [
         {
           "id": "dmc-sm"
@@ -8222,35 +8272,6 @@
         }
       },
       "source": "DMC"
-    },
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-06-29",
-      "location": "RCCT Münden",
-      "countryCode": "de",
-      "title": "Germany Summerchamps",
-      "regions": [
-        {
-          "id": "nord"
-        }
-      ],
-      "club": {
-        "name": "RCCT Münden",
-        "aliases": [
-          "RCCT Münden OV241"
-        ],
-        "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          134
-        ],
-        "region": {
-          "id": "nord"
-        }
-      },
-      "source": "Myrcm"
     },
     {
       "series": [
@@ -8404,30 +8425,51 @@
       "source": "DMC"
     },
     {
+      "series": [
+        {
+          "id": "kleinserie"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-06-29",
+      "location": "Köthen",
+      "countryCode": "de",
+      "title": "Kleinserie",
+      "regions": [
+        {
+          "id": "east"
+        }
+      ],
+      "club": null,
+      "source": "KleinSerie"
+    },
+    {
       "series": [],
       "season": {
         "id": "current"
       },
       "date": "2025-06-29",
-      "location": "MRC Senden e.V.",
+      "location": "RCCT Münden",
       "countryCode": "de",
-      "title": "Deutsche Meisterschaft ORT / ORET 2025",
+      "title": "Germany Summerchamps",
       "regions": [
         {
-          "id": "south"
+          "id": "nord"
         }
       ],
       "club": {
-        "name": "MRC Senden e.V.",
+        "name": "RCCT Münden",
         "aliases": [
-          "MRC Senden"
+          "RCCT Münden OV241"
         ],
         "dmcClubNumber": null,
         "myrcmClubNumbers": [
-          61183
+          134
         ],
         "region": {
-          "id": "south"
+          "id": "nord"
         }
       },
       "source": "Myrcm"
@@ -9933,21 +9975,21 @@
         "id": "current"
       },
       "date": "2025-07-27",
-      "location": "MCC Laupheim e.V.",
+      "location": "RC-Offroad Kassel e.V.",
       "countryCode": "de",
       "title": "SM-Lauf",
       "regions": [
         {
-          "id": "south"
+          "id": "central"
         }
       ],
       "club": {
-        "name": "MCC Laupheim e.V.",
+        "name": "RC-Offroad Kassel e.V.",
         "aliases": [],
-        "dmcClubNumber": 107,
+        "dmcClubNumber": 184,
         "myrcmClubNumbers": [],
         "region": {
-          "id": "south"
+          "id": "central"
         }
       },
       "source": "DMC"
@@ -10071,21 +10113,21 @@
         "id": "current"
       },
       "date": "2025-07-27",
-      "location": "RC-Offroad Kassel e.V.",
+      "location": "MCC Laupheim e.V.",
       "countryCode": "de",
       "title": "SM-Lauf",
       "regions": [
         {
-          "id": "central"
+          "id": "south"
         }
       ],
       "club": {
-        "name": "RC-Offroad Kassel e.V.",
+        "name": "MCC Laupheim e.V.",
         "aliases": [],
-        "dmcClubNumber": 184,
+        "dmcClubNumber": 107,
         "myrcmClubNumbers": [],
         "region": {
-          "id": "central"
+          "id": "south"
         }
       },
       "source": "DMC"
@@ -10410,7 +10452,7 @@
         "id": "current"
       },
       "date": "2025-08-10",
-      "location": "LA Speedway Racing Club e.V.",
+      "location": "EMC Marktoberdorf e.V.",
       "countryCode": "de",
       "title": "Deutsche Meisterschaft",
       "regions": [
@@ -10419,13 +10461,13 @@
         }
       ],
       "club": {
-        "name": "LA Speedway Racing Club e.V.",
+        "name": "EMC Marktoberdorf e.V.",
         "aliases": [
-          "LA Speedway Racing Club"
+          "EMC Marktoberdorf"
         ],
-        "dmcClubNumber": 246,
+        "dmcClubNumber": 263,
         "myrcmClubNumbers": [
-          52798
+          43367
         ],
         "region": {
           "id": "south"
@@ -10532,7 +10574,7 @@
         "id": "current"
       },
       "date": "2025-08-10",
-      "location": "EMC Marktoberdorf e.V.",
+      "location": "LA Speedway Racing Club e.V.",
       "countryCode": "de",
       "title": "Deutsche Meisterschaft",
       "regions": [
@@ -10541,13 +10583,13 @@
         }
       ],
       "club": {
-        "name": "EMC Marktoberdorf e.V.",
+        "name": "LA Speedway Racing Club e.V.",
         "aliases": [
-          "EMC Marktoberdorf"
+          "LA Speedway Racing Club"
         ],
-        "dmcClubNumber": 263,
+        "dmcClubNumber": 246,
         "myrcmClubNumbers": [
-          43367
+          52798
         ],
         "region": {
           "id": "south"
@@ -10694,29 +10736,6 @@
         "id": "current"
       },
       "date": "2025-08-17",
-      "location": "RCCC Hilter",
-      "countryCode": "de",
-      "title": "6. Clublauf",
-      "regions": [],
-      "club": {
-        "name": "RCCC Hilter e.V.",
-        "aliases": [
-          "RCCC Hilter"
-        ],
-        "dmcClubNumber": 298,
-        "myrcmClubNumbers": [],
-        "region": {
-          "id": "north"
-        }
-      },
-      "source": "rccar-online.de"
-    },
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-08-17",
       "location": "TSV Mariendorf 97 Berlin",
       "countryCode": "de",
       "title": "Freundschaftsrennen",
@@ -10774,6 +10793,29 @@
       "source": "DMC"
     },
     {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-08-17",
+      "location": "RCCC Hilter",
+      "countryCode": "de",
+      "title": "6. Clublauf",
+      "regions": [],
+      "club": {
+        "name": "RCCC Hilter e.V.",
+        "aliases": [
+          "RCCC Hilter"
+        ],
+        "dmcClubNumber": 298,
+        "myrcmClubNumbers": [],
+        "region": {
+          "id": "north"
+        }
+      },
+      "source": "rccar-online.de"
+    },
+    {
       "series": [
         {
           "id": "challenge"
@@ -10824,28 +10866,30 @@
     {
       "series": [
         {
-          "id": "dmc-dm"
+          "id": "dmc-sm"
         }
       ],
       "season": {
         "id": "current"
       },
       "date": "2025-08-24",
-      "location": "MRC Leipzig e.V.",
+      "location": "MSC Kirchhain e.V.",
       "countryCode": "de",
-      "title": "Deutsche Meisterschaft",
+      "title": "SM-Lauf",
       "regions": [
         {
-          "id": "east"
+          "id": "central"
         }
       ],
       "club": {
-        "name": "MRC Leipzig e.V.",
+        "name": "MSC Kirchhain e.V.",
         "aliases": [],
-        "dmcClubNumber": 61,
-        "myrcmClubNumbers": [],
+        "dmcClubNumber": 5,
+        "myrcmClubNumbers": [
+          17008
+        ],
         "region": {
-          "id": "east"
+          "id": "central"
         }
       },
       "source": "DMC"
@@ -10951,30 +10995,28 @@
     {
       "series": [
         {
-          "id": "dmc-sm"
+          "id": "dmc-dm"
         }
       ],
       "season": {
         "id": "current"
       },
       "date": "2025-08-24",
-      "location": "MSC Kirchhain e.V.",
+      "location": "MRC Leipzig e.V.",
       "countryCode": "de",
-      "title": "SM-Lauf",
+      "title": "Deutsche Meisterschaft",
       "regions": [
         {
-          "id": "central"
+          "id": "east"
         }
       ],
       "club": {
-        "name": "MSC Kirchhain e.V.",
+        "name": "MRC Leipzig e.V.",
         "aliases": [],
-        "dmcClubNumber": 5,
-        "myrcmClubNumbers": [
-          17008
-        ],
+        "dmcClubNumber": 61,
+        "myrcmClubNumbers": [],
         "region": {
-          "id": "central"
+          "id": "east"
         }
       },
       "source": "DMC"
@@ -11489,6 +11531,25 @@
         "id": "current"
       },
       "date": "2025-09-07",
+      "location": "MBC Oberlausitz e.V. in Lauba",
+      "countryCode": "de",
+      "title": "6. Lauf Oberlausitzcup 2025",
+      "regions": [],
+      "club": {
+        "name": "OLC - Oberlausitzcup",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [],
+        "region": null
+      },
+      "source": "rccar-online.de"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-09-07",
       "location": "Modellsport Münsterland",
       "countryCode": "de",
       "title": "Modellsport Münsterland Cup",
@@ -11502,29 +11563,6 @@
         "myrcmClubNumbers": [],
         "region": {
           "id": "west"
-        }
-      },
-      "source": "rccar-online.de"
-    },
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-09-07",
-      "location": "RCCC Hilter",
-      "countryCode": "de",
-      "title": "7. Clublauf",
-      "regions": [],
-      "club": {
-        "name": "RCCC Hilter e.V.",
-        "aliases": [
-          "RCCC Hilter"
-        ],
-        "dmcClubNumber": 298,
-        "myrcmClubNumbers": [],
-        "region": {
-          "id": "north"
         }
       },
       "source": "rccar-online.de"
@@ -11564,18 +11602,136 @@
         "id": "current"
       },
       "date": "2025-09-07",
-      "location": "MBC Oberlausitz e.V. in Lauba",
+      "location": "Modellsport Münsterland e.V.",
       "countryCode": "de",
-      "title": "6. Lauf Oberlausitzcup 2025",
+      "title": "Freundschaftsrennen",
+      "regions": [
+        {
+          "id": "west"
+        }
+      ],
+      "club": {
+        "name": "Modellsport Münsterland e.V.",
+        "aliases": [
+          "Modellsport Münsterland"
+        ],
+        "dmcClubNumber": 240,
+        "myrcmClubNumbers": [],
+        "region": {
+          "id": "west"
+        }
+      },
+      "source": "DMC"
+    },
+    {
+      "series": [
+        {
+          "id": "dmc-dm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-09-07",
+      "location": "MAC Nürnberg e.V.",
+      "countryCode": "de",
+      "title": "Deutsche Meisterschaft",
+      "regions": [
+        {
+          "id": "south"
+        }
+      ],
+      "club": {
+        "name": "MAC Nürnberg e.V.",
+        "aliases": [],
+        "dmcClubNumber": 64,
+        "myrcmClubNumbers": [
+          9976
+        ],
+        "region": {
+          "id": "south"
+        }
+      },
+      "source": "DMC"
+    },
+    {
+      "series": [
+        {
+          "id": "dmc-dm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-09-07",
+      "location": "MAC Nürnberg e.V.",
+      "countryCode": "de",
+      "title": "Deutsche Meisterschaft",
+      "regions": [
+        {
+          "id": "south"
+        }
+      ],
+      "club": {
+        "name": "MAC Nürnberg e.V.",
+        "aliases": [],
+        "dmcClubNumber": 64,
+        "myrcmClubNumbers": [
+          9976
+        ],
+        "region": {
+          "id": "south"
+        }
+      },
+      "source": "DMC"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-09-07",
+      "location": "RCCC Hilter",
+      "countryCode": "de",
+      "title": "7. Clublauf",
       "regions": [],
       "club": {
-        "name": "OLC - Oberlausitzcup",
-        "aliases": [],
-        "dmcClubNumber": null,
+        "name": "RCCC Hilter e.V.",
+        "aliases": [
+          "RCCC Hilter"
+        ],
+        "dmcClubNumber": 298,
         "myrcmClubNumbers": [],
-        "region": null
+        "region": {
+          "id": "north"
+        }
       },
       "source": "rccar-online.de"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-09-07",
+      "location": "Offroad Club Ostsee e.V.",
+      "countryCode": "de",
+      "title": "SH-Cup",
+      "regions": [
+        {
+          "id": "north"
+        }
+      ],
+      "club": {
+        "name": "Offroad Club Ostsee e.V.",
+        "aliases": [],
+        "dmcClubNumber": 341,
+        "myrcmClubNumbers": [],
+        "region": {
+          "id": "north"
+        }
+      },
+      "source": "DMC"
     },
     {
       "series": [],
@@ -11632,120 +11788,6 @@
       "source": "DMC"
     },
     {
-      "series": [
-        {
-          "id": "dmc-dm"
-        }
-      ],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-09-07",
-      "location": "MAC Nürnberg e.V.",
-      "countryCode": "de",
-      "title": "Deutsche Meisterschaft",
-      "regions": [
-        {
-          "id": "south"
-        }
-      ],
-      "club": {
-        "name": "MAC Nürnberg e.V.",
-        "aliases": [],
-        "dmcClubNumber": 64,
-        "myrcmClubNumbers": [
-          9976
-        ],
-        "region": {
-          "id": "south"
-        }
-      },
-      "source": "DMC"
-    },
-    {
-      "series": [
-        {
-          "id": "dmc-dm"
-        }
-      ],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-09-07",
-      "location": "MAC Nürnberg e.V.",
-      "countryCode": "de",
-      "title": "Deutsche Meisterschaft",
-      "regions": [
-        {
-          "id": "south"
-        }
-      ],
-      "club": {
-        "name": "MAC Nürnberg e.V.",
-        "aliases": [],
-        "dmcClubNumber": 64,
-        "myrcmClubNumbers": [
-          9976
-        ],
-        "region": {
-          "id": "south"
-        }
-      },
-      "source": "DMC"
-    },
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-09-07",
-      "location": "Offroad Club Ostsee e.V.",
-      "countryCode": "de",
-      "title": "SH-Cup",
-      "regions": [
-        {
-          "id": "north"
-        }
-      ],
-      "club": {
-        "name": "Offroad Club Ostsee e.V.",
-        "aliases": [],
-        "dmcClubNumber": 341,
-        "myrcmClubNumbers": [],
-        "region": {
-          "id": "north"
-        }
-      },
-      "source": "DMC"
-    },
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-09-07",
-      "location": "Modellsport Münsterland e.V.",
-      "countryCode": "de",
-      "title": "Freundschaftsrennen",
-      "regions": [
-        {
-          "id": "west"
-        }
-      ],
-      "club": {
-        "name": "Modellsport Münsterland e.V.",
-        "aliases": [
-          "Modellsport Münsterland"
-        ],
-        "dmcClubNumber": 240,
-        "myrcmClubNumbers": [],
-        "region": {
-          "id": "west"
-        }
-      },
-      "source": "DMC"
-    },
-    {
       "series": [],
       "season": {
         "id": "current"
@@ -11778,31 +11820,6 @@
         "id": "current"
       },
       "date": "2025-09-14",
-      "location": "RMC Wolfsburg e.V.",
-      "countryCode": "de",
-      "title": "Freundschaftsrennen",
-      "regions": [
-        {
-          "id": "north"
-        }
-      ],
-      "club": {
-        "name": "RMC Wolfsburg e.V.",
-        "aliases": [],
-        "dmcClubNumber": 157,
-        "myrcmClubNumbers": [],
-        "region": {
-          "id": "north"
-        }
-      },
-      "source": "DMC"
-    },
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-09-14",
       "location": "RC Race Team München",
       "countryCode": "de",
       "title": "FCOS Lauf 5",
@@ -11817,33 +11834,6 @@
         "dmcClubNumber": null,
         "myrcmClubNumbers": [
           53665
-        ],
-        "region": {
-          "id": "south"
-        }
-      },
-      "source": "Myrcm"
-    },
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-09-14",
-      "location": "Nordbayern Cup",
-      "countryCode": "de",
-      "title": "Nordbayern Cup #3 2025 Lauf 6 coming soon",
-      "regions": [
-        {
-          "id": "south"
-        }
-      ],
-      "club": {
-        "name": "Nordbayern Cup",
-        "aliases": [],
-        "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          47444
         ],
         "region": {
           "id": "south"
@@ -11886,33 +11876,31 @@
       "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "dmc-dm"
-        }
-      ],
+      "series": [],
       "season": {
         "id": "current"
       },
       "date": "2025-09-14",
-      "location": "MRC Leipzig e.V.",
+      "location": "Nordbayern Cup",
       "countryCode": "de",
-      "title": "Deutsche Meisterschaft",
+      "title": "Nordbayern Cup #3 2025 Lauf 6 coming soon",
       "regions": [
         {
-          "id": "east"
+          "id": "south"
         }
       ],
       "club": {
-        "name": "MRC Leipzig e.V.",
+        "name": "Nordbayern Cup",
         "aliases": [],
-        "dmcClubNumber": 61,
-        "myrcmClubNumbers": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [
+          47444
+        ],
         "region": {
-          "id": "east"
+          "id": "south"
         }
       },
-      "source": "DMC"
+      "source": "Myrcm"
     },
     {
       "series": [
@@ -11948,40 +11936,31 @@
       "source": "DMC"
     },
     {
-      "series": [],
+      "series": [
+        {
+          "id": "dmc-dm"
+        }
+      ],
       "season": {
         "id": "current"
       },
       "date": "2025-09-14",
-      "location": " Referent OR8 ",
+      "location": "MRC Leipzig e.V.",
       "countryCode": "de",
-      "title": "Rennen",
-      "regions": [],
+      "title": "Deutsche Meisterschaft",
+      "regions": [
+        {
+          "id": "east"
+        }
+      ],
       "club": {
-        "name": " Referent OR8 ",
+        "name": "MRC Leipzig e.V.",
         "aliases": [],
-        "dmcClubNumber": null,
+        "dmcClubNumber": 61,
         "myrcmClubNumbers": [],
-        "region": null
-      },
-      "source": "DMC"
-    },
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-09-14",
-      "location": " Referent Großmodelle ",
-      "countryCode": "de",
-      "title": "Rennen",
-      "regions": [],
-      "club": {
-        "name": " Referent Großmodelle ",
-        "aliases": [],
-        "dmcClubNumber": null,
-        "myrcmClubNumbers": [],
-        "region": null
+        "region": {
+          "id": "east"
+        }
       },
       "source": "DMC"
     },
@@ -12022,6 +12001,69 @@
       "season": {
         "id": "current"
       },
+      "date": "2025-09-14",
+      "location": "RMC Wolfsburg e.V.",
+      "countryCode": "de",
+      "title": "Freundschaftsrennen",
+      "regions": [
+        {
+          "id": "north"
+        }
+      ],
+      "club": {
+        "name": "RMC Wolfsburg e.V.",
+        "aliases": [],
+        "dmcClubNumber": 157,
+        "myrcmClubNumbers": [],
+        "region": {
+          "id": "north"
+        }
+      },
+      "source": "DMC"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-09-14",
+      "location": " Referent Großmodelle ",
+      "countryCode": "de",
+      "title": "Rennen",
+      "regions": [],
+      "club": {
+        "name": " Referent Großmodelle ",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [],
+        "region": null
+      },
+      "source": "DMC"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-09-14",
+      "location": " Referent OR8 ",
+      "countryCode": "de",
+      "title": "Rennen",
+      "regions": [],
+      "club": {
+        "name": " Referent OR8 ",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [],
+        "region": null
+      },
+      "source": "DMC"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
       "date": "2025-09-21",
       "location": "RMC Wolfsburg e.V.",
       "countryCode": "de",
@@ -12041,6 +12083,27 @@
         }
       },
       "source": "DMC"
+    },
+    {
+      "series": [
+        {
+          "id": "kleinserie"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-09-21",
+      "location": "Herne",
+      "countryCode": "de",
+      "title": "Kleinserie",
+      "regions": [
+        {
+          "id": "west"
+        }
+      ],
+      "club": null,
+      "source": "KleinSerie"
     },
     {
       "series": [
@@ -12072,60 +12135,6 @@
       "source": "DMC"
     },
     {
-      "series": [
-        {
-          "id": "dmc-sm"
-        }
-      ],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-09-21",
-      "location": "MRC Senden e.V.",
-      "countryCode": "de",
-      "title": "SM-Lauf",
-      "regions": [
-        {
-          "id": "south"
-        }
-      ],
-      "club": {
-        "name": "MRC Senden e.V.",
-        "aliases": [
-          "MRC Senden"
-        ],
-        "dmcClubNumber": 247,
-        "myrcmClubNumbers": [
-          61183
-        ],
-        "region": {
-          "id": "south"
-        }
-      },
-      "source": "DMC"
-    },
-    {
-      "series": [
-        {
-          "id": "challenge"
-        }
-      ],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-09-21",
-      "location": "Zwickau",
-      "countryCode": "de",
-      "title": "RCK-Challenge",
-      "regions": [
-        {
-          "id": "east"
-        }
-      ],
-      "club": null,
-      "source": "RCK-Challenge"
-    },
-    {
       "series": [],
       "season": {
         "id": "current"
@@ -12145,27 +12154,6 @@
         "region": null
       },
       "source": "Myrcm"
-    },
-    {
-      "series": [
-        {
-          "id": "kleinserie"
-        }
-      ],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-09-21",
-      "location": "Herne",
-      "countryCode": "de",
-      "title": "Kleinserie",
-      "regions": [
-        {
-          "id": "west"
-        }
-      ],
-      "club": null,
-      "source": "KleinSerie"
     },
     {
       "series": [],
@@ -12255,6 +12243,39 @@
       "source": "Myrcm"
     },
     {
+      "series": [
+        {
+          "id": "dmc-sm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-09-21",
+      "location": "MRC Senden e.V.",
+      "countryCode": "de",
+      "title": "SM-Lauf",
+      "regions": [
+        {
+          "id": "south"
+        }
+      ],
+      "club": {
+        "name": "MRC Senden e.V.",
+        "aliases": [
+          "MRC Senden"
+        ],
+        "dmcClubNumber": 247,
+        "myrcmClubNumbers": [
+          61183
+        ],
+        "region": {
+          "id": "south"
+        }
+      },
+      "source": "DMC"
+    },
+    {
       "series": [],
       "season": {
         "id": "current"
@@ -12280,6 +12301,27 @@
         }
       },
       "source": "Myrcm"
+    },
+    {
+      "series": [
+        {
+          "id": "challenge"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-09-21",
+      "location": "Zwickau",
+      "countryCode": "de",
+      "title": "RCK-Challenge",
+      "regions": [
+        {
+          "id": "east"
+        }
+      ],
+      "club": null,
+      "source": "RCK-Challenge"
     },
     {
       "series": [],
@@ -12336,52 +12378,6 @@
       "source": "Myrcm"
     },
     {
-      "series": [
-        {
-          "id": "kleinserie"
-        }
-      ],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-09-28",
-      "location": "Felsberg",
-      "countryCode": "de",
-      "title": "Kleinserie",
-      "regions": [
-        {
-          "id": "central"
-        }
-      ],
-      "club": null,
-      "source": "KleinSerie"
-    },
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-09-28",
-      "location": "MSV Hürtgenwald e.V.",
-      "countryCode": "de",
-      "title": "Rennen",
-      "regions": [
-        {
-          "id": "west"
-        }
-      ],
-      "club": {
-        "name": "MSV Hürtgenwald e.V.",
-        "aliases": [],
-        "dmcClubNumber": 181,
-        "myrcmClubNumbers": [],
-        "region": {
-          "id": "west"
-        }
-      },
-      "source": "DMC"
-    },
-    {
       "series": [],
       "season": {
         "id": "current"
@@ -12401,60 +12397,6 @@
           "MAC-Meckenheim e.V. OV 3/030"
         ],
         "dmcClubNumber": 30,
-        "myrcmClubNumbers": [],
-        "region": {
-          "id": "west"
-        }
-      },
-      "source": "DMC"
-    },
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-09-28",
-      "location": "MC Munster e.V.",
-      "countryCode": "de",
-      "title": "Freundschaftsrennen",
-      "regions": [
-        {
-          "id": "north"
-        }
-      ],
-      "club": {
-        "name": "MC Munster e.V.",
-        "aliases": [],
-        "dmcClubNumber": 221,
-        "myrcmClubNumbers": [],
-        "region": {
-          "id": "north"
-        }
-      },
-      "source": "DMC"
-    },
-    {
-      "series": [
-        {
-          "id": "dmc-sm"
-        }
-      ],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-09-28",
-      "location": "amc Hamm e.V.",
-      "countryCode": "de",
-      "title": "SM-Lauf",
-      "regions": [
-        {
-          "id": "west"
-        }
-      ],
-      "club": {
-        "name": "amc Hamm e.V.",
-        "aliases": [],
-        "dmcClubNumber": 31,
         "myrcmClubNumbers": [],
         "region": {
           "id": "west"
@@ -12490,6 +12432,79 @@
         }
       },
       "source": "DMC"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-09-28",
+      "location": "MSV Hürtgenwald e.V.",
+      "countryCode": "de",
+      "title": "Rennen",
+      "regions": [
+        {
+          "id": "west"
+        }
+      ],
+      "club": {
+        "name": "MSV Hürtgenwald e.V.",
+        "aliases": [],
+        "dmcClubNumber": 181,
+        "myrcmClubNumbers": [],
+        "region": {
+          "id": "west"
+        }
+      },
+      "source": "DMC"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-09-28",
+      "location": "ORMC Königsbrunn",
+      "countryCode": "de",
+      "title": "7. Lauf zum Königspokal 2025",
+      "regions": [
+        {
+          "id": "south"
+        }
+      ],
+      "club": {
+        "name": "ORMC Königsbrunn",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [
+          573
+        ],
+        "region": {
+          "id": "south"
+        }
+      },
+      "source": "Myrcm"
+    },
+    {
+      "series": [
+        {
+          "id": "challenge"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-09-28",
+      "location": "Gelenau",
+      "countryCode": "de",
+      "title": "RCK-Challenge",
+      "regions": [
+        {
+          "id": "east"
+        }
+      ],
+      "club": null,
+      "source": "RCK-Challenge"
     },
     {
       "series": [],
@@ -12551,33 +12566,6 @@
         "id": "current"
       },
       "date": "2025-09-28",
-      "location": "ORMC Königsbrunn",
-      "countryCode": "de",
-      "title": "7. Lauf zum Königspokal 2025",
-      "regions": [
-        {
-          "id": "south"
-        }
-      ],
-      "club": {
-        "name": "ORMC Königsbrunn",
-        "aliases": [],
-        "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          573
-        ],
-        "region": {
-          "id": "south"
-        }
-      },
-      "source": "Myrcm"
-    },
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-09-28",
       "location": "AMC Hamm e.V.",
       "countryCode": "de",
       "title": "Sportkreis-Meisterschaft West VG #6 @ Hamm",
@@ -12600,6 +12588,35 @@
         }
       },
       "source": "Myrcm"
+    },
+    {
+      "series": [
+        {
+          "id": "dmc-sm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-09-28",
+      "location": "amc Hamm e.V.",
+      "countryCode": "de",
+      "title": "SM-Lauf",
+      "regions": [
+        {
+          "id": "west"
+        }
+      ],
+      "club": {
+        "name": "amc Hamm e.V.",
+        "aliases": [],
+        "dmcClubNumber": 31,
+        "myrcmClubNumbers": [],
+        "region": {
+          "id": "west"
+        }
+      },
+      "source": "DMC"
     },
     {
       "series": [],
@@ -12631,25 +12648,50 @@
       "source": "DMC"
     },
     {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-09-28",
+      "location": "MC Munster e.V.",
+      "countryCode": "de",
+      "title": "Freundschaftsrennen",
+      "regions": [
+        {
+          "id": "north"
+        }
+      ],
+      "club": {
+        "name": "MC Munster e.V.",
+        "aliases": [],
+        "dmcClubNumber": 221,
+        "myrcmClubNumbers": [],
+        "region": {
+          "id": "north"
+        }
+      },
+      "source": "DMC"
+    },
+    {
       "series": [
         {
-          "id": "challenge"
+          "id": "kleinserie"
         }
       ],
       "season": {
         "id": "current"
       },
       "date": "2025-09-28",
-      "location": "Gelenau",
+      "location": "Felsberg",
       "countryCode": "de",
-      "title": "RCK-Challenge",
+      "title": "Kleinserie",
       "regions": [
         {
-          "id": "east"
+          "id": "central"
         }
       ],
       "club": null,
-      "source": "RCK-Challenge"
+      "source": "KleinSerie"
     },
     {
       "series": [],
@@ -12670,116 +12712,6 @@
         "aliases": [],
         "dmcClubNumber": 253,
         "myrcmClubNumbers": [],
-        "region": {
-          "id": "east"
-        }
-      },
-      "source": "DMC"
-    },
-    {
-      "series": [
-        {
-          "id": "kleinserie"
-        }
-      ],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-10-05",
-      "location": "Goldenstedt",
-      "countryCode": "de",
-      "title": "Kleinserie",
-      "regions": [
-        {
-          "id": "north"
-        }
-      ],
-      "club": null,
-      "source": "KleinSerie"
-    },
-    {
-      "series": [
-        {
-          "id": "kleinserie"
-        }
-      ],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-10-05",
-      "location": "Dortmund",
-      "countryCode": "de",
-      "title": "Kleinserie",
-      "regions": [
-        {
-          "id": "west"
-        }
-      ],
-      "club": null,
-      "source": "KleinSerie"
-    },
-    {
-      "series": [
-        {
-          "id": "dmc-sm"
-        }
-      ],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-10-05",
-      "location": "MCC Rhein-Ahr e.V.",
-      "countryCode": "de",
-      "title": "SM-Lauf",
-      "regions": [
-        {
-          "id": "west"
-        }
-      ],
-      "club": {
-        "name": "MCC Rhein-Ahr e.V.",
-        "aliases": [
-          "MCC Rhein-Ahr e.V",
-          "Modell Car Club Rhein Ahr e.V.",
-          "DMC e.V. | Ausrichter: MCC Rhein-Ahr e.V."
-        ],
-        "dmcClubNumber": 296,
-        "myrcmClubNumbers": [
-          283
-        ],
-        "region": {
-          "id": "west"
-        }
-      },
-      "source": "DMC"
-    },
-    {
-      "series": [
-        {
-          "id": "dmc-sm"
-        }
-      ],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-10-05",
-      "location": "AMC Mühlau e.V.",
-      "countryCode": "de",
-      "title": "SM-Lauf",
-      "regions": [
-        {
-          "id": "east"
-        }
-      ],
-      "club": {
-        "name": "AMC Mühlau e.V.",
-        "aliases": [
-          "AMC Mühlau"
-        ],
-        "dmcClubNumber": 322,
-        "myrcmClubNumbers": [
-          82
-        ],
         "region": {
           "id": "east"
         }
@@ -12847,6 +12779,27 @@
     {
       "series": [
         {
+          "id": "kleinserie"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-10-05",
+      "location": "Dortmund",
+      "countryCode": "de",
+      "title": "Kleinserie",
+      "regions": [
+        {
+          "id": "west"
+        }
+      ],
+      "club": null,
+      "source": "KleinSerie"
+    },
+    {
+      "series": [
+        {
           "id": "dmc-dm"
         }
       ],
@@ -12872,6 +12825,95 @@
         }
       },
       "source": "DMC"
+    },
+    {
+      "series": [
+        {
+          "id": "dmc-sm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-10-05",
+      "location": "AMC Mühlau e.V.",
+      "countryCode": "de",
+      "title": "SM-Lauf",
+      "regions": [
+        {
+          "id": "east"
+        }
+      ],
+      "club": {
+        "name": "AMC Mühlau e.V.",
+        "aliases": [
+          "AMC Mühlau"
+        ],
+        "dmcClubNumber": 322,
+        "myrcmClubNumbers": [
+          82
+        ],
+        "region": {
+          "id": "east"
+        }
+      },
+      "source": "DMC"
+    },
+    {
+      "series": [
+        {
+          "id": "dmc-sm"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-10-05",
+      "location": "MCC Rhein-Ahr e.V.",
+      "countryCode": "de",
+      "title": "SM-Lauf",
+      "regions": [
+        {
+          "id": "west"
+        }
+      ],
+      "club": {
+        "name": "MCC Rhein-Ahr e.V.",
+        "aliases": [
+          "MCC Rhein-Ahr e.V",
+          "Modell Car Club Rhein Ahr e.V.",
+          "DMC e.V. | Ausrichter: MCC Rhein-Ahr e.V."
+        ],
+        "dmcClubNumber": 296,
+        "myrcmClubNumbers": [
+          283
+        ],
+        "region": {
+          "id": "west"
+        }
+      },
+      "source": "DMC"
+    },
+    {
+      "series": [
+        {
+          "id": "kleinserie"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-10-05",
+      "location": "Goldenstedt",
+      "countryCode": "de",
+      "title": "Kleinserie",
+      "regions": [
+        {
+          "id": "north"
+        }
+      ],
+      "club": null,
+      "source": "KleinSerie"
     },
     {
       "series": [],
@@ -12929,52 +12971,6 @@
         "id": "current"
       },
       "date": "2025-10-12",
-      "location": "Bünde",
-      "countryCode": "de",
-      "title": "RCK-Challenge",
-      "regions": [
-        {
-          "id": "north"
-        }
-      ],
-      "club": null,
-      "source": "RCK-Challenge"
-    },
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-10-12",
-      "location": "RC-Club Grossheubach e.V.",
-      "countryCode": "de",
-      "title": "Freundschaftsrennen",
-      "regions": [
-        {
-          "id": "central"
-        }
-      ],
-      "club": {
-        "name": "RC-Club Grossheubach e.V.",
-        "aliases": [],
-        "dmcClubNumber": 79,
-        "myrcmClubNumbers": [],
-        "region": {
-          "id": "central"
-        }
-      },
-      "source": "DMC"
-    },
-    {
-      "series": [
-        {
-          "id": "challenge"
-        }
-      ],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-10-12",
       "location": "Chemnitz",
       "countryCode": "de",
       "title": "RCK-Challenge",
@@ -12985,33 +12981,6 @@
       ],
       "club": null,
       "source": "RCK-Challenge"
-    },
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-10-12",
-      "location": "MAC Nürnberg e.V.",
-      "countryCode": "de",
-      "title": "Vereinsrennen 2. Ersatztermin",
-      "regions": [
-        {
-          "id": "south"
-        }
-      ],
-      "club": {
-        "name": "MAC Nürnberg e.V.",
-        "aliases": [],
-        "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          9976
-        ],
-        "region": {
-          "id": "south"
-        }
-      },
-      "source": "Myrcm"
     },
     {
       "series": [],
@@ -13049,6 +13018,79 @@
       "season": {
         "id": "current"
       },
+      "date": "2025-10-12",
+      "location": "MAC Nürnberg e.V.",
+      "countryCode": "de",
+      "title": "Vereinsrennen 2. Ersatztermin",
+      "regions": [
+        {
+          "id": "south"
+        }
+      ],
+      "club": {
+        "name": "MAC Nürnberg e.V.",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [
+          9976
+        ],
+        "region": {
+          "id": "south"
+        }
+      },
+      "source": "Myrcm"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-10-12",
+      "location": "RC-Club Grossheubach e.V.",
+      "countryCode": "de",
+      "title": "Freundschaftsrennen",
+      "regions": [
+        {
+          "id": "central"
+        }
+      ],
+      "club": {
+        "name": "RC-Club Grossheubach e.V.",
+        "aliases": [],
+        "dmcClubNumber": 79,
+        "myrcmClubNumbers": [],
+        "region": {
+          "id": "central"
+        }
+      },
+      "source": "DMC"
+    },
+    {
+      "series": [
+        {
+          "id": "challenge"
+        }
+      ],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-10-12",
+      "location": "Bünde",
+      "countryCode": "de",
+      "title": "RCK-Challenge",
+      "regions": [
+        {
+          "id": "north"
+        }
+      ],
+      "club": null,
+      "source": "RCK-Challenge"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
       "date": "2025-10-18",
       "location": "MCC Rhein-Ahr e.V.",
       "countryCode": "de",
@@ -13068,6 +13110,33 @@
         "dmcClubNumber": null,
         "myrcmClubNumbers": [
           283
+        ],
+        "region": {
+          "id": "west"
+        }
+      },
+      "source": "Myrcm"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-10-19",
+      "location": "IG Racing Team Hamm",
+      "countryCode": "de",
+      "title": "Vereinsmeisterschaft 2025 - Lauf 7",
+      "regions": [
+        {
+          "id": "west"
+        }
+      ],
+      "club": {
+        "name": "IG Racing Team Hamm",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [
+          10490
         ],
         "region": {
           "id": "west"
@@ -13130,33 +13199,6 @@
         }
       },
       "source": "DMC"
-    },
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-10-19",
-      "location": "IG Racing Team Hamm",
-      "countryCode": "de",
-      "title": "Vereinsmeisterschaft 2025 - Lauf 7",
-      "regions": [
-        {
-          "id": "west"
-        }
-      ],
-      "club": {
-        "name": "IG Racing Team Hamm",
-        "aliases": [],
-        "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          10490
-        ],
-        "region": {
-          "id": "west"
-        }
-      },
-      "source": "Myrcm"
     },
     {
       "series": [],
