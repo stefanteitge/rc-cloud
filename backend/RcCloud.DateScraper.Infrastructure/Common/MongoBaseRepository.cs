@@ -1,13 +1,14 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
 using MongoDB.Driver;
 
 namespace RcCloud.DateScraper.Infrastructure.Common;
 
-public class MongoBaseRepository(ILogger logger)
+public class MongoBaseRepository(IConfiguration configuration, ILogger logger)
 {
     protected MongoClient? GetClient()
     {
-        var connectionUri = System.Environment.GetEnvironmentVariable("CONNECTION_STRING__MONGO", EnvironmentVariableTarget.Process);
+        var connectionUri = configuration.GetConnectionString("Mongo");
 
         if (string.IsNullOrEmpty(connectionUri))
         {

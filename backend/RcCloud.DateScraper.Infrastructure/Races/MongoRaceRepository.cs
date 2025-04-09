@@ -1,11 +1,15 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
 using MongoDB.Driver;
 using RcCloud.DateScraper.Domain.Races;
 using RcCloud.DateScraper.Infrastructure.Common;
 
 namespace RcCloud.DateScraper.Infrastructure.Races;
 
-public class MongoRaceRepository(ILogger<MongoRaceRepository> logger) : MongoBaseRepository(logger)
+public class MongoRaceRepository(
+    IConfiguration configuration,
+    ILogger<MongoRaceRepository> logger)
+    : MongoBaseRepository(configuration, logger)
 {
     public async Task<bool> Store(List<RaceMeeting> races, string compilation, string source)
     {

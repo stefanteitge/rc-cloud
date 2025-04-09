@@ -1,12 +1,15 @@
 ﻿using DnsClient.Internal;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
-using MongoDB.Driver;
 using RcCloud.DateScraper.Infrastructure.Clubs.Entities;
 using RcCloud.DateScraper.Infrastructure.Common;
 
 namespace RcCloud.DateScraper.Infrastructure.Clubs;
 
-public class MongoClubRepository(ILogger<MongoClubRepository> logger) : MongoBaseRepository(logger)
+public class MongoClubRepository(
+    IConfiguration configuration,
+    ILogger<MongoClubRepository> logger)
+    : MongoBaseRepository(configuration, logger)
 {
     public bool Store(ClubDbEntity clubDbEntity)
     {

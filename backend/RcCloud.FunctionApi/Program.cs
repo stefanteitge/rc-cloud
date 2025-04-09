@@ -1,4 +1,5 @@
-﻿using Microsoft.Azure.Functions.Worker;
+﻿using System.Reflection;
+using Microsoft.Azure.Functions.Worker;
 using Microsoft.Azure.Functions.Worker.Builder;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -10,7 +11,7 @@ var builder = FunctionsApplication.CreateBuilder(args);
 
 builder.ConfigureFunctionsWebApplication();
 
-builder.Configuration.AddEnvironmentVariables();
+builder.Configuration.AddEnvironmentVariables().AddUserSecrets(Assembly.GetExecutingAssembly());
 
 // Application Insights isn't enabled by default. See https://aka.ms/AAt8mw4.
 builder.Services

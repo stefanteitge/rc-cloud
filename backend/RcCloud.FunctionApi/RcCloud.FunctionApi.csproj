@@ -6,6 +6,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <RootNamespace>RcCloud.FunctionApi</RootNamespace>
+    <UserSecretsId>665dfdb6-4bb4-44fd-9a69-d656a31393d0</UserSecretsId>
   </PropertyGroup>
   <ItemGroup>
     <FrameworkReference Include="Microsoft.AspNetCore.App" />
