@@ -3,10 +3,7 @@
     "api": {
       "commandName": "Project",
       "commandLineArgs": "--port 7033",
-      "launchBrowser": false,
-      "environmentVariables": {
-        "CONNECTION_STRING__MONGO": "mongodb+srv://stefanteitge:AlzwowTRfx8NL3xu@cluster0.qklb7xo.mongodb.net/?appName=Cluster0"
-      }
+      "launchBrowser": false
     }
   }
 }
