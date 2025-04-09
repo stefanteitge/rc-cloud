@@ -19,7 +19,7 @@ public class MongoRaceRepository(ILogger<MongoRaceRepository> logger) : MongoBas
         
         try
         {
-            var document = new RacesDocument("germany", races, DateTimeOffset.Now);
+            var document = new RacesDocument("germany", "aggregate", races, DateTimeOffset.Now);
             var collection = client
                 .GetDatabase("RcCloud").GetCollection<RacesDocument>("Races"); ;
             

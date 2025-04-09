@@ -18,9 +18,10 @@ public class DownloadDmcCalendarTests
             input = await sr.ReadToEndAsync();
         }
 
-        var events = scraper.ScrapeRaw(input);
+        var scrapeResult = scraper.ScrapeRaw(input);
 
-        Assert.Equal(count, events.Count);
+        Assert.True(scrapeResult.IsSuccess);
+        Assert.Equal(count, scrapeResult.Value.Count);
     }
 
     [Fact]
@@ -28,9 +29,10 @@ public class DownloadDmcCalendarTests
     {
         var scraper = new DownloadDmcCalendar(new NullLogger<DownloadDmcCalendar>());
 
-        var input = await scraper.RetrieveBaseDocument(2021);
+        var downloadResult = await scraper.RetrieveBaseDocument(2021);
 
-        Assert.Contains("Munzig ", input);
+        Assert.True(downloadResult.IsSuccess);
+        Assert.Contains("Munzig ", downloadResult.Value);
     }
 
     [Fact]
@@ -38,11 +40,10 @@ public class DownloadDmcCalendarTests
     {
         var scraper = new DownloadDmcCalendar(new NullLogger<DownloadDmcCalendar>());
 
-        var input = await scraper.RetrieveBaseDocument(2025);
+        var downloadResult = await scraper.RetrieveBaseDocument(2025);
 
-        File.WriteAllText("dmc", input);
-
-        Assert.Contains("ORC-B Göttingen e.V.", input);
-        Assert.Contains("13.04.2025", input);
+        Assert.True(downloadResult.IsSuccess);
+        Assert.Contains("ORC-B Göttingen e.V.", downloadResult.Value);
+        Assert.Contains("13.04.2025", downloadResult.Value);
     }
 }

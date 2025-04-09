@@ -1,6 +1,6 @@
-﻿using RcCloud.DateScraper.Application.Dmc.Calendar.Domain;
+﻿using FluentResults;
+using RcCloud.DateScraper.Application.Dmc.Calendar.Domain;
 using RcCloud.DateScraper.Application.Dmc.Common.Domain;
-using RcCloud.DateScraper.Domain;
 using RcCloud.DateScraper.Domain.Clubs;
 using RcCloud.DateScraper.Domain.Races;
 using RcCloud.DateScraper.Domain.Regions;
@@ -10,21 +10,27 @@ namespace RcCloud.DateScraper.Application.Dmc.Calendar.Services;
 
 public class ScrapeDmcRaces(DownloadDmcCalendar download, IClubRepository clubRepository, GuessSeries guessSeries)
 {
-
-    public async Task<IEnumerable<RaceMeeting>> Parse()
+    public async Task<Result<IEnumerable<RaceMeeting>>> Scrape()
     {
-        var all = await download.Scrape(2025);
+        var scrapeResult = await download.Scrape(2025);
 
-        return all
+        if (scrapeResult.IsFailed)
+        {
+            return Result.Fail(scrapeResult.Errors);
+        }
+
+        var races = scrapeResult.Value
             .Where(ce => ce.IsMeeting())
             .Select(ce => MakeRaceMeeting(ce));
+
+        return Result.Ok(races);
     }
 
     private RaceMeeting MakeRaceMeeting(DmcCalendarEntry entry)
     {
         var regions = ComputeRegions(entry);
 
-        Club club = new Club(entry.Club, [], entry.ClubNo, [], regions.FirstOrDefault());
+        var club = new Club(entry.Club, [], entry.ClubNo, [], regions.FirstOrDefault());
         
         var knownClub = clubRepository.FindClub(entry.Club);
         if (knownClub is not null)

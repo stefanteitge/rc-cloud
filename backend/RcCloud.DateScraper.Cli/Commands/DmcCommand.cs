@@ -1,6 +1,6 @@
 ﻿using McMaster.Extensions.CommandLineUtils;
-using RcCloud.DateScraper.Application.Dmc;
 using RcCloud.DateScraper.Application.Dmc.Calendar.Services;
+using RcCloud.DateScraper.Cli.Output;
 using RcCloud.DateScraper.Cli.Output.Services;
 using RcCloud.DateScraper.Domain.Clubs;
 
@@ -19,7 +19,13 @@ internal class DmcCommand(ScrapeDmcRaces races, PrintRaces printer, IClubReposit
             clubRepository.Load(ClubDbFile);
         }
         
-        var all = await races.Parse();
-        printer.Print(all);
+        var parseResult = await races.Scrape();
+
+        if (parseResult.IsFailed)
+        {
+            throw new FluentException("DMC scraping failed", parseResult.ToResult());
+        }
+
+        printer.Print(parseResult.Value);
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System.Globalization;
+using FluentResults;
 using HtmlAgilityPack;
 using Microsoft.Extensions.Logging;
 using RcCloud.DateScraper.Application.Dmc.Calendar.Domain;
@@ -9,13 +10,19 @@ public class DownloadDmcCalendar(ILogger<DownloadDmcCalendar> logger)
 {
     private const string BaseUrl = "https://dmc-online.com/wordpress/termine/dmc-termine/";
     
-    public async Task<List<DmcCalendarEntry>> Scrape(int year)
+    public async Task<Result<List<DmcCalendarEntry>>> Scrape(int year)
     {
-        var html = await RetrieveBaseDocument(year);
-        return ScrapeRaw(html);
+        var downloadResult = await RetrieveBaseDocument(year);
+
+        if (downloadResult.IsFailed)
+        {
+            return Result.Fail(downloadResult.Errors);
+        }
+
+        return ScrapeRaw(downloadResult.Value);
     }
     
-    public async Task<string> RetrieveBaseDocument(int year)
+    public async Task<Result<string>> RetrieveBaseDocument(int year)
     {
         var content = new FormUrlEncodedContent(new[]
         {
@@ -29,10 +36,16 @@ public class DownloadDmcCalendar(ILogger<DownloadDmcCalendar> logger)
         
         var client = new HttpClient();
         var res = await client.PostAsync(BaseUrl, content);
+
+        if (!res.IsSuccessStatusCode)
+        {
+            return new DownloadError(BaseUrl, $"DMC scraping: Received a HTTP {res.StatusCode} on document retrieval");
+        }
+
         return await res.Content.ReadAsStringAsync();
     }
     
-    public List<DmcCalendarEntry> ScrapeRaw(string rawInput)
+    public Result<List<DmcCalendarEntry>> ScrapeRaw(string rawInput)
     {
         var doc = new HtmlDocument();
         doc.LoadHtml(rawInput);
@@ -43,8 +56,9 @@ public class DownloadDmcCalendar(ILogger<DownloadDmcCalendar> logger)
 
         if (table is null)
         {
-            logger.LogError("DMC scraping aborted: no table found in source");
-            return [];
+            var error = new ScrapeError("DMC scraping aborted: no table found in source");
+            logger.LogError(error.Message);
+            return error;
         }
 
         var rows = table.SelectNodes("tr");

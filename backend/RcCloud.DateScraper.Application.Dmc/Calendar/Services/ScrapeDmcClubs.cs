@@ -6,8 +6,14 @@ public class ScrapeDmcClubs(ScrapeDmcRaces scrapeDmcRaces)
 {
     public async Task<List<Club>> Scrape()
     {
-        var races = await scrapeDmcRaces.Parse();
+        var racesResult = await scrapeDmcRaces.Scrape();
 
-        return races.Select(r => r.Club).OfType<Club>().ToList();
+        // TODO: use result here
+        if (racesResult.IsFailed)
+        {
+            return [];
+        }
+
+        return racesResult.Value.Select(r => r.Club).OfType<Club>().ToList();
     }
 }

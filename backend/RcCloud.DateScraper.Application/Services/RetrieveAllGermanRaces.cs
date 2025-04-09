@@ -1,3 +1,4 @@
+﻿using System.Collections.Generic;
 using RcCloud.DateScraper.Application.Dmc.Calendar.Services;
 using RcCloud.DateScraper.Application.Myrcm.Common.Domain;
 using RcCloud.DateScraper.Application.Myrcm.Upcoming.Services;
@@ -21,8 +22,11 @@ public class RetrieveAllGermanRaces(
         var kleinserieAll = await scrapeKleinserie.Parse();
         all.AddRange(kleinserieAll);
 
-        var dmcAll = await scrapeDmc.Parse();
-        all.AddRange(dmcAll);
+        var dmcResult = await scrapeDmc.Scrape();
+        if (dmcResult.IsSuccess)
+        {
+            all.AddRange(dmcResult.Value);
+        }
         
         var myrcmAll = await myrcm.Scrape([MyrcmCountryCode.Germany]);
         all.AddRange(myrcmAll);
