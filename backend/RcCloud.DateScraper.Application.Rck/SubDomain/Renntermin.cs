@@ -1,26 +1,25 @@
-﻿namespace RcCloud.DateScraper.Application.Rck.SubDomain
+﻿namespace RcCloud.DateScraper.Application.Rck.SubDomain;
+
+public class Renntermin
 {
-    public class Renntermin
+    public Renntermin(DateOnly date, IGrouping<string, UndatierterTermin> es, string source)
     {
-        public Renntermin(DateOnly date, IGrouping<string, UndatierterTermin> es, string source)
-        {
-            Location = es.Key;
-            Gruppen = es.SelectMany(e => e.Gruppen).ToArray();
-            Date = date;
-            Source = source;
-        }
+        Location = es.Key;
+        Gruppen = es.SelectMany(e => e.Gruppen).ToArray();
+        Date = date;
+        Source = source;
+    }
 
-        public string Location { get; }
+    public string Location { get; }
 
-        public Gruppe[] Gruppen { get; }
+    public Gruppe[] Gruppen { get; }
 
-        public DateOnly Date { get; }
-        
-        public string Source { get; }
+    public DateOnly Date { get; }
+    
+    public string Source { get; }
 
-        public override string ToString()
-        {
-            return Location + " " + string.Join(", ", Gruppen.Select(g => g.ToString()));
-        }
+    public override string ToString()
+    {
+        return Location + " " + string.Join(", ", Gruppen.Select(g => g.ToString()));
     }
 }
