@@ -11,14 +11,14 @@ namespace RcCloud.DateScraper.Application.Rck.Services
 
         private readonly SeriesReference Series = new SeriesReference("challenge");
 
-        public async Task<IEnumerable<RaceMeeting>> Parse()
+        public async Task<List<RaceMeeting>> Scrape()
         {
             return await Parse(Series, BaseUrl, "RCK-Challenge");
         }
 
-        public async Task<IEnumerable<RaceMeeting>> Parse(string content)
+        public async Task<List<RaceMeeting>> Parse(string content)
         {
-            return await Parse(Series, content, "RCK-Challenge");
+            return await Scrape(Series, content, "RCK-Challenge");
         }
     }
 }

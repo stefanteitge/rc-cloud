@@ -1,13 +1,11 @@
-﻿using AngleSharp;
+﻿using System.Globalization;
+using System.Web;
+using AngleSharp;
 using AngleSharp.Dom;
-using RcCloud.DateScraper.Application.Myrcm.Clubs.Services;
 using RcCloud.DateScraper.Application.Myrcm.Common.Domain;
 using RcCloud.DateScraper.Application.Myrcm.Upcoming.Domain;
-using RcCloud.DateScraper.Domain.Clubs;
 using RcCloud.DateScraper.Domain.Races;
 using RcCloud.DateScraper.Domain.Series;
-using System.Globalization;
-using System.Web;
 
 namespace RcCloud.DateScraper.Application.Myrcm.Upcoming.Services;
 
@@ -17,7 +15,7 @@ public class ScrapeMyrcmRaces(
     GuessSeriesFromTitle guessSeriesFromTitle,
     GuessIfItIsTraining guessIfItIsTraining)
 {
-    public async Task<IEnumerable<RaceMeeting>> Scrape(MyrcmCountryCode[] countries)
+    public async Task<List<RaceMeeting>> Scrape(MyrcmCountryCode[] countries)
     {
         var downloaded = await downloadPages.Download(new DownloadFilter(countries));
         var firstPage = await Scrape(downloaded);

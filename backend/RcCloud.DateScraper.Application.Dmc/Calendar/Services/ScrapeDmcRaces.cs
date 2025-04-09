@@ -10,7 +10,7 @@ namespace RcCloud.DateScraper.Application.Dmc.Calendar.Services;
 
 public class ScrapeDmcRaces(DownloadDmcCalendar download, IClubRepository clubRepository, GuessSeries guessSeries)
 {
-    public async Task<Result<IEnumerable<RaceMeeting>>> Scrape()
+    public async Task<Result<List<RaceMeeting>>> Scrape()
     {
         var scrapeResult = await download.Scrape(2025);
 
@@ -21,7 +21,8 @@ public class ScrapeDmcRaces(DownloadDmcCalendar download, IClubRepository clubRe
 
         var races = scrapeResult.Value
             .Where(ce => ce.IsMeeting())
-            .Select(ce => MakeRaceMeeting(ce));
+            .Select(ce => MakeRaceMeeting(ce))
+            .ToList();
 
         return Result.Ok(races);
     }

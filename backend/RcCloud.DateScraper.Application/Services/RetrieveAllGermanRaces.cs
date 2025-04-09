@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using RcCloud.DateScraper.Application.Dmc.Calendar.Services;
+﻿using RcCloud.DateScraper.Application.Dmc.Calendar.Services;
 using RcCloud.DateScraper.Application.Myrcm.Common.Domain;
 using RcCloud.DateScraper.Application.Myrcm.Upcoming.Services;
 using RcCloud.DateScraper.Application.Rcco;
@@ -9,20 +8,20 @@ using RcCloud.DateScraper.Domain.Races;
 namespace RcCloud.DateScraper.Application.Common.Services;
 
 public class RetrieveAllGermanRaces(
-    ScrapeChallengeRaces scrapeChallenge,
-    ScrapeDmcRaces scrapeDmc,
-    ScrapeKleinserieRaces scrapeKleinserie,
+    ScrapeChallengeRaces challenge,
+    ScrapeDmcRaces dmc,
+    ScrapeKleinserieRaces kleinserie,
     ScrapeMyrcmRaces myrcm,
     ScrapeRcco rcco)
 {
     public async Task<List<RaceMeeting>> Retrieve()
     {
-        var all = (await scrapeChallenge.Parse()).ToList();
+        var all = (await challenge.Scrape()).ToList();
 
-        var kleinserieAll = await scrapeKleinserie.Parse();
+        var kleinserieAll = await kleinserie.Scrape();
         all.AddRange(kleinserieAll);
 
-        var dmcResult = await scrapeDmc.Scrape();
+        var dmcResult = await dmc.Scrape();
         if (dmcResult.IsSuccess)
         {
             all.AddRange(dmcResult.Value);

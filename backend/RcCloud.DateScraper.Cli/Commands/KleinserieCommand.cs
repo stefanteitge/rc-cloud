@@ -7,7 +7,7 @@ internal class KleinserieCommand(ScrapeKleinserieRaces races, PrintRaces printer
 {
     public async Task OnExecute()
     {
-        var all = await races.Parse();
+        var all = await races.Scrape();
         printer.Print(all);
     }
 }

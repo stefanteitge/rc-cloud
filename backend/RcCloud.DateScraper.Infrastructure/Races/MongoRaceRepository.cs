@@ -7,7 +7,7 @@ namespace RcCloud.DateScraper.Infrastructure.Races;
 
 public class MongoRaceRepository(ILogger<MongoRaceRepository> logger) : MongoBaseRepository(logger)
 {
-    public async Task<bool> Store(List<RaceMeeting> races)
+    public async Task<bool> Store(List<RaceMeeting> races, string compilation, string source)
     {
         var client = GetClient();
 
@@ -19,18 +19,20 @@ public class MongoRaceRepository(ILogger<MongoRaceRepository> logger) : MongoBas
         
         try
         {
-            var document = new RacesDocument("germany", "aggregate", races, DateTimeOffset.Now);
+            var document = new RacesDocument(compilation, source, races, DateTimeOffset.Now);
             var collection = client
-                .GetDatabase("RcCloud").GetCollection<RacesDocument>("Races"); ;
-            
+                .GetDatabase("RcCloud").GetCollection<RacesDocument>("Races");
+
             var filter = Builders<RacesDocument>.Filter
-                .Eq(r => r.Compilation, "germany");
+                .And(
+                    Builders<RacesDocument>.Filter.Eq(r => r.Source, source),
+                    Builders<RacesDocument>.Filter.Eq(r => r.Compilation, compilation));
 
             var options = new FindOneAndReplaceOptions<RacesDocument, RacesDocument>() { IsUpsert = true, };
             
             await collection.FindOneAndReplaceAsync(filter, document, options, CancellationToken.None);
 
-            logger.LogInformation("Stored clubs.");
+            logger.LogInformation("Stored clubs. ({Compilation}/{Source})", compilation, source);
         }
         catch (Exception ex)
         {

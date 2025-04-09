@@ -1,4 +1,5 @@
 ﻿using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
 using RcCloud.DateScraper.Domain.Races;
 
 namespace RcCloud.DateScraper.Infrastructure.Races;
@@ -9,16 +10,18 @@ public class RacesDocument
     {
         Compilation = compilation;
         Races = races;
-        LastUpdate = lastUpdate;
+        LastUpdate = lastUpdate.ToString();
         Source = source;
     }
 
-    public ObjectId? Id { get; set; }
+    [BsonIgnoreIfDefault]
+    public ObjectId Id { get; set; }
 
     public string Compilation { get; set; }
 
     public List<RaceMeeting> Races { get; set; } = [];
     
-    public DateTimeOffset LastUpdate { get; set; }
-    public string Source { get; }
+    public string LastUpdate { get; set; }
+
+    public string Source { get; set; }
 }
