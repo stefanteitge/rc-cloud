@@ -1,4 +1,5 @@
-﻿using RcCloud.DateScraper.Application.Dmc.Calendar.Services;
+﻿using Microsoft.Extensions.Logging.Abstractions;
+using RcCloud.DateScraper.Application.Dmc.Calendar.Services;
 
 namespace RcCloud.DateScraper.Application.Dmc.Tests.Services;
 
@@ -9,7 +10,7 @@ public class DownloadDmcCalendarTests
     [InlineData("dmc_2025_2025-04-09", 256)]
     public async Task TestScrapeRaw(string fileName, int count)
     {
-        var scraper = new DownloadDmcCalendar();
+        var scraper = new DownloadDmcCalendar(new NullLogger<DownloadDmcCalendar>());
 
         string input;
         using (var sr = new StreamReader($"Data/{fileName}.html"))
@@ -25,7 +26,7 @@ public class DownloadDmcCalendarTests
     [Fact]
     public async Task RetrieveBaseDocument_For2021_Succeeds()
     {
-        var scraper = new DownloadDmcCalendar();
+        var scraper = new DownloadDmcCalendar(new NullLogger<DownloadDmcCalendar>());
 
         var input = await scraper.RetrieveBaseDocument(2021);
 
@@ -35,7 +36,7 @@ public class DownloadDmcCalendarTests
     [Fact]
     public async Task RetrieveBaseDocument_For2025_Succeeds()
     {
-        var scraper = new DownloadDmcCalendar();
+        var scraper = new DownloadDmcCalendar(new NullLogger<DownloadDmcCalendar>());
 
         var input = await scraper.RetrieveBaseDocument(2025);
 
