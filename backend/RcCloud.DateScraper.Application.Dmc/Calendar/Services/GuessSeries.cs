@@ -9,17 +9,17 @@ public class GuessSeries
     {
         var seriess = new List<SeriesReference>();
         
-        if (entry.Comment.Contains("TOS"))
+        if (entry.BemerkungLauf.Contains("TOS"))
         {
             seriess.Add(SeriesReference.Tonisport);;    
         }
         
-        if (entry.Comment.Contains("Elbe Cup"))
+        if (entry.BemerkungLauf.Contains("Elbe Cup"))
         {
             seriess.Add(new("elbecup"));    
         }
         
-        if (entry.Comment.Contains("LE Trophy"))
+        if (entry.BemerkungLauf.Contains("LE Trophy"))
         {
             seriess.Add(new("letrophy"));    
         }

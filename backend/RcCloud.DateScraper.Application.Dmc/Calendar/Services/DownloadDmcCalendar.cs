@@ -73,7 +73,12 @@ public class DownloadDmcCalendar(ILogger<DownloadDmcCalendar> logger)
             {
                 continue;
             }
-            
+
+            var ausschreibung = cells[8].ChildNodes.Where(n => n.Name != "br").Select(n => n.OuterHtml).ToArray();
+            var nennung = cells[9].ChildNodes.Where(n => n.Name != "br").Select(n => n.OuterHtml).ToArray();
+            var ergebnis = cells[10].ChildNodes.Where(n => n.Name != "br").Select(n => n.OuterHtml).ToArray();
+            var zusatzinfos = cells[11].ChildNodes.Where(n => n.Name != "br").Select(n => n.OuterHtml).ToArray();
+
             var evt = new DmcCalendarEntry(
                 ParseDate(cells[0].InnerText),
                 ParseDate(cells[1].InnerText),
@@ -81,17 +86,16 @@ public class DownloadDmcCalendar(ILogger<DownloadDmcCalendar> logger)
                 cells[3].ChildNodes.Where(n => n.NodeType == HtmlNodeType.Text).Select(n => n.InnerText).ToArray(),
                 ParseClubNo(cells[4].InnerText),
                 cells[5].InnerText,
-                cells[6].InnerText)
-            {
-                Comment = cells[7].InnerText,
-                Announcement = cells[8].ChildNodes.Where(n => n.Name != "br").Select(n => n.OuterHtml).ToArray(),
-                Entering = cells[9].ChildNodes.Where(n => n.Name != "br").Select(n => n.OuterHtml).ToArray(),
-                Results = cells[10].ChildNodes.Where(n => n.Name != "br").Select(n => n.OuterHtml).ToArray(),
-                Related = cells[11].ChildNodes.Where(n => n.Name != "br").Select(n => n.OuterHtml).ToArray(),
-            };
+                cells[6].InnerText,
+                cells[7].InnerText,
+                ausschreibung,
+                nennung,
+                ergebnis,
+                zusatzinfos);
 
             events.Add(evt);
         }
+
         return events;
     }
     

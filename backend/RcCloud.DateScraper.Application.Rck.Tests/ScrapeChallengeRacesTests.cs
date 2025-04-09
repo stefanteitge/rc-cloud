@@ -1,5 +1,4 @@
-using RcCloud.DateScraper.Application.Rck.Services;
-using RcCloud.DateScraper.Domain;
+﻿using RcCloud.DateScraper.Application.Rck.Services;
 using RcCloud.DateScraper.Domain.Regions;
 
 namespace RcCloud.DateScraper.Application.Rck.Tests;

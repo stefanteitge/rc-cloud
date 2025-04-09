@@ -31,14 +31,14 @@ public class ScrapeDmcRaces(DownloadDmcCalendar download, IClubRepository clubRe
     {
         var regions = ComputeRegions(entry);
 
-        var club = new Club(entry.Club, [], entry.ClubNo, [], regions.FirstOrDefault());
+        var club = new Club(entry.Verein, [], entry.OrtsvereinNummer, [], regions.FirstOrDefault());
         
-        var knownClub = clubRepository.FindClub(entry.Club);
+        var knownClub = clubRepository.FindClub(entry.Verein);
         if (knownClub is not null)
         {
-            club = new Club(knownClub.Name, knownClub.Aliases, knownClub.DmcClubNumber ?? entry.ClubNo, knownClub.MyrcmClubNumbers, knownClub.Region ?? club.Region);
+            club = new Club(knownClub.Name, knownClub.Aliases, knownClub.DmcClubNumber ?? entry.OrtsvereinNummer, knownClub.MyrcmClubNumbers, knownClub.Region ?? club.Region);
 
-            if (club?.Region is not null && !regions.Contains(club.Region))
+            if (club.Region is not null && !regions.Contains(club.Region))
             {
                 regions.Add(club.Region);
             }
@@ -47,11 +47,11 @@ public class ScrapeDmcRaces(DownloadDmcCalendar download, IClubRepository clubRe
         return new(
             guessSeries.Guess(entry),
             SeasonReference.Current,
-            entry.DateEnd,
+            entry.Ende,
             club.Name,
             "de",
             ComputeTitle(entry),
-            regions.ToArray(),
+            [.. regions],
             club,
             "DMC");
 }

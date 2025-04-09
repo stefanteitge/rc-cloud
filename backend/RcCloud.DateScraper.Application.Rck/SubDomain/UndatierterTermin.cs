@@ -1,6 +1,4 @@
-﻿using System.Linq;
-
-namespace RcCloud.DateScraper.Application.Rck.SubDomain
+﻿namespace RcCloud.DateScraper.Application.Rck.SubDomain
 {
     public class UndatierterTermin
     {

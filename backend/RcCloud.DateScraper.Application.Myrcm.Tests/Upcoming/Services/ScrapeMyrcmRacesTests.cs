@@ -1,5 +1,5 @@
+﻿using Microsoft.Extensions.Logging.Abstractions;
 using Moq;
-using RcCloud.DateScraper.Application.Myrcm.Clubs.Services;
 using RcCloud.DateScraper.Application.Myrcm.Upcoming.Services;
 using RcCloud.DateScraper.Application.Myrcm.Upcoming.Services.Impl;
 using RcCloud.DateScraper.Domain.Clubs;
@@ -17,7 +17,8 @@ public class ScrapeMyrcmRacesTests
             new DownloadMyrcmPages(),
             new EnhanceClub(new Mock<IClubRepository>().Object),
             new GuessSeriesFromTitle(),
-            new GuessIfItIsTraining());
+            new GuessIfItIsTraining(),
+            new NullLogger<ScrapeMyrcmRaces>());
 
         // Act
         var result = await sut.Scrape(content);

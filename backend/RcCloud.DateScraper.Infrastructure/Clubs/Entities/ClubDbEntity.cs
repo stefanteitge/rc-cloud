@@ -1,6 +1,4 @@
-﻿using System.Text.Json.Serialization;
-
-namespace RcCloud.DateScraper.Infrastructure.Clubs.Entities;
+﻿namespace RcCloud.DateScraper.Infrastructure.Clubs.Entities;
 
 public class ClubDbEntity(List<ClubEntity> clubs, DateTimeOffset lastUpdated)
 {

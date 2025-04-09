@@ -1,5 +1,4 @@
 ﻿using RcCloud.DateScraper.Domain.Clubs;
-using RcCloud.DateScraper.Domain.Regions;
 
 namespace RcCloud.DateScraper.Application.Myrcm.Upcoming.Services.Impl;
 

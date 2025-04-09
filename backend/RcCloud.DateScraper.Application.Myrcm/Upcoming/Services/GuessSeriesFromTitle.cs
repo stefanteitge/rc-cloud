@@ -1,5 +1,4 @@
-using RcCloud.DateScraper.Domain;
-using RcCloud.DateScraper.Domain.Series;
+﻿using RcCloud.DateScraper.Domain.Series;
 
 namespace RcCloud.DateScraper.Application.Myrcm.Upcoming.Services;
 

@@ -1,5 +1,4 @@
-﻿using RcCloud.DateScraper.Domain;
-using RcCloud.DateScraper.Domain.Races;
+﻿using RcCloud.DateScraper.Domain.Races;
 using RcCloud.DateScraper.Domain.Regions;
 using RcCloud.DateScraper.Domain.Series;
 

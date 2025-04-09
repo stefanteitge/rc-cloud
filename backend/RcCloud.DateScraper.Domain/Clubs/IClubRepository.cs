@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using RcCloud.DateScraper.Domain.Regions;
-
-namespace RcCloud.DateScraper.Domain.Clubs;
+﻿namespace RcCloud.DateScraper.Domain.Clubs;
 
 public interface IClubRepository
 {

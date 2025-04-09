@@ -1,6 +1,4 @@
-﻿using RcCloud.DateScraper.Domain.Races;
-
-namespace RcCloud.DateScraper.Cli.Output.Dto;
+﻿namespace RcCloud.DateScraper.Cli.Output.Dto;
 
 public class JsonExportSchema<T>(DateTimeOffset retrievedDate, T raceMeetings)
 {

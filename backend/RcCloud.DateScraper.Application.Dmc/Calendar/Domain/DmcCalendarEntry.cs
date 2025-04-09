@@ -1,63 +1,77 @@
-using RcCloud.DateScraper.Application.Dmc.Common.Domain;
+﻿using RcCloud.DateScraper.Application.Dmc.Common.Domain;
 
 namespace RcCloud.DateScraper.Application.Dmc.Calendar.Domain;
 
-public class DmcCalendarEntry(DateOnly dateStart, DateOnly dateEnd, string type, string[] classes, int? clubNo, string club, string location)
+public class DmcCalendarEntry(
+    DateOnly beginn,
+    DateOnly ende,
+    string praedikat,
+    string[] klassen,
+    int? ortsvereinNummer,
+    string verein,
+    string bemerkungOrt,
+    string bemerkungLauf,
+    string[] ausschreibung,
+    string[] nennung,
+    string[] ergebnis,
+    string[] zusatzinfos)
 {
     private readonly string[] _nonEventTypes = ["SRLDMC", "SKTDMC", "PRAESDMC"];
 
-    public DateOnly DateStart => dateStart;
+    public DateOnly Beginn { get; } = beginn;
 
-    public DateOnly DateEnd => dateEnd;
+    public DateOnly Ende { get; } = ende;
 
-    public string Type => type;
+    public string Praedikat { get; } = praedikat;
 
-    public string[] Classes => classes;
+    public string[] Klassen { get; } = klassen;
 
-    public int? ClubNo => clubNo;
+    public int? OrtsvereinNummer { get; } = ortsvereinNummer;
 
-    public string Club => club;
+    public string Verein { get; } = verein;
 
-    public string Location => location;
-    
-    public string Comment { get; set; }
-    
-    public string[] Announcement { get; set; }
-    
-    public string[] Entering { get; set; }
-    
-    public string[] Results { get; set; }
-    
-    public string[] Related { get; set; }
-   
+    public string BemerkungOrt { get; } = bemerkungOrt;
+
+    public string BemerkungLauf { get; } = bemerkungLauf;
+
+
+    public string[] Ausschreibung { get; } = ausschreibung;
+
+
+    public string[] Nennung { get; } = nennung;
+
+    public string[] Ergebnis { get; } = ergebnis;
+
+    public string[] Zusatzinfos { get; } = zusatzinfos;
+
     public bool IsRegionMeeting(DmcRegion regionNumber) => 
-        Type == $"FR{(int)regionNumber}DMC" 
-        || Type == $"SM{(int)regionNumber}DMC";
+        Praedikat == $"FR{(int)regionNumber}DMC" 
+        || Praedikat == $"SM{(int)regionNumber}DMC";
 
-    public bool IsMeeting() => !_nonEventTypes.Contains(Type);
+    public bool IsMeeting() => !_nonEventTypes.Contains(Praedikat);
 
     public bool IsSportkreismeisterschaft()
     {
-        return Type.StartsWith("SM") && Type.EndsWith("DMC");
+        return Praedikat.StartsWith("SM") && Praedikat.EndsWith("DMC");
     }
 
     public bool IsFreundschaftsrennen()
     {
-        return Type.StartsWith("FR") && Type.EndsWith("DMC");
+        return Praedikat.StartsWith("FR") && Praedikat.EndsWith("DMC");
     }
     
     public bool IsDeutscheMeisterschaft()
     {
-        return (Type.StartsWith("DM") || Type.StartsWith("ODM")) && Type.EndsWith("DMC");
+        return (Praedikat.StartsWith("DM") || Praedikat.StartsWith("ODM")) && Praedikat.EndsWith("DMC");
     }
 
     public bool IsShCup()
     {
-        return Type.StartsWith("CUPSH") && Type.EndsWith("DMC");
+        return Praedikat.StartsWith("CUPSH") && Praedikat.EndsWith("DMC");
     }
     
     public bool IsTamiyaEurocup()
     {
-        return Type.StartsWith("MP-TA") && Type.EndsWith("DMC");
+        return Praedikat.StartsWith("MP-TA") && Praedikat.EndsWith("DMC");
     }
 }

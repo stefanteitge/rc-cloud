@@ -2,6 +2,7 @@
 using System.Web;
 using AngleSharp;
 using AngleSharp.Dom;
+using Microsoft.Extensions.Logging;
 using RcCloud.DateScraper.Application.Myrcm.Common.Domain;
 using RcCloud.DateScraper.Application.Myrcm.Upcoming.Domain;
 using RcCloud.DateScraper.Domain.Races;
@@ -13,7 +14,8 @@ public class ScrapeMyrcmRaces(
     DownloadMyrcmPages downloadPages,
     IEnhanceClub enhanceClub,
     GuessSeriesFromTitle guessSeriesFromTitle,
-    GuessIfItIsTraining guessIfItIsTraining)
+    GuessIfItIsTraining guessIfItIsTraining,
+    ILogger logger)
 {
     public async Task<List<RaceMeeting>> Scrape(MyrcmCountryCode[] countries)
     {
@@ -43,6 +45,13 @@ public class ScrapeMyrcmRaces(
         }
         
         var table = document.QuerySelector(".paging");
+
+        if (table is null)
+        {
+            logger.LogError("Myracm scraping: Paging table not found.");
+            return 0;
+        }
+
         var lastCell = table.QuerySelectorAll("td").SkipLast(1).LastOrDefault();
 
         if (lastCell is not null)
@@ -62,10 +71,10 @@ public class ScrapeMyrcmRaces(
             return [];
         }
 
-        return await Parse2(document);
+        return Parse2(document);
     }
 
-    private async Task<IEnumerable<RaceMeeting>> Parse2(IDocument document)
+    private IEnumerable<RaceMeeting> Parse2(IDocument document)
     {
         var table = document.QuerySelector("table[id='data-table']");
 
@@ -166,7 +175,7 @@ public class ScrapeMyrcmRaces(
     {
         var url = cells[1].QuerySelector("a")?.Attributes["href"]?.Value;
         var hostLink = new Url(url);
-        var clubNumberString = HttpUtility.ParseQueryString(hostLink.Query).Get("dId[O]");
+        var clubNumberString = HttpUtility.ParseQueryString(hostLink.Query ?? string.Empty).Get("dId[O]");
 
         if (string.IsNullOrEmpty(clubNumberString))
         {

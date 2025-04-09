@@ -18,7 +18,7 @@ public abstract class AbstractRckService
             return [];
         }
 
-        return await Parse2(document, series, source);
+        return Parse2(document, series, source);
     }
 
     protected async Task<List<RaceMeeting>> Scrape(SeriesReference series, string content, string source)
@@ -30,10 +30,10 @@ public abstract class AbstractRckService
             return [];
         }
 
-        return await Parse2(document, series, source);
+        return Parse2(document, series, source);
     }
 
-    private async Task<List<RaceMeeting>> Parse2(IDocument document, SeriesReference series, string source)
+    private List<RaceMeeting> Parse2(IDocument document, SeriesReference series, string source)
     {
         var dateTable = document.QuerySelector("body > table:nth-child(5)");
 
@@ -110,7 +110,7 @@ public abstract class AbstractRckService
         if (isComingSoon)
         {
             var location = element.QuerySelector("b font")?.TextContent.Replace("coming soon", "").Trim();
-            return new UndatierterTermin(location, gruppe);
+            return new UndatierterTermin(location ?? "Unbekannter Ort", gruppe);
         }
 
         return null;

@@ -1,4 +1,4 @@
-using System.Globalization;
+﻿using System.Globalization;
 using HtmlAgilityPack;
 using RcCloud.DateScraper.Domain.Clubs;
 using RcCloud.DateScraper.Domain.Races;
@@ -17,17 +17,17 @@ public class ScrapeRcco(IClubRepository clubRepository)
 
         string html = await res.Content.ReadAsStringAsync();
         
-        return await Parse(html);
+        return Scrape(html);
     }
 
-    public async Task<List<RaceMeeting>> Parse(string content)
+    public List<RaceMeeting> Scrape(string content)
     {
         var doc = new HtmlDocument();
         doc.LoadHtml(content);
         
         var tables = doc.DocumentNode.SelectNodes("//table").Skip(2);
             
-        var events = new List<RccoRace>();
+        var events = new List<RccoVeranstaltung>();
         foreach (var table in tables)
         {
             events.AddRange(ParseTable(table));    
@@ -36,8 +36,8 @@ public class ScrapeRcco(IClubRepository clubRepository)
         List<RaceMeeting> raceMeetings = new List<RaceMeeting>();
         foreach (var evt in events)
         {
-            var club = new Club(evt.ClubName, [], null, [], null);
-            var knownClub = clubRepository.FindClub(evt.ClubName);
+            var club = new Club(evt.Verein, [], null, [], null);
+            var knownClub = clubRepository.FindClub(evt.Verein);
             if (knownClub is not null)
             {
                 club = knownClub;
@@ -50,11 +50,11 @@ public class ScrapeRcco(IClubRepository clubRepository)
         return raceMeetings;
     }
 
-    private List<RccoRace> ParseTable(HtmlNode table)
+    private List<RccoVeranstaltung> ParseTable(HtmlNode table)
     {
         var rows = table.SelectNodes("tr").Skip(1);
 
-        List<RccoRace> events = new List<RccoRace>();
+        List<RccoVeranstaltung> veranstaltungen = new List<RccoVeranstaltung>();
         foreach (var row in rows)
         {
             var cells = row.SelectNodes("td");
@@ -62,21 +62,18 @@ public class ScrapeRcco(IClubRepository clubRepository)
             {
                 var dateEnd = cells[0].ChildNodes
                     .Last(n => n.NodeType == HtmlNodeType.Text && !string.IsNullOrEmpty(n.InnerText.Trim())).InnerText;
-                var title = cells[2].ChildNodes.FirstOrDefault()?.InnerText.Trim() ?? "Rennen";
-                
-                var evt = new RccoRace(title)
-                {
-                    DateStart = cells[0].ChildNodes.First(n => n.NodeType == HtmlNodeType.Text && !string.IsNullOrEmpty(n.InnerText.Trim())).InnerText,
-                    DateEnd = ParseDate(dateEnd),
-                    ClubName = cells[1].SelectSingleNode("a").InnerText,
-                    Location = cells[8].SelectSingleNode("a").InnerText,
-                };
+                var laufname = cells[2].ChildNodes.FirstOrDefault()?.InnerText.Trim() ?? "Rennen";
 
-                events.Add(evt);
+                var verein = cells[1].SelectSingleNode("a").InnerText;
+                var strecke = cells[8].SelectSingleNode("a").InnerText;
+
+                var veranstaltung = new RccoVeranstaltung(ParseDate(dateEnd), verein, laufname, strecke);
+
+                veranstaltungen.Add(veranstaltung);
             }
         }
 
-        return events;
+        return veranstaltungen;
     }
     
     private DateOnly ParseDate(string input)
