@@ -26,6 +26,9 @@
     <None Update="Data\dmc_2021_2021-10-11.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="Data\dmc_2025_2025-04-09.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

@@ -1,10 +1,11 @@
-using System.Globalization;
+﻿using System.Globalization;
 using HtmlAgilityPack;
+using Microsoft.Extensions.Logging;
 using RcCloud.DateScraper.Application.Dmc.Calendar.Domain;
 
 namespace RcCloud.DateScraper.Application.Dmc.Calendar.Services;
 
-public class DownloadDmcCalendar
+public class DownloadDmcCalendar(ILogger<DownloadDmcCalendar> logger)
 {
     private const string BaseUrl = "https://dmc-online.com/wordpress/termine/dmc-termine/";
     
@@ -35,8 +36,17 @@ public class DownloadDmcCalendar
     {
         var doc = new HtmlDocument();
         doc.LoadHtml(rawInput);
-        
+
+        logger.LogInformation("DMC scraping: Loaded HTML document with size {InputSize}", rawInput.Length);
+
         var table = doc.DocumentNode.SelectSingleNode("//table");
+
+        if (table is null)
+        {
+            logger.LogError("DMC scraping aborted: no table found in source");
+            return [];
+        }
+
         var rows = table.SelectNodes("tr");
 
         List<DmcCalendarEntry> events = new List<DmcCalendarEntry>();
