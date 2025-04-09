@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using MongoDB.Driver;
+using RcCloud.DateScraper.Infrastructure.Races;
 
 namespace RcCloud.DateScraper.Infrastructure.Common;
 
@@ -20,4 +21,7 @@ public class MongoBaseRepository(IConfiguration configuration, ILogger logger)
         settings.ServerApi = new ServerApi(ServerApiVersion.V1);
         return new MongoClient(settings);
     }
+
+    protected static IMongoCollection<RacesDocument> GetCollection(MongoClient client, string collection)
+        => client.GetDatabase("RcCloud").GetCollection<RacesDocument>(collection);
 }

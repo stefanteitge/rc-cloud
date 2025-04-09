@@ -15,7 +15,7 @@ public class ScrapeMyrcmRaces(
     IEnhanceClub enhanceClub,
     GuessSeriesFromTitle guessSeriesFromTitle,
     GuessIfItIsTraining guessIfItIsTraining,
-    ILogger logger)
+    ILogger<ScrapeMyrcmRaces> logger)
 {
     public async Task<List<RaceMeeting>> Scrape(MyrcmCountryCode[] countries)
     {

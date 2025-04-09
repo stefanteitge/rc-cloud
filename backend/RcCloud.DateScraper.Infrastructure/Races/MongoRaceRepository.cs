@@ -11,6 +11,23 @@ public class MongoRaceRepository(
     ILogger<MongoRaceRepository> logger)
     : MongoBaseRepository(configuration, logger)
 {
+    private static readonly string _collection = "Races";
+
+    public async Task<RacesDocument?> Load(string compilation, string source)
+    {
+        var client = GetClient();
+
+        if (client is null)
+        {
+            logger.LogError("Cannot create Mongo client. Cannot load.");
+            return null;
+        }
+
+        var collection = GetCollection(client, _collection);
+
+        return (await collection.FindAsync(MakeFilter(compilation, source))).FirstOrDefault();
+    }
+
     public async Task<bool> Store(List<RaceMeeting> races, string compilation, string source)
     {
         var client = GetClient();
@@ -24,16 +41,12 @@ public class MongoRaceRepository(
         try
         {
             var document = new RacesDocument(compilation, source, races, DateTimeOffset.Now);
-            var collection = client
-                .GetDatabase("RcCloud").GetCollection<RacesDocument>("Races");
+            var collection = GetCollection(client, _collection);
 
-            var filter = Builders<RacesDocument>.Filter
-                .And(
-                    Builders<RacesDocument>.Filter.Eq(r => r.Source, source),
-                    Builders<RacesDocument>.Filter.Eq(r => r.Compilation, compilation));
+            var filter = MakeFilter(compilation, source);
 
             var options = new FindOneAndReplaceOptions<RacesDocument, RacesDocument>() { IsUpsert = true, };
-            
+
             await collection.FindOneAndReplaceAsync(filter, document, options, CancellationToken.None);
 
             logger.LogInformation("Stored clubs. ({Compilation}/{Source})", compilation, source);
@@ -46,4 +59,9 @@ public class MongoRaceRepository(
 
         return true;
     }
+
+    private static FilterDefinition<RacesDocument> MakeFilter(string compilation, string source) => Builders<RacesDocument>.Filter
+                    .And(
+                        Builders<RacesDocument>.Filter.Eq(r => r.Source, source),
+                        Builders<RacesDocument>.Filter.Eq(r => r.Compilation, compilation));
 }
