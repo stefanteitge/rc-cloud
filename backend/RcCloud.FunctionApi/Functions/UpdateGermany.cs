@@ -9,6 +9,7 @@ using RcCloud.DateScraper.Application.Rcco;
 using RcCloud.DateScraper.Application.Rck.Services;
 using RcCloud.DateScraper.Domain.Races;
 using RcCloud.DateScraper.Infrastructure.Races;
+using RcCloud.FunctionApi.Functions.Dto;
 
 namespace RcCloud.FunctionApi.Functions;
 
@@ -54,6 +55,6 @@ public class UpdateGermany(
 
         logger.LogInformation("Found {Count} races from all sources.", all.Count);
 
-        return new OkObjectResult(all);
+        return new OkObjectResult(GermanyPageDto.FromRaces(all, DateTimeOffset.Now.ToString()));
     }
 }

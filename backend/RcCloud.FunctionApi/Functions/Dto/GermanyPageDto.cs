@@ -29,7 +29,30 @@ public class GermanyPageDto(string lastUpdate, List<RaceDateDto> dates)
             dateDtos.Add(new RaceDateDto(date.ToString(), categories));
         }
 
-        return new(document.LastUpdate, dateDtos);
+        return FromRaces(document.Races, document.LastUpdate);
+    }
+    
+    public static GermanyPageDto FromRaces(List<RaceMeeting> races, string lastUpdate)
+    {
+        var dates = races.Select(r => r.Date).Distinct().Order().ToList();
+
+        var dateDtos = new List<RaceDateDto>();
+        foreach (var date in dates)
+        {
+            var categories = new List<RaceCategoryDto>();
+            var racesWithDate = races.Where(r => r.Date == date).ToList();
+
+            CreateGlobalCategory(racesWithDate, categories);
+            CreateCategory(racesWithDate, categories, "west");
+            CreateCategory(racesWithDate, categories, "east");
+            CreateCategory(racesWithDate, categories, "north");
+            CreateCategory(racesWithDate, categories, "south");
+            CreateCategory(racesWithDate, categories, "central");
+
+            dateDtos.Add(new RaceDateDto(date.ToString(), categories));
+        }
+
+        return new(lastUpdate, dateDtos);
     }
 
     private static void CreateGlobalCategory(List<RaceMeeting> racesOnDate, List<RaceCategoryDto> categories)
