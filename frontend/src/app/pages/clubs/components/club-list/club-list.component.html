@@ -1,1 +1,6 @@
-<p>club-list works!</p>
+<ul>
+
+@for (club of repo.clubs(); track club.name) {
+  <li>{{ club.name}}</li>
+}
+</ul>

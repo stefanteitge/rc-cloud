@@ -1,3 +1,4 @@
 export const environment = {
-  functionsApiRaces: true
+  functionsApiRaces: true,
+  apiRoot: 'http://localhost:7033/api/'
 };

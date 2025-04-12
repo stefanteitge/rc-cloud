@@ -5,14 +5,13 @@ import {GermanyPage, RaceDate} from '../domain/race-date';
 import {RaceMeetingEnvelopeDto} from '../dtos/race-meeting-envelope.dto';
 import compileUpcomingDates from '../services/compile-upcoming-dates.service';
 import {FEATURE_FUNCTION_API_RACES, FeatureFlagService} from '../../feature-managment/services/feature-flag.service';
+import {environment} from '../../../../environments/environment';
 
 @Injectable()
 export class RaceMeetingRepository {
   private apiGermanyUrl = 'assets/germany.json';
   private apiBeneluxUrl = 'assets/benelux.json';
-  //private publicApiUrl = 'https://rc-cloud.de/api/germany';
-  private publicApiUrl = 'http://localhost:7033' +
-    '/api/germany';
+  private publicApiUrl = environment.apiRoot + 'germany';
   public germany = signal<RaceDate[]>([]);
   public germanyLastUpdate = signal('');
   public benelux = signal<RaceMeetingEnvelopeDto>({ lastUpdate: '', races: [] });
