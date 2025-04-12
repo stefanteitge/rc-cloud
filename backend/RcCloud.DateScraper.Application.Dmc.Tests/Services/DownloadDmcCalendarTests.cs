@@ -24,7 +24,7 @@ public class DownloadDmcCalendarTests
         Assert.Equal(count, scrapeResult.Value.Count);
     }
 
-    [Fact]
+    [Fact(Skip = "Uses live data, not stable")]
     public async Task RetrieveBaseDocument_For2021_Succeeds()
     {
         var scraper = new DownloadDmcCalendar(new NullLogger<DownloadDmcCalendar>());
@@ -35,7 +35,7 @@ public class DownloadDmcCalendarTests
         Assert.Contains("Munzig ", downloadResult.Value);
     }
 
-    [Fact]
+    [Fact(Skip = "Uses live data, not stable")]
     public async Task RetrieveBaseDocument_For2025_Succeeds()
     {
         var scraper = new DownloadDmcCalendar(new NullLogger<DownloadDmcCalendar>());
