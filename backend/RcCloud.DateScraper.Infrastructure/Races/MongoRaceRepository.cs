@@ -9,7 +9,7 @@ namespace RcCloud.DateScraper.Infrastructure.Races;
 public class MongoRaceRepository(
     IConfiguration configuration,
     ILogger<MongoRaceRepository> logger)
-    : MongoBaseRepository(configuration, logger)
+    : MongoBaseRepository<RacesDocument>(configuration, logger)
 {
     private static readonly string _collection = "Races";
 

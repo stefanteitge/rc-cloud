@@ -1,17 +1,17 @@
-﻿using DnsClient.Internal;
-using Microsoft.Extensions.Configuration;
+﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using RcCloud.DateScraper.Infrastructure.Clubs.Entities;
 using RcCloud.DateScraper.Infrastructure.Common;
+using RcCloud.DateScraper.Infrastructure.Races;
 
 namespace RcCloud.DateScraper.Infrastructure.Clubs;
 
 public class MongoClubRepository(
     IConfiguration configuration,
     ILogger<MongoClubRepository> logger)
-    : MongoBaseRepository(configuration, logger)
+    : MongoBaseRepository<ClubDbEntity>(configuration, logger)
 {
-    public bool Store(ClubDbEntity clubDbEntity)
+    public async Task<bool> Store(ClubDbEntity clubDbEntity)
     {
         var client = GetClient();
 
@@ -23,9 +23,13 @@ public class MongoClubRepository(
         
         try
         {
-            var collection = client
-                .GetDatabase("RcCloud").GetCollection<ClubDbEntity>("Clubs"); ;
-            collection.InsertOne(clubDbEntity);
+            var collection = GetCollection(client, "Clubs");
+
+            var filter = MongoDB.Driver.Builders<ClubDbEntity>.Filter.Eq(r => r.Compilation, clubDbEntity.Compilation);
+
+            var options = new MongoDB.Driver.FindOneAndReplaceOptions<ClubDbEntity, ClubDbEntity>() { IsUpsert = true, };
+
+            await collection.FindOneAndReplaceAsync(filter, clubDbEntity, options, CancellationToken.None);
 
             logger.LogInformation("Stored clubs.");
         }

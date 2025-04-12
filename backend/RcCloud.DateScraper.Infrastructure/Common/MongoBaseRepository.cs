@@ -5,7 +5,7 @@ using RcCloud.DateScraper.Infrastructure.Races;
 
 namespace RcCloud.DateScraper.Infrastructure.Common;
 
-public class MongoBaseRepository(IConfiguration configuration, ILogger logger)
+public class MongoBaseRepository<T>(IConfiguration configuration, ILogger logger)
 {
     protected MongoClient? GetClient()
     {
@@ -22,6 +22,6 @@ public class MongoBaseRepository(IConfiguration configuration, ILogger logger)
         return new MongoClient(settings);
     }
 
-    protected static IMongoCollection<RacesDocument> GetCollection(MongoClient client, string collection)
-        => client.GetDatabase("RcCloud").GetCollection<RacesDocument>(collection);
+    protected static IMongoCollection<T> GetCollection(MongoClient client, string collection)
+        => client.GetDatabase("RcCloud").GetCollection<T>(collection);
 }

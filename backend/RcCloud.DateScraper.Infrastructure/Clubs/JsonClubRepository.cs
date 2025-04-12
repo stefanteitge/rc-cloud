@@ -18,7 +18,7 @@ public class JsonClubRepository : IClubRepository
         Make("RC Speedracer e.V.", ["RC Speedracer e.V. OV-055"], RegionReference.East),
     ];
 
-    private ClubDbEntity _clubDb = new ClubDbEntity(_seed.ToList(), DateTimeOffset.Now);
+    private ClubDbEntity _clubDb = new ClubDbEntity(_seed.ToList(), DateTimeOffset.Now, "germany");
 
     public Club? FindClub(string clubName)
     {
@@ -53,7 +53,7 @@ public class JsonClubRepository : IClubRepository
             Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping,
         };
         
-        var db = new ClubDbEntity(_clubDb.Clubs.OrderBy(c => c.Name).ToList(), DateTimeOffset.Now);
+        var db = new ClubDbEntity(_clubDb.Clubs.OrderBy(c => c.Name).ToList(), DateTimeOffset.Now, "germany");
         
         var bytes = JsonSerializer.SerializeToUtf8Bytes(db, options);
         File.WriteAllBytes(path, bytes);
