@@ -5,7 +5,7 @@ namespace RcCloud.DateScraper.Application.Myrcm.Tests.Upcoming.Services;
 
 public class DownloadMyrcmPagesTests
 {
-    [Fact]
+    [Fact(Skip = "Uses live data, not stable")]
     public async Task Test1()
     {
         var sut = new DownloadMyrcmPages();
@@ -15,7 +15,7 @@ public class DownloadMyrcmPagesTests
         Assert.DoesNotContain("Avondcompetitie #1 HFCC Racing 2025", content);
     }
 
-    [Fact]
+    [Fact(Skip = "Uses live data, not stable")]
     public async Task Parse_Page4_HasEvent()
     {
         var sut = new DownloadMyrcmPages();
