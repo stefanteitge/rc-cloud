@@ -930,38 +930,6 @@
       "region": "south"
     },
     {
-      "name": "Referent EG",
-      "aliases": [],
-      "countryCode": "de",
-      "dmcClubNumber": null,
-      "myrcmClubNumbers": [],
-      "region": null
-    },
-    {
-      "name": "Referent Großmodelle",
-      "aliases": [],
-      "countryCode": "de",
-      "dmcClubNumber": null,
-      "myrcmClubNumbers": [],
-      "region": null
-    },
-    {
-      "name": "Referent OR8",
-      "aliases": [],
-      "countryCode": "de",
-      "dmcClubNumber": null,
-      "myrcmClubNumbers": [],
-      "region": null
-    },
-    {
-      "name": "Referent ORE",
-      "aliases": [],
-      "countryCode": "de",
-      "dmcClubNumber": null,
-      "myrcmClubNumbers": [],
-      "region": null
-    },
-    {
       "name": "RGMC-Teck e.V.",
       "aliases": [],
       "countryCode": "de",
@@ -1016,22 +984,6 @@
       "dmcClubNumber": 323,
       "myrcmClubNumbers": [],
       "region": "central"
-    },
-    {
-      "name": "Sportkreisvorsitzender Süd",
-      "aliases": [],
-      "countryCode": "de",
-      "dmcClubNumber": null,
-      "myrcmClubNumbers": [],
-      "region": null
-    },
-    {
-      "name": "Sportkreisvorsitzender West",
-      "aliases": [],
-      "countryCode": "de",
-      "dmcClubNumber": null,
-      "myrcmClubNumbers": [],
-      "region": null
     },
     {
       "name": "Stoppelhopser Oberhausen e.V.",

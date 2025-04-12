@@ -79,6 +79,12 @@ public class DownloadDmcCalendar(ILogger<DownloadDmcCalendar> logger)
             var ergebnis = cells[10].ChildNodes.Where(n => n.Name != "br").Select(n => n.OuterHtml).ToArray();
             var zusatzinfos = cells[11].ChildNodes.Where(n => n.Name != "br").Select(n => n.OuterHtml).ToArray();
             var verein = cells[5].InnerText.Trim();
+
+            // drop international races and meetings
+            if (verein.StartsWith("Referent") || verein.StartsWith("Sportkreisvorsitzender"))
+            {
+                continue;
+            }
             
             var evt = new DmcCalendarEntry(
                 ParseDate(cells[0].InnerText),
