@@ -9,8 +9,8 @@ import compileUpcomingDates from '../services/compile-upcoming-dates.service';
 export class RaceMeetingRepository {
   private apiGermanyUrl = 'assets/germany.json';
   private apiBeneluxUrl = 'assets/benelux.json';
-  public germany = signal<RaceMeetingEnvelopeDto>({ retrievedDate: '', raceMeetings: [] });
-  public benelux = signal<RaceMeetingEnvelopeDto>({ retrievedDate: '', raceMeetings: [] });
+  public germany = signal<RaceMeetingEnvelopeDto>({ lastUpdate: '', races: [] });
+  public benelux = signal<RaceMeetingEnvelopeDto>({ lastUpdate: '', races: [] });
   public loading = signal<boolean>(false);
   public error = signal<string | null>(null);
 
@@ -19,10 +19,10 @@ export class RaceMeetingRepository {
 
   getAll(dataSet: string): UpcomingDate[] {
     if (dataSet == 'benelux') {
-      return compileUpcomingDates(this.benelux().raceMeetings, ['be', 'nl', 'lu', 'banger', 'stockcar'], true);
+      return compileUpcomingDates(this.benelux().races, ['be', 'nl', 'lu', 'banger', 'stockcar'], true);
     }
 
-    return compileUpcomingDates(this.germany().raceMeetings, ['east', 'west', 'north', 'south', 'central']);
+    return compileUpcomingDates(this.germany().races, ['east', 'west', 'north', 'south', 'central']);
   }
 
   fetchAll(): void {
@@ -54,9 +54,9 @@ export class RaceMeetingRepository {
 
   getRetrievedDate(dataSet: string) {
     if (dataSet == 'benelux') {
-      return this.benelux().retrievedDate;
+      return this.benelux().lastUpdate;
     }
 
-    return this.germany().retrievedDate;
+    return this.germany().lastUpdate;
   }
 }
