@@ -7,7 +7,9 @@ using RcCloud.DateScraper.Application.Myrcm.Common.Domain;
 using RcCloud.DateScraper.Application.Myrcm.Upcoming.Services;
 using RcCloud.DateScraper.Application.Rcco;
 using RcCloud.DateScraper.Application.Rck.Services;
+using RcCloud.DateScraper.Domain.Clubs;
 using RcCloud.DateScraper.Domain.Races;
+using RcCloud.DateScraper.Infrastructure.Clubs.Mongo;
 using RcCloud.DateScraper.Infrastructure.Races;
 using RcCloud.FunctionApi.Races.Dto;
 
@@ -19,12 +21,17 @@ public class UpdateGermanyFunction(
     ScrapeKleinserieRaces kleinserie,
     ScrapeMyrcmRaces myrcm,
     ScrapeRcco rcco,
+    IClubRepository clubRepository,
+    MongoClubRepository mongoClubRepository,
     MongoRaceRepository repo,
     ILogger<UpdateGermanyFunction> logger)
 {
     [Function("update-germany")]
     public async Task<IActionResult> Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", "post")] HttpRequest req)
     {
+        var clubs = await mongoClubRepository.GetAll("germany");
+        clubRepository.Load(clubs);
+        
         var all = new List<RaceMeeting>();
 
         var challengeAll = await challenge.Scrape();

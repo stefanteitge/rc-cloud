@@ -25,4 +25,13 @@ public class ClubJson(
 
     public Club ToDomain()
         => new(Name, Aliases,  CountryCode, DmcClubNumber, MyrcmClubNumbers.ToArray(), Region is null ? null : new RegionReference(Region));
+    
+    public static ClubJson FromDomain(Club club)
+        => new ClubJson(
+            club.Name,
+            club.Aliases,
+            club.CountryCode, 
+            club.Region?.Id,
+            club.DmcClubNumber, 
+            club.MyrcmClubNumbers.ToList());
 }

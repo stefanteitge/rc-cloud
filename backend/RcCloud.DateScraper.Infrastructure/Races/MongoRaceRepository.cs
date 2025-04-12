@@ -49,7 +49,7 @@ public class MongoRaceRepository(
 
             await collection.FindOneAndReplaceAsync(filter, document, options, CancellationToken.None);
 
-            logger.LogInformation("Stored clubs. ({Compilation}/{Source})", compilation, source);
+            logger.LogInformation("Stored races. ({Compilation}/{Source})", compilation, source);
         }
         catch (Exception ex)
         {

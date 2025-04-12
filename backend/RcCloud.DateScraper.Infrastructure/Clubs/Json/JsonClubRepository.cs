@@ -1,6 +1,7 @@
 ﻿using System.Text.Json;
 using RcCloud.DateScraper.Domain.Clubs;
 using RcCloud.DateScraper.Domain.Regions;
+using RcCloud.DateScraper.Infrastructure.Clubs.Mongo;
 
 namespace RcCloud.DateScraper.Infrastructure.Clubs.Json;
 
@@ -95,6 +96,14 @@ public class JsonClubRepository : IClubRepository
 
     public IEnumerable<Club> GetAll()
         => _clubDb.Clubs.Select(c => c.ToDomain()).OrderBy(c => c.Name);
+
+    public void Load(List<Club> clubs)
+    {
+        _clubDb = new ClubDbJsonRoot(
+            clubs.Select(c => ClubJson.FromDomain(c)).ToList(),
+            DateTimeOffset.Now, 
+            "germany");
+    }
 
     private ClubJson? FindClubEntity(string clubName)
     {

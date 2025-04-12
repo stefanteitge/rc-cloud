@@ -11,4 +11,6 @@ public interface IClubRepository
     void Update(Club update);
     
     IEnumerable<Club> GetAll();
+    
+    void Load(List<Club> clubs);
 }
