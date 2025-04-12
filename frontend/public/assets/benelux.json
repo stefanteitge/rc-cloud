@@ -1,27 +1,6 @@
 {
-  "retrievedDate": "2025-04-08T10:27:06.8780629+00:00",
+  "retrievedDate": "2025-04-12T06:22:54.6030406+00:00",
   "raceMeetings": [
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-04-12",
-      "location": "HFCC Den Haag",
-      "countryCode": "nl",
-      "title": "Open Clubwedstrijd Race #1 HFCC Racing 2025",
-      "regions": [],
-      "club": {
-        "name": "HFCC Den Haag",
-        "aliases": [],
-        "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          14156
-        ],
-        "region": null
-      },
-      "source": "Myrcm"
-    },
     {
       "series": [],
       "season": {
@@ -240,7 +219,7 @@
       "date": "2025-04-20",
       "location": "MRC Real'80 Gr.",
       "countryCode": "nl",
-      "title": "Genius Easter Trophy International",
+      "title": "Genius Easter Trophy International (( Canceled ))",
       "regions": [],
       "club": {
         "name": "MRC Real'80 Gr.",
@@ -590,14 +569,18 @@
       "source": "Myrcm"
     },
     {
-      "series": [],
+      "series": [
+        {
+          "id": "hudyseries"
+        }
+      ],
       "season": {
         "id": "current"
       },
       "date": "2025-04-27",
       "location": "SimplyFunRacing",
       "countryCode": "nl",
-      "title": "2025 Simply Fun Racing: Race 1 (ERCE Eindhoven)",
+      "title": "2025 Simply Fun Racing / Hudy Series: Race 1 (ERCE Eindhoven)",
       "regions": [],
       "club": {
         "name": "SimplyFunRacing",
@@ -1439,6 +1422,27 @@
         "id": "current"
       },
       "date": "2025-06-01",
+      "location": "MAC de Baanbrekers",
+      "countryCode": "nl",
+      "title": "Ries Ermen Memorial Event 2025",
+      "regions": [],
+      "club": {
+        "name": "MAC de Baanbrekers",
+        "aliases": [],
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [
+          2824
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-06-01",
       "location": "SOM / ICC",
       "countryCode": "nl",
       "title": "SOM 2 - MAC Vlijmen",
@@ -1470,27 +1474,6 @@
         "dmcClubNumber": null,
         "myrcmClubNumbers": [
           76
-        ],
-        "region": null
-      },
-      "source": "Myrcm"
-    },
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-06-01",
-      "location": "M.A.C.  De Baanbrekers",
-      "countryCode": "nl",
-      "title": "Ries Ermen Memorial Race",
-      "regions": [],
-      "club": {
-        "name": "M.A.C.  De Baanbrekers",
-        "aliases": [],
-        "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          12027
         ],
         "region": null
       },
@@ -1879,14 +1862,18 @@
       "source": "Myrcm"
     },
     {
-      "series": [],
+      "series": [
+        {
+          "id": "hudyseries"
+        }
+      ],
       "season": {
         "id": "current"
       },
       "date": "2025-06-15",
       "location": "SimplyFunRacing",
       "countryCode": "nl",
-      "title": "2025 Simply Fun Racing: Race 2 (HFCC Den Haag)",
+      "title": "2025 Simply Fun Racing / Hudy Series: Race 2 (HFCC Den Haag)",
       "regions": [],
       "club": {
         "name": "SimplyFunRacing",
@@ -3756,14 +3743,18 @@
       "source": "Myrcm"
     },
     {
-      "series": [],
+      "series": [
+        {
+          "id": "hudyseries"
+        }
+      ],
       "season": {
         "id": "current"
       },
       "date": "2025-09-28",
       "location": "SimplyFunRacing",
       "countryCode": "nl",
-      "title": "2025 Simply Fun Racing: Race 3 (MBC de Sluis Gouda)",
+      "title": "2025 Simply Fun Racing / Hudy Series: Race 3 (MBC de Sluis Gouda)",
       "regions": [],
       "club": {
         "name": "SimplyFunRacing",
