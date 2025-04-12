@@ -1,4 +1,5 @@
 {
+  "compilation": "germany",
   "clubs": [
     {
       "name": " Referent EG ",
@@ -46,6 +47,16 @@
       "countryCode": "de",
       "dmcClubNumber": null,
       "myrcmClubNumbers": [],
+      "region": null
+    },
+    {
+      "name": "„TONISPORT GmbH Modellsport  ENS“",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": null,
+      "myrcmClubNumbers": [
+        2047
+      ],
       "region": null
     },
     {
@@ -423,6 +434,16 @@
       "region": "south"
     },
     {
+      "name": "MCC Lüdenscheid e.V.",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": null,
+      "myrcmClubNumbers": [
+        52121
+      ],
+      "region": null
+    },
+    {
       "name": "MCC Rhein-Ahr e.V.",
       "aliases": [
         "MCC Rhein-Ahr e.V",
@@ -463,6 +484,16 @@
       "region": "central"
     },
     {
+      "name": "MCSS Althengstett outdoor",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": null,
+      "myrcmClubNumbers": [
+        12227
+      ],
+      "region": null
+    },
+    {
       "name": "MFK Kürten e.V.",
       "aliases": [],
       "countryCode": "de",
@@ -487,6 +518,16 @@
       "dmcClubNumber": null,
       "myrcmClubNumbers": [],
       "region": "north"
+    },
+    {
+      "name": "Modellrenngemeinschaft Dogern e.V.",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": null,
+      "myrcmClubNumbers": [
+        879
+      ],
+      "region": null
     },
     {
       "name": "Modellsport Münsterland e.V.",
@@ -829,12 +870,32 @@
       "region": "central"
     },
     {
+      "name": "RC-MSC Greuthof e.V.",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": null,
+      "myrcmClubNumbers": [
+        61583
+      ],
+      "region": null
+    },
+    {
       "name": "RC-Offroad Kassel e.V.",
       "aliases": [],
       "countryCode": "de",
       "dmcClubNumber": 184,
       "myrcmClubNumbers": [],
       "region": "central"
+    },
+    {
+      "name": "RC-Sonntagsfahrer e.V.",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": null,
+      "myrcmClubNumbers": [
+        50693
+      ],
+      "region": null
     },
     {
       "name": "RC-Team Sonneberg / Neustadt",
@@ -927,6 +988,38 @@
       "region": "south"
     },
     {
+      "name": "Referent EG",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": null,
+      "myrcmClubNumbers": [],
+      "region": null
+    },
+    {
+      "name": "Referent Großmodelle",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": null,
+      "myrcmClubNumbers": [],
+      "region": null
+    },
+    {
+      "name": "Referent OR8",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": null,
+      "myrcmClubNumbers": [],
+      "region": null
+    },
+    {
+      "name": "Referent ORE",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": null,
+      "myrcmClubNumbers": [],
+      "region": null
+    },
+    {
       "name": "RGMC-Teck e.V.",
       "aliases": [],
       "countryCode": "de",
@@ -981,6 +1074,22 @@
       "dmcClubNumber": 323,
       "myrcmClubNumbers": [],
       "region": "central"
+    },
+    {
+      "name": "Sportkreisvorsitzender Süd",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": null,
+      "myrcmClubNumbers": [],
+      "region": null
+    },
+    {
+      "name": "Sportkreisvorsitzender West",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": null,
+      "myrcmClubNumbers": [],
+      "region": null
     },
     {
       "name": "Stoppelhopser Oberhausen e.V.",
@@ -1066,5 +1175,5 @@
       "region": "central"
     }
   ],
-  "lastUpdated": "2025-04-06T18:32:36.4501057+02:00"
+  "lastUpdated": "2025-04-12T14:29:37.3759048+02:00"
 }
