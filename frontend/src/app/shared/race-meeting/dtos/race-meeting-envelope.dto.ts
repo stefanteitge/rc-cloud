@@ -1,7 +1,7 @@
 export interface RaceMeetingEnvelopeDto
 {
-  retrievedDate: string;
-  raceMeetings: RaceMeetingDto[];
+  lastUpdate: string;
+  races: RaceMeetingDto[];
 }
 
 export interface ReferenceDto {
