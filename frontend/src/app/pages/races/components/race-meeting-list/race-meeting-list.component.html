@@ -13,9 +13,9 @@
       </tr>
     </thead>
     <tbody>
-      @for (upcomingDate of getAllDates(); track upcomingDate.date) {
+      @for (upcomingDate of getAllDates(); track upcomingDate.dateEnd) {
         <tr>
-          <th scope="row">{{ upcomingDate.date }}</th>
+          <th scope="row">{{ upcomingDate.dateEnd }}</th>
 
           @for (regionId of displayColumns(); track  regionId) {
             <td>
@@ -24,7 +24,7 @@
                   <div class="title">{{ race.title }}</div>
                   {{ race.location }}
                   @for (series of race.series; track series) {
-                    <span class="badge-source">{{ series }}</span>
+                    <span class="badge-source">{{ series.id }}</span>
                   }
                   <div *ngIf="race.source" class="source">Quelle: {{ race.source }}</div>
                 </div>

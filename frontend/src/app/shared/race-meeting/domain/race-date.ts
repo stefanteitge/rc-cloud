@@ -1,23 +1,31 @@
 import { ReferenceDto } from '../dtos/race-meeting-envelope.dto';
 
+export interface GermanyPage {
+  lastUpdate: string;
+  dates: RaceDate[];
+}
+
 export interface UpcomingRace {
   title: string,
   location: string;
-  series: string[];
+  series: ReferenceDto[];
   groups: ReferenceDto[];
   source?: string;
   countryCode?: string;
 }
 
-export interface UpcomingDatesColumn
+// RaceCategoryDto
+
+export interface RaceCategory
 {
   key: string,
   races: UpcomingRace[];
 }
 
-export interface UpcomingDate
+// RaceDateDto
+export interface RaceDate
 {
-  date: string;
-  columns: UpcomingDatesColumn[];
+  dateEnd: string;
+  categories: RaceCategory[];
 }
 

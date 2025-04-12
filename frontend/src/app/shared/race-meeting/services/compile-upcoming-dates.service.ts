@@ -1,24 +1,24 @@
 import {RaceMeetingDto} from '../dtos/race-meeting-envelope.dto';
-import {UpcomingDate, UpcomingDatesColumn, UpcomingRace} from '../domain/upcoming-date';
+import {RaceDate, RaceCategory, UpcomingRace} from '../domain/race-date';
 
-export default function compileUpcomingDates(races: RaceMeetingDto[], displayColumns: string[], byCountry: boolean = false): UpcomingDate[] {
-  const compiled = [] as UpcomingDate[];
+export default function compileUpcomingDates(races: RaceMeetingDto[], displayColumns: string[], byCountry: boolean = false): RaceDate[] {
+  const compiled = [] as RaceDate[];
 
   races.forEach((race) => {
-    let existingDate = compiled.find(c => c.date == race.date);
+    let existingDate = compiled.find(c => c.dateEnd == race.date);
     if (existingDate === undefined) {
       const newDate = {
-        date: race.date,
-        columns: [] as UpcomingDatesColumn[],
-      } as UpcomingDate;
+        dateEnd: race.date,
+        categories: [] as RaceCategory[],
+      } as RaceDate;
 
       displayColumns.forEach((displayColumn) => {
-        const r : UpcomingDatesColumn = { key: displayColumn, races: []};
-        newDate.columns.push(r);
+        const r : RaceCategory = { key: displayColumn, races: []};
+        newDate.categories.push(r);
       });
 
-      const r : UpcomingDatesColumn = { key: 'global', races: []};
-      newDate.columns.push(r);
+      const r : RaceCategory = { key: 'global', races: []};
+      newDate.categories.push(r);
 
       compiled.push(newDate);
       existingDate = newDate;
@@ -26,7 +26,7 @@ export default function compileUpcomingDates(races: RaceMeetingDto[], displayCol
 
     const newUpcomingRace = {
       location: race.location,
-      series: race.series.map(s => s.id),
+      series: race.series,
       groups: race.regions,
       title: race.title,
       source: race.source,
@@ -35,24 +35,24 @@ export default function compileUpcomingDates(races: RaceMeetingDto[], displayCol
     if (byCountry)
     {
       if (newUpcomingRace.countryCode === null) {
-        existingDate.columns.find(r => r.key == 'global')?.races.push(newUpcomingRace);
+        existingDate.categories.find(r => r.key == 'global')?.races.push(newUpcomingRace);
       }
 
       for (const displayRegion of displayColumns) {
         if (race.countryCode == displayRegion) {
-          existingDate.columns.find(r => r.key == displayRegion)?.races.push(newUpcomingRace);
+          existingDate.categories.find(r => r.key == displayRegion)?.races.push(newUpcomingRace);
         }
       }
     }
     else
     {
       if (newUpcomingRace.groups.length == 0) {
-        existingDate.columns.find(r => r.key == 'global')?.races.push(newUpcomingRace);
+        existingDate.categories.find(r => r.key == 'global')?.races.push(newUpcomingRace);
       }
 
       for (const displayRegion of displayColumns) {
         if (race.regions.find(g => g.id == displayRegion)) {
-          existingDate.columns.find(r => r.key == displayRegion)?.races.push(newUpcomingRace);
+          existingDate.categories.find(r => r.key == displayRegion)?.races.push(newUpcomingRace);
         }
       }
     }
