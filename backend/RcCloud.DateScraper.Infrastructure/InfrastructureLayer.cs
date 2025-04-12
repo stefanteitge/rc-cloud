@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using RcCloud.DateScraper.Domain.Clubs;
 using RcCloud.DateScraper.Infrastructure.Clubs;
+using RcCloud.DateScraper.Infrastructure.Clubs.Json;
 using RcCloud.DateScraper.Infrastructure.Clubs.Mongo;
 using RcCloud.DateScraper.Infrastructure.Races;
 

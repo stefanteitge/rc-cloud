@@ -1,9 +1,8 @@
 ﻿using System.Text.Json;
 using RcCloud.DateScraper.Domain.Clubs;
 using RcCloud.DateScraper.Domain.Regions;
-using RcCloud.DateScraper.Infrastructure.Clubs.Entities;
 
-namespace RcCloud.DateScraper.Infrastructure.Clubs;
+namespace RcCloud.DateScraper.Infrastructure.Clubs.Json;
 
 public class JsonClubRepository : IClubRepository
 {

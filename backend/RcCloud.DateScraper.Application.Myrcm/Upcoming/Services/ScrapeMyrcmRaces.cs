@@ -109,14 +109,15 @@ public class ScrapeMyrcmRaces(
                 continue;
             }
 
-            var club = enhanceClub.Guess(race.Club, clubNumber);
+            var countryCode = GetCoutryCode(race.Country);
+            var club = enhanceClub.Guess(race.Club, clubNumber, countryCode);
             
             var meeting = new RaceMeeting(
                 guessSeriesFromTitle.Guess(race.Title),
                 SeasonReference.Current,
                 race.DateEnd, 
                 club.Name,
-                GetCoutryCode(race.Country),
+                countryCode,
                 race.Title, 
                 club?.Region is null ? [] : [club.Region],
                 club,

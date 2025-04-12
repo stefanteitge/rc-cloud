@@ -1,13 +1,12 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.HttpResults;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.Functions.Worker;
 using RcCloud.DateScraper.Infrastructure.Races;
-using RcCloud.FunctionApi.Functions.Dto;
+using RcCloud.FunctionApi.Races.Dto;
 
-namespace RcCloud.FunctionApi.Functions;
+namespace RcCloud.FunctionApi.Races.Functions;
 
-public class Germany(MongoRaceRepository repository)
+public class GetGermanyFunction(MongoRaceRepository repository)
 {
     [Function("germany")]
     public async Task<Results<Ok<GermanyPageDto>, NotFound>> Run([HttpTrigger(AuthorizationLevel.Anonymous, "get")] HttpRequest req)

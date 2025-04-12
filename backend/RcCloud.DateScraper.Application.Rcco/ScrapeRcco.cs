@@ -36,7 +36,7 @@ public class ScrapeRcco(IClubRepository clubRepository)
         List<RaceMeeting> raceMeetings = new List<RaceMeeting>();
         foreach (var evt in events)
         {
-            var club = new Club(evt.Verein, [], null, [], null);
+            var club = new Club(evt.Verein, [], "de", null, [], null);
             var knownClub = clubRepository.FindClub(evt.Verein);
             if (knownClub is not null)
             {

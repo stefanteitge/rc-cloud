@@ -4,5 +4,5 @@ namespace RcCloud.DateScraper.Application.Myrcm.Upcoming.Services;
 
 public interface IEnhanceClub
 {
-    Club Guess(string clubName, int myrcmClubNumber);
+    Club Guess(string clubName, int myrcmClubNumber, string? countryCode);
 }

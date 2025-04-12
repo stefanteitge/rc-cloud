@@ -1,4 +1,4 @@
-﻿namespace RcCloud.DateScraper.Infrastructure.Clubs.Entities;
+﻿namespace RcCloud.DateScraper.Infrastructure.Clubs.Json;
 
 public class ClubDbJsonRoot(List<ClubJson> clubs, DateTimeOffset lastUpdated, string compilation)
 {

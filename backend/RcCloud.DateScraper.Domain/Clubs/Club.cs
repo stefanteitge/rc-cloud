@@ -2,12 +2,20 @@ using RcCloud.DateScraper.Domain.Regions;
 
 namespace RcCloud.DateScraper.Domain.Clubs;
 
-public class Club(string name, List<string> aliases, int? dmcClubNumber, int[] myrcmClubNumbers, RegionReference? region)
+public class Club(
+    string name,
+    List<string> aliases,
+    string? countryCode,
+    int? dmcClubNumber,
+    int[] myrcmClubNumbers,
+    RegionReference? region)
     : IEquatable<Club>
 {
     public string Name { get; protected set; } = name;
 
     public List<string> Aliases { get; } = aliases;
+    
+    public string? CountryCode { get; } = countryCode;
 
     public int? DmcClubNumber { get; } = dmcClubNumber;
 

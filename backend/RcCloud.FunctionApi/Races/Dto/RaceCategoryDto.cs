@@ -1,6 +1,6 @@
 ﻿using RcCloud.DateScraper.Domain.Races;
 
-namespace RcCloud.FunctionApi.Functions.Dto;
+namespace RcCloud.FunctionApi.Races.Dto;
 
 public class RaceCategoryDto(string key, List<RaceMeeting> races)
 {

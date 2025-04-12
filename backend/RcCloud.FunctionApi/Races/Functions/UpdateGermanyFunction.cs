@@ -9,18 +9,18 @@ using RcCloud.DateScraper.Application.Rcco;
 using RcCloud.DateScraper.Application.Rck.Services;
 using RcCloud.DateScraper.Domain.Races;
 using RcCloud.DateScraper.Infrastructure.Races;
-using RcCloud.FunctionApi.Functions.Dto;
+using RcCloud.FunctionApi.Races.Dto;
 
-namespace RcCloud.FunctionApi.Functions;
+namespace RcCloud.FunctionApi.Races.Functions;
 
-public class UpdateGermany(
+public class UpdateGermanyFunction(
     ScrapeChallengeRaces challenge,
     ScrapeDmcRaces dmc,
     ScrapeKleinserieRaces kleinserie,
     ScrapeMyrcmRaces myrcm,
     ScrapeRcco rcco,
     MongoRaceRepository repo,
-    ILogger<UpdateGermany> logger)
+    ILogger<UpdateGermanyFunction> logger)
 {
     [Function("update-germany")]
     public async Task<IActionResult> Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", "post")] HttpRequest req)

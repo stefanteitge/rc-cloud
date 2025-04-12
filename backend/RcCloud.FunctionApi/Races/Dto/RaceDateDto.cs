@@ -1,4 +1,4 @@
-﻿namespace RcCloud.FunctionApi.Functions.Dto;
+﻿namespace RcCloud.FunctionApi.Races.Dto;
 
 public class RaceDateDto(string dateEnd, List<RaceCategoryDto> categories)
 {

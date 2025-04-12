@@ -1,7 +1,7 @@
 ﻿using RcCloud.DateScraper.Domain.Races;
 using RcCloud.DateScraper.Infrastructure.Races;
 
-namespace RcCloud.FunctionApi.Functions.Dto;
+namespace RcCloud.FunctionApi.Races.Dto;
 
 public class GermanyPageDto(string lastUpdate, List<RaceDateDto> dates)
 {
