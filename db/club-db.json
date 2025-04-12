@@ -2,64 +2,6 @@
   "compilation": "germany",
   "clubs": [
     {
-      "name": " Referent EG ",
-      "aliases": [],
-      "countryCode": "de",
-      "dmcClubNumber": null,
-      "myrcmClubNumbers": [],
-      "region": null
-    },
-    {
-      "name": " Referent Großmodelle ",
-      "aliases": [],
-      "countryCode": "de",
-      "dmcClubNumber": null,
-      "myrcmClubNumbers": [],
-      "region": null
-    },
-    {
-      "name": " Referent OR8 ",
-      "aliases": [],
-      "countryCode": "de",
-      "dmcClubNumber": null,
-      "myrcmClubNumbers": [],
-      "region": null
-    },
-    {
-      "name": " Referent ORE ",
-      "aliases": [],
-      "countryCode": "de",
-      "dmcClubNumber": null,
-      "myrcmClubNumbers": [],
-      "region": null
-    },
-    {
-      "name": " Sportkreisvorsitzender Süd ",
-      "aliases": [],
-      "countryCode": "de",
-      "dmcClubNumber": null,
-      "myrcmClubNumbers": [],
-      "region": null
-    },
-    {
-      "name": " Sportkreisvorsitzender West ",
-      "aliases": [],
-      "countryCode": "de",
-      "dmcClubNumber": null,
-      "myrcmClubNumbers": [],
-      "region": null
-    },
-    {
-      "name": "„TONISPORT GmbH Modellsport  ENS“",
-      "aliases": [],
-      "countryCode": "de",
-      "dmcClubNumber": null,
-      "myrcmClubNumbers": [
-        2047
-      ],
-      "region": null
-    },
-    {
       "name": "1. Marzahner Racing Club",
       "aliases": [
         "1.Marzahner Racing Club"
@@ -1102,7 +1044,8 @@
     {
       "name": "Tonisport",
       "aliases": [
-        "„TONISPORT GmbH Modellsport  ETS“"
+        "„TONISPORT GmbH Modellsport  ETS“",
+        "„TONISPORT GmbH Modellsport  ENS“"
       ],
       "countryCode": "de",
       "dmcClubNumber": null,
@@ -1175,5 +1118,5 @@
       "region": "central"
     }
   ],
-  "lastUpdated": "2025-04-12T14:37:00.3211343+02:00"
+  "lastUpdated": "2025-04-12T15:12:49.2823908+02:00"
 }
