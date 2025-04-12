@@ -3,7 +3,7 @@ using RcCloud.DateScraper.Domain.Regions;
 
 namespace RcCloud.DateScraper.Infrastructure.Clubs.Entities;
 
-public class ClubEntity(
+public class ClubJson(
     string name,
     List<string> aliases,
     string countryCode,

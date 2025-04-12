@@ -7,7 +7,7 @@ namespace RcCloud.DateScraper.Infrastructure.Clubs;
 
 public class JsonClubRepository : IClubRepository
 {
-    private static readonly ClubEntity[] _seed = [
+    private static readonly ClubJson[] _seed = [
         Make("AMC Magdeburg e.V.", [], RegionReference.East),
         Make("MC Ettlingen e.V.", [], RegionReference.Central),
         Make("MC Munster e.V.", [], RegionReference.North),
@@ -18,7 +18,7 @@ public class JsonClubRepository : IClubRepository
         Make("RC Speedracer e.V.", ["RC Speedracer e.V. OV-055"], RegionReference.East),
     ];
 
-    private ClubDbEntity _clubDb = new ClubDbEntity(_seed.ToList(), DateTimeOffset.Now, "germany");
+    private ClubDbJsonRoot _clubDb = new ClubDbJsonRoot(_seed.ToList(), DateTimeOffset.Now, "germany");
 
     public Club? FindClub(string clubName)
     {
@@ -34,7 +34,7 @@ public class JsonClubRepository : IClubRepository
         {
             WriteIndented = true
         };
-        var loaded = JsonSerializer.Deserialize<ClubDbEntity>(new FileStream(path, FileMode.Open), options);
+        var loaded = JsonSerializer.Deserialize<ClubDbJsonRoot>(new FileStream(path, FileMode.Open), options);
 
         if (loaded is null)
         {
@@ -53,7 +53,7 @@ public class JsonClubRepository : IClubRepository
             Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping,
         };
         
-        var db = new ClubDbEntity(_clubDb.Clubs.OrderBy(c => c.Name).ToList(), DateTimeOffset.Now, "germany");
+        var db = new ClubDbJsonRoot(_clubDb.Clubs.OrderBy(c => c.Name).ToList(), DateTimeOffset.Now, "germany");
         
         var bytes = JsonSerializer.SerializeToUtf8Bytes(db, options);
         File.WriteAllBytes(path, bytes);
@@ -65,7 +65,7 @@ public class JsonClubRepository : IClubRepository
 
         if (entity is null)
         {
-            var newClub = new ClubEntity(update.Name, update.Aliases, "de", update.Region?.ToString(), update.DmcClubNumber,
+            var newClub = new ClubJson(update.Name, update.Aliases, "de", update.Region?.ToString(), update.DmcClubNumber,
                 update.MyrcmClubNumbers.ToList());
             _clubDb.Clubs.Add(newClub);
             return;
@@ -97,7 +97,7 @@ public class JsonClubRepository : IClubRepository
     public IEnumerable<Club> GetAll()
         => _clubDb.Clubs.Select(c => c.ToDomain()).OrderBy(c => c.Name);
 
-    private ClubEntity? FindClubEntity(string clubName)
+    private ClubJson? FindClubEntity(string clubName)
     {
         var entity = _clubDb.Clubs
             .FirstOrDefault(c => c.Name == clubName || c.Aliases.Contains(clubName));
@@ -105,6 +105,6 @@ public class JsonClubRepository : IClubRepository
         return entity;
     }
 
-    private static ClubEntity Make(string name, string[] aliases, RegionReference regionReference)
+    private static ClubJson Make(string name, string[] aliases, RegionReference regionReference)
         => new(name, aliases.ToList(), "de", regionReference.ToString(), null, []);
 }
