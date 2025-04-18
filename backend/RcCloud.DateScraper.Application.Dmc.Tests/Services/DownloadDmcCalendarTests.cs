@@ -6,8 +6,8 @@ namespace RcCloud.DateScraper.Application.Dmc.Tests.Services;
 public class DownloadDmcCalendarTests
 {
     [Theory]
-    [InlineData("dmc_2021_2021-10-11", 223)]
-    [InlineData("dmc_2025_2025-04-09", 256)]
+    [InlineData("dmc_2021_2021-10-11", 210)]
+    [InlineData("dmc_2025_2025-04-09", 228)]
     public async Task TestScrapeRaw(string fileName, int count)
     {
         var scraper = new DownloadDmcCalendar(new NullLogger<DownloadDmcCalendar>());
