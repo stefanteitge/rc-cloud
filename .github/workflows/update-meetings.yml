@@ -41,4 +41,5 @@ jobs:
     - name: Make Request
       uses: fjogeleit/http-request-action@v1
       with:
-        url: "https://rc-cloud.de/update-germany"
+        url: "https://rc-cloud.de/apiRupdate-germany"
+        timeout: 10000
