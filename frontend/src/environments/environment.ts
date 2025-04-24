@@ -1,4 +1,4 @@
 export const environment = {
-  functionsApiRaces: false,
+  functionsApiRaces: true,
   apiRoot: 'https://rc-cloud.de/api/'
 };
