@@ -44,6 +44,13 @@ public class DownloadDmcCalendar(ILogger<DownloadDmcCalendar> logger)
 
         if (!res.IsSuccessStatusCode)
         {
+            var limit = res.Headers.GetValues("X-Ws-Ratelimit-Remaining").FirstOrDefault();
+
+            if (limit is not null)
+            {
+                logger.LogInformation($"RateLimit in reponse header at {limit}");
+            }
+            
             return new DownloadError(BaseUrl, $"DMC scraping: Received a HTTP {res.StatusCode} on document retrieval");
         }
 
