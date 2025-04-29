@@ -1,0 +1,25 @@
+name: "Update DMC races"
+on:
+  schedule:
+    - cron: "0 1 * * *" # every monday
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: "9.0.x"
+    - name: Test
+      run: dotnet test
+      working-directory: backend
+    - name: Make Request
+      uses: fjogeleit/http-request-action@v1
+      with:
+        url: "https://rc-cloud.de/api/update-dmc"
+        timeout: 30000

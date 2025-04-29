@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.Functions.Worker;
 using Microsoft.Extensions.Logging;
@@ -23,22 +24,20 @@ public class UpdateDmcFunction(
     ILogger<UpdateDmcFunction> logger)
 {
     [Function("update-dmc")]
-    public async Task<IActionResult> Run([HttpTrigger(AuthorizationLevel.Anonymous, "get")] HttpRequest req)
+    public async Task<Results<Ok<GermanyPageDto>, BadRequest<string>>> Run([HttpTrigger(AuthorizationLevel.Anonymous, "get")] HttpRequest req)
     {
         var clubs = await mongoClubRepository.GetAll("germany");
         clubRepository.Load(clubs);
         
-        var all = new List<RaceMeeting>();
-        
         var dmcResult = await dmc.Scrape();
-        if (dmcResult.IsSuccess)
+        if (dmcResult.IsFailed)
         {
-            all.AddRange(dmcResult.Value);
-            await repo.Store(dmcResult.Value, "germany", "dmc");
+            return TypedResults.BadRequest(dmcResult.Errors.FirstOrDefault()?.Message ?? "Scraping DMC failed.");
         }
         
-        logger.LogInformation("Found {Count} races from DMC.", all.Count);
+        await repo.Store(dmcResult.Value, "germany", "dmc");
+        logger.LogInformation("Found {Count} races from DMC.", dmcResult.Value.Count());
 
-        return new OkObjectResult(GermanyPageDto.FromRaces(all, DateTimeOffset.Now.ToString()));
+        return TypedResults.Ok(GermanyPageDto.FromRaces(dmcResult.Value, DateTimeOffset.Now.ToString()));
     }
 }
