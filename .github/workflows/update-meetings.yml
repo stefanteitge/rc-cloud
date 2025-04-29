@@ -38,3 +38,8 @@ jobs:
     - uses: stefanzweifel/git-auto-commit-action@v5
       with:
         commit_message: New dates
+    - name: Make Request
+      uses: fjogeleit/http-request-action@v1
+      with:
+        url: "https://rc-cloud.de/api/update-germany"
+        timeout: 30000
