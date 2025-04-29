@@ -24,6 +24,9 @@ public class DownloadDmcCalendar(ILogger<DownloadDmcCalendar> logger)
     
     public async Task<Result<string>> RetrieveBaseDocument(int year)
     {
+        var message = new HttpRequestMessage(HttpMethod.Post, BaseUrl);
+        message.Headers.Referrer = new Uri("https://dmc-online.com/wordpress/termine/dmc-termine/");
+        
         var content = new FormUrlEncodedContent(new[]
         {
             new KeyValuePair<string, string>("startmonat", "01"),
@@ -34,8 +37,10 @@ public class DownloadDmcCalendar(ILogger<DownloadDmcCalendar> logger)
             new KeyValuePair<string, string>("submit", "Termine anzeigen"),
         });
         
+        message.Content = content;
+        
         var client = new HttpClient();
-        var res = await client.PostAsync(BaseUrl, content);
+        var res = await client.SendAsync(message);
 
         if (!res.IsSuccessStatusCode)
         {
