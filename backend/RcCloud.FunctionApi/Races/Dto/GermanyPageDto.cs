@@ -3,13 +3,15 @@ using RcCloud.DateScraper.Infrastructure.Races;
 
 namespace RcCloud.FunctionApi.Races.Dto;
 
-public class GermanyPageDto(string lastUpdate, List<RaceDateDto> dates)
+public class GermanyPageDto(string lastUpdate, List<RaceDateDto> dates, string? lastDmcUpdate)
 {
     public string LastUpdate { get; } = lastUpdate;
 
+    public string? LastDmcUpdate { get; } = lastDmcUpdate;
+
     public List<RaceDateDto> Dates { get; } = dates;
 
-    public static GermanyPageDto FromDocument(RacesDocument document)
+    public static GermanyPageDto FromDocument(RacesDocument document, string? lastDmcUpdate)
     {
         var dates = document.Races.Select(r => r.Date).Distinct().Order().ToList();
 
@@ -29,10 +31,10 @@ public class GermanyPageDto(string lastUpdate, List<RaceDateDto> dates)
             dateDtos.Add(new RaceDateDto(date.ToString(), categories));
         }
 
-        return FromRaces(document.Races, document.LastUpdate);
+        return FromRaces(document.Races, document.LastUpdate, lastDmcUpdate);
     }
     
-    public static GermanyPageDto FromRaces(List<RaceMeeting> races, string lastUpdate)
+    public static GermanyPageDto FromRaces(List<RaceMeeting> races, string lastUpdate, string? lastDmcUpdate)
     {
         var dates = races.Select(r => r.Date).Distinct().Order().ToList();
 
@@ -52,7 +54,7 @@ public class GermanyPageDto(string lastUpdate, List<RaceDateDto> dates)
             dateDtos.Add(new RaceDateDto(date.ToString(), categories));
         }
 
-        return new(lastUpdate, dateDtos);
+        return new(lastUpdate, dateDtos, lastDmcUpdate);
     }
 
     private static void CreateGlobalCategory(List<RaceMeeting> racesOnDate, List<RaceCategoryDto> categories)

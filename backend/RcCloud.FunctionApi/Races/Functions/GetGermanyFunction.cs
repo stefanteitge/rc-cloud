@@ -18,7 +18,22 @@ public class GetGermanyFunction(MongoRaceRepository repository)
             return TypedResults.NotFound();
         }
 
-        var dto = GermanyPageDto.FromDocument(racesDocument);
+        var hasDmc = racesDocument.Races.Any(r => r.Source == "DMC");
+
+        string? lastDmcUpdate = null;
+        if (!hasDmc)
+        {
+            var dmcDocument = await repository.Load("germany", "dmc");
+
+            if (dmcDocument is not null)
+            {
+                racesDocument.Races.AddRange(dmcDocument.Races);
+                lastDmcUpdate = dmcDocument.LastUpdate;
+            }
+            
+        }
+
+        var dto = GermanyPageDto.FromDocument(racesDocument, lastDmcUpdate);
         return TypedResults.Ok(dto);
     }
 }
