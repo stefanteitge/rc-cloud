@@ -2,7 +2,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.Functions.Worker;
 using Microsoft.Extensions.Logging;
-using RcCloud.DateScraper.Application.Dmc.Calendar.Services;
 using RcCloud.DateScraper.Application.Myrcm.Common.Domain;
 using RcCloud.DateScraper.Application.Myrcm.Upcoming.Services;
 using RcCloud.DateScraper.Application.Rcco;
@@ -17,7 +16,7 @@ namespace RcCloud.FunctionApi.Races.Functions;
 
 public class UpdateGermanyFunction(
     ScrapeChallengeRaces challenge,
-    ScrapeDmcRaces dmc,
+    //ScrapeDmcRaces dmc,
     ScrapeKleinserieRaces kleinserie,
     ScrapeMyrcmRaces myrcm,
     ScrapeRcco rcco,
@@ -42,12 +41,12 @@ public class UpdateGermanyFunction(
         all.AddRange(kleinserieAll);
         await repo.Store(kleinserieAll, "germany", "kleinserie");
 
-        var dmcResult = await dmc.Scrape();
-        if (dmcResult.IsSuccess)
-        {
-            all.AddRange(dmcResult.Value);
-            await repo.Store(dmcResult.Value, "germany", "dmc");
-        }
+        //var dmcResult = await dmc.Scrape();
+        //if (dmcResult.IsSuccess)
+        //{
+        //    all.AddRange(dmcResult.Value);
+        //    await repo.Store(dmcResult.Value, "germany", "dmc");
+        //}
 
         var myrcmAll = await myrcm.Scrape([MyrcmCountryCode.Germany]);
         all.AddRange(myrcmAll);
@@ -62,6 +61,6 @@ public class UpdateGermanyFunction(
 
         logger.LogInformation("Found {Count} races from all sources.", all.Count);
 
-        return new OkObjectResult(GermanyPageDto.FromRaces(all, DateTimeOffset.Now.ToString()));
+        return new OkObjectResult(GermanyPageDto.FromRaces(all, DateTimeOffset.Now.ToString(), null));
     }
 }
