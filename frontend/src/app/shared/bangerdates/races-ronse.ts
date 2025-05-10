@@ -1,7 +1,7 @@
 import { Temporal } from 'temporal-polyfill';
-import { RaceMeeting } from './types';
+import { OvalRaceMeeting } from './types';
 
-export function getRacesInRonse(): RaceMeeting[] {
+export function getRacesInRonse(): OvalRaceMeeting[] {
   return [
     {
       date: new Temporal.PlainDate(2024, 10, 27),

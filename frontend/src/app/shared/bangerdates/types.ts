@@ -1,6 +1,6 @@
 import { Temporal } from 'temporal-polyfill';
 
-export interface RaceMeeting {
+export interface OvalRaceMeeting {
   date: Temporal.PlainDate;
   location: string;
   classes: string[];

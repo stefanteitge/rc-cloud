@@ -1,27 +1,27 @@
 import { RaceMeetingDto } from '../dtos/race-meeting-envelope.dto';
-import { RaceDate, RaceCategory, UpcomingRace } from '../domain/race-date';
+import { RaceDateDto, RaceCategoryDto, UpcomingRace } from '../dtos/race-date.dto';
 
 export default function compileUpcomingDates(
   races: RaceMeetingDto[],
   displayColumns: string[],
   byCountry = false
-): RaceDate[] {
-  const compiled = [] as RaceDate[];
+): RaceDateDto[] {
+  const compiled = [] as RaceDateDto[];
 
   races.forEach(race => {
     let existingDate = compiled.find(c => c.dateEnd == race.date);
     if (existingDate === undefined) {
       const newDate = {
         dateEnd: race.date,
-        categories: [] as RaceCategory[],
-      } as RaceDate;
+        categories: [] as RaceCategoryDto[],
+      } as RaceDateDto;
 
       displayColumns.forEach(displayColumn => {
-        const r: RaceCategory = { key: displayColumn, races: [] };
+        const r: RaceCategoryDto = { key: displayColumn, races: [] };
         newDate.categories.push(r);
       });
 
-      const r: RaceCategory = { key: 'global', races: [] };
+      const r: RaceCategoryDto = { key: 'global', races: [] };
       newDate.categories.push(r);
 
       compiled.push(newDate);

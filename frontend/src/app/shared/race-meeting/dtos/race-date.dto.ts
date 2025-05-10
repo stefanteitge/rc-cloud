@@ -1,8 +1,8 @@
-import { ReferenceDto } from '../dtos/race-meeting-envelope.dto';
+import { ReferenceDto } from './race-meeting-envelope.dto';
 
 export interface RacePageDto {
   lastUpdate: string;
-  dates: RaceDate[];
+  dates: RaceDateDto[];
 }
 
 export interface UpcomingRace {
@@ -14,15 +14,12 @@ export interface UpcomingRace {
   countryCode?: string;
 }
 
-// RaceCategoryDto
-
-export interface RaceCategory {
+export interface RaceCategoryDto {
   key: string;
   races: UpcomingRace[];
 }
 
-// RaceDateDto
-export interface RaceDate {
+export interface RaceDateDto {
   dateEnd: string;
-  categories: RaceCategory[];
+  categories: RaceCategoryDto[];
 }

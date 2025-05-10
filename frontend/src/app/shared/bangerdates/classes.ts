@@ -1,6 +1,16 @@
 import { RaceClass } from './types';
 
-export default function getClasses(): RaceClass[] {
+export function getOvalClassName(id: string) {
+  const clazz = getClasses().find(c => c.id === id);
+
+  if (clazz) {
+    return clazz.name;
+  }
+
+  return id;
+}
+
+export function getClasses(): RaceClass[] {
   return [
     {
       id: 'banger',

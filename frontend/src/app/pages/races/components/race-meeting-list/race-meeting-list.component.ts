@@ -1,6 +1,6 @@
 import { Component, input } from '@angular/core';
 import { RaceMeetingRepository } from '../../../../shared/race-meeting/repositories/race-meeting.repository';
-import { RaceDate, UpcomingRace } from '../../../../shared/race-meeting/domain/race-date';
+import { RaceDateDto, UpcomingRace } from '../../../../shared/race-meeting/dtos/race-date.dto';
 import { NgbAlert } from '@ng-bootstrap/ng-bootstrap';
 import { NgIf } from '@angular/common';
 
@@ -13,18 +13,18 @@ import { NgIf } from '@angular/common';
 })
 export class RaceMeetingListComponent {
   displayColumns = input([] as string[]);
-  races = input([] as RaceDate[]);
+  races = input([] as RaceDateDto[]);
   lastUpdate = input('');
 
   getLastUpdateDate(): string {
     return this.lastUpdate();
   }
 
-  getAllDates(): RaceDate[] {
+  getAllDates(): RaceDateDto[] {
     return this.races();
   }
 
-  getRacesFromDate(upcomingDate: RaceDate, regionId: string): UpcomingRace[] {
+  getRacesFromDate(upcomingDate: RaceDateDto, regionId: string): UpcomingRace[] {
     return (
       upcomingDate.categories
         .find(r => r.key === regionId)

@@ -34,7 +34,7 @@ public class RacePageDto(string lastUpdate, List<RaceDateDto> dates, string? las
                 CreateCategory(racesWithDate, categories, categoryName);    
             }
 
-            dateDtos.Add(new RaceDateDto(date.ToString(), categories));
+            dateDtos.Add(new RaceDateDto(date.ToString("O"), categories));
         }
 
         return new RacePageDto(lastUpdate, dateDtos, lastDmcUpdate);

@@ -1,17 +1,19 @@
 import { Injectable, signal } from '@angular/core';
 import { tap } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
-import { RacePageDto, RaceDate } from '../domain/race-date';
+import { RaceDateDto, RacePageDto } from '../dtos/race-date.dto';
 import { RaceMeetingEnvelopeDto } from '../dtos/race-meeting-envelope.dto';
 import compileUpcomingDates from '../services/compile-upcoming-dates.service';
 import { FEATURE_FUNCTION_API_RACES, FeatureFlagService } from '../../feature-managment/services/feature-flag.service';
 import { environment } from '../../../../environments/environment';
+import {getOvalRaces} from '../../bangerdates/races';
+import {getOvalClassName} from '../../bangerdates/classes';
 
 @Injectable()
 export class BeneluxRaceMeetingRepository {
   private jsonUrl = 'assets/benelux.json';
   private publicApiUrl = environment.apiRoot + 'benelux';
-  public races = signal<RaceDate[]>([]);
+  public raceDates = signal<RaceDateDto[]>([]);
   public lastUpdate = signal('');
   public loading = signal<boolean>(false);
   public error = signal<string | null>(null);
@@ -33,7 +35,8 @@ export class BeneluxRaceMeetingRepository {
         )
         .subscribe({
           next: page => {
-            this.races.set(page.dates);
+            const dates = addOvalDates(page.dates)
+            this.raceDates.set(dates);
             this.lastUpdate.set(page.lastUpdate);
           },
           error: err => {
@@ -53,7 +56,7 @@ export class BeneluxRaceMeetingRepository {
               ['global', 'be', 'nl', 'lux', 'banger', 'stockcars'],
               true
             );
-            this.races.set(compiled);
+            this.raceDates.set(compiled);
             this.lastUpdate.set(envelope.lastUpdate);
           },
           error: err => {
@@ -63,3 +66,32 @@ export class BeneluxRaceMeetingRepository {
     }
   }
 }
+function addOvalDates(dates: RaceDateDto[]): RaceDateDto[] {
+  var ovalRaces = getOvalRaces();
+
+  ovalRaces.forEach(ovalRace => {
+    var myDate = dates.find(d => d.dateEnd == ovalRace.date.toString());
+
+    // TODO: add dates if not exist and hide older dates
+
+    if (!myDate) {
+      console.error(ovalRace.date.toString());
+      return;
+    }
+
+    var bangerCat = myDate.categories.find(c => c.key == 'banger');
+    if (bangerCat) {
+      bangerCat.races.push({
+        countryCode: "?",
+        location: ovalRace.location,
+        series: [],
+        groups: [],
+        source: 'Facebook groups',
+        title: ovalRace.classes.map(c => getOvalClassName(c)).join(', ') + " in " + ovalRace.location
+      });
+    }
+  })
+
+  return dates;
+}
+
