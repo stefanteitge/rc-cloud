@@ -1,6 +1,6 @@
 import { ReferenceDto } from '../dtos/race-meeting-envelope.dto';
 
-export interface GermanyPage {
+export interface RacePageDto {
   lastUpdate: string;
   dates: RaceDate[];
 }

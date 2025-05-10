@@ -14,52 +14,29 @@ using RcCloud.FunctionApi.Races.Dto;
 
 namespace RcCloud.FunctionApi.Races.Functions;
 
-public class UpdateGermanyFunction(
-    ScrapeChallengeRaces challenge,
-    //ScrapeDmcRaces dmc,
-    ScrapeKleinserieRaces kleinserie,
+public class UpdateBeneluxFunction(
     ScrapeMyrcmRaces myrcm,
-    ScrapeRcco rcco,
     IClubRepository clubRepository,
     MongoClubRepository mongoClubRepository,
     MongoRaceRepository repo,
-    ILogger<UpdateGermanyFunction> logger)
+    ILogger<UpdateBeneluxFunction> logger)
 {
-    [Function("update-germany")]
+    [Function("update-benelux")]
     public async Task<IActionResult> Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", "post")] HttpRequest req)
     {
         var clubs = await mongoClubRepository.GetAll("germany");
         clubRepository.Load(clubs);
         
         var all = new List<RaceMeeting>();
-
-        var challengeAll = await challenge.Scrape();
-        all.AddRange(challengeAll);
-        await repo.Store(challengeAll, "germany", "challenge");
-
-        var kleinserieAll = await kleinserie.Scrape();
-        all.AddRange(kleinserieAll);
-        await repo.Store(kleinserieAll, "germany", "kleinserie");
-
-        //var dmcResult = await dmc.Scrape();
-        //if (dmcResult.IsSuccess)
-        //{
-        //    all.AddRange(dmcResult.Value);
-        //    await repo.Store(dmcResult.Value, "germany", "dmc");
-        //}
-
-        var myrcmAll = await myrcm.Scrape([MyrcmCountryCode.Germany]);
+        
+        var myrcmAll = await myrcm.Scrape([MyrcmCountryCode.Belgium, MyrcmCountryCode.Luxembourg, MyrcmCountryCode.Netherlands]);
         all.AddRange(myrcmAll);
-        await repo.Store(myrcmAll, "germany", "myrcm");
-
-        var rccoAll = await rcco.Scrape();
-        all.AddRange(rccoAll);
-        await repo.Store(rccoAll, "germany", "rcco");
-
+        // await repo.Store(myrcmAll, "benelux", "myrcm");
+        
         all.Sort((a, b) => a.Date.CompareTo(b.Date));
-        await repo.Store(all, "germany", "aggregate");
+        await repo.Store(all, "benelux", "aggregate");
 
-        logger.LogInformation("Found {Count} races from all sources.", all.Count);
+        logger.LogInformation("Found {Count} races in BeNeLux from all sources.", all.Count);
 
         return new OkObjectResult(RacePageDto.FromRaces(all, DateTimeOffset.Now.ToString(), null));
     }

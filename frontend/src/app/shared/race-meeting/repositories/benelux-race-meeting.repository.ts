@@ -8,9 +8,9 @@ import {FEATURE_FUNCTION_API_RACES, FeatureFlagService} from '../../feature-mana
 import {environment} from '../../../../environments/environment';
 
 @Injectable()
-export class RaceMeetingRepository {
-  private jsonUrl = 'assets/germany.json';
-  private publicApiUrl = environment.apiRoot + 'germany';
+export class BeneluxRaceMeetingRepository {
+  private jsonUrl = 'assets/benelux.json';
+  private publicApiUrl = environment.apiRoot + 'benelux';
   public races = signal<RaceDate[]>([]);
   public lastUpdate = signal('');
   public loading = signal<boolean>(false);
@@ -40,7 +40,7 @@ export class RaceMeetingRepository {
         tap(() => this.loading.set(false)), // Set loading to false after successful or failed request
       ).subscribe({
         next: (envelope) => {
-          const compiled = compileUpcomingDates(envelope.races, ['east', 'west', 'north', 'south', 'central'])
+          const compiled = compileUpcomingDates(envelope.races, ['global', 'be', 'nl', 'lux', 'banger', 'stockcars'], true)
           this.races.set(compiled);
           this.lastUpdate.set(envelope.lastUpdate);
         },

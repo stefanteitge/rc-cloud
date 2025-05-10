@@ -3,7 +3,7 @@ using RcCloud.DateScraper.Infrastructure.Races;
 
 namespace RcCloud.FunctionApi.Races.Dto;
 
-public class GermanyPageDto(string lastUpdate, List<RaceDateDto> dates, string? lastDmcUpdate)
+public class RacePageDto(string lastUpdate, List<RaceDateDto> dates, string? lastDmcUpdate)
 {
     public string LastUpdate { get; } = lastUpdate;
 
@@ -11,7 +11,7 @@ public class GermanyPageDto(string lastUpdate, List<RaceDateDto> dates, string? 
 
     public List<RaceDateDto> Dates { get; } = dates;
 
-    public static GermanyPageDto FromDocument(RacesDocument document, string? lastDmcUpdate)
+    public static RacePageDto FromDocument(RacesDocument document, string? lastDmcUpdate)
     {
         var dates = document.Races.Select(r => r.Date).Distinct().Order().ToList();
 
@@ -34,7 +34,7 @@ public class GermanyPageDto(string lastUpdate, List<RaceDateDto> dates, string? 
         return FromRaces(document.Races, document.LastUpdate, lastDmcUpdate);
     }
     
-    public static GermanyPageDto FromRaces(List<RaceMeeting> races, string lastUpdate, string? lastDmcUpdate)
+    public static RacePageDto FromRaces(List<RaceMeeting> races, string lastUpdate, string? lastDmcUpdate)
     {
         var dates = races.Select(r => r.Date).Distinct().Order().ToList();
 

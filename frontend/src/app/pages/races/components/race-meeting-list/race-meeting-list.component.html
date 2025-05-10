@@ -1,6 +1,6 @@
 <div class="page-container">
   <ngb-alert [dismissible]="false">
-    <strong>Letztes Update</strong> {{ getRetrieved() }}
+    <strong>Letztes Update</strong> {{ getLastUpdateDate() }}
   </ngb-alert>
 
   <table class="table table-striped-columns">
@@ -19,7 +19,7 @@
 
           @for (regionId of displayColumns(); track  regionId) {
             <td>
-              @for (race of getRaces(upcomingDate, regionId); track race.location) {
+              @for (race of getRacesFromDate(upcomingDate, regionId); track race.location) {
                 <div class="meeting-box">
                   <div class="title">{{ race.title }}</div>
                   {{ race.location }}

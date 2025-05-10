@@ -11,26 +11,23 @@ import {NgIf} from '@angular/common';
   styleUrl: './race-meeting-list.component.scss',
   providers: [RaceMeetingRepository]
 })
-export class RaceMeetingListComponent implements OnInit {
+export class RaceMeetingListComponent {
   displayColumns = input([] as string[]);
-  dataSet = input('');
+  races = input([] as RaceDate[]);
+  lastUpdate = input('');
 
-  constructor(private repo: RaceMeetingRepository) {
+  constructor() {
   }
 
-  ngOnInit() {
-    this.repo.fetchAll();
-  }
-
-  getRetrieved() : string {
-    return this.repo.getRetrievedDate(this.dataSet());
+  getLastUpdateDate() : string {
+    return this.lastUpdate();
   }
 
   getAllDates(): RaceDate[] {
-    return this.repo.getAll(this.dataSet());
+    return this.races();
   }
 
-  getRaces(upcomingDate: RaceDate, regionId: string): UpcomingRace[] {
+  getRacesFromDate(upcomingDate: RaceDate, regionId: string): UpcomingRace[] {
     return upcomingDate.categories.find(r => r.key === regionId)?.races.sort((a, b) => a.location.localeCompare(b.location)) ?? [];
   }
 }

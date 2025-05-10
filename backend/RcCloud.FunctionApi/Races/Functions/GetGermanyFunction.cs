@@ -9,7 +9,7 @@ namespace RcCloud.FunctionApi.Races.Functions;
 public class GetGermanyFunction(MongoRaceRepository repository)
 {
     [Function("germany")]
-    public async Task<Results<Ok<GermanyPageDto>, NotFound>> Run([HttpTrigger(AuthorizationLevel.Anonymous, "get")] HttpRequest req)
+    public async Task<Results<Ok<RacePageDto>, NotFound>> Run([HttpTrigger(AuthorizationLevel.Anonymous, "get")] HttpRequest req)
     {
         var racesDocument = await repository.Load("germany", "aggregate");
 
@@ -33,7 +33,7 @@ public class GetGermanyFunction(MongoRaceRepository repository)
             
         }
 
-        var dto = GermanyPageDto.FromDocument(racesDocument, lastDmcUpdate);
+        var dto = RacePageDto.FromDocument(racesDocument, lastDmcUpdate);
         return TypedResults.Ok(dto);
     }
 }

@@ -6,7 +6,7 @@ on:
   #  paths:
   #  - 'backend/**'
   schedule:
-    - cron: "0 8 * * 1" # every monday
+    - cron: "0 8 * * *" # every day
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -42,4 +42,9 @@ jobs:
       uses: fjogeleit/http-request-action@v1
       with:
         url: "https://rc-cloud.de/api/update-germany"
+        timeout: 30000
+    - name: Make Request
+      uses: fjogeleit/http-request-action@v1
+      with:
+        url: "https://rc-cloud.de/api/update-benelux"
         timeout: 30000

@@ -24,7 +24,7 @@ public class UpdateDmcFunction(
     ILogger<UpdateDmcFunction> logger)
 {
     [Function("update-dmc")]
-    public async Task<Results<Ok<GermanyPageDto>, BadRequest<string>>> Run([HttpTrigger(AuthorizationLevel.Anonymous, "get")] HttpRequest req)
+    public async Task<Results<Ok<RacePageDto>, BadRequest<string>>> Run([HttpTrigger(AuthorizationLevel.Anonymous, "get")] HttpRequest req)
     {
         var clubs = await mongoClubRepository.GetAll("germany");
         clubRepository.Load(clubs);
@@ -38,6 +38,6 @@ public class UpdateDmcFunction(
         await repo.Store(dmcResult.Value, "germany", "dmc");
         logger.LogInformation("Found {Count} races from DMC.", dmcResult.Value.Count());
 
-        return TypedResults.Ok(GermanyPageDto.FromRaces(dmcResult.Value, DateTimeOffset.Now.ToString(), DateTimeOffset.Now.ToString()));
+        return TypedResults.Ok(RacePageDto.FromRaces(dmcResult.Value, DateTimeOffset.Now.ToString(), DateTimeOffset.Now.ToString()));
     }
 }
