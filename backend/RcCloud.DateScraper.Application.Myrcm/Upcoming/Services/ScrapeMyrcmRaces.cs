@@ -6,6 +6,7 @@ using Microsoft.Extensions.Logging;
 using RcCloud.DateScraper.Application.Myrcm.Common.Domain;
 using RcCloud.DateScraper.Application.Myrcm.Upcoming.Domain;
 using RcCloud.DateScraper.Domain.Races;
+using RcCloud.DateScraper.Domain.Regions;
 using RcCloud.DateScraper.Domain.Series;
 
 namespace RcCloud.DateScraper.Application.Myrcm.Upcoming.Services;
@@ -111,6 +112,18 @@ public class ScrapeMyrcmRaces(
 
             var countryCode = GetCoutryCode(race.Country);
             var club = enhanceClub.Guess(race.Club, clubNumber, countryCode);
+
+            var regions = new List<RegionReference>();
+
+            if (club?.Region is not null)
+            {
+                regions.AddRange(club.Region);
+            }
+
+            if (countryCode is not null)
+            {
+                regions.Add(new RegionReference(countryCode));
+            }
             
             var meeting = new RaceMeeting(
                 guessSeriesFromTitle.Guess(race.Title),
@@ -119,7 +132,7 @@ public class ScrapeMyrcmRaces(
                 club.Name,
                 countryCode,
                 race.Title, 
-                club?.Region is null ? [] : [club.Region],
+                regions.ToArray(),
                 club,
                 "Myrcm");
             
