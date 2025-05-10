@@ -27,10 +27,14 @@
     },
     {
       "name": "amc Hamm e.V.",
-      "aliases": [],
+      "aliases": [
+        "amc Hamm"
+      ],
       "countryCode": "de",
       "dmcClubNumber": 31,
-      "myrcmClubNumbers": [],
+      "myrcmClubNumbers": [
+        7771
+      ],
       "region": "west"
     },
     {
@@ -72,6 +76,18 @@
       "region": "east"
     },
     {
+      "name": "AMC Meißen e.V.",
+      "aliases": [
+        "Automodellclub Meißen e.V."
+      ],
+      "countryCode": "de",
+      "dmcClubNumber": 148,
+      "myrcmClubNumbers": [
+        861
+      ],
+      "region": "east"
+    },
+    {
       "name": "AMC Mühlau e.V.",
       "aliases": [
         "AMC Mühlau"
@@ -84,12 +100,34 @@
       "region": "east"
     },
     {
+      "name": "AMC Saarbrücken e.V.",
+      "aliases": [
+        "AMC Saarbrücken"
+      ],
+      "countryCode": "de",
+      "dmcClubNumber": 35,
+      "myrcmClubNumbers": [
+        7103
+      ],
+      "region": "central"
+    },
+    {
       "name": "AMC Senftenberg",
       "aliases": [],
       "countryCode": "de",
       "dmcClubNumber": 360,
       "myrcmClubNumbers": [],
       "region": "east"
+    },
+    {
+      "name": "AMSC Augsburg e.V.",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": null,
+      "myrcmClubNumbers": [
+        36
+      ],
+      "region": null
     },
     {
       "name": "ASC Celle e.V.",
@@ -112,6 +150,14 @@
       "region": "east"
     },
     {
+      "name": "BC Mitterkreith",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": 238,
+      "myrcmClubNumbers": [],
+      "region": null
+    },
+    {
       "name": "BOC Kiel e.V.",
       "aliases": [],
       "countryCode": "de",
@@ -130,12 +176,14 @@
     {
       "name": "Deutscher Minicar Club (DMC)",
       "aliases": [
-        "Deutscher Minicar Club  (DMC)"
+        "Deutscher Minicar Club  (DMC)",
+        "Deutscher Minicar Club e.V. / Ausrichter: ASC Potsdam e.V."
       ],
       "countryCode": "de",
       "dmcClubNumber": null,
       "myrcmClubNumbers": [
-        43367
+        43367,
+        26596
       ],
       "region": null
     },
@@ -289,10 +337,14 @@
     },
     {
       "name": "MAC Uetersen e.V.",
-      "aliases": [],
+      "aliases": [
+        "Mac Uetersen e.V."
+      ],
       "countryCode": "de",
       "dmcClubNumber": 327,
-      "myrcmClubNumbers": [],
+      "myrcmClubNumbers": [
+        53667
+      ],
       "region": "north"
     },
     {
@@ -304,6 +356,24 @@
         20622
       ],
       "region": null
+    },
+    {
+      "name": "MAC-Solms e.V. - OV 10335",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": null,
+      "myrcmClubNumbers": [
+        42064
+      ],
+      "region": null
+    },
+    {
+      "name": "MBC Oberlausitz e.V.",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": 139,
+      "myrcmClubNumbers": [],
+      "region": "east"
     },
     {
       "name": "MBSC Wächtersbach",
@@ -386,6 +456,16 @@
       "region": null
     },
     {
+      "name": "MCC Marktredwitz",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": null,
+      "myrcmClubNumbers": [
+        57549
+      ],
+      "region": null
+    },
+    {
       "name": "MCC Rhein-Ahr e.V.",
       "aliases": [
         "MCC Rhein-Ahr e.V",
@@ -426,8 +506,10 @@
       "region": "central"
     },
     {
-      "name": "MCSS Althengstett outdoor",
-      "aliases": [],
+      "name": "MCSS Althengstett",
+      "aliases": [
+        "MCSS Althengstett outdoor"
+      ],
       "countryCode": "de",
       "dmcClubNumber": null,
       "myrcmClubNumbers": [
@@ -450,6 +532,16 @@
       "dmcClubNumber": 44,
       "myrcmClubNumbers": [],
       "region": "south"
+    },
+    {
+      "name": "Modellbaufreunde Felsberg e.V.",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": null,
+      "myrcmClubNumbers": [
+        38488
+      ],
+      "region": null
     },
     {
       "name": "Modellclub Flensburg e.V.",
@@ -493,7 +585,9 @@
     },
     {
       "name": "MRC Leipzig e.V.",
-      "aliases": [],
+      "aliases": [
+        "MRC-Leipzig e.V."
+      ],
       "countryCode": "de",
       "dmcClubNumber": 61,
       "myrcmClubNumbers": [],
@@ -510,14 +604,6 @@
         61183
       ],
       "region": "south"
-    },
-    {
-      "name": "MRC-Leipzig e.V.",
-      "aliases": [],
-      "countryCode": "de",
-      "dmcClubNumber": null,
-      "myrcmClubNumbers": [],
-      "region": "east"
     },
     {
       "name": "MRSC Amberg e.V.",
@@ -569,6 +655,16 @@
       "region": "east"
     },
     {
+      "name": "MSC Höckendorf e.V.",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": null,
+      "myrcmClubNumbers": [
+        56487
+      ],
+      "region": null
+    },
+    {
       "name": "MSC Kirchhain e.V.",
       "aliases": [],
       "countryCode": "de",
@@ -580,10 +676,14 @@
     },
     {
       "name": "MSC Ober-Mörlen e.V.",
-      "aliases": [],
+      "aliases": [
+        "MSC Ober Mörlen e.V."
+      ],
       "countryCode": "de",
       "dmcClubNumber": 205,
-      "myrcmClubNumbers": [],
+      "myrcmClubNumbers": [
+        49540
+      ],
       "region": "central"
     },
     {
@@ -595,6 +695,14 @@
         50019
       ],
       "region": "south"
+    },
+    {
+      "name": "MSC Riedenburg",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": 268,
+      "myrcmClubNumbers": [],
+      "region": null
     },
     {
       "name": "MSC Sand e.V.",
@@ -615,6 +723,18 @@
       "region": "east"
     },
     {
+      "name": "MSS Am Sägewerk",
+      "aliases": [
+        "MSS \"Am Sägewerk\""
+      ],
+      "countryCode": "de",
+      "dmcClubNumber": null,
+      "myrcmClubNumbers": [
+        49105
+      ],
+      "region": null
+    },
+    {
       "name": "MSV Hürtgenwald e.V.",
       "aliases": [],
       "countryCode": "de",
@@ -623,11 +743,15 @@
       "region": "west"
     },
     {
-      "name": "MSV Linsengericht",
-      "aliases": [],
+      "name": "MSV Linsengericht e.V.",
+      "aliases": [
+        "MSV Linsengericht"
+      ],
       "countryCode": "de",
       "dmcClubNumber": 234,
-      "myrcmClubNumbers": [],
+      "myrcmClubNumbers": [
+        49540
+      ],
       "region": "central"
     },
     {
@@ -687,6 +811,16 @@
       "region": "central"
     },
     {
+      "name": "Panik Team Troisdorf",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": null,
+      "myrcmClubNumbers": [
+        17507
+      ],
+      "region": null
+    },
+    {
       "name": "Panik Team Troisdorf e.V.",
       "aliases": [],
       "countryCode": "de",
@@ -707,6 +841,24 @@
       "region": "south"
     },
     {
+      "name": "Rc Cars Wernigerode e.V.",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": null,
+      "myrcmClubNumbers": [
+        43490
+      ],
+      "region": null
+    },
+    {
+      "name": "RC Drecksloch e.V.",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": 10,
+      "myrcmClubNumbers": [],
+      "region": "west"
+    },
+    {
       "name": "RC Fun Racer",
       "aliases": [],
       "countryCode": "de",
@@ -724,17 +876,22 @@
     },
     {
       "name": "RC Haltern e.V.",
-      "aliases": [],
+      "aliases": [
+        "Rallye-Club Haltern e.V.",
+        "Rallye-Club Haltern e.V.       3/160"
+      ],
       "countryCode": "de",
       "dmcClubNumber": 160,
-      "myrcmClubNumbers": [],
+      "myrcmClubNumbers": [
+        16149
+      ],
       "region": "west"
     },
     {
       "name": "RC Modellbaufreunde e.V.",
       "aliases": [],
       "countryCode": "de",
-      "dmcClubNumber": null,
+      "dmcClubNumber": 243,
       "myrcmClubNumbers": [
         53665
       ],
@@ -750,10 +907,14 @@
     },
     {
       "name": "RC Offroad Staaken e.V.",
-      "aliases": [],
+      "aliases": [
+        "RCS Offroad Staaken"
+      ],
       "countryCode": "de",
       "dmcClubNumber": 253,
-      "myrcmClubNumbers": [],
+      "myrcmClubNumbers": [
+        55317
+      ],
       "region": "east"
     },
     {
@@ -850,6 +1011,16 @@
       "region": "south"
     },
     {
+      "name": "RCB Zwickau e.V.",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": null,
+      "myrcmClubNumbers": [
+        48536
+      ],
+      "region": null
+    },
+    {
       "name": "RCCC Coesfeld",
       "aliases": [],
       "countryCode": "de",
@@ -910,16 +1081,6 @@
       "region": "west"
     },
     {
-      "name": "RCS Offroad Staaken",
-      "aliases": [],
-      "countryCode": "de",
-      "dmcClubNumber": 253,
-      "myrcmClubNumbers": [
-        55317
-      ],
-      "region": "east"
-    },
-    {
       "name": "RCSF-Singen e.V.",
       "aliases": [],
       "countryCode": "de",
@@ -974,6 +1135,16 @@
       "dmcClubNumber": null,
       "myrcmClubNumbers": [
         60453
+      ],
+      "region": null
+    },
+    {
+      "name": "SMC Stuttgart e.V.",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": null,
+      "myrcmClubNumbers": [
+        51971
       ],
       "region": null
     },
@@ -1038,6 +1209,16 @@
       "region": "south"
     },
     {
+      "name": "TSV Kleinburgwedel",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": null,
+      "myrcmClubNumbers": [
+        4441
+      ],
+      "region": null
+    },
+    {
       "name": "TSV Mariendorf 97 Berlin",
       "aliases": [
         "TSV Mariendorf 97 Berlin RCCR"
@@ -1058,6 +1239,16 @@
       "region": "central"
     },
     {
+      "name": "VFR-Rüsselsheim e.V.",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": null,
+      "myrcmClubNumbers": [
+        49540
+      ],
+      "region": null
+    },
+    {
       "name": "Wiesbadener Minicar Club e.V.",
       "aliases": [
         "Wiesbadener Minicar Club e.V"
@@ -1070,5 +1261,5 @@
       "region": "central"
     }
   ],
-  "lastUpdated": "2025-04-12T15:12:49.2823908+02:00"
+  "lastUpdated": "2025-05-10T14:36:57.0775485+02:00"
 }
