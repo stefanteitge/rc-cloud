@@ -44,7 +44,7 @@ public class TamiyaNlAiTest
         File.WriteAllText("response_nl.html", completion.Content[0].Text);
     }
     
-    [Fact]
+    [Fact(Skip = "Experiment")]
     public async Task GetAiResposeBe()
     {
         var openai = new ChatClient(model: "gpt-4.1-nano", apiKey: _apiKey);
