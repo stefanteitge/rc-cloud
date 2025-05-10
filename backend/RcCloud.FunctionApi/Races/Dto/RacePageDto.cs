@@ -31,7 +31,7 @@ public class RacePageDto(string lastUpdate, List<RaceDateDto> dates, string? las
             CreateGlobalCategory(racesWithDate, categories);
             foreach (var categoryName in categoryNames)
             {
-                CreateCategory(races, categories, categoryName);    
+                CreateCategory(racesWithDate, categories, categoryName);    
             }
 
             dateDtos.Add(new RaceDateDto(date.ToString(), categories));
