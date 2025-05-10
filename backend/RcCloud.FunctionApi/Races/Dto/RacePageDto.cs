@@ -15,9 +15,6 @@ public class RacePageDto(string lastUpdate, List<RaceDateDto> dates, string? las
 
     public List<RaceDateDto> Dates { get; } = dates;
 
-    public static RacePageDto FromDocument(RacesDocument document, string[] categoryNames, string? lastDmcUpdate)
-        => FromRaces(document.Races, categoryNames, document.LastUpdate, lastDmcUpdate);
-
     public static RacePageDto FromRaces(List<RaceMeeting> races, string[] categoryNames, string lastUpdate, string? lastDmcUpdate)
     {
         var dates = races.Select(r => r.Date).Distinct().Order().ToList();

@@ -68,11 +68,11 @@ export class BeneluxRaceMeetingRepository {
   }
 }
 function addOvalDates(dates: RaceDateDto[]): RaceDateDto[] {
-  var ovalRaces = getOvalRaces();
+  const ovalRaces = getOvalRaces();
 
   ovalRaces.forEach(ovalRace => {
-    var now = Temporal.Now.plainDateISO();
-    var dur = ovalRace.date.until(now);
+    const now = Temporal.Now.plainDateISO();
+    const dur = ovalRace.date.until(now);
     if (dur.days > 0) {
       return;
     }
