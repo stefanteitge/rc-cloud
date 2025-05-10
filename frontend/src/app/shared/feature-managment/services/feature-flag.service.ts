@@ -1,5 +1,5 @@
-import {Injectable} from '@angular/core';
-import {environment} from '../../../../environments/environment';
+import { Injectable } from '@angular/core';
+import { environment } from '../../../../environments/environment';
 
 export const FEATURE_FUNCTION_API_RACES = 'functions-api-races';
 
@@ -9,7 +9,7 @@ export const FEATURE_FUNCTION_API_RACES = 'functions-api-races';
 export class FeatureFlagService {
   isEnabled(key: string): boolean {
     if (key === FEATURE_FUNCTION_API_RACES) {
-      return environment.functionsApiRaces === true;
+      return environment.functionsApiRaces;
     }
 
     return false;

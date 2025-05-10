@@ -8,9 +8,8 @@ describe('ClubListPageComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ClubListPageComponent]
-    })
-    .compileComponents();
+      imports: [ClubListPageComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(ClubListPageComponent);
     component = fixture.componentInstance;

@@ -1,13 +1,11 @@
 <div class="page-container">
-  <ngb-alert [dismissible]="false">
-    <strong>Letztes Update</strong> {{ getLastUpdateDate() }}
-  </ngb-alert>
+  <ngb-alert [dismissible]="false"> <strong>Letztes Update</strong> {{ getLastUpdateDate() }} </ngb-alert>
 
   <table class="table table-striped-columns">
     <thead>
       <tr>
         <th scope="col">Datum</th>
-        @for (regionId of displayColumns(); track  regionId) {
+        @for (regionId of displayColumns(); track regionId) {
           <th scope="col">{{ regionId }}</th>
         }
       </tr>
@@ -17,7 +15,7 @@
         <tr>
           <th scope="row">{{ upcomingDate.dateEnd }}</th>
 
-          @for (regionId of displayColumns(); track  regionId) {
+          @for (regionId of displayColumns(); track regionId) {
             <td>
               @for (race of getRacesFromDate(upcomingDate, regionId); track race.location) {
                 <div class="meeting-box">

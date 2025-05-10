@@ -1,16 +1,16 @@
 <table class="table">
-<thead>
-<tr>
-  <th>Name</th>
-  <th>DMC Clubnummer</th>
-</tr>
-</thead>
-@for (club of repo.clubs(); track club.name) {
-  <tbody>
+  <thead>
     <tr>
-      <td>{{ club.name}}</td>
-      <td>{{ club.dmcClubNumber }}</td>
+      <th>Name</th>
+      <th>DMC Clubnummer</th>
     </tr>
-  </tbody>
-}
+  </thead>
+  @for (club of repo.clubs(); track club.name) {
+    <tbody>
+      <tr>
+        <td>{{ club.name }}</td>
+        <td>{{ club.dmcClubNumber }}</td>
+      </tr>
+    </tbody>
+  }
 </table>

@@ -1,10 +1,14 @@
-import {RaceMeetingDto} from '../dtos/race-meeting-envelope.dto';
-import {RaceDate, RaceCategory, UpcomingRace} from '../domain/race-date';
+import { RaceMeetingDto } from '../dtos/race-meeting-envelope.dto';
+import { RaceDate, RaceCategory, UpcomingRace } from '../domain/race-date';
 
-export default function compileUpcomingDates(races: RaceMeetingDto[], displayColumns: string[], byCountry = false): RaceDate[] {
+export default function compileUpcomingDates(
+  races: RaceMeetingDto[],
+  displayColumns: string[],
+  byCountry = false
+): RaceDate[] {
   const compiled = [] as RaceDate[];
 
-  races.forEach((race) => {
+  races.forEach(race => {
     let existingDate = compiled.find(c => c.dateEnd == race.date);
     if (existingDate === undefined) {
       const newDate = {
@@ -12,12 +16,12 @@ export default function compileUpcomingDates(races: RaceMeetingDto[], displayCol
         categories: [] as RaceCategory[],
       } as RaceDate;
 
-      displayColumns.forEach((displayColumn) => {
-        const r : RaceCategory = { key: displayColumn, races: []};
+      displayColumns.forEach(displayColumn => {
+        const r: RaceCategory = { key: displayColumn, races: [] };
         newDate.categories.push(r);
       });
 
-      const r : RaceCategory = { key: 'global', races: []};
+      const r: RaceCategory = { key: 'global', races: [] };
       newDate.categories.push(r);
 
       compiled.push(newDate);
@@ -32,8 +36,7 @@ export default function compileUpcomingDates(races: RaceMeetingDto[], displayCol
       source: race.source,
     } as UpcomingRace;
 
-    if (byCountry)
-    {
+    if (byCountry) {
       if (newUpcomingRace.countryCode === null) {
         existingDate.categories.find(r => r.key == 'global')?.races.push(newUpcomingRace);
       }
@@ -43,9 +46,7 @@ export default function compileUpcomingDates(races: RaceMeetingDto[], displayCol
           existingDate.categories.find(r => r.key == displayRegion)?.races.push(newUpcomingRace);
         }
       }
-    }
-    else
-    {
+    } else {
       if (newUpcomingRace.groups.length == 0) {
         existingDate.categories.find(r => r.key == 'global')?.races.push(newUpcomingRace);
       }
@@ -56,8 +57,7 @@ export default function compileUpcomingDates(races: RaceMeetingDto[], displayCol
         }
       }
     }
-
-  })
+  });
 
   return compiled;
 }

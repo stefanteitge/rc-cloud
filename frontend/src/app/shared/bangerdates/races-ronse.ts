@@ -1,5 +1,5 @@
 import { Temporal } from 'temporal-polyfill';
-import {RaceMeeting} from './types';
+import { RaceMeeting } from './types';
 
 export function getRacesInRonse(): RaceMeeting[] {
   return [

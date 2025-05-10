@@ -2,7 +2,7 @@ import { Temporal } from 'temporal-polyfill';
 import { RaceMeeting } from './types';
 import { getRacesInRonse } from './races-ronse';
 import { getRacesInMarrum } from './races-marrum';
-import {getRacesInLobith} from './races-lobith';
+import { getRacesInLobith } from './races-lobith';
 
 export function getRaces(): RaceMeeting[] {
   return [...getOtherRaces(), ...getRacesInRonse(), ...getRacesInMarrum(), ...getRacesInLobith()];

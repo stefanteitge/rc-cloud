@@ -6,7 +6,7 @@ export interface RacePageDto {
 }
 
 export interface UpcomingRace {
-  title: string,
+  title: string;
   location: string;
   series: ReferenceDto[];
   groups: ReferenceDto[];
@@ -16,16 +16,13 @@ export interface UpcomingRace {
 
 // RaceCategoryDto
 
-export interface RaceCategory
-{
-  key: string,
+export interface RaceCategory {
+  key: string;
   races: UpcomingRace[];
 }
 
 // RaceDateDto
-export interface RaceDate
-{
+export interface RaceDate {
   dateEnd: string;
   categories: RaceCategory[];
 }
-
