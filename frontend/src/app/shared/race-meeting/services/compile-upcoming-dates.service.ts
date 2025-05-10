@@ -1,7 +1,7 @@
 import {RaceMeetingDto} from '../dtos/race-meeting-envelope.dto';
 import {RaceDate, RaceCategory, UpcomingRace} from '../domain/race-date';
 
-export default function compileUpcomingDates(races: RaceMeetingDto[], displayColumns: string[], byCountry: boolean = false): RaceDate[] {
+export default function compileUpcomingDates(races: RaceMeetingDto[], displayColumns: string[], byCountry = false): RaceDate[] {
   const compiled = [] as RaceDate[];
 
   races.forEach((race) => {

@@ -1,6 +1,5 @@
 import {Component, OnInit} from '@angular/core';
 import {RaceMeetingListComponent} from '../race-meeting-list/race-meeting-list.component';
-import {RaceMeetingRepository} from '../../../../shared/race-meeting/repositories/race-meeting.repository';
 import {
   BeneluxRaceMeetingRepository
 } from '../../../../shared/race-meeting/repositories/benelux-race-meeting.repository';

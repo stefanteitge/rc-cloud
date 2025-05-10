@@ -1,4 +1,4 @@
-import {Component, input, OnInit} from '@angular/core';
+import {Component, input} from '@angular/core';
 import {RaceMeetingRepository} from '../../../../shared/race-meeting/repositories/race-meeting.repository';
 import {RaceDate, UpcomingRace} from '../../../../shared/race-meeting/domain/race-date';
 import {NgbAlert} from '@ng-bootstrap/ng-bootstrap';
@@ -15,9 +15,6 @@ export class RaceMeetingListComponent {
   displayColumns = input([] as string[]);
   races = input([] as RaceDate[]);
   lastUpdate = input('');
-
-  constructor() {
-  }
 
   getLastUpdateDate() : string {
     return this.lastUpdate();
