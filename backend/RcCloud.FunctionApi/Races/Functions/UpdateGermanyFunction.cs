@@ -18,6 +18,7 @@ public class UpdateGermanyFunction(
     ScrapeChallengeRaces challenge,
     //ScrapeDmcRaces dmc,
     ScrapeKleinserieRaces kleinserie,
+    ScrapeLrpOffroadRaces lrpOffroad,
     ScrapeMyrcmRaces myrcm,
     ScrapeRcco rcco,
     IClubRepository clubRepository,
@@ -33,6 +34,10 @@ public class UpdateGermanyFunction(
         
         var all = new List<RaceMeeting>();
 
+        var lrpOffroadAll = await lrpOffroad.Scrape();
+        all.AddRange(lrpOffroadAll);
+        await repo.Store(lrpOffroadAll, "germany", "lrp");
+        
         var challengeAll = await challenge.Scrape();
         all.AddRange(challengeAll);
         await repo.Store(challengeAll, "germany", "challenge");
