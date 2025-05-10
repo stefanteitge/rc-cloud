@@ -31,6 +31,11 @@ internal static class TerminMapper
         {
             return "RCK-Challenge";
         }
+        
+        if (series.Id == "lrp-offroad")
+        {
+            return "LRP-Offroad-Challenge";
+        }
 
         return "Unbekannt";
     }

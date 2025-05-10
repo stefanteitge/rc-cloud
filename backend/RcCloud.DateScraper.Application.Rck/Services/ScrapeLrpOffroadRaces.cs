@@ -8,7 +8,7 @@ public class ScrapeLrpOffroadRaces : AbstractRckService
 {
     private readonly Url BaseUrl = new Url("http://www.lrp-challenge.de/nenntool/indexgo.php");
 
-    private readonly SeriesReference Series = new SeriesReference("challenge");
+    private readonly SeriesReference Series = new SeriesReference("lrp-offroad");
 
     public async Task<List<RaceMeeting>> Scrape()
     {
