@@ -25,7 +25,7 @@ public class TamiyaNlAiTest
     [Fact(Skip = "Experiment")]
     public async Task GetAiResposeNl()
     {
-        var openai = new ChatClient(model: "gpt-4.1-mini", apiKey: _apiKey);
+        var openai = new ChatClient(model: "gpt-4.1-nano", apiKey: _apiKey);
 
         //var content = File.ReadAllText("Data/tamiya_nl.html");
         var client = new HttpClient();
@@ -44,10 +44,10 @@ public class TamiyaNlAiTest
         File.WriteAllText("response_nl.html", completion.Content[0].Text);
     }
     
-    [Fact(Skip = "Experiment")]
+    [Fact]
     public async Task GetAiResposeBe()
     {
-        var openai = new ChatClient(model: "gpt-4.1-mini", apiKey: _apiKey);
+        var openai = new ChatClient(model: "gpt-4.1-nano", apiKey: _apiKey);
 
         //var content = File.ReadAllText("Data/tamiya_nl.html");
         var client = new HttpClient();
