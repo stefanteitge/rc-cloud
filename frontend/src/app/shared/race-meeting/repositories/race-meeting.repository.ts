@@ -1,7 +1,7 @@
 import { Injectable, signal } from '@angular/core';
 import { tap } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
-import { RaceDateDto, RacePageDto} from '../dtos/race-date.dto';
+import { RaceDateDto, RacePageDto } from '../dtos/race-date.dto';
 import { RaceMeetingEnvelopeDto } from '../dtos/race-meeting-envelope.dto';
 import compileUpcomingDates from '../services/compile-upcoming-dates.service';
 import { FEATURE_FUNCTION_API_RACES, FeatureFlagService } from '../../feature-managment/services/feature-flag.service';

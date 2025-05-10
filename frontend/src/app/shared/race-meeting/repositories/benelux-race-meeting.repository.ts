@@ -6,9 +6,9 @@ import { RaceMeetingEnvelopeDto } from '../dtos/race-meeting-envelope.dto';
 import compileUpcomingDates from '../services/compile-upcoming-dates.service';
 import { FEATURE_FUNCTION_API_RACES, FeatureFlagService } from '../../feature-managment/services/feature-flag.service';
 import { environment } from '../../../../environments/environment';
-import {getOvalRaces} from '../../bangerdates/races';
-import {getOvalClassName} from '../../bangerdates/classes';
-import {Temporal} from 'temporal-polyfill';
+import { getOvalRaces } from '../../bangerdates/races';
+import { getOvalClassName } from '../../bangerdates/classes';
+import { Temporal } from 'temporal-polyfill';
 
 @Injectable()
 export class BeneluxRaceMeetingRepository {
@@ -36,7 +36,7 @@ export class BeneluxRaceMeetingRepository {
         )
         .subscribe({
           next: page => {
-            const dates = addOvalDates(page.dates)
+            const dates = addOvalDates(page.dates);
             this.raceDates.set(dates);
             this.lastUpdate.set(page.lastUpdate);
           },
@@ -52,11 +52,7 @@ export class BeneluxRaceMeetingRepository {
         )
         .subscribe({
           next: envelope => {
-            const compiled = compileUpcomingDates(
-              envelope.races,
-              ['global', 'be', 'nl', 'lux', 'banger', 'stockcars'],
-              true
-            );
+            const compiled = compileUpcomingDates(envelope.races, ['global', 'be', 'nl', 'lux', 'banger']);
             this.raceDates.set(compiled);
             this.lastUpdate.set(envelope.lastUpdate);
           },
@@ -91,22 +87,21 @@ function addOvalDates(dates: RaceDateDto[]): RaceDateDto[] {
     if (!bangerCat) {
       bangerCat = {
         key: 'banger',
-        races: []
+        races: [],
       };
 
       myDate.categories.push(bangerCat);
     }
 
     bangerCat.races.push({
-      countryCode: "?",
+      countryCode: '?',
       location: ovalRace.location,
       series: [],
       groups: [],
       source: 'Facebook groups',
-      title: ovalRace.classes.map(c => getOvalClassName(c)).join(', ') + " in " + ovalRace.location
+      title: ovalRace.classes.map(c => getOvalClassName(c)).join(', ') + ' in ' + ovalRace.location,
     });
-  })
+  });
 
   return dates.sort((a, b) => a.dateEnd.localeCompare(b.dateEnd));
 }
-

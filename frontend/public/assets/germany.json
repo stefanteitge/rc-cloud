@@ -53,9 +53,7 @@
       "regions": [],
       "club": {
         "name": "RCCC Hilter e.V.",
-        "aliases": [
-          "RCCC Hilter"
-        ],
+        "aliases": ["RCCC Hilter"],
         "countryCode": "de",
         "dmcClubNumber": 298,
         "myrcmClubNumbers": [],
@@ -130,9 +128,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          56487
-        ],
+        "myrcmClubNumbers": [56487],
         "region": null
       },
       "source": "Myrcm"
@@ -156,9 +152,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          12227
-        ],
+        "myrcmClubNumbers": [12227],
         "region": null
       },
       "source": "Myrcm"
@@ -182,14 +176,10 @@
       ],
       "club": {
         "name": "MAC Meckenheim e.V.",
-        "aliases": [
-          "MAC-Meckenheim e.V. OV 3/030"
-        ],
+        "aliases": ["MAC-Meckenheim e.V. OV 3/030"],
         "countryCode": "de",
         "dmcClubNumber": 30,
-        "myrcmClubNumbers": [
-          49037
-        ],
+        "myrcmClubNumbers": [49037],
         "region": {
           "id": "west"
         }
@@ -215,14 +205,10 @@
       ],
       "club": {
         "name": "RT Fichtenberg e.V.",
-        "aliases": [
-          "RT Fichtenberg"
-        ],
+        "aliases": ["RT Fichtenberg"],
         "countryCode": "de",
         "dmcClubNumber": 76,
-        "myrcmClubNumbers": [
-          25939
-        ],
+        "myrcmClubNumbers": [25939],
         "region": {
           "id": "south"
         }
@@ -290,9 +276,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          891
-        ],
+        "myrcmClubNumbers": [891],
         "region": null
       },
       "source": "Myrcm"
@@ -340,9 +324,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          16961
-        ],
+        "myrcmClubNumbers": [16961],
         "region": {
           "id": "south"
         }
@@ -388,9 +370,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          7771
-        ],
+        "myrcmClubNumbers": [7771],
         "region": null
       },
       "source": "Myrcm"
@@ -414,9 +394,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          42064
-        ],
+        "myrcmClubNumbers": [42064],
         "region": null
       },
       "source": "Myrcm"
@@ -440,9 +418,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          49540
-        ],
+        "myrcmClubNumbers": [49540],
         "region": null
       },
       "source": "Myrcm"
@@ -466,9 +442,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          50693
-        ],
+        "myrcmClubNumbers": [50693],
         "region": null
       },
       "source": "Myrcm"
@@ -495,9 +469,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": 221,
-        "myrcmClubNumbers": [
-          33489
-        ],
+        "myrcmClubNumbers": [33489],
         "region": {
           "id": "north"
         }
@@ -523,9 +495,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          42064
-        ],
+        "myrcmClubNumbers": [42064],
         "region": null
       },
       "source": "Myrcm"
@@ -549,15 +519,10 @@
       ],
       "club": {
         "name": "RC Speedracer e.V.",
-        "aliases": [
-          "RC Speedracer e.V. OV-055",
-          "RC Speedracer"
-        ],
+        "aliases": ["RC Speedracer e.V. OV-055", "RC Speedracer"],
         "countryCode": "de",
         "dmcClubNumber": 55,
-        "myrcmClubNumbers": [
-          45925
-        ],
+        "myrcmClubNumbers": [45925],
         "region": {
           "id": "east"
         }
@@ -586,9 +551,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          713
-        ],
+        "myrcmClubNumbers": [713],
         "region": {
           "id": "east"
         }
@@ -625,9 +588,7 @@
         ],
         "countryCode": "de",
         "dmcClubNumber": 158,
-        "myrcmClubNumbers": [
-          95
-        ],
+        "myrcmClubNumbers": [95],
         "region": {
           "id": "north"
         }
@@ -653,9 +614,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          36
-        ],
+        "myrcmClubNumbers": [36],
         "region": null
       },
       "source": "Myrcm"
@@ -682,9 +641,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          713
-        ],
+        "myrcmClubNumbers": [713],
         "region": {
           "id": "east"
         }
@@ -755,9 +712,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": 337,
-        "myrcmClubNumbers": [
-          10490
-        ],
+        "myrcmClubNumbers": [10490],
         "region": {
           "id": "west"
         }
@@ -806,9 +761,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": 227,
-        "myrcmClubNumbers": [
-          678
-        ],
+        "myrcmClubNumbers": [678],
         "region": {
           "id": "north"
         }
@@ -858,9 +811,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          20622
-        ],
+        "myrcmClubNumbers": [20622],
         "region": null
       },
       "source": "Myrcm"
@@ -884,15 +835,10 @@
       ],
       "club": {
         "name": "RC Speedracer e.V.",
-        "aliases": [
-          "RC Speedracer e.V. OV-055",
-          "RC Speedracer"
-        ],
+        "aliases": ["RC Speedracer e.V. OV-055", "RC Speedracer"],
         "countryCode": "de",
         "dmcClubNumber": 55,
-        "myrcmClubNumbers": [
-          45925
-        ],
+        "myrcmClubNumbers": [45925],
         "region": {
           "id": "east"
         }
@@ -918,9 +864,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          49105
-        ],
+        "myrcmClubNumbers": [49105],
         "region": null
       },
       "source": "Myrcm"
@@ -947,9 +891,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          573
-        ],
+        "myrcmClubNumbers": [573],
         "region": {
           "id": "south"
         }
@@ -978,9 +920,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": 40,
-        "myrcmClubNumbers": [
-          9269
-        ],
+        "myrcmClubNumbers": [9269],
         "region": {
           "id": "west"
         }
@@ -1006,9 +946,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          49540
-        ],
+        "myrcmClubNumbers": [49540],
         "region": null
       },
       "source": "Myrcm"
@@ -1035,9 +973,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": 181,
-        "myrcmClubNumbers": [
-          15511
-        ],
+        "myrcmClubNumbers": [15511],
         "region": {
           "id": "west"
         }
@@ -1067,14 +1003,10 @@
       ],
       "club": {
         "name": "Modellclub Flensburg e.V.",
-        "aliases": [
-          "Modellclub Flensburg e. V."
-        ],
+        "aliases": ["Modellclub Flensburg e. V."],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          42405
-        ],
+        "myrcmClubNumbers": [42405],
         "region": {
           "id": "north"
         }
@@ -1103,9 +1035,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": 236,
-        "myrcmClubNumbers": [
-          26596
-        ],
+        "myrcmClubNumbers": [26596],
         "region": {
           "id": "east"
         }
@@ -1124,9 +1054,7 @@
       "regions": [],
       "club": {
         "name": "Modellsport Münsterland e.V.",
-        "aliases": [
-          "Modellsport Münsterland"
-        ],
+        "aliases": ["Modellsport Münsterland"],
         "countryCode": "de",
         "dmcClubNumber": 240,
         "myrcmClubNumbers": [],
@@ -1198,9 +1126,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": 64,
-        "myrcmClubNumbers": [
-          9976
-        ],
+        "myrcmClubNumbers": [9976],
         "region": {
           "id": "south"
         }
@@ -1223,15 +1149,10 @@
       ],
       "club": {
         "name": "Tonisport",
-        "aliases": [
-          "„TONISPORT GmbH Modellsport  ETS“",
-          "„TONISPORT GmbH Modellsport  ENS“"
-        ],
+        "aliases": ["„TONISPORT GmbH Modellsport  ETS“", "„TONISPORT GmbH Modellsport  ENS“"],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          2047
-        ],
+        "myrcmClubNumbers": [2047],
         "region": null
       },
       "source": "Myrcm"
@@ -1275,9 +1196,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          4441
-        ],
+        "myrcmClubNumbers": [4441],
         "region": null
       },
       "source": "Myrcm"
@@ -1304,9 +1223,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          32408
-        ],
+        "myrcmClubNumbers": [32408],
         "region": {
           "id": "north"
         }
@@ -1332,9 +1249,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          43490
-        ],
+        "myrcmClubNumbers": [43490],
         "region": null
       },
       "source": "Myrcm"
@@ -1358,14 +1273,10 @@
       ],
       "club": {
         "name": "1.MRC Mannheim e.V.",
-        "aliases": [
-          "1. MRC Mannheim"
-        ],
+        "aliases": ["1. MRC Mannheim"],
         "countryCode": "de",
         "dmcClubNumber": 391,
-        "myrcmClubNumbers": [
-          39671
-        ],
+        "myrcmClubNumbers": [39671],
         "region": {
           "id": "central"
         }
@@ -1391,14 +1302,10 @@
       ],
       "club": {
         "name": "ESV Blau-Gold Bischofsheim 1958 e.V.",
-        "aliases": [
-          "ESV Bischofsheim e.V."
-        ],
+        "aliases": ["ESV Bischofsheim e.V."],
         "countryCode": "de",
         "dmcClubNumber": 37,
-        "myrcmClubNumbers": [
-          37613
-        ],
+        "myrcmClubNumbers": [37613],
         "region": {
           "id": "central"
         }
@@ -1428,9 +1335,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          38488
-        ],
+        "myrcmClubNumbers": [38488],
         "region": null
       },
       "source": "Myrcm"
@@ -1496,15 +1401,10 @@
       ],
       "club": {
         "name": "Tonisport",
-        "aliases": [
-          "„TONISPORT GmbH Modellsport  ETS“",
-          "„TONISPORT GmbH Modellsport  ENS“"
-        ],
+        "aliases": ["„TONISPORT GmbH Modellsport  ETS“", "„TONISPORT GmbH Modellsport  ENS“"],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          2047
-        ],
+        "myrcmClubNumbers": [2047],
         "region": null
       },
       "source": "Myrcm"
@@ -1548,14 +1448,10 @@
       ],
       "club": {
         "name": "RT Fichtenberg e.V.",
-        "aliases": [
-          "RT Fichtenberg"
-        ],
+        "aliases": ["RT Fichtenberg"],
         "countryCode": "de",
         "dmcClubNumber": 76,
-        "myrcmClubNumbers": [
-          25939
-        ],
+        "myrcmClubNumbers": [25939],
         "region": {
           "id": "south"
         }
@@ -1584,9 +1480,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          713
-        ],
+        "myrcmClubNumbers": [713],
         "region": {
           "id": "east"
         }
@@ -1619,9 +1513,7 @@
         ],
         "countryCode": "de",
         "dmcClubNumber": 158,
-        "myrcmClubNumbers": [
-          72
-        ],
+        "myrcmClubNumbers": [72],
         "region": {
           "id": "north"
         }
@@ -1650,9 +1542,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          53665
-        ],
+        "myrcmClubNumbers": [53665],
         "region": {
           "id": "south"
         }
@@ -1681,9 +1571,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          713
-        ],
+        "myrcmClubNumbers": [713],
         "region": {
           "id": "east"
         }
@@ -1709,9 +1597,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          57549
-        ],
+        "myrcmClubNumbers": [57549],
         "region": null
       },
       "source": "Myrcm"
@@ -1738,9 +1624,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": 349,
-        "myrcmClubNumbers": [
-          60911
-        ],
+        "myrcmClubNumbers": [60911],
         "region": {
           "id": "south"
         }
@@ -1766,9 +1650,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          861
-        ],
+        "myrcmClubNumbers": [861],
         "region": null
       },
       "source": "Myrcm"
@@ -1792,14 +1674,10 @@
       ],
       "club": {
         "name": "ESV Blau-Gold Bischofsheim 1958 e.V.",
-        "aliases": [
-          "ESV Bischofsheim e.V."
-        ],
+        "aliases": ["ESV Bischofsheim e.V."],
         "countryCode": "de",
         "dmcClubNumber": 37,
-        "myrcmClubNumbers": [
-          37613
-        ],
+        "myrcmClubNumbers": [37613],
         "region": {
           "id": "central"
         }
@@ -1828,9 +1706,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": 64,
-        "myrcmClubNumbers": [
-          9976
-        ],
+        "myrcmClubNumbers": [9976],
         "region": {
           "id": "south"
         }
@@ -1859,9 +1735,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": 253,
-        "myrcmClubNumbers": [
-          55317
-        ],
+        "myrcmClubNumbers": [55317],
         "region": {
           "id": "east"
         }
@@ -1932,9 +1806,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          12227
-        ],
+        "myrcmClubNumbers": [12227],
         "region": null
       },
       "source": "Myrcm"
@@ -1958,9 +1830,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          879
-        ],
+        "myrcmClubNumbers": [879],
         "region": null
       },
       "source": "Myrcm"
@@ -2027,9 +1897,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          16961
-        ],
+        "myrcmClubNumbers": [16961],
         "region": {
           "id": "south"
         }
@@ -2055,14 +1923,10 @@
       ],
       "club": {
         "name": "TSV Mariendorf 97 Berlin",
-        "aliases": [
-          "TSV Mariendorf 97 Berlin RCCR"
-        ],
+        "aliases": ["TSV Mariendorf 97 Berlin RCCR"],
         "countryCode": "de",
         "dmcClubNumber": 102,
-        "myrcmClubNumbers": [
-          18244
-        ],
+        "myrcmClubNumbers": [18244],
         "region": {
           "id": "east"
         }
@@ -2130,9 +1994,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          49540
-        ],
+        "myrcmClubNumbers": [49540],
         "region": null
       },
       "source": "Myrcm"
@@ -2159,9 +2021,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          47444
-        ],
+        "myrcmClubNumbers": [47444],
         "region": {
           "id": "south"
         }
@@ -2187,9 +2047,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          16149
-        ],
+        "myrcmClubNumbers": [16149],
         "region": null
       },
       "source": "Myrcm"
@@ -2213,9 +2071,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          7103
-        ],
+        "myrcmClubNumbers": [7103],
         "region": null
       },
       "source": "Myrcm"
@@ -2239,9 +2095,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          17507
-        ],
+        "myrcmClubNumbers": [17507],
         "region": null
       },
       "source": "Myrcm"
@@ -2268,9 +2122,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": 388,
-        "myrcmClubNumbers": [
-          59129
-        ],
+        "myrcmClubNumbers": [59129],
         "region": {
           "id": "south"
         }
@@ -2299,9 +2151,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": 202,
-        "myrcmClubNumbers": [
-          39587
-        ],
+        "myrcmClubNumbers": [39587],
         "region": {
           "id": "south"
         }
@@ -2327,9 +2177,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          4441
-        ],
+        "myrcmClubNumbers": [4441],
         "region": null
       },
       "source": "Myrcm"
@@ -2377,9 +2225,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          20622
-        ],
+        "myrcmClubNumbers": [20622],
         "region": null
       },
       "source": "Myrcm"
@@ -2406,9 +2252,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": 64,
-        "myrcmClubNumbers": [
-          9976
-        ],
+        "myrcmClubNumbers": [9976],
         "region": {
           "id": "south"
         }
@@ -2434,9 +2278,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          49540
-        ],
+        "myrcmClubNumbers": [49540],
         "region": null
       },
       "source": "Myrcm"
@@ -2460,15 +2302,10 @@
       ],
       "club": {
         "name": "RC Speedracer e.V.",
-        "aliases": [
-          "RC Speedracer e.V. OV-055",
-          "RC Speedracer"
-        ],
+        "aliases": ["RC Speedracer e.V. OV-055", "RC Speedracer"],
         "countryCode": "de",
         "dmcClubNumber": 55,
-        "myrcmClubNumbers": [
-          45925
-        ],
+        "myrcmClubNumbers": [45925],
         "region": {
           "id": "east"
         }
@@ -2497,9 +2334,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": 152,
-        "myrcmClubNumbers": [
-          44699
-        ],
+        "myrcmClubNumbers": [44699],
         "region": {
           "id": "south"
         }
@@ -2528,9 +2363,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          16961
-        ],
+        "myrcmClubNumbers": [16961],
         "region": {
           "id": "south"
         }
@@ -2560,16 +2393,10 @@
       ],
       "club": {
         "name": "MCC Rhein-Ahr e.V.",
-        "aliases": [
-          "MCC Rhein-Ahr e.V",
-          "Modell Car Club Rhein Ahr e.V.",
-          "DMC e.V. | Ausrichter: MCC Rhein-Ahr e.V."
-        ],
+        "aliases": ["MCC Rhein-Ahr e.V", "Modell Car Club Rhein Ahr e.V.", "DMC e.V. | Ausrichter: MCC Rhein-Ahr e.V."],
         "countryCode": "de",
         "dmcClubNumber": 296,
-        "myrcmClubNumbers": [
-          283
-        ],
+        "myrcmClubNumbers": [283],
         "region": {
           "id": "west"
         }
@@ -2595,14 +2422,10 @@
       ],
       "club": {
         "name": "MSC Halle e.V.",
-        "aliases": [
-          "Modellsport Club Halle / Saale e.V."
-        ],
+        "aliases": ["Modellsport Club Halle / Saale e.V."],
         "countryCode": "de",
         "dmcClubNumber": 359,
-        "myrcmClubNumbers": [
-          44811
-        ],
+        "myrcmClubNumbers": [44811],
         "region": {
           "id": "east"
         }
@@ -2628,14 +2451,10 @@
       ],
       "club": {
         "name": "MAC Meckenheim e.V.",
-        "aliases": [
-          "MAC-Meckenheim e.V. OV 3/030"
-        ],
+        "aliases": ["MAC-Meckenheim e.V. OV 3/030"],
         "countryCode": "de",
         "dmcClubNumber": 30,
-        "myrcmClubNumbers": [
-          49037
-        ],
+        "myrcmClubNumbers": [49037],
         "region": {
           "id": "west"
         }
@@ -2661,14 +2480,10 @@
       ],
       "club": {
         "name": "1.MRC Mannheim e.V.",
-        "aliases": [
-          "1. MRC Mannheim"
-        ],
+        "aliases": ["1. MRC Mannheim"],
         "countryCode": "de",
         "dmcClubNumber": 391,
-        "myrcmClubNumbers": [
-          39671
-        ],
+        "myrcmClubNumbers": [39671],
         "region": {
           "id": "central"
         }
@@ -2687,9 +2502,7 @@
       "regions": [],
       "club": {
         "name": "Modellsport Münsterland e.V.",
-        "aliases": [
-          "Modellsport Münsterland"
-        ],
+        "aliases": ["Modellsport Münsterland"],
         "countryCode": "de",
         "dmcClubNumber": 240,
         "myrcmClubNumbers": [],
@@ -2731,9 +2544,7 @@
       "regions": [],
       "club": {
         "name": "RCCC Hilter e.V.",
-        "aliases": [
-          "RCCC Hilter"
-        ],
+        "aliases": ["RCCC Hilter"],
         "countryCode": "de",
         "dmcClubNumber": 298,
         "myrcmClubNumbers": [],
@@ -2765,9 +2576,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": 337,
-        "myrcmClubNumbers": [
-          10490
-        ],
+        "myrcmClubNumbers": [10490],
         "region": {
           "id": "west"
         }
@@ -2793,9 +2602,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          48536
-        ],
+        "myrcmClubNumbers": [48536],
         "region": null
       },
       "source": "Myrcm"
@@ -2823,14 +2630,10 @@
       ],
       "club": {
         "name": "Modellclub Flensburg e.V.",
-        "aliases": [
-          "Modellclub Flensburg e. V."
-        ],
+        "aliases": ["Modellclub Flensburg e. V."],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          42405
-        ],
+        "myrcmClubNumbers": [42405],
         "region": {
           "id": "north"
         }
@@ -2926,9 +2729,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          60576
-        ],
+        "myrcmClubNumbers": [60576],
         "region": {
           "id": "east"
         }
@@ -2961,9 +2762,7 @@
         ],
         "countryCode": "de",
         "dmcClubNumber": 158,
-        "myrcmClubNumbers": [
-          95
-        ],
+        "myrcmClubNumbers": [95],
         "region": {
           "id": "north"
         }
@@ -2992,9 +2791,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": 64,
-        "myrcmClubNumbers": [
-          9976
-        ],
+        "myrcmClubNumbers": [9976],
         "region": {
           "id": "south"
         }
@@ -3023,9 +2820,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": 221,
-        "myrcmClubNumbers": [
-          33489
-        ],
+        "myrcmClubNumbers": [33489],
         "region": {
           "id": "north"
         }
@@ -3071,14 +2866,10 @@
       ],
       "club": {
         "name": "RC Cars Köngen e.V.",
-        "aliases": [
-          "RC Cars Köngen (OV 162)"
-        ],
+        "aliases": ["RC Cars Köngen (OV 162)"],
         "countryCode": "de",
         "dmcClubNumber": 162,
-        "myrcmClubNumbers": [
-          12564
-        ],
+        "myrcmClubNumbers": [12564],
         "region": {
           "id": "south"
         }
@@ -3097,9 +2888,7 @@
       "regions": [],
       "club": {
         "name": "RCCC Hilter e.V.",
-        "aliases": [
-          "RCCC Hilter"
-        ],
+        "aliases": ["RCCC Hilter"],
         "countryCode": "de",
         "dmcClubNumber": 298,
         "myrcmClubNumbers": [],
@@ -3141,9 +2930,7 @@
       "regions": [],
       "club": {
         "name": "Modellsport Münsterland e.V.",
-        "aliases": [
-          "Modellsport Münsterland"
-        ],
+        "aliases": ["Modellsport Münsterland"],
         "countryCode": "de",
         "dmcClubNumber": 240,
         "myrcmClubNumbers": [],
@@ -3172,9 +2959,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          36
-        ],
+        "myrcmClubNumbers": [36],
         "region": null
       },
       "source": "Myrcm"
@@ -3198,9 +2983,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          12227
-        ],
+        "myrcmClubNumbers": [12227],
         "region": null
       },
       "source": "Myrcm"
@@ -3228,15 +3011,10 @@
       ],
       "club": {
         "name": "MRT-Rosenheim e.V.",
-        "aliases": [
-          "MRT-Rosenheim",
-          "MRT Rosenheim e.V."
-        ],
+        "aliases": ["MRT-Rosenheim", "MRT Rosenheim e.V."],
         "countryCode": "de",
         "dmcClubNumber": 67,
-        "myrcmClubNumbers": [
-          4483
-        ],
+        "myrcmClubNumbers": [4483],
         "region": {
           "id": "south"
         }
@@ -3265,9 +3043,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          16961
-        ],
+        "myrcmClubNumbers": [16961],
         "region": {
           "id": "south"
         }
@@ -3293,15 +3069,10 @@
       ],
       "club": {
         "name": "RC Speedracer e.V.",
-        "aliases": [
-          "RC Speedracer e.V. OV-055",
-          "RC Speedracer"
-        ],
+        "aliases": ["RC Speedracer e.V. OV-055", "RC Speedracer"],
         "countryCode": "de",
         "dmcClubNumber": 55,
-        "myrcmClubNumbers": [
-          45925
-        ],
+        "myrcmClubNumbers": [45925],
         "region": {
           "id": "east"
         }
@@ -3327,14 +3098,10 @@
       ],
       "club": {
         "name": "RCCT Münden",
-        "aliases": [
-          "RCCT Münden OV241"
-        ],
+        "aliases": ["RCCT Münden OV241"],
         "countryCode": "de",
         "dmcClubNumber": 241,
-        "myrcmClubNumbers": [
-          134
-        ],
+        "myrcmClubNumbers": [134],
         "region": {
           "id": "nord"
         }
@@ -3383,9 +3150,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": 253,
-        "myrcmClubNumbers": [
-          55317
-        ],
+        "myrcmClubNumbers": [55317],
         "region": {
           "id": "east"
         }
@@ -3411,9 +3176,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          891
-        ],
+        "myrcmClubNumbers": [891],
         "region": null
       },
       "source": "Myrcm"
@@ -3437,14 +3200,10 @@
       ],
       "club": {
         "name": "MRC Senden e.V.",
-        "aliases": [
-          "MRC Senden"
-        ],
+        "aliases": ["MRC Senden"],
         "countryCode": "de",
         "dmcClubNumber": 247,
-        "myrcmClubNumbers": [
-          61183
-        ],
+        "myrcmClubNumbers": [61183],
         "region": {
           "id": "south"
         }
@@ -3536,15 +3295,10 @@
       ],
       "club": {
         "name": "MRT-Rosenheim e.V.",
-        "aliases": [
-          "MRT-Rosenheim",
-          "MRT Rosenheim e.V."
-        ],
+        "aliases": ["MRT-Rosenheim", "MRT Rosenheim e.V."],
         "countryCode": "de",
         "dmcClubNumber": 67,
-        "myrcmClubNumbers": [
-          4483
-        ],
+        "myrcmClubNumbers": [4483],
         "region": {
           "id": "south"
         }
@@ -3570,14 +3324,10 @@
       ],
       "club": {
         "name": "MAC Meckenheim e.V.",
-        "aliases": [
-          "MAC-Meckenheim e.V. OV 3/030"
-        ],
+        "aliases": ["MAC-Meckenheim e.V. OV 3/030"],
         "countryCode": "de",
         "dmcClubNumber": 30,
-        "myrcmClubNumbers": [
-          49037
-        ],
+        "myrcmClubNumbers": [49037],
         "region": {
           "id": "west"
         }
@@ -3606,9 +3356,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          573
-        ],
+        "myrcmClubNumbers": [573],
         "region": {
           "id": "south"
         }
@@ -3641,9 +3389,7 @@
         ],
         "countryCode": "de",
         "dmcClubNumber": 158,
-        "myrcmClubNumbers": [
-          72
-        ],
+        "myrcmClubNumbers": [72],
         "region": {
           "id": "north"
         }
@@ -3672,9 +3418,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": 64,
-        "myrcmClubNumbers": [
-          9976
-        ],
+        "myrcmClubNumbers": [9976],
         "region": {
           "id": "south"
         }
@@ -3693,9 +3437,7 @@
       "regions": [],
       "club": {
         "name": "Modellsport Münsterland e.V.",
-        "aliases": [
-          "Modellsport Münsterland"
-        ],
+        "aliases": ["Modellsport Münsterland"],
         "countryCode": "de",
         "dmcClubNumber": 240,
         "myrcmClubNumbers": [],
@@ -3724,9 +3466,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          20622
-        ],
+        "myrcmClubNumbers": [20622],
         "region": null
       },
       "source": "Myrcm"
@@ -3771,9 +3511,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          879
-        ],
+        "myrcmClubNumbers": [879],
         "region": null
       },
       "source": "Myrcm"
@@ -3797,15 +3535,10 @@
       ],
       "club": {
         "name": "MRT-Rosenheim e.V.",
-        "aliases": [
-          "MRT-Rosenheim",
-          "MRT Rosenheim e.V."
-        ],
+        "aliases": ["MRT-Rosenheim", "MRT Rosenheim e.V."],
         "countryCode": "de",
         "dmcClubNumber": 67,
-        "myrcmClubNumbers": [
-          4483
-        ],
+        "myrcmClubNumbers": [4483],
         "region": {
           "id": "south"
         }
@@ -3834,9 +3567,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          16961
-        ],
+        "myrcmClubNumbers": [16961],
         "region": {
           "id": "south"
         }
@@ -3866,15 +3597,10 @@
       ],
       "club": {
         "name": "RC Speedracer e.V.",
-        "aliases": [
-          "RC Speedracer e.V. OV-055",
-          "RC Speedracer"
-        ],
+        "aliases": ["RC Speedracer e.V. OV-055", "RC Speedracer"],
         "countryCode": "de",
         "dmcClubNumber": 55,
-        "myrcmClubNumbers": [
-          45925
-        ],
+        "myrcmClubNumbers": [45925],
         "region": {
           "id": "east"
         }
@@ -3900,9 +3626,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          53667
-        ],
+        "myrcmClubNumbers": [53667],
         "region": null
       },
       "source": "Myrcm"
@@ -3929,9 +3653,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          53665
-        ],
+        "myrcmClubNumbers": [53665],
         "region": {
           "id": "south"
         }
@@ -3970,9 +3692,7 @@
       "regions": [],
       "club": {
         "name": "Modellsport Münsterland e.V.",
-        "aliases": [
-          "Modellsport Münsterland"
-        ],
+        "aliases": ["Modellsport Münsterland"],
         "countryCode": "de",
         "dmcClubNumber": 240,
         "myrcmClubNumbers": [],
@@ -4001,14 +3721,10 @@
       ],
       "club": {
         "name": "EMC Marktoberdorf e.V.",
-        "aliases": [
-          "EMC Marktoberdorf"
-        ],
+        "aliases": ["EMC Marktoberdorf"],
         "countryCode": "de",
         "dmcClubNumber": 263,
-        "myrcmClubNumbers": [
-          43367
-        ],
+        "myrcmClubNumbers": [43367],
         "region": {
           "id": "south"
         }
@@ -4125,14 +3841,10 @@
       ],
       "club": {
         "name": "AMC Hamm e.V.",
-        "aliases": [
-          "AMC Hamm e.V"
-        ],
+        "aliases": ["AMC Hamm e.V"],
         "countryCode": "de",
         "dmcClubNumber": 31,
-        "myrcmClubNumbers": [
-          7771
-        ],
+        "myrcmClubNumbers": [7771],
         "region": {
           "id": "west"
         }
@@ -4158,9 +3870,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          12227
-        ],
+        "myrcmClubNumbers": [12227],
         "region": null
       },
       "source": "Myrcm"
@@ -4205,9 +3915,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          12227
-        ],
+        "myrcmClubNumbers": [12227],
         "region": null
       },
       "source": "Myrcm"
@@ -4234,9 +3942,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": 337,
-        "myrcmClubNumbers": [
-          10490
-        ],
+        "myrcmClubNumbers": [10490],
         "region": {
           "id": "west"
         }
@@ -4265,9 +3971,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          47444
-        ],
+        "myrcmClubNumbers": [47444],
         "region": {
           "id": "south"
         }
@@ -4296,9 +4000,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": 253,
-        "myrcmClubNumbers": [
-          55317
-        ],
+        "myrcmClubNumbers": [55317],
         "region": {
           "id": "east"
         }
@@ -4324,14 +4026,10 @@
       ],
       "club": {
         "name": "AMC Hamm e.V.",
-        "aliases": [
-          "AMC Hamm e.V"
-        ],
+        "aliases": ["AMC Hamm e.V"],
         "countryCode": "de",
         "dmcClubNumber": 31,
-        "myrcmClubNumbers": [
-          7771
-        ],
+        "myrcmClubNumbers": [7771],
         "region": {
           "id": "west"
         }
@@ -4357,15 +4055,10 @@
       ],
       "club": {
         "name": "RC Speedracer e.V.",
-        "aliases": [
-          "RC Speedracer e.V. OV-055",
-          "RC Speedracer"
-        ],
+        "aliases": ["RC Speedracer e.V. OV-055", "RC Speedracer"],
         "countryCode": "de",
         "dmcClubNumber": 55,
-        "myrcmClubNumbers": [
-          45925
-        ],
+        "myrcmClubNumbers": [45925],
         "region": {
           "id": "east"
         }
@@ -4405,9 +4098,7 @@
       "regions": [],
       "club": {
         "name": "RCCC Hilter e.V.",
-        "aliases": [
-          "RCCC Hilter"
-        ],
+        "aliases": ["RCCC Hilter"],
         "countryCode": "de",
         "dmcClubNumber": 298,
         "myrcmClubNumbers": [],
@@ -4436,14 +4127,10 @@
       ],
       "club": {
         "name": "EDC Kinzigtal",
-        "aliases": [
-          "EDC Kinzigtal (OV371)"
-        ],
+        "aliases": ["EDC Kinzigtal (OV371)"],
         "countryCode": "de",
         "dmcClubNumber": 371,
-        "myrcmClubNumbers": [
-          35606
-        ],
+        "myrcmClubNumbers": [35606],
         "region": {
           "id": "south"
         }
@@ -4469,16 +4156,10 @@
       ],
       "club": {
         "name": "MCC Rhein-Ahr e.V.",
-        "aliases": [
-          "MCC Rhein-Ahr e.V",
-          "Modell Car Club Rhein Ahr e.V.",
-          "DMC e.V. | Ausrichter: MCC Rhein-Ahr e.V."
-        ],
+        "aliases": ["MCC Rhein-Ahr e.V", "Modell Car Club Rhein Ahr e.V.", "DMC e.V. | Ausrichter: MCC Rhein-Ahr e.V."],
         "countryCode": "de",
         "dmcClubNumber": 296,
-        "myrcmClubNumbers": [
-          283
-        ],
+        "myrcmClubNumbers": [283],
         "region": {
           "id": "west"
         }
@@ -4501,15 +4182,10 @@
       ],
       "club": {
         "name": "Tonisport",
-        "aliases": [
-          "„TONISPORT GmbH Modellsport  ETS“",
-          "„TONISPORT GmbH Modellsport  ENS“"
-        ],
+        "aliases": ["„TONISPORT GmbH Modellsport  ETS“", "„TONISPORT GmbH Modellsport  ENS“"],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          2047
-        ],
+        "myrcmClubNumbers": [2047],
         "region": null
       },
       "source": "Myrcm"
@@ -4536,9 +4212,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": 203,
-        "myrcmClubNumbers": [
-          33
-        ],
+        "myrcmClubNumbers": [33],
         "region": {
           "id": "north"
         }
@@ -4564,16 +4238,10 @@
       ],
       "club": {
         "name": "MCC Rhein-Ahr e.V.",
-        "aliases": [
-          "MCC Rhein-Ahr e.V",
-          "Modell Car Club Rhein Ahr e.V.",
-          "DMC e.V. | Ausrichter: MCC Rhein-Ahr e.V."
-        ],
+        "aliases": ["MCC Rhein-Ahr e.V", "Modell Car Club Rhein Ahr e.V.", "DMC e.V. | Ausrichter: MCC Rhein-Ahr e.V."],
         "countryCode": "de",
         "dmcClubNumber": 296,
-        "myrcmClubNumbers": [
-          283
-        ],
+        "myrcmClubNumbers": [283],
         "region": {
           "id": "west"
         }
@@ -4599,15 +4267,10 @@
       ],
       "club": {
         "name": "MRT-Rosenheim e.V.",
-        "aliases": [
-          "MRT-Rosenheim",
-          "MRT Rosenheim e.V."
-        ],
+        "aliases": ["MRT-Rosenheim", "MRT Rosenheim e.V."],
         "countryCode": "de",
         "dmcClubNumber": 67,
-        "myrcmClubNumbers": [
-          4483
-        ],
+        "myrcmClubNumbers": [4483],
         "region": {
           "id": "south"
         }
@@ -4633,9 +4296,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          36
-        ],
+        "myrcmClubNumbers": [36],
         "region": null
       },
       "source": "Myrcm"
@@ -4728,9 +4389,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": 388,
-        "myrcmClubNumbers": [
-          59129
-        ],
+        "myrcmClubNumbers": [59129],
         "region": {
           "id": "south"
         }
@@ -4763,9 +4422,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": 388,
-        "myrcmClubNumbers": [
-          59129
-        ],
+        "myrcmClubNumbers": [59129],
         "region": {
           "id": "south"
         }
@@ -4842,9 +4499,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": 64,
-        "myrcmClubNumbers": [
-          9976
-        ],
+        "myrcmClubNumbers": [9976],
         "region": {
           "id": "south"
         }
@@ -4873,9 +4528,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          573
-        ],
+        "myrcmClubNumbers": [573],
         "region": {
           "id": "south"
         }
@@ -4901,16 +4554,10 @@
       ],
       "club": {
         "name": "MCC Rhein-Ahr e.V.",
-        "aliases": [
-          "MCC Rhein-Ahr e.V",
-          "Modell Car Club Rhein Ahr e.V.",
-          "DMC e.V. | Ausrichter: MCC Rhein-Ahr e.V."
-        ],
+        "aliases": ["MCC Rhein-Ahr e.V", "Modell Car Club Rhein Ahr e.V.", "DMC e.V. | Ausrichter: MCC Rhein-Ahr e.V."],
         "countryCode": "de",
         "dmcClubNumber": 296,
-        "myrcmClubNumbers": [
-          283
-        ],
+        "myrcmClubNumbers": [283],
         "region": {
           "id": "west"
         }
@@ -4936,14 +4583,10 @@
       ],
       "club": {
         "name": "MAC Meckenheim e.V.",
-        "aliases": [
-          "MAC-Meckenheim e.V. OV 3/030"
-        ],
+        "aliases": ["MAC-Meckenheim e.V. OV 3/030"],
         "countryCode": "de",
         "dmcClubNumber": 30,
-        "myrcmClubNumbers": [
-          49037
-        ],
+        "myrcmClubNumbers": [49037],
         "region": {
           "id": "west"
         }
@@ -4969,9 +4612,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          879
-        ],
+        "myrcmClubNumbers": [879],
         "region": null
       },
       "source": "Myrcm"
@@ -4995,9 +4636,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          20622
-        ],
+        "myrcmClubNumbers": [20622],
         "region": null
       },
       "source": "Myrcm"
@@ -5045,9 +4684,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          16961
-        ],
+        "myrcmClubNumbers": [16961],
         "region": {
           "id": "south"
         }
@@ -5073,9 +4710,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          48536
-        ],
+        "myrcmClubNumbers": [48536],
         "region": null
       },
       "source": "Myrcm"
@@ -5102,9 +4737,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": 203,
-        "myrcmClubNumbers": [
-          33
-        ],
+        "myrcmClubNumbers": [33],
         "region": {
           "id": "north"
         }
@@ -5164,9 +4797,7 @@
       "regions": [],
       "club": {
         "name": "RCCC Hilter e.V.",
-        "aliases": [
-          "RCCC Hilter"
-        ],
+        "aliases": ["RCCC Hilter"],
         "countryCode": "de",
         "dmcClubNumber": 298,
         "myrcmClubNumbers": [],
@@ -5202,9 +4833,7 @@
         ],
         "countryCode": "de",
         "dmcClubNumber": 158,
-        "myrcmClubNumbers": [
-          95
-        ],
+        "myrcmClubNumbers": [95],
         "region": {
           "id": "north"
         }
@@ -5230,9 +4859,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          36
-        ],
+        "myrcmClubNumbers": [36],
         "region": null
       },
       "source": "Myrcm"
@@ -5259,9 +4886,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": 337,
-        "myrcmClubNumbers": [
-          10490
-        ],
+        "myrcmClubNumbers": [10490],
         "region": {
           "id": "west"
         }
@@ -5294,9 +4919,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": 5,
-        "myrcmClubNumbers": [
-          17008
-        ],
+        "myrcmClubNumbers": [17008],
         "region": {
           "id": "central"
         }
@@ -5325,9 +4948,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": 221,
-        "myrcmClubNumbers": [
-          33489
-        ],
+        "myrcmClubNumbers": [33489],
         "region": {
           "id": "north"
         }
@@ -5353,9 +4974,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          12227
-        ],
+        "myrcmClubNumbers": [12227],
         "region": null
       },
       "source": "Myrcm"
@@ -5379,14 +4998,10 @@
       ],
       "club": {
         "name": "EMC Marktoberdorf e.V.",
-        "aliases": [
-          "EMC Marktoberdorf"
-        ],
+        "aliases": ["EMC Marktoberdorf"],
         "countryCode": "de",
         "dmcClubNumber": 263,
-        "myrcmClubNumbers": [
-          43367
-        ],
+        "myrcmClubNumbers": [43367],
         "region": {
           "id": "south"
         }
@@ -5412,9 +5027,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          60453
-        ],
+        "myrcmClubNumbers": [60453],
         "region": null
       },
       "source": "Myrcm"
@@ -5438,9 +5051,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          879
-        ],
+        "myrcmClubNumbers": [879],
         "region": null
       },
       "source": "Myrcm"
@@ -5467,9 +5078,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          53665
-        ],
+        "myrcmClubNumbers": [53665],
         "region": {
           "id": "south"
         }
@@ -5498,9 +5107,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          573
-        ],
+        "myrcmClubNumbers": [573],
         "region": {
           "id": "south"
         }
@@ -5562,9 +5169,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": 203,
-        "myrcmClubNumbers": [
-          33
-        ],
+        "myrcmClubNumbers": [33],
         "region": {
           "id": "north"
         }
@@ -5590,15 +5195,10 @@
       ],
       "club": {
         "name": "RC Speedracer e.V.",
-        "aliases": [
-          "RC Speedracer e.V. OV-055",
-          "RC Speedracer"
-        ],
+        "aliases": ["RC Speedracer e.V. OV-055", "RC Speedracer"],
         "countryCode": "de",
         "dmcClubNumber": 55,
-        "myrcmClubNumbers": [
-          45925
-        ],
+        "myrcmClubNumbers": [45925],
         "region": {
           "id": "east"
         }
@@ -5624,14 +5224,10 @@
       ],
       "club": {
         "name": "MAC Meckenheim e.V.",
-        "aliases": [
-          "MAC-Meckenheim e.V. OV 3/030"
-        ],
+        "aliases": ["MAC-Meckenheim e.V. OV 3/030"],
         "countryCode": "de",
         "dmcClubNumber": 30,
-        "myrcmClubNumbers": [
-          49037
-        ],
+        "myrcmClubNumbers": [49037],
         "region": {
           "id": "west"
         }
@@ -5664,9 +5260,7 @@
         ],
         "countryCode": "de",
         "dmcClubNumber": 158,
-        "myrcmClubNumbers": [
-          72
-        ],
+        "myrcmClubNumbers": [72],
         "region": {
           "id": "north"
         }
@@ -5685,9 +5279,7 @@
       "regions": [],
       "club": {
         "name": "RCCC Hilter e.V.",
-        "aliases": [
-          "RCCC Hilter"
-        ],
+        "aliases": ["RCCC Hilter"],
         "countryCode": "de",
         "dmcClubNumber": 298,
         "myrcmClubNumbers": [],
@@ -5709,9 +5301,7 @@
       "regions": [],
       "club": {
         "name": "Modellsport Münsterland e.V.",
-        "aliases": [
-          "Modellsport Münsterland"
-        ],
+        "aliases": ["Modellsport Münsterland"],
         "countryCode": "de",
         "dmcClubNumber": 240,
         "myrcmClubNumbers": [],
@@ -5760,9 +5350,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          20622
-        ],
+        "myrcmClubNumbers": [20622],
         "region": null
       },
       "source": "Myrcm"
@@ -5789,9 +5377,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          16961
-        ],
+        "myrcmClubNumbers": [16961],
         "region": {
           "id": "south"
         }
@@ -5841,15 +5427,10 @@
       ],
       "club": {
         "name": "RC Speedracer e.V.",
-        "aliases": [
-          "RC Speedracer e.V. OV-055",
-          "RC Speedracer"
-        ],
+        "aliases": ["RC Speedracer e.V. OV-055", "RC Speedracer"],
         "countryCode": "de",
         "dmcClubNumber": 55,
-        "myrcmClubNumbers": [
-          45925
-        ],
+        "myrcmClubNumbers": [45925],
         "region": {
           "id": "east"
         }
@@ -5878,9 +5459,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": 64,
-        "myrcmClubNumbers": [
-          9976
-        ],
+        "myrcmClubNumbers": [9976],
         "region": {
           "id": "south"
         }
@@ -5909,9 +5488,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          47444
-        ],
+        "myrcmClubNumbers": [47444],
         "region": {
           "id": "south"
         }
@@ -5940,9 +5517,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          53665
-        ],
+        "myrcmClubNumbers": [53665],
         "region": {
           "id": "south"
         }
@@ -5971,9 +5546,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": 203,
-        "myrcmClubNumbers": [
-          33
-        ],
+        "myrcmClubNumbers": [33],
         "region": {
           "id": "north"
         }
@@ -6002,9 +5575,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": 64,
-        "myrcmClubNumbers": [
-          9976
-        ],
+        "myrcmClubNumbers": [9976],
         "region": {
           "id": "south"
         }
@@ -6030,14 +5601,10 @@
       ],
       "club": {
         "name": "RT Fichtenberg e.V.",
-        "aliases": [
-          "RT Fichtenberg"
-        ],
+        "aliases": ["RT Fichtenberg"],
         "countryCode": "de",
         "dmcClubNumber": 76,
-        "myrcmClubNumbers": [
-          25939
-        ],
+        "myrcmClubNumbers": [25939],
         "region": {
           "id": "south"
         }
@@ -6070,9 +5637,7 @@
         ],
         "countryCode": "de",
         "dmcClubNumber": 158,
-        "myrcmClubNumbers": [
-          95
-        ],
+        "myrcmClubNumbers": [95],
         "region": {
           "id": "north"
         }
@@ -6105,9 +5670,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          713
-        ],
+        "myrcmClubNumbers": [713],
         "region": {
           "id": "east"
         }
@@ -6154,9 +5717,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          12227
-        ],
+        "myrcmClubNumbers": [12227],
         "region": null
       },
       "source": "Myrcm"
@@ -6204,9 +5765,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          16961
-        ],
+        "myrcmClubNumbers": [16961],
         "region": {
           "id": "south"
         }
@@ -6235,9 +5794,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": 244,
-        "myrcmClubNumbers": [
-          60396
-        ],
+        "myrcmClubNumbers": [60396],
         "region": {
           "id": "south"
         }
@@ -6308,9 +5865,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          573
-        ],
+        "myrcmClubNumbers": [573],
         "region": {
           "id": "south"
         }
@@ -6339,9 +5894,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": 221,
-        "myrcmClubNumbers": [
-          33489
-        ],
+        "myrcmClubNumbers": [33489],
         "region": {
           "id": "north"
         }
@@ -6367,14 +5920,10 @@
       ],
       "club": {
         "name": "AMC Hamm e.V.",
-        "aliases": [
-          "AMC Hamm e.V"
-        ],
+        "aliases": ["AMC Hamm e.V"],
         "countryCode": "de",
         "dmcClubNumber": 31,
-        "myrcmClubNumbers": [
-          7771
-        ],
+        "myrcmClubNumbers": [7771],
         "region": {
           "id": "west"
         }
@@ -6403,9 +5952,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": 337,
-        "myrcmClubNumbers": [
-          10490
-        ],
+        "myrcmClubNumbers": [10490],
         "region": {
           "id": "west"
         }
@@ -6431,9 +5978,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          36
-        ],
+        "myrcmClubNumbers": [36],
         "region": null
       },
       "source": "Myrcm"
@@ -6540,16 +6085,10 @@
       ],
       "club": {
         "name": "MCC Rhein-Ahr e.V.",
-        "aliases": [
-          "MCC Rhein-Ahr e.V",
-          "Modell Car Club Rhein Ahr e.V.",
-          "DMC e.V. | Ausrichter: MCC Rhein-Ahr e.V."
-        ],
+        "aliases": ["MCC Rhein-Ahr e.V", "Modell Car Club Rhein Ahr e.V.", "DMC e.V. | Ausrichter: MCC Rhein-Ahr e.V."],
         "countryCode": "de",
         "dmcClubNumber": 296,
-        "myrcmClubNumbers": [
-          283
-        ],
+        "myrcmClubNumbers": [283],
         "region": {
           "id": "west"
         }
@@ -6578,9 +6117,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": 64,
-        "myrcmClubNumbers": [
-          9976
-        ],
+        "myrcmClubNumbers": [9976],
         "region": {
           "id": "south"
         }
@@ -6606,9 +6143,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          879
-        ],
+        "myrcmClubNumbers": [879],
         "region": null
       },
       "source": "Myrcm"
@@ -6635,9 +6170,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          16961
-        ],
+        "myrcmClubNumbers": [16961],
         "region": {
           "id": "south"
         }
@@ -6666,9 +6199,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": 64,
-        "myrcmClubNumbers": [
-          9976
-        ],
+        "myrcmClubNumbers": [9976],
         "region": {
           "id": "south"
         }
@@ -6701,9 +6232,7 @@
         ],
         "countryCode": "de",
         "dmcClubNumber": 158,
-        "myrcmClubNumbers": [
-          72
-        ],
+        "myrcmClubNumbers": [72],
         "region": {
           "id": "north"
         }
@@ -6771,16 +6300,10 @@
       ],
       "club": {
         "name": "MCC Rhein-Ahr e.V.",
-        "aliases": [
-          "MCC Rhein-Ahr e.V",
-          "Modell Car Club Rhein Ahr e.V.",
-          "DMC e.V. | Ausrichter: MCC Rhein-Ahr e.V."
-        ],
+        "aliases": ["MCC Rhein-Ahr e.V", "Modell Car Club Rhein Ahr e.V.", "DMC e.V. | Ausrichter: MCC Rhein-Ahr e.V."],
         "countryCode": "de",
         "dmcClubNumber": 296,
-        "myrcmClubNumbers": [
-          283
-        ],
+        "myrcmClubNumbers": [283],
         "region": {
           "id": "west"
         }
@@ -6806,16 +6329,10 @@
       ],
       "club": {
         "name": "MCC Rhein-Ahr e.V.",
-        "aliases": [
-          "MCC Rhein-Ahr e.V",
-          "Modell Car Club Rhein Ahr e.V.",
-          "DMC e.V. | Ausrichter: MCC Rhein-Ahr e.V."
-        ],
+        "aliases": ["MCC Rhein-Ahr e.V", "Modell Car Club Rhein Ahr e.V.", "DMC e.V. | Ausrichter: MCC Rhein-Ahr e.V."],
         "countryCode": "de",
         "dmcClubNumber": 296,
-        "myrcmClubNumbers": [
-          283
-        ],
+        "myrcmClubNumbers": [283],
         "region": {
           "id": "west"
         }
@@ -6862,9 +6379,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          51971
-        ],
+        "myrcmClubNumbers": [51971],
         "region": null
       },
       "source": "Myrcm"
@@ -6891,9 +6406,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": 337,
-        "myrcmClubNumbers": [
-          10490
-        ],
+        "myrcmClubNumbers": [10490],
         "region": {
           "id": "west"
         }
@@ -6943,9 +6456,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          47444
-        ],
+        "myrcmClubNumbers": [47444],
         "region": {
           "id": "south"
         }
@@ -6978,9 +6489,7 @@
         ],
         "countryCode": "de",
         "dmcClubNumber": 158,
-        "myrcmClubNumbers": [
-          95
-        ],
+        "myrcmClubNumbers": [95],
         "region": {
           "id": "north"
         }
@@ -7195,9 +6704,7 @@
         "aliases": [],
         "countryCode": "de",
         "dmcClubNumber": 150,
-        "myrcmClubNumbers": [
-          50019
-        ],
+        "myrcmClubNumbers": [50019],
         "region": {
           "id": "south"
         }

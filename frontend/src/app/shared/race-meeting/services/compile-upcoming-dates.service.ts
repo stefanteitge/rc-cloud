@@ -1,11 +1,7 @@
 import { RaceMeetingDto } from '../dtos/race-meeting-envelope.dto';
 import { RaceDateDto, RaceCategoryDto, UpcomingRace } from '../dtos/race-date.dto';
 
-export default function compileUpcomingDates(
-  races: RaceMeetingDto[],
-  displayColumns: string[],
-  byCountry = false
-): RaceDateDto[] {
+export default function compileUpcomingDates(races: RaceMeetingDto[], displayColumns: string[]): RaceDateDto[] {
   const compiled = [] as RaceDateDto[];
 
   races.forEach(race => {
@@ -35,26 +31,13 @@ export default function compileUpcomingDates(
       title: race.title,
       source: race.source,
     } as UpcomingRace;
+    if (newUpcomingRace.groups.length == 0) {
+      existingDate.categories.find(r => r.key == 'global')?.races.push(newUpcomingRace);
+    }
 
-    if (byCountry) {
-      if (newUpcomingRace.countryCode === null) {
-        existingDate.categories.find(r => r.key == 'global')?.races.push(newUpcomingRace);
-      }
-
-      for (const displayRegion of displayColumns) {
-        if (race.countryCode == displayRegion) {
-          existingDate.categories.find(r => r.key == displayRegion)?.races.push(newUpcomingRace);
-        }
-      }
-    } else {
-      if (newUpcomingRace.groups.length == 0) {
-        existingDate.categories.find(r => r.key == 'global')?.races.push(newUpcomingRace);
-      }
-
-      for (const displayRegion of displayColumns) {
-        if (race.regions.find(g => g.id == displayRegion)) {
-          existingDate.categories.find(r => r.key == displayRegion)?.races.push(newUpcomingRace);
-        }
+    for (const displayRegion of displayColumns) {
+      if (race.regions.find(g => g.id == displayRegion)) {
+        existingDate.categories.find(r => r.key == displayRegion)?.races.push(newUpcomingRace);
       }
     }
   });
