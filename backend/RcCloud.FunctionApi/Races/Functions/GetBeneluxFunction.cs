@@ -18,7 +18,7 @@ public class GetBeneluxFunction(MongoRaceRepository repository)
             return TypedResults.NotFound();
         }
         
-        var dto = RacePageDto.FromDocument(racesDocument, null);
+        var dto = RacePageDto.FromDocument(racesDocument, RacePageDto.BeneluxCategories, null);
         return TypedResults.Ok(dto);
     }
 }

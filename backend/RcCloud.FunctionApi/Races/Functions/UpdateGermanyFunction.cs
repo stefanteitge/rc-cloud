@@ -61,6 +61,6 @@ public class UpdateGermanyFunction(
 
         logger.LogInformation("Found {Count} races from all sources.", all.Count);
 
-        return new OkObjectResult(RacePageDto.FromRaces(all, DateTimeOffset.Now.ToString(), null));
+        return new OkObjectResult(RacePageDto.FromRaces(all, RacePageDto.BeneluxCategories, DateTimeOffset.Now.ToString(), null));
     }
 }

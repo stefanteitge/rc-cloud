@@ -33,7 +33,7 @@ public class GetGermanyFunction(MongoRaceRepository repository)
             
         }
 
-        var dto = RacePageDto.FromDocument(racesDocument, lastDmcUpdate);
+        var dto = RacePageDto.FromDocument(racesDocument, RacePageDto.GermanyCategories, lastDmcUpdate);
         return TypedResults.Ok(dto);
     }
 }

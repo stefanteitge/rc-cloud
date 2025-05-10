@@ -5,36 +5,20 @@ namespace RcCloud.FunctionApi.Races.Dto;
 
 public class RacePageDto(string lastUpdate, List<RaceDateDto> dates, string? lastDmcUpdate)
 {
+    public static readonly string[] BeneluxCategories = ["be", "nl", "lux", "stockcar", "banger"];
+    
+    public static readonly string[] GermanyCategories = ["west", "east", "north", "south", "central"];
+    
     public string LastUpdate { get; } = lastUpdate;
 
     public string? LastDmcUpdate { get; } = lastDmcUpdate;
 
     public List<RaceDateDto> Dates { get; } = dates;
 
-    public static RacePageDto FromDocument(RacesDocument document, string? lastDmcUpdate)
-    {
-        var dates = document.Races.Select(r => r.Date).Distinct().Order().ToList();
+    public static RacePageDto FromDocument(RacesDocument document, string[] categoryNames, string? lastDmcUpdate)
+        => FromRaces(document.Races, categoryNames, document.LastUpdate, lastDmcUpdate);
 
-        var dateDtos = new List<RaceDateDto>();
-        foreach (var date in dates)
-        {
-            var categories = new List<RaceCategoryDto>();
-            var races = document.Races.Where(r => r.Date == date).ToList();
-
-            CreateGlobalCategory(races, categories);
-            CreateCategory(races, categories, "west");
-            CreateCategory(races, categories, "east");
-            CreateCategory(races, categories, "north");
-            CreateCategory(races, categories, "south");
-            CreateCategory(races, categories, "central");
-
-            dateDtos.Add(new RaceDateDto(date.ToString(), categories));
-        }
-
-        return FromRaces(document.Races, document.LastUpdate, lastDmcUpdate);
-    }
-    
-    public static RacePageDto FromRaces(List<RaceMeeting> races, string lastUpdate, string? lastDmcUpdate)
+    public static RacePageDto FromRaces(List<RaceMeeting> races, string[] categoryNames, string lastUpdate, string? lastDmcUpdate)
     {
         var dates = races.Select(r => r.Date).Distinct().Order().ToList();
 
@@ -45,22 +29,21 @@ public class RacePageDto(string lastUpdate, List<RaceDateDto> dates, string? las
             var racesWithDate = races.Where(r => r.Date == date).ToList();
 
             CreateGlobalCategory(racesWithDate, categories);
-            CreateCategory(racesWithDate, categories, "west");
-            CreateCategory(racesWithDate, categories, "east");
-            CreateCategory(racesWithDate, categories, "north");
-            CreateCategory(racesWithDate, categories, "south");
-            CreateCategory(racesWithDate, categories, "central");
+            foreach (var categoryName in categoryNames)
+            {
+                CreateCategory(races, categories, categoryName);    
+            }
 
             dateDtos.Add(new RaceDateDto(date.ToString(), categories));
         }
 
-        return new(lastUpdate, dateDtos, lastDmcUpdate);
+        return new RacePageDto(lastUpdate, dateDtos, lastDmcUpdate);
     }
 
     private static void CreateGlobalCategory(List<RaceMeeting> racesOnDate, List<RaceCategoryDto> categories)
     {
         var races = racesOnDate
-            .Where(r => r.Regions.Count() == 0)
+            .Where(r => r.Regions.Length == 0)
             .OrderBy(r => r.Location)
             .ToList();
 
