@@ -1,0 +1,83 @@
+```json
+{
+  "dates": [
+    {
+      "dateEnd": "26/1/2025",
+      "title": "RACE 1",
+      "location": "Cappelle De Grande FR",
+      "clubName": "RC Cappellois"
+    },
+    {
+      "dateEnd": "23/2/2025",
+      "title": "RACE 2",
+      "location": "Arendonk",
+      "clubName": "flatout RC"
+    },
+    {
+      "dateEnd": "23/3/2025",
+      "title": "RACE 3",
+      "location": "Poperinge",
+      "clubName": "Westhoek Racing"
+    },
+    {
+      "dateEnd": "20/4/2025",
+      "title": "RACE 4",
+      "location": "Kortrijk",
+      "clubName": "RCTR"
+    },
+    {
+      "dateEnd": "29/6/2025",
+      "title": "RACE 5",
+      "location": "Roeselare",
+      "clubName": "RCR"
+    },
+    {
+      "dateEnd": "18/5/2025",
+      "title": "RACE 6",
+      "location": "Zwevegem",
+      "clubName": "MRCZ"
+    },
+    {
+      "dateEnd": "27/7/2025",
+      "title": "RACE 7",
+      "location": "Eindhoven NL",
+      "clubName": "ERCE"
+    },
+    {
+      "dateEnd": "10/8/2025",
+      "title": "RACE 8",
+      "location": "Rucphen NL",
+      "clubName": "MAC de baanbrekers"
+    },
+    {
+      "dateEnd": "24/8/2025",
+      "title": "RACE 9",
+      "location": "Bierset",
+      "clubName": "MRCL"
+    },
+    {
+      "dateEnd": "7/9/2025",
+      "title": "RACE 10",
+      "location": "Houthalen",
+      "clubName": "HRT"
+    }
+  ]
+}
+```
+Explanation:
+
+- Extracted all races with the pattern "RACE X" followed by the date and race title (club short name).
+- The location is extracted from the trailing text after the race name.
+- The club full names are taken from the circuits list (menu links) to map short names to full club names:
+  - RC Cappellois -> RC Cappellois
+  - flatout RC -> Flatout RC
+  - Westhoek Racing -> Westhoek Racing
+  - RCTR -> RCTR
+  - RCR -> RCR
+  - MRCZ -> MRCZ
+  - ERCE -> ERCE
+  - MAC de baanbrekers -> MAC de baanbrekers
+  - MRCL -> MRCL
+  - HRT -> HRT
+
+Dates are kept as string in the same format as in the HTML: dd/mm/yyyy.
