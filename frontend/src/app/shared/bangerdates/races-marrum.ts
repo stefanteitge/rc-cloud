@@ -41,7 +41,7 @@ export function getRacesInMarrum(): OvalRaceMeeting[] {
     {
       date: new Temporal.PlainDate(2025, 7, 11),
       location: 'Marrum',
-      classes: ['banger'],
+      classes: ['banger', 'alloy'],
     },
   ];
 }

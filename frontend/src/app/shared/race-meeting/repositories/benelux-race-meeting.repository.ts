@@ -71,6 +71,12 @@ function addOvalDates(dates: RaceDateDto[]): RaceDateDto[] {
   var ovalRaces = getOvalRaces();
 
   ovalRaces.forEach(ovalRace => {
+    var now = Temporal.Now.plainDateISO();
+    var dur = ovalRace.date.until(now);
+    if (dur.days > 0) {
+      return;
+    }
+
     var myDate = dates.find(d => d.dateEnd == ovalRace.date.toString());
 
     if (!myDate) {
@@ -101,6 +107,6 @@ function addOvalDates(dates: RaceDateDto[]): RaceDateDto[] {
     });
   })
 
-  return dates;
+  return dates.sort((a, b) => a.dateEnd.localeCompare(b.dateEnd));
 }
 
