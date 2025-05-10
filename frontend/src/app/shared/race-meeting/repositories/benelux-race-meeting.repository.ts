@@ -8,6 +8,7 @@ import { FEATURE_FUNCTION_API_RACES, FeatureFlagService } from '../../feature-ma
 import { environment } from '../../../../environments/environment';
 import {getOvalRaces} from '../../bangerdates/races';
 import {getOvalClassName} from '../../bangerdates/classes';
+import {Temporal} from 'temporal-polyfill';
 
 @Injectable()
 export class BeneluxRaceMeetingRepository {
@@ -72,24 +73,32 @@ function addOvalDates(dates: RaceDateDto[]): RaceDateDto[] {
   ovalRaces.forEach(ovalRace => {
     var myDate = dates.find(d => d.dateEnd == ovalRace.date.toString());
 
-    // TODO: add dates if not exist and hide older dates
-
     if (!myDate) {
-      console.error(ovalRace.date.toString());
-      return;
+      myDate = {
+        dateEnd: ovalRace.date.toString(),
+        categories: [],
+      };
+      dates.push(myDate);
     }
 
     var bangerCat = myDate.categories.find(c => c.key == 'banger');
-    if (bangerCat) {
-      bangerCat.races.push({
-        countryCode: "?",
-        location: ovalRace.location,
-        series: [],
-        groups: [],
-        source: 'Facebook groups',
-        title: ovalRace.classes.map(c => getOvalClassName(c)).join(', ') + " in " + ovalRace.location
-      });
+    if (!bangerCat) {
+      bangerCat = {
+        key: 'banger',
+        races: []
+      };
+
+      myDate.categories.push(bangerCat);
     }
+
+    bangerCat.races.push({
+      countryCode: "?",
+      location: ovalRace.location,
+      series: [],
+      groups: [],
+      source: 'Facebook groups',
+      title: ovalRace.classes.map(c => getOvalClassName(c)).join(', ') + " in " + ovalRace.location
+    });
   })
 
   return dates;
