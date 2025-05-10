@@ -166,7 +166,7 @@ public class ScrapeMyrcmRaces(
         
         if (raceCountry.Code == MyrcmCountryCode.Luxembourg.Code)
         {
-            return "lu";
+            return "lux";
         }
         
 
