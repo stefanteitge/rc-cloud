@@ -54,6 +54,22 @@ jobs:
         run: dotnet build
         working-directory: backend/RcCloud.FunctionApi
 
+      - name: Test DMC
+        run: dotnet test
+        working-directory: backend/RcCloud.DateScraper.Application.Dmc.Tests
+
+      - name: Test Myrcm
+        run: dotnet test
+        working-directory: backend/RcCloud.DateScraper.Application.Myrcm.Tests
+
+      - name: Test Rcco
+        run: dotnet test
+        working-directory: backend/RcCloud.DateScraper.Application.Rcco.Tests
+
+      - name: Test RCK
+        run: dotnet test
+        working-directory: backend/RcCloud.DateScraper.Application.Rck.Tests
+
       - name: Deploy frontend and backend
         uses: Azure/static-web-apps-deploy@v1
         with:

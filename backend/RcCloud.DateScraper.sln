@@ -34,7 +34,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RcCloud.FunctionApi", "RcCl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RcCloud.DateScraper.Application", "RcCloud.DateScraper.Application\RcCloud.DateScraper.Application.csproj", "{82660197-6685-446B-AD4A-46E93D3191CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RcCloud.DateScraper.Application.Ai.Tests", "RcCloud.DateScraper.Application.Ai.Tests\RcCloud.DateScraper.Application.Ai.Tests.csproj", "{3A16ECCF-F9C7-4076-8C1E-2626BD4447BF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RcCloud.DateScraper.Application.Tamiya.Tests", "RcCloud.DateScraper.Application.Tamiya.Tests\RcCloud.DateScraper.Application.Tamiya.Tests.csproj", "{3A16ECCF-F9C7-4076-8C1E-2626BD4447BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RcCloud.DateScraper.Application.Tamiya", "RcCloud.DateScraper.Application.Tamiya\RcCloud.DateScraper.Application.Tamiya.csproj", "{0F706B22-75BA-48C3-8DA1-020DD3BC38B1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -98,6 +100,10 @@ Global
 		{3A16ECCF-F9C7-4076-8C1E-2626BD4447BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A16ECCF-F9C7-4076-8C1E-2626BD4447BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A16ECCF-F9C7-4076-8C1E-2626BD4447BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F706B22-75BA-48C3-8DA1-020DD3BC38B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F706B22-75BA-48C3-8DA1-020DD3BC38B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F706B22-75BA-48C3-8DA1-020DD3BC38B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F706B22-75BA-48C3-8DA1-020DD3BC38B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
