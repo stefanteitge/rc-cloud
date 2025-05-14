@@ -1,6 +1,32 @@
 {
-  "lastUpdate": "2025-05-13T08:06:48.9439903+00:00",
+  "lastUpdate": "2025-05-14T08:06:44.6935955+00:00",
   "races": [
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-16",
+      "location": "Model Auto Club Heemstede",
+      "countryCode": "nl",
+      "title": "RC Cup PO Vrijdag 16 mei 2025",
+      "regions": [
+        {
+          "id": "nl"
+        }
+      ],
+      "club": {
+        "name": "Model Auto Club Heemstede",
+        "aliases": [],
+        "countryCode": "nl",
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [
+          75
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
+    },
     {
       "series": [],
       "season": {
@@ -308,6 +334,32 @@
         "dmcClubNumber": null,
         "myrcmClubNumbers": [
           22085
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-23",
+      "location": "Model Auto Club Heemstede",
+      "countryCode": "nl",
+      "title": "RC Cup PO vrijdag 23 mei 2025",
+      "regions": [
+        {
+          "id": "nl"
+        }
+      ],
+      "club": {
+        "name": "Model Auto Club Heemstede",
+        "aliases": [],
+        "countryCode": "nl",
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [
+          75
         ],
         "region": null
       },
