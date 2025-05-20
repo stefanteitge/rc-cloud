@@ -1,6 +1,32 @@
 {
-  "lastUpdate": "2025-05-19T08:07:23.5912147+00:00",
+  "lastUpdate": "2025-05-20T08:07:00.3289814+00:00",
   "races": [
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-05-23",
+      "location": "H2 Grand Prix Pro",
+      "countryCode": "nl",
+      "title": "H2 Grand Prix Pro NL Dutch Finals",
+      "regions": [
+        {
+          "id": "nl"
+        }
+      ],
+      "club": {
+        "name": "H2 Grand Prix Pro",
+        "aliases": [],
+        "countryCode": "nl",
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [
+          3074
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
+    },
     {
       "series": [],
       "season": {
