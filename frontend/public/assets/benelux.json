@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-05-27T08:06:42.8709883+00:00",
+  "lastUpdate": "2025-05-28T08:06:34.7194453+00:00",
   "races": [
     {
       "series": [],
@@ -61,7 +61,7 @@
       "date": "2025-05-31",
       "location": "Model Auto Club Heemstede",
       "countryCode": "nl",
-      "title": "2e Open ZAC",
+      "title": "2e Open ZAC (afgelast)",
       "regions": [
         {
           "id": "nl"
@@ -769,32 +769,6 @@
         "id": "current"
       },
       "date": "2025-06-15",
-      "location": "Helderse Model Race Club",
-      "countryCode": "nl",
-      "title": "4e Open Clubwestrijd 2025 HMRC",
-      "regions": [
-        {
-          "id": "nl"
-        }
-      ],
-      "club": {
-        "name": "Helderse Model Race Club",
-        "aliases": [],
-        "countryCode": "nl",
-        "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          7059
-        ],
-        "region": null
-      },
-      "source": "Myrcm"
-    },
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-06-15",
       "location": "MVB",
       "countryCode": "nl",
       "title": "2025 Clubwedstrijd #4",
@@ -992,6 +966,32 @@
         "dmcClubNumber": null,
         "myrcmClubNumbers": [
           34977
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-06-22",
+      "location": "Helderse Model Race Club",
+      "countryCode": "nl",
+      "title": "4e Open Clubwestrijd 2025 HMRC",
+      "regions": [
+        {
+          "id": "nl"
+        }
+      ],
+      "club": {
+        "name": "Helderse Model Race Club",
+        "aliases": [],
+        "countryCode": "nl",
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [
+          7059
         ],
         "region": null
       },
@@ -1408,6 +1408,32 @@
         "dmcClubNumber": null,
         "myrcmClubNumbers": [
           10817
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-07-01",
+      "location": "RACO2000",
+      "countryCode": "nl",
+      "title": "2e SEC Buggy Raco2000",
+      "regions": [
+        {
+          "id": "nl"
+        }
+      ],
+      "club": {
+        "name": "RACO2000",
+        "aliases": [],
+        "countryCode": "nl",
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [
+          5305
         ],
         "region": null
       },
