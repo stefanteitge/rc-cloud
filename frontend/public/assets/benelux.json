@@ -1,32 +1,6 @@
 {
-  "lastUpdate": "2025-06-05T08:06:45.2611484+00:00",
+  "lastUpdate": "2025-06-06T08:06:39.5076036+00:00",
   "races": [
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-06-08",
-      "location": "MRC Real'80 Gr.",
-      "countryCode": "nl",
-      "title": "2nd Grand Prix Large Scale season 2025",
-      "regions": [
-        {
-          "id": "nl"
-        }
-      ],
-      "club": {
-        "name": "MRC Real'80 Gr.",
-        "aliases": [],
-        "countryCode": "nl",
-        "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          104
-        ],
-        "region": null
-      },
-      "source": "Myrcm"
-    },
     {
       "series": [],
       "season": {
@@ -99,7 +73,7 @@
         "countryCode": "nl",
         "dmcClubNumber": null,
         "myrcmClubNumbers": [
-          53339
+          4842
         ],
         "region": null
       },
@@ -1200,6 +1174,58 @@
         "dmcClubNumber": null,
         "myrcmClubNumbers": [
           10817
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-07-06",
+      "location": "Model Racing Midland",
+      "countryCode": "nl",
+      "title": "4e N.K. EC10 NOMAC MRM Lelystad",
+      "regions": [
+        {
+          "id": "nl"
+        }
+      ],
+      "club": {
+        "name": "Model Racing Midland",
+        "aliases": [],
+        "countryCode": "nl",
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [
+          53339
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-07-06",
+      "location": "Mac De Baanbrekers",
+      "countryCode": "nl",
+      "title": "3e N.K. BC08 / BC10 NOMAC Mac De Baanbrekers Rucphen",
+      "regions": [
+        {
+          "id": "nl"
+        }
+      ],
+      "club": {
+        "name": "Mac De Baanbrekers",
+        "aliases": [],
+        "countryCode": "nl",
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [
+          53339
         ],
         "region": null
       },
