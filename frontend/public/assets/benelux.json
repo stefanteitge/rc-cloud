@@ -1,84 +1,6 @@
 {
-  "lastUpdate": "2025-06-07T08:05:51.1320997+00:00",
+  "lastUpdate": "2025-06-08T08:05:59.8375803+00:00",
   "races": [
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-06-08",
-      "location": "FBA",
-      "countryCode": "be",
-      "title": "FBA BK/CB Buggy 2025 Race 3 - MAC Vlijmen",
-      "regions": [
-        {
-          "id": "be"
-        }
-      ],
-      "club": {
-        "name": "FBA",
-        "aliases": [],
-        "countryCode": "be",
-        "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          38144
-        ],
-        "region": null
-      },
-      "source": "Myrcm"
-    },
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-06-08",
-      "location": "RC Club Zoetermeer",
-      "countryCode": "nl",
-      "title": "RCCZ - 2025 : (Open) Clubwedstrijd 1:10 - 2 van 3",
-      "regions": [
-        {
-          "id": "nl"
-        }
-      ],
-      "club": {
-        "name": "RC Club Zoetermeer",
-        "aliases": [],
-        "countryCode": "nl",
-        "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          34977
-        ],
-        "region": null
-      },
-      "source": "Myrcm"
-    },
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-06-08",
-      "location": "BRCB",
-      "countryCode": "be",
-      "title": "Coupe de Bauffe",
-      "regions": [
-        {
-          "id": "be"
-        }
-      ],
-      "club": {
-        "name": "BRCB",
-        "aliases": [],
-        "countryCode": "be",
-        "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          62332
-        ],
-        "region": null
-      },
-      "source": "Myrcm"
-    },
     {
       "series": [],
       "season": {
@@ -576,6 +498,32 @@
         "dmcClubNumber": null,
         "myrcmClubNumbers": [
           3291
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-06-22",
+      "location": "Model Auto Club Heemstede",
+      "countryCode": "nl",
+      "title": "MACH 50th Anniversary Nitro Race",
+      "regions": [
+        {
+          "id": "nl"
+        }
+      ],
+      "club": {
+        "name": "Model Auto Club Heemstede",
+        "aliases": [],
+        "countryCode": "nl",
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [
+          75
         ],
         "region": null
       },
