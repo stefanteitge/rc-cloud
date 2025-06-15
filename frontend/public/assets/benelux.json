@@ -1,170 +1,6 @@
 {
-  "lastUpdate": "2025-06-14T08:05:50.5287312+00:00",
+  "lastUpdate": "2025-06-15T08:05:55.4682599+00:00",
   "races": [
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-06-15",
-      "location": "MACH-One Helmond",
-      "countryCode": "nl",
-      "title": "Open Club Race 2",
-      "regions": [
-        {
-          "id": "nl"
-        }
-      ],
-      "club": {
-        "name": "MACH-One Helmond",
-        "aliases": [],
-        "countryCode": "nl",
-        "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          33841
-        ],
-        "region": null
-      },
-      "source": "Myrcm"
-    },
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-06-15",
-      "location": "Racing Club Roeselare",
-      "countryCode": "be",
-      "title": "Open Clubwedstrijd 4",
-      "regions": [
-        {
-          "id": "be"
-        }
-      ],
-      "club": {
-        "name": "Racing Club Roeselare",
-        "aliases": [],
-        "countryCode": "be",
-        "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          76
-        ],
-        "region": null
-      },
-      "source": "Myrcm"
-    },
-    {
-      "series": [
-        {
-          "id": "hudyseries"
-        }
-      ],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-06-15",
-      "location": "Radio controle @ circuit Zolder",
-      "countryCode": "be",
-      "title": "HUDY SERIES RC@CZ Zolder 2025 Race 4",
-      "regions": [
-        {
-          "id": "be"
-        }
-      ],
-      "club": {
-        "name": "Radio controle @ circuit Zolder",
-        "aliases": [],
-        "countryCode": "be",
-        "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          20089
-        ],
-        "region": null
-      },
-      "source": "Myrcm"
-    },
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-06-15",
-      "location": "RC Hotwheels",
-      "countryCode": "nl",
-      "title": "RC Hotwheels - Clubwedstrijd 2 - 15 juni 2025",
-      "regions": [
-        {
-          "id": "nl"
-        }
-      ],
-      "club": {
-        "name": "RC Hotwheels",
-        "aliases": [],
-        "countryCode": "nl",
-        "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          3074
-        ],
-        "region": null
-      },
-      "source": "Myrcm"
-    },
-    {
-      "series": [
-        {
-          "id": "hudyseries"
-        }
-      ],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-06-15",
-      "location": "SimplyFunRacing",
-      "countryCode": "nl",
-      "title": "2025 Simply Fun Racing / Hudy Series: Race 2 (HFCC Den Haag)",
-      "regions": [
-        {
-          "id": "nl"
-        }
-      ],
-      "club": {
-        "name": "SimplyFunRacing",
-        "aliases": [],
-        "countryCode": "nl",
-        "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          14156
-        ],
-        "region": null
-      },
-      "source": "Myrcm"
-    },
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-06-15",
-      "location": "MVB",
-      "countryCode": "nl",
-      "title": "2025 Clubwedstrijd #4",
-      "regions": [
-        {
-          "id": "nl"
-        }
-      ],
-      "club": {
-        "name": "MVB",
-        "aliases": [],
-        "countryCode": "nl",
-        "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          3200
-        ],
-        "region": null
-      },
-      "source": "Myrcm"
-    },
     {
       "series": [],
       "season": {
@@ -2466,6 +2302,32 @@
       "season": {
         "id": "current"
       },
+      "date": "2025-08-31",
+      "location": "MRCZ",
+      "countryCode": "be",
+      "title": "BK 1/10 Elektro 2025 Zwevegem",
+      "regions": [
+        {
+          "id": "be"
+        }
+      ],
+      "club": {
+        "name": "MRCZ",
+        "aliases": [],
+        "countryCode": "be",
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [
+          2571
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
       "date": "2025-09-06",
       "location": "MBV Kampenhout",
       "countryCode": "be",
@@ -3426,6 +3288,32 @@
         "dmcClubNumber": null,
         "myrcmClubNumbers": [
           56820
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-10-26",
+      "location": "MRCZ",
+      "countryCode": "be",
+      "title": "Masters Of Foam 2025",
+      "regions": [
+        {
+          "id": "be"
+        }
+      ],
+      "club": {
+        "name": "MRCZ",
+        "aliases": [],
+        "countryCode": "be",
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [
+          2571
         ],
         "region": null
       },
