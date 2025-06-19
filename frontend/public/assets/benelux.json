@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-06-18T08:06:32.0804331+00:00",
+  "lastUpdate": "2025-06-19T08:06:45.5462654+00:00",
   "races": [
     {
       "series": [],
@@ -334,6 +334,32 @@
         "dmcClubNumber": null,
         "myrcmClubNumbers": [
           34977
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-06-28",
+      "location": "AMCA-Apeldoorn",
+      "countryCode": "nl",
+      "title": "EC'25 10th IC Track",
+      "regions": [
+        {
+          "id": "nl"
+        }
+      ],
+      "club": {
+        "name": "AMCA-Apeldoorn",
+        "aliases": [],
+        "countryCode": "nl",
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [
+          7762
         ],
         "region": null
       },
