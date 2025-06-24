@@ -1,32 +1,6 @@
 {
-  "lastUpdate": "2025-06-23T08:07:13.6143538+00:00",
+  "lastUpdate": "2025-06-24T08:06:42.557793+00:00",
   "races": [
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-06-24",
-      "location": "RACO2000",
-      "countryCode": "nl",
-      "title": "4e SEC Legends Raco2000",
-      "regions": [
-        {
-          "id": "nl"
-        }
-      ],
-      "club": {
-        "name": "RACO2000",
-        "aliases": [],
-        "countryCode": "nl",
-        "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          5305
-        ],
-        "region": null
-      },
-      "source": "Myrcm"
-    },
     {
       "series": [],
       "season": {
@@ -682,10 +656,36 @@
       "season": {
         "id": "current"
       },
+      "date": "2025-07-13",
+      "location": "Luxembourg Model Car Club",
+      "countryCode": "lux",
+      "title": "Race Car Series 3.Lauf Luxemburg",
+      "regions": [
+        {
+          "id": "lux"
+        }
+      ],
+      "club": {
+        "name": "Luxembourg Model Car Club",
+        "aliases": [],
+        "countryCode": "lux",
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [
+          51
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
       "date": "2025-07-12",
       "location": "Main Meetings Raalte",
       "countryCode": "nl",
-      "title": "4e OC",
+      "title": "3e OC",
       "regions": [
         {
           "id": "nl"
@@ -3171,7 +3171,7 @@
       "date": "2025-11-15",
       "location": "Main Meetings Raalte",
       "countryCode": "nl",
-      "title": "5e OC",
+      "title": "4e OC",
       "regions": [
         {
           "id": "nl"
