@@ -1,58 +1,6 @@
 {
-  "lastUpdate": "2025-06-24T08:06:42.557793+00:00",
+  "lastUpdate": "2025-06-25T08:07:04.7674662+00:00",
   "races": [
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-06-25",
-      "location": "RC Club Zoetermeer",
-      "countryCode": "nl",
-      "title": "RCCZ - 2025 : Zomeravondcup 2 van 4",
-      "regions": [
-        {
-          "id": "nl"
-        }
-      ],
-      "club": {
-        "name": "RC Club Zoetermeer",
-        "aliases": [],
-        "countryCode": "nl",
-        "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          34977
-        ],
-        "region": null
-      },
-      "source": "Myrcm"
-    },
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-06-28",
-      "location": "AMCA-Apeldoorn",
-      "countryCode": "nl",
-      "title": "EC'25 10th IC Track",
-      "regions": [
-        {
-          "id": "nl"
-        }
-      ],
-      "club": {
-        "name": "AMCA-Apeldoorn",
-        "aliases": [],
-        "countryCode": "nl",
-        "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          7762
-        ],
-        "region": null
-      },
-      "source": "Myrcm"
-    },
     {
       "series": [],
       "season": {
