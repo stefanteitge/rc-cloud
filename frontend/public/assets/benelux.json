@@ -1,32 +1,6 @@
 {
-  "lastUpdate": "2025-06-26T08:06:42.370018+00:00",
+  "lastUpdate": "2025-06-27T08:06:36.397525+00:00",
   "races": [
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-06-29",
-      "location": "Luxembourg Model Car Club",
-      "countryCode": "lux",
-      "title": "ELS Round 2 Luxembourg",
-      "regions": [
-        {
-          "id": "lux"
-        }
-      ],
-      "club": {
-        "name": "Luxembourg Model Car Club",
-        "aliases": [],
-        "countryCode": "lux",
-        "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          51
-        ],
-        "region": null
-      },
-      "source": "Myrcm"
-    },
     {
       "series": [],
       "season": {
@@ -542,6 +516,32 @@
         "dmcClubNumber": null,
         "myrcmClubNumbers": [
           34977
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-07-06",
+      "location": "Helderse Model Race Club",
+      "countryCode": "nl",
+      "title": "5e Open Clubwedstrijd 2025 HMRC",
+      "regions": [
+        {
+          "id": "nl"
+        }
+      ],
+      "club": {
+        "name": "Helderse Model Race Club",
+        "aliases": [],
+        "countryCode": "nl",
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [
+          7059
         ],
         "region": null
       },
@@ -1284,6 +1284,32 @@
       "season": {
         "id": "current"
       },
+      "date": "2025-08-03",
+      "location": "BRCB",
+      "countryCode": "be",
+      "title": "Course amicale du 03/08/2025",
+      "regions": [
+        {
+          "id": "be"
+        }
+      ],
+      "club": {
+        "name": "BRCB",
+        "aliases": [],
+        "countryCode": "be",
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [
+          62332
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
       "date": "2025-08-09",
       "location": "AMCA-Apeldoorn",
       "countryCode": "nl",
@@ -1404,6 +1430,32 @@
         "dmcClubNumber": null,
         "myrcmClubNumbers": [
           33479
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-08-10",
+      "location": "Helderse Model Race Club",
+      "countryCode": "nl",
+      "title": "6e Open clubwedstrijd 2025 HMRC",
+      "regions": [
+        {
+          "id": "nl"
+        }
+      ],
+      "club": {
+        "name": "Helderse Model Race Club",
+        "aliases": [],
+        "countryCode": "nl",
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [
+          7059
         ],
         "region": null
       },
@@ -2250,6 +2302,32 @@
       "season": {
         "id": "current"
       },
+      "date": "2025-09-07",
+      "location": "Helderse Model Race Club",
+      "countryCode": "nl",
+      "title": "7e Open clubwedstrijd 2025 HMRC",
+      "regions": [
+        {
+          "id": "nl"
+        }
+      ],
+      "club": {
+        "name": "Helderse Model Race Club",
+        "aliases": [],
+        "countryCode": "nl",
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [
+          7059
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
       "date": "2025-09-10",
       "location": "RC Club Zoetermeer",
       "countryCode": "nl",
@@ -2738,6 +2816,32 @@
         "dmcClubNumber": null,
         "myrcmClubNumbers": [
           9668
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-09-28",
+      "location": "Helderse Model Race Club",
+      "countryCode": "nl",
+      "title": "8e Open Clubwedstrijd 2025 HMRC",
+      "regions": [
+        {
+          "id": "nl"
+        }
+      ],
+      "club": {
+        "name": "Helderse Model Race Club",
+        "aliases": [],
+        "countryCode": "nl",
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [
+          7059
         ],
         "region": null
       },
