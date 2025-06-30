@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-06-29T08:05:59.8611769+00:00",
+  "lastUpdate": "2025-06-30T08:07:10.5037801+00:00",
   "races": [
     {
       "series": [],
@@ -2608,6 +2608,32 @@
         "dmcClubNumber": null,
         "myrcmClubNumbers": [
           7059
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-09-28",
+      "location": "M.A.C.  De Baanbrekers",
+      "countryCode": "nl",
+      "title": "5de NK BC05 seizoen 2025",
+      "regions": [
+        {
+          "id": "nl"
+        }
+      ],
+      "club": {
+        "name": "M.A.C.  De Baanbrekers",
+        "aliases": [],
+        "countryCode": "nl",
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [
+          12027
         ],
         "region": null
       },
