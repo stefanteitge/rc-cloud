@@ -1,32 +1,6 @@
 {
-  "lastUpdate": "2025-07-11T08:06:37.1869958+00:00",
+  "lastUpdate": "2025-07-12T08:05:57.6151512+00:00",
   "races": [
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-07-12",
-      "location": "Main Meetings Raalte",
-      "countryCode": "nl",
-      "title": "3e OC",
-      "regions": [
-        {
-          "id": "nl"
-        }
-      ],
-      "club": {
-        "name": "Main Meetings Raalte",
-        "aliases": [],
-        "countryCode": "nl",
-        "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          23785
-        ],
-        "region": null
-      },
-      "source": "Myrcm"
-    },
     {
       "series": [],
       "season": {
