@@ -1,240 +1,6 @@
 {
-  "lastUpdate": "2025-07-12T08:05:57.6151512+00:00",
+  "lastUpdate": "2025-07-13T08:06:07.2071513+00:00",
   "races": [
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-07-13",
-      "location": "FBA",
-      "countryCode": "be",
-      "title": "FBA BK/CB Buggy 2025 Race 4 - HOR Hulshout",
-      "regions": [
-        {
-          "id": "be"
-        }
-      ],
-      "club": {
-        "name": "FBA",
-        "aliases": [],
-        "countryCode": "be",
-        "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          38144
-        ],
-        "region": null
-      },
-      "source": "Myrcm"
-    },
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-07-13",
-      "location": "MBC de Sluis",
-      "countryCode": "nl",
-      "title": "Open Club MBC de Sluis Race 3",
-      "regions": [
-        {
-          "id": "nl"
-        }
-      ],
-      "club": {
-        "name": "MBC de Sluis",
-        "aliases": [],
-        "countryCode": "nl",
-        "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          4842
-        ],
-        "region": null
-      },
-      "source": "Myrcm"
-    },
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-07-13",
-      "location": "Racing Club Roeselare",
-      "countryCode": "be",
-      "title": "Tamiya Cup BE 2025 - Race 6 RCR Roeselare",
-      "regions": [
-        {
-          "id": "be"
-        }
-      ],
-      "club": {
-        "name": "Racing Club Roeselare",
-        "aliases": [],
-        "countryCode": "be",
-        "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          35896
-        ],
-        "region": null
-      },
-      "source": "Myrcm"
-    },
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-07-13",
-      "location": "RC Hotwheels",
-      "countryCode": "nl",
-      "title": "RC Hotwheels - Clubwedstrijd 4 - 13 juli 2025",
-      "regions": [
-        {
-          "id": "nl"
-        }
-      ],
-      "club": {
-        "name": "RC Hotwheels",
-        "aliases": [],
-        "countryCode": "nl",
-        "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          3074
-        ],
-        "region": null
-      },
-      "source": "Myrcm"
-    },
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-07-13",
-      "location": "Buggy & truggycup",
-      "countryCode": "nl",
-      "title": "Buggy & truggycup wedstrijd 4 : Zoetermeer",
-      "regions": [
-        {
-          "id": "nl"
-        }
-      ],
-      "club": {
-        "name": "Buggy & truggycup",
-        "aliases": [],
-        "countryCode": "nl",
-        "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          34977
-        ],
-        "region": null
-      },
-      "source": "Myrcm"
-    },
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-07-13",
-      "location": "MVB",
-      "countryCode": "nl",
-      "title": "2025 Clubwedstrijd #5",
-      "regions": [
-        {
-          "id": "nl"
-        }
-      ],
-      "club": {
-        "name": "MVB",
-        "aliases": [],
-        "countryCode": "nl",
-        "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          3200
-        ],
-        "region": null
-      },
-      "source": "Myrcm"
-    },
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-07-13",
-      "location": "Bugg'Ittre Racing",
-      "countryCode": "be",
-      "title": "Amicale 13 juillet 2025",
-      "regions": [
-        {
-          "id": "be"
-        }
-      ],
-      "club": {
-        "name": "Bugg'Ittre Racing",
-        "aliases": [],
-        "countryCode": "be",
-        "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          31752
-        ],
-        "region": null
-      },
-      "source": "Myrcm"
-    },
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-07-13",
-      "location": "Model Race Genk vzw",
-      "countryCode": "be",
-      "title": "OC3 1/8 & 1/10, 13 juli 2025",
-      "regions": [
-        {
-          "id": "be"
-        }
-      ],
-      "club": {
-        "name": "Model Race Genk vzw",
-        "aliases": [],
-        "countryCode": "be",
-        "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          3291
-        ],
-        "region": null
-      },
-      "source": "Myrcm"
-    },
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-07-13",
-      "location": "HRT Houthalen",
-      "countryCode": "be",
-      "title": "HRT Open Clubkoers 1 2025",
-      "regions": [
-        {
-          "id": "be"
-        }
-      ],
-      "club": {
-        "name": "HRT Houthalen",
-        "aliases": [],
-        "countryCode": "be",
-        "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          65
-        ],
-        "region": null
-      },
-      "source": "Myrcm"
-    },
     {
       "series": [],
       "season": {
@@ -1014,6 +780,32 @@
         "dmcClubNumber": null,
         "myrcmClubNumbers": [
           4842
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-08-17",
+      "location": "MODELIFUN",
+      "countryCode": "be",
+      "title": "CB 2025",
+      "regions": [
+        {
+          "id": "be"
+        }
+      ],
+      "club": {
+        "name": "MODELIFUN",
+        "aliases": [],
+        "countryCode": "be",
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [
+          2641
         ],
         "region": null
       },
