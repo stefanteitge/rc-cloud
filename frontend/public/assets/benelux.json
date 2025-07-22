@@ -1,32 +1,6 @@
 {
-  "lastUpdate": "2025-07-21T08:07:51.4590627+00:00",
+  "lastUpdate": "2025-07-22T08:07:05.9025008+00:00",
   "races": [
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-07-22",
-      "location": "RACO2000",
-      "countryCode": "nl",
-      "title": "4e SEC Buggy Raco2000",
-      "regions": [
-        {
-          "id": "nl"
-        }
-      ],
-      "club": {
-        "name": "RACO2000",
-        "aliases": [],
-        "countryCode": "nl",
-        "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          5305
-        ],
-        "region": null
-      },
-      "source": "Myrcm"
-    },
     {
       "series": [],
       "season": {
@@ -1226,6 +1200,32 @@
         "dmcClubNumber": null,
         "myrcmClubNumbers": [
           2571
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-08-31",
+      "location": "Yellow Racing V2.0",
+      "countryCode": "be",
+      "title": "BTMC fun open wedstrijd",
+      "regions": [
+        {
+          "id": "be"
+        }
+      ],
+      "club": {
+        "name": "Yellow Racing V2.0",
+        "aliases": [],
+        "countryCode": "be",
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [
+          41053
         ],
         "region": null
       },
