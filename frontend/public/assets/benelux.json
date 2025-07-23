@@ -1,32 +1,6 @@
 {
-  "lastUpdate": "2025-07-22T08:07:05.9025008+00:00",
+  "lastUpdate": "2025-07-23T08:07:11.5009594+00:00",
   "races": [
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-07-23",
-      "location": "RC Club Zoetermeer",
-      "countryCode": "nl",
-      "title": "RCCZ - 2025 : Zomeravondcup 3 van 4",
-      "regions": [
-        {
-          "id": "nl"
-        }
-      ],
-      "club": {
-        "name": "RC Club Zoetermeer",
-        "aliases": [],
-        "countryCode": "nl",
-        "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          34977
-        ],
-        "region": null
-      },
-      "source": "Myrcm"
-    },
     {
       "series": [
         {
