@@ -1,32 +1,6 @@
 {
-  "lastUpdate": "2025-07-28T08:07:32.4836039+00:00",
+  "lastUpdate": "2025-07-29T08:07:10.9755345+00:00",
   "races": [
-    {
-      "series": [],
-      "season": {
-        "id": "current"
-      },
-      "date": "2025-07-29",
-      "location": "RACO2000",
-      "countryCode": "nl",
-      "title": "5e SEC tw 13,5t Raco2000",
-      "regions": [
-        {
-          "id": "nl"
-        }
-      ],
-      "club": {
-        "name": "RACO2000",
-        "aliases": [],
-        "countryCode": "nl",
-        "dmcClubNumber": null,
-        "myrcmClubNumbers": [
-          5305
-        ],
-        "region": null
-      },
-      "source": "Myrcm"
-    },
     {
       "series": [],
       "season": {
