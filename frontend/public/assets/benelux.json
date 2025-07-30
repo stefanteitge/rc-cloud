@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-07-29T08:07:10.9755345+00:00",
+  "lastUpdate": "2025-07-30T08:07:10.5352989+00:00",
   "races": [
     {
       "series": [],
@@ -152,6 +152,32 @@
         "dmcClubNumber": null,
         "myrcmClubNumbers": [
           3291
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-08-05",
+      "location": "RACO2000",
+      "countryCode": "nl",
+      "title": "6e SEC Legends",
+      "regions": [
+        {
+          "id": "nl"
+        }
+      ],
+      "club": {
+        "name": "RACO2000",
+        "aliases": [],
+        "countryCode": "nl",
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [
+          5305
         ],
         "region": null
       },
@@ -542,6 +568,32 @@
         "dmcClubNumber": null,
         "myrcmClubNumbers": [
           65
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-08-19",
+      "location": "RACO2000",
+      "countryCode": "nl",
+      "title": "5e SEC Buggy Raco2000",
+      "regions": [
+        {
+          "id": "nl"
+        }
+      ],
+      "club": {
+        "name": "RACO2000",
+        "aliases": [],
+        "countryCode": "nl",
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [
+          5305
         ],
         "region": null
       },
