@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-07-31T08:07:39.6305959+00:00",
+  "lastUpdate": "2025-08-01T08:07:56.3415184+00:00",
   "races": [
     {
       "series": [],
@@ -1415,6 +1415,32 @@
         "id": "current"
       },
       "date": "2025-09-14",
+      "location": "RACO2000",
+      "countryCode": "nl",
+      "title": "5e N.K. BC08 / BC10 NOMAC RACO2000",
+      "regions": [
+        {
+          "id": "nl"
+        }
+      ],
+      "club": {
+        "name": "RACO2000",
+        "aliases": [],
+        "countryCode": "nl",
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [
+          53339
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-09-14",
       "location": "FBA",
       "countryCode": "be",
       "title": "FBA BK/CB Buggy 2025 Race 6 - Seraing Buggy Club",
@@ -1586,6 +1612,32 @@
         "dmcClubNumber": null,
         "myrcmClubNumbers": [
           4842
+        ],
+        "region": null
+      },
+      "source": "Myrcm"
+    },
+    {
+      "series": [],
+      "season": {
+        "id": "current"
+      },
+      "date": "2025-09-21",
+      "location": "Model Auto Club Heemstede",
+      "countryCode": "nl",
+      "title": "6e N.K. EC10 NOMAC MACH Heemstede",
+      "regions": [
+        {
+          "id": "nl"
+        }
+      ],
+      "club": {
+        "name": "Model Auto Club Heemstede",
+        "aliases": [],
+        "countryCode": "nl",
+        "dmcClubNumber": null,
+        "myrcmClubNumbers": [
+          53339
         ],
         "region": null
       },
