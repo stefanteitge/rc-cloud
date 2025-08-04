@@ -16,25 +16,25 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
-    - name: Setup .NET Core
-      uses: actions/setup-dotnet@v4
-      with:
-        dotnet-version: "9.0.x"
-    - name: All Json
-      run: dotnet run germany --format json --club-db ../../db/club-db.json
-      working-directory: backend/RcCloud.DateScraper.Cli
-    - name: BeNeLux Json
-      run: dotnet run benelux --format json
-      working-directory: backend/RcCloud.DateScraper.Cli
-    - name: Move
-      run: mv germany.json ../../frontend/public/assets
-      working-directory: backend/RcCloud.DateScraper.Cli
-    - name: Move
-      run: mv benelux.json ../../frontend/public/assets
-      working-directory: backend/RcCloud.DateScraper.Cli
-    - uses: stefanzweifel/git-auto-commit-action@v5
-      with:
-        commit_message: New dates
+#    - name: Setup .NET Core
+#      uses: actions/setup-dotnet@v4
+#      with:
+#        dotnet-version: "9.0.x"
+#    - name: All Json
+#      run: dotnet run germany --format json --club-db ../../db/club-db.json
+#      working-directory: backend/RcCloud.DateScraper.Cli
+#    - name: BeNeLux Json
+#      run: dotnet run benelux --format json
+#      working-directory: backend/RcCloud.DateScraper.Cli
+#    - name: Move
+#      run: mv germany.json ../../frontend/public/assets
+#      working-directory: backend/RcCloud.DateScraper.Cli
+#    - name: Move
+#      run: mv benelux.json ../../frontend/public/assets
+#      working-directory: backend/RcCloud.DateScraper.Cli
+#    - uses: stefanzweifel/git-auto-commit-action@v5
+#      with:
+#        commit_message: New dates
     - name: Make Request
       uses: fjogeleit/http-request-action@v1
       with:
