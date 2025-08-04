@@ -14,9 +14,17 @@
       "region": "east"
     },
     {
-      "name": "1.MRC Mannheim e.V.",
+      "name": "1. VMSC Plauen e.V.",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": 98,
+      "myrcmClubNumbers": [],
+      "region": "east"
+    },
+    {
+      "name": "1. MRC Mannheim e.V.",
       "aliases": [
-        "1. MRC Mannheim"
+        "1.MRC Mannheim"
       ],
       "countryCode": "de",
       "dmcClubNumber": 391,
@@ -24,6 +32,24 @@
         39671
       ],
       "region": "central"
+    },
+    {
+      "name": "3 Sesselracer",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": 386,
+      "myrcmClubNumbers": [],
+      "region": null
+    },
+    {
+      "name": "3Sesselracer",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": null,
+      "myrcmClubNumbers": [
+        50568
+      ],
+      "region": null
     },
     {
       "name": "amc Hamm e.V.",
@@ -167,10 +193,12 @@
     },
     {
       "name": "Burning Wheels Blankenfelde",
-      "aliases": [],
+      "aliases": ["Burning Wheels Blankenfelde OV-5/292"],
       "countryCode": "de",
       "dmcClubNumber": 292,
-      "myrcmClubNumbers": [],
+      "myrcmClubNumbers": [
+        52898
+      ],
       "region": "east"
     },
     {
@@ -185,6 +213,32 @@
         43367,
         26596
       ],
+      "region": null
+    },
+    {
+      "name": "Deutscher Minicar Club e.V.",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": null,
+      "myrcmClubNumbers": [
+        30759
+      ],
+      "region": null
+    },
+    {
+      "name": "DJK 1909 Andernach e.V. Abt. RC Car",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": 301,
+      "myrcmClubNumbers": [],
+      "region": "central"
+    },
+    {
+      "name": "DMC e.V. Geschäftsstelle",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": null,
+      "myrcmClubNumbers": [],
       "region": null
     },
     {
@@ -254,6 +308,16 @@
       "region": "south"
     },
     {
+      "name": "LTS Bremerhaven",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": null,
+      "myrcmClubNumbers": [
+        19204
+      ],
+      "region": null
+    },
+    {
       "name": "MAC Burgdorf e.V.",
       "aliases": [],
       "countryCode": "de",
@@ -275,10 +339,12 @@
     },
     {
       "name": "MAC Hamburg e.V.",
-      "aliases": [],
+      "aliases": ["MAC-Hamburg e.V."],
       "countryCode": "de",
       "dmcClubNumber": 24,
-      "myrcmClubNumbers": [],
+      "myrcmClubNumbers": [
+        20622
+      ],
       "region": "north"
     },
     {
@@ -320,6 +386,24 @@
       "region": "central"
     },
     {
+      "name": "MAC Saar",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": null,
+      "myrcmClubNumbers": [
+        233
+      ],
+      "region": null
+    },
+    {
+      "name": "MAC Saar e.V.",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": 14,
+      "myrcmClubNumbers": [],
+      "region": null
+    },
+    {
       "name": "MAC Siersburg e.V.",
       "aliases": [],
       "countryCode": "de",
@@ -346,16 +430,6 @@
         53667
       ],
       "region": "north"
-    },
-    {
-      "name": "MAC-Hamburg e.V.",
-      "aliases": [],
-      "countryCode": "de",
-      "dmcClubNumber": null,
-      "myrcmClubNumbers": [
-        20622
-      ],
-      "region": null
     },
     {
       "name": "MAC-Solms e.V. - OV 10335",
@@ -434,6 +508,14 @@
       "aliases": [],
       "countryCode": "de",
       "dmcClubNumber": 128,
+      "myrcmClubNumbers": [],
+      "region": "south"
+    },
+    {
+      "name": "MCC Hof e.V.",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": 56,
       "myrcmClubNumbers": [],
       "region": "south"
     },
@@ -518,6 +600,16 @@
       "region": null
     },
     {
+      "name": "MCV Dänischer Wohld e.V.",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": null,
+      "myrcmClubNumbers": [
+        19290
+      ],
+      "region": null
+    },
+    {
       "name": "MFK Kürten e.V.",
       "aliases": [],
       "countryCode": "de",
@@ -552,6 +644,14 @@
       "dmcClubNumber": null,
       "myrcmClubNumbers": [],
       "region": "north"
+    },
+    {
+      "name": "Modellfreunde Rheinhessen/Pfalz e.V.",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": 266,
+      "myrcmClubNumbers": [],
+      "region": "central"
     },
     {
       "name": "Modellrenngemeinschaft Dogern e.V.",
@@ -594,6 +694,16 @@
       "region": "east"
     },
     {
+      "name": "MRC Mehrum",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": null,
+      "myrcmClubNumbers": [
+        2245
+      ],
+      "region": null
+    },
+    {
       "name": "MRC Senden e.V.",
       "aliases": [
         "MRC Senden"
@@ -604,6 +714,14 @@
         61183
       ],
       "region": "south"
+    },
+    {
+      "name": "MRC Weiden e.V.",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": 109,
+      "myrcmClubNumbers": [],
+      "region": null
     },
     {
       "name": "MRSC Amberg e.V.",
@@ -906,6 +1024,16 @@
       "region": "central"
     },
     {
+      "name": "RC Offroad Ottendorf-Okrilla",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": null,
+      "myrcmClubNumbers": [
+        45728
+      ],
+      "region": null
+    },
+    {
       "name": "RC Offroad Staaken e.V.",
       "aliases": [
         "RCS Offroad Staaken"
@@ -973,10 +1101,20 @@
       "region": "central"
     },
     {
-      "name": "RC-MSC Greuthof e.V.",
+      "name": "RC-Glashaus e.V. / DMC",
       "aliases": [],
       "countryCode": "de",
       "dmcClubNumber": null,
+      "myrcmClubNumbers": [
+        9640
+      ],
+      "region": null
+    },
+    {
+      "name": "RC-MSC Greuthof e.V.",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": 142,
       "myrcmClubNumbers": [
         61583
       ],
@@ -1081,10 +1219,10 @@
       "region": "west"
     },
     {
-      "name": "RCSF-Singen e.V.",
-      "aliases": [],
+      "name": "RCSF Singen e.V.",
+      "aliases": ["RCSF-Singen e.V."],
       "countryCode": "de",
-      "dmcClubNumber": null,
+      "dmcClubNumber": 331,
       "myrcmClubNumbers": [
         16961
       ],
@@ -1129,6 +1267,16 @@
       "region": "south"
     },
     {
+      "name": "Simbacher Buggy Racer e.V.",
+      "aliases": ["Simbacher Buggyracer e.V."],
+      "countryCode": "de",
+      "dmcClubNumber": null,
+      "myrcmClubNumbers": [
+        62851
+      ],
+      "region": null
+    },
+    {
       "name": "Slottis Supreme Masters",
       "aliases": [],
       "countryCode": "de",
@@ -1165,6 +1313,16 @@
       "region": "west"
     },
     {
+      "name": "Team SMI Siegen",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": null,
+      "myrcmClubNumbers": [
+        49540
+      ],
+      "region": null
+    },
+    {
       "name": "Tonisport",
       "aliases": [
         "„TONISPORT GmbH Modellsport  ETS“",
@@ -1174,6 +1332,16 @@
       "dmcClubNumber": null,
       "myrcmClubNumbers": [
         2047
+      ],
+      "region": null
+    },
+    {
+      "name": "Tonisport GmbH Und DMC",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": null,
+      "myrcmClubNumbers": [
+        24531
       ],
       "region": null
     },
@@ -1232,21 +1400,13 @@
     },
     {
       "name": "VfR Rüsselsheim e.V.",
-      "aliases": [],
+      "aliases": ["VFR-Rüsselsheim e.V."],
       "countryCode": "de",
       "dmcClubNumber": 120,
-      "myrcmClubNumbers": [],
-      "region": "central"
-    },
-    {
-      "name": "VFR-Rüsselsheim e.V.",
-      "aliases": [],
-      "countryCode": "de",
-      "dmcClubNumber": null,
       "myrcmClubNumbers": [
         49540
       ],
-      "region": null
+      "region": "central"
     },
     {
       "name": "Wiesbadener Minicar Club e.V.",
@@ -1261,5 +1421,5 @@
       "region": "central"
     }
   ],
-  "lastUpdated": "2025-05-10T14:36:57.0775485+02:00"
+  "lastUpdated": "2025-08-04T13:23:30.5504224+02:00"
 }

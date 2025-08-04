@@ -65,9 +65,9 @@ public class ScrapeRcco(IClubRepository clubRepository)
                 var laufname = cells[2].ChildNodes.FirstOrDefault()?.InnerText.Trim() ?? "Rennen";
 
                 var verein = cells[1].SelectSingleNode("a").InnerText;
-                var strecke = cells[8].SelectSingleNode("a").InnerText;
+                var strecke = cells[8].SelectSingleNode("a")?.InnerText;
 
-                var veranstaltung = new RccoVeranstaltung(ParseDate(dateEnd), verein, laufname, strecke);
+                var veranstaltung = new RccoVeranstaltung(ParseDate(dateEnd), verein, laufname, strecke ?? "Unbekannt");
 
                 veranstaltungen.Add(veranstaltung);
             }
