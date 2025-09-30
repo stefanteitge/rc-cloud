@@ -91,14 +91,44 @@ function getOtherRaces(): OvalRaceMeeting[] {
       classes: ['banger'],
     },
     {
+      date: new Temporal.PlainDate(2025, 10, 19),
+      location: 'Venray',
+      classes: ['f1'],
+    },
+    {
       date: new Temporal.PlainDate(2025, 11, 16),
       location: 'Branst',
       classes: ['banger'],
     },
     {
+      date: new Temporal.PlainDate(2025, 11, 30),
+      location: 'Venray',
+      classes: ['f1'],
+    },
+    {
       date: new Temporal.PlainDate(2025, 12, 14),
       location: 'Branst',
       classes: ['banger'],
+    },
+    {
+      date: new Temporal.PlainDate(2025, 12, 28),
+      location: 'Venray',
+      classes: ['f1'],
+    },
+    {
+      date: new Temporal.PlainDate(2026, 01, 25),
+      location: 'Venray',
+      classes: ['f1'],
+    },
+    {
+      date: new Temporal.PlainDate(2026, 02, 22),
+      location: 'Venray',
+      classes: ['f1'],
+    },
+    {
+      date: new Temporal.PlainDate(2026, 03, 15),
+      location: 'Venray',
+      classes: ['f1'],
     },
   ];
 }
