@@ -126,6 +126,11 @@ function getOtherRaces(): OvalRaceMeeting[] {
       classes: ['f1'],
     },
     {
+      date: new Temporal.PlainDate(2026, 03, 1),
+      location: 'Venray',
+      classes: ['f1'],
+    },
+    {
       date: new Temporal.PlainDate(2026, 03, 15),
       location: 'Venray',
       classes: ['f1'],
