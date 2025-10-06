@@ -34,7 +34,7 @@ export function getRacesInLobith(): OvalRaceMeeting[] {
       classes: ['f1', 'banger'],
     },
     {
-      date: new Temporal.PlainDate(2025, 10, 25),
+      date: new Temporal.PlainDate(2025, 10, 26),
       location: 'Lobith',
       classes: ['f1'],
     },
