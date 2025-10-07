@@ -29,7 +29,7 @@ public class UpdateDmcFunction(
         var clubs = await mongoClubRepository.GetAll("germany");
         clubRepository.Load(clubs);
         
-        var dmcResult = await dmc.Scrape();
+        var dmcResult = await dmc.Scrape(2025);
         if (dmcResult.IsFailed)
         {
             return TypedResults.BadRequest(dmcResult.Errors.FirstOrDefault()?.Message ?? "Scraping DMC failed.");

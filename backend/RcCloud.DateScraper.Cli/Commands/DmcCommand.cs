@@ -19,7 +19,7 @@ internal class DmcCommand(ScrapeDmcRaces races, PrintRaces printer, IClubReposit
             clubRepository.Load(ClubDbFile);
         }
         
-        var parseResult = await races.Scrape();
+        var parseResult = await races.Scrape(2025);
 
         if (parseResult.IsFailed)
         {

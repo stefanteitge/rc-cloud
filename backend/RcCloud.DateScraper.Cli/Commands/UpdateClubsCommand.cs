@@ -19,7 +19,7 @@ internal class UpdateClubsCommand(ScrapeDmcClubs scrapeDmcClubs, ScrapeMyrcmClub
         var myrcm = await scrapeClubs.Scrape([MyrcmCountryCode.Germany]);
         myrcm.ForEach(club => clubRepository.Update(club));
         
-        var dmc = await scrapeDmcClubs.Scrape();
+        var dmc = await scrapeDmcClubs.Scrape(2025);
         dmc.ForEach(club => clubRepository.Update(club));
         
         clubRepository.Store(File);
