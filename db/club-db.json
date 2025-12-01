@@ -2,6 +2,16 @@
   "compilation": "germany",
   "clubs": [
     {
+      "name": "„TONISPORT GmbH Modellsport  EOS“",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": null,
+      "myrcmClubNumbers": [
+        2047
+      ],
+      "region": null
+    },
+    {
       "name": "1. Marzahner Racing Club",
       "aliases": [
         "1.Marzahner Racing Club"
@@ -14,14 +24,6 @@
       "region": "east"
     },
     {
-      "name": "1. VMSC Plauen e.V.",
-      "aliases": [],
-      "countryCode": "de",
-      "dmcClubNumber": 98,
-      "myrcmClubNumbers": [],
-      "region": "east"
-    },
-    {
       "name": "1. MRC Mannheim e.V.",
       "aliases": [
         "1.MRC Mannheim"
@@ -31,6 +33,22 @@
       "myrcmClubNumbers": [
         39671
       ],
+      "region": "central"
+    },
+    {
+      "name": "1. VMSC Plauen e.V.",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": 98,
+      "myrcmClubNumbers": [],
+      "region": "east"
+    },
+    {
+      "name": "1.MRC Mannheim e.V.",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": 391,
+      "myrcmClubNumbers": [],
       "region": "central"
     },
     {
@@ -193,13 +211,25 @@
     },
     {
       "name": "Burning Wheels Blankenfelde",
-      "aliases": ["Burning Wheels Blankenfelde OV-5/292"],
+      "aliases": [
+        "Burning Wheels Blankenfelde OV-5/292"
+      ],
       "countryCode": "de",
       "dmcClubNumber": 292,
       "myrcmClubNumbers": [
         52898
       ],
       "region": "east"
+    },
+    {
+      "name": "Burning Wheels Blankenfelde OV 5/292",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": null,
+      "myrcmClubNumbers": [
+        52898
+      ],
+      "region": null
     },
     {
       "name": "Deutscher Minicar Club (DMC)",
@@ -318,6 +348,16 @@
       "region": null
     },
     {
+      "name": "LTS RC Racing Team Bremerhaven",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": null,
+      "myrcmClubNumbers": [
+        19204
+      ],
+      "region": null
+    },
+    {
       "name": "MAC Burgdorf e.V.",
       "aliases": [],
       "countryCode": "de",
@@ -339,7 +379,9 @@
     },
     {
       "name": "MAC Hamburg e.V.",
-      "aliases": ["MAC-Hamburg e.V."],
+      "aliases": [
+        "MAC-Hamburg e.V."
+      ],
       "countryCode": "de",
       "dmcClubNumber": 24,
       "myrcmClubNumbers": [
@@ -401,7 +443,7 @@
       "countryCode": "de",
       "dmcClubNumber": 14,
       "myrcmClubNumbers": [],
-      "region": null
+      "region": "central"
     },
     {
       "name": "MAC Siersburg e.V.",
@@ -562,6 +604,14 @@
       "region": "west"
     },
     {
+      "name": "MCC Rudolstadt e.V.",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": 223,
+      "myrcmClubNumbers": [],
+      "region": "east"
+    },
+    {
       "name": "MCC Türkheim e.V.",
       "aliases": [],
       "countryCode": "de",
@@ -586,6 +636,16 @@
       "dmcClubNumber": 176,
       "myrcmClubNumbers": [],
       "region": "central"
+    },
+    {
+      "name": "MCRT Aschaffenburg e.V.",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": null,
+      "myrcmClubNumbers": [
+        50727
+      ],
+      "region": null
     },
     {
       "name": "MCSS Althengstett",
@@ -616,6 +676,16 @@
       "dmcClubNumber": 218,
       "myrcmClubNumbers": [],
       "region": "west"
+    },
+    {
+      "name": "Mini Car Club Fellbach e.V.",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": null,
+      "myrcmClubNumbers": [
+        38659
+      ],
+      "region": null
     },
     {
       "name": "Modell-Car-Club Bad Kissingen e.V.",
@@ -692,6 +762,16 @@
       "dmcClubNumber": 61,
       "myrcmClubNumbers": [],
       "region": "east"
+    },
+    {
+      "name": "MRC Leipzig/ RC Car Chemnitz",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": null,
+      "myrcmClubNumbers": [
+        51129
+      ],
+      "region": null
     },
     {
       "name": "MRC Mehrum",
@@ -947,6 +1027,24 @@
       "region": "west"
     },
     {
+      "name": "Präsident",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": null,
+      "myrcmClubNumbers": [],
+      "region": null
+    },
+    {
+      "name": "RC Car Freunde Emsdetten e.V.",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": null,
+      "myrcmClubNumbers": [
+        55427
+      ],
+      "region": null
+    },
+    {
       "name": "RC Cars Köngen e.V.",
       "aliases": [
         "RC Cars Köngen (OV 162)"
@@ -1072,6 +1170,16 @@
       "region": "west"
     },
     {
+      "name": "RC RaceTeam München e.V.",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": null,
+      "myrcmClubNumbers": [
+        37520
+      ],
+      "region": null
+    },
+    {
       "name": "RC Speedracer e.V.",
       "aliases": [
         "RC Speedracer e.V. OV-055",
@@ -1099,6 +1207,24 @@
       "dmcClubNumber": 79,
       "myrcmClubNumbers": [],
       "region": "central"
+    },
+    {
+      "name": "RC-Freunde Kinzigtal e.V.",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": 39,
+      "myrcmClubNumbers": [],
+      "region": "south"
+    },
+    {
+      "name": "RC-Fun-Racer (OV 3/389).",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": null,
+      "myrcmClubNumbers": [
+        44059
+      ],
+      "region": null
     },
     {
       "name": "RC-Glashaus e.V. / DMC",
@@ -1135,6 +1261,24 @@
       "dmcClubNumber": null,
       "myrcmClubNumbers": [
         50693
+      ],
+      "region": null
+    },
+    {
+      "name": "RC-Team Pr.Oldendorf e.V.",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": 276,
+      "myrcmClubNumbers": [],
+      "region": "north"
+    },
+    {
+      "name": "RC-Team Preußisch Oldendorf e.V, RC-Arena Bünde",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": null,
+      "myrcmClubNumbers": [
+        24531
       ],
       "region": null
     },
@@ -1177,6 +1321,16 @@
       "region": "north"
     },
     {
+      "name": "RccR Munzig e.V.",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": null,
+      "myrcmClubNumbers": [
+        20891
+      ],
+      "region": null
+    },
+    {
       "name": "RCCR Munzig e.V.",
       "aliases": [],
       "countryCode": "de",
@@ -1195,6 +1349,16 @@
         134
       ],
       "region": "nord"
+    },
+    {
+      "name": "RCMC Ibbenbüren e.V. und DerShoemaker Racing Events",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": null,
+      "myrcmClubNumbers": [
+        17465
+      ],
+      "region": null
     },
     {
       "name": "RCR Peterberg e.V.",
@@ -1220,7 +1384,9 @@
     },
     {
       "name": "RCSF Singen e.V.",
-      "aliases": ["RCSF-Singen e.V."],
+      "aliases": [
+        "RCSF-Singen e.V."
+      ],
       "countryCode": "de",
       "dmcClubNumber": 331,
       "myrcmClubNumbers": [
@@ -1268,7 +1434,9 @@
     },
     {
       "name": "Simbacher Buggy Racer e.V.",
-      "aliases": ["Simbacher Buggyracer e.V."],
+      "aliases": [
+        "Simbacher Buggyracer e.V."
+      ],
       "countryCode": "de",
       "dmcClubNumber": null,
       "myrcmClubNumbers": [
@@ -1400,7 +1568,9 @@
     },
     {
       "name": "VfR Rüsselsheim e.V.",
-      "aliases": ["VFR-Rüsselsheim e.V."],
+      "aliases": [
+        "VFR-Rüsselsheim e.V."
+      ],
       "countryCode": "de",
       "dmcClubNumber": 120,
       "myrcmClubNumbers": [
@@ -1421,5 +1591,5 @@
       "region": "central"
     }
   ],
-  "lastUpdated": "2025-08-04T13:23:30.5504224+02:00"
+  "lastUpdated": "2025-12-01T13:40:03.8155442+01:00"
 }
