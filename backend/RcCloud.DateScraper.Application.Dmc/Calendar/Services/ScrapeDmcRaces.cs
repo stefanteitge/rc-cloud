@@ -27,6 +27,36 @@ public class ScrapeDmcRaces(DownloadDmcCalendar download, IClubRepository clubRe
         return Result.Ok(races);
     }
 
+    public async Task<Result<List<RaceMeeting>>> ScrapeThisAndNextYear()
+    {
+        var now = DateTime.UtcNow;
+        // Use a const for the July 1st cutoff
+        var nextYearStartDate = new DateTime(now.Year, 7, 1);
+        int currentYear = now.Year;
+        var resultCurrent = await Scrape(currentYear);
+        if (resultCurrent.IsFailed)
+        {
+            return Result.Fail(resultCurrent.Errors);
+        }
+
+        // Only scrape next year if after July 1
+        if (now >= nextYearStartDate)
+        {
+            var resultNext = await Scrape(currentYear + 1);
+            if (resultNext.IsFailed)
+            {
+                return Result.Fail(resultNext.Errors);
+            }
+            
+            var combined = resultCurrent.Value.Concat(resultNext.Value)
+                .OrderBy(r => r.Date) // Assuming RaceMeeting has a Date property
+                .ToList();
+            return Result.Ok(combined);
+        }
+        
+        return resultCurrent;
+    }
+
     private RaceMeeting MakeRaceMeeting(DmcCalendarEntry entry)
     {
         var regions = ComputeRegions(entry);
@@ -59,9 +89,9 @@ public class ScrapeDmcRaces(DownloadDmcCalendar download, IClubRepository clubRe
             [.. regions],
             club,
             "DMC");
-}
+    }
 
-private string ComputeTitle(DmcCalendarEntry entry)
+    private string ComputeTitle(DmcCalendarEntry entry)
     {
         if (entry.IsSportkreismeisterschaft())
         {
