@@ -24,6 +24,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
+		..\db\club-db.json = ..\db\club-db.json
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RcCloud.DateScraper.Application.Rcco.Tests", "RcCloud.DateScraper.Application.Rcco.Tests\RcCloud.DateScraper.Application.Rcco.Tests.csproj", "{CF93D3B5-6DA0-487E-A268-EE424E4D5425}"

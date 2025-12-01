@@ -26,7 +26,8 @@
     {
       "name": "1. MRC Mannheim e.V.",
       "aliases": [
-        "1.MRC Mannheim"
+        "1.MRC Mannheim",
+        "1.MRC Mannheim e.V."
       ],
       "countryCode": "de",
       "dmcClubNumber": 391,
@@ -44,26 +45,12 @@
       "region": "east"
     },
     {
-      "name": "1.MRC Mannheim e.V.",
-      "aliases": [],
-      "countryCode": "de",
-      "dmcClubNumber": 391,
-      "myrcmClubNumbers": [],
-      "region": "central"
-    },
-    {
       "name": "3 Sesselracer",
-      "aliases": [],
+      "aliases": [
+        "3Sesselracer"
+      ],
       "countryCode": "de",
       "dmcClubNumber": 386,
-      "myrcmClubNumbers": [],
-      "region": null
-    },
-    {
-      "name": "3Sesselracer",
-      "aliases": [],
-      "countryCode": "de",
-      "dmcClubNumber": null,
       "myrcmClubNumbers": [
         50568
       ],
@@ -72,18 +59,7 @@
     {
       "name": "amc Hamm e.V.",
       "aliases": [
-        "amc Hamm"
-      ],
-      "countryCode": "de",
-      "dmcClubNumber": 31,
-      "myrcmClubNumbers": [
-        7771
-      ],
-      "region": "west"
-    },
-    {
-      "name": "AMC Hamm e.V.",
-      "aliases": [
+        "amc Hamm",
         "AMC Hamm e.V"
       ],
       "countryCode": "de",
@@ -212,7 +188,8 @@
     {
       "name": "Burning Wheels Blankenfelde",
       "aliases": [
-        "Burning Wheels Blankenfelde OV-5/292"
+        "Burning Wheels Blankenfelde OV-5/292",
+        "Burning Wheels Blankenfelde OV 5/292"
       ],
       "countryCode": "de",
       "dmcClubNumber": 292,
@@ -220,16 +197,6 @@
         52898
       ],
       "region": "east"
-    },
-    {
-      "name": "Burning Wheels Blankenfelde OV 5/292",
-      "aliases": [],
-      "countryCode": "de",
-      "dmcClubNumber": null,
-      "myrcmClubNumbers": [
-        52898
-      ],
-      "region": null
     },
     {
       "name": "Deutscher Minicar Club (DMC)",
@@ -339,17 +306,9 @@
     },
     {
       "name": "LTS Bremerhaven",
-      "aliases": [],
-      "countryCode": "de",
-      "dmcClubNumber": null,
-      "myrcmClubNumbers": [
-        19204
+      "aliases": [
+        "LTS RC Racing Team Bremerhaven"
       ],
-      "region": null
-    },
-    {
-      "name": "LTS RC Racing Team Bremerhaven",
-      "aliases": [],
       "countryCode": "de",
       "dmcClubNumber": null,
       "myrcmClubNumbers": [
@@ -428,21 +387,13 @@
       "region": "central"
     },
     {
-      "name": "MAC Saar",
-      "aliases": [],
+      "name": "MAC Saar e.V.",
+      "aliases": ["MAC Saar"],
       "countryCode": "de",
-      "dmcClubNumber": null,
+      "dmcClubNumber": 14,
       "myrcmClubNumbers": [
         233
       ],
-      "region": null
-    },
-    {
-      "name": "MAC Saar e.V.",
-      "aliases": [],
-      "countryCode": "de",
-      "dmcClubNumber": 14,
-      "myrcmClubNumbers": [],
       "region": "central"
     },
     {
