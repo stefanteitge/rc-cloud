@@ -48,5 +48,6 @@ jobs:
     - name: Update clubs
       uses: fjogeleit/http-request-action@v1
       with:
+        method: "GET"
         url: "https://rc-cloud.de/api/update-clubs"
         timeout: 30000
