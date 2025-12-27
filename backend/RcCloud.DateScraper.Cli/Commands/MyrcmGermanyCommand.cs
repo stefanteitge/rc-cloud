@@ -1,10 +1,12 @@
-﻿using RcCloud.DateScraper.Application.Myrcm.Common.Domain;
+﻿using McMaster.Extensions.CommandLineUtils;
+using RcCloud.DateScraper.Application.Myrcm.Common.Domain;
 using RcCloud.DateScraper.Application.Myrcm.Upcoming.Services;
 using RcCloud.DateScraper.Cli.Output.Services;
 
 namespace RcCloud.DateScraper.Cli.Commands;
 
-internal class MyrcmCommand(ScrapeMyrcmRaces races, PrintRaces printer)
+[Command(name: "myrcm-germany")]
+internal class MyrcmGermanyCommand(ScrapeMyrcmRaces races, PrintRaces printer)
 {
     public async Task OnExecute()
     {

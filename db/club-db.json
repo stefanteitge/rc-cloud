@@ -2,6 +2,16 @@
   "compilation": "germany",
   "clubs": [
     {
+      "name": "\" Uwe Rheinard Modellsport EOS \"",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": null,
+      "myrcmClubNumbers": [
+        2047
+      ],
+      "region": null
+    },
+    {
       "name": "„TONISPORT GmbH Modellsport  EOS“",
       "aliases": [],
       "countryCode": "de",
@@ -388,7 +398,9 @@
     },
     {
       "name": "MAC Saar e.V.",
-      "aliases": ["MAC Saar"],
+      "aliases": [
+        "MAC Saar"
+      ],
       "countryCode": "de",
       "dmcClubNumber": 14,
       "myrcmClubNumbers": [
@@ -599,6 +611,16 @@
       "region": null
     },
     {
+      "name": "MCRT Schaafheim e.V. DMC OV-Nr.: 0176",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": null,
+      "myrcmClubNumbers": [
+        50727
+      ],
+      "region": null
+    },
+    {
       "name": "MCSS Althengstett",
       "aliases": [
         "MCSS Althengstett outdoor"
@@ -792,6 +814,14 @@
       "region": "north"
     },
     {
+      "name": "MSC Essen e.V.",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": null,
+      "myrcmClubNumbers": [],
+      "region": "west"
+    },
+    {
       "name": "MSC Halle e.V.",
       "aliases": [
         "Modellsport Club Halle / Saale e.V."
@@ -802,6 +832,16 @@
         44811
       ],
       "region": "east"
+    },
+    {
+      "name": "MSC Herrenhaide",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": null,
+      "myrcmClubNumbers": [
+        64487
+      ],
+      "region": null
     },
     {
       "name": "MSC Höckendorf e.V.",
@@ -860,6 +900,16 @@
       "dmcClubNumber": 349,
       "myrcmClubNumbers": [],
       "region": "south"
+    },
+    {
+      "name": "MSC Ulm e.V. - Indoor-Racing-Senden",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": null,
+      "myrcmClubNumbers": [
+        42113
+      ],
+      "region": null
     },
     {
       "name": "MSG Niesky e.V.",
@@ -1272,21 +1322,13 @@
       "region": "north"
     },
     {
-      "name": "RccR Munzig e.V.",
-      "aliases": [],
+      "name": "RCCR Munzig e.V.",
+      "aliases": ["RccR Munzig e.V."],
       "countryCode": "de",
-      "dmcClubNumber": null,
+      "dmcClubNumber": 316,
       "myrcmClubNumbers": [
         20891
       ],
-      "region": null
-    },
-    {
-      "name": "RCCR Munzig e.V.",
-      "aliases": [],
-      "countryCode": "de",
-      "dmcClubNumber": 316,
-      "myrcmClubNumbers": [],
       "region": "east"
     },
     {
@@ -1406,6 +1448,16 @@
       "region": null
     },
     {
+      "name": "SLR Ingolstadt 06",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": null,
+      "myrcmClubNumbers": [
+        490
+      ],
+      "region": null
+    },
+    {
       "name": "SMC Stuttgart e.V.",
       "aliases": [],
       "countryCode": "de",
@@ -1438,6 +1490,16 @@
       "dmcClubNumber": null,
       "myrcmClubNumbers": [
         49540
+      ],
+      "region": null
+    },
+    {
+      "name": "Time4Fun",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": null,
+      "myrcmClubNumbers": [
+        29586
       ],
       "region": null
     },
@@ -1496,6 +1558,16 @@
       "region": "south"
     },
     {
+      "name": "TSV Gelenau 94 e.V.",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": null,
+      "myrcmClubNumbers": [
+        30389
+      ],
+      "region": null
+    },
+    {
       "name": "TSV Kleinburgwedel",
       "aliases": [],
       "countryCode": "de",
@@ -1542,5 +1614,5 @@
       "region": "central"
     }
   ],
-  "lastUpdated": "2025-12-01T13:40:03.8155442+01:00"
+  "lastUpdated": "2025-12-27T11:07:46.2296608+01:00"
 }

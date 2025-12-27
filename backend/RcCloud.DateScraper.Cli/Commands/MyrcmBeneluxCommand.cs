@@ -5,7 +5,8 @@ using RcCloud.DateScraper.Cli.Output.Services;
 
 namespace RcCloud.DateScraper.Cli.Commands;
 
-internal class BeneluxCommand(ScrapeMyrcmRaces races, PrintRaces printer, WriteJson writeJson)
+[Command(name: "myrcm-benelux")]
+internal class MyrcmBeneluxCommand(ScrapeMyrcmRaces races, PrintRaces printer, WriteJson writeJson)
 {
     [Option("--format", CommandOptionType.SingleValue)]
     public string Format { get; set; } = "console";

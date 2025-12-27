@@ -5,16 +5,18 @@ namespace RcCloud.DateScraper.Cli.Commands;
 
 [Command(Name = "rcc-scrape", Description = "Dependency Injection sample project")]
 [Subcommand(typeof(GermanyCommand))]
-[Subcommand(typeof(BeneluxCommand))]
+[Subcommand(typeof(MyrcmBeneluxCommand))]
 [Subcommand(typeof(ChallengeCommand))]
 [Subcommand(typeof(DmcCommand))]
 [Subcommand(typeof(KleinserieCommand))]
-[Subcommand(typeof(MyrcmCommand))]
+[Subcommand(typeof(MyrcmGermanyCommand))]
 [Subcommand(typeof(UpdateClubsCommand))]
 [HelpOption]
 internal class RootCommand
 {
-    public void OnExecute()
+    public int OnExecute(CommandLineApplication app)
     {
+        app.ShowHelp();
+        return 0;
     }
 }

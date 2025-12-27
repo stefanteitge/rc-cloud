@@ -8,13 +8,21 @@
       "commandName": "Project",
       "commandLineArgs": "update-clubs --file ../../../../../db/club-db.json"
     },
-    "GER with clubs": {
+    "Germany with clubs": {
+      "commandName": "Project",
+      "commandLineArgs": "germany --club-db ../../../../../db/club-db.json"
+    },
+    "Germany with clubs JSON": {
       "commandName": "Project",
       "commandLineArgs": "germany --club-db ../../../../../db/club-db.json --format json"
     },
-    "BeNeLux": {
+    "MyRcm BeNeLux": {
       "commandName": "Project",
-      "commandLineArgs": "benelux --format json"
+      "commandLineArgs": "myrcm-benelux --format json"
+    },
+    "MyRcm Germany": {
+      "commandName": "Project",
+      "commandLineArgs": "myrcm-germany"
     },
     "DMC with clubs": {
       "commandName": "Project",

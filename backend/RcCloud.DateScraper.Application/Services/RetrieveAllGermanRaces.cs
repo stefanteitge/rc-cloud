@@ -21,7 +21,7 @@ public class RetrieveAllGermanRaces(
         var kleinserieAll = await kleinserie.Scrape();
         all.AddRange(kleinserieAll);
 
-        var dmcResult = await dmc.Scrape(2025);
+        var dmcResult = await dmc.Scrape(2026);
         if (dmcResult.IsSuccess)
         {
             all.AddRange(dmcResult.Value);
