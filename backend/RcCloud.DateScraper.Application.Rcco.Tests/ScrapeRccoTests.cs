@@ -1,4 +1,5 @@
 ﻿using Moq;
+using RcCloud.DateScraper.Application.Rcco.Services;
 using RcCloud.DateScraper.Domain.Clubs;
 
 namespace RcCloud.DateScraper.Application.Rcco.Tests;
@@ -10,7 +11,7 @@ public class ScrapeRccoTests
     {
         var input = File.ReadAllText("Data/rcco_2025-04-06.html");
         
-        var sut = new ScrapeRcco(new Mock<IClubRepository>().Object);
+        var sut = new ScrapeRcco(new Mock<IGuessClub>().Object);
 
         var races = sut.Scrape(input);
 
