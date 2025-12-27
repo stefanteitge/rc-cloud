@@ -168,6 +168,16 @@
       "region": null
     },
     {
+      "name": "Black Sheep Racers e.V.",
+      "aliases": [
+        "Black Sheep Racers e. V."
+      ],
+      "countryCode": "de",
+      "dmcClubNumber": null,
+      "myrcmClubNumbers": [],
+      "region": null
+    },
+    {
       "name": "BOC Kiel e.V.",
       "aliases": [],
       "countryCode": "de",
@@ -577,22 +587,16 @@
       "region": "west"
     },
     {
-      "name": "MCRT Aschaffenburg",
-      "aliases": [],
+      "name": "MCRT Aschaffenburg e.V.",
+      "aliases": [
+        "MCRT Aschaffenburg"
+      ],
       "countryCode": "de",
       "dmcClubNumber": 176,
-      "myrcmClubNumbers": [],
-      "region": "central"
-    },
-    {
-      "name": "MCRT Aschaffenburg e.V.",
-      "aliases": [],
-      "countryCode": "de",
-      "dmcClubNumber": null,
       "myrcmClubNumbers": [
         50727
       ],
-      "region": null
+      "region": "central"
     },
     {
       "name": "MCRT Schaafheim e.V.",
@@ -717,7 +721,8 @@
     {
       "name": "MRC Leipzig e.V.",
       "aliases": [
-        "MRC-Leipzig e.V."
+        "MRC-Leipzig e.V.",
+        "MRC Leipzig/ RC Car Chemnitz"
       ],
       "countryCode": "de",
       "dmcClubNumber": 61,
@@ -810,6 +815,14 @@
       "region": "west"
     },
     {
+      "name": "MSC Gemünden e.V.",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": 137,
+      "myrcmClubNumbers": [],
+      "region": "south"
+    },
+    {
       "name": "MSC Halle e.V.",
       "aliases": [
         "Modellsport Club Halle / Saale e.V."
@@ -823,13 +836,15 @@
     },
     {
       "name": "MSC Herrenhaide",
-      "aliases": [],
+      "aliases": [
+        "MSC Herrenhaide"
+      ],
       "countryCode": "de",
       "dmcClubNumber": null,
       "myrcmClubNumbers": [
         64487
       ],
-      "region": null
+      "region": "east"
     },
     {
       "name": "MSC Höckendorf e.V.",
@@ -839,7 +854,7 @@
       "myrcmClubNumbers": [
         56487
       ],
-      "region": null
+      "region": "east"
     },
     {
       "name": "MSC Kirchhain e.V.",
@@ -890,14 +905,16 @@
       "region": "south"
     },
     {
-      "name": "MSC Ulm e.V. - Indoor-Racing-Senden",
-      "aliases": [],
+      "name": "MSC Ulm e.V.",
+      "aliases": [
+        "MSC Ulm e.V. - Indoor-Racing-Senden"
+      ],
       "countryCode": "de",
-      "dmcClubNumber": null,
+      "dmcClubNumber": 74,
       "myrcmClubNumbers": [
         42113
       ],
-      "region": null
+      "region": "south"
     },
     {
       "name": "MSG Niesky e.V.",
@@ -1060,11 +1077,14 @@
     {
       "name": "RC Fun Racer e.V. Velbert",
       "aliases": [
-        "RC Fun Racer"
+        "RC Fun Racer",
+        "RC-Fun-Racer (OV 3/389)."
       ],
       "countryCode": "de",
       "dmcClubNumber": 389,
-      "myrcmClubNumbers": [],
+      "myrcmClubNumbers": [
+        44059
+      ],
       "region": "west"
     },
     {
@@ -1193,16 +1213,6 @@
       "dmcClubNumber": 39,
       "myrcmClubNumbers": [],
       "region": "south"
-    },
-    {
-      "name": "RC-Fun-Racer (OV 3/389).",
-      "aliases": [],
-      "countryCode": "de",
-      "dmcClubNumber": null,
-      "myrcmClubNumbers": [
-        44059
-      ],
-      "region": null
     },
     {
       "name": "RC-Glashaus e.V. / DMC",
@@ -1551,7 +1561,7 @@
       "myrcmClubNumbers": [
         30389
       ],
-      "region": null
+      "region": "east"
     },
     {
       "name": "TSV Kleinburgwedel",
@@ -1600,5 +1610,5 @@
       "region": "central"
     }
   ],
-  "lastUpdated": "2025-12-27T12:23:42.3243828+01:00"
+  "lastUpdated": "2025-12-27T14:47:29.12721+01:00"
 }
