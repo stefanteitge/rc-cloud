@@ -41,7 +41,7 @@ public class ScrapeMyrcmRacesTests
     private static ScrapeMyrcmRaces MakeSut() =>
         new(
             new DownloadMyrcmPages(),
-            new EnhanceClub(new Mock<IClubRepository>().Object),
+            new GuessClub(new Mock<IClubRepository>().Object),
             new GuessSeriesFromTitle(),
             new GuessIfItIsTraining(),
             new NullLogger<ScrapeMyrcmRaces>());

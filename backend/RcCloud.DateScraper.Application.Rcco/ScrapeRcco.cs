@@ -1,11 +1,12 @@
 ﻿using System.Globalization;
 using HtmlAgilityPack;
+using RcCloud.DateScraper.Application.Rcco.Services;
 using RcCloud.DateScraper.Domain.Clubs;
 using RcCloud.DateScraper.Domain.Races;
 
 namespace RcCloud.DateScraper.Application.Rcco;
 
-public class ScrapeRcco(IClubRepository clubRepository)
+public class ScrapeRcco(IGuessClub guessClub)
 {
     private const string BaseUrl = "https://rccar-online.de/veranstaltungen";
 
@@ -36,14 +37,7 @@ public class ScrapeRcco(IClubRepository clubRepository)
         List<RaceMeeting> raceMeetings = new List<RaceMeeting>();
         foreach (var evt in events)
         {
-            var club = new Club(evt.Verein, [], "de", null, [], null);
-            var knownClub = clubRepository.FindClub(evt.Verein);
-            if (knownClub is not null)
-            {
-                club = knownClub;
-            }
-            
-            // TODO: region from club
+            var club = guessClub.Guess(evt.Verein, "de");
             raceMeetings.Add(evt.ToRaceMeeting(club));
         }
         

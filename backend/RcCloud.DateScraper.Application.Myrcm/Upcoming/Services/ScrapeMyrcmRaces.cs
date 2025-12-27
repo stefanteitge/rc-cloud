@@ -13,7 +13,7 @@ namespace RcCloud.DateScraper.Application.Myrcm.Upcoming.Services;
 
 public class ScrapeMyrcmRaces(
     DownloadMyrcmPages downloadPages,
-    IEnhanceClub enhanceClub,
+    IGuessClub guessClub,
     GuessSeriesFromTitle guessSeriesFromTitle,
     GuessIfItIsTraining guessIfItIsTraining,
     ILogger<ScrapeMyrcmRaces> logger)
@@ -49,7 +49,7 @@ public class ScrapeMyrcmRaces(
 
         if (table is null)
         {
-            logger.LogError("Myracm scraping: Paging table not found.");
+            logger.LogError("Myrcm scraping: Paging table not found.");
             return 0;
         }
 
@@ -111,7 +111,7 @@ public class ScrapeMyrcmRaces(
             }
 
             var countryCode = GetCoutryCode(race.Country);
-            var club = enhanceClub.Guess(race.Club, clubNumber, countryCode);
+            var club = guessClub.Guess(race.Club, clubNumber, countryCode);
 
             var regions = new List<RegionReference>();
 

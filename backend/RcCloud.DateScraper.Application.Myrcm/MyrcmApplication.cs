@@ -13,7 +13,7 @@ public static class MyrcmApplication
     public static IServiceCollection AddMyrcm(this IServiceCollection services)
     {
         return services
-            .AddTransient<IEnhanceClub, EnhanceClub>()
+            .AddTransient<IGuessClub, GuessClub>()
             .AddTransient<GuessIfItIsTraining>()
             .AddTransient<DownloadMyrcmPages>()
             .AddTransient<GuessSeriesFromTitle>()

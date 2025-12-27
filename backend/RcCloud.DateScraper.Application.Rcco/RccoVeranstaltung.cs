@@ -9,8 +9,7 @@ public class RccoVeranstaltung(DateOnly datumEnde, string verein, string laufnam
     public DateOnly DatumEnde { get; } = datumEnde;
 
     public string Verein { get; } = verein;
-
-
+    
     public string Laufname { get; } = laufname;
 
     public string Strecke { get; } = strecke;
@@ -24,7 +23,7 @@ public class RccoVeranstaltung(DateOnly datumEnde, string verein, string laufnam
             Verein,
             "de",
             Laufname,
-            [],
+            club.Region is null ? [] : [club.Region],
             club,
             "rccar-online.de");
     }
