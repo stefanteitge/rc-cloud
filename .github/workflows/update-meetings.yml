@@ -1,4 +1,4 @@
-name: "Update races"
+name: "Update everything"
 on:
   #push:
   #  branches:
@@ -35,13 +35,18 @@ jobs:
 #    - uses: stefanzweifel/git-auto-commit-action@v5
 #      with:
 #        commit_message: New dates
-    - name: Make Request
+    - name: Update Germany
       uses: fjogeleit/http-request-action@v1
       with:
         url: "https://rc-cloud.de/api/update-germany"
         timeout: 30000
-    - name: Make Request
+    - name: Update BeNeLux
       uses: fjogeleit/http-request-action@v1
       with:
         url: "https://rc-cloud.de/api/update-benelux"
+        timeout: 30000
+    - name: Update clubs
+      uses: fjogeleit/http-request-action@v1
+      with:
+        url: "https://rc-cloud.de/api/update-clubs"
         timeout: 30000
