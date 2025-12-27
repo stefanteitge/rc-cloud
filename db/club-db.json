@@ -398,7 +398,9 @@
     },
     {
       "name": "MAC Solms",
-      "aliases": [],
+      "aliases": [
+        "MAC-Solms e.V. - OV 10335"
+      ],
       "countryCode": "de",
       "dmcClubNumber": 335,
       "myrcmClubNumbers": [],
@@ -593,14 +595,16 @@
       "region": null
     },
     {
-      "name": "MCRT Schaafheim e.V. DMC OV-Nr.: 0176",
-      "aliases": [],
+      "name": "MCRT Schaafheim e.V.",
+      "aliases": [
+        "MCRT Schaafheim e.V. DMC OV-Nr.: 0176"
+      ],
       "countryCode": "de",
       "dmcClubNumber": null,
       "myrcmClubNumbers": [
         50727
       ],
-      "region": null
+      "region": "central"
     },
     {
       "name": "MCSS Althengstett",
@@ -644,7 +648,9 @@
     },
     {
       "name": "Modell-Car-Club Bad Kissingen e.V.",
-      "aliases": [],
+      "aliases": [
+        "MCC Bad Kissingen e. V."
+      ],
       "countryCode": "de",
       "dmcClubNumber": 44,
       "myrcmClubNumbers": [],
@@ -992,21 +998,15 @@
       "region": "central"
     },
     {
-      "name": "Panik Team Troisdorf",
-      "aliases": [],
+      "name": "Panik Team Troisdorf e.V.",
+      "aliases": [
+        "Panik Team Troisdorf"
+      ],
       "countryCode": "de",
-      "dmcClubNumber": null,
+      "dmcClubNumber": 225,
       "myrcmClubNumbers": [
         17507
       ],
-      "region": null
-    },
-    {
-      "name": "Panik Team Troisdorf e.V.",
-      "aliases": [],
-      "countryCode": "de",
-      "dmcClubNumber": 225,
-      "myrcmClubNumbers": [],
       "region": "west"
     },
     {
@@ -1025,7 +1025,7 @@
       "myrcmClubNumbers": [
         55427
       ],
-      "region": null
+      "region": "north"
     },
     {
       "name": "RC Cars Köngen e.V.",
@@ -1058,8 +1058,10 @@
       "region": "west"
     },
     {
-      "name": "RC Fun Racer",
-      "aliases": [],
+      "name": "RC Fun Racer e.V. Velbert",
+      "aliases": [
+        "RC Fun Racer"
+      ],
       "countryCode": "de",
       "dmcClubNumber": 389,
       "myrcmClubNumbers": [],
@@ -1128,11 +1130,14 @@
     },
     {
       "name": "RC Race Team München",
-      "aliases": [],
+      "aliases": [
+        "RC RaceTeam München e.V."
+      ],
       "countryCode": "de",
       "dmcClubNumber": null,
       "myrcmClubNumbers": [
-        53665
+        53665,
+        37520
       ],
       "region": "south"
     },
@@ -1151,16 +1156,6 @@
       "dmcClubNumber": 382,
       "myrcmClubNumbers": [],
       "region": "west"
-    },
-    {
-      "name": "RC RaceTeam München e.V.",
-      "aliases": [],
-      "countryCode": "de",
-      "dmcClubNumber": null,
-      "myrcmClubNumbers": [
-        37520
-      ],
-      "region": null
     },
     {
       "name": "RC Speedracer e.V.",
@@ -1327,11 +1322,14 @@
       "myrcmClubNumbers": [
         134
       ],
-      "region": "nord"
+      "region": "north"
     },
     {
-      "name": "RCMC Ibbenbüren e.V. und DerShoemaker Racing Events",
-      "aliases": [],
+      "name": "RCMC Ibbenbüren e.V.",
+      "aliases": [
+        "RCMC Ibbenbüren e. V.",
+        "RCMC Ibbenbüren e.V. und DerShoemaker Racing Events"
+      ],
       "countryCode": "de",
       "dmcClubNumber": null,
       "myrcmClubNumbers": [
@@ -1602,5 +1600,5 @@
       "region": "central"
     }
   ],
-  "lastUpdated": "2025-12-27T12:02:53.0830279+01:00"
+  "lastUpdated": "2025-12-27T12:23:42.3243828+01:00"
 }
