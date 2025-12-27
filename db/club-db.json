@@ -44,7 +44,7 @@
       "myrcmClubNumbers": [
         50568
       ],
-      "region": null
+      "region": "south"
     },
     {
       "name": "amc Hamm e.V.",
@@ -133,7 +133,7 @@
       "name": "AMSC Augsburg e.V.",
       "aliases": [],
       "countryCode": "de",
-      "dmcClubNumber": null,
+      "dmcClubNumber": 52,
       "myrcmClubNumbers": [
         36
       ],
@@ -173,9 +173,9 @@
         "Black Sheep Racers e. V."
       ],
       "countryCode": "de",
-      "dmcClubNumber": null,
+      "dmcClubNumber": 381,
       "myrcmClubNumbers": [],
-      "region": null
+      "region": "south"
     },
     {
       "name": "BOC Kiel e.V.",
@@ -1000,7 +1000,7 @@
       "name": "ORMC Königsbrunn",
       "aliases": [],
       "countryCode": "de",
-      "dmcClubNumber": null,
+      "dmcClubNumber": 239,
       "myrcmClubNumbers": [
         573
       ],
@@ -1154,7 +1154,7 @@
         "RC RaceTeam München e.V."
       ],
       "countryCode": "de",
-      "dmcClubNumber": null,
+      "dmcClubNumber": 392,
       "myrcmClubNumbers": [
         53665,
         37520
@@ -1197,6 +1197,18 @@
         32408
       ],
       "region": "north"
+    },
+    {
+      "name": "RC-Bande Zwickau e.V.",
+      "aliases": [
+        "RCB Zwickau e.V."
+      ],
+      "countryCode": "de",
+      "dmcClubNumber": 15,
+      "myrcmClubNumbers": [
+        48536
+      ],
+      "region": "east"
     },
     {
       "name": "RC-Club Grossheubach e.V.",
@@ -1283,16 +1295,6 @@
       "region": "south"
     },
     {
-      "name": "RCB Zwickau e.V.",
-      "aliases": [],
-      "countryCode": "de",
-      "dmcClubNumber": null,
-      "myrcmClubNumbers": [
-        48536
-      ],
-      "region": null
-    },
-    {
       "name": "RCCC Coesfeld",
       "aliases": [],
       "countryCode": "de",
@@ -1341,11 +1343,11 @@
         "RCMC Ibbenbüren e.V. und DerShoemaker Racing Events"
       ],
       "countryCode": "de",
-      "dmcClubNumber": null,
+      "dmcClubNumber": 26,
       "myrcmClubNumbers": [
         17465
       ],
-      "region": null
+      "region": "west"
     },
     {
       "name": "RCR Peterberg e.V.",
@@ -1445,11 +1447,11 @@
       "name": "SLR Ingolstadt 06",
       "aliases": [],
       "countryCode": "de",
-      "dmcClubNumber": null,
+      "dmcClubNumber": 57,
       "myrcmClubNumbers": [
         490
       ],
-      "region": null
+      "region": "south"
     },
     {
       "name": "SMC Stuttgart e.V.",
@@ -1610,5 +1612,5 @@
       "region": "central"
     }
   ],
-  "lastUpdated": "2025-12-27T14:47:29.12721+01:00"
+  "lastUpdated": "2025-12-27T21:30:25.4814372+01:00"
 }
