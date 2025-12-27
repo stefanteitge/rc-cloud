@@ -36,7 +36,7 @@ public class GetGermanyFunction(MongoRaceRepository repository)
         var today = DateOnly.FromDateTime(DateTime.Now);
         var races = racesDocument.Races.Where(r => r.Date >= today).ToList();
 
-        var dto = RacePageDto.FromRaces(races, RacePageDto.GermanyCategories, racesDocument.LastUpdate, lastDmcUpdate);
+        var dto = RacePageDto.FromRaces(races, RacePageDto.GermanyRegions, racesDocument.LastUpdate, lastDmcUpdate);
         return TypedResults.Ok(dto);
     }
 }

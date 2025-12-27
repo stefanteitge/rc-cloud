@@ -7,7 +7,7 @@ public class RacePageDto(string lastUpdate, List<RaceDateDto> dates, string? las
 {
     public static readonly string[] BeneluxCategories = ["be", "nl", "lux", "stockcar", "banger"];
     
-    public static readonly string[] GermanyCategories = ["west", "east", "north", "south", "central"];
+    public static readonly string[] GermanyRegions = ["west", "east", "north", "south", "central"];
     
     public string LastUpdate { get; } = lastUpdate;
 
@@ -15,7 +15,7 @@ public class RacePageDto(string lastUpdate, List<RaceDateDto> dates, string? las
 
     public List<RaceDateDto> Dates { get; } = dates;
 
-    public static RacePageDto FromRaces(List<RaceMeeting> races, string[] categoryNames, string lastUpdate, string? lastDmcUpdate)
+    public static RacePageDto FromRaces(List<RaceMeeting> races, string[] regionIds, string lastUpdate, string? lastDmcUpdate)
     {
         var dates = races.Select(r => r.Date).Distinct().Order().ToList();
 
@@ -25,10 +25,10 @@ public class RacePageDto(string lastUpdate, List<RaceDateDto> dates, string? las
             var categories = new List<RaceCategoryDto>();
             var racesWithDate = races.Where(r => r.Date == date).ToList();
 
-            CreateGlobalCategory(racesWithDate, categories);
-            foreach (var categoryName in categoryNames)
+            CreateGlobalCategory(racesWithDate, categories, regionIds);
+            foreach (var regionId in regionIds)
             {
-                CreateCategory(racesWithDate, categories, categoryName);    
+                CreateCategory(racesWithDate, categories, regionId);    
             }
 
             dateDtos.Add(new RaceDateDto(date.ToString("O"), categories));
@@ -37,10 +37,10 @@ public class RacePageDto(string lastUpdate, List<RaceDateDto> dates, string? las
         return new RacePageDto(lastUpdate, dateDtos, lastDmcUpdate);
     }
 
-    private static void CreateGlobalCategory(List<RaceMeeting> racesOnDate, List<RaceCategoryDto> categories)
+    private static void CreateGlobalCategory(List<RaceMeeting> racesOnDate, List<RaceCategoryDto> categories, string[] regionIds)
     {
         var races = racesOnDate
-            .Where(r => r.Regions.Length == 0)
+            .Where(r => !r.Regions.Select(reg => reg.Id).Intersect(regionIds).Any())
             .OrderBy(r => r.Location)
             .ToList();
 
@@ -48,14 +48,14 @@ public class RacePageDto(string lastUpdate, List<RaceDateDto> dates, string? las
         categories.Add(cat);
     }
 
-    private static void CreateCategory(List<RaceMeeting> racesOnDate, List<RaceCategoryDto> categories, string regionName)
+    private static void CreateCategory(List<RaceMeeting> racesOnDate, List<RaceCategoryDto> categories, string regionId)
     {
         var races = racesOnDate
-            .Where(r => r.Regions.Any(reg => reg.Id == regionName))
+            .Where(r => r.Regions.Any(reg => reg.Id == regionId))
             .OrderBy(r => r.Location)
             .ToList();
 
-        var cat = new RaceCategoryDto(regionName, races);
+        var cat = new RaceCategoryDto(regionId, races);
         categories.Add(cat);
     }
 }

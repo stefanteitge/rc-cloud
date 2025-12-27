@@ -38,6 +38,6 @@ public class UpdateDmcFunction(
         await repo.Store(dmcResult.Value, "germany", "dmc");
         logger.LogInformation("Found {Count} races from DMC.", dmcResult.Value.Count());
 
-        return TypedResults.Ok(RacePageDto.FromRaces(dmcResult.Value, RacePageDto.GermanyCategories, DateTimeOffset.Now.ToString(), DateTimeOffset.Now.ToString()));
+        return TypedResults.Ok(RacePageDto.FromRaces(dmcResult.Value, RacePageDto.GermanyRegions, DateTimeOffset.Now.ToString(), DateTimeOffset.Now.ToString()));
     }
 }
