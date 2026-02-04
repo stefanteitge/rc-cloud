@@ -6,7 +6,7 @@ using RcCloud.DateScraper.Domain.Clubs;
 
 namespace RcCloud.DateScraper.Cli.Commands;
 
-internal class DmcCommand(ScrapeDmcRaces races, PrintRaces printer, IClubRepository clubRepository)
+internal class DmcCommand(ScrapeDmcRaces races, PrintRaces printer, IClubFileRepository clubFileRepository)
 {
     [Option("--club-db", CommandOptionType.SingleValue)]
     [FileExists]
@@ -16,7 +16,7 @@ internal class DmcCommand(ScrapeDmcRaces races, PrintRaces printer, IClubReposit
     {
         if (!string.IsNullOrEmpty(ClubDbFile))
         {
-            clubRepository.Load(ClubDbFile);
+            clubFileRepository.Load(ClubDbFile);
         }
         
         var parseResult = await races.Scrape(2025);

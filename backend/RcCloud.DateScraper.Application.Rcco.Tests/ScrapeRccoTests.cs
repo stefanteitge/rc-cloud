@@ -12,7 +12,7 @@ public class ScrapeRccoTests
     {
         var input = File.ReadAllText("Data/rcco_2025-04-06.html");
         
-        var sut = new ScrapeRcco(new GuessClub(new Mock<IClubRepository>().Object));
+        var sut = new ScrapeRcco(new GuessClub(new Mock<IClubFileRepository>().Object));
 
         var races = sut.Scrape(input);
 

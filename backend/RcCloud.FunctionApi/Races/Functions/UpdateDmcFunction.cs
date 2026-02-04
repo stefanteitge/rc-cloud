@@ -18,16 +18,16 @@ namespace RcCloud.FunctionApi.Races.Functions;
 
 public class UpdateDmcFunction(
     ScrapeDmcRaces dmc,
-    IClubRepository clubRepository,
-    MongoClubRepository mongoClubRepository,
-    MongoRaceRepository repo,
+    IClubFileRepository clubFileRepository,
+    IClubCopyRepository mongoClubRepository,
+    IRaceCompilationRepository repo,
     ILogger<UpdateDmcFunction> logger)
 {
     [Function("update-dmc")]
     public async Task<Results<Ok<RacePageDto>, BadRequest<string>>> Run([HttpTrigger(AuthorizationLevel.Anonymous, "get")] HttpRequest req)
     {
         var clubs = await mongoClubRepository.GetAll("germany");
-        clubRepository.Load(clubs);
+        clubFileRepository.Load(clubs);
         
         var dmcResult = await dmc.Scrape(2026);
         if (dmcResult.IsFailed)

@@ -6,7 +6,7 @@ using RcCloud.DateScraper.Domain.Clubs;
 namespace RcCloud.DateScraper.Cli.Commands;
 
 internal class GermanyCommand(
-    IClubRepository clubRepository,
+    IClubFileRepository clubFileRepository,
     RetrieveAllGermanRaces retrieveAllGerman,
     PrintRaces printer,
     WriteJson writeJson)
@@ -22,7 +22,7 @@ internal class GermanyCommand(
     {
         if (!string.IsNullOrEmpty(ClubDbFile))
         {
-            clubRepository.Load(ClubDbFile);
+            clubFileRepository.Load(ClubDbFile);
         }
         
         var all = await retrieveAllGerman.Retrieve();

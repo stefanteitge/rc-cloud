@@ -6,14 +6,14 @@ using RcCloud.DateScraper.Infrastructure.Common;
 
 namespace RcCloud.DateScraper.Infrastructure.Races;
 
-public class MongoRaceRepository(
+internal class MongoRaceCompilationRepository(
     IConfiguration configuration,
-    ILogger<MongoRaceRepository> logger)
-    : MongoBaseRepository<RacesDocument>(configuration, logger)
+    ILogger<MongoRaceCompilationRepository> logger)
+    : MongoBaseRepository<RacesDocument>(configuration, logger), IRaceCompilationRepository
 {
     private static readonly string _collection = "Races";
 
-    public async Task<RacesDocument?> Load(string compilation, string source)
+    public async Task<RaceCompilation?> Load(string compilation, string source)
     {
         var client = GetClient();
 
@@ -25,7 +25,14 @@ public class MongoRaceRepository(
 
         var collection = GetCollection(client, _collection);
 
-        return (await collection.FindAsync(MakeFilter(compilation, source))).FirstOrDefault();
+        var q = (await collection.FindAsync(MakeFilter(compilation, source))).FirstOrDefault();
+
+        if (q is null)
+        {
+            return null;
+        }
+
+        return new RaceCompilation(q.Compilation, q.Compilation, q.Races, DateTimeOffset.Parse(q.LastUpdate));
     }
 
     public async Task<bool> Store(List<RaceMeeting> races, string compilation, string source)

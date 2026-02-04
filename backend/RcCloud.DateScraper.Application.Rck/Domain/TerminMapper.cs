@@ -2,7 +2,7 @@
 using RcCloud.DateScraper.Domain.Regions;
 using RcCloud.DateScraper.Domain.Series;
 
-namespace RcCloud.DateScraper.Application.Rck.SubDomain;
+namespace RcCloud.DateScraper.Application.Rck.Domain;
 
 internal static class TerminMapper
 {

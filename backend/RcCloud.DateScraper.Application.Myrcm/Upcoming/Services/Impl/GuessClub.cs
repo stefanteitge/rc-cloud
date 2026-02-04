@@ -2,7 +2,7 @@
 
 namespace RcCloud.DateScraper.Application.Myrcm.Upcoming.Services.Impl;
 
-internal class GuessClub(IClubRepository repo) : IGuessClub
+internal class GuessClub(IClubFileRepository repo) : IGuessClub
 {
     public Club Guess(string clubName, int myrcmClubNumber, string? raceCountryCode)
     {

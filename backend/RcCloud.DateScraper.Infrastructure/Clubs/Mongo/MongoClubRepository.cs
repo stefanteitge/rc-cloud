@@ -6,10 +6,10 @@ using RcCloud.DateScraper.Infrastructure.Common;
 
 namespace RcCloud.DateScraper.Infrastructure.Clubs.Mongo;
 
-public class MongoClubRepository(
+internal class MongoClubRepository(
     IConfiguration configuration,
     ILogger<MongoClubRepository> logger)
-    : MongoBaseRepository<ClubDbDocument>(configuration, logger)
+    : MongoBaseRepository<ClubDbDocument>(configuration, logger), IClubCopyRepository
 {
     // TODO: this should return something like a ClubReference domain object
     public async Task<List<Club>> GetAll(string compilation)

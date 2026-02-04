@@ -4,7 +4,7 @@ using RcCloud.DateScraper.Domain.Races;
 
 namespace RcCloud.DateScraper.Infrastructure.Races;
 
-public class RacesDocument
+internal class RacesDocument
 {
     public RacesDocument(string compilation, string source, List<RaceMeeting> races, DateTimeOffset lastUpdate)
     {
@@ -19,6 +19,7 @@ public class RacesDocument
 
     public string Compilation { get; set; }
 
+    // TODO: use Node class here
     public List<RaceMeeting> Races { get; set; } = [];
     
     public string LastUpdate { get; set; }

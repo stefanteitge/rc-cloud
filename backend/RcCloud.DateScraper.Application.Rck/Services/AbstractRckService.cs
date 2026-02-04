@@ -1,7 +1,7 @@
 ﻿using System.Globalization;
 using AngleSharp;
 using AngleSharp.Dom;
-using RcCloud.DateScraper.Application.Rck.SubDomain;
+using RcCloud.DateScraper.Application.Rck.Domain;
 using RcCloud.DateScraper.Domain.Races;
 using RcCloud.DateScraper.Domain.Series;
 

@@ -16,16 +16,16 @@ namespace RcCloud.FunctionApi.Races.Functions;
 
 public class UpdateBeneluxFunction(
     ScrapeMyrcmRaces myrcm,
-    IClubRepository clubRepository,
-    MongoClubRepository mongoClubRepository,
-    MongoRaceRepository repo,
+    IClubFileRepository clubFileRepository,
+    IClubCopyRepository mongoClubRepository,
+    IRaceCompilationRepository repo,
     ILogger<UpdateBeneluxFunction> logger)
 {
     [Function("update-benelux")]
     public async Task<IActionResult> Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", "post")] HttpRequest req)
     {
         var clubs = await mongoClubRepository.GetAll("germany");
-        clubRepository.Load(clubs);
+        clubFileRepository.Load(clubs);
         
         var all = new List<RaceMeeting>();
         

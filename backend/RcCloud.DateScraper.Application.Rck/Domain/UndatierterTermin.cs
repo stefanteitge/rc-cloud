@@ -1,4 +1,4 @@
-﻿namespace RcCloud.DateScraper.Application.Rck.SubDomain;
+﻿namespace RcCloud.DateScraper.Application.Rck.Domain;
 
 public class UndatierterTermin
 {

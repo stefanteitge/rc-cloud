@@ -1,12 +1,12 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.Azure.Functions.Worker;
-using RcCloud.DateScraper.Infrastructure.Clubs.Mongo;
+using RcCloud.DateScraper.Domain.Clubs;
 using RcCloud.FunctionApi.Clubs.Dto;
 
 namespace RcCloud.FunctionApi.Clubs.Functions;
 
-public class GetAllClubsFunction(MongoClubRepository repository)
+public class GetAllClubsFunction(IClubCopyRepository repository)
 {
     [Function("clubs")]
     public async Task<Results<Ok<List<ClubDto>>, NotFound>> Run([HttpTrigger(AuthorizationLevel.Anonymous, "get")] HttpRequest req)

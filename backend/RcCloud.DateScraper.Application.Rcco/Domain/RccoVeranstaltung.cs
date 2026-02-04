@@ -2,7 +2,7 @@
 using RcCloud.DateScraper.Domain.Races;
 using RcCloud.DateScraper.Domain.Series;
 
-namespace RcCloud.DateScraper.Application.Rcco;
+namespace RcCloud.DateScraper.Application.Rcco.Domain;
 
 public class RccoVeranstaltung(DateOnly datumEnde, string verein, string laufname, string strecke)
 {

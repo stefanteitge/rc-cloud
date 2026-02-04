@@ -5,6 +5,7 @@ using Microsoft.Extensions.Logging;
 using RcCloud.DateScraper.Application.Myrcm.Common.Domain;
 using RcCloud.DateScraper.Application.Myrcm.Upcoming.Services;
 using RcCloud.DateScraper.Application.Rcco;
+using RcCloud.DateScraper.Application.Rcco.Services;
 using RcCloud.DateScraper.Application.Rck.Services;
 using RcCloud.DateScraper.Domain.Clubs;
 using RcCloud.DateScraper.Domain.Races;
@@ -21,16 +22,16 @@ public class UpdateGermanyFunction(
     ScrapeLrpOffroadRaces lrpOffroad,
     ScrapeMyrcmRaces myrcm,
     ScrapeRcco rcco,
-    IClubRepository clubRepository,
-    MongoClubRepository mongoClubRepository,
-    MongoRaceRepository repo,
+    IClubFileRepository clubFileRepository,
+    IClubCopyRepository mongoClubRepository,
+    IRaceCompilationRepository repo,
     ILogger<UpdateGermanyFunction> logger)
 {
     [Function("update-germany")]
     public async Task<IActionResult> Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", "post")] HttpRequest req)
     {
         var clubs = await mongoClubRepository.GetAll("germany");
-        clubRepository.Load(clubs);
+        clubFileRepository.Load(clubs);
         
         var all = new List<RaceMeeting>();
 

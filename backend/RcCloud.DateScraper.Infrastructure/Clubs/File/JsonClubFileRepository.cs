@@ -1,21 +1,21 @@
-﻿using System.Text.Json;
+﻿using System.Net.Http.Json;
+using System.Text.Json;
 using RcCloud.DateScraper.Domain.Clubs;
 using RcCloud.DateScraper.Domain.Regions;
-using RcCloud.DateScraper.Infrastructure.Clubs.Mongo;
 
-namespace RcCloud.DateScraper.Infrastructure.Clubs.Json;
+namespace RcCloud.DateScraper.Infrastructure.Clubs.File;
 
-public class JsonClubRepository : IClubRepository
+public class JsonClubFileRepository : IClubFileRepository
 {
     private static readonly ClubJson[] _seed = [
-        Make("AMC Magdeburg e.V.", [], RegionReference.East),
-        Make("MC Ettlingen e.V.", [], RegionReference.Central),
-        Make("MC Munster e.V.", [], RegionReference.North),
-        Make("MCC Rhein-Ahr e.V.", ["MCC Rhein-Ahr e.V"], RegionReference.West),
-        Make("MRC-Leipzig e.V.", [], RegionReference.East),
-        Make("Modellclub Flensburg e.V.", ["Modellclub Flensburg e. V."], RegionReference.North),
-        Make("ORC-B Göttingen e.V.", [], RegionReference.North),
-        Make("RC Speedracer e.V.", ["RC Speedracer e.V. OV-055"], RegionReference.East),
+        // Make("AMC Magdeburg e.V.", [], RegionReference.East),
+        // Make("MC Ettlingen e.V.", [], RegionReference.Central),
+        // Make("MC Munster e.V.", [], RegionReference.North),
+        // Make("MCC Rhein-Ahr e.V.", ["MCC Rhein-Ahr e.V"], RegionReference.West),
+        // Make("MRC-Leipzig e.V.", [], RegionReference.East),
+        // Make("Modellclub Flensburg e.V.", ["Modellclub Flensburg e. V."], RegionReference.North),
+        // Make("ORC-B Göttingen e.V.", [], RegionReference.North),
+        // Make("RC Speedracer e.V.", ["RC Speedracer e.V. OV-055"], RegionReference.East),
     ];
 
     private ClubDbJsonRoot _clubDb = new ClubDbJsonRoot(_seed.ToList(), DateTimeOffset.Now, "germany");
@@ -44,7 +44,22 @@ public class JsonClubRepository : IClubRepository
 
         _clubDb = loaded;
     }
-    
+
+    public async Task LoadFromGithub()
+    {
+        var client = new HttpClient();
+        
+        var db = await client.GetFromJsonAsync<ClubDbJsonRoot>(
+            "https://raw.githubusercontent.com/stefanteitge/rc-cloud/refs/heads/main/db/club-db.json");
+
+        if (db is null)
+        {
+            return;
+        }
+
+        _clubDb = db;
+    }
+
     public void Store(string path)
     {
         var options = new JsonSerializerOptions(JsonSerializerOptions.Web)
@@ -56,7 +71,7 @@ public class JsonClubRepository : IClubRepository
         var db = new ClubDbJsonRoot(_clubDb.Clubs.OrderBy(c => c.Name).ToList(), DateTimeOffset.Now, "germany");
         
         var bytes = JsonSerializer.SerializeToUtf8Bytes(db, options);
-        File.WriteAllBytes(path, bytes);
+        System.IO.File.WriteAllBytes(path, bytes);
     }
 
     public void Update(Club update)

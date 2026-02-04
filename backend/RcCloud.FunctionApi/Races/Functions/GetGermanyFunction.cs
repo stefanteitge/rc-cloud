@@ -1,17 +1,18 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.Azure.Functions.Worker;
+using RcCloud.DateScraper.Domain.Races;
 using RcCloud.DateScraper.Infrastructure.Races;
 using RcCloud.FunctionApi.Races.Dto;
 
 namespace RcCloud.FunctionApi.Races.Functions;
 
-public class GetGermanyFunction(MongoRaceRepository repository)
+public class GetGermanyFunction(IRaceCompilationRepository compilationRepository)
 {
     [Function("germany")]
     public async Task<Results<Ok<RacePageDto>, NotFound>> Run([HttpTrigger(AuthorizationLevel.Anonymous, "get")] HttpRequest req)
     {
-        var racesDocument = await repository.Load("germany", "aggregate");
+        var racesDocument = await compilationRepository.Load("germany", "aggregate");
 
         if (racesDocument is null)
         {
@@ -23,7 +24,7 @@ public class GetGermanyFunction(MongoRaceRepository repository)
         string? lastDmcUpdate = null;
         if (!hasDmc)
         {
-            var dmcDocument = await repository.Load("germany", "dmc");
+            var dmcDocument = await compilationRepository.Load("germany", "dmc");
 
             if (dmcDocument is not null)
             {

@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using RcCloud.DateScraper.Domain.Clubs;
-using RcCloud.DateScraper.Infrastructure.Clubs;
-using RcCloud.DateScraper.Infrastructure.Clubs.Json;
+using RcCloud.DateScraper.Domain.Races;
+using RcCloud.DateScraper.Infrastructure.Clubs.File;
 using RcCloud.DateScraper.Infrastructure.Clubs.Mongo;
 using RcCloud.DateScraper.Infrastructure.Races;
 
@@ -12,8 +12,8 @@ public static class InfrastructureLayer
     public static IServiceCollection AddInfrastructure(this IServiceCollection services)
     {
         return services
-            .AddScoped<IClubRepository, JsonClubRepository>()
-            .AddScoped<MongoRaceRepository>()
-            .AddScoped<MongoClubRepository>();
+            .AddScoped<IClubFileRepository, JsonClubFileRepository>()
+            .AddScoped<IRaceCompilationRepository, MongoRaceCompilationRepository>()
+            .AddScoped<IClubCopyRepository, MongoClubRepository>();
     }
 }

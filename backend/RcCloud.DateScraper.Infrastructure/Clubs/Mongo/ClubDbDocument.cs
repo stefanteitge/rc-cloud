@@ -1,6 +1,5 @@
 ﻿using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
-using RcCloud.DateScraper.Infrastructure.Clubs.Json;
 
 namespace RcCloud.DateScraper.Infrastructure.Clubs.Mongo;
 

@@ -1,7 +1,7 @@
 ﻿using RcCloud.DateScraper.Domain.Clubs;
 using RcCloud.DateScraper.Domain.Regions;
 
-namespace RcCloud.DateScraper.Infrastructure.Clubs.Json;
+namespace RcCloud.DateScraper.Infrastructure.Clubs.File;
 
 public class ClubJson(
     string name,

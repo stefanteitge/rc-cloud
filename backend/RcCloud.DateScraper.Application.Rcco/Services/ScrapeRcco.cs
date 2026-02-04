@@ -1,10 +1,9 @@
 ﻿using System.Globalization;
 using HtmlAgilityPack;
-using RcCloud.DateScraper.Application.Rcco.Services;
-using RcCloud.DateScraper.Domain.Clubs;
+using RcCloud.DateScraper.Application.Rcco.Domain;
 using RcCloud.DateScraper.Domain.Races;
 
-namespace RcCloud.DateScraper.Application.Rcco;
+namespace RcCloud.DateScraper.Application.Rcco.Services;
 
 public class ScrapeRcco(IGuessClub guessClub)
 {
