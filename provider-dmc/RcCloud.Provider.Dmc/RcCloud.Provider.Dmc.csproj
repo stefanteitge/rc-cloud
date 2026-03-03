@@ -13,9 +13,4 @@
     <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="9.0.3" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\..\provider-dmc\RcCloud.Provider.Dmc\RcCloud.Provider.Dmc.csproj" />
-    <ProjectReference Include="..\RcCloud.DateScraper.Domain\RcCloud.DateScraper.Domain.csproj" />
-  </ItemGroup>
-
 </Project>

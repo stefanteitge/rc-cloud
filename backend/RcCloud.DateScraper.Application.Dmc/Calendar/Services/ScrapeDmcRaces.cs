@@ -1,10 +1,12 @@
 ﻿using FluentResults;
-using RcCloud.DateScraper.Application.Dmc.Calendar.Domain;
-using RcCloud.DateScraper.Application.Dmc.Common.Domain;
 using RcCloud.DateScraper.Domain.Clubs;
 using RcCloud.DateScraper.Domain.Races;
 using RcCloud.DateScraper.Domain.Regions;
 using RcCloud.DateScraper.Domain.Series;
+using RcCloud.Provider.Dmc.Calendar.Domain;
+using RcCloud.Provider.Dmc.Calendar.Services;
+using RcCloud.Provider.Dmc.Common.Domain;
+using SeriesReference = RcCloud.DateScraper.Domain.Series.SeriesReference;
 
 namespace RcCloud.DateScraper.Application.Dmc.Calendar.Services;
 
@@ -79,8 +81,8 @@ public class ScrapeDmcRaces(DownloadDmcCalendar download, IClubFileRepository cl
             }
         }
         
-        return new(
-            guessSeries.Guess(entry),
+        return new RaceMeeting(
+            guessSeries.Guess(entry).Select(s => new SeriesReference(s.Id)).ToArray(),
             SeasonReference.Current,
             entry.Ende,
             club.Name,
@@ -93,27 +95,27 @@ public class ScrapeDmcRaces(DownloadDmcCalendar download, IClubFileRepository cl
 
     private string ComputeTitle(DmcCalendarEntry entry)
     {
-        if (entry.IsSportkreismeisterschaft())
+        if (entry.Praedikat.IsSportkreismeisterschaft())
         {
             return "SM-Lauf";
         }
         
-        if (entry.IsFreundschaftsrennen())
+        if (entry.Praedikat.IsFreundschaftsrennen())
         {
             return "Freundschaftsrennen";
         }
         
-        if (entry.IsDeutscheMeisterschaft())
+        if (entry.Praedikat.IsDeutscheMeisterschaft())
         {
             return "Deutsche Meisterschaft";
         }
         
-        if (entry.IsShCup())
+        if (entry.Praedikat.IsShCup())
         {
             return "SH-Cup";
         }
         
-        if (entry.IsTamiyaEurocup())
+        if (entry.Praedikat.IsTamiyaEurocup())
         {
             return "Tamiya Eurocup";
         }
@@ -123,27 +125,27 @@ public class ScrapeDmcRaces(DownloadDmcCalendar download, IClubFileRepository cl
 
     private List<RegionReference> ComputeRegions(DmcCalendarEntry a)
     {
-        if (a.IsRegionMeeting(DmcRegion.Central))
+        if (a.Praedikat.IsRegionMeeting(DmcRegion.Central))
         {
             return [RegionReference.Central];
         }
 
-        if (a.IsRegionMeeting(DmcRegion.North))
+        if (a.Praedikat.IsRegionMeeting(DmcRegion.North))
         {
             return [RegionReference.North];
         }
 
-        if (a.IsRegionMeeting(DmcRegion.West))
+        if (a.Praedikat.IsRegionMeeting(DmcRegion.West))
         {
             return [RegionReference.West];
         }
 
-        if (a.IsRegionMeeting(DmcRegion.South))
+        if (a.Praedikat.IsRegionMeeting(DmcRegion.South))
         {
             return [RegionReference.South];
         }
 
-        if (a.IsRegionMeeting(DmcRegion.East))
+        if (a.Praedikat.IsRegionMeeting(DmcRegion.East))
         {
             return [RegionReference.East];
         }

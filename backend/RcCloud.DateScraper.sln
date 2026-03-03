@@ -19,8 +19,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RcCloud.DateScraper.Applica
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RcCloud.DateScraper.Application.Dmc", "RcCloud.DateScraper.Application.Dmc\RcCloud.DateScraper.Application.Dmc.csproj", "{2C42E931-64A8-4999-A96A-ECBC9B0C4DAF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RcCloud.DateScraper.Application.Dmc.Tests", "RcCloud.DateScraper.Application.Dmc.Tests\RcCloud.DateScraper.Application.Dmc.Tests.csproj", "{614B2888-0194-43B7-A991-F13716A14130}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
@@ -38,6 +36,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RcCloud.DateScraper.Application.Tamiya.Tests", "RcCloud.DateScraper.Application.Tamiya.Tests\RcCloud.DateScraper.Application.Tamiya.Tests.csproj", "{3A16ECCF-F9C7-4076-8C1E-2626BD4447BF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RcCloud.DateScraper.Application.Tamiya", "RcCloud.DateScraper.Application.Tamiya\RcCloud.DateScraper.Application.Tamiya.csproj", "{0F706B22-75BA-48C3-8DA1-020DD3BC38B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RcCloud.Provider.Dmc", "..\provider-dmc\RcCloud.Provider.Dmc\RcCloud.Provider.Dmc.csproj", "{34DE78E2-7B50-4409-9590-867F170A9E38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RcCloud.Provider.Dmc.Tests", "..\provider-dmc\RcCloud.Provider.Dmc.Tests\RcCloud.Provider.Dmc.Tests.csproj", "{3F87C324-D786-4B25-9109-0DBD6244A9C5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -77,10 +79,6 @@ Global
 		{2C42E931-64A8-4999-A96A-ECBC9B0C4DAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C42E931-64A8-4999-A96A-ECBC9B0C4DAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C42E931-64A8-4999-A96A-ECBC9B0C4DAF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{614B2888-0194-43B7-A991-F13716A14130}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{614B2888-0194-43B7-A991-F13716A14130}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{614B2888-0194-43B7-A991-F13716A14130}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{614B2888-0194-43B7-A991-F13716A14130}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CF93D3B5-6DA0-487E-A268-EE424E4D5425}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CF93D3B5-6DA0-487E-A268-EE424E4D5425}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF93D3B5-6DA0-487E-A268-EE424E4D5425}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -105,6 +103,14 @@ Global
 		{0F706B22-75BA-48C3-8DA1-020DD3BC38B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F706B22-75BA-48C3-8DA1-020DD3BC38B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F706B22-75BA-48C3-8DA1-020DD3BC38B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34DE78E2-7B50-4409-9590-867F170A9E38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34DE78E2-7B50-4409-9590-867F170A9E38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34DE78E2-7B50-4409-9590-867F170A9E38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34DE78E2-7B50-4409-9590-867F170A9E38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F87C324-D786-4B25-9109-0DBD6244A9C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F87C324-D786-4B25-9109-0DBD6244A9C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F87C324-D786-4B25-9109-0DBD6244A9C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F87C324-D786-4B25-9109-0DBD6244A9C5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

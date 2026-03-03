@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Logging.Abstractions;
-using RcCloud.DateScraper.Application.Dmc.Calendar.Services;
+using RcCloud.Provider.Dmc.Calendar.Services;
 
-namespace RcCloud.DateScraper.Application.Dmc.Tests.Services;
+namespace RcCloud.Provider.Dmc.Tests.Services;
 
 public class DownloadDmcCalendarTests
 {

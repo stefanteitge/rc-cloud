@@ -1,0 +1,55 @@
+﻿{
+  "compilation": "germany",
+  "clubs": [
+    {
+      "name": "„TONISPORT GmbH Modellsport  EOS“",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": null,
+      "myrcmClubNumbers": [2047],
+      "region": null
+    },
+    {
+      "name": "1. Marzahner Racing Club",
+      "aliases": ["1.Marzahner Racing Club"],
+      "countryCode": "de",
+      "dmcClubNumber": 204,
+      "myrcmClubNumbers": [18244],
+      "region": "east"
+    },
+    {
+      "name": "1. MRC Mannheim e.V.",
+      "aliases": ["1.MRC Mannheim", "1.MRC Mannheim e.V."],
+      "countryCode": "de",
+      "dmcClubNumber": 391,
+      "myrcmClubNumbers": [39671],
+      "region": "central"
+    },
+    {
+      "name": "1. VMSC Plauen e.V.",
+      "aliases": [],
+      "countryCode": "de",
+      "dmcClubNumber": 98,
+      "myrcmClubNumbers": [],
+      "region": "east"
+    },
+    {
+      "name": "3 Sesselracer",
+      "aliases": ["3Sesselracer"],
+      "countryCode": "de",
+      "dmcClubNumber": 386,
+      "myrcmClubNumbers": [50568],
+      "region": null
+    },
+    {
+      "name": "AMC Hamm e.V.",
+      "aliases": ["amc Hamm", "AMC Hamm e.V"],
+      "countryCode": "de",
+      "dmcClubNumber": 31,
+      "myrcmClubNumbers": [7771],
+      "region": "west"
+    }
+    // ...existing clubs, merged as above...
+  ]
+}
+

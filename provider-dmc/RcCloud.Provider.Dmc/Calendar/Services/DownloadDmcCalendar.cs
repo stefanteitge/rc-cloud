@@ -1,10 +1,10 @@
-﻿using System.Globalization;
-using FluentResults;
+﻿using FluentResults;
 using HtmlAgilityPack;
 using Microsoft.Extensions.Logging;
-using RcCloud.DateScraper.Application.Dmc.Calendar.Domain;
+using RcCloud.Provider.Dmc.Calendar.Domain;
+using System.Globalization;
 
-namespace RcCloud.DateScraper.Application.Dmc.Calendar.Services;
+namespace RcCloud.Provider.Dmc.Calendar.Services;
 
 public class DownloadDmcCalendar(ILogger<DownloadDmcCalendar> logger)
 {

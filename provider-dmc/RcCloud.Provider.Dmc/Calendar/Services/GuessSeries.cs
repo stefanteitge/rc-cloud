@@ -1,17 +1,16 @@
-﻿using RcCloud.DateScraper.Application.Dmc.Calendar.Domain;
-using RcCloud.DateScraper.Domain.Series;
+﻿using RcCloud.Provider.Dmc.Calendar.Domain;
 
-namespace RcCloud.DateScraper.Application.Dmc.Calendar.Services;
+namespace RcCloud.Provider.Dmc.Calendar.Services;
 
 public class GuessSeries
 {
-    public SeriesReference[] Guess(DmcCalendarEntry entry)
+    public DmcSeriesReference[] Guess(DmcCalendarEntry entry)
     {
-        var seriess = new List<SeriesReference>();
+        var seriess = new List<DmcSeriesReference>();
         
         if (entry.BemerkungLauf.Contains("TOS"))
         {
-            seriess.Add(SeriesReference.Tonisport);;    
+            seriess.Add(DmcSeriesReference.Tonisport);;    
         }
         
         if (entry.BemerkungLauf.Contains("Elbe Cup"))
@@ -24,19 +23,19 @@ public class GuessSeries
             seriess.Add(new("letrophy"));    
         }
 
-        if (entry.IsSportkreismeisterschaft())
+        if (entry.Praedikat.IsSportkreismeisterschaft())
         {
             seriess.Add(new("dmc-sm"));
         }
         
-        if (entry.IsDeutscheMeisterschaft())
+        if (entry.Praedikat.IsDeutscheMeisterschaft())
         {
             seriess.Add(new("dmc-dm"));
         }
         
-        if (entry.IsTamiyaEurocup())
+        if (entry.Praedikat.IsTamiyaEurocup())
         {
-            seriess.Add(SeriesReference.Tamiya);
+            seriess.Add(DmcSeriesReference.Tamiya);
         }
 
         

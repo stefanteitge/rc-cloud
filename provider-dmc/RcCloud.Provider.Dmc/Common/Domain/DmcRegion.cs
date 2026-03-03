@@ -1,8 +1,8 @@
-﻿namespace RcCloud.DateScraper.Application.Dmc.Common.Domain;
+﻿namespace RcCloud.Provider.Dmc.Common.Domain;
 
 public enum DmcRegion
 {
-    Unkown = 0,
+    Unknown = 0,
     Central = 1,
     North = 2,
     West = 3,
