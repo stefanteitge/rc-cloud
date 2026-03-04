@@ -56,7 +56,7 @@ jobs:
 
       - name: Test DMC
         run: dotnet test
-        working-directory: backend/RcCloud.DateScraper.Application.Dmc.Tests
+        working-directory: provider-dmc/RcCloud.Provider.Dmc.Tests
 
       - name: Test Myrcm
         run: dotnet test

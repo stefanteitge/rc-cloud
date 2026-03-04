@@ -22,3 +22,11 @@
   padding-left: 10px;
   padding-right: 10px;
 }
+
+.nav-pills .nav-link.active {
+  background-color: #6c757d;
+}
+
+.nav-pills .nav-link:not(.active):hover {
+  color: #adb5bd;
+}
