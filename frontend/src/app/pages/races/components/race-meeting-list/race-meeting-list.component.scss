@@ -5,6 +5,13 @@
   margin-right: 20px;
 
   table {
+    thead {
+      position: sticky;
+      top: 0;
+      z-index: 1;
+      background-color: var(--bs-body-bg, white);
+    }
+
     td {
       padding: 0.5em;
       max-width: 150px;
