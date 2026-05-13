@@ -6,7 +6,6 @@ WORKDIR /src
 
 COPY backend/RcCloud.DateScraper.Domain/RcCloud.DateScraper.Domain.csproj backend/RcCloud.DateScraper.Domain/
 COPY backend/RcCloud.DateScraper.Infrastructure/RcCloud.DateScraper.Infrastructure.csproj backend/RcCloud.DateScraper.Infrastructure/
-COPY backend/RcCloud.DateScraper.Application.Common/RcCloud.DateScraper.Application.Common.csproj backend/RcCloud.DateScraper.Application.Common/
 COPY backend/RcCloud.DateScraper.Application/RcCloud.DateScraper.Application.csproj backend/RcCloud.DateScraper.Application/
 COPY backend/RcCloud.DateScraper.Application.Dmc/RcCloud.DateScraper.Application.Dmc.csproj backend/RcCloud.DateScraper.Application.Dmc/
 COPY backend/RcCloud.DateScraper.Application.Myrcm/RcCloud.DateScraper.Application.Myrcm.csproj backend/RcCloud.DateScraper.Application.Myrcm/
