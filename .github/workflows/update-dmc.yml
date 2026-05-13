@@ -1,7 +1,7 @@
 name: "Update DMC races"
 on:
-  #schedule:
-  #  - cron: "0 1 * * *" # every monday
+  schedule:
+    - cron: "0 1 * * *" # every monday
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -18,5 +18,5 @@ jobs:
     - name: Make Request
       uses: fjogeleit/http-request-action@v1
       with:
-        url: "https://rc-cloud.de/api/update-dmc"
+        url: "https://api.rc-cloud.de/update-dmc"
         timeout: 30000
