@@ -23,7 +23,7 @@ builder.Services
 
 var app = builder.Build();
 
-app.MapGet("/api/germany", async (IRaceCompilationRepository compilationRepository) =>
+app.MapGet("/germany", async (IRaceCompilationRepository compilationRepository) =>
 {
     var racesDocument = await compilationRepository.Load("germany", "aggregate");
 
@@ -49,7 +49,7 @@ app.MapGet("/api/germany", async (IRaceCompilationRepository compilationReposito
     return Results.Ok(RacePageDto.FromRaces(races, RacePageDto.GermanyRegions, racesDocument.LastUpdate, lastDmcUpdate));
 });
 
-app.MapGet("/api/benelux", async (IRaceCompilationRepository compilationRepository) =>
+app.MapGet("/benelux", async (IRaceCompilationRepository compilationRepository) =>
 {
     var racesDocument = await compilationRepository.Load("benelux", "aggregate");
 
@@ -62,7 +62,7 @@ app.MapGet("/api/benelux", async (IRaceCompilationRepository compilationReposito
     return Results.Ok(RacePageDto.FromRaces(races, RacePageDto.BeneluxCategories, racesDocument.LastUpdate, null));
 });
 
-app.MapMethods("/api/update-germany", ["GET", "POST"], async (
+app.MapMethods("/update-germany", ["GET", "POST"], async (
     ScrapeChallengeRaces challenge,
     ScrapeKleinserieRaces kleinserie,
     ScrapeLrpOffroadRaces lrpOffroad,
@@ -106,7 +106,7 @@ app.MapMethods("/api/update-germany", ["GET", "POST"], async (
     return Results.Ok(RacePageDto.FromRaces(all, RacePageDto.GermanyRegions, DateTimeOffset.Now.ToString(), null));
 });
 
-app.MapGet("/api/update-dmc", async (
+app.MapGet("/update-dmc", async (
     ScrapeDmcRaces dmc,
     IClubFileRepository clubFileRepository,
     IClubCopyRepository mongoClubRepository,
@@ -128,7 +128,7 @@ app.MapGet("/api/update-dmc", async (
     return Results.Ok(RacePageDto.FromRaces(dmcResult.Value, RacePageDto.GermanyRegions, DateTimeOffset.Now.ToString(), DateTimeOffset.Now.ToString()));
 });
 
-app.MapMethods("/api/update-benelux", ["GET", "POST"], async (
+app.MapMethods("/update-benelux", ["GET", "POST"], async (
     ScrapeMyrcmRaces myrcm,
     IClubFileRepository clubFileRepository,
     IClubCopyRepository mongoClubRepository,
@@ -151,7 +151,7 @@ app.MapMethods("/api/update-benelux", ["GET", "POST"], async (
     return Results.Ok(RacePageDto.FromRaces(all, RacePageDto.BeneluxCategories, DateTimeOffset.Now.ToString(), null));
 });
 
-app.MapGet("/api/update-clubs", async (
+app.MapGet("/update-clubs", async (
     IClubFileRepository fileRepo,
     IClubCopyRepository repo,
     ILogger<Program> logger) =>
@@ -169,7 +169,7 @@ app.MapGet("/api/update-clubs", async (
     return Results.Ok(clubs.Select(ClubDto.FromDomain).ToList());
 });
 
-app.MapGet("/api/clubs", async (IClubCopyRepository repository) =>
+app.MapGet("/clubs", async (IClubCopyRepository repository) =>
 {
     var clubs = await repository.GetAll("germany");
     return Results.Ok(clubs.Select(ClubDto.FromDomain).ToList());
