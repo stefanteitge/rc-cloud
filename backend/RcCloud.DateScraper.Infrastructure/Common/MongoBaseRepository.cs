@@ -18,7 +18,6 @@ public class MongoBaseRepository<T>(IConfiguration configuration, ILogger logger
         }
 
         var settings = MongoClientSettings.FromConnectionString(connectionUri);
-        settings.ServerApi = new ServerApi(ServerApiVersion.V1);
         return new MongoClient(settings);
     }
 
