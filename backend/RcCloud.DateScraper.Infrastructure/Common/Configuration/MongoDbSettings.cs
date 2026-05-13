@@ -6,4 +6,5 @@ public class MongoDbSettings
     public string DatabaseName { get; set; } = string.Empty;
     public string? Username { get; set; }
     public string? Password { get; set; }
+    public string AuthSource { get; set; } = "admin";
 }
