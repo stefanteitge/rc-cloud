@@ -5,13 +5,6 @@ env:
   API_LOCATION: "backend/RcCloud.FunctionApi/bin/Debug/net9.0" # location of your client code
 
 on:
-  push:
-    branches:
-      - 'main'
-    paths:
-      - 'backend/**'
-      - 'frontend/**'
-
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
