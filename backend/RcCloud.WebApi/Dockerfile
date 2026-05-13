@@ -1,7 +1,7 @@
 # Build context: repo root
 # Usage: docker build -f backend/RcCloud.WebApi/Dockerfile -t rc-cloud-webapi .
 
-FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
+FROM mcr.microsoft.com/dotnet/sdk:10.0 AS build
 WORKDIR /src
 
 COPY backend/RcCloud.DateScraper.Domain/RcCloud.DateScraper.Domain.csproj backend/RcCloud.DateScraper.Domain/
@@ -24,7 +24,7 @@ RUN dotnet publish backend/RcCloud.WebApi/RcCloud.WebApi.csproj \
     -o /app/publish \
     --no-restore
 
-FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS runtime
+FROM mcr.microsoft.com/dotnet/aspnet:10.0 AS runtime
 WORKDIR /app
 
 COPY --from=build /app/publish .
