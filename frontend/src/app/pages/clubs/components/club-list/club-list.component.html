@@ -1,16 +1,14 @@
-<table class="table">
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>DMC Clubnummer</th>
-    </tr>
-  </thead>
-  @for (club of repo.clubs(); track club.name) {
-    <tbody>
-      <tr>
-        <td>{{ club.name }}</td>
-        <td>{{ club.dmcClubNumber }}</td>
-      </tr>
-    </tbody>
-  }
-</table>
+<div class="page-container">
+  <table mat-table [dataSource]="repo.clubs()" class="mat-elevation-z2">
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef>Name</th>
+      <td mat-cell *matCellDef="let club">{{ club.name }}</td>
+    </ng-container>
+    <ng-container matColumnDef="dmcClubNumber">
+      <th mat-header-cell *matHeaderCellDef>DMC Clubnummer</th>
+      <td mat-cell *matCellDef="let club">{{ club.dmcClubNumber }}</td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+</div>

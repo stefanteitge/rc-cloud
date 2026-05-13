@@ -1,36 +1,44 @@
 <div class="page-container">
-  <ngb-alert [dismissible]="false"> <strong>Letztes Update</strong> {{ getLastUpdateDate() }} </ngb-alert>
-
-  <table class="table table-striped-columns">
-    <thead>
-      <tr>
-        <th scope="col">Datum</th>
-        @for (regionId of displayColumns(); track regionId) {
-          <th scope="col">{{ regionId }}</th>
-        }
-      </tr>
-    </thead>
-    <tbody>
-      @for (upcomingDate of getAllDates(); track upcomingDate.dateEnd) {
+  @if (lastUpdate()) {
+    <p class="last-update mat-body-2"><strong>Letztes Update:</strong> {{ getLastUpdateDate() }}</p>
+  }
+  <div class="table-wrapper mat-elevation-z2">
+    <table class="race-table">
+      <thead>
         <tr>
-          <th scope="row">{{ upcomingDate.dateEnd }}</th>
-
+          <th class="date-col">Datum</th>
           @for (regionId of displayColumns(); track regionId) {
-            <td>
-              @for (race of getRacesFromDate(upcomingDate, regionId); track race.location) {
-                <div class="meeting-box">
-                  <div class="title">{{ race.title }}</div>
-                  {{ race.location }}
-                  @for (series of race.series; track series) {
-                    <span class="badge-source">{{ series.id }}</span>
-                  }
-                  <div *ngIf="race.source" class="source">Quelle: {{ race.source }}</div>
-                </div>
-              }
-            </td>
+            <th>{{ regionId }}</th>
           }
         </tr>
-      }
-    </tbody>
-  </table>
+      </thead>
+      <tbody>
+        @for (upcomingDate of getAllDates(); track upcomingDate.dateEnd) {
+          <tr>
+            <td class="date-col"><strong>{{ upcomingDate.dateEnd }}</strong></td>
+            @for (regionId of displayColumns(); track regionId) {
+              <td>
+                @for (race of getRacesFromDate(upcomingDate, regionId); track race.location) {
+                  <div class="meeting-box">
+                    <div class="meeting-title">{{ race.title }}</div>
+                    <div class="meeting-location">{{ race.location }}</div>
+                    @if (race.series.length > 0) {
+                      <mat-chip-set>
+                        @for (series of race.series; track series.id) {
+                          <mat-chip>{{ series.id }}</mat-chip>
+                        }
+                      </mat-chip-set>
+                    }
+                    @if (race.source) {
+                      <div class="meeting-source">Quelle: {{ race.source }}</div>
+                    }
+                  </div>
+                }
+              </td>
+            }
+          </tr>
+        }
+      </tbody>
+    </table>
+  </div>
 </div>

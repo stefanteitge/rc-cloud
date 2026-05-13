@@ -1,33 +1,59 @@
-@use 'bootstrap';
-
 .page-container {
-  margin-left: 20px;
-  margin-right: 20px;
+  padding: 16px;
 
-  table {
+  .last-update {
+    margin-bottom: 16px;
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  .table-wrapper {
+    overflow-x: auto;
+    border-radius: 4px;
+  }
+
+  .race-table {
+    width: 100%;
+    border-collapse: collapse;
+
+    th,
     td {
-      padding: 0.5em;
-      max-width: 150px;
+      padding: 8px 12px;
+      text-align: left;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+      vertical-align: top;
+    }
+
+    th {
+      background-color: rgba(0, 0, 0, 0.04);
+      font-weight: 500;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    td {
+      max-width: 180px;
     }
   }
 
   .meeting-box {
-    @extend .mb-2;
-    width: 100%;
-    overflow: clip;
+    margin-bottom: 8px;
+    overflow: hidden;
 
-    .title {
-      @extend .fs-5;
+    .meeting-title {
+      font-size: 1rem;
+      font-weight: 500;
     }
 
-    .badge-source {
-      @extend .badge;
-      @extend .text-bg-primary;
-      @extend .me-1;
+    .meeting-location {
+      font-size: 0.875rem;
+      color: rgba(0, 0, 0, 0.7);
     }
 
-    .source {
-      @extend .text-secondary;
+    .meeting-source {
+      font-size: 0.75rem;
+      color: rgba(0, 0, 0, 0.5);
     }
   }
 }

@@ -1,12 +1,11 @@
 import { Component, input } from '@angular/core';
 import { RaceMeetingRepository } from '../../../../shared/race-meeting/repositories/race-meeting.repository';
 import { RaceDateDto, UpcomingRace } from '../../../../shared/race-meeting/dtos/race-date.dto';
-import { NgbAlert } from '@ng-bootstrap/ng-bootstrap';
-import { NgIf } from '@angular/common';
+import { MatChipsModule } from '@angular/material/chips';
 
 @Component({
   selector: 'app-race-meeting-list',
-  imports: [NgbAlert, NgIf],
+  imports: [MatChipsModule],
   templateUrl: './race-meeting-list.component.html',
   styleUrl: './race-meeting-list.component.scss',
   providers: [RaceMeetingRepository],
