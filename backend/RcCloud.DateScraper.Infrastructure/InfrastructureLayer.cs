@@ -23,7 +23,7 @@ public static class InfrastructureLayer
         if (!string.IsNullOrWhiteSpace(mongoSettings.Username) && !string.IsNullOrWhiteSpace(mongoSettings.Password))
         {
             mongoClientSettings.Credential = MongoCredential.CreateCredential(
-                databaseName: "rccloud_api",
+                databaseName: mongoSettings.AuthSource,
                 username: mongoSettings.Username,
                 password: mongoSettings.Password);
         }
