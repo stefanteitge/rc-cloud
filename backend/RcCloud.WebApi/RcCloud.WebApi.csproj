@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>RcCloud.WebApi</RootNamespace>
+    <UserSecretsId>665dfdb6-4bb4-44fd-9a69-d656a31393d1</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RcCloud.DateScraper.Application\RcCloud.DateScraper.Application.csproj" />
+    <ProjectReference Include="..\RcCloud.DateScraper.Domain\RcCloud.DateScraper.Domain.csproj" />
+    <ProjectReference Include="..\RcCloud.DateScraper.Infrastructure\RcCloud.DateScraper.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
