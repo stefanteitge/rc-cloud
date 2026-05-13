@@ -7,22 +7,14 @@ using RcCloud.DateScraper.Infrastructure.Common;
 namespace RcCloud.DateScraper.Infrastructure.Races;
 
 internal class MongoRaceCompilationRepository(
-    IConfiguration configuration,
+    IMongoClient client,
     ILogger<MongoRaceCompilationRepository> logger)
-    : MongoBaseRepository<RacesDocument>(configuration, logger), IRaceCompilationRepository
+    : MongoBaseRepository<RacesDocument>(), IRaceCompilationRepository
 {
     private static readonly string _collection = "Races";
 
     public async Task<RaceCompilation?> Load(string compilation, string source)
     {
-        var client = GetClient();
-
-        if (client is null)
-        {
-            logger.LogError("Cannot create Mongo client. Cannot load.");
-            return null;
-        }
-
         var collection = GetCollection(client, _collection);
 
         var q = (await collection.FindAsync(MakeFilter(compilation, source))).FirstOrDefault();
@@ -37,14 +29,6 @@ internal class MongoRaceCompilationRepository(
 
     public async Task<bool> Store(List<RaceMeeting> races, string compilation, string source)
     {
-        var client = GetClient();
-
-        if (client is null)
-        {
-            logger.LogError("Cannot create Mongo client. Cannot store.");
-            return false;
-        }
-        
         try
         {
             var document = new RacesDocument(compilation, source, races, DateTimeOffset.Now);

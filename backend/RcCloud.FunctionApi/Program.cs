@@ -15,7 +15,7 @@ builder.Configuration.AddEnvironmentVariables().AddUserSecrets(Assembly.GetExecu
 
 // Application Insights isn't enabled by default. See https://aka.ms/AAt8mw4.
 builder.Services
-    .AddInfrastructure()
+    .AddInfrastructure(builder.Configuration)
     .AddApplicationInsightsTelemetryWorkerService()
     .ConfigureFunctionsApplicationInsights()
     .AddScraping();

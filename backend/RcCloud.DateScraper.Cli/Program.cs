@@ -14,7 +14,7 @@ await new HostBuilder()
     .ConfigureServices((context, services) =>
     {
         services
-            .AddInfrastructure()
+            .AddInfrastructure(context.Configuration)
             .AddSingleton<PrintRaces>()
             .AddTransient<WriteJson>()
             .AddScraping()

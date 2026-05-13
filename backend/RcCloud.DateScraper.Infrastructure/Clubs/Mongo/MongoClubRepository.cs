@@ -1,5 +1,4 @@
-﻿using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Logging;
+﻿using Microsoft.Extensions.Logging;
 using MongoDB.Driver;
 using RcCloud.DateScraper.Domain.Clubs;
 using RcCloud.DateScraper.Infrastructure.Common;
@@ -7,21 +6,13 @@ using RcCloud.DateScraper.Infrastructure.Common;
 namespace RcCloud.DateScraper.Infrastructure.Clubs.Mongo;
 
 internal class MongoClubRepository(
-    IConfiguration configuration,
+    IMongoClient client,
     ILogger<MongoClubRepository> logger)
-    : MongoBaseRepository<ClubDbDocument>(configuration, logger), IClubCopyRepository
+    : MongoBaseRepository<ClubDbDocument>(), IClubCopyRepository
 {
     // TODO: this should return something like a ClubReference domain object
     public async Task<List<Club>> GetAll(string compilation)
     {
-        var client = GetClient();
-
-        if (client is null)
-        {
-            logger.LogError("Cannot create Mongo client. Cannot load.");
-            return [];
-        }
-
         var collection = GetCollection(client, "Clubs");
 
         var filter = MongoDB.Driver.Builders<ClubDbDocument>.Filter.Eq(r => r.Compilation, compilation);
@@ -37,14 +28,6 @@ internal class MongoClubRepository(
     
     public async Task<bool> Store(List<Club> clubs)
     {
-        var client = GetClient();
-
-        if (client is null)
-        {
-            logger.LogError("Cannot create Mongo client. Cannot store.");
-            return false;
-        }
-        
         try
         {
             var clubs2 = clubs.Select(c => ClubNode.FromDomain(c)).ToList();

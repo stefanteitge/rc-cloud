@@ -5,22 +5,8 @@ using RcCloud.DateScraper.Infrastructure.Races;
 
 namespace RcCloud.DateScraper.Infrastructure.Common;
 
-public class MongoBaseRepository<T>(IConfiguration configuration, ILogger logger)
+public class MongoBaseRepository<T>()
 {
-    protected MongoClient? GetClient()
-    {
-        var connectionUri = configuration.GetConnectionString("Mongo");
-
-        if (string.IsNullOrEmpty(connectionUri))
-        {
-            logger.LogError("Mongo connection string is not set.");
-            return null;
-        }
-
-        var settings = MongoClientSettings.FromConnectionString(connectionUri);
-        return new MongoClient(settings);
-    }
-
-    protected static IMongoCollection<T> GetCollection(MongoClient client, string collection)
+    protected static IMongoCollection<T> GetCollection(IMongoClient client, string collection)
         => client.GetDatabase("RcCloud").GetCollection<T>(collection);
 }

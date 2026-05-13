@@ -1,17 +1,13 @@
 using System.Reflection;
-using Microsoft.AspNetCore.Mvc;
 using RcCloud.DateScraper.Application.Common;
 using RcCloud.DateScraper.Application.Dmc.Calendar.Services;
 using RcCloud.DateScraper.Application.Myrcm.Common.Domain;
 using RcCloud.DateScraper.Application.Myrcm.Upcoming.Services;
-using RcCloud.DateScraper.Application.Rcco;
 using RcCloud.DateScraper.Application.Rcco.Services;
 using RcCloud.DateScraper.Application.Rck.Services;
 using RcCloud.DateScraper.Domain.Clubs;
 using RcCloud.DateScraper.Domain.Races;
 using RcCloud.DateScraper.Infrastructure;
-using RcCloud.DateScraper.Infrastructure.Clubs.Mongo;
-using RcCloud.DateScraper.Infrastructure.Races;
 using RcCloud.WebApi.Clubs.Dto;
 using RcCloud.WebApi.Races.Dto;
 
@@ -22,7 +18,7 @@ builder.Configuration
     .AddUserSecrets(Assembly.GetExecutingAssembly(), optional: true);
 
 builder.Services
-    .AddInfrastructure()
+    .AddInfrastructure(builder.Configuration)
     .AddScraping();
 
 var app = builder.Build();
