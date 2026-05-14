@@ -8,6 +8,7 @@ public class DownloadDmcCalendarTests
     [Theory]
     [InlineData("dmc_2021_2021-10-11", 210)]
     [InlineData("dmc_2025_2025-04-09", 228)]
+    [InlineData("dmc_2026_2026-05-14", 282)]
     public async Task TestScrapeRaw(string fileName, int count)
     {
         var scraper = new DownloadDmcCalendar(new NullLogger<DownloadDmcCalendar>());

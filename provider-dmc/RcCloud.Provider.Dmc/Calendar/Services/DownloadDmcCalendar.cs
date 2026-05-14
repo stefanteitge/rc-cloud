@@ -97,10 +97,14 @@ public class DownloadDmcCalendar(ILogger<DownloadDmcCalendar> logger)
             {
                 continue;
             }
+
+            var beginn = cells[0].InnerText;
+            var ende = cells[1].InnerText;
+            var isEndeKaputt = ende == "00.00.0000";
             
             var evt = new DmcCalendarEntry(
-                ParseDate(cells[0].InnerText),
-                ParseDate(cells[1].InnerText),
+                ParseDate(beginn),
+                isEndeKaputt ? ParseDate(beginn) : ParseDate(ende),
                 cells[2].InnerText,
                 cells[3].ChildNodes.Where(n => n.NodeType == HtmlNodeType.Text).Select(n => n.InnerText).ToArray(),
                 ParseClubNo(cells[4].InnerText),
