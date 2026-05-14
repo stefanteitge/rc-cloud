@@ -56,4 +56,4 @@ nunit-*.xml
 .vscode/
 .idea/
 .vs/
-.user
+*.user
