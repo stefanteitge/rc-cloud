@@ -1,0 +1,110 @@
+<div class="calculator-page">
+  <h1>Gearing Calculator</h1>
+  <p class="subtitle">Calculate final drive ratios for all spur / pinion combinations.</p>
+
+  <mat-card class="inputs-card">
+    <mat-card-content>
+      <div class="inputs-grid">
+
+        <div class="input-group">
+          <h3>Spur Gear (teeth)</h3>
+          <div class="range-row">
+            <mat-form-field appearance="outline">
+              <mat-label>Min</mat-label>
+              <input matInput type="number" min="1" [ngModel]="spurMin()" (ngModelChange)="spurMin.set(+$event)" />
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+              <mat-label>Max</mat-label>
+              <input matInput type="number" min="1" [ngModel]="spurMax()" (ngModelChange)="spurMax.set(+$event)" />
+            </mat-form-field>
+          </div>
+        </div>
+
+        <div class="input-group">
+          <h3>Pinion Gear (teeth)</h3>
+          <div class="range-row">
+            <mat-form-field appearance="outline">
+              <mat-label>Min</mat-label>
+              <input matInput type="number" min="1" [ngModel]="pinionMin()" (ngModelChange)="pinionMin.set(+$event)" />
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+              <mat-label>Max</mat-label>
+              <input matInput type="number" min="1" [ngModel]="pinionMax()" (ngModelChange)="pinionMax.set(+$event)" />
+            </mat-form-field>
+          </div>
+        </div>
+
+        <div class="input-group">
+          <h3>Internal Gearbox Ratio</h3>
+          <div class="range-row">
+            <mat-form-field appearance="outline">
+              <mat-label>Chassis preset</mat-label>
+              <mat-select [ngModel]="selectedPreset()" (ngModelChange)="onPresetChange($event)">
+                @for (preset of presets; track preset.name) {
+                  <mat-option [value]="preset">{{ preset.name }} ({{ preset.ratio }})</mat-option>
+                }
+              </mat-select>
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+              <mat-label>Ratio</mat-label>
+              <input
+                matInput
+                type="number"
+                min="0.01"
+                step="0.01"
+                [ngModel]="internalRatio()"
+                (ngModelChange)="onInternalRatioChange(+$event)"
+              />
+            </mat-form-field>
+          </div>
+        </div>
+
+        <div class="input-group">
+          <h3>Target Final Ratio</h3>
+          <div class="range-row">
+            <mat-form-field appearance="outline">
+              <mat-label>Target ratio</mat-label>
+              <input matInput type="number" min="0.01" step="0.01" [ngModel]="targetRatio()" (ngModelChange)="targetRatio.set(+$event)" />
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+              <mat-label>Tolerance (±)</mat-label>
+              <input matInput type="number" min="0" step="0.01" [ngModel]="tolerance()" (ngModelChange)="tolerance.set(+$event)" />
+            </mat-form-field>
+          </div>
+        </div>
+
+      </div>
+    </mat-card-content>
+  </mat-card>
+
+  @if (matrix().length > 0) {
+    <p class="result-hint">Closest combination(s) to {{ targetRatio() }} highlighted &mdash; columns = spur, rows = pinion</p>
+    <div class="table-wrapper">
+      <table mat-table [dataSource]="matrix()" class="gear-table">
+
+        <!-- Pinion row-header column -->
+        <ng-container matColumnDef="pinion" sticky>
+          <th mat-header-cell *matHeaderCellDef class="pinion-header">Pinion \ Spur</th>
+          <td mat-cell *matCellDef="let row" class="pinion-cell">{{ row.pinion }}</td>
+        </ng-container>
+
+        <!-- Dynamic spur columns -->
+        @for (spur of spurValues(); track spur) {
+          <ng-container [matColumnDef]="'spur-' + spur">
+            <th mat-header-cell *matHeaderCellDef class="ratio-header">{{ spur }}</th>
+            <td mat-cell *matCellDef="let row"
+                [class.closest-cell]="row.cells[spur].isClosest"
+                [class.tolerance-cell]="row.cells[spur].isInTolerance && !row.cells[spur].isClosest">
+              {{ row.cells[spur].ratio | number: '1.2-2' }}
+            </td>
+          </ng-container>
+        }
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns(); sticky: true"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns()"></tr>
+      </table>
+    </div>
+  } @else {
+    <p class="empty-hint">Adjust the ranges above to generate combinations.</p>
+  }
+</div>

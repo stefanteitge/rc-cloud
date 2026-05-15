@@ -2,10 +2,12 @@ import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, RouterLink, RouterLinkActive, MatToolbarModule, MatButtonModule],
+  imports: [RouterOutlet, RouterLink, RouterLinkActive, MatToolbarModule, MatButtonModule, MatMenuModule, MatIconModule],
   template: `
     <mat-toolbar color="primary">
       <div class="brand-nav">
@@ -16,6 +18,12 @@ import { MatButtonModule } from '@angular/material/button';
         <a routerLink="germany" mat-button class="nav-link" routerLinkActive="nav-link-active">Deutschland</a>
         <a routerLink="benelux" mat-button class="nav-link" routerLinkActive="nav-link-active">BeNeLux</a>
         <a routerLink="clubs" mat-button class="nav-link" routerLinkActive="nav-link-active">Clubs</a>
+        <button mat-button class="nav-link" [matMenuTriggerFor]="toolsMenu" routerLinkActive="nav-link-active" [routerLinkActiveOptions]="{ paths: 'subset', queryParams: 'ignored', fragment: 'ignored', matrixParams: 'ignored' }" routerLink="tools">
+          Tools <mat-icon class="menu-arrow">arrow_drop_down</mat-icon>
+        </button>
+        <mat-menu #toolsMenu="matMenu">
+          <a mat-menu-item routerLink="tools/gearing-calculator">Gearing Calculator</a>
+        </mat-menu>
       </div>
       <span class="spacer"></span>
     </mat-toolbar>
@@ -23,7 +31,7 @@ import { MatButtonModule } from '@angular/material/button';
   `,
   styles: [`
     .spacer { flex: 1 1 auto; }
-    .brand-nav { display: flex; align-items: baseline; gap: 4px; }
+    .brand-nav { display: flex; align-items: center; gap: 4px; }
     .brand-link { padding: 0 8px; line-height: normal; }
     .brand-main { font-size: 1.25rem; font-weight: 700; letter-spacing: 0.02em; margin-right: 0.2em; }
     .brand-sub { font-size: 0.85rem; font-weight: 400; opacity: 0.85; }
@@ -32,6 +40,7 @@ import { MatButtonModule } from '@angular/material/button';
     .nav-link:hover { opacity: 1; }
     .nav-link-active { opacity: 1; font-weight: 600; }
     mat-toolbar { position: sticky; top: 0; z-index: 1000; }
+    .menu-arrow { font-size: 18px; height: 18px; width: 18px; vertical-align: middle; }
   `]
 })
 export class AppComponent {}

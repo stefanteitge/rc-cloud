@@ -2,15 +2,14 @@
 
 This is hosted at https://rc-cloud.de.
 
-It retrieves German RC racing dates from [DMC](https://dmc-online.com/), [Myrcm](https://myrcm.ch), [RC Car Online](https://rccar-online.de), [RCK-Kleinserie](https://kleinserie.rck-solutions.de/indexgo.php) and [RCK-Challenge](https://challenge.rck-solutions.de/indexgo.php).
+It aggregates German RC racing dates from [DMC](https://dmc-online.com/), [Myrcm](https://myrcm.ch), [RC Car Online](https://rccar-online.de), [RCK-Kleinserie](https://kleinserie.rck-solutions.de/indexgo.php), [RCK-Challenge](https://challenge.rck-solutions.de/indexgo.php) and [LRP Offroad Series](https://lrp.cc).
 
-At the moment it also has limited support for BeNeLux RC racing dates.
+It also has limited support for BeNeLux RC racing dates.
 
 ## Technical stuff
 
-It is intended to deploy on Azure Static Web App although there should be nothing in the way of hosting it the classic way.
+The frontend is an Angular SPA served as a Docker container (nginx). The backend is an ASP.NET Core Web API (`RcCloud.WebApi`) also deployed as a Docker container. Both images are published to GitHub Container Registry and deployed via webhook.
 
 It uses Domain Driven Design principles and makes effort to create clean and maintainable code.
 
-It uses Angular in the frontend. The backend is C# and Azure Functions. Furthermore a CLI exists for development purposes, but cannot be regarded as stable.
-Data is stored in JSON files and MongoDB.
+Data is stored in MongoDB. The canonical club database lives in `db/club-db.json`.
