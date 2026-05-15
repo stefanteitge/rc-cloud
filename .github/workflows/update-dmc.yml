@@ -12,7 +12,7 @@ jobs:
     steps:
     - uses: actions/checkout@v6
     - name: Make Request
-      uses: fjogeleit/http-request-action@v1
+      uses: fjogeleit/http-request-action@v2
       with:
         method: 'GET'
         url: "https://api.rc-cloud.de/update-dmc"
