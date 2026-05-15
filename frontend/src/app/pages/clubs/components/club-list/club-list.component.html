@@ -1,8 +1,22 @@
 <div class="page-container">
-  <table mat-table [dataSource]="repo.clubs()" class="mat-elevation-z2">
+  <mat-form-field appearance="outline">
+    <mat-label>Region</mat-label>
+    <mat-select [value]="selectedRegion()" (valueChange)="selectedRegion.set($event)">
+      <mat-option [value]="null">Alle</mat-option>
+      @for (r of regions; track r.id) {
+        <mat-option [value]="r.id">{{ r.label }}</mat-option>
+      }
+    </mat-select>
+  </mat-form-field>
+
+  <table mat-table [dataSource]="filteredClubs()" class="mat-elevation-z2">
     <ng-container matColumnDef="name">
       <th mat-header-cell *matHeaderCellDef>Name</th>
       <td mat-cell *matCellDef="let club">{{ club.name }}</td>
+    </ng-container>
+    <ng-container matColumnDef="region">
+      <th mat-header-cell *matHeaderCellDef>Region</th>
+      <td mat-cell *matCellDef="let club">{{ regionLabel(club.region) }}</td>
     </ng-container>
     <ng-container matColumnDef="dmcClubNumber">
       <th mat-header-cell *matHeaderCellDef>DMC Clubnummer</th>

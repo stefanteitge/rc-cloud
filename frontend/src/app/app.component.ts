@@ -17,7 +17,7 @@ import { MatIconModule } from '@angular/material/icon';
 
         <!-- Desktop nav links -->
         <span class="divider nav-desktop"></span>
-        <a routerLink="germany" mat-button class="nav-link nav-desktop" routerLinkActive="nav-link-active">Deutschland</a>
+        <a routerLink="germany" mat-button class="nav-link nav-desktop" routerLinkActive="nav-link-active">Germany</a>
         <a routerLink="benelux" mat-button class="nav-link nav-desktop" routerLinkActive="nav-link-active">BeNeLux</a>
         <a routerLink="clubs" mat-button class="nav-link nav-desktop" routerLinkActive="nav-link-active">Clubs</a>
         <a routerLink="tools/gearing-calculator" mat-button class="nav-link nav-desktop" routerLinkActive="nav-link-active">Gearing Calculator</a>
@@ -27,7 +27,7 @@ import { MatIconModule } from '@angular/material/icon';
           <mat-icon>menu</mat-icon>
         </button>
         <mat-menu #mobileMenu="matMenu">
-          <a mat-menu-item routerLink="germany">Deutschland</a>
+          <a mat-menu-item routerLink="germany">Germany</a>
           <a mat-menu-item routerLink="benelux">BeNeLux</a>
           <a mat-menu-item routerLink="clubs">Clubs</a>
           <a mat-menu-item routerLink="tools/gearing-calculator">Gearing Calculator</a>
