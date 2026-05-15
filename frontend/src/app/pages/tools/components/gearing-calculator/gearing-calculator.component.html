@@ -37,7 +37,7 @@
         <div class="input-group">
           <h3>Internal Gearbox Ratio</h3>
           <div class="range-row">
-            <mat-form-field appearance="outline">
+            <mat-form-field appearance="outline" class="preset-select">
               <mat-label>Chassis preset</mat-label>
               <mat-select [ngModel]="selectedPreset()" (ngModelChange)="onPresetChange($event)">
                 @for (preset of presets; track preset.name) {
@@ -67,7 +67,7 @@
               <input matInput type="number" min="0.01" step="0.01" [ngModel]="targetRatio()" (ngModelChange)="targetRatio.set(+$event)" />
             </mat-form-field>
             <mat-form-field appearance="outline">
-              <mat-label>Tolerance (±)</mat-label>
+              <mat-label>Tolerance (above target)</mat-label>
               <input matInput type="number" min="0" step="0.01" [ngModel]="tolerance()" (ngModelChange)="tolerance.set(+$event)" />
             </mat-form-field>
           </div>
@@ -78,8 +78,27 @@
   </mat-card>
 
   @if (matrix().length > 0) {
+    @if (bestCombinations().length > 0) {
+      <div class="summary-section">
+        <h3 class="summary-title">Best Combinations</h3>
+        <div class="summary-chips">
+          @for (combo of bestCombinations(); track combo.pinion + '-' + combo.spur) {
+            <div class="summary-chip" [class.chip-exact]="combo.isExact" [class.chip-closest]="combo.isClosest && !combo.isExact" [class.chip-tolerance]="combo.isInTolerance && !combo.isClosest">
+              <span class="chip-gears">{{ combo.pinion }}T / {{ combo.spur }}T</span>
+              <span class="chip-ratio">{{ combo.ratio | number: '1.2-2' }}</span>
+              @if (combo.isExact) { <span class="chip-badge">exact</span> }
+              @else if (combo.isClosest) { <span class="chip-badge">closest</span> }
+              @else { <span class="chip-badge">in range</span> }
+            </div>
+          }
+        </div>
+      </div>
+    }
     <p class="result-hint">Closest combination(s) to {{ targetRatio() }} highlighted &mdash; columns = spur, rows = pinion</p>
-    <div class="table-wrapper">
+    <button mat-stroked-button class="show-table-btn" (click)="showTable.set(true)">
+      Show detailed table
+    </button>
+    <div class="table-wrapper" [class.table-hidden]="!showTable()">
       <table mat-table [dataSource]="matrix()" class="gear-table">
 
         <!-- Pinion row-header column -->

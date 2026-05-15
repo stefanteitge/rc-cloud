@@ -15,6 +15,16 @@ interface ChassisPreset {
 
 interface GearCell {
   ratio: number;
+  isExact: boolean;
+  isClosest: boolean;
+  isInTolerance: boolean;
+}
+
+interface BestCombination {
+  pinion: number;
+  spur: number;
+  ratio: number;
+  isExact: boolean;
   isClosest: boolean;
   isInTolerance: boolean;
 }
@@ -25,7 +35,7 @@ interface MatrixRow {
   cells: Record<number, GearCell>;
 }
 
-const CHASSIS_PRESETS: ChassisPreset[] = [{ name: 'Tamiya TT02', ratio: 2.6 }];
+const CHASSIS_PRESETS: ChassisPreset[] = [{ name: 'Tamiya TT-02', ratio: 2.6 }];
 
 @Component({
   selector: 'app-gearing-calculator',
@@ -87,16 +97,17 @@ export class GearingCalculatorComponent {
         const ratio = (spur / pinion) * internal;
         const diff = Math.abs(ratio - target);
         if (diff < minDiff) minDiff = diff;
-        cells[spur] = { ratio, isClosest: false, isInTolerance: false };
+        cells[spur] = { ratio, isExact: false, isClosest: false, isInTolerance: false };
       }
       rows.push({ pinion, cells });
     }
 
-    // Mark closest and tolerance cells
+    // Mark exact, closest and tolerance cells
     const epsilon = 1e-9;
     for (const row of rows) {
       for (const spur of spurVals) {
         const cell = row.cells[spur];
+        cell.isExact = Math.abs(cell.ratio - target) < epsilon;
         cell.isClosest = Math.abs(Math.abs(cell.ratio - target) - minDiff) < epsilon;
         cell.isInTolerance = cell.ratio >= target && cell.ratio <= target + tolerance;
       }
@@ -104,6 +115,23 @@ export class GearingCalculatorComponent {
 
     return rows;
   });
+
+  bestCombinations = computed<BestCombination[]>(() => {
+    const rows = this.matrix();
+    const spurVals = this.spurValues();
+    const results: BestCombination[] = [];
+    for (const row of rows) {
+      for (const spur of spurVals) {
+        const cell = row.cells[spur];
+        if (cell.isClosest || cell.isInTolerance) {
+          results.push({ pinion: row.pinion, spur, ratio: cell.ratio, isExact: cell.isExact, isClosest: cell.isClosest, isInTolerance: cell.isInTolerance });
+        }
+      }
+    }
+    return results.sort((a, b) => a.ratio - b.ratio);
+  });
+
+  showTable = signal(false);
 
   onPresetChange(preset: ChassisPreset | null): void {
     if (preset) {

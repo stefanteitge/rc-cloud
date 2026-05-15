@@ -12,16 +12,24 @@ import { MatIconModule } from '@angular/material/icon';
     <mat-toolbar color="primary">
       <div class="brand-nav">
         <a routerLink="/" mat-button class="brand-link">
-          <span class="brand-main">RC Cloud</span> <span class="brand-sub">Termine</span>
+          <span class="brand-main">RC Cloud</span> <span class="brand-sub">Hub</span>
         </a>
-        <span class="divider"></span>
-        <a routerLink="germany" mat-button class="nav-link" routerLinkActive="nav-link-active">Deutschland</a>
-        <a routerLink="benelux" mat-button class="nav-link" routerLinkActive="nav-link-active">BeNeLux</a>
-        <a routerLink="clubs" mat-button class="nav-link" routerLinkActive="nav-link-active">Clubs</a>
-        <button mat-button class="nav-link" [matMenuTriggerFor]="toolsMenu" routerLinkActive="nav-link-active" [routerLinkActiveOptions]="{ paths: 'subset', queryParams: 'ignored', fragment: 'ignored', matrixParams: 'ignored' }" routerLink="tools">
-          Tools <mat-icon class="menu-arrow">arrow_drop_down</mat-icon>
+
+        <!-- Desktop nav links -->
+        <span class="divider nav-desktop"></span>
+        <a routerLink="germany" mat-button class="nav-link nav-desktop" routerLinkActive="nav-link-active">Deutschland</a>
+        <a routerLink="benelux" mat-button class="nav-link nav-desktop" routerLinkActive="nav-link-active">BeNeLux</a>
+        <a routerLink="clubs" mat-button class="nav-link nav-desktop" routerLinkActive="nav-link-active">Clubs</a>
+        <a routerLink="tools/gearing-calculator" mat-button class="nav-link nav-desktop" routerLinkActive="nav-link-active">Gearing Calculator</a>
+
+        <!-- Mobile hamburger -->
+        <button mat-icon-button class="nav-mobile-btn" [matMenuTriggerFor]="mobileMenu" aria-label="Navigation menu">
+          <mat-icon>menu</mat-icon>
         </button>
-        <mat-menu #toolsMenu="matMenu">
+        <mat-menu #mobileMenu="matMenu">
+          <a mat-menu-item routerLink="germany">Deutschland</a>
+          <a mat-menu-item routerLink="benelux">BeNeLux</a>
+          <a mat-menu-item routerLink="clubs">Clubs</a>
           <a mat-menu-item routerLink="tools/gearing-calculator">Gearing Calculator</a>
         </mat-menu>
       </div>
@@ -41,6 +49,11 @@ import { MatIconModule } from '@angular/material/icon';
     .nav-link-active { opacity: 1; font-weight: 600; }
     mat-toolbar { position: sticky; top: 0; z-index: 1000; }
     .menu-arrow { font-size: 18px; height: 18px; width: 18px; vertical-align: middle; }
+    .nav-mobile-btn { display: none; }
+    @media (max-width: 559px) {
+      .nav-desktop { display: none !important; }
+      .nav-mobile-btn { display: inline-flex; }
+    }
   `]
 })
 export class AppComponent {}

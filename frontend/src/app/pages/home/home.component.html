@@ -1,0 +1,54 @@
+<div class="home-page">
+  <div class="hero">
+    <h1 class="hero-title">RC Cloud Hub</h1>
+    <p class="hero-sub">Your central place for RC racing events and tools.</p>
+  </div>
+
+  @for (section of sections; track section.title) {
+    <section class="home-section">
+      <h2 class="section-title">{{ section.title }}</h2>
+      <div class="card-grid">
+        @for (card of section.cards; track card.title) {
+          @if (card.href) {
+            <a class="nav-card" [href]="card.href" target="_blank" rel="noopener" matRipple>
+              <mat-card appearance="outlined">
+                <mat-card-content>
+                  @if (card.flags) {
+                    <div class="card-flags">
+                      @for (code of card.flags; track code) {
+                        <img class="flag-img" [src]="'https://flagcdn.com/w40/' + code + '.png'" [alt]="code" />
+                      }
+                    </div>
+                  } @else {
+                    <mat-icon class="card-icon">{{ card.icon }}</mat-icon>
+                  }
+                  <h3 class="card-title">{{ card.title }}</h3>
+                  <p class="card-desc">{{ card.description }}</p>
+                  <mat-icon class="external-icon">open_in_new</mat-icon>
+                </mat-card-content>
+              </mat-card>
+            </a>
+          } @else {
+            <a class="nav-card" [routerLink]="card.route" matRipple>
+              <mat-card appearance="outlined">
+                <mat-card-content>
+                  @if (card.flags) {
+                    <div class="card-flags">
+                      @for (code of card.flags; track code) {
+                        <img class="flag-img" [src]="'https://flagcdn.com/w40/' + code + '.png'" [alt]="code" />
+                      }
+                    </div>
+                  } @else {
+                    <mat-icon class="card-icon">{{ card.icon }}</mat-icon>
+                  }
+                  <h3 class="card-title">{{ card.title }}</h3>
+                  <p class="card-desc">{{ card.description }}</p>
+                </mat-card-content>
+              </mat-card>
+            </a>
+          }
+        }
+      </div>
+    </section>
+  }
+</div>
