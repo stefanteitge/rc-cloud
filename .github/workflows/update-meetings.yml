@@ -17,25 +17,25 @@ jobs:
     steps:
     - uses: actions/checkout@v6
     - name: Update clubs
-      uses: fjogeleit/http-request-action@v1
+      uses: fjogeleit/http-request-action@v2
       with:
         method: "GET"
         url: "https://api.rc-cloud.de/update-clubs"
         timeout: 30000
     - name: Update DMC
-      uses: fjogeleit/http-request-action@v1
+      uses: fjogeleit/http-request-action@v2
       with:
         method: 'GET'
         url: "https://api.rc-cloud.de/update-dmc"
         timeout: 30000
     - name: Update Germany
-      uses: fjogeleit/http-request-action@v1
+      uses: fjogeleit/http-request-action@v2
       with:
         method: "GET"
         url: "https://api.rc-cloud.de/update-germany"
         timeout: 30000
     - name: Update BeNeLux
-      uses: fjogeleit/http-request-action@v1
+      uses: fjogeleit/http-request-action@v2
       with:
         method: "GET"
         url: "https://api.rc-cloud.de/update-benelux"
