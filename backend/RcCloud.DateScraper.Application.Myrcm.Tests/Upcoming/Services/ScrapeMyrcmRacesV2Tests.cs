@@ -64,6 +64,44 @@ public class ScrapeMyrcmRacesV2Tests
     }
 
     [Fact]
+    public async Task Scrape_ReturnsAll468EventsFromSingleUpcomingPage()
+    {
+        const int eventCount = 468;
+        var content = new System.Text.StringBuilder("""
+            <table>
+              <thead><tr><th>Date</th><th>Event</th><th>Organizer</th><th>Country</th></tr></thead>
+              <tbody>
+            """);
+        for (var index = 1; index <= eventCount; index++)
+        {
+            content.Append($"""
+                <tr><td>14.06.2026</td><td><a href="/event/{index}">Race {index}</a></td><td>Fixture Club</td><td>Germany</td></tr>
+                """);
+        }
+
+        content.Append("</tbody></table>");
+        var downloadPages = new Mock<IDownloadMyrcmPages>();
+        downloadPages.Setup(download => download.Download(It.IsAny<DownloadFilter>(), 0))
+            .ReturnsAsync(content.ToString());
+        var club = new Club("Fixture Club", [], "de", null, [], RegionReference.North);
+        var guessClub = new Mock<IGuessClub>();
+        guessClub.Setup(guess => guess.Guess("Fixture Club", 0, "de")).Returns(club);
+        var sut = new ScrapeMyrcmRacesV2(
+            downloadPages.Object,
+            guessClub.Object,
+            new GuessSeriesFromTitle(),
+            new GuessIfItIsTraining(),
+            NullLogger<ScrapeMyrcmRacesV2>.Instance);
+
+        var result = await sut.Scrape([MyrcmCountryCode.Germany]);
+
+        Assert.Equal(eventCount, result.Count);
+        Assert.Equal("Race 1", result[0].Title);
+        Assert.Equal($"Race {eventCount}", result[^1].Title);
+        downloadPages.Verify(download => download.Download(It.IsAny<DownloadFilter>(), 0), Times.Once);
+    }
+
+    [Fact]
     public void AddMyrcmV2_RegistersV2ImplementationsBehindInterfaces()
     {
         var services = new TestServiceCollection();
