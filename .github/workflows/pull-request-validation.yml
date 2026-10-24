@@ -1,0 +1,60 @@
+name: Pull request validation
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  frontend:
+    name: Frontend build and test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+
+      - name: Install dependencies
+        working-directory: frontend
+        run: npm ci
+
+      - name: Build
+        working-directory: frontend
+        run: npm run build
+
+      - name: Test
+        working-directory: frontend
+        run: npm test -- --watch=false --browsers=ChromeHeadless
+
+  backend:
+    name: Backend build and test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 10.0.x
+
+      - name: Build
+        run: dotnet build backend/RcCloud.WebApi --configuration Release
+
+      - name: Test
+        run: |
+          dotnet test backend/RcCloud.DateScraper.Application.Tests --configuration Release
+          dotnet test backend/RcCloud.DateScraper.Application.Myrcm.Tests --configuration Release
+          dotnet test backend/RcCloud.DateScraper.Application.Rcco.Tests --configuration Release
+          dotnet test backend/RcCloud.DateScraper.Application.Rck.Tests --configuration Release
+          dotnet test backend/RcCloud.DateScraper.Application.Tamiya.Tests --configuration Release --filter "FullyQualifiedName!~GetAiResposeNl&FullyQualifiedName!~GetAiResposeBe"
+          dotnet test provider-dmc/RcCloud.Provider.Dmc.Tests --configuration Release
