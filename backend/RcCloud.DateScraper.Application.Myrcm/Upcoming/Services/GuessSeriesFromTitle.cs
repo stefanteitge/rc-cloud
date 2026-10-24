@@ -2,7 +2,7 @@
 
 namespace RcCloud.DateScraper.Application.Myrcm.Upcoming.Services;
 
-public class GuessSeriesFromTitle
+public class GuessSeriesFromTitle : IGuessSeriesFromTitle
 {
     public SeriesReference[] Guess(string raceTitle)
     {

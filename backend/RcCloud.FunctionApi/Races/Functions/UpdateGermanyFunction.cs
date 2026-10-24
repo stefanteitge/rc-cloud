@@ -20,7 +20,7 @@ public class UpdateGermanyFunction(
     //ScrapeDmcRaces dmc,
     ScrapeKleinserieRaces kleinserie,
     ScrapeLrpOffroadRaces lrpOffroad,
-    ScrapeMyrcmRaces myrcm,
+    IScrapeMyrcmRaces myrcm,
     ScrapeRcco rcco,
     IClubFileRepository clubFileRepository,
     IClubCopyRepository mongoClubRepository,

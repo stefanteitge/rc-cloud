@@ -2,6 +2,7 @@ using System.Runtime.CompilerServices;
 using Microsoft.Extensions.DependencyInjection;
 using RcCloud.DateScraper.Application.Myrcm.Clubs.Services;
 using RcCloud.DateScraper.Application.Myrcm.Upcoming.Services;
+using RcCloud.DateScraper.Application.Myrcm.Upcoming.Services.V2;
 using RcCloud.DateScraper.Application.Myrcm.Upcoming.Services.Impl;
 
 [assembly: InternalsVisibleTo("RcCloud.DateScraper.Application.Myrcm.Tests")]
@@ -14,10 +15,20 @@ public static class MyrcmApplication
     {
         return services
             .AddTransient<IGuessClub, GuessClub>()
-            .AddTransient<GuessIfItIsTraining>()
-            .AddTransient<DownloadMyrcmPages>()
-            .AddTransient<GuessSeriesFromTitle>()
+            .AddTransient<IGuessIfItIsTraining, GuessIfItIsTraining>()
+            .AddTransient<IDownloadMyrcmPages, DownloadMyrcmPages>()
+            .AddTransient<IGuessSeriesFromTitle, GuessSeriesFromTitle>()
+            .AddTransient<IScrapeMyrcmClubs, ScrapeMyrcmClubs>()
+            .AddTransient<IScrapeMyrcmRaces, ScrapeMyrcmRaces>()
             .AddTransient<ScrapeMyrcmClubs>()
             .AddTransient<ScrapeMyrcmRaces>();
+    }
+
+    public static IServiceCollection AddMyrcmV2(this IServiceCollection services)
+    {
+        return services
+            .AddMyrcm()
+            .AddTransient<IDownloadMyrcmPages, DownloadMyrcmPagesV2>()
+            .AddTransient<IScrapeMyrcmRaces, ScrapeMyrcmRacesV2>();
     }
 }

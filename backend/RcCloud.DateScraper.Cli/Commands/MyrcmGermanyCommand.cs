@@ -6,7 +6,7 @@ using RcCloud.DateScraper.Cli.Output.Services;
 namespace RcCloud.DateScraper.Cli.Commands;
 
 [Command(name: "myrcm-germany")]
-internal class MyrcmGermanyCommand(ScrapeMyrcmRaces races, PrintRaces printer)
+internal class MyrcmGermanyCommand(IScrapeMyrcmRaces races, PrintRaces printer)
 {
     public async Task OnExecute()
     {

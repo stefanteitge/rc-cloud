@@ -4,7 +4,7 @@ using RcCloud.DateScraper.Domain.Clubs;
 
 namespace RcCloud.DateScraper.Application.Myrcm.Clubs.Services;
 
-public class ScrapeMyrcmClubs(ScrapeMyrcmRaces scrapeRaces)
+public class ScrapeMyrcmClubs(IScrapeMyrcmRaces scrapeRaces) : IScrapeMyrcmClubs
 {
     public async Task<List<Club>> Scrape(MyrcmCountryCode[] countries)
     {
