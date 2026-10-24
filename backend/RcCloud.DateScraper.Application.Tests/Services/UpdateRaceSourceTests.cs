@@ -58,6 +58,29 @@ public class UpdateRaceSourceTests
         Assert.Empty(result);
     }
 
+    [Fact]
+    public void Describe_IncludesExceptionChainAndHttpDetails()
+    {
+        var ex = new HttpRequestException(
+            HttpRequestError.ConnectionError,
+            "Connection refused",
+            new System.Net.Sockets.SocketException(111));
+
+        var details = UpdateRaceSource.Describe(ex);
+
+        Assert.Contains("HttpRequestException: Connection refused", details);
+        Assert.Contains("HttpRequestError=ConnectionError", details);
+        Assert.Contains("---> SocketException", details);
+    }
+
+    [Fact]
+    public void Describe_IncludesStatusCode()
+    {
+        var ex = new HttpRequestException("Forbidden", null, System.Net.HttpStatusCode.Forbidden);
+
+        Assert.Contains("StatusCode=403", UpdateRaceSource.Describe(ex));
+    }
+
     private UpdateRaceSource MakeSut() => new(repo.Object, NullLogger<UpdateRaceSource>.Instance);
 
     private void SetupStored(string compilation, string source, params RaceMeeting[] races)
