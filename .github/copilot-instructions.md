@@ -31,6 +31,23 @@ dotnet test --filter "ClassName=DownloadDmcCalendarTests" provider-dmc/RcCloud.P
 
 ## Architecture
 
+### Backend architecture: kysy (mandatory)
+All backend C# code (`backend/`, `provider-dmc/`) **must** follow the kysy architecture described in
+[`.claude/skills/kysy-architecture/SKILL.md`](../.claude/skills/kysy-architecture/SKILL.md). Read it before
+adding or changing backend code. In short:
+- Onion architecture with DDD: Domain ← Application ← Infrastructure ← WebApi; dependencies point inward only.
+- Immutable domain objects: private constructors, static factory methods (`Create`, …), changes only via
+  `With…` methods that return a new object; collections wrapped in domain objects (`RaceList`).
+- Value objects for every primitive with business rules; their factories validate and return `Result<T>`.
+- Reads: per-query custom specifications wrapped in query objects (`RaceQuery.Upcoming(...)`), executed by
+  the repository. Writes/processes: Application services named with an imperative verb (`UpdateClubs`).
+- Errors: FluentResults with custom error types (`RaceNotFoundError`), never plain strings.
+- Minimal API: `Program.cs` only wires things up; each endpoint is a handler class without business logic.
+
+Existing code still deviates in places — see "Known deviations from the kysy architecture" in
+[`README.md`](../README.md). Don't copy deviations; follow the skill for new code and migrate deviating code
+you touch.
+
 ### Deployment
 Both frontend and backend are deployed as **Docker containers** published to GitHub Container Registry (GHCR) and deployed via webhook. CI/CD:
 - `.github/workflows/publish-frontend.yml` — builds and pushes the Angular/nginx container on changes to `frontend/`
@@ -63,7 +80,7 @@ Each data source has its own Application project:
 ### Adding a new data source
 1. Create `RcCloud.DateScraper.Application.XxxProvider` with a `ScrapeXxxRaces` service and a static `AddXxx(this IServiceCollection)` extension method.
 2. Register it in `DateScraperApplication.AddScraping()`.
-3. In `backend/RcCloud.WebApi/Program.cs`, inject the scraper into the `/update-germany` handler, call `await xxx.Scrape()`, store results with `await repo.Store(races, "germany", "xxx")`, and add to the `all` list for aggregation.
+3. Call it from the service that updates the compilation (e.g. `UpdateGermanRaces`), which stores the per-source result and adds it to the aggregate. Don't put this logic into `Program.cs` or a handler (see the kysy architecture above). Until that service exists, the logic still lives in the `/update-germany` lambda in `backend/RcCloud.WebApi/Program.cs` (a known deviation).
 
 ### MongoDB storage key
 Races are keyed by `(compilation, source)` — e.g., `("germany", "myrcm")`, `("germany", "aggregate")`. The `"aggregate"` document is the merged, date-sorted result of all active sources.
