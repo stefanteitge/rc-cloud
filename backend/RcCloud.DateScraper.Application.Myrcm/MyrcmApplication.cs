@@ -15,8 +15,11 @@ public static class MyrcmApplication
     {
         return services
             .AddTransient<IGuessClub, GuessClub>()
+            .AddTransient<GuessIfItIsTraining>()
             .AddTransient<IGuessIfItIsTraining, GuessIfItIsTraining>()
+            .AddTransient<DownloadMyrcmPages>()
             .AddTransient<IDownloadMyrcmPages, DownloadMyrcmPages>()
+            .AddTransient<GuessSeriesFromTitle>()
             .AddTransient<IGuessSeriesFromTitle, GuessSeriesFromTitle>()
             .AddTransient<IScrapeMyrcmClubs, ScrapeMyrcmClubs>()
             .AddTransient<IScrapeMyrcmRaces, ScrapeMyrcmRaces>()
