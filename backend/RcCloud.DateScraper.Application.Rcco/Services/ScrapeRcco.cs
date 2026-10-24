@@ -9,11 +9,11 @@ public class ScrapeRcco(IGuessClub guessClub)
 {
     private const string BaseUrl = "https://rccar-online.de/veranstaltungen";
 
+    private static readonly HttpClient Client = new() { Timeout = TimeSpan.FromSeconds(20) };
+
     public async Task<List<RaceMeeting>> Scrape()
     {
-        HttpClient client = new HttpClient();
-
-        var res= await client.GetAsync(BaseUrl);
+        var res = await Client.GetAsync(BaseUrl);
 
         string html = await res.Content.ReadAsStringAsync();
         

@@ -16,6 +16,7 @@ public static class DateScraperApplication
             .AddMyrcmV2()
             .AddRcco()
             .AddRck()
-            .AddTransient<RetrieveAllGermanRaces>();
+            .AddTransient<RetrieveAllGermanRaces>()
+            .AddTransient<UpdateRaceSource>();
     }
 }

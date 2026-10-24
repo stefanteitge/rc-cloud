@@ -33,10 +33,10 @@ jobs:
       with:
         method: "GET"
         url: "https://api.rc-cloud.de/update-germany"
-        timeout: 30000
+        timeout: 120000
     - name: Update BeNeLux
       uses: fjogeleit/http-request-action@v2
       with:
         method: "GET"
         url: "https://api.rc-cloud.de/update-benelux"
-        timeout: 30000
+        timeout: 120000

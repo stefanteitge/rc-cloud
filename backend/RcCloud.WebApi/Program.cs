@@ -1,5 +1,6 @@
 using System.Reflection;
 using RcCloud.DateScraper.Application.Common;
+using RcCloud.DateScraper.Application.Common.Services;
 using RcCloud.DateScraper.Application.Dmc.Calendar.Services;
 using RcCloud.DateScraper.Application.Myrcm.Common.Domain;
 using RcCloud.DateScraper.Application.Myrcm.Upcoming.Services;
@@ -80,6 +81,7 @@ app.MapMethods("/update-germany", ["GET", "POST"], async (
     ScrapeLrpOffroadRaces lrpOffroad,
     IScrapeMyrcmRaces myrcm,
     ScrapeRcco rcco,
+    UpdateRaceSource updateSource,
     IClubFileRepository clubFileRepository,
     IClubCopyRepository mongoClubRepository,
     IRaceCompilationRepository repo,
@@ -90,25 +92,11 @@ app.MapMethods("/update-germany", ["GET", "POST"], async (
 
     var all = new List<RaceMeeting>();
 
-    var lrpOffroadAll = await lrpOffroad.Scrape();
-    all.AddRange(lrpOffroadAll);
-    await repo.Store(lrpOffroadAll, "germany", "lrp");
-
-    var challengeAll = await challenge.Scrape();
-    all.AddRange(challengeAll);
-    await repo.Store(challengeAll, "germany", "challenge");
-
-    var kleinserieAll = await kleinserie.Scrape();
-    all.AddRange(kleinserieAll);
-    await repo.Store(kleinserieAll, "germany", "kleinserie");
-
-    var myrcmAll = await myrcm.Scrape([MyrcmCountryCode.Germany]);
-    all.AddRange(myrcmAll);
-    await repo.Store(myrcmAll, "germany", "myrcm");
-
-    var rccoAll = await rcco.Scrape();
-    all.AddRange(rccoAll);
-    await repo.Store(rccoAll, "germany", "rcco");
+    all.AddRange(await updateSource.Update("germany", "lrp", lrpOffroad.Scrape));
+    all.AddRange(await updateSource.Update("germany", "challenge", challenge.Scrape));
+    all.AddRange(await updateSource.Update("germany", "kleinserie", kleinserie.Scrape));
+    all.AddRange(await updateSource.Update("germany", "myrcm", () => myrcm.Scrape([MyrcmCountryCode.Germany])));
+    all.AddRange(await updateSource.Update("germany", "rcco", rcco.Scrape));
 
     all.Sort((a, b) => a.Date.CompareTo(b.Date));
     await repo.Store(all, "germany", "aggregate");
@@ -142,6 +130,7 @@ app.MapGet("/update-dmc", async (
 
 app.MapMethods("/update-benelux", ["GET", "POST"], async (
     IScrapeMyrcmRaces myrcm,
+    UpdateRaceSource updateSource,
     IClubFileRepository clubFileRepository,
     IClubCopyRepository mongoClubRepository,
     IRaceCompilationRepository repo,
@@ -152,8 +141,10 @@ app.MapMethods("/update-benelux", ["GET", "POST"], async (
 
     var all = new List<RaceMeeting>();
 
-    var myrcmAll = await myrcm.Scrape([MyrcmCountryCode.Belgium, MyrcmCountryCode.Luxembourg, MyrcmCountryCode.Netherlands]);
-    all.AddRange(myrcmAll);
+    all.AddRange(await updateSource.Update(
+        "benelux",
+        "myrcm",
+        () => myrcm.Scrape([MyrcmCountryCode.Belgium, MyrcmCountryCode.Luxembourg, MyrcmCountryCode.Netherlands])));
 
     all.Sort((a, b) => a.Date.CompareTo(b.Date));
     await repo.Store(all, "benelux", "aggregate");
