@@ -1,0 +1,18 @@
+# Build context for backend/RcCloud.WebApi/Dockerfile is the repo root.
+# Keep local build output out of the image: copied obj/ folders override the restore inside the container.
+**/bin/
+**/obj/
+
+# Not needed for the WebApi image
+.git/
+.github/
+.idea/
+.vs/
+.vscode/
+.claude/
+.devcontainer/
+frontend/
+spec/
+db/
+**/*.user
+**/TestResults/
