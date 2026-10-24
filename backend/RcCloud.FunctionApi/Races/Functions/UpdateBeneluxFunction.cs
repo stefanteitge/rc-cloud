@@ -15,7 +15,7 @@ using RcCloud.FunctionApi.Races.Dto;
 namespace RcCloud.FunctionApi.Races.Functions;
 
 public class UpdateBeneluxFunction(
-    ScrapeMyrcmRaces myrcm,
+    IScrapeMyrcmRaces myrcm,
     IClubFileRepository clubFileRepository,
     IClubCopyRepository mongoClubRepository,
     IRaceCompilationRepository repo,

@@ -12,7 +12,7 @@ public class RetrieveAllGermanRaces(
     ScrapeChallengeRaces challenge,
     ScrapeDmcRaces dmc,
     ScrapeKleinserieRaces kleinserie,
-    ScrapeMyrcmRaces myrcm,
+    IScrapeMyrcmRaces myrcm,
     ScrapeRcco rcco)
 {
     public async Task<List<RaceMeeting>> Retrieve()

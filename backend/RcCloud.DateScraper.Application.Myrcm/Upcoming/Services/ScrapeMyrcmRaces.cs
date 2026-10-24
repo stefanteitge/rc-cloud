@@ -12,11 +12,11 @@ using RcCloud.DateScraper.Domain.Series;
 namespace RcCloud.DateScraper.Application.Myrcm.Upcoming.Services;
 
 public class ScrapeMyrcmRaces(
-    DownloadMyrcmPages downloadPages,
+    IDownloadMyrcmPages downloadPages,
     IGuessClub guessClub,
-    GuessSeriesFromTitle guessSeriesFromTitle,
-    GuessIfItIsTraining guessIfItIsTraining,
-    ILogger<ScrapeMyrcmRaces> logger)
+    IGuessSeriesFromTitle guessSeriesFromTitle,
+    IGuessIfItIsTraining guessIfItIsTraining,
+    ILogger<ScrapeMyrcmRaces> logger) : IScrapeMyrcmRaces
 {
     public async Task<List<RaceMeeting>> Scrape(MyrcmCountryCode[] countries)
     {

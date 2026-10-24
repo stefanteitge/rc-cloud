@@ -78,7 +78,7 @@ app.MapMethods("/update-germany", ["GET", "POST"], async (
     ScrapeChallengeRaces challenge,
     ScrapeKleinserieRaces kleinserie,
     ScrapeLrpOffroadRaces lrpOffroad,
-    ScrapeMyrcmRaces myrcm,
+    IScrapeMyrcmRaces myrcm,
     ScrapeRcco rcco,
     IClubFileRepository clubFileRepository,
     IClubCopyRepository mongoClubRepository,
@@ -141,7 +141,7 @@ app.MapGet("/update-dmc", async (
 });
 
 app.MapMethods("/update-benelux", ["GET", "POST"], async (
-    ScrapeMyrcmRaces myrcm,
+    IScrapeMyrcmRaces myrcm,
     IClubFileRepository clubFileRepository,
     IClubCopyRepository mongoClubRepository,
     IRaceCompilationRepository repo,

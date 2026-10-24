@@ -13,7 +13,7 @@ public static class DateScraperApplication
     {
         return services
             .AddDmc()
-            .AddMyrcm()
+            .AddMyrcmV2()
             .AddRcco()
             .AddRck()
             .AddTransient<RetrieveAllGermanRaces>();

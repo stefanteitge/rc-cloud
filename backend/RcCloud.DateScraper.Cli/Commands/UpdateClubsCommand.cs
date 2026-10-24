@@ -6,7 +6,7 @@ using RcCloud.DateScraper.Domain.Clubs;
 
 namespace RcCloud.DateScraper.Cli.Commands;
 
-internal class UpdateClubsCommand(ScrapeDmcClubs scrapeDmcClubs, ScrapeMyrcmClubs scrapeClubs, IClubFileRepository clubFileRepository)
+internal class UpdateClubsCommand(ScrapeDmcClubs scrapeDmcClubs, IScrapeMyrcmClubs scrapeClubs, IClubFileRepository clubFileRepository)
 {
     [FileExists]
     [Option("--file", CommandOptionType.SingleValue)]
