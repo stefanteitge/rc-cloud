@@ -1,6 +1,4 @@
-using System.Globalization;
 using System.Text.RegularExpressions;
-using System.Web;
 using AngleSharp;
 using AngleSharp.Dom;
 using Microsoft.Extensions.Logging;
@@ -19,105 +17,40 @@ public class ScrapeMyrcmRacesV2(
     IGuessIfItIsTraining guessIfItIsTraining,
     ILogger<ScrapeMyrcmRacesV2> logger) : IScrapeMyrcmRaces
 {
-    private static readonly Regex NumericDate = new(
-        @"(?<!\d)(?:\d{1,2}\.\d{1,2}\.\d{4}|\d{4}-\d{1,2}-\d{1,2})(?!\d)",
-        RegexOptions.Compiled);
+    // Safety net in case the paging info stops advancing; the live site has ~20 pages of 25 events.
+    private const int MaxPages = 200;
 
-    private static readonly Regex TextDate = new(
-        @"(?<!\d)\d{1,2}\s+[A-Za-zÄÖÜäöü]+\s+\d{4}(?!\d)",
-        RegexOptions.Compiled);
+    private static readonly Regex OrganizerId = new(@"/organizers/(\d+)", RegexOptions.Compiled);
+
+    private static readonly Dictionary<string, int> Months = new(StringComparer.OrdinalIgnoreCase)
+    {
+        ["jan"] = 1, ["feb"] = 2, ["mär"] = 3, ["mrz"] = 3, ["mar"] = 3, ["apr"] = 4,
+        ["mai"] = 5, ["may"] = 5, ["jun"] = 6, ["jul"] = 7, ["aug"] = 8, ["sep"] = 9,
+        ["okt"] = 10, ["oct"] = 10, ["nov"] = 11, ["dez"] = 12, ["dec"] = 12,
+    };
+
+    private static readonly Dictionary<string, MyrcmCountryCode> Countries = new(StringComparer.OrdinalIgnoreCase)
+    {
+        ["DEU"] = MyrcmCountryCode.Germany,
+        ["NLD"] = MyrcmCountryCode.Netherlands,
+        ["BEL"] = MyrcmCountryCode.Belgium,
+        ["LUX"] = MyrcmCountryCode.Luxembourg,
+    };
 
     public async Task<List<RaceMeeting>> Scrape(MyrcmCountryCode[] countries)
     {
-        var content = await downloadPages.Download(new DownloadFilter(countries));
-        return (await Scrape(content, countries)).ToList();
-    }
-
-    public async Task<IEnumerable<RaceMeeting>> Scrape(string content, MyrcmCountryCode[] countries)
-    {
-        var document = await BrowsingContext.New(Configuration.Default).OpenAsync(request => request.Content(content));
+        var filter = new DownloadFilter(countries);
         var meetings = new List<RaceMeeting>();
 
-        foreach (var table in document.QuerySelectorAll("table"))
+        for (var pageIndex = 0; pageIndex < MaxPages; pageIndex++)
         {
-            var rows = table.QuerySelectorAll("tr");
-            if (rows.Length < 2)
+            var page = MyrcmUpcomingPage.Parse(await downloadPages.Download(filter, pageIndex));
+            var cards = await ParseCards(page.Html);
+            meetings.AddRange(ToMeetings(cards, countries));
+
+            if (page.IsLastPage || cards.Count == 0)
             {
-                continue;
-            }
-
-            var headerRow = rows.FirstOrDefault(row => row.QuerySelectorAll("th").Length > 0);
-            var headers = headerRow?.QuerySelectorAll("th").Select(cell => cell.TextContent.Trim()).ToArray()
-                ?? rows[0].QuerySelectorAll("td").Select(cell => cell.TextContent.Trim()).ToArray();
-            var dataRows = rows.Where(row => row != headerRow).ToArray();
-            var dateColumn = FindColumn(headers, "date", "datum", "termin");
-            var titleColumn = FindColumn(headers, "event", "race", "rennen", "anlass", "title");
-            var clubColumn = FindColumn(headers, "club", "organizer", "organisator", "veranstalter");
-            var countryColumn = FindColumn(headers, "country", "land");
-
-            foreach (var row in dataRows)
-            {
-                var cells = row.QuerySelectorAll("td");
-                if (cells.Length == 0)
-                {
-                    continue;
-                }
-
-                var dateCell = GetCell(cells, dateColumn) ?? cells.FirstOrDefault(cell => HasDate(cell.TextContent));
-                var dates = ParseDates(dateCell?.TextContent ?? row.TextContent);
-                if (dates.Length == 0)
-                {
-                    continue;
-                }
-
-                var title = GetCell(cells, titleColumn)?.TextContent.Trim();
-                title = string.IsNullOrWhiteSpace(title) ? GetEventTitle(row, dateCell) : title;
-                if (string.IsNullOrWhiteSpace(title) || guessIfItIsTraining.IsTraining(title))
-                {
-                    continue;
-                }
-
-                var country = ParseCountry(GetCellValue(GetCell(cells, countryColumn)) ?? row.TextContent);
-                if (country is null || !countries.Any(candidate => candidate.Code == country.Code))
-                {
-                    continue;
-                }
-
-                var clubCell = GetCell(cells, clubColumn) ?? FindClubCell(cells, dateCell, title);
-                var clubName = clubCell?.TextContent.Trim();
-                if (string.IsNullOrWhiteSpace(clubName))
-                {
-                    continue;
-                }
-
-                var countryCode = GetCountryCode(country);
-                var clubNumber = GetClubNumber(clubCell);
-                var race = new MyrcmRace(
-                    dates[0],
-                    dates[^1],
-                    country,
-                    title,
-                    clubName,
-                    clubNumber);
-                var club = guessClub.Guess(race.Club, clubNumber, countryCode);
-                var regions = new List<RegionReference>();
-                if (club.Region is not null)
-                {
-                    regions.Add(club.Region);
-                }
-
-                regions.Add(new RegionReference(countryCode));
-
-                meetings.Add(new RaceMeeting(
-                    guessSeriesFromTitle.Guess(race.Title),
-                    SeasonReference.Current,
-                    race.DateEnd,
-                    club.Name,
-                    countryCode,
-                    race.Title,
-                    regions.ToArray(),
-                    club,
-                    "Myrcm"));
+                break;
             }
         }
 
@@ -129,125 +62,115 @@ public class ScrapeMyrcmRacesV2(
         return meetings;
     }
 
-    private static int FindColumn(string[] headers, params string[] names)
+    /// <summary>
+    /// Scrapes a single JSON page as returned by <see cref="DownloadMyrcmPagesV2"/>.
+    /// </summary>
+    public async Task<IEnumerable<RaceMeeting>> Scrape(string json, MyrcmCountryCode[] countries)
     {
-        for (var index = 0; index < headers.Length; index++)
+        var page = MyrcmUpcomingPage.Parse(json);
+        return ToMeetings(await ParseCards(page.Html), countries);
+    }
+
+    internal static async Task<List<MyrcmRace>> ParseCards(string html)
+    {
+        var document = await BrowsingContext.New(Configuration.Default).OpenAsync(request => request.Content(html));
+        var races = new List<MyrcmRace>();
+
+        foreach (var card in document.QuerySelectorAll("article.event-card"))
         {
-            var header = headers[index].ToLowerInvariant();
-            if (names.Any(name => header.Contains(name, StringComparison.OrdinalIgnoreCase)))
+            var dateStart = ParseDateBox(card.QuerySelector(".date-box.from"));
+            if (dateStart is null)
             {
-                return index;
+                continue;
             }
+
+            var dateEnd = ParseDateBox(card.QuerySelector(".date-box.to")) ?? dateStart.Value;
+            var title = card.QuerySelector(".event-title")?.TextContent.Trim() ?? string.Empty;
+            var organizer = card.QuerySelector(".event-meta a[href*='/organizers/']");
+            var clubName = organizer?.TextContent.Trim() ?? string.Empty;
+            var countryCode = card.QuerySelector(".badge.country")?.TextContent.Trim() ?? string.Empty;
+
+            races.Add(new MyrcmRace(
+                dateStart.Value,
+                dateEnd,
+                Countries.GetValueOrDefault(countryCode),
+                title,
+                clubName,
+                GetClubNumber(organizer)));
         }
 
-        return -1;
+        return races;
     }
 
-    private static IElement? GetCell(IHtmlCollection<IElement> cells, int index)
+    private List<RaceMeeting> ToMeetings(IEnumerable<MyrcmRace> races, MyrcmCountryCode[] countries)
     {
-        return index >= 0 && index < cells.Length ? cells[index] : null;
+        var meetings = new List<RaceMeeting>();
+
+        foreach (var race in races)
+        {
+            if (race.Country is null || !countries.Any(candidate => candidate.Code == race.Country.Code))
+            {
+                continue;
+            }
+
+            if (string.IsNullOrWhiteSpace(race.Title) || string.IsNullOrWhiteSpace(race.Club) || guessIfItIsTraining.IsTraining(race.Title))
+            {
+                continue;
+            }
+
+            var countryCode = GetCountryCode(race.Country);
+            var club = guessClub.Guess(race.Club, race.ClubNumber ?? 0, countryCode);
+            var regions = new List<RegionReference>();
+            if (club.Region is not null)
+            {
+                regions.Add(club.Region);
+            }
+
+            regions.Add(new RegionReference(countryCode));
+
+            meetings.Add(new RaceMeeting(
+                guessSeriesFromTitle.Guess(race.Title),
+                SeasonReference.Current,
+                race.DateEnd,
+                club.Name,
+                countryCode,
+                race.Title,
+                regions.ToArray(),
+                club,
+                "Myrcm"));
+        }
+
+        return meetings;
     }
 
-    private static string? GetCellValue(IElement? cell)
+    private static DateOnly? ParseDateBox(IElement? dateBox)
     {
-        if (cell is null)
+        if (dateBox is null)
         {
             return null;
         }
 
-        var text = cell.TextContent.Trim();
-        if (text.Length > 0)
+        var dayText = dateBox.QuerySelector(".date-day")?.TextContent.Trim();
+        var monthText = dateBox.QuerySelector(".date-month")?.TextContent.Trim();
+        var yearText = dateBox.QuerySelector(".date-year")?.TextContent.Trim();
+
+        if (!int.TryParse(dayText, out var day)
+            || !int.TryParse(yearText, out var year)
+            || monthText is null
+            || monthText.Length < 3
+            || !Months.TryGetValue(monthText[..3], out var month))
         {
-            return text;
+            return null;
         }
 
-        return string.Join(" ", cell.QuerySelectorAll("[alt], [title]")
-            .Select(element => element.GetAttribute("alt") ?? element.GetAttribute("title"))
-            .Where(value => !string.IsNullOrWhiteSpace(value)));
-    }
-
-    private static IElement? FindClubCell(IHtmlCollection<IElement> cells, IElement? dateCell, string title)
-    {
-        return cells.FirstOrDefault(cell =>
-            cell != dateCell &&
-            !string.Equals(cell.TextContent.Trim(), title, StringComparison.OrdinalIgnoreCase) &&
-            !HasDate(cell.TextContent));
-    }
-
-    private static string GetEventTitle(IElement row, IElement? dateCell)
-    {
-        var links = row.QuerySelectorAll("a")
-            .Where(link => link.TextContent.Trim().Length > 0)
-            .ToArray();
-
-        var eventLink = links.FirstOrDefault(link => !ContainsDate(link.TextContent));
-        if (eventLink is not null)
+        try
         {
-            return eventLink.TextContent.Trim();
+            return new DateOnly(year, month, day);
         }
-
-        return row.QuerySelectorAll("td")
-            .FirstOrDefault(cell => cell != dateCell && !HasDate(cell.TextContent))
-            ?.TextContent.Trim() ?? string.Empty;
-    }
-
-    private static bool HasDate(string text) => NumericDate.IsMatch(text) || TextDate.IsMatch(text);
-
-    private static bool ContainsDate(string text) => HasDate(text);
-
-    private static DateOnly[] ParseDates(string text)
-    {
-        var candidates = NumericDate.Matches(text)
-            .Select(match => (Position: match.Index, Value: match.Value))
-            .Concat(TextDate.Matches(text).Select(match => (Position: match.Index, Value: match.Value)))
-            .OrderBy(match => match.Position);
-
-        return candidates
-            .Select(match => ParseDate(match.Value))
-            .Where(date => date.HasValue)
-            .Select(date => date!.Value)
-            .ToArray();
-    }
-
-    private static DateOnly? ParseDate(string text)
-    {
-        string[] formats = ["d.M.yyyy", "dd.MM.yyyy", "yyyy-M-d", "yyyy-MM-dd", "d MMMM yyyy", "dd MMMM yyyy", "d MMM yyyy", "dd MMM yyyy"];
-        var cultures = new[] { CultureInfo.GetCultureInfo("de-DE"), CultureInfo.GetCultureInfo("en-GB") };
-        foreach (var culture in cultures)
+        catch (ArgumentOutOfRangeException)
         {
-            if (DateOnly.TryParseExact(text, formats, culture, DateTimeStyles.AllowWhiteSpaces, out var date))
-            {
-                return date;
-            }
+            return null;
         }
-
-        return null;
-    }
-
-    private static MyrcmCountryCode? ParseCountry(string text)
-    {
-        var country = text.ToLowerInvariant();
-        if (country.Contains("deu") || country.Contains("germany") || country.Contains("deutschland") || country.Trim() == "de")
-        {
-            return MyrcmCountryCode.Germany;
-        }
-
-        if (country.Contains("nld") || country.Contains("netherlands") || country.Contains("nederland") || country.Contains("niederlande") || country.Trim() == "nl")
-        {
-            return MyrcmCountryCode.Netherlands;
-        }
-
-        if (country.Contains("bel") || country.Contains("belgium") || country.Contains("belgien") || country.Contains("belgië") || country.Trim() == "be")
-        {
-            return MyrcmCountryCode.Belgium;
-        }
-
-        if (country.Contains("lux") || country.Contains("luxembourg") || country.Contains("luxemburg") || country.Trim() == "lu")
-        {
-            return MyrcmCountryCode.Luxembourg;
-        }
-
-        return null;
     }
 
     private static string GetCountryCode(MyrcmCountryCode country)
@@ -262,27 +185,15 @@ public class ScrapeMyrcmRacesV2(
         };
     }
 
-    private static int GetClubNumber(IElement? clubCell)
+    private static int GetClubNumber(IElement? organizer)
     {
-        var href = clubCell?.QuerySelector("a")?.GetAttribute("href");
+        var href = organizer?.GetAttribute("href");
         if (string.IsNullOrWhiteSpace(href))
         {
             return 0;
         }
 
-        var decodedHref = Uri.UnescapeDataString(href);
-        var match = Regex.Match(decodedHref, @"[?&]dId\[O\]=(\d+)", RegexOptions.IgnoreCase);
-        if (match.Success && int.TryParse(match.Groups[1].Value, out var decodedClubNumber))
-        {
-            return decodedClubNumber;
-        }
-
-        var absoluteUrl = Uri.TryCreate(href, UriKind.Absolute, out var absolute)
-            ? absolute
-            : new Uri(new Uri(DownloadMyrcmPagesV2.UpcomingUrl), href);
-        var query = Uri.UnescapeDataString(absoluteUrl.Query);
-        var clubNumber = HttpUtility.ParseQueryString(query).Get("dId[O]");
-
-        return int.TryParse(clubNumber, out var number) ? number : 0;
+        var match = OrganizerId.Match(href);
+        return match.Success && int.TryParse(match.Groups[1].Value, out var number) ? number : 0;
     }
 }
