@@ -115,8 +115,8 @@ public class ScrapeMyrcmRacesV2Tests
             typeof(ScrapeMyrcmRacesV2),
             services.Last(descriptor => descriptor.ServiceType == typeof(IScrapeMyrcmRaces)).ImplementationType);
         Assert.Contains(services, descriptor => descriptor.ServiceType == typeof(IScrapeMyrcmClubs));
-        Assert.Contains(services, descriptor => descriptor.ServiceType == typeof(ScrapeMyrcmRaces));
-        Assert.Contains(services, descriptor => descriptor.ServiceType == typeof(DownloadMyrcmPages));
+        Assert.DoesNotContain(services, descriptor => descriptor.ServiceType == typeof(ScrapeMyrcmRaces));
+        Assert.DoesNotContain(services, descriptor => descriptor.ServiceType == typeof(DownloadMyrcmPages));
     }
 
     private sealed class TestServiceCollection : List<Microsoft.Extensions.DependencyInjection.ServiceDescriptor>, Microsoft.Extensions.DependencyInjection.IServiceCollection
